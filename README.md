@@ -3,7 +3,7 @@
 Multiple-Choice-Training für Gesetzestexte. Läuft im Browser, lässt sich auf dem iPhone-Home-Bildschirm installieren und funktioniert danach offline.
 
 ## Auf dem iPhone installieren
-1. Die Seite in **Safari** öffnen (`…/lernapp/`).
+1. Die Seite in **Safari** öffnen (`https://mathiasweb-create.github.io/lernapp/`).
 2. Teilen-Symbol → **Zum Home-Bildschirm**.
 
 ## Bedienung

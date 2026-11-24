@@ -4,8 +4,8 @@ Diese Datei liest ein neues Chat-Fenster zuerst. Sie ersetzt das Gedächtnis des
 
 ## Worum es geht
 iPhone-taugliche Lern-App (PWA) mit Multiple-Choice-Fragen zu österreichischen Gesetzen. Gewählte Paragrafen werden abgefragt, 4 Aussagen je Frage (0 bis 4 richtig), Punkte 0 bis 4. Erstes Gesetz: BDG 1979 (18 Paragrafen, 56 Fragen). Später StGB, SPG, VStG. Die App soll auch andere iPhone-Nutzer per Link erreichen.
-Eigentümer: GitHub-Konto `mathiasweb-create`. Repo: `foto-text-zu-word` (Ordner `lernapp/`). Live (GitHub Pages): `https://mathiasweb-create.github.io/foto-text-zu-word/lernapp/`.
-Der Ordner `lernapp/` gehört fachlich NICHT zur Foto-Text-App im Repo-Root. Eine Trennung in ein eigenes Repo ist als Wunsch 10 im Backlog.
+Eigentümer: GitHub-Konto `mathiasweb-create`. Repo: `lernapp` (eigenes Repo, App im Wurzelordner). Live (GitHub Pages): `https://mathiasweb-create.github.io/lernapp/`.
+Die App wurde am 2026-11-24 aus dem Repo `foto-text-zu-word` (Foto-Text-App, unabhängig) herausgelöst (Wunsch 10, Verlauf erhalten).
 
 ## Arbeitsregeln des Nutzers (immer einhalten)
 - Antworten auf Deutsch, einfache Sprache, kurz. Bei Sprach- oder Diktatmodus nur das Nötigste.
@@ -34,12 +34,12 @@ Der Ordner `lernapp/` gehört fachlich NICHT zur Foto-Text-App im Repo-Root. Ein
 ```
 python3 -I tools/fetch_ris.py 10008470 /tmp/ris_bdg 4,10,11,20,38,39,43,43a,44,46,49,53,56,65,76,94,112,131
 python3 -I tools/build_data.py /tmp/ris_bdg daten/bdg.json
-python3 -m http.server 8123      # lokal testen (im Repo-Root), dann …/lernapp/ öffnen
+python3 -m http.server 8123      # lokal testen (im Repo-Wurzelordner), dann http://localhost:8123/ öffnen
 ```
 Fragen-IDs `bdg-<§>-<Nr>` nie umnummern, neue Fragen hinten anhängen (sonst passt der Lernfortschritt nicht). Neue Dateien in `sw.js` (`ASSETS`) eintragen und `VERSION` erhöhen.
 
 ## Stolpersteine in der Cloud-Umgebung
-- RIS-Texte nur über `data.bka.gv.at` und `ogd.ris.bka.gv.at` (Hosts in der Umgebung „foto-text-zu-word“ freigeschaltet). Die RIS-Webseite blockt Bots.
+- RIS-Texte nur über `data.bka.gv.at` und `ogd.ris.bka.gv.at` (Hosts in der Cloud-Umgebung freigeschaltet). Die RIS-Webseite blockt Bots.
 - `sleep` im Vordergrund ist gesperrt. Lange zusammengesetzte Shell-Befehle werden manchmal pauschal abgelehnt: einzeln ausführen, Dateien mit dem Schreib-Werkzeug anlegen.
 - `github.io` ist von der Umgebung aus nicht erreichbar (Live-Seite nur über die GitHub-API-Status oder den Nutzer prüfen).
 - Playwright ist vorinstalliert (`NODE_PATH=$(npm root -g) node test.js`). Python-Pakete per `pip install` möglich.
@@ -47,13 +47,10 @@ Fragen-IDs `bdg-<§>-<Nr>` nie umnummern, neue Fragen hinten anhängen (sonst pa
 - Gesetzestexte nie mit `head -n -1` o. ä. beschneiden, sonst fehlt der letzte Absatz (so ging § 44 Abs. 3 beim Lesen verloren). Immer die ganze Datei lesen oder `daten/bdg.json` (Feld `text`) nutzen.
 - Prüfen großer Mengen (alle Fragen gegen Gesetzestext, Code-Review) an stärkere Hilfsagenten delegieren (Modell Opus, nur lesen), Befunde danach selbst gegen den Gesetzestext gegenprüfen.
 
-## Stand (2026-11-24, ca. 21:35 UTC)
-- **Auf `main`:** Pull Request #1 (erste Fassung, vom Nutzer gemergt, live) und #2 (Wünsche 1 bis 8, `3605a76`, per API gemergt).
-- **Veröffentlichung von #2 ist NICHT erfolgt:** Seit dem Merge um 21:10 UTC gibt es keinen neuen GitHub-Pages-Lauf (letzter Lauf `795f386`). Die Live-Seite zeigt noch die Fassung von Pull Request #1 (ohne Wünsche 1 bis 8). Auslöser: Nutzer bearbeitet im Browser eine Datei auf `main` (z. B. `lernapp/README.md`) und bestätigt „Commit changes“, oder mergt den nächsten Pull Request selbst. Prüfen: Reiter „Actions“, Lauf „pages build and deployment“.
-- **Pull Request #3 (offen, sauber mergebar, Nutzer mergt selbst):** https://github.com/mathiasweb-create/foto-text-zu-word/pull/3 mit allem vom Arbeits-Branch `claude/iphone-learning-app-quiz-mgk932`: Übergabedatei, `tools/fetch_ris.py`, Wunsch 10 im Backlog, Korrekturen aus beiden Prüfungen. Erst nach dem Merge und der Veröffentlichung gilt der neue Stand auf der Live-Seite.
-- **Fachprüfung der Fragen (Opus-Agent):** abgeschlossen. 0 sachlich falsche Aussagen, 12 zu ungenaue und mehrere formale Befunde, alle geprüft und übernommen (30 Aussagen präzisiert, Gesetzestext-Darstellung bereinigt).
-- **Code-Prüfung (Opus-Agent):** abgeschlossen. 1 kritisch (Doppeltippen übersprang die Auflösung), 1 hoch, 11 mittel, 10 niedrig. Behoben und getestet: Doppeltipp-Schutz, Typprüfung der Speicherwerte, Hinweis bei gesperrtem Speicher, Link-Auswahl, Dunkelmodus-Kontrast, 16-px-Eingabefelder, Tippflächen, Fokusführung, Service Worker (`rt-v4`), `fetch_ris.py`, Lizenztext, Gruppen ab 10. **Nicht behoben (liegen in der Foto-Text-App, nicht angefasst):** deren Service Worker löscht beim Aktualisieren fremde Offline-Speicher (auch den des Rechtstrainers) und fängt Adressen unter `/lernapp/` offline ab. Erledigt sich durch Wunsch 10. Offen als Hinweis: Safari und installierte Home-Bildschirm-App haben auf iOS getrennten Speicher (README erwähnt es).
-- **Tests:** `/tmp`-Skripte sind nicht im Repo. Bei Bedarf neu schreiben (Playwright, lokaler Server auf Port 8123; Klicks auf „Prüfen“ und „Weiter“ brauchen mindestens 0,45 s Abstand wegen des Doppeltipp-Schutzes).
-- **Wünsche:** 1 bis 8 umgesetzt. 9 offen (Aufgabe des Nutzers: Zwei-Faktor-Anmeldung, keine Mitwirkenden, Regel für `main`). 10 (Apps trennen) besprochen, wartet auf Freigabe; Plan: leeres öffentliches Repo `rechtstrainer` legt der Nutzer selbst an, dann `lernapp/` samt Verlauf dorthin und im alten Repo entfernen. Neue Adresse `…github.io/rechtstrainer/`.
-- **Noch offen:** Test auf echtem iPhone und Stichprobe der Fragen durch den Nutzer; Organigramm der Abläufe liegt als privates Artefakt vor: https://claude.ai/artifact/DQNYxT7s9U4vBWsFMbtxK4
-- **Nächste mögliche Schritte:** Pull Request #3 mergen lassen, Apps trennen (Wunsch 10), StGB/SPG/VStG ergänzen, Wiederholungsintervalle.
+## Stand (2026-11-24, ca. 22:50 UTC)
+- **Apps getrennt (Wunsch 10):** Dieses Repo `lernapp` enthält den vollen Verlauf der App samt allen Korrekturen aus beiden Prüfungen (Stand des früheren Pull Requests #3). Adresse künftig `https://mathiasweb-create.github.io/lernapp/`. Alte Adresse (`…/foto-text-zu-word/lernapp/`) wird nicht weiter gepflegt.
+- **Noch zu tun vom Nutzer:** (1) in diesem Repo unter Settings → Pages die Quelle setzen (Deploy from a branch, `main`, Ordner `/ (root)`), (2) im alten Repo den Pull Request zum Entfernen von `lernapp/` mergen, (3) App auf dem iPhone neu zum Home-Bildschirm hinzufügen (neuer Speicher, alte Stacks gehen nicht mit).
+- **Fachprüfung der Fragen und Code-Prüfung (Opus):** abgeschlossen und umgesetzt (siehe Verlauf). Tests: Playwright, lokaler Server im Wurzelordner, Klicks auf „Prüfen“/„Weiter“ mit mindestens 0,45 s Abstand.
+- **Wünsche:** 1 bis 8 und 10 umgesetzt. 9 offen (Aufgabe des Nutzers: Zwei-Faktor-Anmeldung, keine Mitwirkenden, Regel für `main`).
+- **Noch offen:** Test auf echtem iPhone, Stichprobe der Fragen. Organigramm (privat): https://claude.ai/artifact/DQNYxT7s9U4vBWsFMbtxK4
+- **Nächste mögliche Schritte:** StGB/SPG/VStG ergänzen, Wiederholungsintervalle.
