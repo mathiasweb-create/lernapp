@@ -8,6 +8,11 @@ from fragen_bdg import FRAGEN
 
 ORDER = ["4","10","11","20","38","39","43","43a","44","46","49","53","56","65","76","94","112","131"]
 src, out = sys.argv[1], sys.argv[2]
+import json as _json
+try:
+    ABGERUFEN = _json.load(open(os.path.join(src, "meta.json"), encoding="utf-8"))["abgerufen"]   # schreibt fetch_ris.py
+except Exception:
+    raise SystemExit("meta.json im Textordner fehlt: Texte zuerst mit fetch_ris.py holen")
 
 def pretty(t):
     t = t.replace("GehGganz", "GehG ganz")
@@ -68,11 +73,11 @@ for n in ORDER:
     text = pretty(joined)
     qs = []
     for k, (ref, frage, stmts) in enumerate(FRAGEN[n]):
-        assert len(stmts) == 4, (n, k)
+        if len(stmts) != 4: raise SystemExit("Frage %s-%d: genau 4 Aussagen nötig" % (n, k + 1))
         s = []
         for st in stmts:
             w = bool(st[1]); korr = st[2] if len(st) > 2 else ""
-            assert (w and not korr) or ((not w) and korr), (n, k, st[0][:40])
+            if not ((w and not korr) or ((not w) and korr)): raise SystemExit("Frage %s-%d: falsche Aussagen brauchen eine Erklärung, richtige nicht: %s" % (n, k + 1, st[0][:40]))
             s.append({"t": st[0], "w": w, "k": korr})
         qs.append({"id": "bdg-%s-%d" % (n, k + 1), "ref": ref, "f": frage, "s": s})
     paras.append({"n": n, "label": "§ " + n, "title": title, "stand": stand, "text": text, "q": qs})
@@ -84,18 +89,18 @@ GRUPPEN = [
   ("Urlaub & Freistellung", ["65","76"]),
   ("Disziplinarrecht", ["94","112","131"]),
 ]
-assert sorted(sum([g[1] for g in GRUPPEN], [])) == sorted(ORDER)
+if sorted(sum([g[1] for g in GRUPPEN], [])) != sorted(ORDER): raise SystemExit("Gruppen und Paragrafenliste passen nicht zusammen")
 
 data = {
   "gesetz": "BDG",
   "name": "Beamten-Dienstrechtsgesetz 1979",
   "quelle": "RIS – Bundesrecht konsolidiert (data.bka.gv.at, Gesetzesnummer 10008470)",
-  "abgerufen": "2026-11-24",
+  "abgerufen": ABGERUFEN,
   "gruppen": [{"name": g[0], "paras": g[1]} for g in GRUPPEN],
   "paragrafen": paras,
 }
 os.makedirs(os.path.dirname(out), exist_ok=True)
 json.dump(data, open(out, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 missing = [a for a,b in FIXES + RFIXES if a not in USED]
-assert not missing, ("Korrektur ohne Treffer", missing)
+if missing: raise SystemExit("Korrektur ohne Treffer: %r" % (missing,))
 print(len(paras), "Paragrafen,", sum(len(p["q"]) for p in paras), "Fragen")

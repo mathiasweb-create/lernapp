@@ -11,6 +11,7 @@ Multiple-Choice-Training für Gesetzestexte. Läuft im Browser, lässt sich auf 
 - **Frage:** Konkrete Fragestellung im Kasten, 4 Aussagen, alle zutreffenden ankreuzen. Danach Auflösung mit Erklärung bei falschen Aussagen und dem Gesetzestext.
 - **Stacks:** Paragrafen-Auswahl unter einem Namen speichern, laden, löschen und per Link teilen.
 - **Statistik:** Lernstand je Themenfeld, Fortschritt zurücksetzen, gemeldete Fragen kopieren.
+- **Safari und Home-Bildschirm-App sind getrennt:** Auf dem iPhone haben Safari und die installierte App je einen eigenen Speicher. Stacks, Fortschritt und eine über einen Link übernommene Auswahl gelten nur dort, wo sie angelegt wurden. Am besten Stacks nur in der Home-Bildschirm-App anlegen.
 - **Teilen** (Symbol oben rechts): App-Link per Teilen-Menü des iPhones, Link kopieren oder QR-Code. Optional mit Paragrafenauswahl: `…/lernapp/#BDG:4,10,43a`.
 
 ## Punkte pro Frage (immer 4 Aussagen, 0 bis 4 richtig möglich)
@@ -21,8 +22,8 @@ Multiple-Choice-Training für Gesetzestexte. Läuft im Browser, lässt sich auf 
 ## Inhalt
 - `index.html` – gesamte App (Oberfläche, Logik). `sw.js` – Offline-Cache (Netz zuerst, sonst Cache). `manifest.webmanifest`, Icons.
 - `daten/bdg.json` – BDG 1979, §§ 4, 10, 11, 20, 38, 39, 43, 43a, 44, 46, 49, 53, 56, 65, 76, 94, 112, 131 (Gesetzestext aus dem RIS, 56 Fragen).
-- `tools/fragen_bdg.py` – Fragen (Quelltext). `tools/build_data.py` baut daraus die JSON-Datei. `tools/make_icons.py` – Icons.
-- `vendor/qrcode.js` – QR-Generator „qrcode-generator“ von Kazuhiko Arase (MIT-Lizenz), lokal eingebunden, damit die App ohne Fremdserver läuft.
+- `tools/fetch_ris.py` – holt die Gesetzestexte aus dem RIS. `tools/fragen_bdg.py` – Fragen (Quelltext). `tools/build_data.py` baut daraus die JSON-Datei (Abrufdatum kommt aus `meta.json`). `tools/make_icons.py` – Icons.
+- `vendor/qrcode.js` – QR-Generator „qrcode-generator“ von Kazuhiko Arase (MIT-Lizenz, Text in `vendor/qrcode.LICENSE`), lokal eingebunden, damit die App ohne Fremdserver läuft.
 - `BACKLOG.md` – Änderungswünsche und Stand der Umsetzung.
 - StGB, SPG, VStG: in der App als „bald“ vorgesehen.
 

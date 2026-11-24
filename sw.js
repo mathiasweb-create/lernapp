@@ -1,7 +1,7 @@
 // Offline-Cache für den Rechtstrainer.
 // Strategie: erst Netz (max. 3 s), sonst Cache -> Änderungen sind sofort beim nächsten Öffnen da, Offline funktioniert trotzdem.
 // Bei neuen Dateien oder umbenannten Pfaden VERSION erhöhen.
-const VERSION = 'rt-v3';
+const VERSION = 'rt-v4';
 const ASSETS = ['./', 'index.html', 'manifest.webmanifest', 'icon-180.png', 'icon-192.png', 'icon-512.png', 'daten/bdg.json', 'vendor/qrcode.js'];
 
 self.addEventListener('install', e => {
@@ -17,7 +17,12 @@ self.addEventListener('fetch', e => {
   if (req.method !== 'GET' || new URL(req.url).origin !== location.origin) return;
   e.respondWith(caches.open(VERSION).then(cache => {
     const fromCache = () => cache.match(req, {ignoreSearch: true});
-    const net = fetch(req, {cache: 'no-cache'}).then(res => { if (res.ok) cache.put(req, res.clone()); return res; });
+    // Fehlerantworten (404, 503 …) dürfen eine gute Kopie im Cache nicht verdrängen.
+    const net = fetch(req, {cache: 'no-cache'}).then(res => {
+      if (res.ok) { cache.put(req, res.clone()).catch(() => {}); return res; }
+      return fromCache().then(hit => hit || res);
+    });
+    net.catch(() => {});
     const timeout = new Promise((_, rej) => setTimeout(() => rej(new Error('timeout')), 3000));
     return Promise.race([net, timeout]).catch(() => fromCache().then(hit => hit || net));
   }));
