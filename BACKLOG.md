@@ -21,6 +21,15 @@
 | 8 | 2026-11-24 | **Stack teilen:** Link enthält die Paragrafenauswahl. | umgesetzt | Format `#BDG:4,10,43a`, nur Auswahl, nie Fortschritt; ungültige Angaben werden abgefangen. |
 | 9 | 2026-11-24 | **Nur der Eigentümer darf die App verändern.** | offen (Aufgabe des Eigentümers) | GitHub-Einstellungen: Zwei-Faktor-Anmeldung, keine Mitwirkenden, Regel für `main` (Pull Request verlangen, Force-Push und Löschen blockieren). Code bleibt öffentlich. |
 | 10 | 2026-11-24 | **Apps trennen:** Die Foto-Text-App hat nichts mit dem Rechtstrainer zu tun und soll separat liegen. | umgesetzt (2026-11-24) | Eigenes öffentliches Repo `lernapp` mit vollem Verlauf, die App liegt im Repo-Wurzelordner. Neue Adresse `https://mathiasweb-create.github.io/lernapp/`. Im alten Repo wird `lernapp/` entfernt. Jetzt günstig, da noch keine Links verteilt sind. |
+| 11 | 2026-11-24 | **Verweise auf andere Gesetze** in den Antwortmöglichkeiten (z. B. „§ 302 StGB“, „AVG“): Antippen öffnet ein Pop-up mit kurzer Beschreibung. Verweise mit dieser Funktion werden **strichliert unterstrichen**. | neu | Brainstorm offen (siehe unten). |
+
+## Brainstorm zu Wunsch 11 (noch nicht umgesetzt)
+- **Frage an den Nutzer:** „Strichliert unterstreichen, wenn die Funktion angewendet wird“ – gemeint ist vermutlich: jeder Verweis, der ein Pop-up hat, ist dauerhaft strichliert unterstrichen (zeigt, dass er antippbar ist). Oder erst nach dem Antippen?
+- **Inhalt:** Die Kurzbeschreibungen müssen einmal von Hand (oder aus RIS) erstellt werden, am besten als eigene Datei `daten/verweise.json` (Kürzel → Titel, 1 bis 2 Sätze, Link zum RIS). Erst ermitteln, welche Verweise in den 56 Fragen überhaupt vorkommen.
+- **Technik:** Verweise im Fragentext markieren (z. B. `{{StGB §302}}`), beim Anzeigen automatisch in antippbare Elemente umwandeln. Pop-up lokal und offline, keine Fremdserver.
+- **Stolperstein:** Aussagen sind selbst antippbar (Ankreuzen). Antippen des Verweises darf die Aussage nicht an- oder abwählen (Klick abfangen).
+- **Frage:** Pop-up schon vor der Antwort erlauben? Das verrät evtl. Lösungshinweise; Alternative: Beschreibung nur allgemein halten (was regelt das Gesetz), nie bewerten.
+- **Später nützlich:** Dieselbe Verweis-Liste für künftige Gesetze (StGB, SPG, VStG) wiederverwenden.
 
 ## Umgesetzt
 Wünsche 1 bis 8 am 2026-11-24 in einem Durchgang umgesetzt und getestet (Punktelogik bei allen 56 Fragen, Gruppen, Stacks, Teilen, QR, Link-Auswahl, Offline).
