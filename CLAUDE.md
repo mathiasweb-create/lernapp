@@ -47,9 +47,10 @@ Fragen-IDs `bdg-<§>-<Nr>` nie umnummern, neue Fragen hinten anhängen (sonst pa
 - Gesetzestexte nie mit `head -n -1` o. ä. beschneiden, sonst fehlt der letzte Absatz (so ging § 44 Abs. 3 beim Lesen verloren). Immer die ganze Datei lesen oder `daten/bdg.json` (Feld `text`) nutzen.
 - Prüfen großer Mengen (alle Fragen gegen Gesetzestext, Code-Review) an stärkere Hilfsagenten delegieren (Modell Opus, nur lesen), Befunde danach selbst gegen den Gesetzestext gegenprüfen.
 
-## Stand (2026-11-24, ca. 22:50 UTC)
+## Stand (2026-11-24, ca. 23:05 UTC)
 - **Apps getrennt (Wunsch 10):** Dieses Repo `lernapp` enthält den vollen Verlauf der App samt allen Korrekturen aus beiden Prüfungen (Stand des früheren Pull Requests #3). Adresse künftig `https://mathiasweb-create.github.io/lernapp/`. Alte Adresse (`…/foto-text-zu-word/lernapp/`) wird nicht weiter gepflegt.
-- **Noch zu tun vom Nutzer:** (1) in diesem Repo unter Settings → Pages die Quelle setzen (Deploy from a branch, `main`, Ordner `/ (root)`), (2) im alten Repo den Pull Request zum Entfernen von `lernapp/` mergen, (3) App auf dem iPhone neu zum Home-Bildschirm hinzufügen (neuer Speicher, alte Stacks gehen nicht mit).
+- **Noch zu tun vom Nutzer:** (1) Pages einschalten: Safari, Desktop-Ansicht, `https://github.com/mathiasweb-create/lernapp/settings/pages`, Source „Deploy from a branch“, `main`, `/ (root)`, Save (in der GitHub-App nicht möglich); (2) im alten Repo `foto-text-zu-word` den Pull Request #3 selbst mergen (entfernt `lernapp/` dort, Arbeits-Branch `claude/iphone-learning-app-quiz-mgk932`, letzter Commit `d5e5f53`); (3) App auf dem iPhone neu zum Home-Bildschirm hinzufügen (neuer Speicher).
+- **Arbeitsort:** Dieses Repo liegt in der Cloud-Sitzung unter `/home/user/lernapp`. Entwicklungs-Branch in diesem Repo: `main` (Nutzer hat die Trennung ausdrücklich freigegeben). Künftige Änderungen: Branch, Pull Request, Nutzer mergt selbst.
 - **Fachprüfung der Fragen und Code-Prüfung (Opus):** abgeschlossen und umgesetzt (siehe Verlauf). Tests: Playwright, lokaler Server im Wurzelordner, Klicks auf „Prüfen“/„Weiter“ mit mindestens 0,45 s Abstand.
 - **Wünsche:** 1 bis 8 und 10 umgesetzt. 9 offen (Aufgabe des Nutzers: Zwei-Faktor-Anmeldung, keine Mitwirkenden, Regel für `main`).
 - **Noch offen:** Test auf echtem iPhone, Stichprobe der Fragen. Organigramm (privat): https://claude.ai/artifact/DQNYxT7s9U4vBWsFMbtxK4
