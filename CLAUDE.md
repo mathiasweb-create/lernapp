@@ -13,6 +13,7 @@ Der Ordner `lernapp/` gehört fachlich NICHT zur Foto-Text-App im Repo-Root. Ein
 - Grafiken: modern, nüchtern, kompakt, einfach, übersichtlich.
 - **Änderungswünsche zuerst nur im `BACKLOG.md` sammeln.** Vor jeder Umsetzung ein Brainstorm (Verbesserungen, Fehler). Gebaut wird erst nach dem ausdrücklichen Kommando „umsetzen“.
 - Nach Änderungen: testen, committen, auf den Entwicklungsbranch pushen. Pull Request erstellen oder mergen nur, wenn der Nutzer es verlangt.
+- **Stand in dieser Datei immer vor einer Verdichtung des Kontexts aktualisieren** (Wunsch des Nutzers; der Nutzer hat die automatische Verdichtung auf etwa die Hälfte des Fensters, 500k Token, gestellt). Konkret: nach jedem Meilenstein (Merge, Push, abgeschlossene Prüfung) den Abschnitt „Stand“ erneuern und pushen, nicht erst kurz vor Schluss. Den genauen Füllstand kann der Assistent nicht messen.
 - Der Nutzer will sich an Fachbegriffe gewöhnen (implementieren, Branch, Pull Request, Merge, Deployment). Begriffe kurz erklären.
 
 ## Entscheidungen (nicht erneut diskutieren)
