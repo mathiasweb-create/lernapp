@@ -20,6 +20,7 @@
 | 7 | 2026-11-24 | **Teilen-Button:** Link der App teilen und versenden. | umgesetzt | Teilen-Menü des iPhones, Kopieren, QR-Code (lokal eingebunden). |
 | 8 | 2026-11-24 | **Stack teilen:** Link enthält die Paragrafenauswahl. | umgesetzt | Format `#BDG:4,10,43a`, nur Auswahl, nie Fortschritt; ungültige Angaben werden abgefangen. |
 | 9 | 2026-11-24 | **Nur der Eigentümer darf die App verändern.** | offen (Aufgabe des Eigentümers) | GitHub-Einstellungen: Zwei-Faktor-Anmeldung, keine Mitwirkenden, Regel für `main` (Pull Request verlangen, Force-Push und Löschen blockieren). Code bleibt öffentlich. |
+| 10 | 2026-11-24 | **Apps trennen:** Die Foto-Text-App hat nichts mit dem Rechtstrainer zu tun und soll separat liegen. | besprochen (Plan steht, wartet auf Freigabe) | Plan: eigenes Repo `rechtstrainer` (öffentlich), `lernapp/` samt Verlauf dorthin, im alten Repo entfernen. Neue Adresse `https://mathiasweb-create.github.io/rechtstrainer/`. Jetzt günstig, da noch keine Links verteilt sind. |
 
 ## Umgesetzt
 Wünsche 1 bis 8 am 2026-11-24 in einem Durchgang umgesetzt und getestet (Punktelogik bei allen 56 Fragen, Gruppen, Stacks, Teilen, QR, Link-Auswahl, Offline).
