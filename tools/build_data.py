@@ -20,6 +20,27 @@ def pretty(t):
     t = re.sub(r"\n{2,}", "\n", t)
     return t.strip()
 
+# Darstellungsfehler im RIS-Rohtext (verklebte Wörter, verlorene Gedankenstriche, Schlusssätze nach Aufzählungen)
+FIXES = [
+  ("bestraft wurde,und dies", "bestraft wurde,\nund dies"),
+  ("übersteigt.Das Dienstverhältnis wird jedoch", "übersteigt.\nDas Dienstverhältnis wird jedoch"),
+  ("hatten,tätig zu werden", "hatten,\ntätig zu werden"),
+  ("Reisegebühren,nicht zu berücksichtigen", "Reisegebühren,\nnicht zu berücksichtigen"),
+  ("eines anderenerforderlich", "eines anderen\nerforderlich"),
+  ("selbstgelegenen", "selbst gelegenen"),
+  ("befindet,darf eine", "befindet,\ndarf eine"),
+  ("Verwaltungsstrafverfahrensbei der", "Verwaltungsstrafverfahrens\nbei der"),
+  ("aufsichtsbehörde.Im Verfahren vor der Bundesdisziplinarbehörde im PTA-Bereich", "aufsichtsbehörde.\nIm Verfahren vor der Bundesdisziplinarbehörde im PTA-Bereich"),
+  ("wird  sofern der", "wird – sofern der"),
+  ("Verfahren ist  gehemmt", "Verfahren ist – gehemmt"),
+]
+# Muster mit Platzhaltern für unsichtbare Sonderzeichen (z. B. geschützte Leerzeichen)
+RFIXES = [
+  (r"(§\s*76)gekündigt", r"\1 gekündigt"),
+  (r"(\S)\s{2,}unbeschadet des (§\s*74)\s{2,}Anspruch", r"\1 – unbeschadet des \2 – Anspruch"),
+]
+USED = set()
+
 paras = []
 for n in ORDER:
     raw = open(os.path.join(src, n + ".txt"), encoding="utf-8").read().split("\n")
@@ -36,9 +57,15 @@ for n in ORDER:
     rest = body[pi + 1:]
     joined = "\n".join(rest)
     joined = re.split(r"Schlagworte\n|Zuletzt aktualisiert", joined)[0]
+    for a, b in FIXES:
+        if a in joined:
+            joined = joined.replace(a, b); USED.add(a)
+    for a, b in RFIXES:
+        if re.search(a, joined):
+            joined = re.sub(a, b, joined); USED.add(a)
+    joined = re.sub(r"\s*…+\.?\s*\n?", ": ", joined)                 # Fristen-Tabelle (§ 10 Abs. 2): Punktlinien -> Doppelpunkt
+    joined = re.sub(r"(?<=[a-zäöüß])\.(?=Z \d)", ".\n", joined)    # „…Zentralstelle.Z 1 und 2“
     text = pretty(joined)
-    if n == "38":
-        text += "\n(Die Tabelle zur Verwendungsgruppen-Zusammenfassung in Abs. 10 ist hier nicht abgebildet – siehe RIS.)"
     qs = []
     for k, (ref, frage, stmts) in enumerate(FRAGEN[n]):
         assert len(stmts) == 4, (n, k)
@@ -69,4 +96,6 @@ data = {
 }
 os.makedirs(os.path.dirname(out), exist_ok=True)
 json.dump(data, open(out, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+missing = [a for a,b in FIXES + RFIXES if a not in USED]
+assert not missing, ("Korrektur ohne Treffer", missing)
 print(len(paras), "Paragrafen,", sum(len(p["q"]) for p in paras), "Fragen")

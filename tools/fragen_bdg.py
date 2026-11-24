@@ -8,7 +8,7 @@ T, F = True, False
 
 FRAGEN = {
 "4": [
- ("Abs. 1, 1b", "Welche Aussagen zu den allgemeinen Ernennungserfordernissen im Bundesdienst treffen zu?", [
+ ("Abs. 1", "Welche Aussagen zu den allgemeinen Ernennungserfordernissen im Bundesdienst treffen zu?", [
   ("Bei Verwendungen gemäß § 42a ist die österreichische Staatsbürgerschaft ein allgemeines Ernennungserfordernis.", T),
   ("Bei sonstigen Verwendungen genügt statt der österreichischen Staatsbürgerschaft auch der unbeschränkte Zugang zum österreichischen Arbeitsmarkt.", T),
   ("Beim Eintritt in den Bundesdienst genügt ein Lebensalter von mindestens 16 Jahren, wenn die künftige Verwendung keine besonderen Anforderungen stellt.", F,
@@ -40,7 +40,7 @@ FRAGEN = {
    "Es ist umgekehrt: In der Probezeit beträgt die Frist 1 Kalendermonat, danach 2 und nach Vollendung des zweiten Dienstjahres 3 Kalendermonate (§ 10 Abs. 2)."),
   ("Nach Vollendung des zweiten Dienstjahres beträgt die Kündigungsfrist drei Kalendermonate.", T),
  ]),
- ("Abs. 2, 3", "Unter welchen Voraussetzungen kann das provisorische Dienstverhältnis in und nach der Probezeit gekündigt werden?", [
+ ("Abs. 2, 3", "Was gilt für Kündigung, Kündigungsfrist und Probezeit im provisorischen Dienstverhältnis?", [
   ("Während der Probezeit ist die Kündigung ohne Angabe von Gründen möglich.", T),
   ("Nach der Probezeit ist die Kündigung nur mit Angabe des Grundes möglich.", T),
   ("Die Kündigungsfrist endet jeweils mit Ablauf des Kalendervierteljahres, in dem die Kündigung zugestellt wurde.", F,
@@ -56,7 +56,7 @@ FRAGEN = {
    "Das Gesetz nennt die Gründe „insbesondere“, die Aufzählung ist also nur beispielhaft (§ 10 Abs. 4)."),
  ]),
  ("Abs. 2, 3, 7", "Welche Aussagen zu Kündigungsfrist, Probezeit und Beweislast sind richtig?", [
-  ("Nach Ablauf der Probezeit beträgt die Kündigungsfrist drei Kalendermonate.", F,
+  ("Unmittelbar nach Ablauf der Probezeit, noch vor Vollendung des zweiten Dienstjahres, beträgt die Kündigungsfrist drei Kalendermonate.", F,
    "Nach der Probezeit beträgt sie 2 Kalendermonate, drei erst nach Vollendung des zweiten Dienstjahres (§ 10 Abs. 2)."),
   ("Die Probezeit umfasst die ersten drei Monate des Dienstverhältnisses.", F,
    "Die Probezeit umfasst die ersten sechs Monate (§ 10 Abs. 2)."),
@@ -83,7 +83,7 @@ FRAGEN = {
   ("Bei der Einrechnung von Vordienstzeiten in das provisorische Dienstverhältnis ist auf die bisherige Berufslaufbahn im Hinblick auf die vorgesehene Verwendung Bedacht zu nehmen.", T),
  ]),
  ("Abs. 5", "Wie wirkt sich ein Disziplinarverfahren auf die Definitivstellung aus?", [
-  ("Die Definitivstellung tritt während eines Disziplinarverfahrens und bis zu drei Monate nach dessen rechtskräftigem Abschluss nicht ein.", T),
+  ("Grundsätzlich tritt die Definitivstellung während eines Disziplinarverfahrens und bis zu drei Monate nach dessen rechtskräftigem Abschluss nicht ein.", T),
   ("Wird das Disziplinarverfahren eingestellt oder der Beamte freigesprochen, bleibt die Definitivstellung dauerhaft ausgeschlossen.", F,
    "In diesen Fällen tritt die Definitivstellung rückwirkend ein (§ 11 Abs. 5)."),
   ("Die Definitivstellung tritt bis zu sechs Monate nach rechtskräftigem Abschluss des Disziplinarverfahrens nicht ein.", F,
@@ -102,7 +102,7 @@ FRAGEN = {
  ("Abs. 1 Z 3a, 4, 5", "Welche strafrechtlichen und staatsbürgerschaftlichen Umstände lösen das Dienstverhältnis auf?", [
   ("Eine rechtskräftige Verurteilung durch ein inländisches Gericht wegen eines ab dem 1. Jänner 2013 begangenen Vorsatzdelikts gemäß den §§ 92, 201 bis 217, 312 und 312a StGB löst das Dienstverhältnis auf.", T),
   ("Jede rechtskräftige Verurteilung durch ein inländisches Gericht zu einer unbedingten Freiheitsstrafe löst das Dienstverhältnis auf.", F,
-   "Z 3a verlangt ein Vorsatzdelikt nach den genannten Bestimmungen. Sonstige Verurteilungen führen nur über den Amtsverlust nach Z 4 zur Auflösung (§ 20 Abs. 1)."),
+   "Kraft Gesetzes lösen nur Verurteilungen wegen der in Z 3a genannten Vorsatzdelikte oder mit Amtsverlust nach § 27 Abs. 1 StGB (Z 4) das Dienstverhältnis auf (§ 20 Abs. 1 Z 3a und 4)."),
   ("Der Amtsverlust gemäß § 27 Abs. 1 StGB löst das Dienstverhältnis auf.", T),
   ("Das Dienstverhältnis wird auch durch den Verlust der österreichischen Staatsbürgerschaft bei Verwendungen gemäß § 42a aufgelöst.", T),
  ]),
@@ -115,7 +115,7 @@ FRAGEN = {
   ("Beim Beamten des Ruhestandes wird das Dienstverhältnis wegen der Verurteilung auch dann aufgelöst, wenn diese Rechtsfolge bedingt nachgesehen wird.", F,
    "Das Dienstverhältnis wird nicht aufgelöst, wenn diese Rechtsfolge bedingt nachgesehen wird, es sei denn, die Nachsicht wird widerrufen (§ 20 Abs. 2)."),
  ]),
- ("Abs. 3a, 3b", "Welche Beschränkungen gelten nach Auflösung des Dienstverhältnisses für eine neue Tätigkeit?", [
+ ("Abs. 3a", "Welche Beschränkungen gelten nach Auflösung des Dienstverhältnisses für eine neue Tätigkeit?", [
   ("Nach der Auflösung des Dienstverhältnisses darf die Beamtin oder der Beamte bei jedem Rechtsträger sofort tätig werden, Beschränkungen sieht das Gesetz nicht vor.", F,
    "Für die Dauer von sechs Monaten ist unter bestimmten Voraussetzungen die Tätigkeit für gewisse Rechtsträger untersagt (§ 20 Abs. 3a)."),
   ("Bei Zuwiderhandeln gegen das Tätigkeitsverbot nach Abs. 3a ist eine Konventionalstrafe in Höhe des Dreifachen des für den letzten Monat gebührenden Monatsbezuges zu leisten.", T),
@@ -125,7 +125,7 @@ FRAGEN = {
    "Maßgeblich ist ein Zeitraum von zwölf Monaten vor der Auflösung des Dienstverhältnisses (§ 20 Abs. 3a Z 2)."),
  ]),
  ("Abs. 4, 5", "Welche Regeln gelten für den Ersatz von Ausbildungskosten bei Auflösung des Dienstverhältnisses?", [
-  ("Bei Auflösung nach Abs. 1 Z 1 bis 5 sind dem Bund die Ausbildungskosten zu ersetzen.", T),
+  ("Bei Auflösung nach Abs. 1 Z 1 bis 5 sind dem Bund die Ausbildungskosten grundsätzlich zu ersetzen (Entfall nur in den Fällen des Abs. 4 Z 1 und 2).", T),
   ("Der Ersatz der Ausbildungskosten reduziert sich pro vollendetem Monat des Dienstverhältnisses nach Beendigung der Ausbildung um ein Achtundvierzigstel.", T),
   ("Bei Pilotinnen und Piloten reduziert sich der Ersatz der Ausbildungskosten pro vollendetem Monat um ein Sechsundneunzigstel.", T),
   ("Der Anspruch auf Ersatz der Ausbildungskosten verjährt nach fünf Jahren ab der Auflösung.", F,
@@ -159,8 +159,8 @@ FRAGEN = {
  ]),
  ("Abs. 7, 8", "Was gilt für Form und Wirkung des Versetzungsbescheids und für den neuen Dienstort?", [
   ("Die Versetzung ist mit Bescheid zu verfügen.", T),
-  ("Eine Beschwerde gegen diesen Bescheid hat keine aufschiebende Wirkung.", T),
-  ("Der vom Beamten zuletzt innegehabte Arbeitsplatz darf bis zur Rechtskraft des Bescheides nicht auf Dauer besetzt werden.", T),
+  ("Eine Beschwerde gegen den Versetzungsbescheid hat keine aufschiebende Wirkung.", T),
+  ("Der vom Beamten zuletzt innegehabte Arbeitsplatz darf bis zur Rechtskraft des Versetzungsbescheides nicht auf Dauer besetzt werden.", T),
   ("Bei Versetzung an einen anderen Dienstort ist dem Beamten eine angemessene Übersiedlungsfrist zu gewähren.", T),
  ]),
 ],
@@ -168,7 +168,7 @@ FRAGEN = {
  ("Abs. 1, 2", "Unter welchen Voraussetzungen ist eine Dienstzuteilung zulässig?", [
   ("Eine Dienstzuteilung liegt vor, wenn der Beamte vorübergehend einer anderen Dienststelle zur Dienstleistung zugewiesen und mit Aufgaben eines in der Geschäftseinteilung vorgesehenen Arbeitsplatzes betraut wird.", T),
   ("Eine Dienstzuteilung ist nur aus dienstlichen Gründen zulässig.", T),
-  ("Ohne schriftliche Zustimmung des Beamten darf sie höchstens für insgesamt 90 Tage in einem Kalenderjahr ausgesprochen werden.", T),
+  ("Ohne schriftliche Zustimmung des Beamten darf eine Dienstzuteilung grundsätzlich höchstens für insgesamt 90 Tage in einem Kalenderjahr ausgesprochen werden (Ausnahmen nach Abs. 3).", T),
   ("Ohne schriftliche Zustimmung des Beamten darf jede einzelne Dienstzuteilung höchstens 90 Tage dauern, unabhängig von der Zahl der Zuteilungen im Kalenderjahr.", F,
    "Die 90 Tage gelten insgesamt in einem Kalenderjahr, nicht pro Zuteilung (§ 39 Abs. 2)."),
  ]),
@@ -177,7 +177,7 @@ FRAGEN = {
   ("Über 90 Tage im Kalenderjahr hinaus ist eine Dienstzuteilung ohne Zustimmung des Beamten zulässig, wenn sie zum Zwecke einer Ausbildung erfolgt.", T),
   ("Über 90 Tage im Kalenderjahr hinaus ist eine Dienstzuteilung ohne Zustimmung des Beamten zulässig, wenn ihm ein höherwertiger Arbeitsplatz zugewiesen wird.", F,
    "Ohne Zustimmung über 90 Tage hinaus nur, wenn der Dienstbetrieb sonst nicht aufrechterhalten werden kann oder zum Zweck einer Ausbildung (§ 39 Abs. 3)."),
-  ("Bei einer Dienstzuteilung an einen anderen Dienstort ist außerdem auf die persönlichen, familiären und sozialen Verhältnisse Bedacht zu nehmen.", T),
+  ("Bei einer Dienstzuteilung an einen anderen Dienstort ist neben der bisherigen Verwendung und dem Dienstalter auch auf die persönlichen, familiären und sozialen Verhältnisse Bedacht zu nehmen.", T),
  ]),
 ],
 "43": [
@@ -189,7 +189,7 @@ FRAGEN = {
   ("Der Beamte hat die Parteien im Rahmen seiner dienstlichen Aufgaben zu unterstützen und zu informieren, soweit es mit den Interessen des Dienstes und dem Gebot der Unparteilichkeit der Amtsführung vereinbar ist.", T),
  ]),
  ("Abs. 2, 4", "Was verlangt das Gesetz zu Vertrauen der Allgemeinheit, Interessenkonflikten und Diskriminierung?", [
-  ("Das gesamte Verhalten ist darauf Bedacht zu nehmen, dass das Vertrauen der Allgemeinheit in die sachliche Wahrnehmung der dienstlichen Aufgaben erhalten bleibt.", T),
+  ("Die Beamtin oder der Beamte hat in ihrem oder seinem gesamten Verhalten darauf Bedacht zu nehmen, dass das Vertrauen der Allgemeinheit in die sachliche Wahrnehmung der dienstlichen Aufgaben erhalten bleibt.", T),
   ("Tatsächliche und vermeintliche Interessenkonflikte sind unabhängig von der Zumutbarkeit zu vermeiden.", F,
    "Interessenkonflikte sind zu vermeiden, soweit dies zumutbar ist (§ 43 Abs. 2)."),
   ("Ein Interessenkonflikt liegt nur vor, wenn die Aufgaben tatsächlich nicht unvoreingenommen wahrgenommen werden, ein bloßer Anschein genügt nicht.", F,
@@ -218,7 +218,7 @@ FRAGEN = {
 "44": [
  ("Abs. 1, 2", "Wann ist eine Weisung zu befolgen und wann darf der Beamte die Befolgung ablehnen?", [
   ("Der Beamte hat seine Vorgesetzten zu unterstützen und ihre Weisungen zu befolgen, soweit verfassungsgesetzlich nicht anderes bestimmt ist.", T),
-  ("Vorgesetzter ist jeder Organwalter, der mit der Dienst- und Fachaufsicht über den Beamten betraut ist.", F,
+  ("Vorgesetzter ist nur, wer sowohl mit der Dienst- als auch mit der Fachaufsicht über den Beamten betraut ist.", F,
    "Es genügt die Dienst- oder Fachaufsicht, das Gesetz sagt „oder“ (§ 44 Abs. 1)."),
   ("Die Befolgung einer Weisung kann abgelehnt werden, wenn sie von einem unzuständigen Organ erteilt worden ist.", T),
   ("Der Beamte kann die Befolgung einer Weisung ablehnen, wenn sie gegen irgendeine Verwaltungsvorschrift verstoßen würde.", F,
@@ -231,12 +231,12 @@ FRAGEN = {
   ("Vorgesetzter ist nur, wer Dienststellenleiter ist.", F,
    "Vorgesetzter ist jeder Organwalter mit Dienst- oder Fachaufsicht, nicht nur der Dienststellenleiter (§ 44 Abs. 1)."),
   ("Die Pflicht zur Befolgung besteht nur bei schriftlichen Weisungen.", F,
-   "Das Gesetz knüpft die Befolgungspflicht nicht an eine schriftliche Form (§ 44 Abs. 1)."),
+   "Weisungen sind grundsätzlich auch mündlich zu befolgen (§ 44 Abs. 1). Nur wenn der Beamte Bedenken mitgeteilt hat, muss die Weisung schriftlich erteilt werden, sonst gilt sie als zurückgezogen (§ 44 Abs. 3)."),
  ]),
 ],
 "46": [
  ("Abs. 1", "Was ist geheim zu halten und aus welchen Gründen?", [
-  ("Der Beamte hat ausschließlich aus seiner amtlichen Tätigkeit bekannt gewordene Tatsachen geheim zu halten, soweit und solange dies erforderlich und verhältnismäßig ist.", T),
+  ("Der Beamte hat die ihm ausschließlich aus seiner amtlichen Tätigkeit bekannt gewordenen Tatsachen geheim zu halten, soweit und solange dies aus einem der in Abs. 1 genannten Gründe erforderlich und verhältnismäßig ist.", T),
   ("Ein Geheimhaltungsgrund ist ausschließlich das Interesse der nationalen Sicherheit.", F,
    "Abs. 1 nennt sieben Gründe, darunter nationale Sicherheit, Landesverteidigung, öffentliche Ordnung und die Vorbereitung einer Entscheidung (§ 46 Abs. 1)."),
   ("Ein Geheimhaltungsgrund ist die Vorbereitung einer Entscheidung.", T),
@@ -260,7 +260,7 @@ FRAGEN = {
  ]),
 ],
 "49": [
- ("Abs. 1", "Wann sind nicht angeordnete Mehrdienstleistungen angeordneten gleichzuhalten?", [
+ ("Abs. 1", "Was gilt für angeordnete und nicht angeordnete Mehrdienstleistungen?", [
   ("Der Beamte hat über die im Dienstplan vorgeschriebenen Dienststunden hinaus nur dann Dienst zu versehen, wenn er der Anordnung zustimmt.", F,
    "Er hat auf Anordnung über die vorgeschriebenen Dienststunden hinaus Dienst zu versehen (Mehrdienstleistung), eine Zustimmung ist nicht vorgesehen (§ 49 Abs. 1)."),
   ("Nicht angeordnete Mehrdienstleistungen sind gleichzuhalten, wenn der Beamte sie spätestens innerhalb einer Woche nach Erbringung schriftlich meldet (und die übrigen Voraussetzungen vorliegen).", T),
@@ -270,7 +270,7 @@ FRAGEN = {
    "Voraussetzung ist unter anderem, dass die Notwendigkeit nicht auf Umstände zurückgeht, die der Beamte hätte vermeiden können (§ 49 Abs. 1 Z 3)."),
  ]),
  ("Abs. 2, 3", "Wie sind Mehrdienstleistungen auszugleichen und wann werden sie zu Überstunden?", [
-  ("An Werktagen erbrachte Mehrdienstleistungen sind nach Möglichkeit im selben Kalendervierteljahr im Verhältnis 1 : 1 in Freizeit auszugleichen.", T),
+  ("An Werktagen erbrachte Mehrdienstleistungen (ausgenommen jene nach § 47a Z 2 lit. b) sind nach Möglichkeit im selben Kalendervierteljahr im Verhältnis 1 : 1 in Freizeit auszugleichen.", T),
   ("Mehrdienstleistungen an Sonn- und Feiertagen sind nicht durch Freizeit auszugleichen.", T),
   ("Werktags-Mehrdienstleistungen, die nicht durch Freizeit ausgeglichen werden, gelten bereits nach einem Monat als Überstunden.", F,
    "Sie gelten erst mit Ablauf des Kalendervierteljahres als Überstunden (§ 49 Abs. 3)."),
@@ -278,14 +278,14 @@ FRAGEN = {
    "Außerhalb der Nachtzeit erbrachte Mehrdienstleistungen sind vor jenen in der Nachtzeit auszugleichen (§ 49 Abs. 2)."),
  ]),
  ("Abs. 4, 8", "Wie werden Werktagsüberstunden ausgeglichen oder abgegolten?", [
-  ("Werktagsüberstunden sind je nach Anordnung im Verhältnis 1 : 1,5 in Freizeit auszugleichen.", T),
+  ("Werktagsüberstunden können je nach Anordnung im Verhältnis 1 : 1,5 in Freizeit ausgeglichen werden.", T),
   ("Werktagsüberstunden können je nach Anordnung nach besoldungsrechtlichen Vorschriften abgegolten werden.", T),
   ("Werktagsüberstunden können im Verhältnis 1 : 1,5 in Freizeit ausgeglichen und zusätzlich abgegolten werden.", F,
    "Die Kombination lautet: im Verhältnis 1 : 1 in Freizeit ausgleichen und zusätzlich abgelten (§ 49 Abs. 4 Z 3)."),
   ("Ein Freizeitausgleich für Werktagsüberstunden ist ohne zeitliche Grenze zulässig.", F,
    "Er ist nur bis zum Ende des sechsten auf das Kalendervierteljahr der Leistung folgenden Monats zulässig (§ 49 Abs. 8)."),
  ]),
- ("Abs. 4, 6, 7, 9", "Welche Zeiten gelten nicht als Überstunden und was gilt für Nachtzeit und Mitteilung?", [
+ ("Abs. 2, 6, 7, 9", "Welche Zeiten gelten nicht als Überstunden und was gilt für Nachtzeit und Mitteilung?", [
   ("Als Nachtzeit im Sinne der Bestimmung gelten die Stunden von 22.00 bis 6.00 Uhr.", T),
   ("Zeiten einer vom Beamten angestrebten Einarbeitung von Dienstzeit gelten jedenfalls nicht als Überstunden.", T),
   ("Zeitguthaben aus der gleitenden Dienstzeit gelten stets als Überstunden.", F,
@@ -296,7 +296,7 @@ FRAGEN = {
 "53": [
  ("Abs. 1, 1a, 1b", "Wann besteht eine Meldepflicht bei Verdacht einer gerichtlich strafbaren Handlung?", [
   ("Bei begründetem Verdacht einer von Amts wegen zu verfolgenden gerichtlich strafbaren Handlung, die den Wirkungsbereich der Dienststelle betrifft, ist dies unverzüglich dem Leiter der Dienststelle zu melden.", T),
-  ("Keine Meldepflicht besteht, wenn die Meldung eine amtliche Tätigkeit beeinträchtigen würde, deren Wirksamkeit eines persönlichen Vertrauensverhältnisses bedarf.", T),
+  ("Grundsätzlich besteht keine Meldepflicht, wenn die Meldung eine amtliche Tätigkeit beeinträchtigen würde, deren Wirksamkeit eines persönlichen Vertrauensverhältnisses bedarf.", T),
   ("Der Leiter der Dienststelle kann in keinem Fall abweichend von der Ausnahme des Abs. 1a eine Meldepflicht verfügen.", F,
    "Aus bestimmten, in der Person oder in der amtlichen Tätigkeit selbst gelegenen Gründen kann er eine Meldepflicht verfügen (§ 53 Abs. 1b)."),
   ("Der begründete Verdacht einer von Amts wegen zu verfolgenden gerichtlich strafbaren Handlung ist innerhalb einer Woche dem Leiter der Dienststelle zu melden.", F,
@@ -336,7 +336,7 @@ FRAGEN = {
   ("Erwerbsmäßig ist eine Nebenbeschäftigung nur, wenn sie tatsächlich Einkünfte erzielt, die bloße Absicht genügt nicht.", F,
    "Es genügt, dass sie die Schaffung nennenswerter Einkünfte bezweckt (§ 56 Abs. 3)."),
  ]),
- ("Abs. 4, 6, 7", "Wann ist eine Genehmigung nötig und wie wird eine unzulässige Nebenbeschäftigung untersagt?", [
+ ("Abs. 4, 6", "Wann ist eine Genehmigung nötig und wie wird eine unzulässige Nebenbeschäftigung untersagt?", [
   ("Wer die Wochendienstzeit nach §§ 50a, 50b, 50e, 50f oder 50g herabgesetzt hat, darf eine erwerbsmäßige Nebenbeschäftigung nur mit Genehmigung der Dienstbehörde ausüben.", T),
   ("Auch wer sich im Karenzurlaub nach § 75c befindet, darf eine erwerbsmäßige Nebenbeschäftigung nur mit Genehmigung der Dienstbehörde ausüben.", T),
   ("Eine unzulässige Nebenbeschäftigung ist von der Dienstbehörde unverzüglich mit schriftlicher Weisung zu untersagen.", T),
@@ -362,8 +362,7 @@ FRAGEN = {
  ("Abs. 3", "Was gilt, wenn dem Dienstverhältnis unmittelbar ein Ausbildungs- oder Lehrverhältnis zum Bund vorangegangen ist?", [
   ("Ging dem Dienstverhältnis unmittelbar ein Ausbildungs- oder Lehrverhältnis zum Bund voran, wird so vorgegangen, als hätte das Dienstverhältnis erst nach Ablauf der Probezeit begonnen.", F,
    "Es wird so vorgegangen, als hätte das Dienstverhältnis mit dem ersten Tag des Ausbildungs- oder Lehrverhältnisses begonnen (§ 65 Abs. 3)."),
-  ("Der im vorangegangenen Ausbildungs- oder Lehrverhältnis verbrauchte Erholungsurlaub ist dem gesamten Urlaubsanspruch hinzuzurechnen.", F,
-   "Er ist vom gesamten Urlaubsanspruch abzuziehen (§ 65 Abs. 3)."),
+  ("Der im vorangegangenen Ausbildungs- oder Lehrverhältnis zum Bund verbrauchte Erholungsurlaub ist vom gesamten Urlaubsanspruch abzuziehen.", T),
   ("Der im vorangegangenen Ausbildungs- oder Lehrverhältnis verbrauchte Urlaub bleibt unberücksichtigt.", F,
    "Er ist vom gesamten Urlaubsanspruch abzuziehen (§ 65 Abs. 3)."),
   ("Die Regel des Abs. 3 (Einrechnung und Abzug) gilt auch für ein unmittelbar vorangegangenes Dienstverhältnis zu einem privaten Arbeitgeber.", F,
@@ -388,7 +387,7 @@ FRAGEN = {
  ("Abs. 3, 4", "Wie viel Pflegefreistellung steht pro Jahr zu und wann gibt es eine weitere Woche?", [
   ("Die Pflegefreistellung nach Abs. 1 darf im Kalenderjahr das Doppelte der regelmäßigen Wochendienstzeit des Beamten nicht übersteigen.", F,
    "Die Obergrenze ist das Ausmaß der regelmäßigen Wochendienstzeit (§ 76 Abs. 3)."),
-  ("Darüber hinaus besteht Anspruch auf bis zu eine weitere Woche, wenn der Anspruch nach Abs. 1 verbraucht ist und das im gemeinsamen Haushalt lebende erkrankte Kind das zwölfte Lebensjahr noch nicht überschritten hat.", T),
+  ("Über das Ausmaß nach Abs. 3 hinaus besteht Anspruch auf bis zu eine weitere Woche, wenn der Anspruch nach Abs. 1 verbraucht ist und das im gemeinsamen Haushalt lebende erkrankte Kind das zwölfte Lebensjahr noch nicht überschritten hat.", T),
   ("Anspruch auf die weitere Woche besteht auch bei Pflege eines im gemeinsamen Haushalt lebenden erkrankten Kindes, für das erhöhte Familienbeihilfe gewährt wird (nach Verbrauch des Anspruchs nach Abs. 1).", T),
   ("Die weitere Woche steht bei Pflege des im gemeinsamen Haushalt lebenden erkrankten Kindes zu, solange das Kind das 18. Lebensjahr noch nicht überschritten hat.", F,
    "Maßgeblich ist das zwölfte Lebensjahr oder der Bezug erhöhter Familienbeihilfe (§ 76 Abs. 4)."),
@@ -429,10 +428,10 @@ FRAGEN = {
 "112": [
  ("Abs. 1", "In welchen Fällen hat die Dienstbehörde die vorläufige Suspendierung zu verfügen?", [
   ("Die Dienstbehörde hat die vorläufige Suspendierung zu verfügen, wenn über den Beamten die Untersuchungshaft verhängt wird.", T),
-  ("Sie hat sie zu verfügen, wenn eine rechtswirksame Anklage wegen eines in § 20 Abs. 1 Z 3a angeführten Delikts vorliegt und sich die Anklage auf die Tatbegehung ab dem 1. Jänner 2016 bezieht.", F,
+  ("Die Dienstbehörde hat die vorläufige Suspendierung zu verfügen, wenn eine rechtswirksame Anklage wegen eines in § 20 Abs. 1 Z 3a angeführten Delikts vorliegt und sich die Anklage auf die Tatbegehung ab dem 1. Jänner 2016 bezieht.", F,
    "Maßgeblich ist die Tatbegehung ab dem 1. Jänner 2013 (§ 112 Abs. 1 Z 2)."),
-  ("Sie hat sie zu verfügen, wenn durch die Belassung im Dienst das Ansehen des Amtes oder wesentliche Interessen des Dienstes gefährdet würden.", T),
-  ("Sie hat sie bereits bei jeder Anzeige wegen einer Dienstpflichtverletzung zu verfügen.", F,
+  ("Die Dienstbehörde hat die vorläufige Suspendierung zu verfügen, wenn durch die Belassung im Dienst wegen der Art der zur Last gelegten Dienstpflichtverletzungen das Ansehen des Amtes oder wesentliche Interessen des Dienstes gefährdet würden.", T),
+  ("Die Dienstbehörde hat die vorläufige Suspendierung bereits bei jeder Anzeige wegen einer Dienstpflichtverletzung zu verfügen.", F,
    "Das Gesetz nennt nur Untersuchungshaft, Anklage wegen bestimmter Delikte und die Gefährdung von Amt oder Dienstinteressen (§ 112 Abs. 1 Z 1 bis 3)."),
  ]),
  ("Abs. 2, 6", "Wie lange dauert die Suspendierung und wer entscheidet darüber?", [
@@ -443,7 +442,7 @@ FRAGEN = {
  ]),
  ("Abs. 4", "Wie wirkt sich eine Suspendierung auf den Monatsbezug aus?", [
   ("Jede Suspendierung, auch eine vorläufige, hat die Kürzung des Monatsbezuges auf zwei Drittel für die Dauer der Suspendierung zur Folge.", T),
-  ("Für die Dauer der vorläufigen Suspendierung erfolgt eine Auszahlung ohne Kürzung.", T),
+  ("Während der vorläufigen Suspendierung wird der Monatsbezug zunächst ungekürzt ausbezahlt, der Mehrbetrag wird hereingebracht, sobald die Suspendierung durch die Bundesdisziplinarbehörde oder das Bundesverwaltungsgericht verfügt ist.", T),
   ("Bei jeder Suspendierung beträgt die Kürzung des Monatsbezuges die Hälfte.", F,
    "Der Monatsbezug wird auf zwei Drittel gekürzt, bei vorläufiger Suspendierung wird zunächst ohne Kürzung ausgezahlt (§ 112 Abs. 4)."),
   ("Die Kürzung ist auf Antrag oder von Amts wegen zu vermindern oder aufzuheben, wenn das monatliche Gesamteinkommen der Beamtin oder des Beamten und der sorgepflichtigen Familienangehörigen den Mindestsatz nach § 26 Abs. 5 PG 1965 übersteigt.", F,
@@ -460,10 +459,10 @@ FRAGEN = {
 ],
 "131": [
  ("§ 131", "Unter welchen Voraussetzungen kann die Dienstbehörde eine Disziplinarverfügung erlassen?", [
-  ("Die Dienstbehörde kann ohne weiteres Verfahren schriftlich eine Disziplinarverfügung erlassen, wenn der Beamte vor dem Dienstvorgesetzten, dem Leiter der Dienststelle oder der Dienstbehörde eine Dienstpflichtverletzung gestanden hat.", T),
-  ("Sie kann dies, wenn eine Dienstpflichtverletzung nach der Aktenlage lediglich wahrscheinlich ist.", F,
+  ("Die Dienstbehörde kann ohne weiteres Verfahren schriftlich eine Disziplinarverfügung erlassen, wenn der Beamte vor dem Dienstvorgesetzten, dem Leiter der Dienststelle oder der Dienstbehörde eine Dienstpflichtverletzung gestanden hat und dies zur Ahndung ausreichend erscheint.", T),
+  ("Die Dienstbehörde kann eine Disziplinarverfügung erlassen, wenn eine Dienstpflichtverletzung nach der Aktenlage lediglich wahrscheinlich ist.", F,
    "Die Dienstpflichtverletzung muss aufgrund eindeutiger Aktenlage als erwiesen anzunehmen sein, bloße Wahrscheinlichkeit genügt nicht (§ 131 Z 2)."),
-  ("Sie kann dies, wenn der Beamte wegen desselben Sachverhalts rechtskräftig durch ein Strafgericht oder Verwaltungsgericht bestraft wurde.", T),
+  ("Die Dienstbehörde kann eine Disziplinarverfügung erlassen, wenn der Beamte wegen desselben Sachverhalts rechtskräftig durch ein Strafgericht oder Verwaltungsgericht bestraft wurde und dies zur Ahndung ausreichend erscheint.", T),
   ("Die Disziplinarverfügung kann auch mündlich erlassen werden.", F,
    "Die Disziplinarverfügung ergeht schriftlich (§ 131)."),
  ]),
