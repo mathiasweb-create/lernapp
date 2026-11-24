@@ -10,9 +10,13 @@ ORDER = ["4","10","11","20","38","39","43","43a","44","46","49","53","56","65","
 src, out = sys.argv[1], sys.argv[2]
 
 def pretty(t):
+    t = t.replace("GehGganz", "GehG ganz")
+    t = re.sub(r"(?<=\S) {2,}", " ", t)
     t = re.sub(r"(?<=[\.\;\:\)a-zäöüß\d])\((\d{1,2}[a-z]?)\)(?=\s?[A-ZÄÖÜa-zäöü])", r"\n(\1)", t)
-    t = re.sub(r"(?<![\d/\.§])(?<!Nr)(\d{1,2}[a-z]?)\.(?=[A-ZÄÖÜa-zäöü])", r"\n\1. ", t)
-    t = re.sub(r"(?<=[,;\.])\s?([a-c])\)(?=[A-Za-zäöüÄÖÜ])", r"\n  \1) ", t)
+    t = re.sub(r"(?<![\d/§])(?<!Nr)(\d{1,2}[a-z]?)\.(?=[A-ZÄÖÜa-zäöü])", r"\n\1. ", t)
+    t = re.sub(r"(?<=[a-zäöüß,;\.:])\s?([a-c])\)(?=[A-Za-zäöüÄÖÜ])", r"\n  \1) ", t)
+    t = re.sub(r"(?<=\d,)(\d{1,2}[a-z]?)\.\s", r"\n\1. ", t)
+    t = re.sub(r"(?<=[a-zäöüß])\.(?=[A-ZÄÖÜ][a-zäöü])", ". ", t)
     t = re.sub(r"\n{2,}", "\n", t)
     return t.strip()
 
@@ -30,11 +34,9 @@ for n in ORDER:
     pi = next(i for i, l in enumerate(body) if re.fullmatch(r"§\s*%s\." % re.escape(n), l.strip()))
     title = body[pi - 1].strip()
     rest = body[pi + 1:]
-    cut = len(rest)
-    for i, l in enumerate(rest):
-        if l.startswith("Zuletzt aktualisiert") or l.startswith("Schlagworte"):
-            cut = i; break
-    text = pretty("\n".join(rest[:cut]))
+    joined = "\n".join(rest)
+    joined = re.split(r"Schlagworte\n|Zuletzt aktualisiert", joined)[0]
+    text = pretty(joined)
     if n == "38":
         text += "\n(Die Tabelle zur Verwendungsgruppen-Zusammenfassung in Abs. 10 ist hier nicht abgebildet – siehe RIS.)"
     qs = []

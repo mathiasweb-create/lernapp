@@ -16,6 +16,10 @@ Multiple-Choice-Training für Gesetzestexte. Läuft im Browser, lässt sich auf 
 - `tools/fragen_bdg.py` – Fragen (Quelltext). `tools/build_data.py` baut daraus die JSON-Datei.
 - StGB, SPG, VStG: in der App als „bald“ vorgesehen.
 
+## Änderungen veröffentlichen
+Änderungen an Fragen oder App einfach committen und pushen – die Seite aktualisiert sich selbst (GitHub Pages braucht ca. 1 Minute). Die App holt beim Öffnen immer die neueste Fassung und fällt offline auf den gespeicherten Stand zurück. Neue Dateien in `sw.js` (`ASSETS`) eintragen und `VERSION` erhöhen.
+Gespeicherte Stacks und der Lernfortschritt bleiben auf dem Gerät erhalten. Fragen-IDs (`bdg-<§>-<Nr>`) nicht umnummerieren: neue Fragen immer **hinten anhängen**, sonst passt der Fortschritt nicht mehr zur Frage.
+
 ## Neues Gesetz / neue Paragrafen ergänzen
 1. Texte aus dem RIS holen (offizielle Schnittstelle `data.bka.gv.at/ris/api/v2.6`, Gesetzesnummer des Gesetzes).
 2. Fragen in einer neuen `fragen_<gesetz>.py` schreiben, `build_data.py` entsprechend aufrufen.

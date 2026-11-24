@@ -31,9 +31,9 @@
        "k": "Erforderlich sind mindestens 18 Jahre (Abs. 1 Z 4)."
       },
       {
-       "t": "Das Erfordernis der vollen Handlungsfähigkeit kann auch im Einzelfall nie entfallen.",
-       "w": false,
-       "k": "Nach Abs. 1b kann es im Einzelfall entfallen, wenn die für die Verwendung erforderliche Handlungsfähigkeit vorliegt."
+       "t": "Die persönliche und fachliche Eignung für die Erfüllung der Aufgaben der vorgesehenen Verwendung ist ein allgemeines Ernennungserfordernis.",
+       "w": true,
+       "k": ""
       }
      ]
     },
@@ -42,9 +42,9 @@
      "ref": "Abs. 1a, 2, 3",
      "s": [
       {
-       "t": "Die fachliche Eignung umfasst auch die Beherrschung der deutschen Sprache in Wort und Schrift.",
-       "w": true,
-       "k": ""
+       "t": "Die fachliche Eignung umfasst auch die Beherrschung der deutschen Sprache, jedoch nur in Wort und nicht in Schrift.",
+       "w": false,
+       "k": "Sie umfasst die deutsche Sprache in Wort und Schrift (Abs. 1a)."
       },
       {
        "t": "Genügt für eine Verwendung die Beherrschung der deutschen Sprache in geringerem Umfang, ist sie in dem für diese Verwendung erforderlichen Ausmaß nachzuweisen.",
@@ -73,9 +73,9 @@
        "k": ""
       },
       {
-       "t": "Die persönliche und fachliche Eignung bezieht sich auf die Aufgaben der vorgesehenen Verwendung.",
-       "w": true,
-       "k": ""
+       "t": "Bei Verwendungen gemäß § 42a genügt der unbeschränkte Zugang zum österreichischen Arbeitsmarkt statt der österreichischen Staatsbürgerschaft.",
+       "w": false,
+       "k": "Bei Verwendungen gemäß § 42a ist die österreichische Staatsbürgerschaft erforderlich (Abs. 1 Z 1 lit. a)."
       },
       {
        "t": "Bei sonstigen Verwendungen sind stets die österreichische Staatsbürgerschaft und zusätzlich der unbeschränkte Arbeitsmarktzugang erforderlich.",
@@ -160,9 +160,9 @@
        "k": ""
       },
       {
-       "t": "Unbefriedigender Arbeitserfolg ist ein Kündigungsgrund.",
-       "w": true,
-       "k": ""
+       "t": "Der Mangel der für die dienstlichen Aufgaben erforderlichen gesundheitlichen Eignung ist kein Kündigungsgrund.",
+       "w": false,
+       "k": "Er ist Kündigungsgrund nach Abs. 4 Z 2."
       },
       {
        "t": "Wegen der Inanspruchnahme einer Pflegefreistellung nach § 76 darf nicht gekündigt werden.",
@@ -209,7 +209,7 @@
    "label": "§ 11",
    "title": "Definitives Dienstverhältnis",
    "stand": "10.10.2024",
-   "text": "(1) Das Dienstverhältnis wird auf Antrag des Beamten definitiv, wenn er neben den Ernennungserfordernissen\n1. die für seine Verwendung vorgesehenen Definitivstellungserfordernisse erfüllt und\n2. eine Dienstzeit von sechs Jahren im provisorischen Dienstverhältnis vollendet hat.Der Eintritt der Definitivstellung ist mit Bescheid festzustellen.\n(2) Die Definitivstellung wird durch eine Beeinträchtigung der persönlichen Eignung des Beamten nicht gehindert, wenn diese Beeinträchtigung auf Grund eines Dienstunfalles eingetreten ist, den der Beamte nach einer Dauer des provisorischen Dienstverhältnisses von vier Jahren erlitten hat.\n(3) In die Zeit des provisorischen Dienstverhältnisses können Zeiten\n1. eines Dienstverhältnisses nach § 12 Abs. 2 Z 1 oder 2 des Gehaltsgesetzes 1956 – GehG, BGBl. Nr. 54/1956, \n2. einer gleichwertigen Berufstätigkeit oder eines gleichwertigen Verwaltungspraktikums nach § 12 Abs. 2 Z 1a GehG, oder\n3. einer nützlichen Berufstätigkeit oder eines nützlichen Verwaltungspraktikums nach § 12 Abs. 3 GehGganz oder zum Teil, im Fall der Z 2 und 3 bis zum Höchstausmaß von zwei Jahren, eingerechnet werden, soweit sie zur Gänze als Vordienstzeiten auf das Besoldungsdienstalter angerechnet worden sind. Diese Einrechnung wird auch für die in Abs. 2 angeführte Frist von vier Jahren wirksam.\n(4) Bei der Einrechnung nach Abs. 3 ist auf die bisherige Berufslaufbahn im Hinblick auf die vorgesehene Verwendung des Beamten Bedacht zu nehmen.\n(5) Die Wirkung des Abs. 1 tritt während eines Disziplinarverfahrens und bis zu drei Monaten nach dessen rechtskräftigem Abschluß nicht ein. Wird jedoch das Disziplinarverfahren eingestellt oder der Beamte freigesprochen, tritt die Wirkung des Abs. 1 rückwirkend ein. Im Falle eines Schuldspruches ohne Strafe kann mit Bescheid festgestellt werden, daß die Wirkung des Abs. 1 rückwirkend eintritt, wenn\n1. die Schuld des Beamten gering ist,\n2. die Tat keine oder nur unbedeutende Folgen nach sich gezogen hat und\n3. keine dienstlichen Interessen entgegenstehen.\n(6) Endet das Disziplinarverfahren anders als durch Einstellung, Freispruch oder Schuldspruch ohne Strafe und sind außerdem die Voraussetzungen des Abs. 1 erfüllt, kann die Dienstbehörde aus berücksichtigungswürdigen Gründen schon während des dreimonatigen Zeitraumes eine Definitivstellung vornehmen.",
+   "text": "(1) Das Dienstverhältnis wird auf Antrag des Beamten definitiv, wenn er neben den Ernennungserfordernissen\n1. die für seine Verwendung vorgesehenen Definitivstellungserfordernisse erfüllt und\n2. eine Dienstzeit von sechs Jahren im provisorischen Dienstverhältnis vollendet hat. Der Eintritt der Definitivstellung ist mit Bescheid festzustellen.\n(2) Die Definitivstellung wird durch eine Beeinträchtigung der persönlichen Eignung des Beamten nicht gehindert, wenn diese Beeinträchtigung auf Grund eines Dienstunfalles eingetreten ist, den der Beamte nach einer Dauer des provisorischen Dienstverhältnisses von vier Jahren erlitten hat.\n(3) In die Zeit des provisorischen Dienstverhältnisses können Zeiten\n1. eines Dienstverhältnisses nach § 12 Abs. 2 Z 1 oder 2 des Gehaltsgesetzes 1956 – GehG, BGBl. Nr. 54/1956, \n2. einer gleichwertigen Berufstätigkeit oder eines gleichwertigen Verwaltungspraktikums nach § 12 Abs. 2 Z 1a GehG, oder\n3. einer nützlichen Berufstätigkeit oder eines nützlichen Verwaltungspraktikums nach § 12 Abs. 3 GehG ganz oder zum Teil, im Fall der Z 2 und 3 bis zum Höchstausmaß von zwei Jahren, eingerechnet werden, soweit sie zur Gänze als Vordienstzeiten auf das Besoldungsdienstalter angerechnet worden sind. Diese Einrechnung wird auch für die in Abs. 2 angeführte Frist von vier Jahren wirksam.\n(4) Bei der Einrechnung nach Abs. 3 ist auf die bisherige Berufslaufbahn im Hinblick auf die vorgesehene Verwendung des Beamten Bedacht zu nehmen.\n(5) Die Wirkung des Abs. 1 tritt während eines Disziplinarverfahrens und bis zu drei Monaten nach dessen rechtskräftigem Abschluß nicht ein. Wird jedoch das Disziplinarverfahren eingestellt oder der Beamte freigesprochen, tritt die Wirkung des Abs. 1 rückwirkend ein. Im Falle eines Schuldspruches ohne Strafe kann mit Bescheid festgestellt werden, daß die Wirkung des Abs. 1 rückwirkend eintritt, wenn\n1. die Schuld des Beamten gering ist,\n2. die Tat keine oder nur unbedeutende Folgen nach sich gezogen hat und\n3. keine dienstlichen Interessen entgegenstehen.\n(6) Endet das Disziplinarverfahren anders als durch Einstellung, Freispruch oder Schuldspruch ohne Strafe und sind außerdem die Voraussetzungen des Abs. 1 erfüllt, kann die Dienstbehörde aus berücksichtigungswürdigen Gründen schon während des dreimonatigen Zeitraumes eine Definitivstellung vornehmen.",
    "q": [
     {
      "id": "bdg-11-1",
@@ -231,9 +231,9 @@
        "k": "Erforderlich sind sechs Jahre (vier Jahre betreffen nur den Dienstunfall nach Abs. 2)."
       },
       {
-       "t": "Die Definitivstellung tritt kraft Gesetzes ein, ein Antrag des Beamten ist nicht erforderlich.",
-       "w": false,
-       "k": "Die Definitivstellung erfolgt auf Antrag des Beamten."
+       "t": "Die Definitivstellung setzt neben den Ernennungserfordernissen die Erfüllung der für die Verwendung vorgesehenen Definitivstellungserfordernisse voraus.",
+       "w": true,
+       "k": ""
       }
      ]
     },
@@ -247,9 +247,9 @@
        "k": ""
       },
       {
-       "t": "In das provisorische Dienstverhältnis können bestimmte Vordienstzeiten eingerechnet werden, soweit sie zur Gänze als Vordienstzeiten auf das Besoldungsdienstalter angerechnet worden sind.",
-       "w": true,
-       "k": ""
+       "t": "In das provisorische Dienstverhältnis können bestimmte Vordienstzeiten eingerechnet werden, soweit sie zumindest zur Hälfte als Vordienstzeiten auf das Besoldungsdienstalter angerechnet worden sind.",
+       "w": false,
+       "k": "Sie müssen zur Gänze als Vordienstzeiten angerechnet worden sein (Abs. 3)."
       },
       {
        "t": "Zeiten einer nützlichen Berufstätigkeit nach § 12 Abs. 3 GehG können bis zum Höchstausmaß von drei Jahren eingerechnet werden.",
@@ -257,7 +257,7 @@
        "k": "Das Höchstausmaß beträgt zwei Jahre (Abs. 3, Z 2 und 3)."
       },
       {
-       "t": "Bei der Einrechnung ist auf die bisherige Berufslaufbahn im Hinblick auf die vorgesehene Verwendung des Beamten Bedacht zu nehmen.",
+       "t": "Bei der Einrechnung von Vordienstzeiten in das provisorische Dienstverhältnis ist auf die bisherige Berufslaufbahn im Hinblick auf die vorgesehene Verwendung Bedacht zu nehmen.",
        "w": true,
        "k": ""
       }
@@ -268,22 +268,22 @@
      "ref": "Abs. 5",
      "s": [
       {
-       "t": "Die Wirkung des Abs. 1 tritt während eines Disziplinarverfahrens und bis zu drei Monaten nach dessen rechtskräftigem Abschluss nicht ein.",
+       "t": "Die Definitivstellung tritt während eines Disziplinarverfahrens und bis zu drei Monate nach dessen rechtskräftigem Abschluss nicht ein.",
        "w": true,
        "k": ""
       },
       {
-       "t": "Wird das Disziplinarverfahren eingestellt oder der Beamte freigesprochen, tritt die Wirkung des Abs. 1 rückwirkend ein.",
-       "w": true,
-       "k": ""
+       "t": "Wird das Disziplinarverfahren eingestellt oder der Beamte freigesprochen, bleibt die Definitivstellung dauerhaft ausgeschlossen.",
+       "w": false,
+       "k": "Sie tritt rückwirkend ein (Abs. 5)."
       },
       {
-       "t": "Die Wirkung des Abs. 1 tritt bis zu sechs Monate nach rechtskräftigem Abschluss des Disziplinarverfahrens nicht ein.",
+       "t": "Die Definitivstellung tritt bis zu sechs Monate nach rechtskräftigem Abschluss des Disziplinarverfahrens nicht ein.",
        "w": false,
        "k": "Es sind bis zu drei Monate."
       },
       {
-       "t": "Bei einem Schuldspruch ohne Strafe tritt die Wirkung des Abs. 1 jedenfalls automatisch rückwirkend ein.",
+       "t": "Bei einem Schuldspruch ohne Strafe tritt die Definitivstellung jedenfalls automatisch rückwirkend ein.",
        "w": false,
        "k": "Es kann nur unter den Voraussetzungen der Z 1 bis 3 (geringe Schuld, keine/unbedeutende Folgen, keine dienstlichen Interessen entgegen) mit Bescheid festgestellt werden."
       }
@@ -296,7 +296,7 @@
    "label": "§ 20",
    "title": "Auflösung des Dienstverhältnisses",
    "stand": "10.10.2024",
-   "text": "(1) Das Dienstverhältnis wird aufgelöst durch\n1. Austritt,\n2. Kündigung des provisorischen Dienstverhältnisses,\n3. Entlassung,\n3a. rechtskräftige Verurteilung durch ein inländisches Gericht ausschließlich oder auch wegen eines ab dem 1. Jänner 2013 begangenen Vorsatzdelikts gemäß den §§ 92, 201 bis 217, 312 und 312a StGB,\n4. Amtsverlust gemäß § 27 Abs. 1 des Strafgesetzbuches, BGBl. Nr. 60/1974,\n4a. Eintritt der Unzulässigkeit der Zurückziehung eines Antrages auf Leistung eines besonderen Erstattungsbetrages an das Versorgungssystem der Europäischen Gemeinschaften nach § 2 Abs. 2 des EU-Beamten-Sozialversicherungsgesetzes (EUB-SVG) oder an die zuständige liechtensteinische Vorsorgeeinrichtung nach § 2 Abs. 2 des Bundesgesetzes über die Leistung eines besonderen Erstattungsbetrages anlässlich der Aufnahme in ein Dienstverhältnis zum Fürstentum Liechtenstein als Richter oder Staatsanwalt, BGBl. I Nr. 71/2003,5.\n  a) Verlust der österreichischen Staatsbürgerschaft bei Verwendungen gemäß § 42a,\n  b) Wegfall der Erfüllung der Ernennungserfordernisse gemäß § 4 Abs. 1 Z 1 lit. b bei sonstigen Verwendungen,\n6. Begründung eines Dienstverhältnisses zu einem Land (zur Gemeinde Wien) als Mitglied eines Landesverwaltungsgerichts,\n7. Tod.\n(2) Beim Beamten des Ruhestandes wird das Dienstverhältnis außerdem aufgelöst durch\n1. Verhängung der Disziplinarstrafe des Verlustes aller aus dem Dienstverhältnis fließenden Rechte und Ansprüche,\n2. Verurteilung durch ein inländisches Gericht wegen einer oder mehrerer mit Vorsatz begangener strafbarer Handlungen zu einer Freiheitsstrafe, wenna)die verhängte Freiheitsstrafe ein Jahr übersteigt oderb)die nicht bedingt nachgesehene Freiheitsstrafe sechs Monate übersteigt.Das Dienstverhältnis wird jedoch nicht aufgelöst, wenn diese Rechtsfolge bedingt nachgesehen wird, es sei denn, dass die Nachsicht widerrufen wird.\n(3) Durch die Auflösung des Dienstverhältnisses erlöschen, soweit gesetzlich nicht anderes bestimmt ist, alle aus dem Dienstverhältnis sich ergebenden Anwartschaften, Rechte und Befugnisse des Beamten und seiner Angehörigen. Ansprüche des Beamten, die sich auf die Zeit vor der Auflösung des Dienstverhältnisses beziehen, bleiben unberührt.\n(3a) Der Beamtin oder dem Beamten ist es für die Dauer von sechs Monaten nach Auflösung des Dienstverhältnisses untersagt, für einen Rechtsträger,\n1. der nicht der Kontrolle des Rechnungshofes, eines Landesrechnungshofes oder einer vergleichbaren internationalen oder ausländischen Kontrolleinrichtung unterliegt, und\n2. auf dessen Rechtsposition ihre oder seine dienstlichen Entscheidungen im Zeitraum von zwölf Monaten vor der Auflösung des Dienstverhältnisses maßgeblichen Einfluss hatten,tätig zu werden, wenn die Ausübung dieser Tätigkeit geeignet ist, das Vertrauen der Allgemeinheit in die sachliche Wahrnehmung ihrer oder seiner vormals dienstlichen Aufgaben zu beeinträchtigen. Für den Fall des Zuwiderhandelns hat die Beamtin oder der Beamte dem Bund eine Konventionalstrafe in Höhe des Dreifachen des für den letzten Monat des Dienstverhältnisses gebührenden Monatsbezuges zu leisten. Der Anspruch auf Erfüllung oder auf Ersatz eines weiteren Schadens ist ausgeschlossen.\n(3b) Abs. 3a ist nicht anzuwenden, wenn\n1. dadurch das Fortkommen der Beamtin oder des Beamten unbillig erschwert wird,\n2. der für den letzten Monat des Dienstverhältnisses gebührende Monatsbezug das Zwanzigfache der täglichen Höchstbeitragsgrundlage nach § 45 des Allgemeinen Sozialversicherungsgesetzes (ASVG), BGBl. Nr. 189/1955, nicht übersteigt,\n3. der Dienstgeber oder eine oder einer seiner Vertreterinnen oder Vertreter durch schuldhaftes Verhalten der Beamtin oder dem Beamten begründeten Anlass zum Austritt gegeben hat oder\n4. der Dienstgeber das provisorische Dienstverhältnis kündigt, sofern keiner der in § 10 Abs. 4 Z 1, 3 oder 4 aufgezählten Gründe vorliegt.\n(3c) Die Beamtin oder der Beamte ist im Zuge der Auflösung des Dienstverhältnisses über die Inhalte der Abs. 3a und 3b schriftlich und nachweislich zu unterrichten.\n(4) Eine Beamtin oder ein Beamter hat dem Bund im Fall der Auflösung des Dienstverhältnisses nach Abs. 1 Z 1 bis 5 die Ausbildungskosten zu ersetzen. Der Ersatz der Ausbildungskosten reduziert sich pro vollendetem Monat des Dienstverhältnisses nach der Beendigung der Ausbildung um ein Achtundvierzigstel, bei Pilotinnen und Piloten um ein Sechsundneunzigstel. Der Ersatz der Ausbildungskosten entfällt, wenn\n1. das Dienstverhältnis aus den im § 10 Abs. 4 Z 2 und 5 angeführten Gründen gekündigt worden ist oder\n2. die Ausbildungskosten für die betreffende Verwendung das Sechsfache des Referenzbetrages gemäß § 3 Abs. 4 GehG nicht übersteigen.\n(4a) Bei der Ermittlung der Ausbildungskosten gemäß Abs. 4 sind\n1. die Kosten einer Grundausbildung,\n2. die Kosten, die dem Bund aus Anlass der Vertretung der Beamtin oder des Beamten während der Ausbildung erwachsen sind, und\n3. die der Beamtin oder dem Beamten während der Ausbildung zugeflossenen Bezüge, mit Ausnahme der durch die Teilnahme an der Ausbildung verursachten Reisegebühren,nicht zu berücksichtigen.\n(4b) Jene Ausbildungskosten, die im Falle der Auflösung des Dienstverhältnisses gemäß Abs. 4 zu ersetzen wären, sind am Ende der Ausbildung mit Bescheid festzustellen.\n(5) Die dem Bund gemäß Abs. 4 tatsächlich zu ersetzenden Ausbildungskosten sind im Zeitpunkt des Ausscheidens der Beamtin oder des Beamten aus dem Dienstverhältnis von der Dienstbehörde festzustellen, die im Zeitpunkt des Ausscheidens der Beamtin oder des Beamten zuständig gewesen ist. Der Anspruch auf Ersatz der Ausbildungskosten verjährt nach drei Jahren ab der Auflösung des Dienstverhältnisses. Die §§ 13a Abs. 2 und 13b Abs. 4 des Gehaltsgesetzes 1956, BGBl. Nr. 54, sind sinngemäß anzuwenden.\n(6) Wird ein Vertragsbediensteter zum Beamten ernannt, so gelten die Abs. 4 und 5 mit der Maßgabe, daß die Zeiten als Vertragsbediensteter wie im Beamtendienstverhältnis zugebrachte Zeiten zu behandeln sind.\n(7) Bei der Reduktion des Ersatzes der Ausbildungskosten nach Abs. 4 zweiter Satz sind Zeiten eines Karenzurlaubes, mit Ausnahme einer Karenz nach dem Mutterschutzgesetz (MSchG), BGBl. Nr 221/1979, oder Väter-Karenzgesetz (VKG), BGBl. Nr. 299/1990, nicht zu berücksichtigen.",
+   "text": "(1) Das Dienstverhältnis wird aufgelöst durch\n1. Austritt,\n2. Kündigung des provisorischen Dienstverhältnisses,\n3. Entlassung,\n3a. rechtskräftige Verurteilung durch ein inländisches Gericht ausschließlich oder auch wegen eines ab dem 1. Jänner 2013 begangenen Vorsatzdelikts gemäß den §§ 92, 201 bis 217, 312 und 312a StGB,\n4. Amtsverlust gemäß § 27 Abs. 1 des Strafgesetzbuches, BGBl. Nr. 60/1974,\n4a. Eintritt der Unzulässigkeit der Zurückziehung eines Antrages auf Leistung eines besonderen Erstattungsbetrages an das Versorgungssystem der Europäischen Gemeinschaften nach § 2 Abs. 2 des EU-Beamten-Sozialversicherungsgesetzes (EUB-SVG) oder an die zuständige liechtensteinische Vorsorgeeinrichtung nach § 2 Abs. 2 des Bundesgesetzes über die Leistung eines besonderen Erstattungsbetrages anlässlich der Aufnahme in ein Dienstverhältnis zum Fürstentum Liechtenstein als Richter oder Staatsanwalt, BGBl. I Nr. 71/2003,\n5.   a) Verlust der österreichischen Staatsbürgerschaft bei Verwendungen gemäß § 42a,\n  b) Wegfall der Erfüllung der Ernennungserfordernisse gemäß § 4 Abs. 1 Z 1 lit. b bei sonstigen Verwendungen,\n6. Begründung eines Dienstverhältnisses zu einem Land (zur Gemeinde Wien) als Mitglied eines Landesverwaltungsgerichts,\n7. Tod.\n(2) Beim Beamten des Ruhestandes wird das Dienstverhältnis außerdem aufgelöst durch\n1. Verhängung der Disziplinarstrafe des Verlustes aller aus dem Dienstverhältnis fließenden Rechte und Ansprüche,\n2. Verurteilung durch ein inländisches Gericht wegen einer oder mehrerer mit Vorsatz begangener strafbarer Handlungen zu einer Freiheitsstrafe, wenn\n  a) die verhängte Freiheitsstrafe ein Jahr übersteigt oder\n  b) die nicht bedingt nachgesehene Freiheitsstrafe sechs Monate übersteigt. Das Dienstverhältnis wird jedoch nicht aufgelöst, wenn diese Rechtsfolge bedingt nachgesehen wird, es sei denn, dass die Nachsicht widerrufen wird.\n(3) Durch die Auflösung des Dienstverhältnisses erlöschen, soweit gesetzlich nicht anderes bestimmt ist, alle aus dem Dienstverhältnis sich ergebenden Anwartschaften, Rechte und Befugnisse des Beamten und seiner Angehörigen. Ansprüche des Beamten, die sich auf die Zeit vor der Auflösung des Dienstverhältnisses beziehen, bleiben unberührt.\n(3a) Der Beamtin oder dem Beamten ist es für die Dauer von sechs Monaten nach Auflösung des Dienstverhältnisses untersagt, für einen Rechtsträger,\n1. der nicht der Kontrolle des Rechnungshofes, eines Landesrechnungshofes oder einer vergleichbaren internationalen oder ausländischen Kontrolleinrichtung unterliegt, und\n2. auf dessen Rechtsposition ihre oder seine dienstlichen Entscheidungen im Zeitraum von zwölf Monaten vor der Auflösung des Dienstverhältnisses maßgeblichen Einfluss hatten,tätig zu werden, wenn die Ausübung dieser Tätigkeit geeignet ist, das Vertrauen der Allgemeinheit in die sachliche Wahrnehmung ihrer oder seiner vormals dienstlichen Aufgaben zu beeinträchtigen. Für den Fall des Zuwiderhandelns hat die Beamtin oder der Beamte dem Bund eine Konventionalstrafe in Höhe des Dreifachen des für den letzten Monat des Dienstverhältnisses gebührenden Monatsbezuges zu leisten. Der Anspruch auf Erfüllung oder auf Ersatz eines weiteren Schadens ist ausgeschlossen.\n(3b) Abs. 3a ist nicht anzuwenden, wenn\n1. dadurch das Fortkommen der Beamtin oder des Beamten unbillig erschwert wird,\n2. der für den letzten Monat des Dienstverhältnisses gebührende Monatsbezug das Zwanzigfache der täglichen Höchstbeitragsgrundlage nach § 45 des Allgemeinen Sozialversicherungsgesetzes (ASVG), BGBl. Nr. 189/1955, nicht übersteigt,\n3. der Dienstgeber oder eine oder einer seiner Vertreterinnen oder Vertreter durch schuldhaftes Verhalten der Beamtin oder dem Beamten begründeten Anlass zum Austritt gegeben hat oder\n4. der Dienstgeber das provisorische Dienstverhältnis kündigt, sofern keiner der in § 10 Abs. 4 Z 1, 3 oder 4 aufgezählten Gründe vorliegt.\n(3c) Die Beamtin oder der Beamte ist im Zuge der Auflösung des Dienstverhältnisses über die Inhalte der Abs. 3a und 3b schriftlich und nachweislich zu unterrichten.\n(4) Eine Beamtin oder ein Beamter hat dem Bund im Fall der Auflösung des Dienstverhältnisses nach Abs. 1 Z 1 bis 5 die Ausbildungskosten zu ersetzen. Der Ersatz der Ausbildungskosten reduziert sich pro vollendetem Monat des Dienstverhältnisses nach der Beendigung der Ausbildung um ein Achtundvierzigstel, bei Pilotinnen und Piloten um ein Sechsundneunzigstel. Der Ersatz der Ausbildungskosten entfällt, wenn\n1. das Dienstverhältnis aus den im § 10 Abs. 4 Z 2 und 5 angeführten Gründen gekündigt worden ist oder\n2. die Ausbildungskosten für die betreffende Verwendung das Sechsfache des Referenzbetrages gemäß § 3 Abs. 4 GehG nicht übersteigen.\n(4a) Bei der Ermittlung der Ausbildungskosten gemäß Abs. 4 sind\n1. die Kosten einer Grundausbildung,\n2. die Kosten, die dem Bund aus Anlass der Vertretung der Beamtin oder des Beamten während der Ausbildung erwachsen sind, und\n3. die der Beamtin oder dem Beamten während der Ausbildung zugeflossenen Bezüge, mit Ausnahme der durch die Teilnahme an der Ausbildung verursachten Reisegebühren,nicht zu berücksichtigen.\n(4b) Jene Ausbildungskosten, die im Falle der Auflösung des Dienstverhältnisses gemäß Abs. 4 zu ersetzen wären, sind am Ende der Ausbildung mit Bescheid festzustellen.\n(5) Die dem Bund gemäß Abs. 4 tatsächlich zu ersetzenden Ausbildungskosten sind im Zeitpunkt des Ausscheidens der Beamtin oder des Beamten aus dem Dienstverhältnis von der Dienstbehörde festzustellen, die im Zeitpunkt des Ausscheidens der Beamtin oder des Beamten zuständig gewesen ist. Der Anspruch auf Ersatz der Ausbildungskosten verjährt nach drei Jahren ab der Auflösung des Dienstverhältnisses. Die §§ 13a Abs. 2 und 13b Abs. 4 des Gehaltsgesetzes 1956, BGBl. Nr. 54, sind sinngemäß anzuwenden.\n(6) Wird ein Vertragsbediensteter zum Beamten ernannt, so gelten die Abs. 4 und 5 mit der Maßgabe, daß die Zeiten als Vertragsbediensteter wie im Beamtendienstverhältnis zugebrachte Zeiten zu behandeln sind.\n(7) Bei der Reduktion des Ersatzes der Ausbildungskosten nach Abs. 4 zweiter Satz sind Zeiten eines Karenzurlaubes, mit Ausnahme einer Karenz nach dem Mutterschutzgesetz (MSchG), BGBl. Nr 221/1979, oder Väter-Karenzgesetz (VKG), BGBl. Nr. 299/1990, nicht zu berücksichtigen.",
    "q": [
     {
      "id": "bdg-20-1",
@@ -313,9 +313,9 @@
        "k": ""
       },
       {
-       "t": "Das Dienstverhältnis wird unter anderem durch Kündigung des definitiven Dienstverhältnisses aufgelöst.",
-       "w": false,
-       "k": "Das Gesetz nennt nur die Kündigung des provisorischen Dienstverhältnisses."
+       "t": "Das Dienstverhältnis wird unter anderem durch Entlassung aufgelöst.",
+       "w": true,
+       "k": ""
       },
       {
        "t": "Das Dienstverhältnis wird durch Tod aufgelöst.",
@@ -334,7 +334,7 @@
        "k": ""
       },
       {
-       "t": "Dasselbe gilt bei Verurteilung wegen jedes fahrlässig begangenen Delikts.",
+       "t": "Das Dienstverhältnis wird auch durch die rechtskräftige Verurteilung wegen jedes fahrlässig begangenen Delikts aufgelöst.",
        "w": false,
        "k": "Es muss ein Vorsatzdelikt der genannten Bestimmungen sein."
       },
@@ -344,9 +344,9 @@
        "k": ""
       },
       {
-       "t": "Auch eine Verurteilung durch ein ausländisches Gericht löst das Dienstverhältnis nach Z 3a auf.",
-       "w": false,
-       "k": "Z 3a verlangt ein inländisches Gericht."
+       "t": "Das Dienstverhältnis wird auch durch den Verlust der österreichischen Staatsbürgerschaft bei Verwendungen gemäß § 42a aufgelöst.",
+       "w": true,
+       "k": ""
       }
      ]
     },
@@ -355,22 +355,22 @@
      "ref": "Abs. 2",
      "s": [
       {
-       "t": "Beim Beamten des Ruhestandes wird das Dienstverhältnis auch durch die Disziplinarstrafe des Verlustes aller aus dem Dienstverhältnis fließenden Rechte und Ansprüche aufgelöst.",
-       "w": true,
-       "k": ""
-      },
-      {
-       "t": "Die Verurteilung wegen mit Vorsatz begangener strafbarer Handlungen kann zur Auflösung führen, wenn die verhängte Freiheitsstrafe ein Jahr übersteigt.",
-       "w": true,
-       "k": ""
-      },
-      {
-       "t": "Die Auflösung tritt ein, wenn die nicht bedingt nachgesehene Freiheitsstrafe drei Monate übersteigt.",
+       "t": "Beim Beamten des Ruhestandes wird das Dienstverhältnis auch durch die Disziplinarstrafe der Entlassung aufgelöst.",
        "w": false,
-       "k": "Es sind sechs Monate."
+       "k": "Genannt ist die Disziplinarstrafe des Verlustes aller aus dem Dienstverhältnis fließenden Rechte und Ansprüche (Abs. 2 Z 1)."
       },
       {
-       "t": "Das Dienstverhältnis wird auch dann aufgelöst, wenn die Rechtsfolge bedingt nachgesehen wird.",
+       "t": "Beim Beamten des Ruhestandes wird das Dienstverhältnis auch durch die Verurteilung wegen vorsätzlich begangener strafbarer Handlungen aufgelöst, wenn die verhängte Freiheitsstrafe ein Jahr übersteigt und die Rechtsfolge nicht bedingt nachgesehen wird.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Beim Beamten des Ruhestandes tritt die Auflösung wegen vorsätzlicher Straftaten auch ein, wenn die nicht bedingt nachgesehene Freiheitsstrafe drei Monate übersteigt.",
+       "w": false,
+       "k": "Maßgeblich sind sechs Monate."
+      },
+      {
+       "t": "Beim Beamten des Ruhestandes wird das Dienstverhältnis wegen der Verurteilung auch dann aufgelöst, wenn diese Rechtsfolge bedingt nachgesehen wird.",
        "w": false,
        "k": "Es wird nicht aufgelöst, wenn die Rechtsfolge bedingt nachgesehen wird – es sei denn, die Nachsicht wird widerrufen."
       }
@@ -381,22 +381,22 @@
      "ref": "Abs. 3a, 3b",
      "s": [
       {
-       "t": "Für die Dauer von sechs Monaten nach Auflösung des Dienstverhältnisses ist unter bestimmten Voraussetzungen die Tätigkeit für gewisse Rechtsträger untersagt.",
+       "t": "Für die Dauer von zwölf Monaten nach Auflösung des Dienstverhältnisses ist unter bestimmten Voraussetzungen die Tätigkeit für gewisse Rechtsträger untersagt.",
+       "w": false,
+       "k": "Das Verbot gilt für sechs Monate (Abs. 3a)."
+      },
+      {
+       "t": "Bei Zuwiderhandeln gegen das Tätigkeitsverbot nach Abs. 3a ist eine Konventionalstrafe in Höhe des Dreifachen des für den letzten Monat gebührenden Monatsbezuges zu leisten.",
        "w": true,
        "k": ""
       },
       {
-       "t": "Bei Zuwiderhandeln ist eine Konventionalstrafe in Höhe des Dreifachen des für den letzten Monat gebührenden Monatsbezuges zu leisten.",
-       "w": true,
-       "k": ""
-      },
-      {
-       "t": "Der Anspruch auf Ersatz eines weiteren Schadens bleibt neben der Konventionalstrafe bestehen.",
+       "t": "Neben der Konventionalstrafe bei Zuwiderhandeln gegen das Tätigkeitsverbot nach Abs. 3a bleibt der Anspruch auf Ersatz eines weiteren Schadens bestehen.",
        "w": false,
        "k": "Der Anspruch auf Erfüllung oder Ersatz eines weiteren Schadens ist ausgeschlossen."
       },
       {
-       "t": "Maßgeblich ist, ob die dienstlichen Entscheidungen im Zeitraum von 24 Monaten vor der Auflösung maßgeblichen Einfluss hatten.",
+       "t": "Das Tätigkeitsverbot nach Abs. 3a betrifft Rechtsträger, auf deren Rechtsposition die dienstlichen Entscheidungen im Zeitraum von 24 Monaten vor der Auflösung maßgeblichen Einfluss hatten.",
        "w": false,
        "k": "Der Zeitraum beträgt zwölf Monate."
       }
@@ -417,7 +417,7 @@
        "k": ""
       },
       {
-       "t": "Bei Pilotinnen und Piloten reduziert er sich pro Monat um ein Sechsundneunzigstel.",
+       "t": "Bei Pilotinnen und Piloten reduziert sich der Ersatz der Ausbildungskosten pro vollendetem Monat um ein Sechsundneunzigstel.",
        "w": true,
        "k": ""
       },
@@ -435,7 +435,7 @@
    "label": "§ 38",
    "title": "Versetzung",
    "stand": "01.01.2014",
-   "text": "(1) Eine Versetzung liegt vor, wenn der Beamte einer anderen Dienststelle zur dauernden Dienstleistung zugewiesen wird.\n(2) Die Versetzung ist von Amts wegen zulässig, wenn ein wichtiges dienstliches Interesse daran besteht. Während des provisorischen Dienstverhältnisses ist eine Versetzung auch ohne wichtiges dienstliches Interesse zulässig.\n(3) Ein wichtiges dienstliches Interesse liegt insbesondere vor\n1. bei Änderungen der Verwaltungsorganisation,\n2. bei der Auflassung von Arbeitsplätzen,\n3. bei Besetzung eines freien Arbeitsplatzes einer anderen Dienststelle, für den keine geeigneten Bewerberinnen oder Bewerber vorhanden sind,\n4. wenn die Beamtin oder der Beamte nach § 81 Abs. 1 Z 3 den zu erwartenden Arbeitserfolg nicht aufgewiesen hat oder\n5. wenn über die Beamtin oder den Beamten eine Disziplinarstrafe rechtskräftig verhängt wurde und wegen der Art und Schwere der von ihr oder ihm begangenen Dienstpflichtverletzung die Belassung der Beamtin oder des Beamten in der Dienststelle nicht vertretbar erscheint.\n(4) Bei einer Versetzung an einen anderen Dienstort von Amts wegen sind die persönlichen, familiären und sozialen Verhältnisse des Beamten zu berücksichtigen. Eine solche Versetzung ist – ausgenommen in den Fällen des Abs. 3 Z 4 und 5 sowie in jenen Fällen, in denen abweichend vom Abs. 3 Z 5 noch keine rechtskräftige Disziplinarstrafe verhängt worden ist – unzulässig, wenn sie\n1. für die Beamtin oder den Beamten einen wesentlichen wirtschaftlichen Nachteil bedeuten würde und\n2. eine andere geeignete Beamtin oder ein anderer geeigneter Beamter derselben Dienststelle und derselben Verwendungsgruppe zur Verfügung steht, bei der oder dem dies nicht der Fall ist.\n(5) Eine Versetzung der Beamtin oder des Beamten in ein anderes Ressort bedarf bei sonstiger Nichtigkeit des Bescheids der Zustimmung der Leiterin oder des Leiters des anderen Ressorts.\n(6) Ist die Versetzung des Beamten von Amts wegen in Aussicht genommen, so ist er hievon schriftlich unter Bekanntgabe seiner neuen Dienststelle und seiner neuen Verwendung mit dem Beifügen zu verständigen, daß es ihm freisteht, gegen die beabsichtigte Maßnahme binnen zwei Wochen nach Zustellung Einwendungen vorzubringen. Werden innerhalb der angegebenen Frist solche Einwendungen nicht vorgebracht, so gilt dies als Zustimmung zur Versetzung.\n(7) Die Versetzung ist mit Bescheid zu verfügen; in diesem ist festzustellen, ob der Beamte die für die Versetzung maßgebenden Gründe gemäß §§ 141a, 145b oder 152c BDG 1979 zu vertreten hat oder nicht. Eine Beschwerde gegen diesen Bescheid hat keine aufschiebende Wirkung. Der vom Beamten zuletzt innegehabte Arbeitsplatz darf bis zur Rechtskraft des Bescheides nicht auf Dauer besetzt werden.\n(8) Im Fall der Versetzung an einen anderen Dienstort ist dem Beamten eine angemessene Übersiedlungsfrist zu gewähren.\n(9) Die Beamtin oder der Beamte kann auf Antrag oder aus wichtigem dienstlichen Interesse von Amts wegen in eine andere Besoldungs- oder Verwendungsgruppe überstellt werden. Auf diese Fälle sind Abs. 2 letzter Satz und die Abs. 3 bis 8 sinngemäß anzuwenden.\n(10) Für die Ermittlung, ob eine Überstellung von Amts wegen zulässig ist, werden die Verwendungsgruppen aller Besoldungsgruppen wie folgt zusammengefasst:\n1. Verwendungsgruppe „Höherer Dienst“ und vergleichbare Verwendungen;\n2. Verwendungsgruppe „Gehobener Dienst“ und vergleichbare Verwendungen;\n3. Verwendungsgruppe „Fachdienst“ und vergleichbare Verwendungen;\n4. Verwendungsgruppe „Qualifizierter mittlerer Dienst“ und vergleichbare Verwendungen;\n5. Verwendungsgruppe „Mittlerer Dienst“ und vergleichbare Verwendungen;\n6. Verwendungsgruppen „Qualifizierter Hilfsdienst“ und „Hilfsdienst“ und vergleichbare Verwendungen.Eine Überstellung kann von Amts wegen entweder in eine Verwendungsgruppe, die der gleichen Ziffer wie die aktuelle Verwendungsgruppe der Beamtin oder des Beamten zuzuordnen ist, oder in eine Verwendungsgruppe, die einer der Bezeichnung nach niedrigeren Ziffer als die aktuelle Verwendungsgruppe der Beamtin oder des Beamten zuzuordnen ist, erfolgen.\n(Die Tabelle zur Verwendungsgruppen-Zusammenfassung in Abs. 10 ist hier nicht abgebildet – siehe RIS.)",
+   "text": "(1) Eine Versetzung liegt vor, wenn der Beamte einer anderen Dienststelle zur dauernden Dienstleistung zugewiesen wird.\n(2) Die Versetzung ist von Amts wegen zulässig, wenn ein wichtiges dienstliches Interesse daran besteht. Während des provisorischen Dienstverhältnisses ist eine Versetzung auch ohne wichtiges dienstliches Interesse zulässig.\n(3) Ein wichtiges dienstliches Interesse liegt insbesondere vor\n1. bei Änderungen der Verwaltungsorganisation,\n2. bei der Auflassung von Arbeitsplätzen,\n3. bei Besetzung eines freien Arbeitsplatzes einer anderen Dienststelle, für den keine geeigneten Bewerberinnen oder Bewerber vorhanden sind,\n4. wenn die Beamtin oder der Beamte nach § 81 Abs. 1 Z 3 den zu erwartenden Arbeitserfolg nicht aufgewiesen hat oder\n5. wenn über die Beamtin oder den Beamten eine Disziplinarstrafe rechtskräftig verhängt wurde und wegen der Art und Schwere der von ihr oder ihm begangenen Dienstpflichtverletzung die Belassung der Beamtin oder des Beamten in der Dienststelle nicht vertretbar erscheint.\n(4) Bei einer Versetzung an einen anderen Dienstort von Amts wegen sind die persönlichen, familiären und sozialen Verhältnisse des Beamten zu berücksichtigen. Eine solche Versetzung ist – ausgenommen in den Fällen des Abs. 3 Z 4 und 5 sowie in jenen Fällen, in denen abweichend vom Abs. 3 Z 5 noch keine rechtskräftige Disziplinarstrafe verhängt worden ist – unzulässig, wenn sie\n1. für die Beamtin oder den Beamten einen wesentlichen wirtschaftlichen Nachteil bedeuten würde und\n2. eine andere geeignete Beamtin oder ein anderer geeigneter Beamter derselben Dienststelle und derselben Verwendungsgruppe zur Verfügung steht, bei der oder dem dies nicht der Fall ist.\n(5) Eine Versetzung der Beamtin oder des Beamten in ein anderes Ressort bedarf bei sonstiger Nichtigkeit des Bescheids der Zustimmung der Leiterin oder des Leiters des anderen Ressorts.\n(6) Ist die Versetzung des Beamten von Amts wegen in Aussicht genommen, so ist er hievon schriftlich unter Bekanntgabe seiner neuen Dienststelle und seiner neuen Verwendung mit dem Beifügen zu verständigen, daß es ihm freisteht, gegen die beabsichtigte Maßnahme binnen zwei Wochen nach Zustellung Einwendungen vorzubringen. Werden innerhalb der angegebenen Frist solche Einwendungen nicht vorgebracht, so gilt dies als Zustimmung zur Versetzung.\n(7) Die Versetzung ist mit Bescheid zu verfügen; in diesem ist festzustellen, ob der Beamte die für die Versetzung maßgebenden Gründe gemäß §§ 141a, 145b oder 152c BDG 1979 zu vertreten hat oder nicht. Eine Beschwerde gegen diesen Bescheid hat keine aufschiebende Wirkung. Der vom Beamten zuletzt innegehabte Arbeitsplatz darf bis zur Rechtskraft des Bescheides nicht auf Dauer besetzt werden.\n(8) Im Fall der Versetzung an einen anderen Dienstort ist dem Beamten eine angemessene Übersiedlungsfrist zu gewähren.\n(9) Die Beamtin oder der Beamte kann auf Antrag oder aus wichtigem dienstlichen Interesse von Amts wegen in eine andere Besoldungs- oder Verwendungsgruppe überstellt werden. Auf diese Fälle sind Abs. 2 letzter Satz und die Abs. 3 bis 8 sinngemäß anzuwenden.\n(10) Für die Ermittlung, ob eine Überstellung von Amts wegen zulässig ist, werden die Verwendungsgruppen aller Besoldungsgruppen wie folgt zusammengefasst:\n1. Verwendungsgruppe „Höherer Dienst“ und vergleichbare Verwendungen;\n2. Verwendungsgruppe „Gehobener Dienst“ und vergleichbare Verwendungen;\n3. Verwendungsgruppe „Fachdienst“ und vergleichbare Verwendungen;\n4. Verwendungsgruppe „Qualifizierter mittlerer Dienst“ und vergleichbare Verwendungen;\n5. Verwendungsgruppe „Mittlerer Dienst“ und vergleichbare Verwendungen;\n6. Verwendungsgruppen „Qualifizierter Hilfsdienst“ und „Hilfsdienst“ und vergleichbare Verwendungen. Eine Überstellung kann von Amts wegen entweder in eine Verwendungsgruppe, die der gleichen Ziffer wie die aktuelle Verwendungsgruppe der Beamtin oder des Beamten zuzuordnen ist, oder in eine Verwendungsgruppe, die einer der Bezeichnung nach niedrigeren Ziffer als die aktuelle Verwendungsgruppe der Beamtin oder des Beamten zuzuordnen ist, erfolgen.\n(Die Tabelle zur Verwendungsgruppen-Zusammenfassung in Abs. 10 ist hier nicht abgebildet – siehe RIS.)",
    "q": [
     {
      "id": "bdg-38-1",
@@ -452,9 +452,9 @@
        "k": ""
       },
       {
-       "t": "Während des provisorischen Dienstverhältnisses ist eine Versetzung auch ohne wichtiges dienstliches Interesse zulässig.",
-       "w": true,
-       "k": ""
+       "t": "Nach Eintritt der Definitivstellung ist eine Versetzung von Amts wegen auch ohne wichtiges dienstliches Interesse zulässig.",
+       "w": false,
+       "k": "Ohne wichtiges dienstliches Interesse ist sie nur während des provisorischen Dienstverhältnisses zulässig (Abs. 2)."
       },
       {
        "t": "Eine Versetzung von Amts wegen ist stets nur mit Zustimmung des Beamten zulässig.",
@@ -473,9 +473,9 @@
        "k": ""
       },
       {
-       "t": "Ein wichtiges dienstliches Interesse liegt insbesondere bei der Auflassung von Arbeitsplätzen vor.",
-       "w": true,
-       "k": ""
+       "t": "Ein wichtiges dienstliches Interesse liegt insbesondere bei der Schaffung neuer Arbeitsplätze vor.",
+       "w": false,
+       "k": "Genannt ist die Auflassung von Arbeitsplätzen (Abs. 3 Z 2)."
       },
       {
        "t": "Ein wichtiges dienstliches Interesse liegt insbesondere vor, wenn der Beamte nach § 81 Abs. 1 Z 3 den zu erwartenden Arbeitserfolg nicht aufgewiesen hat.",
@@ -499,9 +499,9 @@
        "k": ""
       },
       {
-       "t": "Eine Versetzung in ein anderes Ressort bedarf bei sonstiger Nichtigkeit des Bescheids der Zustimmung der Leiterin oder des Leiters des anderen Ressorts.",
-       "w": true,
-       "k": ""
+       "t": "Eine Versetzung in ein anderes Ressort bedarf nicht der Zustimmung der Leiterin oder des Leiters des anderen Ressorts.",
+       "w": false,
+       "k": "Ohne diese Zustimmung ist der Bescheid nichtig (Abs. 5)."
       },
       {
        "t": "Gegen die beabsichtigte Versetzung können binnen zwei Wochen nach Zustellung Einwendungen vorgebracht werden.",
@@ -509,7 +509,7 @@
        "k": ""
       },
       {
-       "t": "Werden innerhalb der Frist keine Einwendungen vorgebracht, gilt dies als Ablehnung der Versetzung.",
+       "t": "Werden gegen die beabsichtigte Versetzung innerhalb der Frist keine Einwendungen vorgebracht, gilt dies als Ablehnung der Versetzung.",
        "w": false,
        "k": "Es gilt als Zustimmung zur Versetzung."
       }
@@ -581,17 +581,17 @@
      "ref": "Abs. 3, 4",
      "s": [
       {
-       "t": "Über die Grenze hinaus ist die Dienstzuteilung ohne Zustimmung zulässig, wenn der Dienstbetrieb auf andere Weise nicht aufrechterhalten werden kann.",
+       "t": "Über 90 Tage im Kalenderjahr hinaus ist eine Dienstzuteilung ohne Zustimmung des Beamten zulässig, wenn der Dienstbetrieb auf andere Weise nicht aufrechterhalten werden kann.",
        "w": true,
        "k": ""
       },
       {
-       "t": "Über die Grenze hinaus ist sie ohne Zustimmung zulässig, wenn sie zum Zwecke einer Ausbildung erfolgt.",
+       "t": "Über 90 Tage im Kalenderjahr hinaus ist eine Dienstzuteilung ohne Zustimmung des Beamten zulässig, wenn sie zum Zwecke einer Ausbildung erfolgt.",
        "w": true,
        "k": ""
       },
       {
-       "t": "Über die Grenze hinaus ist sie ohne Zustimmung zulässig, wenn dem Beamten ein höherwertiger Arbeitsplatz zugewiesen wird.",
+       "t": "Über 90 Tage im Kalenderjahr hinaus ist eine Dienstzuteilung ohne Zustimmung des Beamten zulässig, wenn ihm ein höherwertiger Arbeitsplatz zugewiesen wird.",
        "w": false,
        "k": "Dieser Fall ist nicht genannt; nur Dienstbetrieb und Ausbildung."
       },
@@ -621,17 +621,17 @@
        "k": ""
       },
       {
-       "t": "Er hat sie mit den ihm zur Verfügung stehenden Mitteln aus eigenem zu besorgen.",
+       "t": "Der Beamte hat seine dienstlichen Aufgaben mit den ihm zur Verfügung stehenden Mitteln aus eigenem zu besorgen.",
        "w": true,
        "k": ""
       },
       {
-       "t": "Er hat Weisungen auch dann zu befolgen, wenn dies gegen die Rechtsordnung verstößt.",
+       "t": "Der Beamte hat seine dienstlichen Aufgaben unter Beachtung der geltenden Rechtsordnung treu, gewissenhaft, engagiert und parteiisch zu besorgen.",
        "w": false,
-       "k": "Die Aufgaben sind unter Beachtung der geltenden Rechtsordnung zu besorgen."
+       "k": "Das Gesetz verlangt „unparteiisch“ (Abs. 1)."
       },
       {
-       "t": "Er hat die Parteien im Rahmen seiner dienstlichen Aufgaben zu unterstützen und zu informieren, soweit es mit den Interessen des Dienstes und dem Gebot der Unparteilichkeit vereinbar ist.",
+       "t": "Der Beamte hat die Parteien im Rahmen seiner dienstlichen Aufgaben zu unterstützen und zu informieren, soweit es mit den Interessen des Dienstes und dem Gebot der Unparteilichkeit der Amtsführung vereinbar ist.",
        "w": true,
        "k": ""
       }
@@ -647,9 +647,9 @@
        "k": ""
       },
       {
-       "t": "Tatsächliche und vermeintliche Interessenkonflikte sind zu vermeiden, soweit dies zumutbar ist.",
-       "w": true,
-       "k": ""
+       "t": "Tatsächliche und vermeintliche Interessenkonflikte sind unabhängig von der Zumutbarkeit zu vermeiden.",
+       "w": false,
+       "k": "Nur soweit dies zumutbar ist (Abs. 2)."
       },
       {
        "t": "Ein Interessenkonflikt liegt nur vor, wenn die Aufgaben tatsächlich nicht unvoreingenommen wahrgenommen werden; ein bloßer Anschein genügt nicht.",
@@ -718,9 +718,9 @@
        "k": "Sie gilt auch gegenüber Kolleginnen/Kollegen sowie Mitarbeiterinnen/Mitarbeitern."
       },
       {
-       "t": "Die Pflicht gilt im Umgang mit Vorgesetzten, Kolleginnen und Kollegen sowie Mitarbeiterinnen und Mitarbeitern.",
-       "w": true,
-       "k": ""
+       "t": "Die Pflicht gilt nur im Umgang mit Kolleginnen und Kollegen sowie Mitarbeiterinnen und Mitarbeitern, nicht gegenüber Vorgesetzten.",
+       "w": false,
+       "k": "Sie gilt auch im Umgang mit Vorgesetzten."
       }
      ]
     }
@@ -743,9 +743,9 @@
        "k": ""
       },
       {
-       "t": "Vorgesetzter ist jeder Organwalter, der mit der Dienst- oder Fachaufsicht über den Beamten betraut ist.",
-       "w": true,
-       "k": ""
+       "t": "Vorgesetzter ist jeder Organwalter, der mit der Dienst- und Fachaufsicht über den Beamten betraut ist.",
+       "w": false,
+       "k": "Es genügt die Dienst- oder Fachaufsicht (Abs. 1)."
       },
       {
        "t": "Die Befolgung einer Weisung kann abgelehnt werden, wenn sie von einem unzuständigen Organ erteilt worden ist.",
@@ -753,7 +753,7 @@
        "k": ""
       },
       {
-       "t": "Die Befolgung kann abgelehnt werden, wenn sie gegen irgendeine Verwaltungsvorschrift verstoßen würde.",
+       "t": "Der Beamte kann die Befolgung einer Weisung ablehnen, wenn sie gegen irgendeine Verwaltungsvorschrift verstoßen würde.",
        "w": false,
        "k": "Nur bei Verstoß gegen strafgesetzliche Vorschriften (oder unzuständigem Organ)."
       }
@@ -804,9 +804,9 @@
        "k": ""
       },
       {
-       "t": "Ein Geheimhaltungsgrund ist das Interesse der nationalen Sicherheit.",
-       "w": true,
-       "k": ""
+       "t": "Ein Geheimhaltungsgrund ist ausschließlich das Interesse der nationalen Sicherheit.",
+       "w": false,
+       "k": "Abs. 1 nennt sieben Gründe, nicht nur die nationale Sicherheit."
       },
       {
        "t": "Ein Geheimhaltungsgrund ist die Vorbereitung einer Entscheidung.",
@@ -825,9 +825,9 @@
      "ref": "Abs. 2, 3, 4",
      "s": [
       {
-       "t": "Die Pflicht zur Geheimhaltung besteht auch nach Beendigung des Dienstverhältnisses.",
-       "w": true,
-       "k": ""
+       "t": "Die Pflicht zur Geheimhaltung endet mit der Beendigung des Dienstverhältnisses.",
+       "w": false,
+       "k": "Sie besteht auch nach Beendigung des Dienstverhältnisses (Abs. 2)."
       },
       {
        "t": "Lässt sich aus der Ladung erkennen, dass die Aussage der Geheimhaltung unterliegen könnte, hat der Beamte dies seiner Dienstbehörde zu melden, die über die Entbindung entscheidet.",
@@ -840,7 +840,7 @@
        "k": ""
       },
       {
-       "t": "In diesem Fall entscheidet die vernehmende Behörde selbst über die Entbindung von der Geheimhaltung.",
+       "t": "Stellt sich die Geheimhaltungspflicht erst bei der Aussage heraus, entscheidet die vernehmende Behörde selbst über die Entbindung von der Geheimhaltung.",
        "w": false,
        "k": "Sie hat die Entbindung zu beantragen; entscheiden muss die Dienstbehörde."
       }
@@ -879,16 +879,16 @@
    "label": "§ 49",
    "title": "Mehrdienstleistung",
    "stand": "30.12.2022",
-   "text": "(1) Der Beamte hat auf Anordnung über die im Dienstplan vorgeschriebenen Dienststunden hinaus Dienst zu versehen (Mehrdienstleistung). Den auf Anordnung erbrachten Mehrdienstleistungen sind Mehrdienstleistungen gleichzuhalten, wenn\n1. der Beamte einen zur Anordnung der Mehrdienstleistung Befugten nicht erreichen konnte,\n2. die Mehrdienstleistung zur Abwehr eines Schadens unverzüglich notwendig war,\n3. die Notwendigkeit der Mehrdienstleistung nicht auf Umstände zurückgeht, die von dem Beamten, der die Mehrdienstleistung erbracht hat, hätten vermieden werden können, und\n4. der Beamte diese Mehrdienstleistung spätestens innerhalb einer Woche nach der Erbringung schriftlich meldet; ist der Beamte durch ein unvorhergesehenes oder unabwendbares Ereignis ohne sein Verschulden verhindert, diese Frist einzuhalten, so verlängert sie sich um die Dauer der Verhinderung.\n(2) An Werktagen erbrachte Mehrdienstleistungen (ausgenommen jene nach § 47a Z 2 lit. b) sind nach Möglichkeit im selben Kalendervierteljahr im Verhältnis 1 : 1 in Freizeit auszugleichen. Mehrdienstleistungen außerhalb der Nachtzeit sind vor Mehrdienstleistungen in der Nachtzeit (22.00 bis 6.00 Uhr) auszugleichen. Mehrdienstleistungen an Sonn- und Feiertagen sind nicht durch Freizeit auszugleichen.\n(3) Mehrdienstleistungen an Werktagen, die im betreffenden Kalendervierteljahr nicht durch Freizeit ausgeglichen sind, gelten mit Ablauf des Kalendervierteljahres als Überstunden. Mehrdienstleistungen an Sonn- und Feiertagen gelten in jedem Fall als Überstunden und sind nach besoldungsrechtlichen Vorschriften abzugelten.\n(4) Werktagsüberstunden sind je nach Anordnung\n1. im Verhältnis 1 : 1,5 in Freizeit auszugleichen oder\n2. nach besoldungsrechtlichen Vorschriften abzugelten oder\n3. im Verhältnis 1 : 1 in Freizeit auszugleichen und zusätzlich nach besoldungsrechtlichen Vorschriften abzugelten.(Anm.: Abs. 5 aufgehoben durch Art. 1 Z 13, BGBl. I Nr. 205/2022)\n(6) Dem Beamten ist bis zum Ende des auf das Kalendervierteljahr folgenden Kalendermonats mitzuteilen, auf welche Werktagsüberstunden welche Abgeltungsart des Abs. 4 angewendet wird.\n(7) Werktagsüberstunden außerhalb der Nachtzeit sind vor Werktagsüberstunden in der Nachtzeit (22.00 bis 6.00 Uhr) auszugleichen.\n(8) Ein Freizeitausgleich für Werktagsüberstunden ist bis zum Ende des sechsten auf das Kalendervierteljahr der Leistung folgenden Monats zulässig.\n(9) Folgende Zeiten gelten jedenfalls nicht als Überstunden:\n1. Zeiten einer vom Beamten angestrebten Einarbeitung von Dienstzeit (zB im Fall eines Diensttausches oder einer sonstigen angestrebten Verlegung der Zeit der Dienstleistung) und\n2. Zeitguthaben aus der gleitenden Dienstzeit, soweit sie die im Gleitzeitdienstplan festgelegte Obergrenze für jeweils in den Folgezeitraum übertragbare Zeitguthaben nicht übersteigen.Diese Zeiten sind, soweit dies nicht bereits erfolgt ist, ausschließlich im Verhältnis 1 : 1 in Freizeit abzugelten.Schlagworte\nGleitzeit, Freizeitausgleich, Meldepflicht, Sonntag, Überstunden",
+   "text": "(1) Der Beamte hat auf Anordnung über die im Dienstplan vorgeschriebenen Dienststunden hinaus Dienst zu versehen (Mehrdienstleistung). Den auf Anordnung erbrachten Mehrdienstleistungen sind Mehrdienstleistungen gleichzuhalten, wenn\n1. der Beamte einen zur Anordnung der Mehrdienstleistung Befugten nicht erreichen konnte,\n2. die Mehrdienstleistung zur Abwehr eines Schadens unverzüglich notwendig war,\n3. die Notwendigkeit der Mehrdienstleistung nicht auf Umstände zurückgeht, die von dem Beamten, der die Mehrdienstleistung erbracht hat, hätten vermieden werden können, und\n4. der Beamte diese Mehrdienstleistung spätestens innerhalb einer Woche nach der Erbringung schriftlich meldet; ist der Beamte durch ein unvorhergesehenes oder unabwendbares Ereignis ohne sein Verschulden verhindert, diese Frist einzuhalten, so verlängert sie sich um die Dauer der Verhinderung.\n(2) An Werktagen erbrachte Mehrdienstleistungen (ausgenommen jene nach § 47a Z 2 lit. b) sind nach Möglichkeit im selben Kalendervierteljahr im Verhältnis 1 : 1 in Freizeit auszugleichen. Mehrdienstleistungen außerhalb der Nachtzeit sind vor Mehrdienstleistungen in der Nachtzeit (22.00 bis 6.00 Uhr) auszugleichen. Mehrdienstleistungen an Sonn- und Feiertagen sind nicht durch Freizeit auszugleichen.\n(3) Mehrdienstleistungen an Werktagen, die im betreffenden Kalendervierteljahr nicht durch Freizeit ausgeglichen sind, gelten mit Ablauf des Kalendervierteljahres als Überstunden. Mehrdienstleistungen an Sonn- und Feiertagen gelten in jedem Fall als Überstunden und sind nach besoldungsrechtlichen Vorschriften abzugelten.\n(4) Werktagsüberstunden sind je nach Anordnung\n1. im Verhältnis 1 : 1,5 in Freizeit auszugleichen oder\n2. nach besoldungsrechtlichen Vorschriften abzugelten oder\n3. im Verhältnis 1 : 1 in Freizeit auszugleichen und zusätzlich nach besoldungsrechtlichen Vorschriften abzugelten.(Anm.: Abs. 5 aufgehoben durch Art. 1 Z 13, BGBl. I Nr. 205/2022)\n(6) Dem Beamten ist bis zum Ende des auf das Kalendervierteljahr folgenden Kalendermonats mitzuteilen, auf welche Werktagsüberstunden welche Abgeltungsart des Abs. 4 angewendet wird.\n(7) Werktagsüberstunden außerhalb der Nachtzeit sind vor Werktagsüberstunden in der Nachtzeit (22.00 bis 6.00 Uhr) auszugleichen.\n(8) Ein Freizeitausgleich für Werktagsüberstunden ist bis zum Ende des sechsten auf das Kalendervierteljahr der Leistung folgenden Monats zulässig.\n(9) Folgende Zeiten gelten jedenfalls nicht als Überstunden:\n1. Zeiten einer vom Beamten angestrebten Einarbeitung von Dienstzeit (zB im Fall eines Diensttausches oder einer sonstigen angestrebten Verlegung der Zeit der Dienstleistung) und\n2. Zeitguthaben aus der gleitenden Dienstzeit, soweit sie die im Gleitzeitdienstplan festgelegte Obergrenze für jeweils in den Folgezeitraum übertragbare Zeitguthaben nicht übersteigen. Diese Zeiten sind, soweit dies nicht bereits erfolgt ist, ausschließlich im Verhältnis 1 : 1 in Freizeit abzugelten.",
    "q": [
     {
      "id": "bdg-49-1",
      "ref": "Abs. 1",
      "s": [
       {
-       "t": "Der Beamte hat auf Anordnung über die im Dienstplan vorgeschriebenen Dienststunden hinaus Dienst zu versehen (Mehrdienstleistung).",
-       "w": true,
-       "k": ""
+       "t": "Der Beamte hat auf Anordnung über die im Dienstplan vorgeschriebenen Dienststunden hinaus Dienst zu versehen (Bereitschaftsdienst).",
+       "w": false,
+       "k": "Der gesetzliche Begriff ist Mehrdienstleistung (Abs. 1)."
       },
       {
        "t": "Nicht angeordnete Mehrdienstleistungen sind gleichzuhalten, wenn der Beamte sie spätestens innerhalb einer Woche nach Erbringung schriftlich meldet (und die übrigen Voraussetzungen vorliegen).",
@@ -922,9 +922,9 @@
        "k": ""
       },
       {
-       "t": "Werktags-Mehrdienstleistungen, die im Kalendervierteljahr nicht durch Freizeit ausgeglichen sind, gelten mit Ablauf des Kalendervierteljahres als Überstunden.",
-       "w": true,
-       "k": ""
+       "t": "Werktags-Mehrdienstleistungen, die im Kalendervierteljahr nicht durch Freizeit ausgeglichen sind, gelten mit Ablauf des Kalenderjahres als Überstunden.",
+       "w": false,
+       "k": "Sie gelten mit Ablauf des Kalendervierteljahres als Überstunden (Abs. 3)."
       },
       {
        "t": "Mehrdienstleistungen außerhalb der Nachtzeit sind nach den Mehrdienstleistungen in der Nachtzeit auszugleichen.",
@@ -953,9 +953,9 @@
        "k": "Die Kombination lautet 1 : 1 in Freizeit und zusätzlich Abgeltung."
       },
       {
-       "t": "Ein Freizeitausgleich für Werktagsüberstunden ist bis zum Ende des sechsten auf das Kalendervierteljahr der Leistung folgenden Monats zulässig.",
-       "w": true,
-       "k": ""
+       "t": "Ein Freizeitausgleich für Werktagsüberstunden ist bis zum Ende des dritten auf das Kalendervierteljahr der Leistung folgenden Monats zulässig.",
+       "w": false,
+       "k": "Zulässig bis zum Ende des sechsten Monats (Abs. 8)."
       }
      ]
     },
@@ -992,7 +992,7 @@
    "label": "§ 53",
    "title": "Meldepflichten",
    "stand": "10.10.2024",
-   "text": "(1) Wird dem Beamten in Ausübung seines Dienstes der begründete Verdacht einer von Amts wegen zu verfolgenden gerichtlich strafbaren Handlung bekannt, die den Wirkungsbereich der Dienststelle betrifft, der er angehört, so hat er dies unverzüglich dem Leiter der Dienststelle zu melden.\n(1a) Keine Pflicht zur Meldung nach Abs. 1 besteht, wenn die Meldung eine amtliche Tätigkeit beeinträchtigen würde, deren Wirksamkeit eines persönlichen Vertrauensverhältnisses bedarf.\n(1b) Der Leiter der Dienststelle kann aus\n1. in der Person, auf die sich die amtliche Tätigkeit bezieht, oder\n2. in der amtlichen Tätigkeit selbstgelegenen Gründen abweichend von Abs. 1a eine Meldepflicht verfügen.\n(1c) Ist eine Dienstverhinderung des Beamten ganz oder teilweise auf das Einwirken Dritter zurückzuführen, hat der Beamte dies unverzüglich seiner Dienstbehörde zu melden. Auf Verlangen der Dienstbehörde hat er sämtliche für die Geltendmachung von Ersatzansprüchen erforderlichen Daten und Beweismittel bekanntzugeben.\n(1d) Die Meldepflicht gemäß Abs. 1 gilt als erfüllt, wenn durch die Beamtin oder den Beamten eine Meldung oder Hinweisgebung gemäß § 53a erfolgt ist.\n(1e) Die Leiterin oder der Leiter der gemäß § 12 des HinweisgeberInnenschutzgesetzes – HSchG, BGBl. I Nr. 6/2023, zuständigen internen Stelle bzw. die Leiterin oder der Leiter der gemäß § 15 Abs. 1 und 3 HSchG zuständigen externen Stelle hat unabhängig vom Anwendungsbereich des § 1 eine Prüfung der Stichhaltigkeit einer Meldung oder Hinweisgebung gemäß § 53a zweiter Satz vorzunehmen und für den Fall, dass der begründete Verdacht\n1. einer von Amts wegen zu verfolgenden gerichtlich strafbaren Handlung gemäß § 4 Abs. 1 des Gesetzes über das Bundesamt zur Korruptionsprävention und Korruptionsbekämpfung – BAKG, BGBl. I Nr. 72/2009, vorliegt, Anzeige zu erstatten.2.einer über § 4 Abs. 1 BAKG hinausgehenden, von Amts wegen zu verfolgenden gerichtlich strafbaren Handlung besteht, dies unverzüglich der Leiterin oder dem Leiter der betroffenen Dienststelle mitzuteilen. Eine solche Mitteilung hat zu unterbleiben, sofern dies zum Zwecke der Verhütung, Ermittlung, Aufdeckung oder Verfolgung von Straftaten, der Strafvollstreckung oder des Schutzes vor und der Abwehr von Gefahren für die öffentliche Sicherheit erforderlich ist und auch keine Mitteilung an die zuständige Leiterin oder den zuständigen Leiter der jeweiligen Zentralstelle erfolgen kann. Diesfalls hat die Leiterin oder der Leiter der gemäß § 12 HSchG zuständigen internen Stelle bzw. die Leiterin oder der Leiter der gemäß § 15 Abs. 1 und 3 HSchG zuständigen externen Stelle Anzeige zu erstatten.3.ausschließlich einer Dienstpflichtverletzung besteht, dies unverzüglich der Leiterin oder dem Leiter der zuständigen Dienstbehörde mitzuteilen, bei deren oder dessen Betroffenheit der zuständigen Leiterin oder dem zuständigen Leiter der jeweiligen Zentralstelle.Z 1 und 2 gelten nicht für interne oder externe Stellen, sofern diesen die Wahrnehmung von Aufgaben im Dienste der Strafrechtspflege zukommt (§ 18 StPO).\n(2) Soweit nicht in anderen Rechtsvorschriften weitere Meldepflichten festgelegt sind, hat der Beamte seiner Dienstbehörde zu melden:\n1. Namensänderung,\n2. Standesveränderung,\n3. jede Veränderung seiner Staatsbürgerschaft oder Staatsangehörigkeit(en) und jede Veränderung hinsichtlich seines unbeschränkten Zugangs zum österreichischen Arbeitsmarkt,\n4. Änderung des Wohnsitzes,\n5. Verlust einer für die Ausübung des Dienstes erforderlichen behördlichen Berechtigung oder Befähigung, insbesondere der Lenkberechtigung, der Dienstkleidung, des Dienstabzeichens, des Dienstausweises und sonstiger Sachbehelfe,\n5a. die Aussprache eines vorläufigen oder die Verhängung eines behördlichen Waffenverbotes, sofern ihm eine Dienstwaffe zugeteilt worden ist,\n6. Besitz eines Bescheides nach § 14 Abs. 1 oder 2 des Behinderteneinstellungsgesetzes, BGBl. Nr. 22/1970.Schlagworte\nStrafbarkeit, Dienststellenleiter, Ehe, Abzeichen, Meldepflicht, Adresse",
+   "text": "(1) Wird dem Beamten in Ausübung seines Dienstes der begründete Verdacht einer von Amts wegen zu verfolgenden gerichtlich strafbaren Handlung bekannt, die den Wirkungsbereich der Dienststelle betrifft, der er angehört, so hat er dies unverzüglich dem Leiter der Dienststelle zu melden.\n(1a) Keine Pflicht zur Meldung nach Abs. 1 besteht, wenn die Meldung eine amtliche Tätigkeit beeinträchtigen würde, deren Wirksamkeit eines persönlichen Vertrauensverhältnisses bedarf.\n(1b) Der Leiter der Dienststelle kann aus\n1. in der Person, auf die sich die amtliche Tätigkeit bezieht, oder\n2. in der amtlichen Tätigkeit selbstgelegenen Gründen abweichend von Abs. 1a eine Meldepflicht verfügen.\n(1c) Ist eine Dienstverhinderung des Beamten ganz oder teilweise auf das Einwirken Dritter zurückzuführen, hat der Beamte dies unverzüglich seiner Dienstbehörde zu melden. Auf Verlangen der Dienstbehörde hat er sämtliche für die Geltendmachung von Ersatzansprüchen erforderlichen Daten und Beweismittel bekanntzugeben.\n(1d) Die Meldepflicht gemäß Abs. 1 gilt als erfüllt, wenn durch die Beamtin oder den Beamten eine Meldung oder Hinweisgebung gemäß § 53a erfolgt ist.\n(1e) Die Leiterin oder der Leiter der gemäß § 12 des HinweisgeberInnenschutzgesetzes – HSchG, BGBl. I Nr. 6/2023, zuständigen internen Stelle bzw. die Leiterin oder der Leiter der gemäß § 15 Abs. 1 und 3 HSchG zuständigen externen Stelle hat unabhängig vom Anwendungsbereich des § 1 eine Prüfung der Stichhaltigkeit einer Meldung oder Hinweisgebung gemäß § 53a zweiter Satz vorzunehmen und für den Fall, dass der begründete Verdacht\n1. einer von Amts wegen zu verfolgenden gerichtlich strafbaren Handlung gemäß § 4 Abs. 1 des Gesetzes über das Bundesamt zur Korruptionsprävention und Korruptionsbekämpfung – BAKG, BGBl. I Nr. 72/2009, vorliegt, Anzeige zu erstatten.\n2. einer über § 4 Abs. 1 BAKG hinausgehenden, von Amts wegen zu verfolgenden gerichtlich strafbaren Handlung besteht, dies unverzüglich der Leiterin oder dem Leiter der betroffenen Dienststelle mitzuteilen. Eine solche Mitteilung hat zu unterbleiben, sofern dies zum Zwecke der Verhütung, Ermittlung, Aufdeckung oder Verfolgung von Straftaten, der Strafvollstreckung oder des Schutzes vor und der Abwehr von Gefahren für die öffentliche Sicherheit erforderlich ist und auch keine Mitteilung an die zuständige Leiterin oder den zuständigen Leiter der jeweiligen Zentralstelle erfolgen kann. Diesfalls hat die Leiterin oder der Leiter der gemäß § 12 HSchG zuständigen internen Stelle bzw. die Leiterin oder der Leiter der gemäß § 15 Abs. 1 und 3 HSchG zuständigen externen Stelle Anzeige zu erstatten.\n3. ausschließlich einer Dienstpflichtverletzung besteht, dies unverzüglich der Leiterin oder dem Leiter der zuständigen Dienstbehörde mitzuteilen, bei deren oder dessen Betroffenheit der zuständigen Leiterin oder dem zuständigen Leiter der jeweiligen Zentralstelle.Z 1 und 2 gelten nicht für interne oder externe Stellen, sofern diesen die Wahrnehmung von Aufgaben im Dienste der Strafrechtspflege zukommt (§ 18 StPO).\n(2) Soweit nicht in anderen Rechtsvorschriften weitere Meldepflichten festgelegt sind, hat der Beamte seiner Dienstbehörde zu melden:\n1. Namensänderung,\n2. Standesveränderung,\n3. jede Veränderung seiner Staatsbürgerschaft oder Staatsangehörigkeit(en) und jede Veränderung hinsichtlich seines unbeschränkten Zugangs zum österreichischen Arbeitsmarkt,\n4. Änderung des Wohnsitzes,\n5. Verlust einer für die Ausübung des Dienstes erforderlichen behördlichen Berechtigung oder Befähigung, insbesondere der Lenkberechtigung, der Dienstkleidung, des Dienstabzeichens, des Dienstausweises und sonstiger Sachbehelfe,\n5a. die Aussprache eines vorläufigen oder die Verhängung eines behördlichen Waffenverbotes, sofern ihm eine Dienstwaffe zugeteilt worden ist,\n6. Besitz eines Bescheides nach § 14 Abs. 1 oder 2 des Behinderteneinstellungsgesetzes, BGBl. Nr. 22/1970.",
    "q": [
     {
      "id": "bdg-53-1",
@@ -1009,12 +1009,12 @@
        "k": ""
       },
       {
-       "t": "Der Leiter der Dienststelle kann aus bestimmten Gründen abweichend eine Meldepflicht verfügen.",
-       "w": true,
-       "k": ""
+       "t": "Der Leiter der Dienststelle kann in keinem Fall abweichend von der Ausnahme des Abs. 1a eine Meldepflicht verfügen.",
+       "w": false,
+       "k": "Er kann aus bestimmten Gründen eine Meldepflicht verfügen (Abs. 1b)."
       },
       {
-       "t": "Die Meldung hat innerhalb einer Woche zu erfolgen.",
+       "t": "Der begründete Verdacht einer von Amts wegen zu verfolgenden gerichtlich strafbaren Handlung ist innerhalb einer Woche dem Leiter der Dienststelle zu melden.",
        "w": false,
        "k": "Die Meldung hat unverzüglich zu erfolgen."
       }
@@ -1025,14 +1025,14 @@
      "ref": "Abs. 2",
      "s": [
       {
-       "t": "Eine Namensänderung ist der Dienstbehörde zu melden.",
-       "w": true,
-       "k": ""
+       "t": "Eine Namensänderung ist der Dienstbehörde nicht zu melden.",
+       "w": false,
+       "k": "Sie ist zu melden (Abs. 2 Z 1)."
       },
       {
-       "t": "Eine Änderung des Wohnsitzes ist der Dienstbehörde zu melden.",
-       "w": true,
-       "k": ""
+       "t": "Eine Änderung des Wohnsitzes ist nur auf Verlangen der Dienstbehörde zu melden.",
+       "w": false,
+       "k": "Sie ist zu melden (Abs. 2 Z 4)."
       },
       {
        "t": "Eine Standesveränderung ist der Dienstbehörde zu melden.",
@@ -1056,9 +1056,9 @@
        "k": ""
       },
       {
-       "t": "Auf Verlangen der Dienstbehörde hat er die für Ersatzansprüche erforderlichen Daten und Beweismittel bekanntzugeben.",
-       "w": true,
-       "k": ""
+       "t": "Eine Dienstverhinderung aufgrund des Einwirkens Dritter ist nur auf Verlangen der Dienstbehörde zu melden.",
+       "w": false,
+       "k": "Sie ist unverzüglich zu melden (Abs. 1c)."
       },
       {
        "t": "Die Meldepflicht nach Abs. 1 gilt als erfüllt, wenn eine Meldung oder Hinweisgebung gemäß § 53a erfolgt ist.",
@@ -1112,9 +1112,9 @@
      "ref": "Abs. 3, 5",
      "s": [
       {
-       "t": "Jede erwerbsmäßige Nebenbeschäftigung und jede Änderung ist der Dienstbehörde unverzüglich zu melden.",
-       "w": true,
-       "k": ""
+       "t": "Jede erwerbsmäßige Nebenbeschäftigung und jede Änderung ist der Dienstbehörde binnen eines Monats zu melden.",
+       "w": false,
+       "k": "Die Meldung hat unverzüglich zu erfolgen (Abs. 3)."
       },
       {
        "t": "Eine Nebenbeschäftigung ist erwerbsmäßig, wenn sie die Schaffung von nennenswerten Einkünften in Geld- oder Güterform bezweckt.",
@@ -1143,7 +1143,7 @@
        "k": ""
       },
       {
-       "t": "Dasselbe gilt für den Beamten im Karenzurlaub nach § 75c.",
+       "t": "Auch wer sich im Karenzurlaub nach § 75c befindet, darf eine erwerbsmäßige Nebenbeschäftigung nur mit Genehmigung der Dienstbehörde ausüben.",
        "w": true,
        "k": ""
       },
@@ -1173,9 +1173,9 @@
      "ref": "Abs. 1",
      "s": [
       {
-       "t": "In jedem Kalenderjahr gebührt ein Erholungsurlaub im Ausmaß von 200 Stunden.",
-       "w": true,
-       "k": ""
+       "t": "In jedem Kalenderjahr gebührt ein Erholungsurlaub im Ausmaß von 180 Stunden.",
+       "w": false,
+       "k": "Es sind 200 Stunden (Abs. 1)."
       },
       {
        "t": "Das Urlaubsausmaß erhöht sich ab dem Kalenderjahr, in dem der 43. Geburtstag vor dem 1. Juli liegt, auf 240 Stunden.",
@@ -1204,14 +1204,14 @@
        "k": ""
       },
       {
-       "t": "Hat das Dienstverhältnis in diesem Kalenderjahr ununterbrochen sechs Monate gedauert, gebührt der volle Erholungsurlaub.",
+       "t": "Hat das Dienstverhältnis im Kalenderjahr seiner Begründung ununterbrochen sechs Monate gedauert, gebührt der volle Erholungsurlaub.",
        "w": true,
        "k": ""
       },
       {
-       "t": "Teile von Stunden sind auf ganze Stunden abzurunden.",
-       "w": false,
-       "k": "Sie sind aufzurunden."
+       "t": "Teile von Stunden sind auf ganze Stunden aufzurunden.",
+       "w": true,
+       "k": ""
       },
       {
        "t": "Bei einem verlängerten Dienstplan erhöht sich das Urlaubsausmaß entsprechend.",
@@ -1225,14 +1225,14 @@
      "ref": "Abs. 3",
      "s": [
       {
-       "t": "Ging dem Dienstverhältnis unmittelbar ein Ausbildungs- oder Lehrverhältnis zum Bund voran, wird so vorgegangen, als hätte das Dienstverhältnis mit dem ersten Tag dieses Verhältnisses begonnen.",
-       "w": true,
-       "k": ""
+       "t": "Ging dem Dienstverhältnis unmittelbar ein Ausbildungs- oder Lehrverhältnis zum Bund voran, wird so vorgegangen, als hätte das Dienstverhältnis erst nach Ablauf der Probezeit begonnen.",
+       "w": false,
+       "k": "Es wird so vorgegangen, als hätte das Dienstverhältnis mit dem ersten Tag des Ausbildungs- oder Lehrverhältnisses begonnen (Abs. 3)."
       },
       {
-       "t": "Der im vorangegangenen Ausbildungs- oder Lehrverhältnis verbrauchte Erholungsurlaub ist vom gesamten Urlaubsanspruch abzuziehen.",
-       "w": true,
-       "k": ""
+       "t": "Der im vorangegangenen Ausbildungs- oder Lehrverhältnis verbrauchte Erholungsurlaub ist dem gesamten Urlaubsanspruch hinzuzurechnen.",
+       "w": false,
+       "k": "Er ist vom gesamten Urlaubsanspruch abzuziehen (Abs. 3)."
       },
       {
        "t": "Der im vorangegangenen Ausbildungs- oder Lehrverhältnis verbrauchte Urlaub bleibt unberücksichtigt.",
@@ -1240,7 +1240,7 @@
        "k": "Er ist abzuziehen."
       },
       {
-       "t": "Dies gilt auch für jedes unmittelbar vorangegangene Dienstverhältnis zu einem privaten Arbeitgeber.",
+       "t": "Die Regel des Abs. 3 (Einrechnung und Abzug) gilt auch für ein unmittelbar vorangegangenes Dienstverhältnis zu einem privaten Arbeitgeber.",
        "w": false,
        "k": "Abs. 3 betrifft nur Ausbildungs- oder Lehrverhältnisse zum Bund."
       }
@@ -1253,7 +1253,7 @@
    "label": "§ 76",
    "title": "Pflegefreistellung",
    "stand": "01.01.2026",
-   "text": "(1) Der Beamte hat  unbeschadet des § 74  Anspruch auf Pflegefreistellung, wenn er aus einem der folgenden Gründe nachweislich an der Dienstleistung verhindert ist:\n1. wegen der notwendigen Pflege einer oder eines erkrankten oder verunglückten nahen Angehörigen oder einer im gemeinsamen Haushalt lebenden erkrankten oder verunglückten Person oder\n2. wegen der notwendigen Betreuung seines Kindes, Wahl- oder Pflegekindes, Stiefkindes oder des Kindes der Person, mit der der Beamte in Lebensgemeinschaft lebt, wenn die Person, die das Kind ständig betreut hat, aus den Gründen des § 15d Abs. 2 Z 1 bis 4 MSchG für diese Pflege ausfällt oder\n3. wegen der Begleitung seines erkrankten Kindes, Wahl- oder Pflegekindes, Stiefkindes oder des Kindes der Person, mit der er in Lebensgemeinschaft lebt, bei einem stationären Aufenthalt in einer Heil- und Pflegeanstalt, sofern das Kind das zehnte Lebensjahr noch nicht vollendet hat.\n(2) Als nahe Angehörige sind der Ehegatte und Personen anzusehen, die mit dem Beamten in gerader Linie verwandt sind, ferner Geschwister, Stief-, Wahl- und Pflegekinder sowie die Person, mit der der Beamte in Lebensgemeinschaft lebt.\n(3) Die Pflegefreistellung nach Abs. 1 darf im Kalenderjahr das Ausmaß der regelmäßigen Wochendienstzeit des Beamten nach § 48 Abs. 2 oder 6 oder nach den §§ 50a bis 50c und 50e bis 50g und 50f nicht übersteigen.\n(4) Darüber hinaus besteht  unbeschadet des § 74  Anspruch auf Pflegefreistellung bis zum Höchstausmaß einer weiteren Woche der im Abs. 3 angeführten Dienstzeit im Kalenderjahr, wenn der Beamte\n1. den Anspruch auf Pflegefreistellung nach Abs. 1 verbraucht hat und\n2. wegen der notwendigen Pflege seines im gemeinsamen Haushalt lebenden erkrankten Kindes (einschließlich Wahl-, Pflege- oder Stiefkindes oder Kindes der Person, mit der der Beamte in Lebensgemeinschaft lebt), das das zwölfte Lebensjahr noch nicht überschritten hat oder für das erhöhte Familienbeihilfe im Sinne des § 8 Abs. 4 des Familienlastenausgleichsgesetzes 1967, BGBl. Nr. 376/1967, gewährt wird, an der Dienstleistung neuerlich oder weiterhin verhindert ist.(Anm.: Abs. 5 aufgehoben durch Art. 1 Z 16, BGBl. I Nr. 102/2018)\n(6) Ändert sich das Ausmaß der dienstplanmäßigen Wochendienstzeit des Beamten während des Kalenderjahres, so ist die in diesem Kalenderjahr bereits verbrauchte Zeit der Pflegefreistellung in dem Ausmaß umzurechnen, das der Änderung des Ausmaßes der dienstplanmäßigen Wochendienstzeit entspricht.\n(7) Fallen in ein Kalenderjahr Zeiten einer Pflegefreistellung in einem dem öffentlich-rechtlichen Dienstverhältnis unmittelbar vorangegangenen vertraglichen Dienstverhältnis zum Bund, so ist die im vertraglichen Dienstverhältnis zum Bund bereits verbrauchte Zeit der Pflegefreistellung auf den im öffentlich-rechtlichen Dienstverhältnis bestehenden Anspruch auf Pflegefreistellung anzurechnen. Hat sich das Ausmaß der auf eine Woche entfallenden dienstplanmäßigen Dienstzeit geändert, ist dabei auch Abs. 6 anzuwenden.\n(8) Ist der Anspruch auf Pflegefreistellung erschöpft, kann zu einem in Abs. 4 genannten Zweck noch nicht verbrauchter Erholungsurlaub ohne vorherige kalendermäßige Festlegung nach § 68 angetreten werden.\n(9) Die Dauer einer Urlaubsunterbrechung gemäß § 71 Abs. 6 ist auf das nach den Abs. 3 und 4 jeweils in Betracht kommende Ausmaß anzurechnen.\n(10) Im Fall der notwendigen Pflege ihres oder seines erkrankten Kindes (Wahl- oder Pflegekindes) hat auch jene Beamtin oder jener Beamte Anspruch auf Pflegefreistellung nach Abs. 4 und 8, die oder der nicht mit ihrem oder seinem erkrankten Kind (Wahl- oder Pflegekind) im gemeinsamen Haushalt lebt.",
+   "text": "(1) Der Beamte hat unbeschadet des § 74 Anspruch auf Pflegefreistellung, wenn er aus einem der folgenden Gründe nachweislich an der Dienstleistung verhindert ist:\n1. wegen der notwendigen Pflege einer oder eines erkrankten oder verunglückten nahen Angehörigen oder einer im gemeinsamen Haushalt lebenden erkrankten oder verunglückten Person oder\n2. wegen der notwendigen Betreuung seines Kindes, Wahl- oder Pflegekindes, Stiefkindes oder des Kindes der Person, mit der der Beamte in Lebensgemeinschaft lebt, wenn die Person, die das Kind ständig betreut hat, aus den Gründen des § 15d Abs. 2 Z 1 bis 4 MSchG für diese Pflege ausfällt oder\n3. wegen der Begleitung seines erkrankten Kindes, Wahl- oder Pflegekindes, Stiefkindes oder des Kindes der Person, mit der er in Lebensgemeinschaft lebt, bei einem stationären Aufenthalt in einer Heil- und Pflegeanstalt, sofern das Kind das zehnte Lebensjahr noch nicht vollendet hat.\n(2) Als nahe Angehörige sind der Ehegatte und Personen anzusehen, die mit dem Beamten in gerader Linie verwandt sind, ferner Geschwister, Stief-, Wahl- und Pflegekinder sowie die Person, mit der der Beamte in Lebensgemeinschaft lebt.\n(3) Die Pflegefreistellung nach Abs. 1 darf im Kalenderjahr das Ausmaß der regelmäßigen Wochendienstzeit des Beamten nach § 48 Abs. 2 oder 6 oder nach den §§ 50a bis 50c und 50e bis 50g und 50f nicht übersteigen.\n(4) Darüber hinaus besteht unbeschadet des § 74 Anspruch auf Pflegefreistellung bis zum Höchstausmaß einer weiteren Woche der im Abs. 3 angeführten Dienstzeit im Kalenderjahr, wenn der Beamte\n1. den Anspruch auf Pflegefreistellung nach Abs. 1 verbraucht hat und\n2. wegen der notwendigen Pflege seines im gemeinsamen Haushalt lebenden erkrankten Kindes (einschließlich Wahl-, Pflege- oder Stiefkindes oder Kindes der Person, mit der der Beamte in Lebensgemeinschaft lebt), das das zwölfte Lebensjahr noch nicht überschritten hat oder für das erhöhte Familienbeihilfe im Sinne des § 8 Abs. 4 des Familienlastenausgleichsgesetzes 1967, BGBl. Nr. 376/1967, gewährt wird, an der Dienstleistung neuerlich oder weiterhin verhindert ist.(Anm.: Abs. 5 aufgehoben durch Art. 1 Z 16, BGBl. I Nr. 102/2018)\n(6) Ändert sich das Ausmaß der dienstplanmäßigen Wochendienstzeit des Beamten während des Kalenderjahres, so ist die in diesem Kalenderjahr bereits verbrauchte Zeit der Pflegefreistellung in dem Ausmaß umzurechnen, das der Änderung des Ausmaßes der dienstplanmäßigen Wochendienstzeit entspricht.\n(7) Fallen in ein Kalenderjahr Zeiten einer Pflegefreistellung in einem dem öffentlich-rechtlichen Dienstverhältnis unmittelbar vorangegangenen vertraglichen Dienstverhältnis zum Bund, so ist die im vertraglichen Dienstverhältnis zum Bund bereits verbrauchte Zeit der Pflegefreistellung auf den im öffentlich-rechtlichen Dienstverhältnis bestehenden Anspruch auf Pflegefreistellung anzurechnen. Hat sich das Ausmaß der auf eine Woche entfallenden dienstplanmäßigen Dienstzeit geändert, ist dabei auch Abs. 6 anzuwenden.\n(8) Ist der Anspruch auf Pflegefreistellung erschöpft, kann zu einem in Abs. 4 genannten Zweck noch nicht verbrauchter Erholungsurlaub ohne vorherige kalendermäßige Festlegung nach § 68 angetreten werden.\n(9) Die Dauer einer Urlaubsunterbrechung gemäß § 71 Abs. 6 ist auf das nach den Abs. 3 und 4 jeweils in Betracht kommende Ausmaß anzurechnen.\n(10) Im Fall der notwendigen Pflege ihres oder seines erkrankten Kindes (Wahl- oder Pflegekindes) hat auch jene Beamtin oder jener Beamte Anspruch auf Pflegefreistellung nach Abs. 4 und 8, die oder der nicht mit ihrem oder seinem erkrankten Kind (Wahl- oder Pflegekind) im gemeinsamen Haushalt lebt.",
    "q": [
     {
      "id": "bdg-76-1",
@@ -1275,9 +1275,9 @@
        "k": ""
       },
       {
-       "t": "Die Altersgrenze für diese Begleitung bei stationärem Aufenthalt liegt beim zwölften Lebensjahr.",
-       "w": false,
-       "k": "Dort gilt das zehnte Lebensjahr (zwölftes Lebensjahr gilt in Abs. 4)."
+       "t": "Anspruch auf Pflegefreistellung besteht auch bei notwendiger Betreuung des Kindes, wenn die Person, die das Kind ständig betreut hat, aus den Gründen des § 15d Abs. 2 Z 1 bis 4 MSchG für diese Pflege ausfällt.",
+       "w": true,
+       "k": ""
       }
      ]
     },
@@ -1291,9 +1291,9 @@
        "k": ""
       },
       {
-       "t": "Als nahe Angehörige gelten Geschwister.",
-       "w": true,
-       "k": ""
+       "t": "Als nahe Angehörige gelten nur Personen in gerader Linie; Geschwister zählen nicht dazu.",
+       "w": false,
+       "k": "Auch Geschwister gelten als nahe Angehörige (Abs. 2)."
       },
       {
        "t": "Als nahe Angehörige gilt die Person, mit der der Beamte in Lebensgemeinschaft lebt.",
@@ -1312,9 +1312,9 @@
      "ref": "Abs. 3, 4",
      "s": [
       {
-       "t": "Die Pflegefreistellung nach Abs. 1 darf im Kalenderjahr das Ausmaß der regelmäßigen Wochendienstzeit nicht übersteigen.",
-       "w": true,
-       "k": ""
+       "t": "Die Pflegefreistellung nach Abs. 1 darf im Kalenderjahr das Doppelte der regelmäßigen Wochendienstzeit des Beamten nicht übersteigen.",
+       "w": false,
+       "k": "Die Grenze ist das Ausmaß der regelmäßigen Wochendienstzeit (Abs. 3)."
       },
       {
        "t": "Darüber hinaus besteht Anspruch auf bis zu eine weitere Woche, wenn der Anspruch nach Abs. 1 verbraucht ist und das im gemeinsamen Haushalt lebende erkrankte Kind das zwölfte Lebensjahr noch nicht überschritten hat.",
@@ -1322,12 +1322,12 @@
        "k": ""
       },
       {
-       "t": "Die weitere Woche steht auch zu, wenn für das Kind erhöhte Familienbeihilfe gewährt wird.",
+       "t": "Anspruch auf die weitere Woche besteht auch bei Pflege eines im gemeinsamen Haushalt lebenden erkrankten Kindes, für das erhöhte Familienbeihilfe gewährt wird (nach Verbrauch des Anspruchs nach Abs. 1).",
        "w": true,
        "k": ""
       },
       {
-       "t": "Die weitere Woche steht zu, solange das Kind das 18. Lebensjahr noch nicht überschritten hat.",
+       "t": "Die weitere Woche steht bei Pflege des im gemeinsamen Haushalt lebenden erkrankten Kindes zu, solange das Kind das 18. Lebensjahr noch nicht überschritten hat.",
        "w": false,
        "k": "Maßgeblich ist das zwölfte Lebensjahr (oder erhöhte Familienbeihilfe)."
       }
@@ -1343,19 +1343,19 @@
        "k": ""
       },
       {
-       "t": "Auch wer nicht mit dem erkrankten Kind im gemeinsamen Haushalt lebt, hat Anspruch nach Abs. 4 und 8.",
+       "t": "Auch wer mit seinem erkrankten Kind (Wahl- oder Pflegekind) nicht im gemeinsamen Haushalt lebt, hat bei notwendiger Pflege dieses Kindes Anspruch nach Abs. 4 und 8.",
        "w": true,
        "k": ""
       },
       {
-       "t": "Im vertraglichen Dienstverhältnis zum Bund bereits verbrauchte Pflegefreistellung ist anzurechnen.",
+       "t": "Im unmittelbar vorangegangenen vertraglichen Dienstverhältnis zum Bund bereits verbrauchte Pflegefreistellung ist auf den Anspruch im öffentlich-rechtlichen Dienstverhältnis anzurechnen.",
        "w": true,
        "k": ""
       },
       {
-       "t": "Die Dauer einer Urlaubsunterbrechung gemäß § 71 Abs. 6 bleibt bei der Berechnung unberücksichtigt.",
-       "w": false,
-       "k": "Sie ist auf das Ausmaß nach Abs. 3 und 4 anzurechnen."
+       "t": "Die Dauer einer Urlaubsunterbrechung gemäß § 71 Abs. 6 ist auf das nach Abs. 3 und 4 jeweils in Betracht kommende Ausmaß anzurechnen.",
+       "w": true,
+       "k": ""
       }
      ]
     }
@@ -1366,7 +1366,7 @@
    "label": "§ 94",
    "title": "Verjährung",
    "stand": "01.01.2023",
-   "text": "(1) Die Beamtin oder der Beamte darf wegen einer Dienstpflichtverletzung nicht mehr bestraft werden, wenn gegen sie oder ihn nicht\n1. innerhalb von sechs Monaten, gerechnet von dem Zeitpunkt, zu dem der Disziplinarbehörde die Dienstpflichtverletzung zur Kenntnis gelangt ist, eine Disziplinarverfügung erlassen oder eine Anzeige an die Bundesdisziplinarbehörde erstattet wurde;\n2. innerhalb von einem Jahr, gerechnet von dem Zeitpunkt, zu dem der Disziplinarbehörde die Dienstpflichtverletzung zur Kenntnis gelangt ist, vor der Bundesdisziplinarbehörde ein Disziplinarverfahren eingeleitet wurde;\n3. innerhalb von drei Jahren, gerechnet von dem Zeitpunkt der Beendigung der Dienstpflichtverletzung, eine Disziplinarverfügung erlassen oder ein Disziplinarverfahren vor der Bundesdisziplinarbehörde eingeleitet wurde.\n(1a) Drei Jahre nach der an den beschuldigten Beamten erfolgten Zustellung der Entscheidung, gegen ihn ein Disziplinarverfahren durchzuführen, darf eine Disziplinarstrafe nicht mehr verhängt werden.\n(2) Der Lauf der in Abs. 1 und 1a genannten Fristen wird  sofern der der Dienstpflichtverletzung zugrundeliegende Sachverhalt Gegenstand der Anzeige oder eines der folgenden Verfahren ist  gehemmt\n1. für die Dauer eines Verfahrens vor dem Verfassungsgerichtshof, dem Verwaltungsgerichtshof oder einem Verwaltungsgericht,\n2. für die Dauer eines Verfahrens vor einem Verwaltungsgericht über Beschwerden von Personen, die behaupten, durch die Ausübung unmittelbarer verwaltungsbehördlicher Befehls- und Zwangsgewalt oder auf andere Weise in ihren Rechten verletzt worden zu sein,\n3. für die Dauer eines Strafverfahrens nach der StPO oder eines bei einem Verwaltungsgericht oder einer Verwaltungsbehörde anhängigen Strafverfahrens,\n4. für den Zeitraum zwischen der rechtskräftigen Beendigung oder, wenn auch nur vorläufigen, Einstellung eines Strafverfahrens und dem Einlangen einer diesbezüglichen Mitteilung bei der Dienstbehörde und\n5. für den Zeitraum zwischen der Erstattung der Anzeige und dem Einlangen der Mitteilunga)über die Beendigung des verwaltungsbehördlichen oder des gerichtlichen Verfahrens bzw. des Verfahrens vor dem Verwaltungsgericht,\n  b) der Staatsanwaltschaft über die Einstellung des Strafverfahrens oderc)der Verwaltungsbehörde über das Absehen von der Einleitung eines Verwaltungsstrafverfahrensbei der Dienstbehörde.\n(2a) Der Lauf der in Abs. 1 genannten Fristen wird für die Dauer des nicht vor der Dienstbehörde geführten Teils eines dienstrechtlichen Feststellungsverfahrens, das der Klärung einer Vorfrage für die disziplinarrechtliche Verfolgung des der Dienstpflichtverletzung zugrundeliegenden Sachverhalts dient, bis zu seiner rechtskräftigen Beendigung gehemmt.\n(3) Der Lauf der in Abs. 1 und 1a genannten Fristen wird weiters gehemmt in den Fällen des § 28 des Bundes-Personalvertretungsgesetzes (PVG), BGBl. Nr. 133/1967,\n1. für den Zeitraum ab Antragstellung der Disziplinarbehörde auf Erteilung der Zustimmung bis zur Entscheidung durch das zuständige Organ der Personalvertretung,\n2. für die Dauer eines Verfahrens vor der Personalvertretungsaufsichtsbehörde.Im Verfahren vor der Bundesdisziplinarbehörde im PTA-Bereich und in der Fernmeldebehörde ist Z 1 anzuwenden.\n(4) Hat der Sachverhalt, der einer Dienstpflichtverletzung zugrunde liegt, zu einer strafgerichtlichen Verurteilung geführt und ist die strafrechtliche Verjährungsfrist länger als die im Abs. 1 Z 3 genannte Frist, so tritt an die Stelle dieser Frist die strafrechtliche Verjährungsfrist.",
+   "text": "(1) Die Beamtin oder der Beamte darf wegen einer Dienstpflichtverletzung nicht mehr bestraft werden, wenn gegen sie oder ihn nicht\n1. innerhalb von sechs Monaten, gerechnet von dem Zeitpunkt, zu dem der Disziplinarbehörde die Dienstpflichtverletzung zur Kenntnis gelangt ist, eine Disziplinarverfügung erlassen oder eine Anzeige an die Bundesdisziplinarbehörde erstattet wurde;\n2. innerhalb von einem Jahr, gerechnet von dem Zeitpunkt, zu dem der Disziplinarbehörde die Dienstpflichtverletzung zur Kenntnis gelangt ist, vor der Bundesdisziplinarbehörde ein Disziplinarverfahren eingeleitet wurde;\n3. innerhalb von drei Jahren, gerechnet von dem Zeitpunkt der Beendigung der Dienstpflichtverletzung, eine Disziplinarverfügung erlassen oder ein Disziplinarverfahren vor der Bundesdisziplinarbehörde eingeleitet wurde.\n(1a) Drei Jahre nach der an den beschuldigten Beamten erfolgten Zustellung der Entscheidung, gegen ihn ein Disziplinarverfahren durchzuführen, darf eine Disziplinarstrafe nicht mehr verhängt werden.\n(2) Der Lauf der in Abs. 1 und 1a genannten Fristen wird sofern der der Dienstpflichtverletzung zugrundeliegende Sachverhalt Gegenstand der Anzeige oder eines der folgenden Verfahren ist gehemmt\n1. für die Dauer eines Verfahrens vor dem Verfassungsgerichtshof, dem Verwaltungsgerichtshof oder einem Verwaltungsgericht,\n2. für die Dauer eines Verfahrens vor einem Verwaltungsgericht über Beschwerden von Personen, die behaupten, durch die Ausübung unmittelbarer verwaltungsbehördlicher Befehls- und Zwangsgewalt oder auf andere Weise in ihren Rechten verletzt worden zu sein,\n3. für die Dauer eines Strafverfahrens nach der StPO oder eines bei einem Verwaltungsgericht oder einer Verwaltungsbehörde anhängigen Strafverfahrens,\n4. für den Zeitraum zwischen der rechtskräftigen Beendigung oder, wenn auch nur vorläufigen, Einstellung eines Strafverfahrens und dem Einlangen einer diesbezüglichen Mitteilung bei der Dienstbehörde und\n5. für den Zeitraum zwischen der Erstattung der Anzeige und dem Einlangen der Mitteilung\n  a) über die Beendigung des verwaltungsbehördlichen oder des gerichtlichen Verfahrens bzw. des Verfahrens vor dem Verwaltungsgericht,\n  b) der Staatsanwaltschaft über die Einstellung des Strafverfahrens oder\n  c) der Verwaltungsbehörde über das Absehen von der Einleitung eines Verwaltungsstrafverfahrensbei der Dienstbehörde.\n(2a) Der Lauf der in Abs. 1 genannten Fristen wird für die Dauer des nicht vor der Dienstbehörde geführten Teils eines dienstrechtlichen Feststellungsverfahrens, das der Klärung einer Vorfrage für die disziplinarrechtliche Verfolgung des der Dienstpflichtverletzung zugrundeliegenden Sachverhalts dient, bis zu seiner rechtskräftigen Beendigung gehemmt.\n(3) Der Lauf der in Abs. 1 und 1a genannten Fristen wird weiters gehemmt in den Fällen des § 28 des Bundes-Personalvertretungsgesetzes (PVG), BGBl. Nr. 133/1967,\n1. für den Zeitraum ab Antragstellung der Disziplinarbehörde auf Erteilung der Zustimmung bis zur Entscheidung durch das zuständige Organ der Personalvertretung,\n2. für die Dauer eines Verfahrens vor der Personalvertretungsaufsichtsbehörde. Im Verfahren vor der Bundesdisziplinarbehörde im PTA-Bereich und in der Fernmeldebehörde ist Z 1 anzuwenden.\n(4) Hat der Sachverhalt, der einer Dienstpflichtverletzung zugrunde liegt, zu einer strafgerichtlichen Verurteilung geführt und ist die strafrechtliche Verjährungsfrist länger als die im Abs. 1 Z 3 genannte Frist, so tritt an die Stelle dieser Frist die strafrechtliche Verjährungsfrist.",
    "q": [
     {
      "id": "bdg-94-1",
@@ -1399,9 +1399,9 @@
      "ref": "Abs. 1a, 4",
      "s": [
       {
-       "t": "Drei Jahre nach Zustellung der Entscheidung, gegen den Beamten ein Disziplinarverfahren durchzuführen, darf keine Disziplinarstrafe mehr verhängt werden.",
-       "w": true,
-       "k": ""
+       "t": "Zwei Jahre nach der Zustellung der Entscheidung, gegen den Beamten ein Disziplinarverfahren durchzuführen, darf keine Disziplinarstrafe mehr verhängt werden.",
+       "w": false,
+       "k": "Es sind drei Jahre (Abs. 1a)."
       },
       {
        "t": "Hat der Sachverhalt zu einer strafgerichtlichen Verurteilung geführt und ist die strafrechtliche Verjährungsfrist länger, tritt sie an die Stelle der Frist des Abs. 1 Z 3.",
@@ -1430,14 +1430,14 @@
        "k": ""
       },
       {
-       "t": "Die Fristen werden für die Dauer eines Strafverfahrens nach der StPO gehemmt.",
+       "t": "Die Fristen werden – sofern der Sachverhalt Gegenstand ist – für die Dauer eines Strafverfahrens nach der StPO gehemmt.",
        "w": true,
        "k": ""
       },
       {
-       "t": "Die Fristen werden zwischen rechtskräftiger Beendigung oder Einstellung eines Strafverfahrens und dem Einlangen einer Mitteilung bei der Dienstbehörde gehemmt.",
-       "w": true,
-       "k": ""
+       "t": "Die Fristen werden ab der rechtskräftigen Beendigung eines Strafverfahrens für ein weiteres Jahr gehemmt.",
+       "w": false,
+       "k": "Gehemmt wird der Zeitraum bis zum Einlangen der Mitteilung bei der Dienstbehörde (Abs. 2 Z 4)."
       },
       {
        "t": "Ein Strafverfahren hemmt den Fristenlauf nicht.",
@@ -1453,7 +1453,7 @@
    "label": "§ 112",
    "title": "Suspendierung",
    "stand": "24.12.2020",
-   "text": "(1) Die Dienstbehörde hat die vorläufige Suspendierung einer Beamtin oder eines Beamten zu verfügen,\n1. wenn über sie oder ihn die Untersuchungshaft verhängt wird oder\n2. wenn gegen sie oder ihn eine rechtswirksame Anklage wegen eines in § 20 Abs. 1 Z 3a angeführten Delikts vorliegt und sich die Anklage auf die Tatbegehung ab dem 1. Jänner 2013 bezieht oder\n3. wenn durch ihre oder seine Belassung im Dienst wegen der Art der ihr oder ihm zur Last gelegten Dienstpflichtverletzungen das Ansehen des Amtes oder wesentliche Interessen des Dienstes gefährdet würden.Im Falle eines Strafverfahrens gegen eine Beamtin oder einen Beamten hat das Strafgericht die zuständige Dienstbehörde zum frühestmöglichen Zeitpunkt über die Verhängung der Untersuchungshaft oder vom Vorliegen einer rechtskräftigen Anklage zu verständigen.\n(2) Jede vorläufige Suspendierung ist unverzüglich der Bundesdisziplinarbehörde mitzuteilen, die über die Suspendierung innerhalb eines Monats zu entscheiden hat. Die vorläufige Suspendierung endet spätestens mit rechtskräftiger Entscheidung der Bundesdisziplinarbehörde oder des Bundesverwaltungsgerichts über die Suspendierung. Ab dem Einlangen der Disziplinaranzeige bei der Bundesdisziplinarbehörde hat diese bei Vorliegen der in Abs. 1 genannten Voraussetzungen die Suspendierung zu verfügen.\n(3) Der Disziplinaranwältin oder dem Disziplinaranwalt steht gegen die Entscheidung der Bundesdisziplinarbehörde, gemäß Abs. 2 keine Suspendierung zu verfügen, und gegen die Aufhebung einer Suspendierung durch die Bundesdisziplinarbehörde das Recht der Beschwerde an das Bundesverwaltungsgericht zu.\n(4) Jede Suspendierung, auch eine vorläufige, hat die Kürzung des Monatsbezuges der Beamtin oder des Beamten auf zwei Drittel für die Dauer der Suspendierung zur Folge. Für die Dauer der vorläufigen Suspendierung erfolgt eine Auszahlung ohne Kürzung. Nach Verfügung der Suspendierung durch die Bundesdisziplinarbehörde nach Abs. 2 oder durch das Bundesverwaltungsgericht nach Abs. 3 ist der über die gekürzten Bezüge hinausgehend ausbezahlte Betrag unter sinngemäßer Anwendung des § 13a Abs. 2 bis 4 GehG hereinzubringen. Die Dienstbehörde, ab Einlangen der Disziplinaranzeige bei der Bundesdisziplinarbehörde diese, hat auf Antrag der Beamtin oder des Beamten oder von Amts wegen die Kürzung zu vermindern oder aufzuheben, wenn und soweit das monatliche Gesamteinkommen der Beamtin oder des Beamten und ihrer oder seiner Familienangehörigen, für die sie oder er sorgepflichtig ist, die Höhe des Mindestsatzes im Sinne des § 26 Abs. 5 PG 1965 nicht erreicht.\n(5) Nimmt die Beamtin oder der Beamte während der Suspendierung eine erwerbsmäßige Nebenbeschäftigung auf oder weitet eine solche aus oder übt sie oder er während der Suspendierung eine unzulässige Nebenbeschäftigung aus, erhöht sich die Kürzung des Monatsbezugs gemäß Abs. 4 um jenen Teil, um den ihre oder seine Einkünfte aus dieser Nebenbeschäftigung ein Drittel ihres oder seines Monatsbezugs übersteigen. Zu diesem Zweck hat die Beamtin oder der Beamte unverzüglich ihre oder seine Einkünfte aus dieser Nebenbeschäftigung bekannt zu geben. Kommt sie oder er dieser Pflicht nicht nach, so gilt der ihrer oder seiner besoldungsrechtlichen Stellung entsprechende Monatsbezug als monatliches Einkommen aus der Nebenbeschäftigung.\n(6) Die Suspendierung endet spätestens mit dem rechtskräftigen Abschluß des Disziplinarverfahrens. Fallen die Umstände, die für die Suspendierung der Beamtin oder des Beamten maßgebend gewesen sind, vorher weg, so ist die Suspendierung von der Bundesdisziplinarbehörde unverzüglich aufzuheben.\n(7) Die Beschwerde gegen eine (vorläufige) Suspendierung oder gegen eine Entscheidung über die Verminderung (Aufhebung) der Bezugskürzung hat keine aufschiebende Wirkung.\n(8) Wird die Bezugskürzung auf Antrag des Beamten vermindert oder aufgehoben, so wird diese Verfügung mit dem Tage der Antragstellung wirksam.",
+   "text": "(1) Die Dienstbehörde hat die vorläufige Suspendierung einer Beamtin oder eines Beamten zu verfügen,\n1. wenn über sie oder ihn die Untersuchungshaft verhängt wird oder\n2. wenn gegen sie oder ihn eine rechtswirksame Anklage wegen eines in § 20 Abs. 1 Z 3a angeführten Delikts vorliegt und sich die Anklage auf die Tatbegehung ab dem 1. Jänner 2013 bezieht oder\n3. wenn durch ihre oder seine Belassung im Dienst wegen der Art der ihr oder ihm zur Last gelegten Dienstpflichtverletzungen das Ansehen des Amtes oder wesentliche Interessen des Dienstes gefährdet würden. Im Falle eines Strafverfahrens gegen eine Beamtin oder einen Beamten hat das Strafgericht die zuständige Dienstbehörde zum frühestmöglichen Zeitpunkt über die Verhängung der Untersuchungshaft oder vom Vorliegen einer rechtskräftigen Anklage zu verständigen.\n(2) Jede vorläufige Suspendierung ist unverzüglich der Bundesdisziplinarbehörde mitzuteilen, die über die Suspendierung innerhalb eines Monats zu entscheiden hat. Die vorläufige Suspendierung endet spätestens mit rechtskräftiger Entscheidung der Bundesdisziplinarbehörde oder des Bundesverwaltungsgerichts über die Suspendierung. Ab dem Einlangen der Disziplinaranzeige bei der Bundesdisziplinarbehörde hat diese bei Vorliegen der in Abs. 1 genannten Voraussetzungen die Suspendierung zu verfügen.\n(3) Der Disziplinaranwältin oder dem Disziplinaranwalt steht gegen die Entscheidung der Bundesdisziplinarbehörde, gemäß Abs. 2 keine Suspendierung zu verfügen, und gegen die Aufhebung einer Suspendierung durch die Bundesdisziplinarbehörde das Recht der Beschwerde an das Bundesverwaltungsgericht zu.\n(4) Jede Suspendierung, auch eine vorläufige, hat die Kürzung des Monatsbezuges der Beamtin oder des Beamten auf zwei Drittel für die Dauer der Suspendierung zur Folge. Für die Dauer der vorläufigen Suspendierung erfolgt eine Auszahlung ohne Kürzung. Nach Verfügung der Suspendierung durch die Bundesdisziplinarbehörde nach Abs. 2 oder durch das Bundesverwaltungsgericht nach Abs. 3 ist der über die gekürzten Bezüge hinausgehend ausbezahlte Betrag unter sinngemäßer Anwendung des § 13a Abs. 2 bis 4 GehG hereinzubringen. Die Dienstbehörde, ab Einlangen der Disziplinaranzeige bei der Bundesdisziplinarbehörde diese, hat auf Antrag der Beamtin oder des Beamten oder von Amts wegen die Kürzung zu vermindern oder aufzuheben, wenn und soweit das monatliche Gesamteinkommen der Beamtin oder des Beamten und ihrer oder seiner Familienangehörigen, für die sie oder er sorgepflichtig ist, die Höhe des Mindestsatzes im Sinne des § 26 Abs. 5 PG 1965 nicht erreicht.\n(5) Nimmt die Beamtin oder der Beamte während der Suspendierung eine erwerbsmäßige Nebenbeschäftigung auf oder weitet eine solche aus oder übt sie oder er während der Suspendierung eine unzulässige Nebenbeschäftigung aus, erhöht sich die Kürzung des Monatsbezugs gemäß Abs. 4 um jenen Teil, um den ihre oder seine Einkünfte aus dieser Nebenbeschäftigung ein Drittel ihres oder seines Monatsbezugs übersteigen. Zu diesem Zweck hat die Beamtin oder der Beamte unverzüglich ihre oder seine Einkünfte aus dieser Nebenbeschäftigung bekannt zu geben. Kommt sie oder er dieser Pflicht nicht nach, so gilt der ihrer oder seiner besoldungsrechtlichen Stellung entsprechende Monatsbezug als monatliches Einkommen aus der Nebenbeschäftigung.\n(6) Die Suspendierung endet spätestens mit dem rechtskräftigen Abschluß des Disziplinarverfahrens. Fallen die Umstände, die für die Suspendierung der Beamtin oder des Beamten maßgebend gewesen sind, vorher weg, so ist die Suspendierung von der Bundesdisziplinarbehörde unverzüglich aufzuheben.\n(7) Die Beschwerde gegen eine (vorläufige) Suspendierung oder gegen eine Entscheidung über die Verminderung (Aufhebung) der Bezugskürzung hat keine aufschiebende Wirkung.\n(8) Wird die Bezugskürzung auf Antrag des Beamten vermindert oder aufgehoben, so wird diese Verfügung mit dem Tage der Antragstellung wirksam.",
    "q": [
     {
      "id": "bdg-112-1",
@@ -1465,9 +1465,9 @@
        "k": ""
       },
       {
-       "t": "Sie hat sie zu verfügen, wenn eine rechtswirksame Anklage wegen eines in § 20 Abs. 1 Z 3a angeführten Delikts vorliegt und sich die Anklage auf die Tatbegehung ab dem 1. Jänner 2013 bezieht.",
-       "w": true,
-       "k": ""
+       "t": "Sie hat sie zu verfügen, wenn eine rechtswirksame Anklage wegen eines in § 20 Abs. 1 Z 3a angeführten Delikts vorliegt und sich die Anklage auf die Tatbegehung ab dem 1. Jänner 2016 bezieht.",
+       "w": false,
+       "k": "Maßgeblich ist die Tatbegehung ab dem 1. Jänner 2013 (Abs. 1 Z 2)."
       },
       {
        "t": "Sie hat sie zu verfügen, wenn durch die Belassung im Dienst das Ansehen des Amtes oder wesentliche Interessen des Dienstes gefährdet würden.",
@@ -1496,9 +1496,9 @@
        "k": ""
       },
       {
-       "t": "Die Bundesdisziplinarbehörde hat innerhalb von drei Monaten zu entscheiden.",
-       "w": false,
-       "k": "Die Entscheidungsfrist beträgt einen Monat."
+       "t": "Ab dem Einlangen der Disziplinaranzeige bei der Bundesdisziplinarbehörde hat diese bei Vorliegen der Voraussetzungen des Abs. 1 die Suspendierung zu verfügen.",
+       "w": true,
+       "k": ""
       },
       {
        "t": "Die Suspendierung endet spätestens mit dem rechtskräftigen Abschluss des Disziplinarverfahrens.",
@@ -1522,14 +1522,14 @@
        "k": ""
       },
       {
-       "t": "Die Kürzung beträgt die Hälfte des Monatsbezuges.",
+       "t": "Bei jeder Suspendierung beträgt die Kürzung des Monatsbezuges die Hälfte.",
        "w": false,
-       "k": "Sie beträgt zwei Drittel (der Beamte erhält zwei Drittel)."
+       "k": "Der Monatsbezug wird auf zwei Drittel gekürzt; bei vorläufiger Suspendierung erfolgt zunächst Auszahlung ohne Kürzung."
       },
       {
-       "t": "Die Kürzung ist auf Antrag oder von Amts wegen zu vermindern oder aufzuheben, wenn das monatliche Gesamteinkommen der Beamtin oder des Beamten und der sorgepflichtigen Familienangehörigen den Mindestsatz nach § 26 Abs. 5 PG 1965 nicht erreicht.",
-       "w": true,
-       "k": ""
+       "t": "Die Kürzung ist auf Antrag oder von Amts wegen zu vermindern oder aufzuheben, wenn das monatliche Gesamteinkommen der Beamtin oder des Beamten und der sorgepflichtigen Familienangehörigen den Mindestsatz nach § 26 Abs. 5 PG 1965 übersteigt.",
+       "w": false,
+       "k": "Voraussetzung ist, dass das Gesamteinkommen den Mindestsatz nicht erreicht (Abs. 4)."
       }
      ]
     },
@@ -1548,9 +1548,9 @@
        "k": ""
       },
       {
-       "t": "Nimmt der Beamte während der Suspendierung eine erwerbsmäßige Nebenbeschäftigung auf, erhöht sich die Kürzung um den Teil, um den die Einkünfte ein Drittel des Monatsbezugs übersteigen.",
-       "w": true,
-       "k": ""
+       "t": "Nimmt der Beamte während der Suspendierung eine erwerbsmäßige Nebenbeschäftigung auf, erhöht sich die Kürzung um den Teil, um den die Einkünfte die Hälfte des Monatsbezugs übersteigen.",
+       "w": false,
+       "k": "Maßgeblich ist ein Drittel des Monatsbezugs (Abs. 5)."
       },
       {
        "t": "Der Disziplinaranwältin oder dem Disziplinaranwalt steht gegen eine Entscheidung der Bundesdisziplinarbehörde, keine Suspendierung zu verfügen, kein Beschwerderecht zu.",
@@ -1566,7 +1566,7 @@
    "label": "§ 131",
    "title": "Disziplinarverfügung",
    "stand": "09.07.2019",
-   "text": "Die Dienstbehörde kann ohne weiteres Verfahren schriftlich eine Disziplinarverfügung erlassen, wenn\n1. die Beamtin oder der Beamte vor der oder dem Dienstvorgesetzten, der Leiterin oder dem Leiter der Dienststelle oder vor der Dienstbehörde eine Dienstpflichtverletzung gestanden hat,\n2. eine Dienstpflichtverletzung aufgrund eindeutiger Aktenlage als erwiesen anzunehmen ist oder\n3. die Beamtin oder der Beamte wegen des der Dienstpflichtverletzung zugrundeliegenden Sachverhaltes rechtskräftig durch ein Strafgericht oder durch ein Verwaltungsgericht bestraft wurde,und dies unter Bedachtnahme auf die für die Strafbemessung maßgebenden Gründe zur Ahndung der Dienstpflichtverletzung ausreichend erscheint. Die Disziplinarverfügung ist auch der Disziplinaranwältin oder dem Disziplinaranwalt zuzustellen. In der Disziplinarverfügung darf nur der Verweis ausgesprochen oder eine Geldbuße bis zur Höhe eines Monatsbezuges, auf den die Beamtin oder der Beamte im Zeitpunkt der Erlassung der Disziplinarverfügung Anspruch hat, verhängt werden.Schlagworte\nDienstvorgesetzter, Vorgesetzter, Beschuldigter",
+   "text": "Die Dienstbehörde kann ohne weiteres Verfahren schriftlich eine Disziplinarverfügung erlassen, wenn\n1. die Beamtin oder der Beamte vor der oder dem Dienstvorgesetzten, der Leiterin oder dem Leiter der Dienststelle oder vor der Dienstbehörde eine Dienstpflichtverletzung gestanden hat,\n2. eine Dienstpflichtverletzung aufgrund eindeutiger Aktenlage als erwiesen anzunehmen ist oder\n3. die Beamtin oder der Beamte wegen des der Dienstpflichtverletzung zugrundeliegenden Sachverhaltes rechtskräftig durch ein Strafgericht oder durch ein Verwaltungsgericht bestraft wurde,und dies unter Bedachtnahme auf die für die Strafbemessung maßgebenden Gründe zur Ahndung der Dienstpflichtverletzung ausreichend erscheint. Die Disziplinarverfügung ist auch der Disziplinaranwältin oder dem Disziplinaranwalt zuzustellen. In der Disziplinarverfügung darf nur der Verweis ausgesprochen oder eine Geldbuße bis zur Höhe eines Monatsbezuges, auf den die Beamtin oder der Beamte im Zeitpunkt der Erlassung der Disziplinarverfügung Anspruch hat, verhängt werden.",
    "q": [
     {
      "id": "bdg-131-1",
@@ -1578,9 +1578,9 @@
        "k": ""
       },
       {
-       "t": "Sie kann dies, wenn die Dienstpflichtverletzung aufgrund eindeutiger Aktenlage als erwiesen anzunehmen ist.",
-       "w": true,
-       "k": ""
+       "t": "Sie kann dies, wenn eine Dienstpflichtverletzung nach der Aktenlage lediglich wahrscheinlich ist.",
+       "w": false,
+       "k": "Sie muss aufgrund eindeutiger Aktenlage als erwiesen anzunehmen sein (Z 2)."
       },
       {
        "t": "Sie kann dies, wenn der Beamte wegen desselben Sachverhalts rechtskräftig durch ein Strafgericht oder Verwaltungsgericht bestraft wurde.",
