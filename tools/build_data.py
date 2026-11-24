@@ -40,19 +40,31 @@ for n in ORDER:
     if n == "38":
         text += "\n(Die Tabelle zur Verwendungsgruppen-Zusammenfassung in Abs. 10 ist hier nicht abgebildet – siehe RIS.)"
     qs = []
-    for k, (ref, stmts) in enumerate(FRAGEN[n]):
+    for k, (ref, frage, stmts) in enumerate(FRAGEN[n]):
         assert len(stmts) == 4, (n, k)
         s = []
         for st in stmts:
-            s.append({"t": st[0], "w": bool(st[1]), "k": (st[2] if len(st) > 2 else "")})
-        qs.append({"id": "bdg-%s-%d" % (n, k + 1), "ref": ref, "s": s})
+            w = bool(st[1]); korr = st[2] if len(st) > 2 else ""
+            assert (w and not korr) or ((not w) and korr), (n, k, st[0][:40])
+            s.append({"t": st[0], "w": w, "k": korr})
+        qs.append({"id": "bdg-%s-%d" % (n, k + 1), "ref": ref, "f": frage, "s": s})
     paras.append({"n": n, "label": "§ " + n, "title": title, "stand": stand, "text": text, "q": qs})
+
+GRUPPEN = [
+  ("Dienstverhältnis", ["4","10","11","20"]),
+  ("Versetzung & Zuteilung", ["38","39"]),
+  ("Dienstpflichten", ["43","43a","44","46","49","53","56"]),
+  ("Urlaub & Freistellung", ["65","76"]),
+  ("Disziplinarrecht", ["94","112","131"]),
+]
+assert sorted(sum([g[1] for g in GRUPPEN], [])) == sorted(ORDER)
 
 data = {
   "gesetz": "BDG",
   "name": "Beamten-Dienstrechtsgesetz 1979",
   "quelle": "RIS – Bundesrecht konsolidiert (data.bka.gv.at, Gesetzesnummer 10008470)",
   "abgerufen": "2026-11-24",
+  "gruppen": [{"name": g[0], "paras": g[1]} for g in GRUPPEN],
   "paragrafen": paras,
 }
 os.makedirs(os.path.dirname(out), exist_ok=True)

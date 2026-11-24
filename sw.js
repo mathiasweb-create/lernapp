@@ -1,8 +1,8 @@
 // Offline-Cache für den Rechtstrainer.
 // Strategie: erst Netz (max. 3 s), sonst Cache -> Änderungen sind sofort beim nächsten Öffnen da, Offline funktioniert trotzdem.
 // Bei neuen Dateien oder umbenannten Pfaden VERSION erhöhen.
-const VERSION = 'rt-v2';
-const ASSETS = ['./', 'index.html', 'manifest.webmanifest', 'icon-180.png', 'icon-192.png', 'icon-512.png', 'daten/bdg.json'];
+const VERSION = 'rt-v3';
+const ASSETS = ['./', 'index.html', 'manifest.webmanifest', 'icon-180.png', 'icon-192.png', 'icon-512.png', 'daten/bdg.json', 'vendor/qrcode.js'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(VERSION).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting()));

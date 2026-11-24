@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Rechtstrainer</title>
 <meta name="description" content="Multiple-Choice-Training für Gesetzestexte">
-<meta name="theme-color" content="#f4f5f7" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#101214" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F3F6FB" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E1626" media="(prefers-color-scheme: dark)">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon-192.png">
 <link rel="apple-touch-icon" href="icon-180.png">
@@ -16,99 +16,172 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <style>
 :root{
-  --bg:#f4f5f7; --card:#ffffff; --ink:#14181d; --mute:#5d6672; --line:#dfe3e8;
-  --acc:#1d4ed8; --acc-ink:#ffffff; --acc-soft:#e8eefc;
-  --ok:#157347; --ok-bg:#e6f4ec; --bad:#b42318; --bad-bg:#fdecea; --warn:#8a5200; --warn-bg:#fff4e0;
-  --r:14px;
+  --bg:#F3F6FB; --card:#ffffff; --ink:#14213D; --mute:#56627D; --line:#DCE4F1;
+  --acc:#2457D6; --on:#ffffff; --soft:#E4ECFF;
+  --ok:#0B7A55; --ok-bg:#E3F5EC; --bad:#C0362C; --bad-bg:#FDEAE7; --warn:#9A5B00; --warn-bg:#FFF2DB;
+  --c1:#2457D6; --c2:#0E8A7D; --c3:#B7791F; --c4:#7A4FD1; --c5:#C2410C;
+  --font:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
 }
 @media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --bg:#101214; --card:#1a1e23; --ink:#eceff3; --mute:#9aa4b1; --line:#2b323a;
-    --acc:#7aa2ff; --acc-ink:#0b1020; --acc-soft:#1c2740;
-    --ok:#4cc38a; --ok-bg:#12281f; --bad:#ff7b72; --bad-bg:#2f1715; --warn:#f0b35a; --warn-bg:#2b2111;
+  :root{
+    --bg:#0E1626; --card:#162036; --ink:#E8EEFC; --mute:#9AA8C7; --line:#263454;
+    --acc:#7AA2FF; --on:#0B1530; --soft:#1E2D52;
+    --ok:#4CC38A; --ok-bg:#123225; --bad:#FF8A80; --bad-bg:#3A1B1B; --warn:#F0B35A; --warn-bg:#33270F;
+    --c1:#7AA2FF; --c2:#3CC9B8; --c3:#F0B35A; --c4:#B79BFF; --c5:#FF9A62;
   }
 }
-:root[data-theme="dark"]{
-  --bg:#101214; --card:#1a1e23; --ink:#eceff3; --mute:#9aa4b1; --line:#2b323a;
-  --acc:#7aa2ff; --acc-ink:#0b1020; --acc-soft:#1c2740;
-  --ok:#4cc38a; --ok-bg:#12281f; --bad:#ff7b72; --bad-bg:#2f1715; --warn:#f0b35a; --warn-bg:#2b2111;
-}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-html,body{margin:0;overflow-x:hidden;background:var(--bg);color:var(--ink);font:16px/1.45 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-text-size-adjust:100%}
-#app{max-width:640px;margin:0 auto;padding:calc(env(safe-area-inset-top) + 18px) 16px calc(env(safe-area-inset-bottom) + 110px)}
-h1{font-size:26px;letter-spacing:-.02em;margin:0 0 2px}
-h2{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--mute);margin:26px 0 10px;font-weight:600}
-.sub{color:var(--mute);margin:0 0 18px;font-size:15px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px}
-.row{display:flex;gap:10px;align-items:center}
-.sp{flex:1}
+html,body{margin:0;overflow-x:hidden;background:var(--bg);color:var(--ink);font:15px/1.45 var(--font);-webkit-text-size-adjust:100%}
 button{font:inherit;color:inherit;cursor:pointer}
-.btn{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:11px 16px;font-weight:600}
-.btn.pri{background:var(--acc);border-color:var(--acc);color:var(--acc-ink)}
-.btn.sm{padding:6px 12px;font-size:14px;font-weight:600;border-radius:10px}
-.btn[disabled]{opacity:.45;cursor:default}
-.btn.ghost{background:transparent}
-.btn.danger{color:var(--bad)}
-.tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px}
-.tab{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:8px 16px;font-weight:600;white-space:nowrap}
-.tab[aria-selected="true"]{background:var(--acc);color:var(--acc-ink);border-color:var(--acc)}
-.tab[disabled]{opacity:.5}
-.tab small{font-weight:500;opacity:.8;margin-left:4px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-@media (min-width:480px){.grid{grid-template-columns:repeat(4,1fr)}}
-.chip{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:10px 6px;text-align:center;font-weight:650;line-height:1.2}
-.chip small{display:block;font-weight:500;color:var(--mute);font-size:12px;margin-top:2px}
-.chip[aria-pressed="true"]{background:var(--acc-soft);border-color:var(--acc);color:var(--acc)}
-.chip[aria-pressed="true"] small{color:var(--acc)}
-.stack{display:flex;gap:8px;align-items:center;padding:10px 0;border-top:1px solid var(--line)}
-.stack:first-child{border-top:0}
-.stack b{display:block}
-.stack span{color:var(--mute);font-size:13px}
-input[type=text]{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px 12px;width:100%;min-width:0}
-label.opt{display:flex;gap:10px;align-items:center;padding:6px 0}
+#app{max-width:640px;margin:0 auto;padding:calc(env(safe-area-inset-top) + 14px) 18px calc(env(safe-area-inset-bottom) + 170px)}
+h1{font-size:25px;letter-spacing:-.02em;margin:0}
+p{margin:0}
+.mute{color:var(--mute)}
+.top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.ibtn{flex:none;width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--acc);display:grid;place-items:center;padding:0}
+.ibtn svg{width:20px;height:20px}
+:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.pills{display:flex;gap:6px;margin:12px 0 2px;overflow-x:auto}
+.pill{font-size:13px;font-weight:600;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 13px;white-space:nowrap}
+.pill.on{background:var(--acc);border-color:var(--acc);color:var(--on)}
+.pill[disabled]{opacity:.55;cursor:default}
+.pill small{opacity:.75;font-weight:500}
+.sec{display:flex;justify-content:space-between;align-items:center;margin:18px 0 8px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--mute)}
+.mini{display:flex;gap:6px}
+.mini button{border:1px solid var(--line);background:var(--card);border-radius:9px;padding:4px 11px;font-size:12.5px;font-weight:600;text-transform:none;letter-spacing:0}
+.search{width:100%;font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin-bottom:10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+
+/* Gruppen */
+.grp{background:var(--card);border:1.5px solid var(--line);border-radius:16px;margin-bottom:9px;overflow:hidden}
+.grp.has{border-color:var(--cc)}
+@supports (color:color-mix(in srgb,red 50%,blue)){.grp.has{border-color:color-mix(in srgb,var(--cc) 55%,var(--line))}}
+.gh{display:flex;align-items:center;gap:11px;padding:11px 12px;cursor:pointer}
+.tri{flex:none;width:26px;height:26px;border-radius:8px;border:2px solid var(--line);background:var(--card);display:grid;place-items:center;font-size:14px;font-weight:800;color:var(--on);padding:0}
+.tri.all{background:var(--cc);border-color:var(--cc)}
+.tri.some{background:var(--soft);border-color:var(--cc);color:var(--ink)}
+.gt{flex:1;min-width:0}
+.gt b{display:flex;align-items:center;gap:7px;font-size:15px}
+.gt b i{width:9px;height:9px;border-radius:50%;background:var(--cc);flex:none}
+.gt span{display:block;font-size:12px;color:var(--mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cnt{flex:none;font-size:12px;font-weight:700;border-radius:999px;padding:3px 9px;background:var(--line);color:var(--mute)}
+.cnt.on{background:var(--soft);color:var(--ink)}
+.chev{flex:none;width:18px;height:18px;transition:transform .18s;color:var(--mute)}
+.grp.open .chev{transform:rotate(180deg)}
+.gb{display:none;grid-template-columns:1fr 1fr;gap:8px;padding:2px 11px 12px}
+.grp.open .gb,.flat{display:grid}
+.flat{grid-template-columns:1fr 1fr;gap:8px}
+.tile{position:relative;text-align:left;border:1.5px solid var(--line);background:var(--bg);border-radius:12px;padding:9px 11px;min-width:0;--cc:var(--c1)}
+.tile b{display:block;font-size:14.5px}
+.tile .tt{display:block;font-size:12px;color:var(--mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px}
+.tile .qn{display:block;font-size:11.5px;color:var(--mute);margin-top:3px}
+.tile.sel{border-color:var(--cc);background:var(--soft)}
+@supports (color:color-mix(in srgb,red 50%,blue)){.tile.sel{background:color-mix(in srgb,var(--cc) 14%,var(--card))}}
+.tile.sel .qn{color:var(--ink)}
+.tile .ck{position:absolute;top:8px;right:9px;width:17px;height:17px;border-radius:50%;background:var(--cc);color:var(--on);font-size:10px;font-weight:800;display:none;place-items:center}
+.tile.sel .ck{display:grid}
+label.chk{display:flex;gap:10px;align-items:center}
 input[type=checkbox]{width:20px;height:20px;accent-color:var(--acc)}
-.bar{position:fixed;left:0;right:0;bottom:0;background:var(--bg);background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);padding:12px 16px calc(env(safe-area-inset-bottom) + 12px)}
-.bar .in{max-width:640px;margin:0 auto;display:flex;gap:10px}
-.bar .btn{flex:1;padding:14px}
-.note{color:var(--mute);font-size:13px;margin-top:22px}
-.progress{height:4px;background:var(--line);border-radius:4px;overflow:hidden;margin:8px 0 14px}
-.progress i{display:block;height:100%;background:var(--acc);transition:width .25s}
-.meta{display:flex;justify-content:space-between;color:var(--mute);font-size:13px;gap:8px}
-.q-title{font-size:15px;color:var(--mute);margin:4px 0 12px}
-.opt-card{display:flex;gap:12px;align-items:flex-start;width:100%;text-align:left;background:var(--card);border:1.5px solid var(--line);border-radius:var(--r);padding:14px;margin-bottom:10px}
-.opt-card .box{flex:none;width:22px;height:22px;border-radius:7px;border:2px solid var(--line);margin-top:1px;display:grid;place-items:center;font-size:14px;font-weight:800;line-height:1}
-.opt-card[aria-pressed="true"]{border-color:var(--acc);background:var(--acc-soft)}
-.opt-card[aria-pressed="true"] .box{background:var(--acc);border-color:var(--acc);color:var(--acc-ink)}
-.opt-card .txt{flex:1}
-.tag{display:inline-block;font-size:12px;font-weight:700;border-radius:6px;padding:2px 7px;margin-top:8px}
-.opt-card.ok{border-color:var(--ok);background:var(--ok-bg)} .opt-card.ok .box{background:var(--ok);border-color:var(--ok);color:#fff} .opt-card.ok .tag{background:var(--ok);color:#fff}
-.opt-card.bad{border-color:var(--bad);background:var(--bad-bg)} .opt-card.bad .box{background:var(--bad);border-color:var(--bad);color:#fff} .opt-card.bad .tag{background:var(--bad);color:#fff}
-.opt-card.miss{border-color:var(--warn);background:var(--warn-bg)} .opt-card.miss .tag{background:var(--warn);color:#fff}
-.opt-card.neutral{opacity:.8}
-.opt-card.neutral .tag{background:var(--line);color:var(--mute)}
-.fix{display:block;margin-top:6px;font-size:14px;color:var(--mute)}
-.score{display:flex;align-items:baseline;gap:10px;margin:14px 0 6px}
-.score b{font-size:30px;letter-spacing:-.02em}
+
+/* Stacks */
+.stack{display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:11px 12px;margin-bottom:8px}
+.stack .sx{flex:1;min-width:0}
+.stack .sx b{display:block}
+.stack small{display:block;font-size:12px;color:var(--mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sm{border:0;border-radius:10px;background:var(--soft);color:var(--acc);font-weight:700;font-size:13px;padding:7px 12px}
+.sm.del{background:none;color:var(--bad);padding:7px 8px}
+.save{display:flex;gap:8px;margin-top:8px}
+.save input,.linkrow input{flex:1;min-width:0;font:inherit;font-size:14px;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:10px;padding:9px 11px}
+.empty{color:var(--mute);padding:4px 0}
+.note{color:var(--mute);font-size:12.5px;margin-top:20px}
+
+/* Dock */
+.dock{position:fixed;left:0;right:0;bottom:0;background:var(--bg);z-index:20}
+.dock .in{max-width:640px;margin:0 auto}
+.startbar{padding:10px 18px 8px;display:flex;gap:8px}
+.btn{border:0;border-radius:12px;background:var(--acc);color:var(--on);font-weight:700;font-size:15px;padding:13px;width:100%;display:flex;gap:8px;align-items:center;justify-content:center}
+.btn.alt{background:var(--card);color:var(--ink);border:1px solid var(--line)}
+.btn.soft{background:var(--soft);color:var(--acc)}
+.btn[disabled]{opacity:.45;cursor:default}
+.btn svg{width:18px;height:18px}
+.tabbar{display:flex;border-top:1px solid var(--line);background:var(--card);padding:6px 8px calc(env(safe-area-inset-bottom) + 6px)}
+.tabbar button{flex:1;border:0;background:none;font-size:11px;font-weight:600;color:var(--mute);display:grid;justify-items:center;gap:2px;padding:4px 0}
+.tabbar button svg{width:24px;height:24px}
+.tabbar button.on{color:var(--acc)}
+.actbar{padding:10px 18px calc(env(safe-area-inset-bottom) + 12px);display:flex;gap:8px;background:var(--bg);border-top:1px solid var(--line)}
+
+/* Quiz */
+.meta{display:flex;justify-content:space-between;font-size:12.5px;color:var(--mute);font-weight:600;gap:8px}
+.bar{height:5px;border-radius:5px;background:var(--line);margin:8px 0 14px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--acc);border-radius:5px;transition:width .25s}
+.qbox{background:var(--soft);border:1.5px solid var(--acc);border-radius:18px;padding:14px 15px 13px;margin-bottom:14px}
+.qbox .lab{display:flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--acc)}
+.qbox .lab b{display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--acc);color:var(--on);font-size:13px;letter-spacing:0}
+.qbox h2{font-size:18px;line-height:1.35;font-weight:700;margin:9px 0 8px;letter-spacing:-.005em}
+.qbox .hint{font-size:12.5px;color:var(--mute)}
+.opt{display:flex;gap:12px;width:100%;text-align:left;border:1.5px solid var(--line);background:var(--card);border-radius:14px;padding:13px;margin-bottom:9px}
+.opt .bx{flex:none;width:23px;height:23px;border-radius:7px;border:2px solid var(--line);display:grid;place-items:center;font-size:14px;font-weight:800;margin-top:1px;color:var(--on)}
+.opt[aria-pressed="true"]{border-color:var(--acc);background:var(--soft)}
+.opt[aria-pressed="true"] .bx{background:var(--acc);border-color:var(--acc)}
+.opt .txt{flex:1;min-width:0}
+.opt.ok{border-color:var(--ok);background:var(--ok-bg)} .opt.ok .bx{background:var(--ok);border-color:var(--ok);color:#fff}
+.opt.bad{border-color:var(--bad);background:var(--bad-bg)} .opt.bad .bx{background:var(--bad);border-color:var(--bad);color:#fff}
+.opt.miss{border-color:var(--warn);background:var(--warn-bg)}
+.opt.neutral{opacity:.92}
+.tag{display:inline-block;font-size:11.5px;font-weight:700;border-radius:6px;padding:2px 8px;margin-top:7px;background:var(--line);color:var(--mute)}
+.ok .tag{background:var(--ok);color:#fff} .bad .tag{background:var(--bad);color:#fff} .miss .tag{background:var(--warn);color:#fff}
+.why{display:block;margin-top:7px;font-size:13.5px;color:var(--ink)}
+.score{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 15px;margin:4px 0 8px}
+.score b{font-size:28px;letter-spacing:-.02em;color:var(--acc)}
 details{margin-top:6px}
 summary{cursor:pointer;color:var(--acc);font-weight:600;padding:8px 0}
 pre.law{white-space:pre-wrap;word-break:break-word;font:14px/1.5 ui-serif,Georgia,serif;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;margin:6px 0 0}
-table{width:100%;border-collapse:collapse;font-size:14px}
-td,th{padding:8px 4px;border-top:1px solid var(--line);text-align:left}
-th{color:var(--mute);font-weight:600;border-top:0;font-size:12px;text-transform:uppercase;letter-spacing:.05em}
-td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
-.big{font-size:44px;font-weight:750;letter-spacing:-.03em;margin:4px 0}
 .flag[aria-pressed="true"]{color:var(--warn);border-color:var(--warn)}
-.empty{color:var(--mute);padding:6px 0}
-.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(env(safe-area-inset-bottom) + 96px);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:999px;font-size:14px;font-weight:600;opacity:0;pointer-events:none;transition:opacity .2s}
+
+/* Auswertung / Statistik */
+.ring{display:grid;place-items:center;margin:10px auto 2px;width:160px;height:160px}
+.row{display:grid;grid-template-columns:1fr 46px;gap:2px 10px;align-items:center;margin:11px 0;font-size:13.5px;font-weight:600}
+.row .t{grid-column:1/-1}
+.track{height:9px;border-radius:9px;background:var(--line);overflow:hidden}
+.track i{display:block;height:100%;border-radius:9px;background:var(--cc,var(--acc))}
+.row .v{text-align:right;font-variant-numeric:tabular-nums}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 8px;text-align:center}
+.kpi b{display:block;font-size:22px;letter-spacing:-.02em}
+.kpi span{font-size:11.5px;color:var(--mute)}
+
+/* Teilen-Blatt */
+.dim{position:fixed;inset:0;background:rgba(8,14,28,.5);z-index:40}
+.sheet{position:fixed;left:0;right:0;bottom:0;z-index:41;background:var(--card);border-radius:22px 22px 0 0;box-shadow:0 -10px 30px rgba(0,0,0,.25);max-height:92%;overflow-y:auto}
+.sheet .in{max-width:640px;margin:0 auto;padding:10px 18px calc(env(safe-area-inset-bottom) + 20px)}
+.grab{width:38px;height:5px;border-radius:5px;background:var(--line);margin:0 auto 12px}
+.sh{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.sh h2{font-size:19px;margin:0}
+.sh p{font-size:13px;color:var(--mute);margin-top:2px}
+.xbtn{flex:none;width:32px;height:32px;border-radius:50%;border:0;background:var(--line);font-size:16px;line-height:1;padding:0}
+.linkrow{display:flex;gap:8px;margin:14px 0 10px}
+.cp{flex:none;border:0;border-radius:10px;background:var(--soft);color:var(--acc);font-weight:700;font-size:13px;padding:0 14px}
+.cp.done{background:var(--ok-bg);color:var(--ok)}
+.stack2{display:grid;gap:8px}
+.tip{display:flex;gap:10px;background:var(--bg);border-radius:12px;padding:10px 12px;font-size:12.5px;color:var(--mute);margin-top:12px}
+.tip b{color:var(--ink)}
+.qr{display:grid;justify-items:center;gap:8px;margin-top:12px;padding:14px;background:#fff;border-radius:14px;border:1px solid var(--line)}
+.qr svg{width:210px;height:210px;display:block}
+.qr span{font-size:12px;color:#44506b}
+.with{display:flex;gap:10px;align-items:center;margin:2px 0 10px;font-size:14px}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(env(safe-area-inset-bottom) + 150px);background:var(--ink);color:var(--bg);padding:9px 16px;border-radius:999px;font-size:13.5px;font-weight:600;opacity:0;pointer-events:none;transition:opacity .2s;z-index:60;max-width:90%;text-align:center}
 .toast.on{opacity:1}
 </style>
 </head>
 <body>
 <div id="app"></div>
+<div class="dock" id="dock"></div>
+<div id="sheet"></div>
 <div class="toast" id="toast" role="status"></div>
+<script src="vendor/qrcode.js"></script>
 <script>
 "use strict";
-/* ---------- Helfer ---------- */
+/* ================= Helfer ================= */
 const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const store = {
@@ -116,15 +189,26 @@ const store = {
   set(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
 };
 function shuffle(a){ a = a.slice(); for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
-function toast(msg){ const t=$('#toast'); t.textContent=msg; t.classList.add('on'); clearTimeout(toast._t); toast._t=setTimeout(()=>t.classList.remove('on'),1800); }
+function toast(msg){ const t=$('#toast'); t.textContent=msg; t.classList.add('on'); clearTimeout(toast._t); toast._t=setTimeout(()=>t.classList.remove('on'),2200); }
+const punkte = n => n + (n===1 ? ' Punkt' : ' Punkte');
+const IC = {
+  share:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3"/><path d="M8 7l4-4 4 4"/><path d="M6 11H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-1"/></svg>',
+  book:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 21V5"/><path d="M9 8h6"/></svg>',
+  layers:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></svg>',
+  chart:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10"/><path d="M10 20V4"/><path d="M16 20v-7"/><path d="M22 20H2"/></svg>',
+  chev:'<svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8l5 5 5-5"/></svg>'
+};
 
-/* ---------- Gesetze ---------- */
+/* ================= Gesetze & Daten ================= */
 const LAWS = [
   {id:'BDG',  name:'BDG',  full:'Beamten-Dienstrechtsgesetz 1979', file:'daten/bdg.json', ready:true},
   {id:'StGB', name:'StGB', full:'Strafgesetzbuch',                  ready:false},
   {id:'SPG',  name:'SPG',  full:'Sicherheitspolizeigesetz',         ready:false},
   {id:'VStG', name:'VStG', full:'Verwaltungsstrafgesetz',           ready:false}
 ];
+const GROUP_MIN = 10;      // ab so vielen Paragrafen werden Gruppen-Kästen verwendet
+const SEARCH_MIN = 30;     // ab so vielen Paragrafen erscheint ein Suchfeld
+const SHARE_TEXT = 'Rechtstrainer: Multiple-Choice-Training für Gesetzestexte. Link in Safari öffnen, dann Teilen › Zum Home-Bildschirm.';
 const cache = {};
 async function loadLaw(id){
   if(cache[id]) return cache[id];
@@ -134,194 +218,323 @@ async function loadLaw(id){
   cache[id] = await r.json();
   return cache[id];
 }
-
-/* ---------- Zustand ---------- */
-const S = {
-  view:'home', law:store.get('rt.law','BDG'), sel:new Set(), onlyOpen:store.get('rt.onlyOpen',false),
-  run:null, data:null
-};
-const hist  = () => store.get('rt.hist', {});
-const stacks= () => store.get('rt.stacks', []);
-const flags = () => store.get('rt.flags', []);
-
-function maxPoints(q){ const t=q.s.filter(x=>x.w).length; return Math.max(t,1); }
-function score(q, ticked){            // ticked: Set von Indizes in q.s
-  const trueCount = q.s.filter(x=>x.w).length;
-  let right=0, wrong=0;
-  q.s.forEach((x,i)=>{ if(ticked.has(i)){ x.w ? right++ : wrong++; } });
-  if(trueCount === 0) return ticked.size === 0 ? 1 : 0;   // nichts richtig: nichts ankreuzen = 1 Punkt
-  return Math.max(0, right - wrong);
+function groupsOf(d){
+  if(d.gruppen && d.gruppen.length) return d.gruppen.map(g => ({name:g.name, ps:g.paras.map(n => d.paragrafen.find(p => p.n===n)).filter(Boolean)}));
+  return [{name:d.name, ps:d.paragrafen}];
 }
-function isOpen(q){ const h=hist()[q.id]; return !h || h.last < h.max; }
 
-/* ---------- Home ---------- */
-async function renderHome(){
-  S.view='home';
-  const app = $('#app');
-  const law = LAWS.find(l=>l.id===S.law);
-  let tabs = '<div class="tabs" role="tablist">' + LAWS.map(l =>
-    `<button class="tab" role="tab" aria-selected="${l.id===S.law}" data-law="${l.id}" ${l.ready?'':'disabled'}>${l.name}${l.ready?'':'<small>bald</small>'}</button>`).join('') + '</div>';
-  let body = '';
-  if(law.ready){
-    try{ S.data = await loadLaw(law.id); }catch(e){ app.innerHTML = '<h1>Rechtstrainer</h1><p class="sub">Daten konnten nicht geladen werden. Bitte Verbindung prüfen.</p>'; return; }
-    const stored = store.get('rt.sel.'+law.id, null);
-    if(stored && !S._selLoaded){ S.sel = new Set(stored); }
-    S._selLoaded = true;
-    const valid = new Set(S.data.paragrafen.map(p=>p.n));
-    S.sel = new Set([...S.sel].filter(n=>valid.has(n)));
-    const h = hist();
-    const total = S.data.paragrafen.reduce((a,p)=>a+p.q.length,0);
-    const done  = S.data.paragrafen.reduce((a,p)=>a+p.q.filter(q=>h[q.id]&&h[q.id].last>=h[q.id].max).length,0);
-    body += `<p class="sub">${esc(law.full)} · ${total} Fragen · ${done} sicher beantwortet</p>`;
-    body += `<h2>Paragrafen wählen</h2>
-      <div class="row" style="margin-bottom:10px"><button class="btn sm" id="all">Alle</button><button class="btn sm" id="none">Keine</button><span class="sp"></span><span class="sub" style="margin:0;font-size:13px" id="cnt"></span></div>
-      <div class="grid">` + S.data.paragrafen.map(p =>
-        `<button class="chip" data-p="${p.n}" aria-pressed="${S.sel.has(p.n)}">${esc(p.label)}<small>${p.q.length} Fragen</small></button>`).join('') + '</div>';
-    body += `<h2>Optionen</h2><div class="card"><label class="opt"><input type="checkbox" id="onlyOpen" ${S.onlyOpen?'checked':''}> Nur Fragen, die ich noch nicht sicher kann</label></div>`;
-    body += `<h2>Prüfungs-Stacks</h2><div class="card" id="stacks"></div>`;
-    const fl = flags();
-    if(fl.length) body += `<div class="row" style="margin-top:14px"><button class="btn sm ghost" id="expflags">${fl.length} gemeldete Frage(n) kopieren</button></div>`;
-    body += `<p class="note">Quelle der Gesetzestexte: ${esc(S.data.quelle)}, abgerufen am ${esc(S.data.abgerufen)}. Fragen wurden von einer KI aus dem Wortlaut erstellt und können Fehler enthalten – im Zweifel gilt der Gesetzestext (wird nach jeder Antwort angezeigt). Keine Rechtsberatung.</p>`;
-  } else {
-    body = `<p class="sub">${esc(law.full)}</p><div class="card"><b>In Vorbereitung</b><p class="sub" style="margin:6px 0 0">Dieses Gesetz wird als Nächstes ergänzt.</p></div>`;
-  }
-  app.innerHTML = `<h1>Rechtstrainer</h1>${tabs}<div style="height:12px"></div>${body}
-    <div class="bar"><div class="in"><button class="btn pri" id="start" disabled>Start</button></div></div>`;
-  app.querySelectorAll('.tab').forEach(b => b.onclick = () => { S.law=b.dataset.law; S._selLoaded=false; S.sel=new Set(); store.set('rt.law',S.law); renderHome(); });
-  if(!law.ready) return;
-  const refresh = () => {
-    app.querySelectorAll('.chip').forEach(c => c.setAttribute('aria-pressed', S.sel.has(c.dataset.p)));
-    store.set('rt.sel.'+law.id, [...S.sel]);
-    const qs = buildPool();
-    $('#cnt').textContent = S.sel.size + ' § gewählt';
-    const st = $('#start'); st.disabled = qs.length===0;
-    st.textContent = qs.length ? `Start · ${qs.length} Fragen` : (S.sel.size ? 'Keine offenen Fragen' : 'Paragrafen wählen');
-    renderStacks();
-  };
-  app.querySelectorAll('.chip').forEach(c => c.onclick = () => { const n=c.dataset.p; S.sel.has(n)?S.sel.delete(n):S.sel.add(n); refresh(); });
-  $('#all').onclick  = () => { S.sel = new Set(S.data.paragrafen.map(p=>p.n)); refresh(); };
-  $('#none').onclick = () => { S.sel = new Set(); refresh(); };
-  $('#onlyOpen').onchange = e => { S.onlyOpen = e.target.checked; store.set('rt.onlyOpen',S.onlyOpen); refresh(); };
-  $('#start').onclick = () => startRun(buildPool());
-  const ef = $('#expflags'); if(ef) ef.onclick = exportFlags;
-  refresh();
-}
+/* ================= Zustand ================= */
+const S = {view:'home', law:store.get('rt.law','BDG'), data:null, sel:new Set(), open:new Set(), onlyOpen:store.get('rt.onlyOpen',false), q:'', run:null, sheet:null};
+const hist   = () => store.get('rt.hist2', {});
+const stacks = () => store.get('rt.stacks', []);
+const flags  = () => store.get('rt.flags', []);
+const order  = () => S.data.paragrafen.map(p => p.n);
+const persistSel = () => { store.set('rt.sel.'+S.law, order().filter(n => S.sel.has(n))); };
+const persistOpen = () => store.set('rt.open.'+S.law, [...S.open]);
+
+/* Punktesystem: je Aussage +1 (richtig angekreuzt oder richtig ausgelassen), −1 (falsch angekreuzt oder falsch ausgelassen). Minimum 0, Maximum 4. */
+function score(q, ticked){ let p=0; q.s.forEach((x,i) => { p += (ticked.has(i) === x.w) ? 1 : -1; }); return Math.max(0, p); }
+const isOpen = q => { const h = hist()[q.id]; return !h || h.last < 4; };
 function buildPool(){
-  let qs = [];
+  const qs = [];
   S.data.paragrafen.forEach(p => { if(S.sel.has(p.n)) p.q.forEach(q => qs.push({q, p})); });
-  if(S.onlyOpen) qs = qs.filter(x => isOpen(x.q));
-  return qs;
+  return S.onlyOpen ? qs.filter(x => isOpen(x.q)) : qs;
+}
+const countQ = ns => S.data.paragrafen.filter(p => ns.includes(p.n)).reduce((a,p) => a + p.q.length, 0);
+
+/* ================= Darstellung ================= */
+function setDock(html){ $('#dock').innerHTML = html ? `<div class="in">${html}</div>` : ''; }
+function tabbar(){
+  const t = (id, label, icon) => `<button data-act="tab" data-v="${id}" class="${S.view===id?'on':''}" ${S.view===id?'aria-current="page"':''}>${icon}${label}</button>`;
+  return `<nav class="tabbar" aria-label="Hauptnavigation">${t('home','Lernen',IC.book)}${t('stacks','Stacks',IC.layers)}${t('stats','Statistik',IC.chart)}</nav>`;
+}
+function render(keep){
+  const y = keep ? window.scrollY : 0;
+  ({home:renderHome, stacks:renderStacks, stats:renderStats, quiz:renderQ, result:renderResult})[S.view]();
+  window.scrollTo(0, y);
+}
+function header(sub){
+  return `<div class="top"><h1>Rechtstrainer</h1><button class="ibtn" data-act="share" aria-label="App teilen">${IC.share}</button></div>
+    <p class="mute" style="margin-top:2px">${sub}</p>`;
+}
+function lawPills(){
+  return '<div class="pills">' + LAWS.map(l => `<button class="pill ${l.id===S.law?'on':''}" data-act="law" data-id="${l.id}" ${l.ready?'':'disabled'}>${l.name}${l.ready?'':' <small>bald</small>'}</button>`).join('') + '</div>';
+}
+
+/* ---------- Lernen (Start) ---------- */
+function tile(p, cc){
+  const on = S.sel.has(p.n);
+  return `<button class="tile ${on?'sel':''}" data-act="tog" data-p="${esc(p.n)}" style="--cc:var(${cc})" aria-pressed="${on}"><span class="ck">✓</span><b>${esc(p.label)}</b><span class="tt">${esc(p.title)}</span><span class="qn">${p.q.length} Fragen</span></button>`;
+}
+function renderHome(){
+  const d = S.data, groups = groupsOf(d), total = d.paragrafen.reduce((a,p)=>a+p.q.length,0), h = hist();
+  const done = d.paragrafen.reduce((a,p)=>a+p.q.filter(q=>h[q.id]&&h[q.id].last>=4).length,0);
+  const useGroups = d.paragrafen.length > GROUP_MIN;
+  const filt = S.q.trim().toLowerCase();
+  const match = p => !filt || (p.label+' '+p.title).toLowerCase().includes(filt);
+  let list;
+  if(useGroups){
+    list = groups.map((g,gi) => {
+      const ps = g.ps, n = ps.filter(p=>S.sel.has(p.n)).length, shown = ps.filter(match);
+      if(filt && !shown.length) return '';
+      const open = !!filt || S.open.has(gi);
+      const cls = n===0 ? '' : (n===ps.length ? 'all' : 'some'), mark = cls==='all' ? '✓' : (cls==='some' ? '–' : '');
+      const cc = '--c'+((gi%5)+1);
+      return `<div class="grp ${open?'open':''} ${n?'has':''}" style="--cc:var(${cc})">
+        <div class="gh" role="button" tabindex="0" aria-expanded="${open}" data-act="grp" data-g="${gi}">
+          <button class="tri ${cls}" data-act="grpall" data-g="${gi}" aria-label="Alle Paragrafen von ${esc(g.name)} wählen oder abwählen">${mark}</button>
+          <div class="gt"><b><i></i>${esc(g.name)}</b><span>${open ? ps.length+' Paragrafen' : esc(ps.map(p=>p.label).join(', '))}</span></div>
+          <span class="cnt ${n?'on':''}">${n} / ${ps.length}</span>${IC.chev}</div>
+        <div class="gb">${shown.map(p => tile(p, cc)).join('')}</div></div>`;
+    }).join('');
+  } else {
+    list = `<div class="flat">${d.paragrafen.filter(match).map(p => tile(p, '--c1')).join('')}</div>`;
+  }
+  const pool = buildPool();
+  $('#app').innerHTML = `${header(esc(d.name)+' · '+total+' Fragen · '+done+' sicher')}
+    ${lawPills()}
+    <div class="sec"><span>Paragrafen · ${S.sel.size} gewählt</span><span class="mini"><button data-act="all">Alle</button><button data-act="none">Keine</button></span></div>
+    ${d.paragrafen.length > SEARCH_MIN ? `<input class="search" id="q" type="search" placeholder="Paragraf oder Stichwort suchen …" value="${esc(S.q)}" aria-label="Paragrafen suchen">` : ''}
+    ${list || '<p class="empty">Keine Treffer.</p>'}
+    <div class="sec"><span>Optionen</span></div>
+    <div class="card"><label class="chk"><input type="checkbox" id="onlyOpen" ${S.onlyOpen?'checked':''}> Nur Fragen, die ich noch nicht sicher kann</label></div>
+    <div class="sec"><span>Prüfungs-Stacks</span></div>
+    <div id="stk">${stackList(false)}</div>
+    ${stackSave()}
+    <p class="note">Quelle der Gesetzestexte: ${esc(d.quelle)}, abgerufen am ${esc(d.abgerufen)}. Die Fragen wurden von einer KI aus dem Wortlaut erstellt und können Fehler enthalten. Im Zweifel gilt der Gesetzestext, der nach jeder Antwort angezeigt wird. Keine Rechtsberatung.</p>`;
+  setDock(`<div class="startbar"><button class="btn" data-act="start" ${pool.length?'':'disabled'}>${pool.length ? 'Start · '+pool.length+' Fragen' : (S.sel.size ? 'Keine offenen Fragen' : 'Paragrafen wählen')}</button></div>${tabbar()}`);
+  const q = $('#q'); if(q) q.oninput = e => { S.q = e.target.value; render(true); const n=$('#q'); if(n){ n.focus(); n.setSelectionRange(n.value.length,n.value.length); } };
+  const oo = $('#onlyOpen'); if(oo) oo.onchange = e => { S.onlyOpen = e.target.checked; store.set('rt.onlyOpen', S.onlyOpen); render(true); };
+}
+
+/* ---------- Stacks ---------- */
+function stackList(full){
+  const list = stacks().filter(s => s.law === S.law);
+  if(!list.length) return '<div class="card empty">Noch keine Stacks gespeichert.</div>';
+  return list.map(s => `<div class="stack"><div class="sx"><b>${esc(s.name)}</b><small>${esc(s.paras.map(n=>'§ '+n).join(', '))} · ${countQ(s.paras)} Fragen</small></div>
+    <button class="sm" data-act="stk-load" data-id="${esc(s.id)}">Laden</button>
+    ${full ? `<button class="sm" data-act="stk-share" data-id="${esc(s.id)}" aria-label="Stack teilen">Teilen</button>` : ''}
+    ${full ? `<button class="sm del" data-act="stk-del" data-id="${esc(s.id)}" aria-label="Stack löschen">✕</button>` : ''}</div>`).join('');
+}
+function stackSave(){
+  return `<div class="save"><input id="sname" type="text" maxlength="40" placeholder="Name für die aktuelle Auswahl" aria-label="Name des Stacks"><button class="sm" data-act="stk-save" ${S.sel.size?'':'disabled'}>Speichern</button></div>`;
 }
 function renderStacks(){
-  const box = $('#stacks'); if(!box) return;
-  const list = stacks().filter(s => s.law === S.law);
-  let h = list.length ? list.map(s => `<div class="stack"><div class="sp"><b>${esc(s.name)}</b><span>${s.paras.map(n=>'§ '+n).join(', ')}</span></div>
-      <button class="btn sm" data-load="${s.id}">Laden</button><button class="btn sm danger" data-del="${s.id}" aria-label="Stack löschen">✕</button></div>`).join('')
-    : '<div class="empty">Noch keine Stacks gespeichert.</div>';
-  h += `<div class="row" style="margin-top:12px"><input type="text" id="sname" placeholder="Name, z. B. Dienstpflichten" maxlength="40"><button class="btn sm" id="ssave" ${S.sel.size?'':'disabled'}>Speichern</button></div>`;
-  box.innerHTML = h;
-  box.querySelectorAll('[data-load]').forEach(b => b.onclick = () => { const s=stacks().find(x=>x.id===b.dataset.load); if(s){ S.sel=new Set(s.paras); store.set('rt.sel.'+S.law,[...S.sel]); renderHome(); toast('Stack geladen'); } });
-  box.querySelectorAll('[data-del]').forEach(b => b.onclick = () => { if(confirm('Stack löschen?')){ store.set('rt.stacks', stacks().filter(x=>x.id!==b.dataset.del)); renderStacks(); } });
-  const sv = $('#ssave'); if(sv) sv.onclick = () => {
-    const name = ($('#sname').value||'').trim() || ('Stack ' + (list.length+1));
-    const all = stacks(); all.push({id:String(Date.now()), name, law:S.law, paras:[...S.sel]});
-    store.set('rt.stacks', all); renderStacks(); toast('Stack gespeichert');
-  };
+  $('#app').innerHTML = `${header('Gespeicherte Paragrafen-Auswahlen')}
+    <div class="sec"><span>Deine Stacks · ${esc(S.law)}</span></div>
+    <div id="stk">${stackList(true)}</div>
+    <div class="sec"><span>Aktuelle Auswahl speichern</span></div>
+    <p class="mute" style="margin-bottom:8px">${S.sel.size ? S.sel.size+' Paragrafen · '+countQ([...S.sel])+' Fragen gewählt' : 'Wähle zuerst auf „Lernen“ Paragrafen aus.'}</p>
+    ${stackSave()}
+    <p class="note">Mit „Teilen“ erzeugst du einen Link, der die Paragrafen des Stacks enthält. Wer ihn öffnet, startet mit derselben Auswahl. Dein Lernfortschritt wird nie mitgeschickt.</p>`;
+  setDock(tabbar());
 }
-function exportFlags(){
-  const txt = 'Gemeldete Fragen (Rechtstrainer): ' + flags().join(', ');
-  (navigator.clipboard ? navigator.clipboard.writeText(txt) : Promise.reject()).then(()=>toast('Kopiert'), ()=>prompt('Bitte kopieren:', txt));
+function saveStack(){
+  const inp = $('#sname'); if(!S.sel.size) return;
+  const list = stacks(), name = ((inp&&inp.value)||'').trim() || ('Stack ' + (list.filter(s=>s.law===S.law).length+1));
+  list.push({id:String(Date.now()), name, law:S.law, paras:order().filter(n=>S.sel.has(n))});
+  store.set('rt.stacks', list); toast('Stack gespeichert'); render(true);
+}
+
+/* ---------- Statistik ---------- */
+function renderStats(){
+  const d = S.data, h = hist(), groups = groupsOf(d);
+  const all = d.paragrafen.flatMap(p => p.q), ans = all.filter(q => h[q.id]);
+  const pts = ans.reduce((a,q) => a + h[q.id].last, 0), safe = ans.filter(q => h[q.id].last >= 4).length;
+  const pc = ans.length ? Math.round(pts/(4*ans.length)*100) : 0;
+  const rows = groups.map((g,gi) => {
+    const qs = g.ps.flatMap(p => p.q), a = qs.filter(q => h[q.id]), p = a.reduce((x,q)=>x+h[q.id].last,0);
+    const quote = a.length ? Math.round(p/(4*a.length)*100) : 0;
+    return `<div class="row" style="--cc:var(--c${(gi%5)+1})"><span class="t">${esc(g.name)} <span class="mute" style="font-weight:500">· ${a.length} von ${qs.length} beantwortet</span></span><div class="track"><i style="width:${quote}%"></i></div><span class="v">${a.length?quote+' %':'–'}</span></div>`;
+  }).join('');
+  const fl = flags();
+  $('#app').innerHTML = `${header('Dein Lernstand zu ' + esc(S.law))}
+    <div class="kpis"><div class="kpi"><b>${ans.length}</b><span>beantwortet</span></div><div class="kpi"><b>${safe}</b><span>sicher (4 Punkte)</span></div><div class="kpi"><b>${ans.length?pc+' %':'–'}</b><span>Quote</span></div></div>
+    <div class="sec"><span>Nach Themenfeld</span></div><div class="card">${rows}</div>
+    <div class="sec"><span>Weiteres</span></div>
+    <div class="stack"><div class="sx"><b>Gemeldete Fragen</b><small>${fl.length} markiert</small></div><button class="sm" data-act="flags" ${fl.length?'':'disabled'}>Kopieren</button></div>
+    <div class="stack"><div class="sx"><b>Fortschritt zurücksetzen</b><small>Löscht nur deine Ergebnisse auf diesem Gerät</small></div><button class="sm del" data-act="reset">Zurücksetzen</button></div>`;
+  setDock(tabbar());
 }
 
 /* ---------- Quiz ---------- */
 function startRun(pool){
   if(!pool.length) return;
-  S.run = {items: shuffle(pool).map(x => ({q:x.q, p:x.p, order:shuffle([0,1,2,3])})), i:0, ticked:new Set(), checked:false, res:[]};
-  renderQ();
+  S.run = {items:shuffle(pool).map(x => ({q:x.q, p:x.p, order:shuffle([0,1,2,3])})), i:0, ticked:new Set(), checked:false, res:[]};
+  S.view = 'quiz'; render();
 }
 function renderQ(){
-  S.view='quiz';
-  const r = S.run, it = r.items[r.i], q = it.q;
-  const total = r.items.length;
-  const pts = r.res.reduce((a,x)=>a+x.pts,0), mx = r.res.reduce((a,x)=>a+x.max,0);
-  const fl = flags().includes(q.id);
-  let h = `<div class="meta"><span>Frage ${r.i+1} / ${total} · ${esc(it.p.label)}</span><span>${pts} / ${mx} Punkte</span></div>
-    <div class="progress"><i style="width:${(r.i + (r.checked?1:0))/total*100}%"></i></div>
-    <div class="q-title">Welche Aussagen sind richtig? (${esc(it.p.label)} BDG – ${esc(it.p.title)})</div>`;
-  const ticked = r.ticked;
-  it.order.forEach((idx, pos) => {
-    const s = q.s[idx];
-    let cls = '', tag = '', mark = '';
+  const r = S.run, it = r.items[r.i], q = it.q, total = r.items.length;
+  const fl = flags().includes(q.id), ticked = r.ticked;
+  const last = r.res[r.res.length-1];
+  let h = `<div class="meta"><span>Frage ${r.i+1} / ${total} · ${esc(it.p.label)}</span><span>${r.res.reduce((a,x)=>a+x.pts,0)} Punkte</span></div>
+    <div class="bar"><i style="width:${(r.i + (r.checked?1:0))/total*100}%"></i></div>
+    <div class="qbox"><div class="lab"><b>?</b>Frage · ${esc(it.p.label)} ${esc(S.law)}</div><h2>${esc(q.f)}</h2><div class="hint">Kreuze alle zutreffenden Aussagen an. Pro Aussage: +1 Punkt, wenn richtig behandelt, sonst −1 (mindestens 0).</div></div>`;
+  it.order.forEach(idx => {
+    const s = q.s[idx], t = ticked.has(idx);
+    let cls = '', tag = '', mark = t ? '✓' : '';
     if(r.checked){
-      const t = ticked.has(idx);
-      if(t && s.w){ cls='ok'; tag='Richtig – zu Recht angekreuzt'; mark='✓'; }
-      else if(t && !s.w){ cls='bad'; tag='Falsch – Abzug'; mark='✕'; }
-      else if(!t && s.w){ cls='miss'; tag='Richtig – nicht angekreuzt'; mark=''; }
-      else { cls='neutral'; tag='Falsch – zu Recht nicht angekreuzt'; mark=''; }
-    } else if(ticked.has(idx)) mark='✓';
-    h += `<button class="opt-card ${cls}" data-i="${idx}" aria-pressed="${ticked.has(idx)}" ${r.checked?'disabled':''}>
-      <span class="box">${mark}</span>
-      <span class="txt">${esc(s.t)}${r.checked?`<br><span class="tag">${tag}</span>${(!s.w&&s.k)?`<span class="fix">→ ${esc(s.k)}</span>`:''}`:''}</span></button>`;
+      if(t && s.w){ cls='ok'; tag='Richtig angekreuzt'; }
+      else if(t && !s.w){ cls='bad'; tag='Falsch angekreuzt'; mark='✕'; }
+      else if(!t && s.w){ cls='miss'; tag='Übersehen: diese Aussage trifft zu'; }
+      else { cls='neutral'; tag='Richtig ausgelassen'; }
+    }
+    h += `<button class="opt ${cls}" data-act="pick" data-i="${idx}" aria-pressed="${t}" ${r.checked?'disabled':''}>
+      <span class="bx">${mark}</span>
+      <span class="txt">${esc(s.t)}${r.checked ? `<br><span class="tag">${tag}</span>${(!s.w && s.k) ? `<span class="why"><b>Erklärung:</b> ${esc(s.k)}</span>` : ''}` : ''}</span></button>`;
   });
   if(r.checked){
-    const last = r.res[r.res.length-1];
-    const nTrue = q.s.filter(x=>x.w).length;
-    h += `<div class="score"><b>${last.pts} / ${last.max}</b><span class="sub" style="margin:0">Punkt${last.max===1?'':'e'}${nTrue===0?' · keine Aussage war richtig':''}</span></div>
-      <details open><summary>Gesetzestext ${esc(it.p.label)} BDG · ${esc(q.ref)}</summary><pre class="law">${esc(it.p.title)}\n\n${esc(it.p.text)}</pre>
-      <div class="note" style="margin-top:8px">Fassung in Kraft seit ${esc(it.p.stand)} · Quelle: RIS</div></details>
-      <div class="row" style="margin-top:10px"><button class="btn sm flag" id="flag" aria-pressed="${fl}">⚑ Frage melden</button></div>`;
+    h += `<div class="score"><b>${punkte(last.pts)}</b><span class="mute">in dieser Frage</span></div>
+      <details open><summary>Gesetzestext ${esc(it.p.label)} ${esc(S.law)} · ${esc(q.ref)}</summary><pre class="law">${esc(it.p.title)}\n\n${esc(it.p.text)}</pre>
+      <p class="note" style="margin-top:8px">Fassung in Kraft seit ${esc(it.p.stand)} · Quelle: RIS</p></details>
+      <div style="margin-top:12px"><button class="sm flag" data-act="flag" aria-pressed="${fl}">⚑ Frage melden</button></div>`;
   }
-  h += `<div class="bar"><div class="in">${r.checked
-      ? `<button class="btn pri" id="next">${r.i+1<total?'Weiter':'Auswertung'}</button>`
-      : `<button class="btn" id="quit">Beenden</button><button class="btn pri" id="check">Prüfen</button>`}</div></div>`;
   $('#app').innerHTML = h;
-  window.scrollTo(0,0);
-  document.querySelectorAll('.opt-card').forEach(b => b.onclick = () => {
-    if(r.checked) return; const i=+b.dataset.i; ticked.has(i)?ticked.delete(i):ticked.add(i);
-    b.setAttribute('aria-pressed', ticked.has(i)); b.querySelector('.box').textContent = ticked.has(i)?'✓':'';
-  });
-  const c = $('#check'); if(c) c.onclick = () => {
-    const p = score(q, ticked), m = maxPoints(q);
-    r.res.push({id:q.id, n:it.p.n, label:it.p.label, pts:p, max:m});
-    const H = hist(); const o = H[q.id] || {n:0}; H[q.id] = {last:p, max:m, n:o.n+1}; store.set('rt.hist', H);
-    r.checked = true; renderQ();
-  };
-  const nx = $('#next'); if(nx) nx.onclick = () => { if(r.i+1<total){ r.i++; r.ticked=new Set(); r.checked=false; renderQ(); } else renderResult(); };
-  const qt = $('#quit'); if(qt) qt.onclick = () => { if(!r.res.length || confirm('Training beenden? Bisherige Ergebnisse werden angezeigt.')) { r.res.length ? renderResult() : renderHome(); } };
-  const fg = $('#flag'); if(fg) fg.onclick = () => {
-    let f = flags(); f = f.includes(q.id) ? f.filter(x=>x!==q.id) : f.concat(q.id); store.set('rt.flags', f);
-    fg.setAttribute('aria-pressed', f.includes(q.id)); toast(f.includes(q.id)?'Frage markiert':'Markierung entfernt');
-  };
+  setDock(`<div class="actbar">${r.checked
+    ? `<button class="btn" data-act="next">${r.i+1<total ? 'Weiter' : 'Auswertung'}</button>`
+    : `<button class="btn alt" data-act="quit" style="flex:1">Beenden</button><button class="btn" data-act="check" style="flex:2">Prüfen</button>`}</div>`);
+}
+function checkAnswer(){
+  const r = S.run, it = r.items[r.i], p = score(it.q, r.ticked);
+  r.res.push({id:it.q.id, n:it.p.n, label:it.p.label, pts:p});
+  const H = hist(); const o = H[it.q.id] || {n:0}; H[it.q.id] = {last:p, n:o.n+1}; store.set('rt.hist2', H);
+  r.checked = true; render();
 }
 
 /* ---------- Auswertung ---------- */
 function renderResult(){
-  S.view='result';
-  const r = S.run;
-  const pts = r.res.reduce((a,x)=>a+x.pts,0), mx = r.res.reduce((a,x)=>a+x.max,0);
-  const pct = mx ? Math.round(pts/mx*100) : 0;
-  const by = {};
-  r.res.forEach(x => { const b = by[x.n] || (by[x.n] = {label:x.label, pts:0, max:0, n:0}); b.pts+=x.pts; b.max+=x.max; b.n++; });
-  const weak = r.res.filter(x => x.pts < x.max);
-  let h = `<h1>Auswertung</h1><p class="sub">${r.res.length} Fragen beantwortet</p>
-    <div class="card"><div class="big">${pct} %</div><div class="sub" style="margin:0">${pts} von ${mx} Punkten</div></div>
-    <h2>Nach Paragraf</h2><div class="card"><table><tr><th>§</th><th class="n">Fragen</th><th class="n">Punkte</th><th class="n">Quote</th></tr>` +
-    Object.values(by).map(b => `<tr><td>${esc(b.label)}</td><td class="n">${b.n}</td><td class="n">${b.pts}/${b.max}</td><td class="n">${b.max?Math.round(b.pts/b.max*100):0} %</td></tr>`).join('') + `</table></div>
-    <div class="bar"><div class="in"><button class="btn" id="home">Startseite</button>
-    <button class="btn pri" id="retry" ${weak.length?'':'disabled'}>${weak.length?`${weak.length} Fehler wiederholen`:'Alles richtig'}</button></div></div>`;
-  $('#app').innerHTML = h; window.scrollTo(0,0);
-  $('#home').onclick = () => renderHome();
-  $('#retry').onclick = () => {
-    const ids = new Set(weak.map(x=>x.id));
-    const pool = []; S.data.paragrafen.forEach(p => p.q.forEach(q => { if(ids.has(q.id)) pool.push({q,p}); }));
-    startRun(pool);
-  };
+  const r = S.run, pts = r.res.reduce((a,x)=>a+x.pts,0), mx = r.res.length*4, pc = mx ? Math.round(pts/mx*100) : 0;
+  const by = {}; r.res.forEach(x => { const b = by[x.n] || (by[x.n] = {label:x.label, n:x.n, pts:0, max:0}); b.pts += x.pts; b.max += 4; });
+  const weak = r.res.filter(x => x.pts < 4);
+  const groups = groupsOf(S.data);
+  const colorOf = n => { const gi = groups.findIndex(g => g.ps.some(p => p.n===n)); return '--c'+(((gi<0?0:gi)%5)+1); };
+  const C = 2*Math.PI*58, off = C*(1-pc/100);
+  $('#app').innerHTML = `<h1>Auswertung</h1><p class="mute" style="margin-top:2px">${r.res.length} Fragen beantwortet</p>
+    <div class="ring"><svg width="160" height="160" viewBox="0 0 150 150" role="img" aria-label="${pc} Prozent"><circle cx="75" cy="75" r="58" fill="none" stroke="var(--line)" stroke-width="13"/><circle cx="75" cy="75" r="58" fill="none" stroke="var(--acc)" stroke-width="13" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${off}" transform="rotate(-90 75 75)"/><text x="75" y="78" text-anchor="middle" font-size="34" font-weight="700" fill="var(--ink)">${pc} %</text><text x="75" y="100" text-anchor="middle" font-size="13" font-weight="600" fill="var(--mute)">${punkte(pts)}</text></svg></div>
+    <div class="sec"><span>Nach Paragraf</span></div><div class="card">${Object.values(by).map(b => { const q = Math.round(b.pts/b.max*100); return `<div class="row" style="--cc:var(${colorOf(b.n)})"><span class="t">${esc(b.label)}</span><div class="track"><i style="width:${q}%"></i></div><span class="v">${q} %</span></div>`; }).join('')}</div>`;
+  setDock(`<div class="actbar"><button class="btn alt" data-act="home">Startseite</button><button class="btn" data-act="retry" ${weak.length?'':'disabled'}>${weak.length ? weak.length+' Fehler wiederholen' : 'Alles richtig'}</button></div>`);
+  window.scrollTo(0,0);
 }
 
-/* ---------- Start ---------- */
-renderHome();
+/* ================= Teilen ================= */
+function baseUrl(){ return location.origin + location.pathname.replace(/index\.html$/, ''); }
+function shareUrl(){
+  const sh = S.sheet, ns = sh && sh.withSel ? sh.paras.filter(Boolean) : [];
+  return baseUrl() + (ns.length ? '#' + S.law + ':' + ns.join(',') : '');
+}
+function qrSvg(url){
+  if(typeof qrcode !== 'function') return '';
+  try{
+    const q = qrcode(0, 'M'); q.addData(url); q.make();
+    const n = q.getModuleCount(); let d = '';
+    for(let y=0;y<n;y++) for(let x=0;x<n;x++) if(q.isDark(y,x)) d += `M${x} ${y}h1v1h-1z`;
+    return `<svg viewBox="-4 -4 ${n+8} ${n+8}" shape-rendering="crispEdges" role="img" aria-label="QR-Code zum Link"><rect x="-4" y="-4" width="${n+8}" height="${n+8}" fill="#fff"/><path d="${d}" fill="#0b1530"/></svg>`;
+  }catch(e){ return ''; }
+}
+function openShare(paras, fixed){
+  const sel = paras || order().filter(n => S.sel.has(n));
+  S.sheet = {paras:sel, withSel:!!paras, fixed:!!fixed, qr:false, copied:false};
+  renderSheet(); setTimeout(() => { const b = $('#sheet .xbtn'); if(b) b.focus(); }, 30);
+}
+function closeSheet(){ S.sheet = null; renderSheet(); }
+function renderSheet(){
+  const sh = S.sheet, root = $('#sheet');
+  if(!sh){ root.innerHTML = ''; return; }
+  const url = shareUrl(), n = sh.paras.length;
+  const qr = sh.qr ? qrSvg(url) : '';
+  root.innerHTML = `<div class="dim" data-act="close-sheet"></div>
+    <div class="sheet" role="dialog" aria-modal="true" aria-label="Rechtstrainer teilen"><div class="in">
+      <div class="grab"></div>
+      <div class="sh"><div><h2>${sh.fixed ? 'Stack teilen' : 'Rechtstrainer teilen'}</h2><p>${sh.fixed ? 'Der Link enthält die Paragrafen des Stacks. Dein Fortschritt wird nicht mitgeschickt.' : 'Andere öffnen den Link in Safari und nutzen die App.'}</p></div><button class="xbtn" data-act="close-sheet" aria-label="Schließen">✕</button></div>
+      ${(!sh.fixed && n) ? `<label class="with" style="margin-top:12px"><input type="checkbox" data-act="with" ${sh.withSel?'checked':''}> Meine Paragrafenauswahl mitsenden (${n} §)</label>` : ''}
+      <div class="linkrow"><input id="lnk" readonly value="${esc(url)}" aria-label="Link zur App"><button class="cp ${sh.copied?'done':''}" data-act="copy">${sh.copied?'Kopiert ✓':'Kopieren'}</button></div>
+      <div class="stack2">
+        <button class="btn" data-act="native">${IC.share}Link teilen …</button>
+        <button class="btn soft" data-act="qr">${sh.qr?'QR-Code ausblenden':'QR-Code anzeigen'}</button>
+      </div>
+      ${sh.qr ? `<div class="qr">${qr || '<span>QR-Code konnte nicht erzeugt werden.</span>'}<span>Mit der Kamera scannen</span></div>` : ''}
+      <div class="tip"><span aria-hidden="true">💡</span><div><b>Tipp für Empfänger:</b> In Safari öffnen, auf Teilen tippen und „Zum Home-Bildschirm“ wählen. Dann läuft die App wie eine normale App, auch offline.</div></div>
+    </div></div>`;
+}
+async function copyLink(){
+  try{ await navigator.clipboard.writeText(shareUrl()); S.sheet.copied = true; renderSheet(); setTimeout(() => { if(S.sheet){ S.sheet.copied = false; renderSheet(); } }, 1800); }
+  catch(e){ const i = $('#lnk'); if(i){ i.focus(); i.select(); } toast('Link markiert – bitte manuell kopieren'); }
+}
+async function nativeShare(){
+  const data = {title:'Rechtstrainer', text:SHARE_TEXT, url:shareUrl()};
+  if(navigator.share){ try{ await navigator.share(data); } catch(e){ /* abgebrochen */ } }
+  else copyLink();
+}
+/* Link mit Paragrafenauswahl öffnen: …/lernapp/#BDG:4,10,43a */
+function applyHash(initial){
+  const m = /^#([A-Za-z]+):([0-9a-z,]+)$/.exec(location.hash || ''); if(!m) return false;
+  const law = LAWS.find(l => l.ready && l.id.toLowerCase() === m[1].toLowerCase());
+  history.replaceState(null, '', location.pathname + location.search);
+  if(!law || !S.data || law.id !== S.law){ if(!initial) toast('Dieser Link passt nicht zu dieser App.'); return false; }
+  const valid = new Set(order()), ns = m[2].split(',').filter(n => valid.has(n));
+  if(!ns.length){ toast('Der Link enthält keine gültigen Paragrafen.'); return false; }
+  S.sel = new Set(ns); persistSel();
+  groupsOf(S.data).forEach((g,gi) => { if(g.ps.some(p => S.sel.has(p.n))) S.open.add(gi); }); persistOpen();
+  S.view = 'home'; closeSheetSilently();
+  toast('Auswahl aus Link übernommen: ' + ns.length + ' Paragrafen');
+  return true;
+}
+function closeSheetSilently(){ S.sheet = null; const r = $('#sheet'); if(r) r.innerHTML = ''; }
+
+/* ================= Aktionen (Event-Delegation) ================= */
+const ACT = {
+  tab(b){ S.view = b.dataset.v; render(); },
+  law(b){ /* weitere Gesetze folgen */ },
+  grp(b){ const g = +b.dataset.g; S.open.has(g) ? S.open.delete(g) : S.open.add(g); persistOpen(); render(true); },
+  grpall(b, e){ e.stopPropagation(); const g = groupsOf(S.data)[+b.dataset.g], all = g.ps.every(p => S.sel.has(p.n)); g.ps.forEach(p => all ? S.sel.delete(p.n) : S.sel.add(p.n)); persistSel(); render(true); },
+  tog(b){ const n = b.dataset.p; S.sel.has(n) ? S.sel.delete(n) : S.sel.add(n); persistSel(); render(true); },
+  all(){ S.sel = new Set(order()); persistSel(); render(true); },
+  none(){ S.sel = new Set(); persistSel(); render(true); },
+  start(){ startRun(buildPool()); },
+  'stk-load'(b){ const s = stacks().find(x => x.id === b.dataset.id); if(!s) return; const valid = new Set(order()); S.sel = new Set(s.paras.filter(n => valid.has(n))); persistSel();
+    groupsOf(S.data).forEach((g,gi) => { if(g.ps.some(p => S.sel.has(p.n))) S.open.add(gi); }); persistOpen(); S.view = 'home'; render(); toast('Stack geladen'); },
+  'stk-save'(){ saveStack(); },
+  'stk-del'(b){ if(confirm('Stack löschen?')){ store.set('rt.stacks', stacks().filter(x => x.id !== b.dataset.id)); render(true); } },
+  'stk-share'(b){ const s = stacks().find(x => x.id === b.dataset.id); if(s) openShare(s.paras, true); },
+  share(){ openShare(null, false); },
+  'close-sheet'(){ closeSheet(); },
+  with(b){ S.sheet.withSel = b.checked; renderSheet(); },
+  copy(){ copyLink(); },
+  native(){ nativeShare(); },
+  qr(){ S.sheet.qr = !S.sheet.qr; renderSheet(); },
+  pick(b){ const r = S.run; if(r.checked) return; const i = +b.dataset.i; r.ticked.has(i) ? r.ticked.delete(i) : r.ticked.add(i); b.setAttribute('aria-pressed', r.ticked.has(i)); b.querySelector('.bx').textContent = r.ticked.has(i) ? '✓' : ''; },
+  check(){ checkAnswer(); },
+  next(){ const r = S.run; if(r.i+1 < r.items.length){ r.i++; r.ticked = new Set(); r.checked = false; render(); } else { S.view = 'result'; render(); } },
+  quit(){ const r = S.run; if(!r.res.length){ S.view = 'home'; render(); } else if(confirm('Training beenden? Bisherige Ergebnisse werden angezeigt.')){ S.view = 'result'; render(); } },
+  flag(b){ const q = S.run.items[S.run.i].q; let f = flags(); f = f.includes(q.id) ? f.filter(x => x !== q.id) : f.concat(q.id); store.set('rt.flags', f); b.setAttribute('aria-pressed', f.includes(q.id)); toast(f.includes(q.id) ? 'Frage markiert' : 'Markierung entfernt'); },
+  home(){ S.view = 'home'; render(); },
+  retry(){ const ids = new Set(S.run.res.filter(x => x.pts < 4).map(x => x.id)); const pool = []; S.data.paragrafen.forEach(p => p.q.forEach(q => { if(ids.has(q.id)) pool.push({q, p}); })); startRun(pool); },
+  flags(){ const txt = 'Gemeldete Fragen (Rechtstrainer): ' + flags().join(', '); (navigator.clipboard ? navigator.clipboard.writeText(txt) : Promise.reject()).then(() => toast('Kopiert'), () => prompt('Bitte kopieren:', txt)); },
+  reset(){ if(confirm('Gesamten Lernfortschritt auf diesem Gerät löschen?')){ store.set('rt.hist2', {}); render(true); toast('Fortschritt zurückgesetzt'); } }
+};
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-act]'); if(!b || b.disabled) return;
+  const f = ACT[b.dataset.act]; if(f){ f(b, e); }
+});
+document.addEventListener('keydown', e => {
+  if(e.key === 'Escape' && S.sheet){ closeSheet(); return; }
+  const g = e.target.closest && e.target.closest('.gh');
+  if(g && e.target === g && (e.key === 'Enter' || e.key === ' ')){ e.preventDefault(); g.click(); }
+});
+window.addEventListener('hashchange', () => { if(S.data && applyHash(false)) render(); });
+
+/* ================= Start ================= */
+(async function boot(){
+  try{ S.data = await loadLaw(S.law); }
+  catch(e){ $('#app').innerHTML = '<h1>Rechtstrainer</h1><p class="mute">Daten konnten nicht geladen werden. Bitte Verbindung prüfen und neu öffnen.</p>'; return; }
+  const valid = new Set(order());
+  S.sel = new Set(store.get('rt.sel.'+S.law, []).filter(n => valid.has(n)));
+  S.open = new Set(store.get('rt.open.'+S.law, []));
+  applyHash(true);
+  render();
+})();
 if('serviceWorker' in navigator && location.protocol.startsWith('http')){
-  navigator.serviceWorker.register('sw.js').catch(()=>{});
+  navigator.serviceWorker.register('sw.js').catch(() => {});
 }
 </script>
 </body>
