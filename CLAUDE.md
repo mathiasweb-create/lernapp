@@ -42,8 +42,16 @@ Fragen-IDs `bdg-<§>-<Nr>` nie umnummern, neue Fragen hinten anhängen (sonst pa
 - `sleep` im Vordergrund ist gesperrt. Lange zusammengesetzte Shell-Befehle werden manchmal pauschal abgelehnt: einzeln ausführen, Dateien mit dem Schreib-Werkzeug anlegen.
 - `github.io` ist von der Umgebung aus nicht erreichbar (Live-Seite nur über die GitHub-API-Status oder den Nutzer prüfen).
 - Playwright ist vorinstalliert (`NODE_PATH=$(npm root -g) node test.js`). Python-Pakete per `pip install` möglich.
+- **Pull Requests nicht selbst per API mergen:** Ein per API gemergter Pull Request hat die Veröffentlichung (GitHub Pages) nicht ausgelöst, ein vom Nutzer im Browser gemergter schon. Pull Request erstellen, Nutzer mergt selbst. Das Pages-Anfordern (`pages/builds`) ist in der Umgebung gesperrt.
+- Gesetzestexte nie mit `head -n -1` o. ä. beschneiden, sonst fehlt der letzte Absatz (so ging § 44 Abs. 3 beim Lesen verloren). Immer die ganze Datei lesen oder `daten/bdg.json` (Feld `text`) nutzen.
+- Prüfen großer Mengen (alle Fragen gegen Gesetzestext, Code-Review) an stärkere Hilfsagenten delegieren (Modell Opus, nur lesen), Befunde danach selbst gegen den Gesetzestext gegenprüfen.
 
-## Stand (2026-11-24)
-- Wünsche 1 bis 8 umgesetzt und auf `main` (Pull Requests #1 und #2). Wunsch 9 offen (Nutzer). Wunsch 10 (Apps trennen) in Besprechung.
-- Offene Prüfungen: Test auf echtem iPhone, Stichprobe der Fragen gegen den Gesetzestext durch den Nutzer.
-- Nächste mögliche Schritte: Apps trennen, StGB/SPG/VStG ergänzen, Wiederholungsintervalle.
+## Stand (2026-11-24, ca. 21:25 UTC)
+- **Auf `main`:** Pull Request #1 (erste Fassung, vom Nutzer gemergt, live) und #2 (Wünsche 1 bis 8, `3605a76`, per API gemergt).
+- **Veröffentlichung von #2 ist NICHT erfolgt:** Seit dem Merge um 21:10 UTC gibt es keinen neuen GitHub-Pages-Lauf (letzter Lauf `795f386`). Die Live-Seite zeigt noch die Fassung von Pull Request #1 (ohne Wünsche 1 bis 8). Auslöser: Nutzer bearbeitet im Browser eine Datei auf `main` (z. B. `lernapp/README.md`) und bestätigt „Commit changes“, oder mergt den nächsten Pull Request selbst. Prüfen: Reiter „Actions“, Lauf „pages build and deployment“.
+- **Auf dem Arbeits-Branch `claude/iphone-learning-app-quiz-mgk932`, noch nicht auf `main` (Pull Request #3 steht aus):** Übergabedatei (diese Datei), `tools/fetch_ris.py`, Wunsch 10 im Backlog, Fachprüfung-Korrekturen (30 Aussagen präzisiert, Fundstellen, Gesetzestext-Darstellung bereinigt, `0094bc7`).
+- **Fachprüfung der Fragen (Opus-Agent):** abgeschlossen. 0 sachlich falsche Aussagen, 12 zu ungenaue und mehrere formale Befunde, alle geprüft und übernommen.
+- **Code-Prüfung (Opus-Agent, `index.html`, `sw.js`, Build-Werkzeuge):** wurde gestartet, Ergebnis stand beim Schreiben dieser Zeilen noch aus. Befunde nach Eingang gegenprüfen, bestätigte Fehler auf dem Branch beheben, in Pull Request #3 bündeln.
+- **Wünsche:** 1 bis 8 umgesetzt. 9 offen (Aufgabe des Nutzers: Zwei-Faktor-Anmeldung, keine Mitwirkenden, Regel für `main`). 10 (Apps trennen) besprochen, wartet auf Freigabe; Plan: leeres öffentliches Repo `rechtstrainer` legt der Nutzer selbst an, dann `lernapp/` samt Verlauf dorthin und im alten Repo entfernen. Neue Adresse `…github.io/rechtstrainer/`.
+- **Noch offen:** Test auf echtem iPhone und Stichprobe der Fragen durch den Nutzer; Organigramm der Abläufe liegt als privates Artefakt vor: https://claude.ai/artifact/DQNYxT7s9U4vBWsFMbtxK4
+- **Nächste mögliche Schritte:** Pull Request #3 mergen lassen, Apps trennen (Wunsch 10), StGB/SPG/VStG ergänzen, Wiederholungsintervalle.
