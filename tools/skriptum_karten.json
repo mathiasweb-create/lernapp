@@ -1,0 +1,1338 @@
+[
+ {
+  "id": "k-2-1",
+  "n": "2",
+  "lv": 1,
+  "q": "Was ist eine Ernennung nach § 2 BDG 1979?",
+  "a": "Die bescheidmäßige Verleihung einer Planstelle.",
+  "s": "§ 2 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-4-1",
+  "n": "4",
+  "lv": 2,
+  "q": "Nenne die vier allgemeinen Ernennungserfordernisse nach § 4 BDG 1979.",
+  "a": "1. Österreichische Staatsbürgerschaft (bei sonstigen Verwendungen alternativ unbeschränkter Zugang zum österreichischen Arbeitsmarkt), 2. volle Handlungsfähigkeit, 3. persönliche und fachliche Eignung für die vorgesehene Verwendung, 4. Lebensalter von mindestens 18 Jahren beim Eintritt in den Bundesdienst.",
+  "s": "§ 4 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-4-2",
+  "n": "4",
+  "lv": 1,
+  "q": "Welches Mindestalter ist für die Ernennung nach § 4 BDG 1979 erforderlich?",
+  "a": "Mindestens 18 Jahre beim Eintritt in den Bundesdienst.",
+  "s": "§ 4 Abs. 1 Z 4 BDG 1979"
+ },
+ {
+  "id": "k-4-3",
+  "n": "4",
+  "lv": 2,
+  "q": "Was umfasst das Erfordernis der fachlichen Eignung nach § 4 BDG 1979 auch?",
+  "a": "Auch die Beherrschung der deutschen Sprache in Wort und Schrift (bei manchen Verwendungen nur in dem für die Verwendung erforderlichen Ausmaß).",
+  "s": "§ 4 Abs. 1a BDG 1979"
+ },
+ {
+  "id": "k-4-4",
+  "n": "4",
+  "lv": 2,
+  "q": "Bei welchen Verwendungen ist nach § 4 BDG 1979 zwingend die österreichische Staatsbürgerschaft erforderlich?",
+  "a": "Bei Verwendungen gemäß § 42a BDG. Bei sonstigen Verwendungen genügt alternativ der unbeschränkte Zugang zum österreichischen Arbeitsmarkt.",
+  "s": "§ 4 Abs. 1 Z 1 BDG 1979"
+ },
+ {
+  "id": "k-4-5",
+  "n": "4",
+  "lv": 3,
+  "q": "Wer darf nach § 4 BDG 1979 ernannt werden, wenn mehrere Bewerber die Ernennungserfordernisse erfüllen?",
+  "a": "Nur der Bewerber, von dem aufgrund seiner persönlichen und fachlichen Eignung anzunehmen ist, dass er die mit der Verwendung auf der Planstelle verbundenen Aufgaben in bestmöglicher Weise erfüllt.",
+  "s": "§ 4 Abs. 3 BDG 1979"
+ },
+ {
+  "id": "k-5-1",
+  "n": "5",
+  "lv": 1,
+  "q": "Was ist im Ernennungsbescheid nach § 5 BDG 1979 anzuführen?",
+  "a": "Die Planstelle, der Amtstitel des Beamten und der Tag der Wirksamkeit der Ernennung.",
+  "s": "§ 5 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-7-1",
+  "n": "7",
+  "lv": 1,
+  "q": "Binnen welcher Frist hat der Beamte die Angelobung nach § 7 BDG 1979 zu leisten?",
+  "a": "Binnen vier Wochen nach Beginn des öffentlich-rechtlichen Dienstverhältnisses.",
+  "s": "§ 7 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-10-1",
+  "n": "10",
+  "lv": 1,
+  "q": "Wie ist das Dienstverhältnis des Beamten zunächst beschaffen und wie kann es beendet werden (§ 10 BDG 1979)?",
+  "a": "Es ist zunächst provisorisch. Das provisorische Dienstverhältnis kann mit Bescheid gekündigt werden.",
+  "s": "§ 10 Abs. 1 und 2 BDG 1979"
+ },
+ {
+  "id": "k-10-2",
+  "n": "10",
+  "lv": 2,
+  "q": "Wie lange dauert die Probezeit im provisorischen Dienstverhältnis und was gilt in dieser Zeit für die Kündigung (§ 10 BDG 1979)?",
+  "a": "Die Probezeit umfasst die ersten sechs Monate des Dienstverhältnisses. In dieser Zeit ist die Kündigung ohne Angabe von Gründen möglich, später nur mit Angabe des Grundes.",
+  "s": "§ 10 Abs. 2 und 3 BDG 1979"
+ },
+ {
+  "id": "k-10-3",
+  "n": "10",
+  "lv": 2,
+  "q": "Wie lang ist die Kündigungsfrist beim provisorischen Dienstverhältnis (§ 10 BDG 1979)?",
+  "a": "Während der Probezeit (erste sechs Monate): 1 Kalendermonat; nach Ablauf der Probezeit: 2 Kalendermonate; nach Vollendung des zweiten Dienstjahres: 3 Kalendermonate. Die Frist endet mit Ablauf eines Kalendermonates.",
+  "s": "§ 10 Abs. 2 BDG 1979"
+ },
+ {
+  "id": "k-10-4",
+  "n": "10",
+  "lv": 2,
+  "q": "Nenne die im Gesetz genannten Kündigungsgründe des provisorischen Dienstverhältnisses (§ 10 BDG 1979).",
+  "a": "Nichterfüllung von Definitivstellungserfordernissen, Mangel der gesundheitlichen Eignung, unbefriedigender Arbeitserfolg, pflichtwidriges Verhalten, Bedarfsmangel. Die Aufzählung ist nur beispielhaft („insbesondere“).",
+  "s": "§ 10 Abs. 4 BDG 1979"
+ },
+ {
+  "id": "k-11-1",
+  "n": "11",
+  "lv": 1,
+  "q": "Welche Dienstzeit im provisorischen Dienstverhältnis ist neben den sonstigen Voraussetzungen für die Definitivstellung nach § 11 BDG 1979 erforderlich?",
+  "a": "Eine Dienstzeit von sechs Jahren im provisorischen Dienstverhältnis.",
+  "s": "§ 11 Abs. 1 Z 2 BDG 1979"
+ },
+ {
+  "id": "k-11-2",
+  "n": "11",
+  "lv": 2,
+  "q": "Unter welchen Voraussetzungen wird das Dienstverhältnis nach § 11 Abs. 1 BDG 1979 definitiv, und wie wird dies festgestellt?",
+  "a": "Auf Antrag des Beamten, wenn er neben den Ernennungserfordernissen die für seine Verwendung vorgesehenen Definitivstellungserfordernisse erfüllt und sechs Jahre im provisorischen Dienstverhältnis vollendet hat. Der Eintritt der Definitivstellung ist mit Bescheid festzustellen.",
+  "s": "§ 11 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-11-3",
+  "n": "11",
+  "lv": 3,
+  "q": "Wann hindert eine Beeinträchtigung der persönlichen Eignung die Definitivstellung nicht (§ 11 Abs. 2 BDG 1979)?",
+  "a": "Wenn die Beeinträchtigung auf einem Dienstunfall beruht, den der Beamte nach einer Dauer des provisorischen Dienstverhältnisses von vier Jahren erlitten hat.",
+  "s": "§ 11 Abs. 2 BDG 1979"
+ },
+ {
+  "id": "k-11-4",
+  "n": "11",
+  "lv": 2,
+  "q": "Können Zeiten vor dem Beamtendienstverhältnis in das provisorische Dienstverhältnis eingerechnet werden (§ 11 Abs. 3 BDG 1979)?",
+  "a": "Ja. Zeiten eines Dienstverhältnisses nach § 12 Abs. 2 Z 1 oder 2 GehG sowie Zeiten einer gleichwertigen oder nützlichen Berufstätigkeit bzw. eines gleichwertigen oder nützlichen Verwaltungspraktikums können ganz oder zum Teil eingerechnet werden, soweit sie zur Gänze als Vordienstzeiten auf das Besoldungsdienstalter angerechnet worden sind. Berufstätigkeiten und Verwaltungspraktika zählen höchstens bis zu zwei Jahren.",
+  "s": "§ 11 Abs. 3 BDG 1979"
+ },
+ {
+  "id": "k-11-5",
+  "n": "11",
+  "lv": 3,
+  "q": "Was gilt für die Definitivstellung während eines Disziplinarverfahrens (§ 11 Abs. 5 BDG 1979)?",
+  "a": "Die Wirkung der Definitivstellung tritt während des Disziplinarverfahrens und bis zu drei Monaten nach dessen rechtskräftigem Abschluss nicht ein. Bei Einstellung oder Freispruch tritt sie rückwirkend ein.",
+  "s": "§ 11 Abs. 5 BDG 1979"
+ },
+ {
+  "id": "k-20-1",
+  "n": "20",
+  "lv": 2,
+  "q": "Nenne mindestens vier Gründe, durch die das Dienstverhältnis nach § 20 Abs. 1 BDG 1979 aufgelöst wird.",
+  "a": "Z. B. Austritt, Kündigung des provisorischen Dienstverhältnisses, Entlassung, Amtsverlust gemäß § 27 Abs. 1 StGB, Tod. Weitere Gründe sind u. a. die rechtskräftige Verurteilung wegen bestimmter Vorsatzdelikte, der Verlust der Staatsbürgerschaft bei Verwendungen nach § 42a und die Begründung eines Dienstverhältnisses zu einem Land als Mitglied eines Landesverwaltungsgerichts.",
+  "s": "§ 20 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-20-2",
+  "n": "20",
+  "lv": 2,
+  "q": "Nach welchen Bestimmungen führt eine rechtskräftige Verurteilung wegen eines Vorsatzdelikts zur Auflösung des Dienstverhältnisses (§ 20 Abs. 1 Z 3a BDG 1979)?",
+  "a": "Bei rechtskräftiger Verurteilung durch ein inländisches Gericht ausschließlich oder auch wegen eines ab 1. Jänner 2013 begangenen Vorsatzdelikts gemäß den §§ 92, 201 bis 217, 312 und 312a StGB.",
+  "s": "§ 20 Abs. 1 Z 3a BDG 1979"
+ },
+ {
+  "id": "k-20-3",
+  "n": "20",
+  "lv": 2,
+  "q": "Wann wird das Dienstverhältnis wegen Verlusts der Staatsbürgerschaft aufgelöst (§ 20 Abs. 1 Z 5 BDG 1979)?",
+  "a": "Bei Verlust der österreichischen Staatsbürgerschaft, wenn es sich um Verwendungen gemäß § 42a handelt. Bei sonstigen Verwendungen führt der Wegfall der Erfüllung der Erfordernisse des § 4 Abs. 1 Z 1 lit. b (Staatsbürgerschaft oder unbeschränkter Arbeitsmarktzugang) zur Auflösung.",
+  "s": "§ 20 Abs. 1 Z 5 BDG 1979"
+ },
+ {
+  "id": "k-20-4",
+  "n": "20",
+  "lv": 2,
+  "q": "Welcher Fall im Zusammenhang mit den Landesverwaltungsgerichten löst das Dienstverhältnis auf (§ 20 Abs. 1 Z 6 BDG 1979)?",
+  "a": "Die Begründung eines Dienstverhältnisses zu einem Land (zur Gemeinde Wien) als Mitglied eines Landesverwaltungsgerichts.",
+  "s": "§ 20 Abs. 1 Z 6 BDG 1979"
+ },
+ {
+  "id": "k-21-1",
+  "n": "21",
+  "lv": 1,
+  "q": "In welcher Form kann der Beamte nach § 21 BDG 1979 seinen Austritt erklären und wann wird er wirksam?",
+  "a": "Schriftlich. Der Austritt wird mit Ablauf des Monates wirksam, den der Beamte bestimmt, frühestens mit Ablauf des Monates, in dem die Erklärung abgegeben wurde.",
+  "s": "§ 21 Abs. 1 und 2 BDG 1979"
+ },
+ {
+  "id": "k-21-2",
+  "n": "21",
+  "lv": 2,
+  "q": "Bis wann kann die Austrittserklärung nach § 21 BDG 1979 widerrufen werden?",
+  "a": "Bis spätestens einen Monat vor ihrem Wirksamwerden. Ein späterer Widerruf wird nur wirksam, wenn die Dienstbehörde ausdrücklich zugestimmt hat.",
+  "s": "§ 21 Abs. 3 BDG 1979"
+ },
+ {
+  "id": "k-22-1",
+  "n": "22",
+  "lv": 2,
+  "q": "Wann ist ein Beamter wegen mangelnden Arbeitserfolges entlassen (§ 22 BDG 1979)?",
+  "a": "Wenn über ihn zweimal aufeinanderfolgend festgestellt worden ist, dass er den zu erwartenden Arbeitserfolg nicht aufgewiesen hat; die Entlassung tritt mit Rechtskraft der zweiten Feststellung ein.",
+  "s": "§ 22 BDG 1979"
+ },
+ {
+  "id": "k-36-1",
+  "n": "36",
+  "lv": 1,
+  "q": "Womit ist ein Beamter nach § 36 BDG 1979 zu betrauen, wenn er nicht vom Dienst befreit oder enthoben ist?",
+  "a": "Mit der Wahrnehmung der Aufgaben eines Arbeitsplatzes, der in der Geschäftseinteilung seiner Dienststelle vorgesehen ist.",
+  "s": "§ 36 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-36-2",
+  "n": "36",
+  "lv": 1,
+  "q": "Muss ein Beamter nach § 36 BDG 1979 vorübergehend auch Aufgaben besorgen, die nicht zu seiner Einstufung und Verwendung gehören?",
+  "a": "Ja, wenn es im Interesse des Dienstes notwendig ist.",
+  "s": "§ 36 Abs. 4 BDG 1979"
+ },
+ {
+  "id": "k-38-1",
+  "n": "38",
+  "lv": 1,
+  "q": "Wann liegt eine Versetzung nach § 38 BDG 1979 vor?",
+  "a": "Wenn der Beamte einer anderen Dienststelle zur dauernden Dienstleistung zugewiesen wird.",
+  "s": "§ 38 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-38-2",
+  "n": "38",
+  "lv": 2,
+  "q": "Unter welcher Voraussetzung ist eine Versetzung von Amts wegen nach § 38 BDG 1979 zulässig, und was gilt während des provisorischen Dienstverhältnisses?",
+  "a": "Es muss ein wichtiges dienstliches Interesse bestehen. Während des provisorischen Dienstverhältnisses ist die Versetzung auch ohne wichtiges dienstliches Interesse zulässig.",
+  "s": "§ 38 Abs. 2 BDG 1979"
+ },
+ {
+  "id": "k-38-3",
+  "n": "38",
+  "lv": 2,
+  "q": "In welchen Fällen liegt nach § 38 Abs. 3 BDG 1979 insbesondere ein wichtiges dienstliches Interesse an einer Versetzung vor?",
+  "a": "1. Änderungen der Verwaltungsorganisation; 2. Auflassung von Arbeitsplätzen; 3. Besetzung eines freien Arbeitsplatzes einer anderen Dienststelle, für den keine geeigneten Bewerber vorhanden sind; 4. der Beamte hat den zu erwartenden Arbeitserfolg nach § 81 Abs. 1 Z 3 nicht aufgewiesen; 5. über den Beamten wurde rechtskräftig eine Disziplinarstrafe verhängt und die Belassung in der Dienststelle erscheint wegen Art und Schwere der Dienstpflichtverletzung nicht vertretbar. Die Aufzählung ist nicht abschließend.",
+  "s": "§ 38 Abs. 3 BDG 1979"
+ },
+ {
+  "id": "k-38-4",
+  "n": "38",
+  "lv": 2,
+  "q": "Welche Frist hat der Beamte nach § 38 Abs. 6 BDG 1979 für Einwendungen gegen eine beabsichtigte Versetzung von Amts wegen, und was gilt, wenn er keine vorbringt?",
+  "a": "Zwei Wochen nach Zustellung der schriftlichen Verständigung. Werden innerhalb der Frist keine Einwendungen vorgebracht, gilt dies als Zustimmung zur Versetzung.",
+  "s": "§ 38 Abs. 6 BDG 1979"
+ },
+ {
+  "id": "k-38-5",
+  "n": "38",
+  "lv": 3,
+  "q": "Wann ist eine Versetzung von Amts wegen an einen anderen Dienstort nach § 38 Abs. 4 BDG 1979 unzulässig?",
+  "a": "Wenn beides zutrifft: 1. sie würde für den Beamten einen wesentlichen wirtschaftlichen Nachteil bedeuten und 2. ein anderer geeigneter Beamter derselben Dienststelle und derselben Verwendungsgruppe steht zur Verfügung, bei dem das nicht der Fall ist. Das gilt nicht in den Fällen des Abs. 3 Z 4 (Arbeitserfolg nicht aufgewiesen) und Z 5 (rechtskräftige Disziplinarstrafe) sowie in Disziplinarfällen, in denen noch keine rechtskräftige Disziplinarstrafe verhängt worden ist.",
+  "s": "§ 38 Abs. 4 BDG 1979"
+ },
+ {
+  "id": "k-38-6",
+  "n": "38",
+  "lv": 2,
+  "q": "In welcher Form wird eine Versetzung nach § 38 BDG 1979 verfügt, und hat eine Beschwerde dagegen aufschiebende Wirkung?",
+  "a": "Die Versetzung wird mit Bescheid verfügt. Eine Beschwerde hat keine aufschiebende Wirkung. Der zuletzt innegehabte Arbeitsplatz darf bis zur Rechtskraft des Bescheids nicht auf Dauer besetzt werden.",
+  "s": "§ 38 Abs. 7 BDG 1979"
+ },
+ {
+  "id": "k-39-1",
+  "n": "39",
+  "lv": 1,
+  "q": "Wann liegt eine Dienstzuteilung nach § 39 BDG 1979 vor?",
+  "a": "Wenn der Beamte vorübergehend einer anderen Dienststelle zur Dienstleistung zugewiesen und für die Dauer der Zuweisung mit Aufgaben eines in der Geschäftseinteilung dieser Dienststelle vorgesehenen Arbeitsplatzes betraut wird.",
+  "s": "§ 39 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-39-2",
+  "n": "39",
+  "lv": 2,
+  "q": "Wofür ist eine Dienstzuteilung zulässig, und wie lange darf sie ohne schriftliche Zustimmung des Beamten höchstens dauern?",
+  "a": "Nur aus dienstlichen Gründen. Ohne schriftliche Zustimmung höchstens für insgesamt 90 Tage in einem Kalenderjahr.",
+  "s": "§ 39 Abs. 2 BDG 1979"
+ },
+ {
+  "id": "k-39-3",
+  "n": "39",
+  "lv": 3,
+  "q": "Wann ist eine Dienstzuteilung über 90 Tage im Kalenderjahr hinaus auch ohne Zustimmung des Beamten zulässig?",
+  "a": "Nur wenn der Dienstbetrieb auf andere Weise nicht aufrechterhalten werden kann oder wenn die Dienstzuteilung zum Zweck einer Ausbildung erfolgt.",
+  "s": "§ 39 Abs. 3 BDG 1979"
+ },
+ {
+  "id": "k-39-4",
+  "n": "39",
+  "lv": 2,
+  "q": "Worauf ist bei einer Dienstzuteilung nach § 39 Abs. 4 BDG 1979 Bedacht zu nehmen?",
+  "a": "Auf die bisherige Verwendung und das Dienstalter des Beamten; bei Dienstzuteilung an einen anderen Dienstort außerdem auf seine persönlichen, familiären und sozialen Verhältnisse.",
+  "s": "§ 39 Abs. 4 BDG 1979"
+ },
+ {
+  "id": "k-40-1",
+  "n": "40",
+  "lv": 2,
+  "q": "Was gilt nach § 40 Abs. 1 BDG 1979, wenn ein Beamter von seiner bisherigen Verwendung abberufen wird?",
+  "a": "Ihm ist gleichzeitig eine neue Verwendung in seiner Dienststelle zuzuweisen. Ist das aus Rücksichten des Dienstes nicht möglich, spätestens zwei Monate nach der Abberufung.",
+  "s": "§ 40 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-40-2",
+  "n": "40",
+  "lv": 3,
+  "q": "In welchen Fällen ist die Abberufung von der bisherigen Verwendung nach § 40 Abs. 2 BDG 1979 einer Versetzung gleichzuhalten?",
+  "a": "Wenn die neue Verwendung der bisherigen nicht mindestens gleichwertig ist, wenn durch die neue Verwendung eine Verschlechterung für die Beförderung in eine höhere Dienstklasse oder Dienststufe zu erwarten ist oder wenn dem Beamten keine neue Verwendung zugewiesen wird.",
+  "s": "§ 40 Abs. 2 BDG 1979"
+ },
+ {
+  "id": "k-41-1",
+  "n": "41",
+  "lv": 2,
+  "q": "Für welche Dienstbereiche sind nach § 41 Abs. 1 BDG 1979 bestimmte Regeln über Versetzung, Dienstzuteilung und Verwendungsänderung nicht anzuwenden?",
+  "a": "Für Dienstbereiche, in denen es nach der Natur des Dienstes notwendig ist, die Beamten nach einiger Zeit zu einer anderen Dienststelle zu versetzen.",
+  "s": "§ 41 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-41-2",
+  "n": "41",
+  "lv": 3,
+  "q": "Unter welchen Voraussetzungen gilt § 41 Abs. 1 BDG 1979 auch für Beamte der Verwendungsgruppe E 2b?",
+  "a": "Wenn die Versetzung innerhalb der ersten zwei Jahre ab der Ernennung in diese Verwendungsgruppe und im dienstbehördlichen Zuständigkeitsbereich einer Landespolizeidirektion erfolgt.",
+  "s": "§ 41 Abs. 4 BDG 1979"
+ },
+ {
+  "id": "k-43-1",
+  "n": "43",
+  "lv": 1,
+  "q": "Wie sind die dienstlichen Aufgaben nach § 43 Abs. 1 BDG 1979 zu besorgen?",
+  "a": "Unter Beachtung der geltenden Rechtsordnung treu, gewissenhaft, engagiert und unparteiisch, mit den zur Verfügung stehenden Mitteln aus eigenem.",
+  "s": "§ 43 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-43-2",
+  "n": "43",
+  "lv": 1,
+  "q": "Worauf muss der Beamte in seinem gesamten Verhalten nach § 43 Abs. 2 BDG 1979 Bedacht nehmen?",
+  "a": "Darauf, dass das Vertrauen der Allgemeinheit in die sachliche Wahrnehmung seiner dienstlichen Aufgaben erhalten bleibt.",
+  "s": "§ 43 Abs. 2 BDG 1979"
+ },
+ {
+  "id": "k-43-3",
+  "n": "43",
+  "lv": 1,
+  "q": "Welche Interessenkonflikte hat der Beamte nach § 43 Abs. 2 BDG 1979 zu vermeiden, und wie weit reicht diese Pflicht?",
+  "a": "Tatsächliche und vermeintliche Interessenkonflikte, soweit dies zumutbar ist.",
+  "s": "§ 43 Abs. 2 BDG 1979"
+ },
+ {
+  "id": "k-43-4",
+  "n": "43",
+  "lv": 2,
+  "q": "Was ist nach § 43 Abs. 2 BDG 1979 der Unterschied zwischen einem tatsächlichen und einem vermeintlichen Interessenkonflikt?",
+  "a": "Tatsächlich: Der Beamte kann seine Aufgaben aufgrund bestehender persönlicher Interessen nicht in voller Unvoreingenommenheit, Unparteilichkeit und Objektivität wahrnehmen. Vermeintlich: Es könnte ein solcher Anschein erweckt werden.",
+  "s": "§ 43 Abs. 2 BDG 1979"
+ },
+ {
+  "id": "k-43-5",
+  "n": "43",
+  "lv": 1,
+  "q": "Wie weit geht die Pflicht des Beamten nach § 43 Abs. 3 BDG 1979, Parteien zu unterstützen und zu informieren?",
+  "a": "Im Rahmen seiner dienstlichen Aufgaben, soweit es mit den Interessen des Dienstes und dem Gebot der Unparteilichkeit der Amtsführung vereinbar ist.",
+  "s": "§ 43 Abs. 3 BDG 1979"
+ },
+ {
+  "id": "k-43-6",
+  "n": "43",
+  "lv": 2,
+  "q": "Welche vier Diskriminierungsgründe nennt § 43 Abs. 4 BDG 1979 neben Behinderung, Alter und sexueller Orientierung?",
+  "a": "Geschlecht (insbesondere unter Bedachtnahme auf den Personenstand und die Elternschaft), ethnische Zugehörigkeit, Religion und Weltanschauung. Aus diesen Gründen darf der Beamte im Rahmen seiner dienstlichen Tätigkeit niemanden diskriminieren.",
+  "s": "§ 43 Abs. 4 BDG 1979"
+ },
+ {
+  "id": "k-43-7",
+  "n": "43",
+  "lv": 2,
+  "q": "Welche drei Diskriminierungsgründe nennt § 43 Abs. 4 BDG 1979 neben Geschlecht, ethnischer Zugehörigkeit, Religion und Weltanschauung?",
+  "a": "Behinderung, Alter und sexuelle Orientierung.",
+  "s": "§ 43 Abs. 4 BDG 1979"
+ },
+ {
+  "id": "k-43a-1",
+  "n": "43a",
+  "lv": 1,
+  "q": "Wie lautet die Überschrift des § 43a BDG 1979?",
+  "a": "Achtungsvoller Umgang (Mobbingverbot).",
+  "s": "§ 43a BDG 1979"
+ },
+ {
+  "id": "k-43a-2",
+  "n": "43a",
+  "lv": 1,
+  "q": "Wem gegenüber haben Beamte nach § 43a BDG 1979 mit Achtung zu begegnen?",
+  "a": "Als Vorgesetzte ihren Mitarbeitern, als Mitarbeiter ihren Vorgesetzten und einander.",
+  "s": "§ 43a BDG 1979"
+ },
+ {
+  "id": "k-43a-3",
+  "n": "43a",
+  "lv": 1,
+  "q": "Wozu haben Beamte nach § 43a BDG 1979 neben dem achtungsvollen Umgang miteinander beizutragen?",
+  "a": "Zu einem guten Funktionieren der dienstlichen Zusammenarbeit.",
+  "s": "§ 43a BDG 1979"
+ },
+ {
+  "id": "k-43a-4",
+  "n": "43a",
+  "lv": 2,
+  "q": "Welche Verhaltensweisen haben Beamte nach § 43a BDG 1979 gegenüber Vorgesetzten, Kollegen und Mitarbeitern zu unterlassen?",
+  "a": "Verhaltensweisen oder das Schaffen von Arbeitsbedingungen, die deren menschliche Würde verletzen oder dies bezwecken oder sonst diskriminierend sind.",
+  "s": "§ 43a BDG 1979"
+ },
+ {
+  "id": "k-44-1",
+  "n": "44",
+  "lv": 1,
+  "q": "Wer ist nach § 44 Abs. 1 BDG 1979 Vorgesetzter?",
+  "a": "Jeder Organwalter, der mit der Dienst- oder Fachaufsicht über den Beamten betraut ist.",
+  "s": "§ 44 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-44-2",
+  "n": "44",
+  "lv": 1,
+  "q": "Was hat der Beamte nach § 44 Abs. 1 BDG 1979 gegenüber seinen Vorgesetzten zu tun?",
+  "a": "Er hat seine Vorgesetzten zu unterstützen und ihre Weisungen zu befolgen, soweit verfassungsgesetzlich nicht anderes bestimmt ist.",
+  "s": "§ 44 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-44-3",
+  "n": "44",
+  "lv": 2,
+  "q": "In welchen zwei Fällen kann der Beamte nach § 44 Abs. 2 BDG 1979 die Befolgung einer Weisung ablehnen?",
+  "a": "Wenn die Weisung von einem unzuständigen Organ erteilt worden ist oder wenn ihre Befolgung gegen strafgesetzliche Vorschriften verstoßen würde.",
+  "s": "§ 44 Abs. 2 BDG 1979"
+ },
+ {
+  "id": "k-44-4",
+  "n": "44",
+  "lv": 2,
+  "q": "Was hat der Beamte nach § 44 Abs. 3 BDG 1979 zu tun, wenn er eine Weisung aus einem anderen Grund für rechtswidrig hält?",
+  "a": "Er muss vor Befolgung der Weisung seine Bedenken dem Vorgesetzten mitteilen (ausgenommen unaufschiebbare Maßnahmen wegen Gefahr im Verzug).",
+  "s": "§ 44 Abs. 3 BDG 1979"
+ },
+ {
+  "id": "k-44-5",
+  "n": "44",
+  "lv": 3,
+  "q": "Was gilt nach § 44 Abs. 3 BDG 1979, wenn der Beamte seine Bedenken gegen eine Weisung mitgeteilt hat und der Vorgesetzte die Weisung aufrechterhält?",
+  "a": "Der Vorgesetzte hat die Weisung schriftlich zu erteilen, widrigenfalls sie als zurückgezogen gilt.",
+  "s": "§ 44 Abs. 3 BDG 1979"
+ },
+ {
+  "id": "k-45-1",
+  "n": "45",
+  "lv": 2,
+  "q": "Wofür hat der Vorgesetzte nach § 45 Abs. 1 BDG 1979 zu sorgen, was die Erfüllung der Aufgaben durch die Mitarbeiter betrifft?",
+  "a": "Er hat darauf zu achten, dass die Mitarbeiter ihre dienstlichen Aufgaben gesetzmäßig und in zweckmäßiger, wirtschaftlicher und sparsamer Weise erfüllen.",
+  "s": "§ 45 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-45-2",
+  "n": "45",
+  "lv": 2,
+  "q": "Was hat der Leiter einer Dienststelle nach § 45 Abs. 3 BDG 1979 zu tun, wenn ihm in Ausübung seines Dienstes der begründete Verdacht einer von Amts wegen zu verfolgenden gerichtlich strafbaren Handlung bekannt wird, die den Wirkungsbereich seiner Dienststelle betrifft?",
+  "a": "Sofern er nicht ohnehin nach § 109 Abs. 1 vorzugehen hat, muss er dies unverzüglich der zur Anzeige berufenen Stelle melden oder, wenn er selbst dazu berufen ist, die Anzeige erstatten.",
+  "s": "§ 45 Abs. 3 BDG 1979"
+ },
+ {
+  "id": "k-45a-1",
+  "n": "45a",
+  "lv": 1,
+  "q": "Wie oft hat der Vorgesetzte nach § 45a Abs. 1 BDG 1979 mit jedem Mitarbeiter ein Mitarbeitergespräch zu führen?",
+  "a": "Einmal jährlich.",
+  "s": "§ 45a Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-45a-2",
+  "n": "45a",
+  "lv": 2,
+  "q": "Zwischen wem ist das Mitarbeitergespräch nach § 45a Abs. 3 BDG 1979 zu führen?",
+  "a": "Ausschließlich zwischen dem Vorgesetzten und seinem Mitarbeiter.",
+  "s": "§ 45a Abs. 3 BDG 1979"
+ },
+ {
+  "id": "k-45b-1",
+  "n": "45b",
+  "lv": 1,
+  "q": "Wann ist nach § 45b Abs. 1 BDG 1979 eine Teamarbeitsbesprechung durchzuführen und mit wem?",
+  "a": "Jeweils nach Abschluss der einzelnen Mitarbeitergespräche, mit allen Mitgliedern der Organisationseinheit.",
+  "s": "§ 45b Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-46-1",
+  "n": "46",
+  "lv": 1,
+  "q": "Wem gegenüber und worüber ist der Beamte nach § 46 Abs. 1 BDG 1979 zur Geheimhaltung verpflichtet?",
+  "a": "Über die ihm ausschließlich aus seiner amtlichen Tätigkeit bekannt gewordenen Tatsachen, gegenüber jedermann, dem er darüber nicht eine amtliche Mitteilung zu machen hat – soweit und solange die Geheimhaltung aus einem der gesetzlichen Gründe erforderlich und verhältnismäßig ist.",
+  "s": "§ 46 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-46-2",
+  "n": "46",
+  "lv": 2,
+  "q": "Welche vier Geheimhaltungsgründe nennt § 46 Abs. 1 Z 1 bis 4 BDG 1979?",
+  "a": "Zwingende integrations- oder außenpolitische Gründe; Interesse der nationalen Sicherheit; Interesse der umfassenden Landesverteidigung; Interesse der Aufrechterhaltung der öffentlichen Ordnung und Sicherheit.",
+  "s": "§ 46 Abs. 1 Z 1 bis 4 BDG 1979"
+ },
+ {
+  "id": "k-46-3",
+  "n": "46",
+  "lv": 2,
+  "q": "Welche drei Geheimhaltungsgründe nennt § 46 Abs. 1 Z 5 bis 7 BDG 1979?",
+  "a": "Vorbereitung einer Entscheidung; Abwehr eines erheblichen wirtschaftlichen oder finanziellen Schadens einer Gebietskörperschaft oder eines sonstigen Selbstverwaltungskörpers; Wahrung überwiegender berechtigter Interessen eines anderen.",
+  "s": "§ 46 Abs. 1 Z 5 bis 7 BDG 1979"
+ },
+ {
+  "id": "k-46-4",
+  "n": "46",
+  "lv": 1,
+  "q": "Wie lange besteht die Pflicht zur Geheimhaltung nach § 46 Abs. 2 BDG 1979?",
+  "a": "Sie besteht auch nach Beendigung des Dienstverhältnisses.",
+  "s": "§ 46 Abs. 2 BDG 1979"
+ },
+ {
+  "id": "k-46-5",
+  "n": "46",
+  "lv": 2,
+  "q": "Was muss der Beamte nach § 46 Abs. 3 BDG 1979 tun, wenn aus der Ladung zu einer Aussage vor Gericht oder einer Verwaltungsbehörde erkennbar ist, dass der Gegenstand der Geheimhaltung unterliegen könnte?",
+  "a": "Er hat dies seiner Dienstbehörde zu melden. Die Dienstbehörde entscheidet, ob er von der Geheimhaltung zu entbinden ist, und wägt dabei das Interesse an der Geheimhaltung gegen das Interesse an der Aussage ab.",
+  "s": "§ 46 Abs. 3 BDG 1979"
+ },
+ {
+  "id": "k-46-6",
+  "n": "46",
+  "lv": 2,
+  "q": "Was muss der Beamte nach § 46 Abs. 4 BDG 1979 tun, wenn sich erst bei der Aussage herausstellt, dass der Gegenstand der Geheimhaltung unterliegen könnte?",
+  "a": "Er hat die Beantwortung weiterer Fragen zu verweigern. Hält die vernehmende Behörde die Aussage für erforderlich, hat sie die Entbindung von der Geheimhaltung zu beantragen.",
+  "s": "§ 46 Abs. 4 BDG 1979"
+ },
+ {
+  "id": "k-47-1",
+  "n": "47",
+  "lv": 1,
+  "q": "Was hat der Beamte nach § 47 BDG 1979 zu tun, wenn wichtige Gründe vorliegen, die seine volle Unbefangenheit in Zweifel setzen?",
+  "a": "Er hat sich der Ausübung seines Amtes zu enthalten und seine Vertretung zu veranlassen.",
+  "s": "§ 47 BDG 1979"
+ },
+ {
+  "id": "k-47-2",
+  "n": "47",
+  "lv": 2,
+  "q": "Was gilt nach § 47 BDG 1979 für den befangenen Beamten bei Gefahr im Verzug, wenn die Vertretung nicht sogleich bewirkt werden kann?",
+  "a": "Er hat die unaufschiebbaren Amtshandlungen selbst vorzunehmen.",
+  "s": "§ 47 BDG 1979"
+ },
+ {
+  "id": "k-52-1",
+  "n": "52",
+  "lv": 2,
+  "q": "Wann hat sich ein Beamter nach § 52 Abs. 1 BDG 1979 auf Anordnung der Dienstbehörde einer ärztlichen Untersuchung zu unterziehen?",
+  "a": "Wenn berechtigte Zweifel an der für die Erfüllung der dienstlichen Aufgaben erforderlichen gesundheitlichen Eignung bestehen.",
+  "s": "§ 52 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-53-1",
+  "n": "53",
+  "lv": 1,
+  "q": "Wem hat der Beamte nach § 53 Abs. 1 BDG 1979 den begründeten Verdacht einer von Amts wegen zu verfolgenden gerichtlich strafbaren Handlung zu melden, die den Wirkungsbereich seiner Dienststelle betrifft?",
+  "a": "Unverzüglich dem Leiter der Dienststelle.",
+  "s": "§ 53 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-53-2",
+  "n": "53",
+  "lv": 2,
+  "q": "Wann besteht nach § 53 Abs. 1a BDG 1979 keine Pflicht zur Meldung eines Verdachts nach Abs. 1?",
+  "a": "Wenn die Meldung eine amtliche Tätigkeit beeinträchtigen würde, deren Wirksamkeit eines persönlichen Vertrauensverhältnisses bedarf.",
+  "s": "§ 53 Abs. 1a BDG 1979"
+ },
+ {
+  "id": "k-53-3",
+  "n": "53",
+  "lv": 2,
+  "q": "Was hat der Beamte nach § 53 Abs. 1c BDG 1979 zu melden, wenn seine Dienstverhinderung ganz oder teilweise auf das Einwirken Dritter zurückzuführen ist?",
+  "a": "Er hat dies unverzüglich seiner Dienstbehörde zu melden und auf Verlangen alle für Ersatzansprüche erforderlichen Daten und Beweismittel bekanntzugeben.",
+  "s": "§ 53 Abs. 1c BDG 1979"
+ },
+ {
+  "id": "k-53-4",
+  "n": "53",
+  "lv": 2,
+  "q": "Welche persönlichen Veränderungen hat der Beamte nach § 53 Abs. 2 BDG 1979 seiner Dienstbehörde zu melden?",
+  "a": "Namensänderung, Standesveränderung, Veränderung der Staatsbürgerschaft oder Staatsangehörigkeit(en) (und des unbeschränkten Zugangs zum österreichischen Arbeitsmarkt) sowie Änderung des Wohnsitzes.",
+  "s": "§ 53 Abs. 2 Z 1 bis 4 BDG 1979"
+ },
+ {
+  "id": "k-53-5",
+  "n": "53",
+  "lv": 2,
+  "q": "Welchen Verlust hat der Beamte nach § 53 Abs. 2 Z 5 BDG 1979 seiner Dienstbehörde zu melden?",
+  "a": "Den Verlust einer für die Ausübung des Dienstes erforderlichen behördlichen Berechtigung oder Befähigung, insbesondere der Lenkberechtigung, sowie der Dienstkleidung, des Dienstabzeichens, des Dienstausweises und sonstiger Sachbehelfe.",
+  "s": "§ 53 Abs. 2 Z 5 BDG 1979"
+ },
+ {
+  "id": "k-53-6",
+  "n": "53",
+  "lv": 2,
+  "q": "Was hat der Beamte nach § 53 Abs. 2 Z 5a BDG 1979 zu melden, wenn ihm eine Dienstwaffe zugeteilt worden ist?",
+  "a": "Die Aussprache eines vorläufigen oder die Verhängung eines behördlichen Waffenverbotes.",
+  "s": "§ 53 Abs. 2 Z 5a BDG 1979"
+ },
+ {
+  "id": "k-54-1",
+  "n": "54",
+  "lv": 1,
+  "q": "Wo hat der Beamte nach § 54 Abs. 1 BDG 1979 Anbringen, die sich auf sein Dienstverhältnis oder seine dienstlichen Aufgaben beziehen, einzubringen?",
+  "a": "Bei seinem unmittelbaren Dienstvorgesetzten, der sie unverzüglich an die zuständige Stelle weiterzuleiten hat (Dienstweg).",
+  "s": "§ 54 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-54-2",
+  "n": "54",
+  "lv": 2,
+  "q": "Welche Eingaben können nach § 54 Abs. 3 und 4 BDG 1979 ohne Einhaltung des Dienstweges eingebracht werden?",
+  "a": "In Dienstrechts- und Disziplinarangelegenheiten (Abs. 3): Rechtsmittel; Säumnisbeschwerden und Fristsetzungsanträge; Anträge auf Wiederaufnahme des Verfahrens und auf Wiedereinsetzung in den vorigen Stand; Beschwerden an den Verfassungsgerichtshof und Revisionen an den Verwaltungsgerichtshof. Außerdem allgemein (Abs. 4): Meldungen und Hinweisgebungen nach § 53a zweiter Satz.",
+  "s": "§ 54 Abs. 3 und 4 BDG 1979"
+ },
+ {
+  "id": "k-55-1",
+  "n": "55",
+  "lv": 1,
+  "q": "Wie hat der Beamte nach § 55 Abs. 1 BDG 1979 seinen Wohnsitz zu wählen?",
+  "a": "So, dass er bei der Erfüllung seiner dienstlichen Aufgaben nicht beeinträchtigt wird.",
+  "s": "§ 55 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-56-1",
+  "n": "56",
+  "lv": 1,
+  "q": "Was ist nach § 56 Abs. 1 BDG 1979 eine Nebenbeschäftigung?",
+  "a": "Jede Beschäftigung, die der Beamte außerhalb seines Dienstverhältnisses und einer allfälligen Nebentätigkeit ausübt.",
+  "s": "§ 56 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-56-2",
+  "n": "56",
+  "lv": 2,
+  "q": "Welche Nebenbeschäftigungen darf der Beamte nach § 56 Abs. 2 BDG 1979 nicht ausüben?",
+  "a": "Solche, die ihn an der Erfüllung seiner dienstlichen Aufgaben behindern, die Vermutung seiner Befangenheit hervorrufen oder sonstige wesentliche dienstliche Interessen gefährden.",
+  "s": "§ 56 Abs. 2 BDG 1979"
+ },
+ {
+  "id": "k-56-3",
+  "n": "56",
+  "lv": 2,
+  "q": "Welche Nebenbeschäftigung hat der Beamte nach § 56 Abs. 3 BDG 1979 seiner Dienstbehörde zu melden?",
+  "a": "Jede erwerbsmäßige Nebenbeschäftigung und jede Änderung einer solchen, unverzüglich.",
+  "s": "§ 56 Abs. 3 BDG 1979"
+ },
+ {
+  "id": "k-56-4",
+  "n": "56",
+  "lv": 2,
+  "q": "Wann ist eine Nebenbeschäftigung nach § 56 Abs. 3 BDG 1979 erwerbsmäßig?",
+  "a": "Wenn sie die Schaffung von nennenswerten Einkünften in Geld- oder Güterform bezweckt.",
+  "s": "§ 56 Abs. 3 BDG 1979"
+ },
+ {
+  "id": "k-56-5",
+  "n": "56",
+  "lv": 3,
+  "q": "In welchen Fällen darf der Beamte nach § 56 Abs. 4 BDG 1979 eine erwerbsmäßige Nebenbeschäftigung nur mit Genehmigung der Dienstbehörde ausüben?",
+  "a": "Wenn seine Wochendienstzeit nach den §§ 50a, 50b, 50e, 50f oder 50g herabgesetzt wurde, wenn er eine Teilzeitbeschäftigung nach MSchG oder VKG in Anspruch nimmt oder wenn er sich in einem Karenzurlaub nach § 75c befindet.",
+  "s": "§ 56 Abs. 4 BDG 1979"
+ },
+ {
+  "id": "k-56-6",
+  "n": "56",
+  "lv": 2,
+  "q": "Was hat die Dienstbehörde nach § 56 Abs. 6 BDG 1979 bei einer aus den Gründen des Abs. 2 unzulässigen Nebenbeschäftigung zu tun?",
+  "a": "Sie hat sie unverzüglich mit schriftlicher Weisung zu untersagen.",
+  "s": "§ 56 Abs. 6 BDG 1979"
+ },
+ {
+  "id": "k-59-1",
+  "n": "59",
+  "lv": 1,
+  "q": "Was ist dem Beamten nach § 59 Abs. 1 BDG 1979 verboten?",
+  "a": "Im Hinblick auf seine amtliche Stellung oder Amtsführung für sich oder einen Dritten ein Geschenk oder einen sonstigen Vorteil zu fordern, anzunehmen, sich zu verschaffen oder versprechen zu lassen.",
+  "s": "§ 59 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-59-2",
+  "n": "59",
+  "lv": 2,
+  "q": "Was gilt nach § 59 Abs. 4 BDG 1979 für Ehrengeschenke?",
+  "a": "Der Beamte darf sie entgegennehmen, muss aber die Dienstbehörde unverzüglich davon in Kenntnis setzen. Die Dienstbehörde erfasst das Ehrengeschenk als Bundesvermögen.",
+  "s": "§ 59 Abs. 4 BDG 1979"
+ },
+ {
+  "id": "k-60-1",
+  "n": "60",
+  "lv": 1,
+  "q": "Wozu ist der Beamte nach § 60 Abs. 1 BDG 1979 verpflichtet, wenn es dienstliche Gründe erfordern?",
+  "a": "Im Dienst Dienstkleidung zu tragen oder sich mit einem Dienstabzeichen oder einem Dienstausweis auszuweisen.",
+  "s": "§ 60 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-47a-1",
+  "n": "47a",
+  "lv": 1,
+  "q": "Was ist die Dienstzeit nach § 47a BDG 1979?",
+  "a": "Die Zeit der im Dienstplan vorgeschriebenen Dienststunden (dienstplanmäßige Dienstzeit), einer Dienststellenbereitschaft, eines Journaldienstes und der Mehrdienstleistung.",
+  "s": "§ 47a Z 1 BDG 1979"
+ },
+ {
+  "id": "k-47a-2",
+  "n": "47a",
+  "lv": 2,
+  "q": "Was zählt nach § 47a BDG 1979 zur Mehrdienstleistung?",
+  "a": "Die Überstunden, jene Teile des Journaldienstes, in denen der Beamte seiner dienstlichen Tätigkeit nachgehen muss, und die über die dienstplanmäßige Dienstzeit hinaus geleisteten dienstlichen Tätigkeiten, die im selben Kalendervierteljahr 1 : 1 durch Freizeit ausgeglichen werden.",
+  "s": "§ 47a Z 2 BDG 1979"
+ },
+ {
+  "id": "k-48-1",
+  "n": "48",
+  "lv": 1,
+  "q": "Wie hoch ist die regelmäßige Wochendienstzeit eines Beamten nach § 48 BDG 1979 und in welchem Zeitraum muss sie im Durchschnitt erreicht werden?",
+  "a": "40 Stunden. Sie kann in einzelnen Wochen über- oder unterschritten werden, muss aber im Kalenderjahr im Durchschnitt 40 Stunden je Woche betragen.",
+  "s": "§ 48 Abs. 2 BDG 1979"
+ },
+ {
+  "id": "k-48-2",
+  "n": "48",
+  "lv": 2,
+  "q": "Wodurch unterscheiden sich Schichtdienst und Wechseldienst nach § 48 Abs. 4 BDG 1979?",
+  "a": "Beim Schichtdienst löst ein Beamter den anderen ohne wesentliche zeitmäßige Überschneidung an der Arbeitsstätte ab. Bei wesentlichen zeitmäßigen Überschneidungen liegt Wechseldienst vor.",
+  "s": "§ 48 Abs. 4 BDG 1979"
+ },
+ {
+  "id": "k-48a-1",
+  "n": "48a",
+  "lv": 1,
+  "q": "Wie viele Stunden darf die Tagesdienstzeit nach § 48a BDG 1979 höchstens betragen?",
+  "a": "Die Tagesdienstzeit darf 13 Stunden nicht überschreiten (Ausnahmen sind im Gesetz geregelt).",
+  "s": "§ 48a Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-48c-1",
+  "n": "48c",
+  "lv": 1,
+  "q": "Welche Ruhezeit ist dem Beamten nach Beendigung der Tagesdienstzeit nach § 48c BDG 1979 zu gewähren?",
+  "a": "Eine ununterbrochene Ruhezeit von mindestens elf Stunden.",
+  "s": "§ 48c BDG 1979"
+ },
+ {
+  "id": "k-49-1",
+  "n": "49",
+  "lv": 1,
+  "q": "Was ist eine Mehrdienstleistung nach § 49 Abs. 1 BDG 1979?",
+  "a": "Dienst, den der Beamte auf Anordnung über die im Dienstplan vorgeschriebenen Dienststunden hinaus versehen muss.",
+  "s": "§ 49 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-49-2",
+  "n": "49",
+  "lv": 3,
+  "q": "Unter welchen vier Voraussetzungen sind nicht angeordnete Mehrdienstleistungen den angeordneten gleichzuhalten (§ 49 Abs. 1 BDG 1979)?",
+  "a": "1. Der Beamte konnte keinen zur Anordnung der Mehrdienstleistung Befugten erreichen. 2. Die Mehrdienstleistung war zur Abwehr eines Schadens unverzüglich notwendig. 3. Die Notwendigkeit geht nicht auf Umstände zurück, die der Beamte hätte vermeiden können. 4. Der Beamte meldet sie spätestens innerhalb einer Woche nach der Erbringung schriftlich (bei unvorhergesehener oder unabwendbarer, unverschuldeter Verhinderung verlängert sich die Frist um deren Dauer).",
+  "s": "§ 49 Abs. 1 Z 1 bis 4 BDG 1979"
+ },
+ {
+  "id": "k-49-3",
+  "n": "49",
+  "lv": 2,
+  "q": "Wie sind Mehrdienstleistungen an Sonn- und Feiertagen nach § 49 BDG 1979 zu behandeln?",
+  "a": "Sie sind nicht durch Freizeit auszugleichen, gelten in jedem Fall als Überstunden und sind nach besoldungsrechtlichen Vorschriften abzugelten.",
+  "s": "§ 49 Abs. 2 und 3 BDG 1979"
+ },
+ {
+  "id": "k-49-4",
+  "n": "49",
+  "lv": 2,
+  "q": "Wie sind an Werktagen erbrachte Mehrdienstleistungen nach § 49 Abs. 2 BDG 1979 nach Möglichkeit auszugleichen?",
+  "a": "Im selben Kalendervierteljahr im Verhältnis 1 : 1 in Freizeit (ausgenommen jene Teile des Journaldienstes, in denen der Beamte seiner dienstlichen Tätigkeit nachgehen muss, § 47a Z 2 lit. b).",
+  "s": "§ 49 Abs. 2 BDG 1979"
+ },
+ {
+  "id": "k-49-5",
+  "n": "49",
+  "lv": 2,
+  "q": "Welche Abgeltungsarten gibt es nach § 49 Abs. 4 BDG 1979 für Werktagsüberstunden (je nach Anordnung)?",
+  "a": "1. Ausgleich in Freizeit im Verhältnis 1 : 1,5, oder 2. Abgeltung nach besoldungsrechtlichen Vorschriften, oder 3. Ausgleich in Freizeit 1 : 1 und zusätzlich Abgeltung nach besoldungsrechtlichen Vorschriften.",
+  "s": "§ 49 Abs. 4 BDG 1979"
+ },
+ {
+  "id": "k-49-6",
+  "n": "49",
+  "lv": 1,
+  "q": "Was gilt nach § 49 Abs. 2 BDG 1979 für den Ausgleich von Mehrdienstleistungen außerhalb der Nachtzeit im Verhältnis zu jenen in der Nachtzeit, und welche Uhrzeiten gelten als Nachtzeit?",
+  "a": "Mehrdienstleistungen außerhalb der Nachtzeit sind vor jenen in der Nachtzeit auszugleichen. Die Nachtzeit ist von 22.00 bis 6.00 Uhr.",
+  "s": "§ 49 Abs. 2 BDG 1979"
+ },
+ {
+  "id": "k-50-1",
+  "n": "50",
+  "lv": 1,
+  "q": "Was versteht man nach § 50 Abs. 1 BDG 1979 unter Dienststellenbereitschaft bzw. Journaldienst?",
+  "a": "Der Beamte kann aus dienstlichen Gründen verpflichtet werden, sich außerhalb der Dienststunden in einer Dienststelle oder an einem bestimmten anderen Ort aufzuhalten und bei Bedarf oder auf Anordnung seine dienstliche Tätigkeit aufzunehmen.",
+  "s": "§ 50 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-50-2",
+  "n": "50",
+  "lv": 2,
+  "q": "Was ist Rufbereitschaft nach § 50 Abs. 3 BDG 1979 und gilt sie als Dienstzeit?",
+  "a": "Soweit es dienstliche Rücksichten zwingend erfordern, kann der Beamte fallweise verpflichtet werden, in seiner dienstfreien Zeit seinen Aufenthalt so zu wählen, dass er jederzeit erreichbar und binnen kürzester Zeit zum Antritt seines Dienstes bereit ist. Rufbereitschaft gilt nicht als Dienstzeit.",
+  "s": "§ 50 Abs. 3 BDG 1979"
+ },
+ {
+  "id": "k-51-1",
+  "n": "51",
+  "lv": 1,
+  "q": "Was muss ein Beamter nach § 51 Abs. 1 BDG 1979 tun, wenn er vom Dienst abwesend ist, ohne befreit oder enthoben zu sein?",
+  "a": "Er muss den Grund seiner Abwesenheit unverzüglich seinem Vorgesetzten melden und seine Abwesenheit rechtfertigen.",
+  "s": "§ 51 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-51-2",
+  "n": "51",
+  "lv": 2,
+  "q": "Ab wann muss ein Beamter bei Krankheit, Unfall oder Gebrechen nach § 51 Abs. 2 BDG 1979 eine ärztliche Bescheinigung vorlegen?",
+  "a": "Wenn er dem Dienst länger als drei Arbeitstage fernbleibt oder der Vorgesetzte bzw. der Leiter der Dienststelle es verlangt.",
+  "s": "§ 51 Abs. 2 BDG 1979"
+ },
+ {
+  "id": "k-145-1",
+  "n": "145",
+  "lv": 2,
+  "q": "Wie wird nach § 145 Abs. 1 BDG 1979 die Zeit der Anwesenheit eines Exekutivbeamten als Zeuge vor Gericht oder einer Verwaltungsbehörde (aufgrund einer dienstlichen Wahrnehmung) behandelt?",
+  "a": "Die Zeit der notwendigen Anwesenheit gilt als Dienstzeit. Sie beginnt 60 Minuten vor dem festgesetzten Ladungstermin und endet 60 Minuten nach Beendigung der Zeugeneinvernahme.",
+  "s": "§ 145 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-145-2",
+  "n": "145",
+  "lv": 3,
+  "q": "Wann gilt § 145 Abs. 1 BDG 1979 auch für einen Exekutivbeamten, der wegen eines in Ausübung des Dienstes gesetzten Verhaltens als Beschuldigter geladen wird, und wie wird der Teil außerhalb der Dienststunden ausgeglichen?",
+  "a": "Wenn das Verfahren mit Freispruch oder durch Einstellung endet. Der Teil, der über die im Dienstplan vorgeschriebenen Dienststunden hinausgeht, ist ausschließlich im Verhältnis 1 : 1 durch Freizeit auszugleichen.",
+  "s": "§ 145 Abs. 2 BDG 1979"
+ },
+ {
+  "id": "k-62-1",
+  "n": "62",
+  "lv": 1,
+  "q": "Worauf hat der Beamte nach § 62 BDG 1979 Anspruch?",
+  "a": "Auf Bezüge oder Ruhebezüge, und zwar nach Maßgabe besonderer gesetzlicher Vorschriften.",
+  "s": "§ 62 BDG 1979"
+ },
+ {
+  "id": "k-63-1",
+  "n": "63",
+  "lv": 1,
+  "q": "Wozu ist der Beamte nach § 63 Abs. 1 BDG 1979 berechtigt?",
+  "a": "Einen im Besonderen Teil des BDG für ihn vorgesehenen Amtstitel zu führen.",
+  "s": "§ 63 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-65-1",
+  "n": "65",
+  "lv": 1,
+  "q": "Wie hoch ist das jährliche Ausmaß des Erholungsurlaubs nach § 65 BDG 1979?",
+  "a": "200 Stunden pro Kalenderjahr. Ab dem Kalenderjahr, in dem der 43. Geburtstag vor dem 1. Juli liegt, erhöht es sich auf 240 Stunden.",
+  "s": "§ 65 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-65-2",
+  "n": "65",
+  "lv": 3,
+  "q": "Ab wann gilt das erhöhte Urlaubsausmaß von 240 Stunden, wenn der 43. Geburtstag nach dem 30. Juni eines Kalenderjahres liegt?",
+  "a": "Erst ab dem darauf folgenden Kalenderjahr.",
+  "s": "§ 65 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-65-3",
+  "n": "65",
+  "lv": 2,
+  "q": "Wie hoch ist der Urlaubsanspruch im Kalenderjahr, in dem das öffentlich-rechtliche Dienstverhältnis begründet wurde?",
+  "a": "Für jeden begonnenen Monat des Dienstverhältnisses ein Zwölftel des jährlichen Ausmaßes. Hat das Dienstverhältnis in diesem Jahr ununterbrochen sechs Monate gedauert, gebührt der volle Erholungsurlaub.",
+  "s": "§ 65 Abs. 2 BDG 1979"
+ },
+ {
+  "id": "k-65-4",
+  "n": "65",
+  "lv": 1,
+  "q": "In welcher Form darf der Erholungsurlaub nach § 65 BDG 1979 grundsätzlich verbraucht werden?",
+  "a": "Nur tageweise. Ein Rest an Urlaubsstunden, der sich bei der Ermittlung des Urlaubsausmaßes gemäß § 65 Abs. 2 oder § 66 ergibt und nicht tageweise verbraucht werden kann, darf auch stundenweise verbraucht werden.",
+  "s": "§ 65 Abs. 5 BDG 1979"
+ },
+ {
+  "id": "k-65-5",
+  "n": "65",
+  "lv": 2,
+  "q": "Wie viele Urlaubsstunden werden für die Zeit des Erholungsurlaubs als verbraucht angerechnet?",
+  "a": "So viele, wie die Beamtin oder der Beamte in diesem Zeitraum nach dem Dienstplan Dienst zu leisten hätte.",
+  "s": "§ 65 Abs. 5 BDG 1979"
+ },
+ {
+  "id": "k-68-1",
+  "n": "68",
+  "lv": 1,
+  "q": "Welchen Anspruch hat die Beamtin oder der Beamte nach § 68 Abs. 1 BDG 1979 beim Verbrauch des Erholungsurlaubs, und wann entfällt er?",
+  "a": "Anspruch, die Hälfte des Erholungsurlaubes ungeteilt zu verbrauchen, soweit nicht zwingende dienstliche Gründe entgegenstehen. Die kalendermäßige Festlegung erfolgt unter Berücksichtigung der dienstlichen Interessen, wobei auf die persönlichen Verhältnisse angemessen Rücksicht zu nehmen ist.",
+  "s": "§ 68 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-68-2",
+  "n": "68",
+  "lv": 2,
+  "q": "Was ist der „persönliche Feiertag“ nach § 68 BDG 1979 und wann ist er bekannt zu geben?",
+  "a": "Ein Tag pro Kalenderjahr, an dem die Beamtin oder der Beamte Erholungsurlaub einseitig in Anspruch nehmen kann. Das Datum ist spätestens drei Monate im Vorhinein bekannt zu geben.",
+  "s": "§ 68 Abs. 3 BDG 1979"
+ },
+ {
+  "id": "k-69-1",
+  "n": "69",
+  "lv": 1,
+  "q": "Wann verfällt der Anspruch auf Erholungsurlaub nach § 69 BDG 1979 grundsätzlich?",
+  "a": "Wenn er nicht bis zum 31. Dezember des dem Urlaubsjahr folgenden Kalenderjahres verbraucht wurde.",
+  "s": "§ 69 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-70-1",
+  "n": "70",
+  "lv": 2,
+  "q": "Unter welchen Voraussetzungen kann ein Vorgriff auf künftige Urlaubsansprüche gestattet werden (§ 70 BDG 1979)?",
+  "a": "Auf Antrag und bei Vorliegen besonders berücksichtigungswürdiger Umstände. Gestattet werden kann der Verbrauch des ganzen oder eines Teiles des im nächsten Kalenderjahr gebührenden Erholungsurlaubes.",
+  "s": "§ 70 BDG 1979"
+ },
+ {
+  "id": "k-71-1",
+  "n": "71",
+  "lv": 2,
+  "q": "Unter welchen Voraussetzungen unterbricht eine Erkrankung den Erholungsurlaub (§ 71 BDG 1979)?",
+  "a": "Die Erkrankung dauert länger als drei Kalendertage und wurde nicht vorsätzlich oder grob fahrlässig herbeigeführt. Dann werden so viele Stunden nicht auf das Urlaubsausmaß angerechnet, wie nach dem Dienstplan Dienst zu leisten gewesen wäre.",
+  "s": "§ 71 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-71-2",
+  "n": "71",
+  "lv": 2,
+  "q": "Welche Pflichten hat der erkrankte Beamte nach § 71 BDG 1979, damit die Krankheit den Urlaub unterbricht?",
+  "a": "Er muss nach dreitägiger Krankheitsdauer die Erkrankung unverzüglich der Dienststelle mitteilen, die den Urlaub festlegt. Beim Wiederantritt des Dienstes muss er ohne schuldhafte Verzögerung ein ärztliches Zeugnis oder eine Bestätigung des Krankenversicherungsträgers über Beginn und Dauer der Dienstunfähigkeit vorlegen.",
+  "s": "§ 71 Abs. 2 BDG 1979"
+ },
+ {
+  "id": "k-74-1",
+  "n": "74",
+  "lv": 1,
+  "q": "Was ist ein Sonderurlaub nach § 74 BDG 1979 und wie wirkt er sich auf die Bezüge aus?",
+  "a": "Er kann auf Ansuchen aus wichtigen persönlichen oder familiären Gründen oder aus einem sonstigen besonderen Anlass gewährt werden. Der Beamte behält den Anspruch auf die vollen Bezüge.",
+  "s": "§ 74 Abs. 1 und 2 BDG 1979"
+ },
+ {
+  "id": "k-74-2",
+  "n": "74",
+  "lv": 2,
+  "q": "Wann darf ein Sonderurlaub nur gewährt werden und wie lange darf er dauern (§ 74 BDG 1979)?",
+  "a": "Nur wenn keine zwingenden dienstlichen Erfordernisse entgegenstehen. Er darf die dem Anlass angemessene Dauer nicht übersteigen. Die Gesamtdauer der für ein Kalenderjahr gewährten Sonderurlaube darf das Ausmaß der auf zwölf Wochen entfallenden regelmäßigen Dienstzeit nicht übersteigen.",
+  "s": "§ 74 Abs. 3 und 4 BDG 1979"
+ },
+ {
+  "id": "k-75-1",
+  "n": "75",
+  "lv": 1,
+  "q": "Was ist ein Karenzurlaub nach § 75 BDG 1979 und wann kann er gewährt werden?",
+  "a": "Ein Urlaub unter Entfall der Bezüge. Er kann dem Beamten auf Antrag gewährt werden, sofern nicht zwingende dienstliche Gründe entgegenstehen.",
+  "s": "§ 75 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-75-2",
+  "n": "75",
+  "lv": 2,
+  "q": "Wie lange darf ein Karenzurlaub nach § 75 BDG 1979 grundsätzlich insgesamt dauern?",
+  "a": "Er endet spätestens mit Ablauf des Kalendermonats, in dem er gemeinsam mit früheren Karenzurlauben (und Freistellungen nach § 160 Abs. 2) eine Gesamtdauer von zehn Jahren erreicht. Davon ausgenommen sind unter anderem Karenzurlaube, auf die ein Rechtsanspruch besteht oder die kraft Gesetzes eintreten.",
+  "s": "§ 75 Abs. 3 und 4 BDG 1979"
+ },
+ {
+  "id": "k-75d-1",
+  "n": "75d",
+  "lv": 2,
+  "q": "Was ist der Frühkarenzurlaub nach § 75d BDG 1979 und in welchem Ausmaß ist er zu gewähren?",
+  "a": "Ein Urlaub unter Entfall der Bezüge im Ausmaß von bis zu 31 Tagen, der auf Ansuchen ab der Geburt eines Kindes (bis längstens zum Ende des Beschäftigungsverbotes der Mutter) zu gewähren ist.",
+  "s": "§ 75d Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-75d-2",
+  "n": "75d",
+  "lv": 3,
+  "q": "Unter welchen Voraussetzungen ist ein Frühkarenzurlaub für den Zeitraum von der Geburt bis zum Ende des Beschäftigungsverbotes der Mutter zu gewähren?",
+  "a": "Auf Ansuchen, wenn die Beamtin oder der Beamte mit der Mutter in einer Ehe, eingetragenen Partnerschaft oder Lebensgemeinschaft und mit der Mutter und dem Kind im gemeinsamen Haushalt lebt. Das Beschäftigungsverbot ist in § 5 Abs. 1 und 2 MSchG geregelt.",
+  "s": "§ 75d Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-76-1",
+  "n": "76",
+  "lv": 1,
+  "q": "Was ist die Pflegefreistellung nach § 76 BDG 1979 und wie lange darf sie im Kalenderjahr grundsätzlich dauern?",
+  "a": "Ein Anspruch des Beamten auf Freistellung, wenn er aus bestimmten Gründen nachweislich an der Dienstleistung verhindert ist (z. B. notwendige Pflege eines erkrankten oder verunglückten nahen Angehörigen). Im Kalenderjahr darf sie das Ausmaß der regelmäßigen Wochendienstzeit des Beamten nicht übersteigen.",
+  "s": "§ 76 Abs. 1 und 3 BDG 1979"
+ },
+ {
+  "id": "k-76-2",
+  "n": "76",
+  "lv": 2,
+  "q": "Aus welchen drei Gründen besteht nach § 76 Abs. 1 BDG 1979 Anspruch auf Pflegefreistellung?",
+  "a": "1. Notwendige Pflege einer oder eines erkrankten oder verunglückten nahen Angehörigen oder einer im gemeinsamen Haushalt lebenden erkrankten oder verunglückten Person. 2. Notwendige Betreuung des Kindes, wenn die Person, die das Kind ständig betreut hat, aus bestimmten Gründen ausfällt. 3. Begleitung des erkrankten Kindes bei einem stationären Aufenthalt in einer Heil- und Pflegeanstalt, wenn das Kind das zehnte Lebensjahr noch nicht vollendet hat.",
+  "s": "§ 76 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-76-3",
+  "n": "76",
+  "lv": 2,
+  "q": "Wer gilt nach § 76 Abs. 2 BDG 1979 als naher Angehöriger?",
+  "a": "Der Ehegatte und Personen, die mit dem Beamten in gerader Linie verwandt sind, ferner Geschwister, Stief-, Wahl- und Pflegekinder sowie die Person, mit der der Beamte in Lebensgemeinschaft lebt.",
+  "s": "§ 76 Abs. 2 BDG 1979"
+ },
+ {
+  "id": "k-76-4",
+  "n": "76",
+  "lv": 3,
+  "q": "Unter welchen Voraussetzungen besteht nach § 76 Abs. 4 BDG 1979 Anspruch auf eine weitere Woche Pflegefreistellung?",
+  "a": "Der Anspruch nach Abs. 1 ist verbraucht, und der Beamte ist wegen der notwendigen Pflege seines im gemeinsamen Haushalt lebenden erkrankten Kindes neuerlich oder weiterhin an der Dienstleistung verhindert. Das Kind darf das zwölfte Lebensjahr noch nicht überschritten haben oder es wird für das Kind erhöhte Familienbeihilfe gewährt.",
+  "s": "§ 76 Abs. 4 BDG 1979"
+ },
+ {
+  "id": "k-78e-1",
+  "n": "78e",
+  "lv": 2,
+  "q": "Was ist ein Sabbatical nach § 78e BDG 1979 und wie lange kann die Freistellung dauern?",
+  "a": "Eine Freistellung vom Dienst auf Antrag gegen anteilige Bezugskürzung für mindestens sechs und höchstens zwölf Monate innerhalb einer Rahmenzeit von zwei bis fünf vollen Jahren.",
+  "s": "§ 78e Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-78e-2",
+  "n": "78e",
+  "lv": 3,
+  "q": "Welche beiden Voraussetzungen müssen für ein Sabbatical nach § 78e BDG 1979 vorliegen?",
+  "a": "Es stehen keine wichtigen dienstlichen Gründe entgegen, und der Beamte steht seit mindestens fünf Jahren im Bundesdienst.",
+  "s": "§ 78e Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-92-1",
+  "n": "92",
+  "lv": 1,
+  "q": "Welche Disziplinarstrafen gibt es nach § 92 BDG 1979?",
+  "a": "1. Verweis, 2. Geldbuße bis zur Höhe eines Monatsbezugs, 3. Geldstrafe von mehr als einem Monatsbezug bis zu fünf Monatsbezügen, 4. Entlassung.",
+  "s": "§ 92 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-92-2",
+  "n": "92",
+  "lv": 2,
+  "q": "Bis zu welcher Höhe reicht die Geldbuße nach § 92 BDG 1979?",
+  "a": "Bis zur Höhe eines Monatsbezugs.",
+  "s": "§ 92 Abs. 1 Z 2 BDG 1979"
+ },
+ {
+  "id": "k-92-3",
+  "n": "92",
+  "lv": 2,
+  "q": "In welcher Höhe kann eine Geldstrafe nach § 92 BDG 1979 verhängt werden?",
+  "a": "In der Höhe von mehr als einem Monatsbezug bis zu fünf Monatsbezügen.",
+  "s": "§ 92 Abs. 1 Z 3 BDG 1979"
+ },
+ {
+  "id": "k-94-1",
+  "n": "94",
+  "lv": 2,
+  "q": "Innerhalb welcher Frist ab Kenntnis der Disziplinarbehörde muss eine Disziplinarverfügung erlassen oder Anzeige an die Bundesdisziplinarbehörde erstattet werden (§ 94 BDG 1979)?",
+  "a": "Innerhalb von sechs Monaten, gerechnet ab dem Zeitpunkt, zu dem der Disziplinarbehörde die Dienstpflichtverletzung zur Kenntnis gelangt ist. Sonst darf der Beamte wegen dieser Dienstpflichtverletzung nicht mehr bestraft werden.",
+  "s": "§ 94 Abs. 1 Z 1 BDG 1979"
+ },
+ {
+  "id": "k-94-2",
+  "n": "94",
+  "lv": 2,
+  "q": "Innerhalb welcher Frist ab Kenntnis der Disziplinarbehörde muss vor der Bundesdisziplinarbehörde ein Disziplinarverfahren eingeleitet werden (§ 94 BDG 1979)?",
+  "a": "Innerhalb von einem Jahr, gerechnet ab dem Zeitpunkt, zu dem der Disziplinarbehörde die Dienstpflichtverletzung zur Kenntnis gelangt ist.",
+  "s": "§ 94 Abs. 1 Z 2 BDG 1979"
+ },
+ {
+  "id": "k-94-3",
+  "n": "94",
+  "lv": 2,
+  "q": "Welche absolute Frist gilt nach § 94 BDG 1979 ab Beendigung der Dienstpflichtverletzung?",
+  "a": "Drei Jahre ab Beendigung der Dienstpflichtverletzung: Innerhalb dieser Zeit muss eine Disziplinarverfügung erlassen oder ein Disziplinarverfahren vor der Bundesdisziplinarbehörde eingeleitet werden.",
+  "s": "§ 94 Abs. 1 Z 3 BDG 1979"
+ },
+ {
+  "id": "k-94-4",
+  "n": "94",
+  "lv": 2,
+  "q": "Was bedeutet die Strafbarkeitsverjährung nach § 94 Abs. 1a BDG 1979?",
+  "a": "Drei Jahre nach der Zustellung der Entscheidung, gegen den Beamten ein Disziplinarverfahren durchzuführen, darf keine Disziplinarstrafe mehr verhängt werden.",
+  "s": "§ 94 Abs. 1a BDG 1979"
+ },
+ {
+  "id": "k-96-1",
+  "n": "96",
+  "lv": 1,
+  "q": "Welche Disziplinarbehörden gibt es nach § 96 BDG 1979?",
+  "a": "Die Dienstbehörden und die Bundesdisziplinarbehörde.",
+  "s": "§ 96 BDG 1979"
+ },
+ {
+  "id": "k-109-1",
+  "n": "109",
+  "lv": 2,
+  "q": "Was hat der Dienstvorgesetzte bei begründetem Verdacht einer Dienstpflichtverletzung zu tun, wenn kein Verdacht einer gerichtlich strafbaren Handlung besteht (§ 109 BDG 1979)?",
+  "a": "Er hat die zur vorläufigen Klarstellung des Sachverhalts erforderlichen Erhebungen zu pflegen und sodann unverzüglich im Dienstweg der Dienstbehörde Disziplinaranzeige zu erstatten.",
+  "s": "§ 109 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-109-2",
+  "n": "109",
+  "lv": 3,
+  "q": "Wann ist nach § 109 Abs. 2 BDG 1979 statt einer Disziplinaranzeige eine Belehrung oder Ermahnung zu erteilen, und welche Folgen hat sie?",
+  "a": "Von der Disziplinaranzeige ist abzusehen, wenn nach Ansicht des Dienstvorgesetzten eine Belehrung oder Ermahnung ausreicht; sie ist dem Beamten nachweislich mitzuteilen. Nach drei Jahren ab dieser Mitteilung darf sie zu keinen dienstlichen Nachteilen mehr führen und die Aufzeichnungen sind zu vernichten, wenn der Beamte in diesem Zeitraum keine weitere Dienstpflichtverletzung begangen hat.",
+  "s": "§ 109 Abs. 2 BDG 1979"
+ },
+ {
+  "id": "k-109-3",
+  "n": "109",
+  "lv": 2,
+  "q": "Was hat der Dienstvorgesetzte zu tun, wenn der Verdacht einer Dienstpflichtverletzung auch den Verdacht einer von Amts wegen zu verfolgenden gerichtlich strafbaren Handlung erweckt (§ 109 BDG 1979)?",
+  "a": "Er hat sich in dieser Eigenschaft jeder Erhebung zu enthalten und sofort der Dienstbehörde zu berichten. Diese hat gemäß § 78 StPO vorzugehen.",
+  "s": "§ 109 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-112-1",
+  "n": "112",
+  "lv": 1,
+  "q": "Wer verfügt die vorläufige Suspendierung eines Beamten, und wem ist sie mitzuteilen (§ 112 BDG 1979)?",
+  "a": "Die Dienstbehörde verfügt die vorläufige Suspendierung. Sie ist unverzüglich der Bundesdisziplinarbehörde mitzuteilen.",
+  "s": "§ 112 Abs. 1 und 2 BDG 1979"
+ },
+ {
+  "id": "k-112-2",
+  "n": "112",
+  "lv": 2,
+  "q": "In welchen Fällen hat die Dienstbehörde die vorläufige Suspendierung zu verfügen (§ 112 Abs. 1 BDG 1979)?",
+  "a": "1. Bei Verhängung der Untersuchungshaft, 2. bei rechtswirksamer Anklage wegen eines Delikts nach § 20 Abs. 1 Z 3a (Tatbegehung ab 1. Jänner 2013), 3. wenn die Belassung im Dienst wegen der Art der Dienstpflichtverletzungen das Ansehen des Amtes oder wesentliche Interessen des Dienstes gefährden würde.",
+  "s": "§ 112 Abs. 1 BDG 1979"
+ },
+ {
+  "id": "k-112-3",
+  "n": "112",
+  "lv": 2,
+  "q": "Innerhalb welcher Frist hat die Bundesdisziplinarbehörde über eine ihr mitgeteilte vorläufige Suspendierung zu entscheiden (§ 112 BDG 1979)?",
+  "a": "Innerhalb eines Monats.",
+  "s": "§ 112 Abs. 2 BDG 1979"
+ },
+ {
+  "id": "k-112-4",
+  "n": "112",
+  "lv": 1,
+  "q": "Auf welche Höhe wird der Monatsbezug bei einer Suspendierung gekürzt (§ 112 BDG 1979)?",
+  "a": "Auf zwei Drittel, für die Dauer der Suspendierung. Das gilt für jede Suspendierung, auch für eine vorläufige.",
+  "s": "§ 112 Abs. 4 BDG 1979"
+ },
+ {
+  "id": "k-112-5",
+  "n": "112",
+  "lv": 2,
+  "q": "Wie wird der Bezug während der vorläufigen Suspendierung ausbezahlt, und was geschieht nach Verfügung der Suspendierung durch die Bundesdisziplinarbehörde?",
+  "a": "Während der vorläufigen Suspendierung erfolgt die Auszahlung ohne Kürzung. Nach Verfügung der Suspendierung durch die Bundesdisziplinarbehörde (oder das Bundesverwaltungsgericht) wird der über die gekürzten Bezüge hinaus ausbezahlte Betrag hereingebracht.",
+  "s": "§ 112 Abs. 4 BDG 1979"
+ },
+ {
+  "id": "k-112-6",
+  "n": "112",
+  "lv": 2,
+  "q": "Wann endet die Suspendierung spätestens, und wann ist sie vorher aufzuheben (§ 112 Abs. 6 BDG 1979)?",
+  "a": "Spätestens mit dem rechtskräftigen Abschluss des Disziplinarverfahrens. Fallen die für die Suspendierung maßgebenden Umstände vorher weg, ist sie von der Bundesdisziplinarbehörde unverzüglich aufzuheben.",
+  "s": "§ 112 Abs. 6 BDG 1979"
+ },
+ {
+  "id": "k-131-1",
+  "n": "131",
+  "lv": 1,
+  "q": "Was kann die Dienstbehörde nach § 131 BDG 1979 ohne weiteres Verfahren erlassen?",
+  "a": "Schriftlich eine Disziplinarverfügung (abgekürztes Verfahren).",
+  "s": "§ 131 BDG 1979"
+ },
+ {
+  "id": "k-131-2",
+  "n": "131",
+  "lv": 2,
+  "q": "Unter welchen Voraussetzungen kann die Dienstbehörde eine Disziplinarverfügung erlassen (§ 131 BDG 1979)?",
+  "a": "Wenn 1. der Beamte die Dienstpflichtverletzung vor dem Dienstvorgesetzten, dem Leiter der Dienststelle oder vor der Dienstbehörde gestanden hat, 2. die Dienstpflichtverletzung aufgrund eindeutiger Aktenlage als erwiesen anzunehmen ist oder 3. der Beamte wegen des zugrunde liegenden Sachverhalts rechtskräftig durch ein Strafgericht oder ein Verwaltungsgericht bestraft wurde, und die Disziplinarverfügung unter Bedachtnahme auf die Strafbemessungsgründe zur Ahndung ausreichend erscheint.",
+  "s": "§ 131 Z 1 bis 3 BDG 1979"
+ },
+ {
+  "id": "k-131-3",
+  "n": "131",
+  "lv": 2,
+  "q": "Welche Strafen dürfen in einer Disziplinarverfügung ausgesprochen werden?",
+  "a": "Nur der Verweis oder eine Geldbuße bis zur Höhe eines Monatsbezugs, auf den der Beamte im Zeitpunkt der Erlassung Anspruch hat.",
+  "s": "§ 131 BDG 1979"
+ },
+ {
+  "id": "k-131-4",
+  "n": "131",
+  "lv": 1,
+  "q": "Wem ist eine Disziplinarverfügung außer dem Beamten noch zuzustellen?",
+  "a": "Auch der Disziplinaranwältin bzw. dem Disziplinaranwalt.",
+  "s": "§ 131 BDG 1979"
+ },
+ {
+  "id": "k-AHG-1",
+  "n": "AHG",
+  "lv": 1,
+  "q": "Wer haftet nach dem Amtshaftungsgesetz (AHG) dem Geschädigten für den Schaden: der Rechtsträger oder das handelnde Organ?",
+  "a": "Der Rechtsträger haftet nach den Bestimmungen des bürgerlichen Rechts. Dem Geschädigten haftet das Organ nicht.",
+  "s": "§ 1 Abs. 1 AHG"
+ },
+ {
+  "id": "k-AHG-2",
+  "n": "AHG",
+  "lv": 1,
+  "q": "Wer ist „Rechtsträger“ im Sinne des Amtshaftungsgesetzes?",
+  "a": "Der Bund, die Länder, die Gemeinden, sonstige Körperschaften des öffentlichen Rechts und die Träger der Sozialversicherung.",
+  "s": "§ 1 Abs. 1 AHG"
+ },
+ {
+  "id": "k-AHG-3",
+  "n": "AHG",
+  "lv": 2,
+  "q": "Welche Voraussetzungen hat die Amtshaftung nach § 1 Abs. 1 AHG?",
+  "a": "Ein Organ des Rechtsträgers fügt in Vollziehung der Gesetze durch ein rechtswidriges und schuldhaftes Verhalten wem immer (einem Dritten) einen Schaden am Vermögen oder an der Person zu.",
+  "s": "§ 1 Abs. 1 AHG"
+ },
+ {
+  "id": "k-AHG-4",
+  "n": "AHG",
+  "lv": 1,
+  "q": "In welcher Form ist der Schaden nach dem Amtshaftungsgesetz zu ersetzen?",
+  "a": "Der Schaden ist nur in Geld zu ersetzen.",
+  "s": "§ 1 Abs. 1 AHG"
+ },
+ {
+  "id": "k-AHG-5",
+  "n": "AHG",
+  "lv": 2,
+  "q": "Wer ist „Organ“ im Sinne des Amtshaftungsgesetzes?",
+  "a": "Jede physische Person, die in Vollziehung der Gesetze (Gerichtsbarkeit oder Verwaltung) handelt, gleichgültig, wie und für wie lange sie bestellt ist und ob ihr Verhältnis zum Rechtsträger öffentlich-rechtlich oder privatrechtlich ist.",
+  "s": "§ 1 Abs. 2 AHG"
+ },
+ {
+  "id": "k-Regress-1",
+  "n": "Regress",
+  "lv": 1,
+  "q": "Unter welchen Voraussetzungen kann der Rechtsträger nach dem AHG vom Organ Rückersatz (Regress) verlangen?",
+  "a": "Der Rechtsträger muss dem Geschädigten den Schaden nach dem AHG ersetzt haben, und das Organ muss die Rechtsverletzung vorsätzlich oder grob fahrlässig verübt oder verursacht haben.",
+  "s": "§ 3 Abs. 1 AHG"
+ },
+ {
+  "id": "k-Regress-2",
+  "n": "Regress",
+  "lv": 2,
+  "q": "Was kann das Gericht tun, wenn das Organ die Rechtsverletzung grob fahrlässig verursacht hat und der Rechtsträger Rückersatz verlangt?",
+  "a": "Das Gericht kann aus Gründen der Billigkeit den Rückersatz mäßigen (richterliches Mäßigungsrecht). Dabei sind die Umstände nach § 2 Abs. 2 Dienstnehmerhaftpflichtgesetz sinngemäß zu berücksichtigen.",
+  "s": "§ 3 Abs. 2 AHG"
+ },
+ {
+  "id": "k-Regress-3",
+  "n": "Regress",
+  "lv": 2,
+  "q": "Wie wirkt sich eine Weisung (Auftrag, Befehl) eines Vorgesetzten auf den Rückersatz nach dem AHG aus?",
+  "a": "Wegen einer Handlung, die auf Weisung eines Vorgesetzten erfolgt ist, kann vom Organ grundsätzlich kein Rückersatz verlangt werden.",
+  "s": "§ 4 AHG"
+ },
+ {
+  "id": "k-Regress-4",
+  "n": "Regress",
+  "lv": 3,
+  "q": "Welche zwei Ausnahmen gelten vom Ausschluss des Rückersatzes bei Handeln auf Weisung?",
+  "a": "Rückersatz ist doch möglich, wenn das Organ die Weisung eines offenbar unzuständigen Vorgesetzten befolgt hat oder in Befolgung der Weisung gegen strafgesetzliche Vorschriften verstoßen hat.",
+  "s": "§ 4 AHG"
+ },
+ {
+  "id": "k-OHG-1",
+  "n": "OHG",
+  "lv": 1,
+  "q": "Wer haftet nach dem Organhaftpflichtgesetz (OHG) wem für den Schaden?",
+  "a": "Das Organ haftet dem Rechtsträger, für den es gehandelt hat (Zweipersonenverhältnis), nach den Bestimmungen des bürgerlichen Rechts.",
+  "s": "§ 1 Abs. 1 OHG"
+ },
+ {
+  "id": "k-OHG-2",
+  "n": "OHG",
+  "lv": 2,
+  "q": "Welche Voraussetzungen hat die Haftung des Organs nach § 1 Abs. 1 OHG?",
+  "a": "Schaden am Vermögen des Rechtsträgers, in Vollziehung der Gesetze, durch ein schuldhaftes und rechtswidriges Verhalten des Organs, das den Schaden unmittelbar zugefügt hat.",
+  "s": "§ 1 Abs. 1 OHG"
+ },
+ {
+  "id": "k-OHG-3",
+  "n": "OHG",
+  "lv": 2,
+  "q": "Was kann das Gericht nach § 3 OHG tun, wenn die Schädigung auf einem Versehen beruht?",
+  "a": "Das Gericht kann aus Gründen der Billigkeit den Ersatz mäßigen. Wurde der Schaden durch einen minderen Grad des Versehens zugefügt, kann es den Ersatz auch ganz erlassen.",
+  "s": "§ 3 Abs. 1 OHG"
+ },
+ {
+  "id": "k-OHG-4",
+  "n": "OHG",
+  "lv": 2,
+  "q": "Was bedeutet für die Haftung nach dem OHG eine „entschuldbare Fehlleistung“ des Organs?",
+  "a": "Beruht die Handlung auf einer entschuldbaren Fehlleistung, kann vom Organ kein Ersatz begehrt werden.",
+  "s": "§ 2 Abs. 2 OHG"
+ },
+ {
+  "id": "k-PolBEG-1",
+  "n": "PolBEG",
+  "lv": 2,
+  "q": "Wann haftet der Bund nach dem Polizeibefugnis-Entschädigungsgesetz (PolBEG)?",
+  "a": "Für Schäden, die ein Organ des öffentlichen Sicherheitsdienstes bei der Ausübung von Zwangsbefugnissen (Maßnahmen nach dem Waffengebrauchsgesetz 1969) unmittelbar verursacht hat, wenn der Zwang im Vollziehungsbereich des Bundes ausgeübt und nicht vom Geschädigten durch rechtswidriges Verhalten ausgelöst wurde.",
+  "s": "§ 1 PolBEG"
+ },
+ {
+  "id": "k-PolBEG-2",
+  "n": "PolBEG",
+  "lv": 2,
+  "q": "In welcher Form und in welchem Umfang wird nach dem PolBEG Ersatz geleistet?",
+  "a": "Schadloshaltung in Geld für Verletzung am Körper oder Beschädigung einer körperlichen Sache, soweit der Schaden nicht durch Versicherung oder Hilfeleistung nach dem Verbrechensopfergesetz gedeckt ist. Ein Anspruch auf Schmerzengeld besteht nicht.",
+  "s": "§ 2 Abs. 1 PolBEG"
+ }
+]
