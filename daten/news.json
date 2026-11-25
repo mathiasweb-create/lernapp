@@ -1,0 +1,12 @@
+{
+  "BDG": {
+    "gesetz": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008470",
+    "stand": "2026-11-25",
+    "quelle": "Bundesgesetzblätter im RIS, von Hand zusammengefasst",
+    "items": [
+      {"d": "23.04.2026", "t": "BGBl. I Nr. 22/2026", "s": "§ 207n: Zitat angepasst, gilt ab 1.9.2026", "ps": ["207n"]},
+      {"d": "29.12.2025", "t": "Dienstrechts-Novelle 2025", "s": "Neu § 50g (Teilpension), § 45a, § 12, § 79 …", "ps": ["50g", "45a", "12", "79", "56", "76"], "neu": "50g"},
+      {"d": "24.07.2025", "t": "Informationsfreiheits-Anpassungsgesetz", "s": "§ 46: „Geheimhaltung“ statt Amtsverschwiegenheit", "ps": ["46", "36a", "107", "163"]}
+    ]
+  }
+}
