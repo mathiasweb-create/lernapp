@@ -27,7 +27,7 @@ Multiple-Choice-Training für Gesetzestexte. Läuft im Browser, lässt sich auf 
 ## Inhalt
 - `index.html` – App (Oberfläche, Logik). `lexi.js` und `lexi.css` – Maskottchen Lexi, Sprechblasen, Tutorial- und Einstellungs-Gestaltung. `legal.js` – Rechtstexte. `sw.js` – Offline-Cache (Netz zuerst, sonst Cache). `manifest.webmanifest`, Icons.
 - `daten/news.json` – Neuigkeiten je Gesetz (geänderte Paragrafen aus den Bundesgesetzblättern im RIS, von Hand zusammengefasst, Stand im Feld `stand`). `LICENSE`, `robots.txt` – Nutzungsvorbehalt (Alle Rechte vorbehalten, KI-Crawler gesperrt).
-- `daten/bdg.json` – BDG 1979, §§ 4, 10, 11, 20, 38, 39, 43, 43a, 44, 46, 49, 53, 56, 65, 76, 94, 112, 131 (Gesetzestext aus dem RIS, 56 Fragen).
+- `daten/bdg.json` – BDG 1979, §§ 4, 10, 11, 20, 38, 39, 43, 43a, 44, 46, 49, 53, 56, 65, 76, 94, 112, 131 (Gesetzestext aus dem RIS, 115 Fragen im Pool; Fragen und Skriptum-Auswahl: tools/skriptum_fragen.json).
 - `tools/fetch_ris.py` – holt die Gesetzestexte aus dem RIS. `tools/fragen_bdg.py` – Fragen (Quelltext). `tools/build_data.py` baut daraus die JSON-Datei (Abrufdatum kommt aus `meta.json`). `tools/make_icons.py` – Icons.
 - `vendor/qrcode.js` – QR-Generator „qrcode-generator“ von Kazuhiko Arase (MIT-Lizenz, Text in `vendor/qrcode.LICENSE`), lokal eingebunden, damit die App ohne Fremdserver läuft.
 - `BACKLOG.md` – Änderungswünsche und Stand der Umsetzung.

@@ -295,6 +295,14 @@ async function loadRefs(){
     REFRE = REFS.length ? new RegExp(REFS.map(x => esc(x.match)).sort((a,b) => b.length-a.length).map(x => x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|'), 'g') : null;
   }catch(e){ REFS = []; REFRE = null; }
 }
+let CL = [];
+async function loadChangelog(){
+  try{ const r = await fetch('daten/changelog.json'); if(!r.ok) return; const j = await r.json();
+    if(Array.isArray(j)) CL = j.filter(x => x && Number.isInteger(x.v) && typeof x.d === 'string' && Array.isArray(x.t)).sort((a,b) => b.v - a.v); }
+  catch(e){ CL = []; }
+}
+const clLatest = () => CL.length ? CL[0].v : 0;
+const clItems = e => e.t.map(x => `<li><b>${esc(x.h)}</b>${esc(x.x)}</li>`).join('');
 async function loadNews(){
   try{ const r = await fetch('daten/news.json'); if(!r.ok) return; const j = await r.json(); if(j && typeof j === 'object') NEWS = j; }
   catch(e){ NEWS = null; }
@@ -309,7 +317,9 @@ async function loadLaw(id){
   const law = LAWS.find(l => l.id === id);
   const r = await fetch(law.file);
   if(!r.ok) throw new Error('Daten nicht ladbar');
-  cache[id] = await r.json();
+  const data = await r.json();
+  data.paragrafen.forEach(p => { p.q = p.q.filter(q => !q.x); });   // Fragen außerhalb des Skriptum-Pools (x) bleiben in den Daten, erscheinen aber nicht
+  cache[id] = data;
   return cache[id];
 }
 function groupsOf(d){
@@ -411,7 +421,7 @@ function renderStart(){
 /* ---------- Lernen ---------- */
 function tile(p, cc){
   const on = S.sel.has(p.n);
-  return `<button class="tile ${on?'sel':''}" data-act="tog" data-p="${esc(p.n)}" style="--cc:var(${cc})" aria-pressed="${on}"><span class="ck">✓</span><b>${esc(p.label)}</b><span class="tt">${esc(p.title)}</span><span class="qn">${p.q.length} Fragen</span></button>`;
+  return `<button class="tile ${on?'sel':''}" data-act="tog" data-p="${esc(p.n)}" style="--cc:var(${cc})" aria-pressed="${on}"><span class="ck">✓</span><b>${esc(p.label)}</b><span class="tt">${esc(p.title)}</span><span class="qn">${p.q.length} ${p.q.length === 1 ? "Frage" : "Fragen"}</span></button>`;
 }
 function renderHome(){
   const d = S.data, groups = groupsOf(d), total = totalQ(), h = hist();
@@ -605,6 +615,7 @@ function renderSettingsView(){
       + row('look', '◐', 'Darstellung', ({system:'System', light:'Hell', dark:'Dunkel'})[SET.theme] + ' · Schrift ' + ({s:'klein', n:'normal', l:'groß'})[SET.font])
       + row('home', '⌂', 'Zum Home-Bildschirm', isStandalone() ? 'Als App installiert' : 'Anleitung · empfohlen')
       + row('tour', '?', 'Tutorial', 'Kurze Tour noch einmal ansehen')
+      + (CL.length ? row('chg', '↻', 'Änderungsprotokoll', 'Was sich zuletzt geändert hat') : '')
       + row('legal', '§', 'Rechtliches', 'Impressum · Datenschutz · Nutzung · Lizenzen')
       + '<p class="hint" style="margin-top:10px">Alle Einstellungen gelten nur auf diesem Gerät.</p>';
   } else if(S.set === 'grades'){
@@ -632,6 +643,8 @@ function renderSettingsView(){
       <p class="hint">Gilt für den Inhalt der App.</p>
       ${sw('set-rm', SET.rm, 'Bewegungen reduzieren', 'Lexi und Animationen bleiben ruhig. Zusätzlich gilt die Einstellung „Bewegung reduzieren“ des iPhones.')}
       ${sw('set-says', SET.says, 'Sprüche von Lexi', 'Lexi sagt gelegentlich einen kurzen Spruch.')}`;
+  } else if(S.set === 'chg'){
+    h = back('Einstellungen') + '<div class="top"><h1>Änderungsprotokoll</h1></div><div class="doc">' + CL.map(e => `<h2>${esc(e.d)}</h2><ul class="cl">${clItems(e)}</ul>`).join('') + '</div>';
   } else if(S.set === 'home'){
     h = back('Einstellungen') + `<div class="top"><h1>Zum Home-Bildschirm</h1></div><div class="rbox" style="margin-top:6px">${LX.svg('happy')}</div>
       <div class="card"><b style="font-size:14px">Status</b><div class="mute" style="font-size:13px;margin-bottom:6px">${isStandalone() ? 'Als App installiert.' : 'Im Browser geöffnet. Nach dem Hinzufügen steht hier „Als App installiert“.'}</div>${stepsHtml()}</div>
@@ -678,6 +691,10 @@ function tourSetup(i){
 }
 function overlayHtml(){
   if(S.pop === 'ask') return `<div class="dim"></div><div class="dlg" role="dialog" aria-modal="true" aria-label="Zum Home-Bildschirm hinzufügen">${LX.svg('normal')}<h3>LexCoach zum Home-Bildschirm?</h3><p>Dann öffnet sich die App wie eine echte App, ohne Adressleiste und auch offline.</p><button class="btn two" data-act="a2-yes"><span>Ja, zeig mir wie</span><small>Wird empfohlen, du Fuchs.</small></button><button class="btn alt" data-act="a2-later" style="margin-top:8px">Später</button></div>`;
+  if(S.pop === 'log' && CL.length){
+    const e = CL[0], old = CL.slice(1, 4);
+    return `<div class="dim"></div><div class="dlg clg" role="dialog" aria-modal="true" aria-label="Neu in LexCoach"><h3>Neu in LexCoach</h3><span class="ver">Update vom ${esc(e.d)}</span><ul class="cll">${e.t.map(x => `<li><i></i><span><b>${esc(x.h)}</b><span>${esc(x.x)}</span></span></li>`).join('')}</ul>${old.length ? `<button class="more" data-act="log-more" aria-expanded="${!!S.logMore}"><span>Frühere Updates</span><span aria-hidden="true">${S.logMore ? '⌃' : '⌄'}</span></button>${S.logMore ? `<div class="old">${old.map(o => `<span><b>${esc(o.d)}</b> ${esc(o.t.map(x => x.h).join(', '))}</span>`).join('')}<span>Alle Updates: Einstellungen › Änderungsprotokoll</span></div>` : ''}` : ''}<button class="btn" data-act="log-close">Alles klar</button></div>`;
+  }
   if(S.pop === 'steps') return `<div class="dim"></div><div class="dlg" role="dialog" aria-modal="true" aria-label="Anleitung">${LX.svg('happy')}<h3>So geht’s</h3>${stepsHtml()}<button class="btn" data-act="a2-done">Verstanden</button></div>`;
   if(S.tour === 'intro') return `<div class="dim"></div><div class="dlg" role="dialog" aria-modal="true" aria-label="Tutorial">${LX.svg('happy')}<h3>Kurze Tour?</h3><p>Ich bin Lexi. In einer Minute zeige ich dir, wie alles funktioniert.</p><button class="btn" data-act="tour-start">Los geht’s</button>${S.skipPos ? '<div class="skipslot"></div>' : '<button class="btn alt" data-act="tour-skip" style="margin-top:8px">Überspringen</button>'}</div>${S.skipPos ? '<button class="btn alt skipf" data-act="tour-skip">Überspringen</button>' : ''}`;
   if(S.tour === 'quip') return `<div class="quipw"><div class="rb">${LX.svg('normal')}<div class="bub u" data-t="u">Keiner mag Klugscheißer.</div></div></div>`;
@@ -695,7 +712,7 @@ function renderOverlay(){
   const on = !!h; setBg(on || !!S.sheet); LX.block(on);
   if(!on){ lastOv = ''; return; }
   LX.paintAll(); placeTour(); placeSkip();
-  const f = o.querySelector('.skipf') || (key !== lastOv ? (o.querySelector('.tbtn, [data-act="a2-yes"], [data-act="a2-done"], [data-act="tour-start"]') || o.querySelector('[data-act]')) : null);
+  const f = o.querySelector('.skipf') || (key !== lastOv ? (o.querySelector('.tbtn, [data-act="a2-yes"], [data-act="a2-done"], [data-act="tour-start"], [data-act="log-close"]') || o.querySelector('[data-act]')) : null);
   lastOv = key; if(f) f.focus({preventScroll:true});
 }
 function placeTour(){
@@ -862,6 +879,8 @@ const ACT = {
     store.set('rt.grades', v); S.gerr = ''; S.set = 'menu'; render(); toast('Notenschlüssel gespeichert');
   },
   'grades-reset'(){ store.set('rt.grades', DEF_GRADES.slice()); S.gerr = ''; S.gdraft = DEF_GRADES.map(fmtNum); S.set = 'menu'; render(); toast('Standard-Notenschlüssel wiederhergestellt'); },
+  'log-more'(){ S.logMore = !S.logMore; render(true); },
+  'log-close'(){ store.set('rt.seen', clLatest()); S.pop = null; S.logMore = false; render(true); },
   'a2-yes'(){ S.pop = 'steps'; render(true); },
   'a2-later'(){ store.set('rt.a2hs', true); S.pop = null; render(true); afterPop(); render(true); },
   'a2-done'(){ store.set('rt.a2hs', true); S.pop = null; render(true); afterPop(); render(true); },
@@ -923,6 +942,7 @@ document.addEventListener('keydown', e => {
   if((e.key === 'Enter' || e.key === ' ') && e.target && e.target.classList && e.target.classList.contains('ref')){ e.preventDefault(); e.target.click(); return; }
   if(e.key === 'Enter' && e.target && e.target.dataset && e.target.dataset.gi !== undefined){ e.preventDefault(); ACT['grades-save'](); return; }
   if(e.key === 'Escape' && S.pop === 'ask'){ ACT['a2-later'](); return; }
+  if(e.key === 'Escape' && S.pop === 'log'){ ACT['log-close'](); return; }
   if(e.key === 'Escape' && S.sheet){ closeSheet(); return; }
   if(e.key === 'Tab' && (S.sheet || $('#ovl').firstChild)){
     const sel = S.sheet ? '#sheet button, #sheet input, #sheet a' : '#ovl button';
@@ -939,13 +959,14 @@ window.addEventListener('resize', () => { if(typeof S.tour === 'number') placeTo
 /* ================= Start ================= */
 (async function boot(){
   applySettings();
-  try{ S.data = await loadLaw(S.law); await Promise.all([loadRefs(), loadNews()]); }
+  try{ S.data = await loadLaw(S.law); await Promise.all([loadRefs(), loadNews(), loadChangelog()]); }
   catch(e){ $('#app').innerHTML = '<h1>LexCoach</h1><p class="mute">Daten konnten nicht geladen werden. Bitte Verbindung prüfen und neu öffnen.</p>'; return; }
   const valid = new Set(order());
   S.sel = new Set(store.get('rt.sel.'+S.law, []).filter(n => valid.has(n)));
   S.open = new Set(store.get('rt.open.'+S.law, []));
   S.view = applyHash(true) ? 'home' : 'start';
   if(!isStandalone() && !store.get('rt.a2hs', false)) S.pop = 'ask'; else afterPop();
+  if(CL.length && store.get('rt.seen', 0) < clLatest()){ if(S.pop || S.tour !== null) store.set('rt.seen', clLatest()); else S.pop = 'log'; }   // neue Nutzer (Hinweis/Tutorial) sehen kein Change-log
   render();
 })();
 if('serviceWorker' in navigator && location.protocol.startsWith('http')){
