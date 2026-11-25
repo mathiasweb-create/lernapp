@@ -53,7 +53,7 @@ NODE_PATH=$(npm root -g) timeout 280 node tools/test_app.js      # Test (Server 
 - Der Arbeitsordner kann sich zwischen Sitzungen ändern (`/home/user/lernapp` oder `/home/user`); Scratchpad-Pfad steht im Systemhinweis.
 
 ## Stand (2026-11-25, abends)
-- **Live auf `main`:** Wünsche 1 bis 8, 10 bis 14, 16 bis 31, 32 und 33 (PR #6 bis #10, Bereitstellung erfolgreich). **Gebaut, noch nicht gemerged (Branch `claude/eloquent-archimedes-d6hnrz`):** Wünsche 34 (kompakter Überspringen-Knopf) und 35 (Reiter „Start“); Pull Request erst nach Klick auf den Auswahlknopf. Playwright-Test und Code-Review (Opus) durch, Befunde behoben.
+- **Live auf `main`:** Wünsche 1 bis 8, 10 bis 14 und 16 bis 35 (PR #6 bis #11, Bereitstellung erfolgreich). **Neu im Backlog:** Wunsch 36 (Skripten als Themenvorgabe für den Fragenpool, noch offen). Playwright-Test und Code-Review (Opus) durch, Befunde behoben.
 - **Noch offen:** Test auf echtem iPhone (Nutzer), Wohnort und Anschrift im Impressum (Balken, rechtlich fraglich) und rechtliche Prüfung der Texte, Pop-up für Verweise auf Absätze („Abs. 1“), Export/Import der Historie (Daten nur im Browser), Wunsch 9 (Aufgabe des Nutzers), Stichprobe der Fragen, Sprüche-Liste („Den Truthahn würgen“ ist derb, Nutzer hat nicht entschieden), `robots.txt` wirkt nur im Domain-Hauptverzeichnis (Nutzer lehnte Repo `mathiasweb-create.github.io` ab). Hinweis: Verweise stecken technisch in Knöpfen (Screenreader-Nachteil, war schon vorher so).
 - **Nächste mögliche Schritte:** StGB/SPG/VStG ergänzen (Daten mit `tools/`, `LAWS` in `index.html` auf `ready:true`, `news.json` ergänzen), Wiederholungsintervalle, Export/Import der Historie, strenger Prüfungsmodus (Zeitlimit).
 
