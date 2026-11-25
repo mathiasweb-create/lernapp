@@ -45,15 +45,18 @@ Fragen-IDs `bdg-<§>-<Nr>` nie umnummern, neue Fragen hinten anhängen (sonst pa
 - `sleep` im Vordergrund ist gesperrt. Lange zusammengesetzte Shell-Befehle werden manchmal pauschal abgelehnt: einzeln ausführen, Dateien mit dem Schreib-Werkzeug anlegen.
 - `github.io` ist von der Umgebung aus nicht erreichbar (Live-Seite nur über die GitHub-API-Status oder den Nutzer prüfen).
 - Playwright ist vorinstalliert (`NODE_PATH=$(npm root -g) node test.js`). Python-Pakete per `pip install` möglich.
-- **Pull Requests nicht selbst per API mergen:** Ein per API gemergter Pull Request hat die Veröffentlichung (GitHub Pages) nicht ausgelöst, ein vom Nutzer im Browser gemergter schon. Pull Request erstellen, Nutzer mergt selbst. Das Pages-Anfordern (`pages/builds`) ist in der Umgebung gesperrt.
+- **Pull Requests:** Nur mit ausdrücklicher Zustimmung des Nutzers im Chat selbst per API mergen und danach die Bereitstellung prüfen (siehe Stand). Das Pages-Anfordern (`pages/builds`) und `pages` allgemein sind in der Umgebung gesperrt.
 - Gesetzestexte nie mit `head -n -1` o. ä. beschneiden, sonst fehlt der letzte Absatz (so ging § 44 Abs. 3 beim Lesen verloren). Immer die ganze Datei lesen oder `daten/bdg.json` (Feld `text`) nutzen.
 - Prüfen großer Mengen (alle Fragen gegen Gesetzestext, Code-Review) an stärkere Hilfsagenten delegieren (Modell Opus, nur lesen), Befunde danach selbst gegen den Gesetzestext gegenprüfen.
 
 ## Stand (2026-11-25)
-- **Wünsche 11 bis 14, 16, 17 umgesetzt** (Pull Request offen, Nutzer mergt): Verweis-Pop-ups, Prozent/Maximum/Note, Zahnrad mit Notenschlüssel (Standard 87,5/75/62,5/50), Easter Egg bei 100 % (ab 5 Fragen), Klausuren mit Start und Historie (nur vollständig beantwortete, bewusst gestartete Klausuren). „Stack“ heißt überall „Klausur“. Offen: Pop-up für Verweise auf Absätze („Abs. 1“), Export/Import der Historie.
-- **Alt-Repo:** Aufräum-PR #4 in `foto-text-zu-word` (löscht `lernapp/`) wartet auf Merge durch den Nutzer.
+- **Wünsche 1 bis 8, 10 bis 14, 16, 17 umgesetzt und gemergt** (PR #3, live per GitHub Pages bestätigt: Bereitstellung `74afe0a`, Status success). Verweis-Pop-ups, Prozent/Maximum/Note, Zahnrad mit Notenschlüssel (Standard 87,5/75/62,5/50), Easter Egg bei 100 % (ab 5 Fragen), Klausuren mit Start und Historie (nur vollständig beantwortete, bewusst gestartete Klausuren). „Stack“ heißt überall „Klausur“.
+- **Apps getrennt, Alt-Repo bereinigt:** `lernapp/` ist aus `foto-text-zu-word` entfernt (PR #4, vom Nutzer gemergt). Pages für `lernapp` läuft.
+- **Merge per API:** Entgegen früherer Erfahrung hat ein per API gemergter PR (#3) die Veröffentlichung ausgelöst. Mit ausdrücklicher Zustimmung des Nutzers im Chat darf der Assistent PRs selbst mergen und danach die Bereitstellung prüfen (`gh api repos/mathiasweb-create/lernapp/deployments`).
+- **Rechte:** `.claude/settings.json` erlaubt `add_repo` ohne Rückfrage. Sitzungen für andere Repos mit `create_session` starten.
+- **Noch offen:** Pop-up für Verweise auf Absätze („Abs. 1“), Export/Import der Historie (Daten liegen nur im Browser), Test auf echtem iPhone, Stichprobe der Fragen, Wunsch 9 (Aufgabe des Nutzers). Nächste mögliche Schritte: StGB/SPG/VStG, Wiederholungsintervalle.
 
-## Stand (2026-11-24, ca. 23:05 UTC)
+## Verlauf (älter) – Stand 2026-11-24, ca. 23:05 UTC
 - **Apps getrennt (Wunsch 10):** Dieses Repo `lernapp` enthält den vollen Verlauf der App samt allen Korrekturen aus beiden Prüfungen (Stand des früheren Pull Requests #3). Adresse künftig `https://mathiasweb-create.github.io/lernapp/`. Alte Adresse (`…/foto-text-zu-word/lernapp/`) wird nicht weiter gepflegt.
 - **Noch zu tun vom Nutzer:** (1) Pages einschalten: Safari, Desktop-Ansicht, `https://github.com/mathiasweb-create/lernapp/settings/pages`, Source „Deploy from a branch“, `main`, `/ (root)`, Save (in der GitHub-App nicht möglich); (2) im alten Repo `foto-text-zu-word` den Pull Request #3 selbst mergen (entfernt `lernapp/` dort, Arbeits-Branch `claude/iphone-learning-app-quiz-mgk932`, letzter Commit `d5e5f53`); (3) App auf dem iPhone neu zum Home-Bildschirm hinzufügen (neuer Speicher).
 - **Arbeitsort:** Dieses Repo liegt in der Cloud-Sitzung unter `/home/user/lernapp`. Entwicklungs-Branch in diesem Repo: `main` (Nutzer hat die Trennung ausdrücklich freigegeben). Künftige Änderungen: Branch, Pull Request, Nutzer mergt selbst.
