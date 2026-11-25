@@ -113,3 +113,14 @@ svg.m{display:block;overflow:visible;transform-origin:50% 95%}
 @media(prefers-reduced-motion:reduce){.bub,.say.show{animation:none}.jail{animation:jailf 3.8s both}.bars .fx,.leaf,.eye,.tail,.s1,.s2,.s3,.nk,.wf,.windl,.tap,.dance-hop,.nod,.slump,.conf i,.skipf{animation:none}}
 html.rm .bub,html.rm .say.show,html.rm .bars .fx,html.rm .leaf,html.rm .eye,html.rm .tail,html.rm .s1,html.rm .s2,html.rm .s3,html.rm .nk,html.rm .wf,html.rm .windl,html.rm .tap,html.rm .dance-hop,html.rm .nod,html.rm .slump,html.rm .conf i,html.rm .skipf{animation:none!important}
 html.rm .jail{animation:jailf 3.8s both!important}
+
+/* Change-log (Wunsch 38) */
+.dlg.clg{text-align:left;width:min(320px,90vw)}
+.clg h3{margin:0}.clg .ver{display:block;font-size:12px;color:var(--mute);font-weight:600;margin:2px 0 6px}
+.clg .cll{list-style:none;margin:10px 0 10px;padding:0;display:grid;gap:9px}
+.clg .cll li{display:flex;gap:9px;font-size:13px;line-height:1.35}
+.clg .cll li i{flex:none;width:7px;height:7px;border-radius:50%;background:var(--acc);margin-top:6px}
+.clg .cll li b{display:block;font-size:13.5px}.clg .cll li span span{color:var(--mute);font-size:12.5px}
+.clg .more{display:flex;justify-content:space-between;width:100%;border:0;border-top:1px solid var(--line);background:none;padding:9px 2px;font-size:12.5px;color:var(--mute);margin-bottom:8px}
+.clg .old{font-size:12px;color:var(--mute);margin:0 0 8px;display:grid;gap:4px}.clg .old b{color:var(--ink)}
+ul.cl{list-style:none;margin:0 0 6px;padding:0;display:grid;gap:8px}ul.cl li{font-size:13px;line-height:1.4;color:var(--mute)}ul.cl li b{display:block;color:var(--ink);font-size:13.5px}

@@ -1,0 +1,56 @@
+[
+ {
+  "v": 2,
+  "d": "25.11.2026",
+  "t": [
+   {
+    "h": "Fragen aus dem Skriptum",
+    "x": "186 Fragen in 60 Themen. Die Fragestellungen folgen dem Skriptum, die Aussagen dem Gesetzestext."
+   },
+   {
+    "h": "Mehr Themen in „Lernen“",
+    "x": "Alle Paragrafen aus dem Skriptum, dazu § 92 und die neue Gruppe Haftung (AHG, Regress, OHG, PolBEG)."
+   },
+   {
+    "h": "Mehr Fragen zu den Hauptthemen",
+    "x": "Je Hauptparagraf 4 bis 8 Fragen, bei Nebenthemen 1 bis 2."
+   },
+   {
+    "h": "Änderungsprotokoll",
+    "x": "Neu in den Einstellungen: alle Updates auf einen Blick."
+   }
+  ]
+ },
+ {
+  "v": 1,
+  "d": "25.11.2026 (früher)",
+  "t": [
+   {
+    "h": "Neuer Reiter „Start“",
+    "x": "Die Startseite ist jetzt auch unten in der Leiste."
+   },
+   {
+    "h": "Auswertung aufgeräumt",
+    "x": "Der Ring zeigt nur die Prozente, die Note bricht nicht mehr um."
+   },
+   {
+    "h": "Statusleiste am iPhone",
+    "x": "Die oberste Leiste passt zur gewählten Darstellung."
+   },
+   {
+    "h": "Tutorial",
+    "x": "Der springende Knopf „Überspringen“ ist kleiner."
+   }
+  ]
+ },
+ {
+  "v": 0,
+  "d": "24.11.2026",
+  "t": [
+   {
+    "h": "Erste Version",
+    "x": "Startseite mit Neuigkeiten, Lexi, Notenschlüssel, Klausuren, Einstellungen und Tutorial."
+   }
+  ]
+ }
+]
