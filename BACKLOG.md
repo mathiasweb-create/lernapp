@@ -21,13 +21,13 @@
 | 8 | 2026-11-24 | **Stack teilen:** Link enthält die Paragrafenauswahl. | umgesetzt | Format `#BDG:4,10,43a`, nur Auswahl, nie Fortschritt; ungültige Angaben werden abgefangen. |
 | 9 | 2026-11-24 | **Nur der Eigentümer darf die App verändern.** | offen (Aufgabe des Eigentümers) | GitHub-Einstellungen: Zwei-Faktor-Anmeldung, keine Mitwirkenden, Regel für `main` (Pull Request verlangen, Force-Push und Löschen blockieren). Code bleibt öffentlich. |
 | 10 | 2026-11-24 | **Apps trennen:** Die Foto-Text-App hat nichts mit dem Rechtstrainer zu tun und soll separat liegen. | umgesetzt (2026-11-24) | Eigenes öffentliches Repo `lernapp` mit vollem Verlauf, die App liegt im Repo-Wurzelordner. Neue Adresse `https://mathiasweb-create.github.io/lernapp/`. Im alten Repo wird `lernapp/` entfernt. Jetzt günstig, da noch keine Links verteilt sind. |
-| 11 | 2026-11-24 | **Verweise auf andere Gesetze und Paragrafen** in den Antwortmöglichkeiten (z. B. „§ 302 StGB“, „AVG“, „§ 43 BDG“): Antippen öffnet ein Pop-up mit kurzer Beschreibung. Verweise mit dieser Funktion sind **dauerhaft strichliert unterstrichen**. Pop-up auch **vor** der Antwort. | besprochen | Entscheidungen vom Nutzer: dauerhaft unterstrichen, Pop-up vor der Antwort erlaubt, gilt auch für Verweise auf andere Paragrafen. |
-| 12 | 2026-11-24 | **Ergebnis in Prozent** und die **maximal erreichbare Punktezahl** angeben. Es gibt einen **Notenschlüssel**. | neu | Siehe Brainstorm. |
-| 13 | 2026-11-24 | **Einstellungen-Button** (allgemeine Einstellungen). Dort u. a. **Notenschlüssel individuell anpassen**, Noten 1 bis 5 (sehr gut bis nicht genügend). | neu | Siehe Brainstorm. |
-| 14 | 2026-11-24 | **Easter Egg:** Bei 100 Prozent kleines Fenster, das zum „besten Beamten des Tages“ gratuliert und fragt, ob die Person überhaupt Freizeit hat oder nur lernt. | neu | Siehe Brainstorm. |
+| 11 | 2026-11-24 | **Verweise auf andere Gesetze und Paragrafen** in den Antwortmöglichkeiten (z. B. „§ 302 StGB“, „AVG“, „§ 43 BDG“): Antippen öffnet ein Pop-up mit kurzer Beschreibung. Verweise mit dieser Funktion sind **dauerhaft strichliert unterstrichen**. Pop-up auch **vor** der Antwort. | umgesetzt (2026-11-25) | Entscheidungen vom Nutzer: dauerhaft unterstrichen, Pop-up vor der Antwort erlaubt, gilt auch für Verweise auf andere Paragrafen. |
+| 12 | 2026-11-24 | **Ergebnis in Prozent** und die **maximal erreichbare Punktezahl** angeben. Es gibt einen **Notenschlüssel**. | umgesetzt (2026-11-25) | Siehe Brainstorm. |
+| 13 | 2026-11-24 | **Einstellungen-Button** (allgemeine Einstellungen). Dort u. a. **Notenschlüssel individuell anpassen**, Noten 1 bis 5 (sehr gut bis nicht genügend). | umgesetzt (2026-11-25) | Siehe Brainstorm. |
+| 14 | 2026-11-24 | **Easter Egg:** Bei 100 Prozent kleines Fenster, das zum „besten Beamten des Tages“ gratuliert und fragt, ob die Person überhaupt Freizeit hat oder nur lernt. | umgesetzt (2026-11-25) | Siehe Brainstorm. |
 | 15 | 2026-11-24 | **Prüfen:** (a) GitHub Pages für `lernapp`, (b) Alt-Repo bereinigt (PR #3). | erledigt (Prüfung) | (a) Veröffentlichung läuft: letzte Bereitstellung 2026-11-24 23:04 UTC, Status „success“ (Commit `2069b17`). (b) **Noch nicht erledigt:** `main` im Alt-Repo `foto-text-zu-word` enthält `lernapp/` weiterhin vollständig. Der dortige Merge von PR #3 entfernt den Ordner offenbar nicht, oder es ist ein früherer PR #3. Nutzer bitte in GitHub nachsehen (PR-Liste im Alt-Repo), ggf. neuen Aufräum-PR anfordern. |
-| 16 | 2026-11-24 | **Historie** der Ergebnisse von Klausuren: gespeichert und einsehbar. | besprochen | Entschieden: gespeichert wird nur eine bewusst gestartete Klausur. | Siehe Brainstorm. |
-| 17 | 2026-11-24 | **Umbenennen:** „Prüfungs-Stack“ wird zu **„Klausur“**. | besprochen | Entschieden: einheitlich umbenennen, also auch der Tab „Stacks“ wird „Klausuren“. Betrifft Beschriftungen in der App, README und Teilen-Text. Technisch (Stack-Link `#BDG:…`) bleibt alles gleich. |
+| 16 | 2026-11-24 | **Historie** der Ergebnisse von Klausuren: gespeichert und einsehbar. | umgesetzt (2026-11-25) | Entschieden: gespeichert wird nur eine bewusst gestartete Klausur. | Siehe Brainstorm. |
+| 17 | 2026-11-24 | **Umbenennen:** „Prüfungs-Stack“ wird zu **„Klausur“**. | umgesetzt (2026-11-25) | Entschieden: einheitlich umbenennen, also auch der Tab „Stacks“ wird „Klausuren“. Betrifft Beschriftungen in der App, README und Teilen-Text. Technisch (Stack-Link `#BDG:…`) bleibt alles gleich. |
 
 ## Brainstorm zu Wunsch 11 (noch nicht umgesetzt)
 - Entschieden: dauerhaft strichliert, Pop-up auch vor der Antwort, auch Verweise auf andere Paragrafen. Bei Verweisen innerhalb des BDG zeigt das Pop-up die Überschrift und 1 bis 2 Sätze Kurzinhalt aus den vorhandenen Paragrafen-Daten (nur beschreibend, keine Wertung).
@@ -48,6 +48,7 @@
 - **Reihenfolge-Vorschlag:** 17, 12, 13 (Basis), danach 16, 11, zuletzt 14.
 
 ## Umgesetzt
+Wünsche 11 bis 14, 16 und 17 am 2026-11-25 umgesetzt und getestet (Playwright: Notenschlüssel, Klausur-Start, Historie, Easter Egg, Verweise). Verweise: `daten/verweise.json`, 16 Einträge aus RIS-Texten; Verweise auf Absätze desselben Paragrafen („Abs. 1“) haben noch kein Pop-up.
 Wünsche 1 bis 8 am 2026-11-24 in einem Durchgang umgesetzt und getestet (Punktelogik bei allen 56 Fragen, Gruppen, Stacks, Teilen, QR, Link-Auswahl, Offline).
 
 ## Ideen für später (nicht beauftragt)

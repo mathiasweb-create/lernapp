@@ -9,14 +9,16 @@ Multiple-Choice-Training für Gesetzestexte. Läuft im Browser, lässt sich auf 
 ## Bedienung
 - **Lernen:** Paragrafen in Themen-Kästen wählen (Kasten antippen = öffnen, Feld links = ganze Gruppe wählen). Start-Knopf zeigt die Fragenzahl.
 - **Frage:** Konkrete Fragestellung im Kasten, 4 Aussagen, alle zutreffenden ankreuzen. Danach Auflösung mit Erklärung bei falschen Aussagen und dem Gesetzestext.
-- **Stacks:** Paragrafen-Auswahl unter einem Namen speichern, laden, löschen und per Link teilen.
+- **Klausuren:** Paragrafen-Auswahl unter einem Namen speichern, laden, löschen und per Link teilen. „Start“ beginnt eine Klausur mit allen Fragen der gespeicherten Paragrafen; das Ergebnis (Punkte, Prozent, Note) kommt in die **Historie** unter „Statistik“.
+- **Verweise:** Strichliert unterstrichene Verweise auf andere Paragrafen oder Gesetze in den Aussagen antippen: ein kleines Fenster beschreibt kurz, worum es geht (Quelle `daten/verweise.json`).
+- **Einstellungen (Zahnrad):** Notenschlüssel anpassen. Standard: Note 1 ab 87,5 %, 2 ab 75 %, 3 ab 62,5 %, 4 ab 50 %, darunter 5.
 - **Statistik:** Lernstand je Themenfeld, Fortschritt zurücksetzen, gemeldete Fragen kopieren.
-- **Safari und Home-Bildschirm-App sind getrennt:** Auf dem iPhone haben Safari und die installierte App je einen eigenen Speicher. Stacks, Fortschritt und eine über einen Link übernommene Auswahl gelten nur dort, wo sie angelegt wurden. Am besten Stacks nur in der Home-Bildschirm-App anlegen.
+- **Safari und Home-Bildschirm-App sind getrennt:** Auf dem iPhone haben Safari und die installierte App je einen eigenen Speicher. Klausuren, Historie, Fortschritt und eine über einen Link übernommene Auswahl gelten nur dort, wo sie angelegt wurden. Am besten Klausuren nur in der Home-Bildschirm-App anlegen.
 - **Teilen** (Symbol oben rechts): App-Link per Teilen-Menü des iPhones, Link kopieren oder QR-Code. Optional mit Paragrafenauswahl: `…/lernapp/#BDG:4,10,43a`.
 
 ## Punkte pro Frage (immer 4 Aussagen, 0 bis 4 richtig möglich)
 - Je Aussage +1 Punkt, wenn richtig behandelt (richtig angekreuzt oder richtig ausgelassen), −1 Punkt, wenn falsch behandelt (falsch angekreuzt oder falsch ausgelassen).
-- Pro Frage mindestens 0, höchstens 4 Punkte. Anzeige bei der Frage nur als Punktezahl, in der Auswertung Prozent und Punktezahl.
+- Pro Frage mindestens 0, höchstens 4 Punkte. Anzeige bei der Frage nur als Punktezahl, in der Auswertung Prozent, Punktezahl mit Höchstpunktzahl und Note.
 - „Sicher“ gilt eine Frage bei 4 Punkten (letztes Ergebnis).
 
 ## Inhalt
@@ -29,7 +31,7 @@ Multiple-Choice-Training für Gesetzestexte. Läuft im Browser, lässt sich auf 
 
 ## Änderungen veröffentlichen
 Änderungen an Fragen oder App committen und nach `main` bringen (Pull Request mergen). GitHub Pages veröffentlicht nach ca. 1 Minute. Die App holt beim Öffnen immer die neueste Fassung und fällt offline auf den gespeicherten Stand zurück. Neue Dateien in `sw.js` (`ASSETS`) eintragen und `VERSION` erhöhen.
-Gespeicherte Stacks und der Lernfortschritt bleiben auf dem Gerät erhalten. Fragen-IDs (`bdg-<§>-<Nr>`) nicht umnummerieren: neue Fragen immer **hinten anhängen**, sonst passt der Fortschritt nicht mehr zur Frage.
+Gespeicherte Klausuren, Historie und der Lernfortschritt bleiben auf dem Gerät erhalten. Fragen-IDs (`bdg-<§>-<Nr>`) nicht umnummerieren: neue Fragen immer **hinten anhängen**, sonst passt der Fortschritt nicht mehr zur Frage.
 
 ## Neues Gesetz / neue Paragrafen ergänzen
 1. Texte aus dem RIS holen (offizielle Schnittstelle `data.bka.gv.at/ris/api/v2.6`, Gesetzesnummer des Gesetzes).
