@@ -28,6 +28,13 @@
 | 15 | 2026-11-24 | **Prüfen:** (a) GitHub Pages für `lernapp`, (b) Alt-Repo bereinigt (PR #3). | erledigt (Prüfung) | (a) Veröffentlichung läuft: letzte Bereitstellung 2026-11-24 23:04 UTC, Status „success“ (Commit `2069b17`). (b) **Noch nicht erledigt:** `main` im Alt-Repo `foto-text-zu-word` enthält `lernapp/` weiterhin vollständig. Der dortige Merge von PR #3 entfernt den Ordner offenbar nicht, oder es ist ein früherer PR #3. Nutzer bitte in GitHub nachsehen (PR-Liste im Alt-Repo), ggf. neuen Aufräum-PR anfordern. |
 | 16 | 2026-11-24 | **Historie** der Ergebnisse von Klausuren: gespeichert und einsehbar. | umgesetzt (2026-11-25) | Entschieden: gespeichert wird nur eine bewusst gestartete Klausur. | Siehe Brainstorm. |
 | 17 | 2026-11-24 | **Umbenennen:** „Prüfungs-Stack“ wird zu **„Klausur“**. | umgesetzt (2026-11-25) | Entschieden: einheitlich umbenennen, also auch der Tab „Stacks“ wird „Klausuren“. Betrifft Beschriftungen in der App, README und Teilen-Text. Technisch (Stack-Link `#BDG:…`) bleibt alles gleich. |
+| 18 | 2026-11-25 | **Startseite bei jedem Öffnen:** Auswahl, in welcher Gesetzesmaterie man eine Prüfung machen will (Karten je Gesetz). Antippen führt zur Paragrafenauswahl. | besprochen | Entschieden: eigene Startseite, kein Pop-up. Geteilte Klausur-Links (`#BDG:…`) überspringen die Startseite. |
+| 19 | 2026-11-25 | **Neuigkeiten je Gesetz** auf der Startseite: die 3 wichtigsten Änderungen (Novellen, betroffene Paragrafen), eine Art News für Gesetzestexte. | besprochen | Entschieden: aus RIS-Novellen (Bundesgesetzblatt), von mir geprüft, in `daten/news.json` mit BGBl.-Nummer, Datum, Ein-Satz-Zusammenfassung und Link. |
+| 20 | 2026-11-25 | **Tab-Leiste (Lernen · Klausuren · Statistik) niedriger**, braucht weniger Platz. | besprochen | Nur Größe: kleinere Symbole und Abstände, Beschriftung bleibt. |
+| 21 | 2026-11-25 | **Auswahlseite dezenter:** Abschnitt „Optionen“ und darunter „Klausuren“ unauffälliger gestalten. | besprochen | Kleinere, graue Überschriften, Optionen als einzelne schmale Zeile, Klausuren eingeklappt. |
+| 22 | 2026-11-25 | **Klausur speichern auf der Auswahlseite** bekommt auch **Entfernen**, wie im Reiter Klausuren. | besprochen | Entfernen-Knopf (✕) in der Liste auf „Lernen“ (mit Rückfrage). |
+| 23 | 2026-11-25 | **Reiter „Klausuren“ nur noch Übersicht**: ansehen, entfernen, zur Durchführung auswählen. Klausuren erstellen nur auf „Lernen“. | besprochen | Entschieden: im Reiter bleiben Start, Teilen, Entfernen. „Laden“ und das Speichern-Feld entfallen dort. |
+| 24 | 2026-11-25 | **Statistik:** Schaltfläche zum **Filtern nach Gesetz**. Der Abschnitt „Weiteres“ dezenter. | besprochen | Filter „Alle · BDG · …“ (Gesetze ohne Daten ausgegraut). Gilt für Kennzahlen, Themenfelder und Historie. „Weiteres“ als eingeklappter Bereich „Mehr“. |
 
 ## Brainstorm zu Wunsch 11 (noch nicht umgesetzt)
 - Entschieden: dauerhaft strichliert, Pop-up auch vor der Antwort, auch Verweise auf andere Paragrafen. Bei Verweisen innerhalb des BDG zeigt das Pop-up die Überschrift und 1 bis 2 Sätze Kurzinhalt aus den vorhandenen Paragrafen-Daten (nur beschreibend, keine Wertung).
@@ -46,6 +53,16 @@
 - **Easter Egg:** Nur bei exakt 100 % und nur am Ende eines Durchlaufs, ab mindestens 5 Fragen (sonst zu leicht). Kleines Fenster mit Schließen-Knopf, Text im Ton eines Augenzwinkerns, höchstens einmal pro Durchlauf. Nicht in der Historie sichtbar machen.
 - **Umbenennen:** Auch „Stack“ allgemein im Tab? Vorschlag: Tab „Stacks“ bleibt zunächst, Abschnitt „Prüfungs-Stacks“ wird „Klausuren“. Einheitlichkeit prüfen (Tab-Name ebenfalls „Klausuren“?).
 - **Reihenfolge-Vorschlag:** 17, 12, 13 (Basis), danach 16, 11, zuletzt 14.
+
+## Brainstorm zu Wunsch 18 bis 24 (noch nicht umgesetzt)
+- **Code-Prüfung vor der Änderung (2026-11-25):** Playwright-Tests laufen vollständig durch (26 Prüfungen, keine Konsolenfehler). Kein Handlungsbedarf.
+- **Startseite:** Bei jedem Öffnen zuerst Startseite (Karten je Gesetz, darunter Neuigkeiten). Geteilte Links `#BDG:4,10` führen direkt zur Auswahl. Zurück zur Startseite über den Titel „Rechtstrainer“. Gesetze ohne Daten (StGB, SPG, VStG) als „bald“ ausgegraut. Ohne Tab-Leiste, damit nichts verwirrt.
+- **Neuigkeiten:** RIS liefert Novellen mit BGBl.-Nummer und Datum (geprüft, z. B. BGBl. I Nr. 22/2026 vom 2026-04-23, Dienstrechts-Novelle 2025: BGBl. I Nr. 100/2025). Betroffene Paragrafen stehen nicht in den Metadaten, sondern müssen aus dem Novellentext gelesen werden. Das geschieht einmalig beim Datenbau, nicht in der App. Hinweis „Stand“ und Quelle anzeigen. Nur Fakten, keine Wertung. Offline: Datei liegt im Cache.
+- **Risiko:** Die Zusammenfassungen müssen richtig sein, sonst irreführend. Deshalb Prüfung gegen den Gesetzestext vor Veröffentlichung, bei Zweifel Meldung weglassen.
+- **Tab-Leiste:** Höhe von etwa 64 auf etwa 44 Pixel (Symbol 20 statt 24, Schrift 10 statt 11), Tippfläche bleibt mindestens 44 Pixel hoch (Apple-Empfehlung).
+- **Dezenter:** Optionen und Klausuren auf „Lernen“ ohne farbige Überschrift, schmal und grau.
+- **Reiter Klausuren:** Wenn keine Klausur existiert, Hinweis „Erstelle Klausuren auf Lernen“ mit Knopf dorthin.
+- **Statistik-Filter:** Solange nur das BDG Daten hat, zeigt der Filter nur „Alle“ und „BDG“. Gilt auch für die Historie.
 
 ## Umgesetzt
 Wünsche 11 bis 14, 16 und 17 am 2026-11-25 umgesetzt und getestet (Playwright: Notenschlüssel, Klausur-Start, Historie, Easter Egg, Verweise). Verweise: `daten/verweise.json`, 16 Einträge aus RIS-Texten; Verweise auf Absätze desselben Paragrafen („Abs. 1“) haben noch kein Pop-up.
