@@ -121,7 +121,7 @@ const URL = process.env.APP_URL || 'http://localhost:8123/';
 
   /* ---- Quiz mit Limit 5 und Reihenfolge nach Paragraf ---- */
   await p.click('[data-act="tab"][data-v="home"]'); await p.click('[data-act="all"]');
-  ok((await p.textContent('.startbar')).includes('Start · 5 Fragen (von 56)'), 'Start-Knopf zeigt Limit: ' + (await p.textContent('.startbar')).trim());
+  ok((await p.textContent('.startbar')).includes('Start · 5 Fragen (von 115)'), 'Start-Knopf zeigt Limit: ' + (await p.textContent('.startbar')).trim());
   await wait(500);
   await p.evaluate(() => { document.querySelector('[data-act="start"]').click(); setTimeout(() => { const o = document.querySelector('[data-act="pick"]'); if (o) o.click(); }, 100); });
   await p.waitForSelector('.qbox'); await wait(300);

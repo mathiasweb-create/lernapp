@@ -309,7 +309,9 @@ async function loadLaw(id){
   const law = LAWS.find(l => l.id === id);
   const r = await fetch(law.file);
   if(!r.ok) throw new Error('Daten nicht ladbar');
-  cache[id] = await r.json();
+  const data = await r.json();
+  data.paragrafen.forEach(p => { p.q = p.q.filter(q => !q.x); });   // Fragen außerhalb des Skriptum-Pools (x) bleiben in den Daten, erscheinen aber nicht
+  cache[id] = data;
   return cache[id];
 }
 function groupsOf(d){

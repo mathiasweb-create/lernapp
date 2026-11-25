@@ -46,6 +46,9 @@ RFIXES = [
 ]
 USED = set()
 
+# Skriptum-Etappe: neue Fragen (hinten angehängt), ausgeschlossene bestehende Fragen (x), Korrekturen
+SKR = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "skriptum_fragen.json"), encoding="utf-8"))
+
 paras = []
 for n in ORDER:
     raw = open(os.path.join(src, n + ".txt"), encoding="utf-8").read().split("\n")
@@ -80,6 +83,17 @@ for n in ORDER:
             if not ((w and not korr) or ((not w) and korr)): raise SystemExit("Frage %s-%d: falsche Aussagen brauchen eine Erklärung, richtige nicht: %s" % (n, k + 1, st[0][:40]))
             s.append({"t": st[0], "w": w, "k": korr})
         qs.append({"id": "bdg-%s-%d" % (n, k + 1), "ref": ref, "f": frage, "s": s})
+    for qid, fx in SKR[n].get("fix", {}).items():   # Korrekturen an bestehenden Fragen (ID bleibt)
+        q = next(q for q in qs if q["id"] == qid)
+        for ai, d in fx.items():
+            st = q["s"][int(ai) - 1]
+            for key, val in d.items(): st[key] = val
+            if st["w"]: st["k"] = ""
+    for q in qs:
+        if q["id"] in SKR[n].get("exclude", []): q["x"] = 1
+    for nq in SKR[n]["new"]:
+        if len(nq["s"]) != 4: raise SystemExit("Skriptum-Frage in %s: genau 4 Aussagen nötig" % n)
+        qs.append({"id": "bdg-%s-%d" % (n, len(qs) + 1), "ref": nq["ref"], "f": nq["f"], "s": [{"t": x["t"], "w": bool(x["w"]), "k": x["k"]} for x in nq["s"]]})
     paras.append({"n": n, "label": "§ " + n, "title": title, "stand": stand, "text": text, "q": qs})
 
 GRUPPEN = [
@@ -103,4 +117,4 @@ os.makedirs(os.path.dirname(out), exist_ok=True)
 json.dump(data, open(out, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 missing = [a for a,b in FIXES + RFIXES if a not in USED]
 if missing: raise SystemExit("Korrektur ohne Treffer: %r" % (missing,))
-print(len(paras), "Paragrafen,", sum(len(p["q"]) for p in paras), "Fragen")
+print(len(paras), "Paragrafen,", sum(1 for p in paras for q in p["q"] if not q.get("x")), "Fragen im Pool,", sum(1 for p in paras for q in p["q"] if q.get("x")), "ausgeschlossen")
