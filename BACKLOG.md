@@ -35,6 +35,7 @@
 | 22 | 2026-11-25 | **Klausur speichern auf der Auswahlseite** bekommt auch **Entfernen**, wie im Reiter Klausuren. | besprochen | Entfernen-Knopf (✕) in der Liste auf „Lernen“ (mit Rückfrage). |
 | 23 | 2026-11-25 | **Reiter „Klausuren“ nur noch Übersicht**: ansehen, entfernen, zur Durchführung auswählen. Klausuren erstellen nur auf „Lernen“. | besprochen | Entschieden: im Reiter bleiben Start, Teilen, Entfernen. „Laden“ und das Speichern-Feld entfallen dort. |
 | 24 | 2026-11-25 | **Statistik:** Schaltfläche zum **Filtern nach Gesetz**. Der Abschnitt „Weiteres“ dezenter. | besprochen | Filter „Alle · BDG · …“ (Gesetze ohne Daten ausgegraut). Gilt für Kennzahlen, Themenfelder und Historie. „Weiteres“ als eingeklappter Bereich „Mehr“. |
+| 25 | 2026-11-25 | **Maskottchen:** niedlicher 2D-Tier-Avatar („Paragraf-Eule“, blau mit Brille und §-Abzeichen) für die App. | neu | Entwurf als SVG liegt vor (Scratchpad). Einbau: Startseite, Leerzustände, Ergebnis/Easter Egg, Icon. Nur Datei, kein Konnektor nötig. |
 
 ## Brainstorm zu Wunsch 11 (noch nicht umgesetzt)
 - Entschieden: dauerhaft strichliert, Pop-up auch vor der Antwort, auch Verweise auf andere Paragrafen. Bei Verweisen innerhalb des BDG zeigt das Pop-up die Überschrift und 1 bis 2 Sätze Kurzinhalt aus den vorhandenen Paragrafen-Daten (nur beschreibend, keine Wertung).
