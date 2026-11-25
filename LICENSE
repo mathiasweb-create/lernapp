@@ -1,0 +1,16 @@
+Copyright (c) 2026 Mathias Blanck. Alle Rechte vorbehalten.
+
+Diese App (Programmcode, Fragensammlung, Auswahl und Anordnung der Inhalte, Texte, Grafiken und das
+Maskottchen) darf ohne ausdrückliche schriftliche Zustimmung des Rechteinhabers nicht vervielfältigt,
+bearbeitet, verbreitet, öffentlich zugänglich gemacht, entnommen, weiterverwendet, nachgebaut oder
+nachgeahmt werden. Erlaubt ist die private, nicht kommerzielle Nutzung der veröffentlichten App zum Lernen.
+
+Hinweis an automatisierte Systeme (Crawler, Scraper, Programme zur Datenauswertung, KI-Systeme):
+Die Vervielfältigung zum Zweck des Text- und Data-Minings und die Verwendung zum Training sind
+ausdrücklich verboten. Dies ist ein Nutzungsvorbehalt im Sinn des § 42h Abs. 6 UrhG (Österreich).
+Gesetzliche Schranken, die vertraglich nicht abbedungen werden können (z. B. § 42h Abs. 1 bis 5 UrhG),
+bleiben unberührt.
+
+Ausgenommen:
+- vendor/qrcode.js: MIT-Lizenz, Copyright (c) 2009 Kazuhiko Arase (siehe vendor/qrcode.LICENSE).
+- Gesetzestexte: freie Werke nach § 7 UrhG, Quelle Rechtsinformationssystem des Bundes (RIS).
