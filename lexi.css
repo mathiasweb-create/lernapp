@@ -59,7 +59,7 @@ svg.m{display:block;overflow:visible;transform-origin:50% 95%}
 .sec .leg{text-transform:none;letter-spacing:0;font-weight:600;font-size:11px;display:inline-flex;align-items:center;gap:5px}.sec .leg i{width:12px;height:12px;border-radius:4px;background:var(--acc)}
 .newsl.c{padding:8px 0;align-items:center}.newsl.c .nx{flex:1;min-width:0}.newsl.c .nh{display:flex;justify-content:space-between;align-items:baseline;gap:8px}.newsl.c .nt{font-weight:700;font-size:13.5px;margin:0;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.newsl.c .dl{font-size:11px;flex:none}
 .newsl.c .ns{font-size:12px;margin:1px 0 4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.newsl.c .pc{font-size:10.5px;padding:0 6px}.newsl.c .ris{padding:0;font-size:15px}
-.skipf{position:fixed;z-index:75;width:auto;padding:11px 20px;pointer-events:auto;animation:pop .3s cubic-bezier(.3,1.5,.5,1) both}
+.btn.skipf{position:fixed;z-index:75;width:auto;padding:11px 20px;pointer-events:auto;animation:pop .3s cubic-bezier(.3,1.5,.5,1) both}
 .skipslot{height:49px}
 .tblock{position:fixed;inset:0;pointer-events:auto}
 .spot{position:fixed;border-radius:16px;box-shadow:0 0 0 1200px rgba(10,18,36,.62);outline:2px solid #fff;pointer-events:none;transition:left .3s,top .3s,width .3s,height .3s}

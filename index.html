@@ -224,6 +224,7 @@ pre.law{white-space:pre-wrap;word-break:break-word;font:14px/1.5 ui-serif,Georgi
 /* LexCoach: Startseite, Kopfzeile, Leerzustände */
 .top h1 button{border:0;background:none;padding:0;font:inherit;letter-spacing:inherit;color:inherit}
 .right{display:flex;gap:8px;align-items:center}
+#app.tabonly{padding-bottom:calc(env(safe-area-inset-bottom) + 58px)}
 #app.nodock{padding-bottom:calc(env(safe-area-inset-bottom) + 28px)}
 .lawcard{padding:10px 14px}
 .lawbtn{border:0;background:none;padding:0;width:100%;display:flex;justify-content:space-between;align-items:center;text-align:left}
@@ -260,6 +261,7 @@ function shuffle(a){ a = a.slice(); for(let i=a.length-1;i>0;i--){ const j=Math.
 function toast(msg){ const t=$('#toast'); t.textContent=msg; t.classList.add('on'); clearTimeout(toast._t); toast._t=setTimeout(()=>t.classList.remove('on'),2200); }
 const punkte = n => n + (n===1 ? ' Punkt' : ' Punkte');
 const IC = {
+  home:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v10h13V10"/><path d="M10 20v-5.5h4V20"/></svg>',
   share:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3"/><path d="M8 7l4-4 4 4"/><path d="M6 11H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-1"/></svg>',
   book:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 21V5"/><path d="M9 8h6"/></svg>',
   layers:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></svg>',
@@ -371,12 +373,13 @@ const effPool = n => SET.lim ? Math.min(n, SET.lim) : n;
 function setDock(html){ $('#dock').innerHTML = html ? `<div class="in">${html}</div>` : ''; }
 function tabbar(){
   const t = (id, label, icon) => `<button data-act="tab" data-v="${id}" class="${S.view===id?'on':''}" ${S.view===id?'aria-current="page"':''}>${icon}${label}</button>`;
-  return `<nav class="tabbar" aria-label="Hauptnavigation">${t('home','Lernen',IC.book)}${t('stacks','Klausuren',IC.layers)}${t('stats','Statistik',IC.chart)}</nav>`;
+  return `<nav class="tabbar" aria-label="Hauptnavigation">${t('start','Start',IC.home)}${t('home','Lernen',IC.book)}${t('stacks','Klausuren',IC.layers)}${t('stats','Statistik',IC.chart)}</nav>`;
 }
 function miniLexi(){ const c = S.hop ? 'tap' : ''; S.hop = false; return `<span class="lmini" aria-hidden="true">${LX.svg('normal', c)}</span>`; }
 function render(keep){
   const y = keep ? window.scrollY : 0;
-  $('#app').classList.toggle('nodock', S.view === 'start' || S.view === 'settings');
+  $('#app').classList.toggle('nodock', S.view === 'settings');
+  $('#app').classList.toggle('tabonly', S.view === 'start');
   ({start:renderStart, home:renderHome, stacks:renderStacks, stats:renderStats, quiz:renderQ, result:renderResult, settings:renderSettingsView})[S.view]();
   LX.paintAll();
   window.scrollTo(0, y);
@@ -402,7 +405,7 @@ function renderStart(){
   $('#app').innerHTML = `${header('', true)}
     <div class="hero"><button class="mb" data-act="poke" aria-label="Lexi antippen">${LX.svg(S.hm === 'angry' ? 'angry' : 'normal', 'windy' + (S.hm === 'bars' ? ' bars' : ''))}</button><div class="bub l" data-t="l">${esc(greet)}</div></div>
     <div class="sec"><span>Gesetze</span></div>${ready}${soon}${news}`;
-  setDock('');
+  setDock(tabbar());
 }
 
 /* ---------- Lernen ---------- */
