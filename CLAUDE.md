@@ -1,4 +1,4 @@
-# Übergabe: Rechtstrainer (Lern-App)
+# Übergabe: LexCoach (Lern-App, früher „Rechtstrainer“)
 
 Diese Datei liest ein neues Chat-Fenster zuerst. Sie ersetzt das Gedächtnis des alten Fensters. Aktuell halten, wenn sich etwas Wichtiges ändert.
 
@@ -21,14 +21,16 @@ Die App wurde am 2026-11-24 aus dem Repo `foto-text-zu-word` (Foto-Text-App, una
 
 ## Entscheidungen (nicht erneut diskutieren)
 - Technik: reine Web-App (HTML, JS, CSS), keine Frameworks, kein Server. Daten und Fortschritt nur lokal im Browser (`localStorage`). Keine Fremdserver-Skripte (QR-Generator liegt lokal in `vendor/`).
-- Stil A (blau, Fragekasten, Tab-Leiste Lernen · Stacks · Statistik), Hell und Dunkel, fünf Themenfarben.
+- Stil A (blau, Fragekasten, niedrige Tab-Leiste Lernen · Klausuren · Statistik), Hell und Dunkel (auch per Einstellung), fünf Themenfarben. Maskottchen **Lexi** (Fuchs, Schal im Wind, Comic-Sprechblasen, Sprüche, Bewegung nur bei neuer Frage und Ergebnis). Bei jedem Öffnen zuerst die **Startseite** (Gesetze, Neuigkeiten). Beim ersten Start: Home-Bildschirm-Hinweis, dann Tutorial (Überspringen-Spiel, Abbrechen mit „Keiner mag Klugscheißer.“).
+- Rechtliches in den Einstellungen (Impressum mit geschwärzter Anschrift und geschwärztem Wohnort, Datenschutz, Nutzung und Haftung, Quellen und Lizenzen). **In den Rechtstexten kein Hinweis auf KI-Erstellung**; der Hinweis im Seitenfuß der Lernen-Seite („von einer KI … erstellt“) bleibt. Nutzungsvorbehalt gegen KI-Auswertung (§ 42h Abs. 6 UrhG): `LICENSE`, `robots.txt`, Meta-Tags, Hinweis im Quelltext.
 - Punkte je Frage: je Aussage +1 (richtig angekreuzt oder richtig ausgelassen), −1 (falsch behandelt), Minimum 0, Maximum 4. Anzeige nur als Punktezahl, Gesamtwertung Prozent und Punktezahl. „Sicher“ = 4 Punkte.
 - Fragen: konkrete Fragestellung, Aussagen nie sehr kurz, Falschaussagen überwiegend inhaltlich plausibel (nur gelegentlich ein Wort getauscht), bei jeder falschen Aussage kurze Erklärung mit Fundstelle.
 - Paragrafen-Auswahl in aufklappbaren Themen-Kästen (ab 10 Paragrafen), Stacks speicher- und teilbar, Link `…/lernapp/#BDG:4,10,43a`.
 - Repo bleibt öffentlich. Nur der Eigentümer verändert den Code (Wunsch 9, GitHub-Einstellungen, Aufgabe des Eigentümers).
 
 ## Dateien
-- `index.html` – ganze App. `sw.js` – Offline-Cache (Netz zuerst). `manifest.webmanifest`, Icons.
+- `index.html` – App (Oberfläche, Logik). `lexi.js`/`lexi.css` – Maskottchen, Sprechblasen, Tutorial- und Einstellungs-Gestaltung. `legal.js` – Rechtstexte. `sw.js` – Offline-Cache (Netz zuerst). `manifest.webmanifest`, Icons. `LICENSE`, `robots.txt` – Nutzungsvorbehalt.
+- `daten/news.json` – Neuigkeiten je Gesetz (aus den Bundesgesetzblättern im RIS, von Hand zusammengefasst; bei neuen Novellen ergänzen, Paragrafen der App erscheinen blau).
 - `daten/verweise.json` – Kurzbeschreibungen der Verweise (Pop-up), aus RIS-Texten erstellt, `match` = exakter Text in den Aussagen.
 - `daten/bdg.json` – erzeugt, nicht von Hand ändern. Quelle: `tools/fragen_bdg.py` (Fragen) und RIS-Texte.
 - `tools/fetch_ris.py` holt Gesetzestexte, `tools/build_data.py` baut die JSON, `tools/make_icons.py` die Icons.
@@ -51,12 +53,12 @@ Fragen-IDs `bdg-<§>-<Nr>` nie umnummern, neue Fragen hinten anhängen (sonst pa
 - Gesetzestexte nie mit `head -n -1` o. ä. beschneiden, sonst fehlt der letzte Absatz (so ging § 44 Abs. 3 beim Lesen verloren). Immer die ganze Datei lesen oder `daten/bdg.json` (Feld `text`) nutzen.
 - Prüfen großer Mengen (alle Fragen gegen Gesetzestext, Code-Review) an stärkere Hilfsagenten delegieren (Modell Opus, nur lesen), Befunde danach selbst gegen den Gesetzestext gegenprüfen.
 
-## Stand (2026-11-25)
-- **Wünsche 1 bis 8, 10 bis 14, 16, 17 umgesetzt und gemergt** (PR #3, live per GitHub Pages bestätigt: Bereitstellung `74afe0a`, Status success). Verweis-Pop-ups, Prozent/Maximum/Note, Zahnrad mit Notenschlüssel (Standard 87,5/75/62,5/50), Easter Egg bei 100 % (ab 5 Fragen), Klausuren mit Start und Historie (nur vollständig beantwortete, bewusst gestartete Klausuren). „Stack“ heißt überall „Klausur“.
-- **Apps getrennt, Alt-Repo bereinigt:** `lernapp/` ist aus `foto-text-zu-word` entfernt (PR #4, vom Nutzer gemergt). Pages für `lernapp` läuft.
-- **Merge per API:** Entgegen früherer Erfahrung hat ein per API gemergter PR (#3) die Veröffentlichung ausgelöst. Mit ausdrücklicher Zustimmung des Nutzers im Chat darf der Assistent PRs selbst mergen und danach die Bereitstellung prüfen (`gh api repos/mathiasweb-create/lernapp/deployments`).
+## Stand (2026-11-25, nach Umsetzung Wunsch 18 bis 31)
+- **Wünsche 1 bis 8, 10 bis 14, 16 bis 31 umgesetzt.** Neu am 2026-11-25: Startseite mit Neuigkeiten, LexCoach, Lexi, Einstellungen (Notenschlüssel, Lernen, Darstellung, Home-Bildschirm, Tutorial, Rechtliches), Klausuren-Umbau, Statistik-Filter, leere Vorauswahl, Tutorial. Tests: Playwright (siehe unten), alle grün.
+- **Merge per API:** Mit ausdrücklicher Zustimmung des Nutzers im Chat darf der Assistent PRs selbst anlegen und mergen und danach die Bereitstellung prüfen (`gh api repos/mathiasweb-create/lernapp/deployments`).
 - **Rechte:** `.claude/settings.json` erlaubt `add_repo` ohne Rückfrage. Sitzungen für andere Repos mit `create_session` starten.
-- **Noch offen:** Pop-up für Verweise auf Absätze („Abs. 1“), Export/Import der Historie (Daten liegen nur im Browser), Test auf echtem iPhone, Stichprobe der Fragen, Wunsch 9 (Aufgabe des Nutzers). Nächste mögliche Schritte: StGB/SPG/VStG, Wiederholungsintervalle.
+- **Noch offen:** Pop-up für Verweise auf Absätze („Abs. 1“), Export/Import der Historie (Daten liegen nur im Browser), Test auf echtem iPhone, Wohnort und Anschrift im Impressum (derzeit Balken, rechtlich fraglich), rechtliche Prüfung der Texte, Wunsch 9 (Aufgabe des Nutzers), Stichprobe der Fragen. Nächste mögliche Schritte: StGB/SPG/VStG, Wiederholungsintervalle.
+- **Tests:** Server `python3 -m http.server 8123` im Repo-Ordner, dann Playwright-Skripte (`NODE_PATH=$(npm root -g) node …`). Klicks auf „Prüfen“/„Weiter“/„Start“ mit mindestens 0,5 s Abstand (Doppeltipp-Schutz `NAV`).
 
 ## Verlauf (älter) – Stand 2026-11-24, ca. 23:05 UTC
 - **Apps getrennt (Wunsch 10):** Dieses Repo `lernapp` enthält den vollen Verlauf der App samt allen Korrekturen aus beiden Prüfungen (Stand des früheren Pull Requests #3). Adresse künftig `https://mathiasweb-create.github.io/lernapp/`. Alte Adresse (`…/foto-text-zu-word/lernapp/`) wird nicht weiter gepflegt.

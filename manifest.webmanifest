@@ -1,6 +1,6 @@
 {
-  "name": "Rechtstrainer",
-  "short_name": "Rechtstrainer",
+  "name": "LexCoach",
+  "short_name": "LexCoach",
   "description": "Multiple-Choice-Training für Gesetzestexte",
   "lang": "de",
   "start_url": "./",

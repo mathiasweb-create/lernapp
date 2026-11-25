@@ -15,7 +15,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Rechtstrainer</title>
+<title>LexCoach</title>
 <meta name="description" content="Multiple-Choice-Training für Gesetzestexte">
 <meta name="robots" content="noai, noimageai">
 <meta name="tdm-reservation" content="1">
@@ -27,23 +27,30 @@
 <link rel="apple-touch-icon" href="icon-180.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Rechtstrainer">
+<meta name="apple-mobile-web-app-title" content="LexCoach">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="stylesheet" href="lexi.css">
 <style>
 :root{
   --bg:#F3F6FB; --card:#ffffff; --ink:#14213D; --mute:#56627D; --line:#DCE4F1;
   --acc:#2457D6; --on:#ffffff; --soft:#E4ECFF;
   --ok:#0B7A55; --ok-bg:#E3F5EC; --bad:#C0362C; --bad-bg:#FDEAE7; --warn:#9A5B00; --warn-bg:#FFF2DB;
-  --c1:#2457D6; --c2:#0E8A7D; --c3:#B7791F; --c4:#7A4FD1; --c5:#C2410C;
+  --c1:#2457D6; --c2:#0E8A7D; --c3:#B7791F; --c4:#7A4FD1; --c5:#C2410C; --wind:#0A0D14; --shadow:rgba(20,33,61,.14);
   --font:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
 }
 @media (prefers-color-scheme: dark){
-  :root{
+  :root:not([data-theme="light"]){
     --bg:#0E1626; --card:#162036; --ink:#E8EEFC; --mute:#9AA8C7; --line:#263454;
     --acc:#7AA2FF; --on:#0B1530; --soft:#1E2D52;
     --ok:#4CC38A; --ok-bg:#123225; --bad:#FF8A80; --bad-bg:#3A1B1B; --warn:#F0B35A; --warn-bg:#33270F;
-    --c1:#7AA2FF; --c2:#3CC9B8; --c3:#F0B35A; --c4:#B79BFF; --c5:#FF9A62;
+    --c1:#7AA2FF; --c2:#3CC9B8; --c3:#F0B35A; --c4:#B79BFF; --c5:#FF9A62; --wind:#F2F5FF; --shadow:rgba(0,0,0,.5); color-scheme:dark;
   }
+}
+:root[data-theme="dark"]{
+    --bg:#0E1626; --card:#162036; --ink:#E8EEFC; --mute:#9AA8C7; --line:#263454;
+    --acc:#7AA2FF; --on:#0B1530; --soft:#1E2D52;
+    --ok:#4CC38A; --ok-bg:#123225; --bad:#FF8A80; --bad-bg:#3A1B1B; --warn:#F0B35A; --warn-bg:#33270F;
+    --c1:#7AA2FF; --c2:#3CC9B8; --c3:#F0B35A; --c4:#B79BFF; --c5:#FF9A62; --wind:#F2F5FF; --shadow:rgba(0,0,0,.5); color-scheme:dark;
 }
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{margin:0;overflow-x:hidden;background:var(--bg);color:var(--ink);font:15px/1.45 var(--font);-webkit-text-size-adjust:100%}
@@ -123,14 +130,14 @@ input[type=checkbox]{width:24px;height:24px;accent-color:var(--acc)}
 .btn.soft{background:var(--soft);color:var(--acc)}
 .btn[disabled]{opacity:.45;cursor:default}
 .btn svg{width:18px;height:18px}
-.tabbar{display:flex;border-top:1px solid var(--line);background:var(--card);padding:6px 8px calc(env(safe-area-inset-bottom) + 6px)}
-.tabbar button{flex:1;border:0;background:none;font-size:11px;font-weight:600;color:var(--mute);display:grid;justify-items:center;gap:2px;padding:4px 0}
-.tabbar button svg{width:24px;height:24px}
+.tabbar{display:flex;border-top:1px solid var(--line);background:var(--card);padding:4px 8px calc(env(safe-area-inset-bottom) + 6px)}
+.tabbar button{flex:1;border:0;background:none;font-size:10px;font-weight:600;color:var(--mute);display:grid;justify-items:center;gap:1px;padding:3px 0;min-height:42px}
+.tabbar button svg{width:20px;height:20px}
 .tabbar button.on{color:var(--acc)}
 .actbar{padding:10px 18px calc(env(safe-area-inset-bottom) + 12px);display:flex;gap:8px;background:var(--bg);border-top:1px solid var(--line)}
 
 /* Quiz */
-.meta{display:flex;justify-content:space-between;font-size:12.5px;color:var(--mute);font-weight:600;gap:8px}
+.meta{display:flex;justify-content:space-between;align-items:center;font-size:12.5px;color:var(--mute);font-weight:600;gap:8px}
 .bar{height:5px;border-radius:5px;background:var(--line);margin:8px 0 14px;overflow:hidden}
 .bar i{display:block;height:100%;background:var(--acc);border-radius:5px;transition:width .25s}
 .qbox{background:var(--soft);border:1.5px solid var(--acc);border-radius:18px;padding:14px 15px 13px;margin-bottom:14px}
@@ -214,16 +221,32 @@ pre.law{white-space:pre-wrap;word-break:break-word;font:14px/1.5 ui-serif,Georgi
 .gnote.n5{background:var(--bad-bg);color:var(--bad)}
 .toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(env(safe-area-inset-bottom) + 150px);background:var(--ink);color:var(--bg);padding:9px 16px;border-radius:999px;font-size:13.5px;font-weight:600;opacity:0;pointer-events:none;transition:opacity .2s;z-index:60;max-width:90%;text-align:center}
 .toast.on{opacity:1}
+
+/* LexCoach: Startseite, Kopfzeile, Leerzustände */
+.top h1 button{border:0;background:none;padding:0;font:inherit;letter-spacing:inherit;color:inherit}
+.right{display:flex;gap:8px;align-items:center}
+#app.nodock{padding-bottom:calc(env(safe-area-inset-bottom) + 28px)}
+.lawcard{padding:10px 14px}
+.lawbtn{border:0;background:none;padding:0;width:100%;display:flex;justify-content:space-between;align-items:center;text-align:left}
+.lawbtn b{display:block;font-size:16px}.lawbtn .mute{font-size:12.5px}.lawbtn .go{color:var(--acc)}
+.lawsoon{margin-bottom:8px;opacity:.55;padding:12px 14px}.lawsoon b{display:block;font-size:16px}.lawsoon .mute{font-size:13px}
+.emp{text-align:center;padding:14px 8px;color:var(--mute);font-size:13px}.emp svg{width:90px;height:auto;display:block;margin:0 auto 6px}
 </style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="rough" x="-5%" y="-15%" width="110%" height="130%"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="4" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4"/></filter></svg>
 <div id="app"></div>
 <div class="dock" id="dock"></div>
 <div id="sheet"></div>
+<div id="ovl"></div>
+<div class="say" id="say" role="status" aria-live="polite"></div>
 <div class="toast" id="toast" role="status"></div>
 <script src="vendor/qrcode.js"></script>
+<script src="lexi.js"></script>
+<script src="legal.js"></script>
 <script>
 "use strict";
+/* LexCoach · © 2026 Mathias Blanck. Alle Rechte vorbehalten. */
 /* ================= Helfer ================= */
 const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -245,21 +268,24 @@ const IC = {
   gear:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>',
   chev:'<svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8l5 5 5-5"/></svg>'
 };
+/* Lexi (lexi.js). Fällt die Datei aus, läuft die App ohne Maskottchen weiter. */
+const LX = window.Lexi || {svg:() => '', paint(){}, paintAll(){}, say(){}, sayIdx(){}, idle(){}, block(){}, enable(){}, hide(){}, SAYS:['Hallo'], ANGRY:-1, BARS:-1};
+const LEGAL = window.LEGAL || {};
 
 /* ================= Gesetze & Daten ================= */
 const LAWS = [
-  {id:'BDG',  name:'BDG',  full:'Beamten-Dienstrechtsgesetz 1979', file:'daten/bdg.json', ready:true},
-  {id:'StGB', name:'StGB', full:'Strafgesetzbuch',                  ready:false},
-  {id:'SPG',  name:'SPG',  full:'Sicherheitspolizeigesetz',         ready:false},
-  {id:'VStG', name:'VStG', full:'Verwaltungsstrafgesetz',           ready:false}
+  {id:'BDG',  name:'BDG',  label:'BDG 1979', full:'Beamten-Dienstrechtsgesetz 1979', file:'daten/bdg.json', ready:true},
+  {id:'StGB', name:'StGB', label:'StGB', full:'Strafgesetzbuch',                  ready:false},
+  {id:'SPG',  name:'SPG',  label:'SPG',  full:'Sicherheitspolizeigesetz',         ready:false},
+  {id:'VStG', name:'VStG', label:'VStG', full:'Verwaltungsstrafgesetz',           ready:false}
 ];
 const GROUP_MIN = 10;      // ab so vielen Paragrafen werden Gruppen-Kästen verwendet
 const SEARCH_MIN = 30;     // ab so vielen Paragrafen erscheint ein Suchfeld
-const SHARE_TEXT = 'Rechtstrainer: Multiple-Choice-Training für Gesetzestexte. Link in Safari öffnen, dann Teilen › Zum Home-Bildschirm.';
+const SHARE_TEXT = 'LexCoach: Multiple-Choice-Training für Gesetzestexte. Link in Safari öffnen, dann Teilen › Zum Home-Bildschirm.';
 const NOTEN = ['Sehr gut','Gut','Befriedigend','Genügend','Nicht genügend'];
 const DEF_GRADES = [87.5, 75, 62.5, 50];   // Notenschlüssel: Mindestprozent für Note 1 bis 4, darunter Note 5
 const cache = {};
-let REFS = [], REFRE = null;
+let REFS = [], REFRE = null, NEWS = null;
 async function loadRefs(){
   try{
     const r = await fetch('daten/verweise.json'); if(!r.ok) return;
@@ -267,6 +293,10 @@ async function loadRefs(){
     REFS = (j.refs || []).filter(x => x && typeof x.match === 'string' && x.match && !x.pruefen && typeof x.text === 'string' && x.text);
     REFRE = REFS.length ? new RegExp(REFS.map(x => esc(x.match)).sort((a,b) => b.length-a.length).map(x => x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|'), 'g') : null;
   }catch(e){ REFS = []; REFRE = null; }
+}
+async function loadNews(){
+  try{ const r = await fetch('daten/news.json'); if(!r.ok) return; const j = await r.json(); if(j && typeof j === 'object') NEWS = j; }
+  catch(e){ NEWS = null; }
 }
 /* Verweise in (bereits maskiertem) Text strichliert unterstreichen und antippbar machen */
 function linkRefs(h){
@@ -286,12 +316,36 @@ function groupsOf(d){
   return [{name:d.name, ps:d.paragrafen}];
 }
 
+/* ================= Einstellungen (Gerät) ================= */
+const DEF_SET = {lim:0, ord:'mix', theme:'system', font:'n', rm:false, says:true};
+function loadSet(){
+  const r = store.get('rt.set', {}), s = Object.assign({}, DEF_SET);
+  if(Number.isInteger(r.lim) && r.lim >= 0 && r.lim <= 10000) s.lim = r.lim;
+  if(r.ord === 'mix' || r.ord === 'para') s.ord = r.ord;
+  if(['system','light','dark'].includes(r.theme)) s.theme = r.theme;
+  if(['s','n','l'].includes(r.font)) s.font = r.font;
+  if(typeof r.rm === 'boolean') s.rm = r.rm;
+  if(typeof r.says === 'boolean') s.says = r.says;
+  return s;
+}
+let SET = loadSet();
+function applySettings(){
+  const r = document.documentElement;
+  if(SET.theme === 'system') r.removeAttribute('data-theme'); else r.setAttribute('data-theme', SET.theme);
+  r.classList.toggle('rm', SET.rm);
+  const app = $('#app'); if(app) app.style.zoom = ({s:.92, n:1, l:1.12})[SET.font];
+  LX.enable(SET.says);
+}
+function saveSet(p){ SET = Object.assign({}, SET, p); store.set('rt.set', SET); applySettings(); }
+const isStandalone = () => !!(navigator.standalone || (window.matchMedia && matchMedia('(display-mode: standalone)').matches));
+
 /* ================= Zustand ================= */
-const S = {view:'home', law:(() => { const l = store.get('rt.law','BDG'); return LAWS.some(x => x.id === l && x.ready) ? l : 'BDG'; })(), data:null, sel:new Set(), open:new Set(), onlyOpen:store.get('rt.onlyOpen',false), q:'', run:null, sheet:null, histAll:false};
+const S = {view:'start', law:(() => { const l = store.get('rt.law','BDG'); return LAWS.some(x => x.id === l && x.ready) ? l : 'BDG'; })(), data:null, sel:new Set(), open:new Set(), onlyOpen:store.get('rt.onlyOpen',false), q:'', run:null, sheet:null, histAll:false,
+  set:'menu', prev:'start', gdraft:[], gerr:'', klOpen:false, mehr:false, flt:'Alle', pop:null, tour:null, skipNeed:2, skipClicks:0, skipPos:null, msg:0, hm:'normal', hop:false, lastSay:0, runBackup:null};
 const hist   = () => store.get('rt.hist2', {});
 const stacks = () => store.get('rt.stacks', []).filter(s => s && typeof s.id === 'string' && typeof s.name === 'string' && Array.isArray(s.paras));
 const flags  = () => store.get('rt.flags', []);
-const klausuren = () => store.get('rt.klausur', []).filter(x => x && typeof x.pts === 'number' && typeof x.mx === 'number' && typeof x.name === 'string');
+const klausuren = () => store.get('rt.klausur', []).filter(x => x && typeof x.pts === 'number' && typeof x.mx === 'number' && typeof x.name === 'string' && Number.isFinite(x.pc) && Number.isInteger(x.note) && x.note >= 1 && x.note <= 5 && typeof x.law === 'string');
 function grades(){ const g = store.get('rt.grades', DEF_GRADES); return (g.length === 4 && g.every((x,i) => typeof x === 'number' && isFinite(x) && x > 0 && x <= 100 && (i === 0 || x < g[i-1]))) ? g : DEF_GRADES; }
 function noteOf(p, m, g){ for(let i=0;i<4;i++){ if(p*100 >= g[i]*m - 1e-9) return i+1; } return 5; }
 const fmtNum = x => String(x).replace('.', ',');
@@ -310,6 +364,8 @@ function buildPool(){
   return S.onlyOpen ? qs.filter(x => isOpen(x.q, H)) : qs;
 }
 const countQ = ns => S.data.paragrafen.filter(p => ns.includes(p.n)).reduce((a,p) => a + p.q.length, 0);
+const totalQ = () => S.data.paragrafen.reduce((a,p) => a + p.q.length, 0);
+const effPool = n => SET.lim ? Math.min(n, SET.lim) : n;
 
 /* ================= Darstellung ================= */
 function setDock(html){ $('#dock').innerHTML = html ? `<div class="in">${html}</div>` : ''; }
@@ -317,26 +373,45 @@ function tabbar(){
   const t = (id, label, icon) => `<button data-act="tab" data-v="${id}" class="${S.view===id?'on':''}" ${S.view===id?'aria-current="page"':''}>${icon}${label}</button>`;
   return `<nav class="tabbar" aria-label="Hauptnavigation">${t('home','Lernen',IC.book)}${t('stacks','Klausuren',IC.layers)}${t('stats','Statistik',IC.chart)}</nav>`;
 }
+function miniLexi(){ const c = S.hop ? 'tap' : ''; S.hop = false; return `<span class="lmini" aria-hidden="true">${LX.svg('normal', c)}</span>`; }
 function render(keep){
   const y = keep ? window.scrollY : 0;
-  ({home:renderHome, stacks:renderStacks, stats:renderStats, quiz:renderQ, result:renderResult})[S.view]();
+  $('#app').classList.toggle('nodock', S.view === 'start' || S.view === 'settings');
+  ({start:renderStart, home:renderHome, stacks:renderStacks, stats:renderStats, quiz:renderQ, result:renderResult, settings:renderSettingsView})[S.view]();
+  LX.paintAll();
   window.scrollTo(0, y);
+  LX.idle(!['quiz','result','start','settings'].includes(S.view) && !S.pop && S.tour === null, 25000, 50000);
+  renderOverlay();
 }
-function header(sub){
-  return `<div class="top"><h1>Rechtstrainer</h1><div style="display:flex;gap:8px"><button class="ibtn" data-act="settings" aria-label="Einstellungen">${IC.gear}</button><button class="ibtn" data-act="share" aria-label="App teilen">${IC.share}</button></div></div>
-    <p class="mute" style="margin-top:2px">${sub}</p>`;
+function header(sub, noMini){
+  return `<div class="top"><h1><button data-act="to-start" aria-label="Zur Startseite">LexCoach</button></h1><div class="right">${noMini ? '' : miniLexi()}<button class="ibtn" data-act="settings" aria-label="Einstellungen">${IC.gear}</button><button class="ibtn" data-act="share" aria-label="App teilen">${IC.share}</button></div></div>${sub ? `<p class="mute" style="margin-top:2px">${sub}</p>` : ''}`;
 }
 function lawPills(){
   return '<div class="pills">' + LAWS.map(l => `<button class="pill ${l.id===S.law?'on':''}" data-act="law" data-id="${l.id}" ${l.ready?'':'disabled'}>${l.name}${l.ready?'':' <small>bald</small>'}</button>`).join('') + '</div>';
 }
+const lexEmpty = (mood, text) => `<div class="emp">${LX.svg(mood)}${text}</div>`;
 
-/* ---------- Lernen (Start) ---------- */
+/* ---------- Startseite ---------- */
+function renderStart(){
+  const d = S.data, nw = NEWS && NEWS[S.law], app = new Set(order());
+  const greet = S.msg ? LX.SAYS[(S.msg-1) % LX.SAYS.length] : 'Hallo, ich bin Lexi! Welches Gesetz möchtest du heute üben?';
+  const ready = LAWS.filter(l => l.ready).map(l => `<div class="card lawcard" style="margin-bottom:8px"><button class="lawbtn" data-act="law-open" data-id="${l.id}"><span><b>${esc(l.label)}</b><span class="mute">${l.id === S.law ? d.paragrafen.length + ' Paragrafen · ' + totalQ() + ' Fragen' : esc(l.full)}</span></span><b class="go">Üben ›</b></button></div>`).join('');
+  const soon = LAWS.filter(l => !l.ready).slice(0, 2).map(l => `<div class="card lawsoon"><b>${esc(l.label)}</b><span class="mute">bald</span></div>`).join('');
+  const news = nw && nw.items && nw.items.length ? `<div class="sec"><span>Neuigkeiten · ${esc(S.law)}</span><span class="leg"><i></i>in der App</span></div>
+    <div class="card" style="padding:4px 14px">${nw.items.map(x => `<a class="newsl c" href="${esc(nw.gesetz)}" target="_blank" rel="noopener noreferrer"><span class="nx"><span class="nh"><span class="nt">${esc(x.t)}</span><span class="dl">${esc(x.d)}</span></span><span class="ns">${esc(x.s)}</span><span class="pcs">${(x.ps || []).map(p => `<span class="pc${app.has(p) ? ' app' : ''}${x.neu === p ? ' neu' : ''}">§ ${esc(p)}${x.neu === p ? ' neu' : ''}</span>`).join('')}</span></span><span class="ris" aria-hidden="true">↗</span></a>`).join('')}</div>` : '';
+  $('#app').innerHTML = `${header('', true)}
+    <div class="hero"><button class="mb" data-act="poke" aria-label="Lexi antippen">${LX.svg(S.hm === 'angry' ? 'angry' : 'normal', 'windy' + (S.hm === 'bars' ? ' bars' : ''))}</button><div class="bub l" data-t="l">${esc(greet)}</div></div>
+    <div class="sec"><span>Gesetze</span></div>${ready}${soon}${news}`;
+  setDock('');
+}
+
+/* ---------- Lernen ---------- */
 function tile(p, cc){
   const on = S.sel.has(p.n);
   return `<button class="tile ${on?'sel':''}" data-act="tog" data-p="${esc(p.n)}" style="--cc:var(${cc})" aria-pressed="${on}"><span class="ck">✓</span><b>${esc(p.label)}</b><span class="tt">${esc(p.title)}</span><span class="qn">${p.q.length} Fragen</span></button>`;
 }
 function renderHome(){
-  const d = S.data, groups = groupsOf(d), total = d.paragrafen.reduce((a,p)=>a+p.q.length,0), h = hist();
+  const d = S.data, groups = groupsOf(d), total = totalQ(), h = hist();
   const done = d.paragrafen.reduce((a,p)=>a+p.q.filter(q=>h[q.id]&&h[q.id].last>=4).length,0);
   const useGroups = d.paragrafen.length >= GROUP_MIN;
   const filt = S.q.trim().toLowerCase();
@@ -358,50 +433,47 @@ function renderHome(){
   } else {
     list = `<div class="flat">${d.paragrafen.filter(match).map(p => tile(p, '--c1')).join('')}</div>`;
   }
-  const pool = buildPool();
+  const raw = buildPool().length, pool = effPool(raw), nk = stacks().filter(s => s.law === S.law).length;
   $('#app').innerHTML = `${header(esc(d.name)+' · '+total+' Fragen · '+done+' sicher')}
     ${lawPills()}
     <div class="sec"><span>Paragrafen · ${S.sel.size} gewählt</span><span class="mini"><button data-act="all">Alle</button><button data-act="none">Keine</button></span></div>
     ${d.paragrafen.length > SEARCH_MIN ? `<input class="search" id="q" type="search" placeholder="Paragraf oder Stichwort suchen …" value="${esc(S.q)}" aria-label="Paragrafen suchen">` : ''}
     ${list || '<p class="empty">Keine Treffer.</p>'}
-    <div class="sec"><span>Optionen</span></div>
-    <div class="card"><label class="chk"><input type="checkbox" id="onlyOpen" ${S.onlyOpen?'checked':''}> Nur Fragen, die ich noch nicht sicher kann</label></div>
-    <div class="sec"><span>Klausuren</span></div>
-    <div id="stk">${stackList(false)}</div>
-    ${stackSave()}
+    <button class="quiet" data-act="only" role="checkbox" aria-checked="${S.onlyOpen}" style="margin-top:6px"><span class="cb ${S.onlyOpen?'on':''}">${S.onlyOpen?'✓':''}</span>Nur Fragen, die ich noch nicht sicher kann</button>
+    <button class="fold" data-act="klfold" aria-expanded="${S.klOpen}"><span>Klausuren (${nk})</span><span aria-hidden="true">${S.klOpen?'⌃':'⌄'}</span></button>
+    ${S.klOpen ? `<div id="stk" style="padding-top:6px">${stackList(false)}</div>${stackSave()}` : ''}
     <p class="note">Quelle der Gesetzestexte: ${esc(d.quelle)}, abgerufen am ${esc(d.abgerufen)}. Die Fragen wurden von einer KI aus dem Wortlaut erstellt und können Fehler enthalten. Im Zweifel gilt der Gesetzestext, der nach jeder Antwort angezeigt wird. Keine Rechtsberatung.</p>`;
-  setDock(`<div class="startbar"><button class="btn" data-act="start" ${pool.length?'':'disabled'}>${pool.length ? 'Start · '+pool.length+' Fragen' : (S.sel.size ? 'Keine offenen Fragen' : 'Paragrafen wählen')}</button></div>${tabbar()}`);
+  setDock(`<div class="startbar"><button class="btn" data-act="start" ${pool?'':'disabled'}>${pool ? 'Start · '+pool+' Fragen'+(raw>pool ? ' (von '+raw+')' : '') : (S.sel.size ? 'Keine offenen Fragen' : 'Paragrafen wählen')}</button></div>${tabbar()}`);
   const q = $('#q'); if(q) q.oninput = e => { S.q = e.target.value; render(true); const n=$('#q'); if(n){ n.focus(); n.setSelectionRange(n.value.length,n.value.length); } };
-  const oo = $('#onlyOpen'); if(oo) oo.onchange = e => { S.onlyOpen = e.target.checked; store.set('rt.onlyOpen', S.onlyOpen); render(true); };
 }
 
-/* ---------- Stacks ---------- */
+/* ---------- Klausuren ---------- */
 function stackList(full){
   const list = stacks().filter(s => s.law === S.law);
-  if(!list.length) return '<div class="card empty">Noch keine Klausuren gespeichert.</div>';
+  if(!list.length) return full ? '' : '<div class="card empty">Noch keine Klausuren gespeichert.</div>';
   return list.map(s => `<div class="stack"><div class="sx"><b>${esc(s.name)}</b><small>${esc(s.paras.map(n=>'§ '+n).join(', '))} · ${countQ(s.paras)} Fragen</small></div>
-    <div class="sa"><button class="sm pri" data-act="stk-start" data-id="${esc(s.id)}">Start</button><button class="sm" data-act="stk-load" data-id="${esc(s.id)}">Laden</button>
-    ${full ? `<button class="sm" data-act="stk-share" data-id="${esc(s.id)}" aria-label="Klausur teilen">Teilen</button>` : ''}
-    ${full ? `<button class="sm del" data-act="stk-del" data-id="${esc(s.id)}" aria-label="Klausur löschen">✕</button>` : ''}</div></div>`).join('');
+    <div class="sa"><button class="sm pri" data-act="stk-start" data-id="${esc(s.id)}">Start</button>
+    ${full ? `<button class="sm" data-act="stk-share" data-id="${esc(s.id)}" aria-label="Klausur teilen">Teilen</button><button class="sm del" data-act="stk-del" data-id="${esc(s.id)}" aria-label="Klausur entfernen">Entfernen</button>`
+           : `<button class="sm" data-act="stk-load" data-id="${esc(s.id)}">Laden</button><button class="sm del" data-act="stk-del" data-id="${esc(s.id)}" aria-label="Klausur entfernen">✕</button>`}</div></div>`).join('');
 }
 function stackSave(){
   return `<div class="save"><input id="sname" type="text" maxlength="40" placeholder="Name für die aktuelle Auswahl" aria-label="Name der Klausur"><button class="sm" data-act="stk-save" ${S.sel.size?'':'disabled'}>Speichern</button></div>`;
 }
 function renderStacks(){
+  const has = stacks().some(s => s.law === S.law);
   $('#app').innerHTML = `${header('Gespeicherte Klausuren')}
     <div class="sec"><span>Deine Klausuren · ${esc(S.law)}</span></div>
     <div id="stk">${stackList(true)}</div>
-    <div class="sec"><span>Aktuelle Auswahl als Klausur speichern</span></div>
-    <p class="mute" style="margin-bottom:8px">${S.sel.size ? S.sel.size+' Paragrafen · '+countQ([...S.sel])+' Fragen gewählt' : 'Wähle zuerst auf „Lernen“ Paragrafen aus.'}</p>
-    ${stackSave()}
-    <p class="note">Mit „Start“ legst du die gespeicherte Klausur los, das Ergebnis kommt in die Historie (Statistik). Mit „Teilen“ erzeugst du einen Link, der die Paragrafen der Klausur enthält. Wer ihn öffnet, startet mit derselben Auswahl. Dein Lernfortschritt wird nie mitgeschickt.</p>`;
+    ${has ? '' : lexEmpty('think', 'Noch keine Klausur gespeichert.')}
+    <p class="note" style="margin-top:12px">Neue Klausuren legst du auf „Lernen“ an: Paragrafen wählen, Namen eingeben, Speichern. Mit „Start“ legst du eine Klausur los, das Ergebnis kommt in die Historie (Statistik). Mit „Teilen“ erzeugst du einen Link mit den Paragrafen. Dein Lernfortschritt wird nie mitgeschickt.</p>
+    <button class="sm" data-act="tab" data-v="home" style="margin-top:10px">Zu „Lernen“</button>`;
   setDock(tabbar());
 }
 function saveStack(){
   const inp = $('#sname'); if(!S.sel.size) return;
   const list = stacks(), name = ((inp&&inp.value)||'').trim() || ('Klausur ' + (list.filter(s=>s.law===S.law).length+1));
   list.push({id:Date.now() + '-' + Math.random().toString(36).slice(2,6), name, law:S.law, paras:order().filter(n=>S.sel.has(n))});
-  store.set('rt.stacks', list); toast('Klausur gespeichert'); render(true);
+  store.set('rt.stacks', list); toast('Klausur gespeichert'); S.klOpen = true; render(true);
 }
 
 /* ---------- Statistik ---------- */
@@ -415,32 +487,36 @@ function renderStats(){
     const quote = a.length ? Math.round(p/(4*a.length)*100) : 0;
     return `<div class="row" style="--cc:var(--c${(gi%5)+1})"><span class="t">${esc(g.name)} <span class="mute" style="font-weight:500">· ${a.length} von ${qs.length} beantwortet</span></span><div class="track"><i style="width:${quote}%"></i></div><span class="v">${a.length?quote+' %':'–'}</span></div>`;
   }).join('');
-  const fl = flags(), kl = klausuren().filter(x => x.law === S.law), shown = S.histAll ? kl : kl.slice(0, 10);
+  const fl = flags(), kl = klausuren().filter(x => S.flt === 'Alle' || x.law === S.flt), shown = S.histAll ? kl : kl.slice(0, 10);
   const histRows = kl.length
     ? shown.map(x => `<div class="stack"><div class="sx"><b>${esc(x.name)}</b><small>${esc(datum(x.t))} · ${x.pts} von ${x.mx} Punkten · ${x.pc} %</small></div><span class="gnote n${x.note}">Note ${x.note}</span></div>`).join('') + (kl.length > 10 ? `<button class="sm" data-act="hist-all">${S.histAll ? 'Weniger anzeigen' : 'Alle ' + kl.length + ' anzeigen'}</button>` : '')
     : '<div class="card empty">Noch keine Klausur abgeschlossen. Starte auf „Klausuren“ eine gespeicherte Klausur mit „Start“.</div>';
-  $('#app').innerHTML = `${header('Dein Lernstand zu ' + esc(S.law))}
+  const chips = ['Alle'].concat(LAWS.map(l => l.id)).map(id => { const l = LAWS.find(x => x.id === id), off = l && !l.ready; return `<button class="chip${S.flt === id ? ' on' : ''}" data-act="flt" data-l="${esc(id)}" ${off ? 'disabled' : ''}>${esc(l ? l.name : id)}${off ? ' · bald' : ''}</button>`; }).join('');
+  $('#app').innerHTML = `${header('Dein Lernstand')}
+    <div class="chips" role="group" aria-label="Gesetz filtern">${chips}</div>
     <div class="kpis"><div class="kpi"><b>${ans.length}</b><span>beantwortet</span></div><div class="kpi"><b>${safe}</b><span>sicher (4 Punkte)</span></div><div class="kpi"><b>${ans.length?pc+' %':'–'}</b><span>Quote</span></div></div>
     <div class="sec"><span>Nach Themenfeld</span></div><div class="card">${rows}</div>
     <div class="sec"><span>Historie · Klausuren</span></div>${histRows}
-    <div class="sec"><span>Weiteres</span></div>
-    <div class="stack"><div class="sx"><b>Historie löschen</b><small>Entfernt alle gespeicherten Klausur-Ergebnisse</small></div><button class="sm del" data-act="hist-clear" ${kl.length?'':'disabled'}>Löschen</button></div>
+    <button class="fold" data-act="mehr" aria-expanded="${S.mehr}" style="margin-top:10px"><span>Mehr</span><span aria-hidden="true">${S.mehr?'⌃':'⌄'}</span></button>
+    ${S.mehr ? `<div class="stack"><div class="sx"><b>Historie löschen</b><small>Entfernt alle gespeicherten Klausur-Ergebnisse</small></div><button class="sm del" data-act="hist-clear" ${kl.length?'':'disabled'}>Löschen</button></div>
     <div class="stack"><div class="sx"><b>Gemeldete Fragen</b><small>${fl.length} markiert</small></div><button class="sm" data-act="flags" ${fl.length?'':'disabled'}>Kopieren</button></div>
-    <div class="stack"><div class="sx"><b>Fortschritt zurücksetzen</b><small>Löscht nur deine Ergebnisse auf diesem Gerät</small></div><button class="sm del" data-act="reset">Zurücksetzen</button></div>`;
+    <div class="stack"><div class="sx"><b>Fortschritt zurücksetzen</b><small>Löscht nur deine Ergebnisse auf diesem Gerät</small></div><button class="sm del" data-act="reset">Zurücksetzen</button></div>` : ''}`;
   setDock(tabbar());
 }
 
 /* ---------- Quiz ---------- */
-function startRun(pool, klausur){
+function startRun(pool, klausur, ordered){
   if(!pool.length) return;
-  S.run = {items:shuffle(pool).map(x => ({q:x.q, p:x.p, order:shuffle([0,1,2,3])})), i:0, ticked:new Set(), checked:false, res:[], klausur:klausur || null, saved:false, egg:false};
-  S.view = 'quiz'; render();
+  let items = shuffle(pool);
+  if(ordered){ const idx = new Map(order().map((n,i) => [n,i])); items = items.slice().sort((a,b) => idx.get(a.p.n) - idx.get(b.p.n)); }
+  S.run = {items:items.map(x => ({q:x.q, p:x.p, order:shuffle([0,1,2,3])})), i:0, ticked:new Set(), checked:false, res:[], klausur:klausur || null, saved:false, egg:false};
+  S.view = 'quiz'; S.hop = true; render();
 }
 function renderQ(){
   const r = S.run, it = r.items[r.i], q = it.q, total = r.items.length;
   const fl = flags().includes(q.id), ticked = r.ticked;
   const last = r.res[r.res.length-1];
-  let h = `<div class="meta"><span>Frage ${r.i+1} / ${total} · ${esc(it.p.label)}</span><span>${r.res.reduce((a,x)=>a+x.pts,0)} Punkte (max. ${total*4})</span></div>
+  let h = `<div class="meta"><span>Frage ${r.i+1} / ${total} · ${esc(it.p.label)}</span><span style="display:flex;align-items:center;gap:8px">${r.res.reduce((a,x)=>a+x.pts,0)} Punkte (max. ${total*4})${miniLexi()}</span></div>
     <div class="bar"><i style="width:${(r.i + (r.checked?1:0))/total*100}%"></i></div>
     <div class="qbox"><div class="lab"><b>?</b>Frage · ${esc(it.p.label)} ${esc(S.law)}</div><h2>${esc(q.f)}</h2><div class="hint">Kreuze alle zutreffenden Aussagen an. Pro Aussage: +1 Punkt, wenn richtig behandelt, sonst −1 (mindestens 0).</div></div>`;
   it.order.forEach(idx => {
@@ -466,14 +542,18 @@ function renderQ(){
   setDock(`<div class="actbar">${r.checked
     ? `<button class="btn" data-act="next">${r.i+1<total ? 'Weiter' : 'Auswertung'}</button>`
     : `<button class="btn alt" data-act="quit" style="flex:1">Beenden</button><button class="btn" data-act="check" style="flex:2">Prüfen</button>`}</div>`);
-  if(!r.checked){ const h2 = $('#app h2'); if(h2){ h2.setAttribute('tabindex','-1'); h2.focus({preventScroll:true}); } }
-  else { const nx = $('[data-act="next"]'); if(nx) nx.focus({preventScroll:true}); }
+  if(!r.checked && S.tour === null){ const h2 = $('#app h2'); if(h2){ h2.setAttribute('tabindex','-1'); h2.focus({preventScroll:true}); } }
+  else if(S.tour === null) { const nx = $('[data-act="next"]'); if(nx) nx.focus({preventScroll:true}); }
 }
 function checkAnswer(){
   const r = S.run, it = r.items[r.i], p = score(it.q, r.ticked);
   r.res.push({id:it.q.id, n:it.p.n, label:it.p.label, pts:p});
   const H = hist(); const o = H[it.q.id] || {n:0}; H[it.q.id] = {last:p, n:o.n+1}; store.set('rt.hist2', H);
   r.checked = true; render();
+}
+function maybeSay(prob){
+  if(S.pop || S.tour !== null || !SET.says || Date.now() - S.lastSay < 60000 || Math.random() >= prob) return;
+  S.lastSay = Date.now(); setTimeout(() => { if(S.view === 'quiz') LX.sayIdx(Math.floor(Math.random()*LX.SAYS.length)); }, 700);
 }
 
 /* ---------- Auswertung ---------- */
@@ -492,15 +572,149 @@ function renderResult(){
   const groups = groupsOf(S.data);
   const colorOf = n => { const gi = groups.findIndex(g => g.ps.some(p => p.n===n)); return '--c'+(((gi<0?0:gi)%5)+1); };
   const C = 2*Math.PI*58, off = C*(1-pc/100);
-  $('#app').innerHTML = `<h1>${r.klausur ? esc(r.klausur.name) : 'Auswertung'}</h1><p class="mute" style="margin-top:2px">${r.res.length}${complete ? '' : ' von ' + r.items.length} Fragen beantwortet</p>
+  const mood = note === 1 ? 'happy' : (note === 5 ? 'sad' : 'normal'), cls = note === 1 ? 'dance-hop' : (note === 5 ? 'slump' : 'nod');
+  const msg = note === 1 ? 'Glänzend! Das war einen Hüpfer wert.' : (note === 5 ? 'Nicht schlimm. Wir üben die Stolpersteine.' : 'Solide. Eine Runde noch?');
+  let conf = ''; if(note === 1){ const cs = ['#2457D6','#F2A93B','#FF8FA3','#4CC38A','#E8782A']; for(let i=0;i<18;i++) conf += `<i style="left:${4+i*5.4}%;background:${cs[i%5]};animation-delay:${(i%6)*.18}s"></i>`; }
+  $('#app').innerHTML = `<div class="conf" aria-hidden="true">${conf}</div><h1>${r.klausur ? esc(r.klausur.name) : 'Auswertung'}</h1><p class="mute" style="margin-top:2px">${r.res.length}${complete ? '' : ' von ' + r.items.length} Fragen beantwortet</p>
+    <div class="rbox">${LX.svg(mood, cls)}<div class="bub u" data-t="u">${msg}</div></div>
     <div class="ring"><svg width="160" height="160" viewBox="0 0 150 150" role="img" aria-label="${pc} Prozent"><circle cx="75" cy="75" r="58" fill="none" stroke="var(--line)" stroke-width="13"/><circle cx="75" cy="75" r="58" fill="none" stroke="var(--acc)" stroke-width="13" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${off}" transform="rotate(-90 75 75)"/><text x="75" y="78" text-anchor="middle" font-size="34" font-weight="700" fill="var(--ink)">${pc} %</text><text x="75" y="100" text-anchor="middle" font-size="13" font-weight="600" fill="var(--mute)">${pts} von ${mx} Punkten</text></svg></div>
     <div class="score"><b>Note ${note}</b><span class="mute">${NOTEN[note-1]} · ${pts} von höchstens ${mx} Punkten</span></div>
     ${saveMsg ? `<p class="note" style="margin-top:4px">${esc(saveMsg)}</p>` : ''}
     <div class="sec"><span>Nach Paragraf</span></div><div class="card">${Object.values(by).map(b => { const q = Math.round(b.pts/b.max*100); return `<div class="row" style="--cc:var(${colorOf(b.n)})"><span class="t">${esc(b.label)}</span><div class="track"><i style="width:${q}%"></i></div><span class="v">${q} %</span></div>`; }).join('')}</div>`;
-  setDock(`<div class="actbar"><button class="btn alt" data-act="home">Startseite</button><button class="btn" data-act="retry" ${weak.length?'':'disabled'}>${weak.length ? weak.length+' Fehler wiederholen' : 'Alles richtig'}</button></div>`);
+  setDock(`<div class="actbar"><button class="btn alt" data-act="home">Zur Auswahl</button><button class="btn" data-act="retry" ${weak.length?'':'disabled'}>${weak.length ? weak.length+' Fehler wiederholen' : 'Alles richtig'}</button></div>`);
   window.scrollTo(0,0);
-  if(complete && r.items.length >= 5 && pts === mx && !r.egg){ r.egg = true; setTimeout(() => { if(S.view === 'result' && S.run === r && !S.sheet) openSheet({kind:'egg'}, '#sheet .btn'); }, 500); }
+  if(complete && r.items.length >= 5 && pts === mx && !r.egg){ r.egg = true; setTimeout(() => { if(S.view === 'result' && S.run === r && !S.sheet && !S.pop && S.tour === null) openSheet({kind:'egg'}, '#sheet .btn'); }, 500); }
 }
+
+/* ---------- Einstellungen ---------- */
+function renderSettingsView(){
+  const gs = fmtNum, back = l => `<button class="backb" data-act="set-back">‹ ${l}</button>`;
+  const seg = (a, cur, opts) => `<div class="seg" role="group">${opts.map(o => `<button class="${cur === o[0] ? 'on' : ''}" data-act="${a}" data-v="${o[0]}" aria-pressed="${cur === o[0]}">${o[1]}</button>`).join('')}</div>`;
+  const row = (id, ic, t, sub) => `<button class="setrow" data-act="set-open" data-s="${id}"><span class="si" aria-hidden="true">${ic}</span><span class="sx"><b>${t}</b><small>${sub}</small></span><span class="arr" aria-hidden="true">›</span></button>`;
+  const sw = (a, on, t, sub) => `<button class="swr" data-act="${a}" role="switch" aria-checked="${on}"><span><b style="font-size:14px;display:block">${t}</b><span class="mute" style="font-size:12px">${sub}</span></span><span class="sw${on ? ' on' : ''}"><i></i></span></button>`;
+  const docPage = k => { const L = LEGAL[k] || {t:'', h:''}; return back('Rechtliches') + `<div class="top"><h1>${L.t}</h1></div><div class="doc">${L.h}<p class="stand">Stand: ${LEGAL.stand || ''}</p></div>`; };
+  let h = '';
+  if(S.set === 'menu'){
+    const G = grades();
+    h = `<div class="top"><h1>Einstellungen</h1></div><div style="margin:6px 0 10px">${back('Zurück')}</div>`
+      + row('grades', '1', 'Notenschlüssel', 'Note 1 ab ' + gs(G[0]) + ' %')
+      + row('learn', '▤', 'Lernen', (SET.lim ? SET.lim + ' Fragen' : 'Alle Fragen') + ' · ' + (SET.ord === 'mix' ? 'gemischt' : 'nach Paragraf'))
+      + row('look', '◐', 'Darstellung', ({system:'System', light:'Hell', dark:'Dunkel'})[SET.theme] + ' · Schrift ' + ({s:'klein', n:'normal', l:'groß'})[SET.font])
+      + row('home', '⌂', 'Zum Home-Bildschirm', isStandalone() ? 'Als App installiert' : 'Anleitung · empfohlen')
+      + row('tour', '?', 'Tutorial', 'Kurze Tour noch einmal ansehen')
+      + row('legal', '§', 'Rechtliches', 'Impressum · Datenschutz · Nutzung · Lizenzen')
+      + '<p class="hint" style="margin-top:10px">Alle Einstellungen gelten nur auf diesem Gerät.</p>';
+  } else if(S.set === 'grades'){
+    const n = NOTEN.slice(0,4), g = S.gdraft.map(x => Number(String(x).trim().replace(',', '.'))), ok = g.every((x,i) => isFinite(x) && x > 0 && x <= 100 && (i === 0 || x < g[i-1]));
+    const ex = Math.round(40/48*1000)/10, G = ok ? g : grades(), nt = noteOf(40, 48, G);
+    h = back('Einstellungen') + `<div class="top"><h1>Notenschlüssel</h1></div><p class="mute" style="margin:2px 0 10px">Note ab Prozent</p>
+      <div class="card">${n.map((x,i) => `<div class="grow"><span class="badge">${i+1}</span><span class="gn">${x}</span><span class="pct"><input type="text" inputmode="decimal" data-gi="${i}" value="${esc(S.gdraft[i])}" aria-label="Note ${i+1} ab Prozent"> %</span></div>`).join('')}<div class="grow"><span class="badge">5</span><span class="gn">Nicht genügend</span><span class="mute" id="g5">unter ${esc(S.gdraft[3])} %</span></div></div>
+      <p class="gerr" id="gerr" role="alert">${esc(S.gerr)}</p>
+      <p class="hint">Beispiel: 40 von 48 Punkten = ${gs(ex)} % = Note ${nt}. Die Werte müssen von Note 1 bis Note 4 kleiner werden. Eine Änderung gilt für neue Ergebnisse, gespeicherte Klausuren behalten ihre Note.</p>
+      <div class="stack2" style="margin-top:14px"><button class="btn" data-act="grades-save">Speichern</button><button class="btn alt" data-act="grades-reset">Standard wiederherstellen (${DEF_GRADES.map(fmtNum).join(' / ')} %)</button></div>`;
+  } else if(S.set === 'learn'){
+    const tot = totalQ(), mn = Math.min(5, tot), val = SET.lim ? Math.min(SET.lim, tot) : tot;
+    h = back('Einstellungen') + `<div class="top"><h1>Lernen</h1></div>
+      <div class="sl">Fragen pro Durchlauf</div><div class="big2" id="limv" aria-live="polite">${SET.lim ? SET.lim + ' Fragen' : 'Alle Fragen (' + tot + ')'}</div>
+      <input type="range" class="rng" id="lim" min="${mn}" max="${tot}" step="1" value="${val}" aria-label="Fragen pro Durchlauf"><div class="tk"><span>${mn}</span><span>${Math.round((mn+tot)/3)}</span><span>${Math.round((mn+tot)*2/3)}</span><span>Alle</span></div>
+      <p class="hint">Ganz rechts bedeutet alle Fragen. Begrenzt „Start“ auf diese Zahl, bei mehr Fragen werden zufällig so viele gezogen. Gespeicherte Klausuren laufen immer vollständig, ohne Begrenzung.</p>
+      <div class="sl">Reihenfolge</div>${seg('set-ord', SET.ord, [['mix','Gemischt'],['para','Nach Paragraf']])}
+      <p class="hint">${SET.ord === 'mix' ? 'Fragen aus allen gewählten Paragrafen durcheinander.' : 'Erst alle Fragen eines Paragrafen, dann der nächste. Gilt auch für Klausuren und „Fehler wiederholen“.'}</p>
+      ${sw('only', S.onlyOpen, 'Nur unsichere Fragen', 'Als Standard beim Start. Gilt auch auf „Lernen“.')}`;
+  } else if(S.set === 'look'){
+    h = back('Einstellungen') + `<div class="top"><h1>Darstellung</h1></div>
+      <div class="sl">Design</div>${seg('set-theme', SET.theme, [['system','System'],['light','Hell'],['dark','Dunkel']])}
+      <p class="hint">„System“ folgt dem iPhone.</p>
+      <div class="sl">Schriftgröße</div>${seg('set-font', SET.font, [['s','Klein'],['n','Normal'],['l','Groß']])}
+      <p class="hint">Gilt für den Inhalt der App.</p>
+      ${sw('set-rm', SET.rm, 'Bewegungen reduzieren', 'Lexi und Animationen bleiben ruhig. Zusätzlich gilt die Einstellung „Bewegung reduzieren“ des iPhones.')}
+      ${sw('set-says', SET.says, 'Sprüche von Lexi', 'Lexi sagt gelegentlich einen kurzen Spruch.')}`;
+  } else if(S.set === 'home'){
+    h = back('Einstellungen') + `<div class="top"><h1>Zum Home-Bildschirm</h1></div><div class="rbox" style="margin-top:6px">${LX.svg('happy')}</div>
+      <div class="card"><b style="font-size:14px">Status</b><div class="mute" style="font-size:13px;margin-bottom:6px">${isStandalone() ? 'Als App installiert.' : 'Im Browser geöffnet. Nach dem Hinzufügen steht hier „Als App installiert“.'}</div>${stepsHtml()}</div>
+      <p class="hint" style="margin-top:10px">Wird empfohlen, du Fuchs.</p>`;
+  } else if(S.set === 'legal'){
+    h = back('Einstellungen') + `<div class="top"><h1>Rechtliches</h1></div><div style="margin-top:10px">${['imp','dsv','nut','lic'].filter(k => LEGAL[k]).map(k => row(k, esc(LEGAL[k].ic), esc(LEGAL[k].t), esc(LEGAL[k].sub))).join('')}</div>`;
+  } else if(LEGAL[S.set]){
+    h = docPage(S.set);
+  }
+  $('#app').innerHTML = h;
+  setDock('');
+}
+
+/* ================= Home-Bildschirm-Hinweis und Tutorial ================= */
+function stepsHtml(){
+  return `<ol class="steps"><li><span class="n">1</span><span>Tippe in Safari auf <b>Teilen</b> ${IC.share}</span></li><li><span class="n">2</span><span>Wähle <b>„Zum Home-Bildschirm“</b></span></li><li><span class="n">3</span><span>Tippe oben rechts auf <b>Hinzufügen</b></span></li></ol><p class="hint">Geht in Safari. Am besten gleich zum Start: Dann bleibt dein Fortschritt am selben Ort.</p>`;
+}
+const TOUR = [
+  {t:'Gesetz wählen', x:'Hier suchst du dir das Gesetz aus. Weitere Gesetze kommen nach und nach dazu.', s:'#app .lawcard'},
+  {t:'Paragrafen wählen', x:'Tippe ganze Themen oder einzelne Paragrafen an. Unten startest du dann mit „Start“.', s:'#app .grp'},
+  {t:'Fragen beantworten', x:'Kreuze alle zutreffenden Aussagen an. Je Aussage gibt es +1 Punkt, wenn du richtig liegst, sonst −1. Höchstens 4 Punkte pro Frage.', s:'#app .opt'},
+  {t:'Ergebnis und Note', x:'Am Ende siehst du Punkte, Prozent und Note. Lexi freut sich mit dir.', s:'#app .ring'},
+  {t:'Klausuren', x:'Speichere eine Auswahl als Klausur. Mit „Start“ legst du sie später mit einem Tippen los.', s:'#app .stack, #app .emp'},
+  {t:'Statistik und Einstellungen', x:'Hier siehst du deinen Lernstand und die Historie. Notenschlüssel und mehr findest du oben unter dem Zahnrad.', s:'#app .kpis'}
+];
+function openIntro(){ S.tour = 'intro'; S.skipNeed = 2 + Math.floor(Math.random()*9); S.skipClicks = 0; S.skipPos = null; store.set('rt.tour', true); }
+function endTour(){
+  clearTimeout(S.qt);
+  if(S.runBackup !== null){ S.run = S.runBackup.run; S.open = S.runBackup.open; S.flt = S.runBackup.flt; S.runBackup = null; }
+  S.tour = null; S.skipPos = null; S.view = 'start';
+}
+function tourSetup(i){
+  if(S.runBackup === null) S.runBackup = {run:S.run, open:new Set(S.open), flt:S.flt};
+  S.sheet = null;
+  if(i === 0){ S.view = 'start'; }
+  else if(i === 1){ S.view = 'home'; S.open.add(0); }
+  else if(i === 2 || i === 3){
+    const items = []; S.data.paragrafen.forEach(p => { if(items.length < 4 && p.q.length) items.push({q:p.q[0], p, order:[0,1,2,3]}); });
+    S.run = {items, i:0, ticked:new Set(), checked:false, res:i === 3 ? items.map((x,k) => ({id:x.q.id, n:x.p.n, label:x.p.label, pts:k === 2 ? 3 : 4})) : [], klausur:null, saved:true, egg:true, demo:true};
+    S.view = i === 2 ? 'quiz' : 'result';
+  }
+  else if(i === 4){ S.view = 'stacks'; }
+  else { S.view = 'stats'; S.flt = 'Alle'; }
+}
+function overlayHtml(){
+  if(S.pop === 'ask') return `<div class="dim"></div><div class="dlg" role="dialog" aria-modal="true" aria-label="Zum Home-Bildschirm hinzufügen">${LX.svg('normal')}<h3>LexCoach zum Home-Bildschirm?</h3><p>Dann öffnet sich die App wie eine echte App, ohne Adressleiste und auch offline.</p><button class="btn two" data-act="a2-yes"><span>Ja, zeig mir wie</span><small>Wird empfohlen, du Fuchs.</small></button><button class="btn alt" data-act="a2-later" style="margin-top:8px">Später</button></div>`;
+  if(S.pop === 'steps') return `<div class="dim"></div><div class="dlg" role="dialog" aria-modal="true" aria-label="Anleitung">${LX.svg('happy')}<h3>So geht’s</h3>${stepsHtml()}<button class="btn" data-act="a2-done">Verstanden</button></div>`;
+  if(S.tour === 'intro') return `<div class="dim"></div><div class="dlg" role="dialog" aria-modal="true" aria-label="Tutorial">${LX.svg('happy')}<h3>Kurze Tour?</h3><p>Ich bin Lexi. In einer Minute zeige ich dir, wie alles funktioniert.</p><button class="btn" data-act="tour-start">Los geht’s</button>${S.skipPos ? '<div class="skipslot"></div>' : '<button class="btn alt" data-act="tour-skip" style="margin-top:8px">Überspringen</button>'}</div>${S.skipPos ? '<button class="btn alt skipf" data-act="tour-skip">Überspringen</button>' : ''}`;
+  if(S.tour === 'quip') return `<div class="quipw"><div class="rb">${LX.svg('normal')}<div class="bub u" data-t="u">Keiner mag Klugscheißer.</div></div></div>`;
+  if(typeof S.tour === 'number'){
+    const s = TOUR[S.tour], last = S.tour === TOUR.length - 1;
+    return `<div class="tblock"></div><div class="spot"></div><div class="tcard" role="dialog" aria-label="Tutorial, Schritt ${S.tour+1} von ${TOUR.length}"><div class="tr">${LX.svg('normal')}<div><h3>${esc(s.t)}</h3><p>${esc(s.x)}</p></div></div><div class="tb"><span class="tdots" aria-hidden="true">${TOUR.map((_,k) => `<i class="${k === S.tour ? 'on' : ''}"></i>`).join('')}</span><span><button class="tlink" data-act="tour-cancel">Abbrechen</button><button class="tbtn" data-act="tour-next">${last ? 'Fertig' : 'Weiter'}</button></span></div></div>`;
+  }
+  return '';
+}
+let lastOv = '';
+function renderOverlay(){
+  const o = $('#ovl'); if(!o) return;
+  const h = overlayHtml(), key = String(S.pop) + '|' + String(S.tour);
+  o.innerHTML = h;
+  const on = !!h; setBg(on || !!S.sheet); LX.block(on);
+  if(!on){ lastOv = ''; return; }
+  LX.paintAll(); placeTour(); placeSkip();
+  const f = o.querySelector('.skipf') || (key !== lastOv ? (o.querySelector('.tbtn, [data-act="a2-yes"], [data-act="a2-done"], [data-act="tour-start"]') || o.querySelector('[data-act]')) : null);
+  lastOv = key; if(f) f.focus({preventScroll:true});
+}
+function placeTour(){
+  if(typeof S.tour !== 'number') return;
+  const sp = $('#ovl .spot'), card = $('#ovl .tcard'); const tg = document.querySelector(TOUR[S.tour].s) || $('#app .sec') || $('#app'); if(!sp || !card) return;
+  const vh = window.innerHeight; let r = tg.getBoundingClientRect();
+  if(r.top < 70 || r.bottom > vh - 190){ window.scrollTo(0, Math.max(0, window.scrollY + r.top - 110)); r = tg.getBoundingClientRect(); }
+  sp.style.left = (r.left - 6) + 'px'; sp.style.top = (r.top - 6) + 'px'; sp.style.width = (r.width + 12) + 'px'; sp.style.height = (r.height + 12) + 'px';
+  const top = (r.top + r.height/2) > vh * .5; card.style.top = top ? 'calc(env(safe-area-inset-top) + 14px)' : 'auto'; card.style.bottom = top ? 'auto' : 'calc(env(safe-area-inset-bottom) + 14px)';
+}
+function placeSkip(){
+  const bt = $('#ovl .skipf'); if(!bt || !S.skipPos) return;
+  const vw = document.documentElement.clientWidth, vh = window.innerHeight, w = bt.offsetWidth, h = bt.offsetHeight, go = $('#ovl [data-act="tour-start"]'), gr = go ? go.getBoundingClientRect() : null;
+  let x, y, k = 0;
+  do {
+    x = 14 + S.skipPos[0] * (vw - 28 - w); y = 70 + S.skipPos[1] * (vh - 150 - h);
+    const hit = gr && x < gr.right + 8 && x + w > gr.left - 8 && y < gr.bottom + 8 && y + h > gr.top - 8;
+    if(!hit) break; S.skipPos = [Math.random(), Math.random()]; k++;
+  } while(k < 30);
+  bt.style.left = x + 'px'; bt.style.top = y + 'px';
+}
+function afterPop(){ if(!store.get('rt.tour', false)) openIntro(); }
 
 /* ================= Teilen ================= */
 function baseUrl(){ return location.origin + location.pathname.replace(/index\.html$/, ''); }
@@ -525,21 +739,9 @@ function openShare(paras, fixed){
   const sel = paras || order().filter(n => S.sel.has(n));
   openSheet({kind:'share', paras:sel, withSel:!!paras, fixed:!!fixed, qr:false, copied:false});
 }
-function renderSettings(root, sh){
-  const rows = NOTEN.slice(0,4).map((n,i) => `<div class="grow"><span class="badge">${i+1}</span><span class="gn">${n}</span><span class="pct"><input type="text" inputmode="decimal" data-gi="${i}" value="${esc(sh.draft[i])}" aria-label="Note ${i+1} ab Prozent"> %</span></div>`).join('');
-  root.innerHTML = `<div class="dim" data-act="close-sheet"></div>
-    <div class="sheet" role="dialog" aria-modal="true" aria-label="Einstellungen"><div class="in">
-      <div class="grab"></div>
-      <div class="sh"><div><h2>Einstellungen</h2><p>Notenschlüssel: Mindestprozent je Note</p></div><button class="xbtn" data-act="close-sheet" aria-label="Schließen">✕</button></div>
-      <div class="card" style="margin-top:12px">${rows}<div class="grow"><span class="badge">5</span><span class="gn">Nicht genügend</span><span class="mute" id="g5">unter ${esc(sh.draft[3])} %</span></div></div>
-      <p class="gerr" id="gerr" role="alert">${sh.err ? esc(sh.err) : ''}</p>
-      <p class="mute" style="font-size:12.5px">Die Werte müssen von Note 1 bis Note 4 kleiner werden. Eine Änderung gilt für neue Ergebnisse, gespeicherte Klausuren behalten ihre Note.</p>
-      <div class="stack2" style="margin-top:12px"><button class="btn" data-act="grades-save">Speichern</button><button class="btn alt" data-act="grades-reset">Standard wiederherstellen (${DEF_GRADES.map(fmtNum).join(' / ')} %)</button></div>
-    </div></div>`;
-}
 function renderEgg(root){
   root.innerHTML = `<div class="dim" data-act="close-sheet"></div>
-    <div class="dlg" role="dialog" aria-modal="true" aria-label="Glückwunsch"><div class="em" aria-hidden="true">🏆</div><h3>Beamter des Tages!</h3><p>Herzlichen Glückwunsch zu 100 Prozent. Hast du überhaupt Freizeit, oder lernst du nur?</p><button class="btn" data-act="close-sheet">Nur noch kurz …</button></div>`;
+    <div class="dlg" role="dialog" aria-modal="true" aria-label="Glückwunsch">${LX.svg('happy', 'dance-hop')}<h3>Beamter des Tages!</h3><p>Herzlichen Glückwunsch zu 100 Prozent. Hast du überhaupt Freizeit, oder lernst du nur?</p><button class="btn" data-act="close-sheet">Nur noch kurz …</button></div>`;
 }
 function renderRef(root, sh){
   const r = REFS[sh.i]; if(!r){ closeSheet(); return; }
@@ -555,16 +757,15 @@ function closeSheet(){ S.sheet = null; renderSheet(); setBg(false); const p = S.
 function renderSheet(){
   const sh = S.sheet, root = $('#sheet');
   if(!sh){ root.innerHTML = ''; return; }
-  if(sh.kind === 'settings') return renderSettings(root, sh);
   if(sh.kind === 'egg') return renderEgg(root);
   if(sh.kind === 'ref') return renderRef(root, sh);
   const had = root.contains(document.activeElement) && document.activeElement.dataset ? document.activeElement.dataset.act : null;
   const url = shareUrl(), n = sh.paras.length;
   const qr = sh.qr ? qrSvg(url) : '';
   root.innerHTML = `<div class="dim" data-act="close-sheet"></div>
-    <div class="sheet" role="dialog" aria-modal="true" aria-label="Rechtstrainer teilen"><div class="in">
+    <div class="sheet" role="dialog" aria-modal="true" aria-label="LexCoach teilen"><div class="in">
       <div class="grab"></div>
-      <div class="sh"><div><h2>${sh.fixed ? 'Klausur teilen' : 'Rechtstrainer teilen'}</h2><p>${sh.fixed ? 'Der Link enthält die Paragrafen der Klausur. Dein Fortschritt wird nicht mitgeschickt.' : 'Andere öffnen den Link in Safari und nutzen die App.'}</p></div><button class="xbtn" data-act="close-sheet" aria-label="Schließen">✕</button></div>
+      <div class="sh"><div><h2>${sh.fixed ? 'Klausur teilen' : 'LexCoach teilen'}</h2><p>${sh.fixed ? 'Der Link enthält die Paragrafen der Klausur. Dein Fortschritt wird nicht mitgeschickt.' : 'Andere öffnen den Link in Safari und nutzen die App.'}</p></div><button class="xbtn" data-act="close-sheet" aria-label="Schließen">✕</button></div>
       ${(!sh.fixed && n) ? `<label class="with" style="margin-top:12px"><input type="checkbox" data-act="with" ${sh.withSel?'checked':''}> Meine Paragrafenauswahl mitsenden (${n} §)</label>` : ''}
       <div class="linkrow"><input id="lnk" readonly value="${esc(url)}" aria-label="Link zur App"><button class="cp ${sh.copied?'done':''}" data-act="copy">${sh.copied?'Kopiert ✓':'Kopieren'}</button></div>
       <div class="stack2">
@@ -581,7 +782,7 @@ async function copyLink(){
   catch(e){ const i = $('#lnk'); if(i){ i.focus(); i.select(); } toast('Link markiert – bitte manuell kopieren'); }
 }
 async function nativeShare(){
-  const data = {title:'Rechtstrainer', text:SHARE_TEXT, url:shareUrl()};
+  const data = {title:'LexCoach', text:SHARE_TEXT, url:shareUrl()};
   if(navigator.share){ try{ await navigator.share(data); } catch(e){ /* abgebrochen */ } }
   else copyLink();
 }
@@ -607,35 +808,81 @@ function closeSheetSilently(){ S.sheet = null; const r = $('#sheet'); if(r) r.in
 /* ================= Aktionen (Event-Delegation) ================= */
 const ACT = {
   tab(b){ S.view = b.dataset.v; render(); },
+  'to-start'(){ S.view = 'start'; render(); },
+  'law-open'(){ S.view = 'home'; render(); },
   law(b){ /* weitere Gesetze folgen */ },
+  poke(){
+    S.msg++; const ix = (S.msg - 1) % LX.SAYS.length;
+    S.hm = ix === LX.ANGRY ? 'angry' : (ix === LX.BARS ? 'bars' : 'normal'); clearTimeout(S.ht);
+    if(S.hm !== 'normal') S.ht = setTimeout(() => { S.hm = 'normal'; if(S.view === 'start' && !S.pop && S.tour === null) render(true); }, S.hm === 'bars' ? 3900 : 3200);
+    render(true);
+  },
   grp(b){ const g = +b.dataset.g; S.open.has(g) ? S.open.delete(g) : S.open.add(g); persistOpen(); render(true); },
   grpall(b, e){ e.stopPropagation(); const g = groupsOf(S.data)[+b.dataset.g], all = g.ps.every(p => S.sel.has(p.n)); g.ps.forEach(p => all ? S.sel.delete(p.n) : S.sel.add(p.n)); persistSel(); render(true); },
   tog(b){ const n = b.dataset.p; S.sel.has(n) ? S.sel.delete(n) : S.sel.add(n); persistSel(); render(true); },
   all(){ S.sel = new Set(order()); persistSel(); render(true); },
   none(){ S.sel = new Set(); persistSel(); render(true); },
-  start(){ startRun(buildPool()); },
+  only(){ S.onlyOpen = !S.onlyOpen; store.set('rt.onlyOpen', S.onlyOpen); render(true); },
+  klfold(){ S.klOpen = !S.klOpen; render(true); },
+  mehr(){ S.mehr = !S.mehr; render(true); },
+  flt(b){ S.flt = b.dataset.l; S.histAll = false; render(true); },
+  start(){
+    let pool = buildPool(); if(SET.lim && pool.length > SET.lim) pool = shuffle(pool).slice(0, SET.lim);
+    startRun(pool, null, SET.ord === 'para');
+  },
   'stk-load'(b){ const s = stacks().find(x => x.id === b.dataset.id); if(!s) return; const valid = new Set(order()); S.sel = new Set(s.paras.filter(n => valid.has(n))); persistSel();
     groupsOf(S.data).forEach((g,gi) => { if(g.ps.some(p => S.sel.has(p.n))) S.open.add(gi); }); persistOpen(); S.view = 'home'; render(); toast('Klausur geladen'); },
   'stk-save'(){ saveStack(); },
-  'stk-del'(b){ if(confirm('Klausur löschen?')){ store.set('rt.stacks', stacks().filter(x => x.id !== b.dataset.id)); render(true); } },
+  'stk-del'(b){ const s = stacks().find(x => x.id === b.dataset.id); if(s && confirm('Klausur „' + s.name + '“ entfernen?')){ store.set('rt.stacks', stacks().filter(x => x.id !== b.dataset.id)); render(true); toast('Klausur entfernt'); } },
   'stk-share'(b){ const s = stacks().find(x => x.id === b.dataset.id); if(s) openShare(s.paras, true); },
   share(){ openShare(null, false); },
-  settings(){ openSheet({kind:'settings', draft:grades().map(fmtNum), err:''}, '#sheet input'); },
-  'grades-save'(){
-    const sh = S.sheet; if(!sh || sh.kind !== 'settings') return;
-    const v = sh.draft.map(x => Number(String(x).trim().replace(',', '.')));
-    if(v.some(x => !isFinite(x) || x <= 0 || x > 100)){ sh.err = 'Bitte vier Zahlen zwischen 1 und 100 eingeben.'; renderSheet(); return; }
-    if(!v.every((x,i) => i === 0 || x < v[i-1])){ sh.err = 'Die Werte müssen von Note 1 bis Note 4 kleiner werden.'; renderSheet(); return; }
-    store.set('rt.grades', v); closeSheet(); render(true); toast('Notenschlüssel gespeichert');
+  settings(){ if(S.view !== 'settings') S.prev = S.view; S.view = 'settings'; S.set = 'menu'; render(); },
+  'set-open'(b){
+    const s = b.dataset.s;
+    if(s === 'tour'){ S.view = 'start'; openIntro(); render(); return; }
+    S.set = s; S.gerr = ''; if(s === 'grades') S.gdraft = grades().map(fmtNum); render();
   },
-  'grades-reset'(){ store.set('rt.grades', DEF_GRADES.slice()); closeSheet(); render(true); toast('Standard-Notenschlüssel wiederhergestellt'); },
+  'set-back'(){
+    if(S.set === 'menu'){ S.view = S.prev === 'settings' ? 'start' : S.prev; }
+    else S.set = ['imp','dsv','nut','lic'].includes(S.set) ? 'legal' : 'menu';
+    S.gerr = ''; render();
+  },
+  'set-ord'(b){ saveSet({ord:b.dataset.v}); render(true); },
+  'set-theme'(b){ saveSet({theme:b.dataset.v}); render(true); },
+  'set-font'(b){ saveSet({font:b.dataset.v}); render(true); },
+  'set-rm'(){ saveSet({rm:!SET.rm}); render(true); },
+  'set-says'(){ saveSet({says:!SET.says}); render(true); },
+  'grades-save'(){
+    const v = S.gdraft.map(x => Number(String(x).trim().replace(',', '.')));
+    if(v.some(x => !isFinite(x) || x < 1 || x > 100)){ S.gerr = 'Bitte vier Zahlen zwischen 1 und 100 eingeben.'; render(true); return; }
+    if(!v.every((x,i) => i === 0 || x < v[i-1])){ S.gerr = 'Die Werte müssen von Note 1 bis Note 4 kleiner werden.'; render(true); return; }
+    store.set('rt.grades', v); S.gerr = ''; S.set = 'menu'; render(); toast('Notenschlüssel gespeichert');
+  },
+  'grades-reset'(){ store.set('rt.grades', DEF_GRADES.slice()); S.gerr = ''; S.gdraft = DEF_GRADES.map(fmtNum); S.set = 'menu'; render(); toast('Standard-Notenschlüssel wiederhergestellt'); },
+  'a2-yes'(){ S.pop = 'steps'; render(true); },
+  'a2-later'(){ store.set('rt.a2hs', true); S.pop = null; render(true); afterPop(); render(true); },
+  'a2-done'(){ store.set('rt.a2hs', true); S.pop = null; render(true); afterPop(); render(true); },
+  'tour-start'(){ S.tour = 0; tourSetup(0); render(); },
+  'tour-skip'(){
+    S.skipClicks++;
+    if(S.skipClicks >= S.skipNeed){ S.tour = null; S.skipPos = null; render(true); toast('Na gut. Die Tour findest du später in den Einstellungen.'); }
+    else { S.skipPos = [Math.random(), Math.random()]; renderOverlay(); }
+  },
+  'tour-next'(){
+    if(S.tour < TOUR.length - 1){ S.tour++; tourSetup(S.tour); render(); }
+    else { endTour(); render(); toast('Viel Erfolg beim Lernen!'); }
+  },
+  'tour-cancel'(){
+    endTour(); S.tour = 'quip'; render(); clearTimeout(S.qt);
+    S.qt = setTimeout(() => { if(S.tour === 'quip'){ S.tour = null; render(true); } }, 2800);
+  },
   ref(b){ const rc = b.getBoundingClientRect(); openSheet({kind:'ref', i:+b.dataset.r, rect:{top:rc.top, bottom:rc.bottom}}, '#sheet .sm'); },
   'stk-start'(b){
     const s = stacks().find(x => x.id === b.dataset.id); if(!s) return;
     const valid = new Set(order()), paras = s.paras.filter(n => valid.has(n)); if(!paras.length){ toast('Diese Klausur enthält keine passenden Paragrafen.'); return; }
     S.sel = new Set(paras); persistSel();
     const pool = []; S.data.paragrafen.forEach(p => { if(S.sel.has(p.n)) p.q.forEach(q => pool.push({q, p})); });
-    startRun(pool, {id:s.id, name:s.name, paras});
+    startRun(pool, {id:s.id, name:s.name, paras}, SET.ord === 'para');
   },
   'hist-all'(){ S.histAll = !S.histAll; render(true); },
   'hist-clear'(){ if(confirm('Gesamte Historie der Klausur-Ergebnisse löschen?')){ store.set('rt.klausur', []); render(true); toast('Historie gelöscht'); } },
@@ -646,49 +893,56 @@ const ACT = {
   qr(){ S.sheet.qr = !S.sheet.qr; renderSheet(); },
   pick(b){ const r = S.run; if(r.checked) return; const i = +b.dataset.i; r.ticked.has(i) ? r.ticked.delete(i) : r.ticked.add(i); b.setAttribute('aria-pressed', r.ticked.has(i)); b.querySelector('.bx').textContent = r.ticked.has(i) ? '✓' : ''; },
   check(){ checkAnswer(); },
-  next(){ const r = S.run; if(r.i+1 < r.items.length){ r.i++; r.ticked = new Set(); r.checked = false; render(); } else { S.view = 'result'; render(); } },
+  next(){ const r = S.run; if(r.i+1 < r.items.length){ r.i++; r.ticked = new Set(); r.checked = false; S.hop = true; render(); maybeSay(.22); } else { S.view = 'result'; render(); } },
   quit(){ const r = S.run; if(!r.res.length){ S.view = 'home'; render(); } else if(confirm('Training beenden? Bisherige Ergebnisse werden angezeigt.')){ S.view = 'result'; render(); } },
   flag(b){ const q = S.run.items[S.run.i].q; let f = flags(); f = f.includes(q.id) ? f.filter(x => x !== q.id) : f.concat(q.id); store.set('rt.flags', f); b.setAttribute('aria-pressed', f.includes(q.id)); toast(f.includes(q.id) ? 'Frage markiert' : 'Markierung entfernt'); },
   home(){ S.view = 'home'; render(); },
-  retry(){ const ids = new Set(S.run.res.filter(x => x.pts < 4).map(x => x.id)); const pool = []; S.data.paragrafen.forEach(p => p.q.forEach(q => { if(ids.has(q.id)) pool.push({q, p}); })); startRun(pool); },
-  flags(){ const txt = 'Gemeldete Fragen (Rechtstrainer): ' + flags().join(', '); (navigator.clipboard ? navigator.clipboard.writeText(txt) : Promise.reject()).then(() => toast('Kopiert'), () => prompt('Bitte kopieren:', txt)); },
+  retry(){ const ids = new Set(S.run.res.filter(x => x.pts < 4).map(x => x.id)); const pool = []; S.data.paragrafen.forEach(p => p.q.forEach(q => { if(ids.has(q.id)) pool.push({q, p}); })); startRun(pool, null, SET.ord === 'para'); },
+  flags(){ const txt = 'Gemeldete Fragen (LexCoach): ' + flags().join(', '); (navigator.clipboard ? navigator.clipboard.writeText(txt) : Promise.reject()).then(() => toast('Kopiert'), () => prompt('Bitte kopieren:', txt)); },
   reset(){ if(confirm('Gesamten Lernfortschritt auf diesem Gerät löschen?')){ store.set('rt.hist2', {}); render(true); toast('Fortschritt zurückgesetzt'); } }
 };
 let last = {act:'', t:-1000};
-const NAV = ['check','next','start','retry','quit','stk-save','stk-load','stk-start','home'];
-const SWAP = {check:'next', next:'check'};   // der zweite Tipp eines Doppeltipps trifft sonst den neuen Knopf an derselben Stelle
+const NAV = ['check','next','start','retry','quit','stk-save','stk-load','stk-start','home','tour-next','tour-start','a2-yes','a2-later','a2-done'];
 document.addEventListener('click', e => {
   const b = e.target.closest('[data-act]'); if(!b || b.disabled) return;
   const a = b.dataset.act;
-  if(NAV.includes(a)){ const t = performance.now(); if(t - last.t < 450 && (a === last.act || SWAP[last.act] === a)) return; last = {act:a, t}; }
+  const t = performance.now();
+  if(t - last.t < 450) return;   // nach einem Navigationsknopf ist kurz jeder weitere Tipp gesperrt (ein Doppeltipp trifft sonst den neuen Knopf an gleicher Stelle)
+  if(NAV.includes(a)) last = {act:a, t};
   const f = ACT[b.dataset.act]; if(f){ f(b, e); }
 });
 document.addEventListener('input', e => {
-  const t = e.target, sh = S.sheet;
-  if(sh && sh.kind === 'settings' && t.dataset && t.dataset.gi !== undefined){ sh.draft[+t.dataset.gi] = t.value; const g = $('#g5'); if(g) g.textContent = 'unter ' + (sh.draft[3] || '…') + ' %'; }
+  const t = e.target;
+  if(S.view === 'settings' && S.set === 'grades' && t.dataset && t.dataset.gi !== undefined){ S.gdraft[+t.dataset.gi] = t.value; const g = $('#g5'); if(g) g.textContent = 'unter ' + (S.gdraft[3] || '…') + ' %'; }
+  if(t.id === 'lim' && S.view === 'settings'){ const tot = totalQ(), v = +t.value; saveSet({lim: v >= tot ? 0 : v}); const l = $('#limv'); if(l) l.textContent = SET.lim ? SET.lim + ' Fragen' : 'Alle Fragen (' + tot + ')'; }
 });
 document.addEventListener('keydown', e => {
   if((e.key === 'Enter' || e.key === ' ') && e.target && e.target.classList && e.target.classList.contains('ref')){ e.preventDefault(); e.target.click(); return; }
   if(e.key === 'Enter' && e.target && e.target.dataset && e.target.dataset.gi !== undefined){ e.preventDefault(); ACT['grades-save'](); return; }
+  if(e.key === 'Escape' && S.pop === 'ask'){ ACT['a2-later'](); return; }
   if(e.key === 'Escape' && S.sheet){ closeSheet(); return; }
-  if(e.key === 'Tab' && S.sheet){
-    const f = [...document.querySelectorAll('#sheet button, #sheet input, #sheet a')].filter(x => !x.disabled); if(!f.length) return;
-    const first = f[0], last = f[f.length-1], inside = $('#sheet').contains(document.activeElement);
+  if(e.key === 'Tab' && (S.sheet || $('#ovl').firstChild)){
+    const sel = S.sheet ? '#sheet button, #sheet input, #sheet a' : '#ovl button';
+    const f = [...document.querySelectorAll(sel)].filter(x => !x.disabled); if(!f.length) return;
+    const first = f[0], last = f[f.length-1], inside = (S.sheet ? $('#sheet') : $('#ovl')).contains(document.activeElement);
     if(!inside || (e.shiftKey && document.activeElement === first)){ e.preventDefault(); (e.shiftKey ? last : first).focus(); }
     else if(!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
   }
   if(e.key === 'Enter' && e.target && e.target.id === 'sname'){ e.preventDefault(); ACT['stk-save'](); }
 });
 window.addEventListener('hashchange', () => { if(S.data && applyHash(false)) render(); });
+window.addEventListener('resize', () => { if(typeof S.tour === 'number') placeTour(); if(S.skipPos) placeSkip(); LX.paintAll(); });
 
 /* ================= Start ================= */
 (async function boot(){
-  try{ S.data = await loadLaw(S.law); await loadRefs(); }
-  catch(e){ $('#app').innerHTML = '<h1>Rechtstrainer</h1><p class="mute">Daten konnten nicht geladen werden. Bitte Verbindung prüfen und neu öffnen.</p>'; return; }
+  applySettings();
+  try{ S.data = await loadLaw(S.law); await Promise.all([loadRefs(), loadNews()]); }
+  catch(e){ $('#app').innerHTML = '<h1>LexCoach</h1><p class="mute">Daten konnten nicht geladen werden. Bitte Verbindung prüfen und neu öffnen.</p>'; return; }
   const valid = new Set(order());
   S.sel = new Set(store.get('rt.sel.'+S.law, []).filter(n => valid.has(n)));
   S.open = new Set(store.get('rt.open.'+S.law, []));
-  applyHash(true);
+  S.view = applyHash(true) ? 'home' : 'start';
+  if(!isStandalone() && !store.get('rt.a2hs', false)) S.pop = 'ask'; else afterPop();
   render();
 })();
 if('serviceWorker' in navigator && location.protocol.startsWith('http')){
