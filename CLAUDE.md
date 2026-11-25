@@ -27,6 +27,7 @@ Die App wurde am 2026-11-24 aus dem Repo `foto-text-zu-word` (Foto-Text-App, una
 
 ## Dateien
 - `index.html` – ganze App. `sw.js` – Offline-Cache (Netz zuerst). `manifest.webmanifest`, Icons.
+- `daten/verweise.json` – Kurzbeschreibungen der Verweise (Pop-up), aus RIS-Texten erstellt, `match` = exakter Text in den Aussagen.
 - `daten/bdg.json` – erzeugt, nicht von Hand ändern. Quelle: `tools/fragen_bdg.py` (Fragen) und RIS-Texte.
 - `tools/fetch_ris.py` holt Gesetzestexte, `tools/build_data.py` baut die JSON, `tools/make_icons.py` die Icons.
 - `BACKLOG.md` – Wünsche und Stand. `README.md` – Bedienung und Ablauf.
@@ -47,6 +48,10 @@ Fragen-IDs `bdg-<§>-<Nr>` nie umnummern, neue Fragen hinten anhängen (sonst pa
 - **Pull Requests nicht selbst per API mergen:** Ein per API gemergter Pull Request hat die Veröffentlichung (GitHub Pages) nicht ausgelöst, ein vom Nutzer im Browser gemergter schon. Pull Request erstellen, Nutzer mergt selbst. Das Pages-Anfordern (`pages/builds`) ist in der Umgebung gesperrt.
 - Gesetzestexte nie mit `head -n -1` o. ä. beschneiden, sonst fehlt der letzte Absatz (so ging § 44 Abs. 3 beim Lesen verloren). Immer die ganze Datei lesen oder `daten/bdg.json` (Feld `text`) nutzen.
 - Prüfen großer Mengen (alle Fragen gegen Gesetzestext, Code-Review) an stärkere Hilfsagenten delegieren (Modell Opus, nur lesen), Befunde danach selbst gegen den Gesetzestext gegenprüfen.
+
+## Stand (2026-11-25)
+- **Wünsche 11 bis 14, 16, 17 umgesetzt** (Pull Request offen, Nutzer mergt): Verweis-Pop-ups, Prozent/Maximum/Note, Zahnrad mit Notenschlüssel (Standard 87,5/75/62,5/50), Easter Egg bei 100 % (ab 5 Fragen), Klausuren mit Start und Historie (nur vollständig beantwortete, bewusst gestartete Klausuren). „Stack“ heißt überall „Klausur“. Offen: Pop-up für Verweise auf Absätze („Abs. 1“), Export/Import der Historie.
+- **Alt-Repo:** Aufräum-PR #4 in `foto-text-zu-word` (löscht `lernapp/`) wartet auf Merge durch den Nutzer.
 
 ## Stand (2026-11-24, ca. 23:05 UTC)
 - **Apps getrennt (Wunsch 10):** Dieses Repo `lernapp` enthält den vollen Verlauf der App samt allen Korrekturen aus beiden Prüfungen (Stand des früheren Pull Requests #3). Adresse künftig `https://mathiasweb-create.github.io/lernapp/`. Alte Adresse (`…/foto-text-zu-word/lernapp/`) wird nicht weiter gepflegt.

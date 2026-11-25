@@ -1,0 +1,117 @@
+{
+ "stand": "2026-11-25",
+ "refs": [
+  {
+   "match": "§ 42a",
+   "gesetz": "BDG",
+   "titel": "§ 42a BDG · Verwendungen mit besonderer Verbundenheit zu Österreich",
+   "text": "§ 42a BDG betrifft Verwendungen, die ein Verhältnis besonderer Verbundenheit zu Österreich voraussetzen. Dazu zählen insbesondere die Teilnahme an hoheitlichen Aufgaben und die Wahrnehmung allgemeiner Belange des Staates.",
+   "ris": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008470&Paragraf=42a"
+  },
+  {
+   "match": "§ 76",
+   "gesetz": "BDG",
+   "titel": "§ 76 BDG · Pflegefreistellung",
+   "text": "§ 76 BDG regelt die Pflegefreistellung: Dienstfreistellung, wenn der Beamte wegen Pflege eines erkrankten oder verunglückten nahen Angehörigen, Betreuung oder Begleitung seines Kindes nachweislich am Dienst verhindert ist. Er legt auch fest, wer als naher Angehöriger gilt und wie groß das jährliche Ausmaß ist.",
+   "ris": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008470&Paragraf=76"
+  },
+  {
+   "match": "§ 12 Abs. 3 GehG",
+   "gesetz": "GehG",
+   "titel": "§ 12 GehG · Besoldungsdienstalter",
+   "text": "§ 12 Abs. 3 GehG erlaubt, Zeiten einer nützlichen Berufstätigkeit oder eines nützlichen Verwaltungspraktikums als Vordienstzeiten für das Besoldungsdienstalter anzurechnen. Nützlich ist eine Tätigkeit, wenn die dabei gewonnene Erfahrung die Einarbeitung am neuen Arbeitsplatz überwiegend erspart oder einen erheblich höheren Arbeitserfolg erwarten lässt.",
+   "ris": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008163&Paragraf=12"
+  },
+  {
+   "match": "§§ 92, 201 bis 217, 312 und 312a StGB",
+   "gesetz": "StGB",
+   "titel": "§§ 92, 201–217, 312, 312a StGB · Quälen, Sexualdelikte, Folter",
+   "text": "Gemeint sind: Quälen oder Vernachlässigen unmündiger, jüngerer oder wehrloser Personen (§ 92), Delikte gegen die sexuelle Integrität und Selbstbestimmung von der Vergewaltigung (§ 201) bis zum grenzüberschreitenden Prostitutionshandel (§ 217), Quälen oder Vernachlässigen eines Gefangenen (§ 312) und Folter (§ 312a).",
+   "ris": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10002296&Paragraf=92"
+  },
+  {
+   "match": "§ 27 Abs. 1 StGB",
+   "gesetz": "StGB",
+   "titel": "§ 27 StGB · Amtsverlust und andere Rechtsfolgen der Verurteilung",
+   "text": "§ 27 Abs. 1 StGB regelt den Amtsverlust: Unter bestimmten Voraussetzungen verliert ein Beamter durch die Verurteilung eines inländischen Gerichts wegen einer Vorsatztat sein Amt.",
+   "ris": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10002296&Paragraf=27"
+  },
+  {
+   "match": "§ 81 Abs. 1 Z 3",
+   "gesetz": "BDG",
+   "titel": "§ 81 BDG · Begriff und Arten der Leistungsfeststellung",
+   "text": "§ 81 Abs. 1 Z 3 BDG betrifft die Leistungsfeststellung wegen nicht aufgewiesenem Arbeitserfolg im Beurteilungszeitraum.",
+   "ris": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008470&Paragraf=81"
+  },
+  {
+   "match": "§ 53a",
+   "gesetz": "BDG",
+   "titel": "§ 53a BDG · Schutz vor Benachteiligung",
+   "text": "§ 53a BDG schützt Beamte, die im guten Glauben einen begründeten Verdacht einer strafbaren Handlung nach dem BAKG melden oder einen Hinweis nach dem HSchG (Hinweisgeberschutzgesetz) geben, vor Benachteiligung durch den Dienstgeber. Das gilt auch für Meldungen und Hinweise an die dort genannten internen und externen Stellen.",
+   "ris": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008470&Paragraf=53a"
+  },
+  {
+   "match": "§ 47a Z 2 lit. b",
+   "gesetz": "BDG",
+   "titel": "§ 47a BDG · Begriffsbestimmungen",
+   "text": "§ 47a Z 2 lit. b BDG zählt zur Mehrdienstleistung jene Teile des Journaldienstes, während derer der Beamte verpflichtet ist, seiner dienstlichen Tätigkeit nachzugehen.",
+   "ris": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008470&Paragraf=47a"
+  },
+  {
+   "match": "§§ 50a, 50b, 50e, 50f oder 50g",
+   "gesetz": "BDG",
+   "titel": "§§ 50a, 50b, 50e, 50f, 50g BDG · Herabsetzung der Wochendienstzeit",
+   "text": "Diese Bestimmungen regeln Arten der Herabsetzung der regelmäßigen Wochendienstzeit: aus beliebigem Anlass (§ 50a), zur Betreuung eines Kindes (§ 50b), Pflegeteilzeit (§ 50e), Wiedereingliederungsteilzeit nach längerer Krankheit oder Unfall (§ 50f) und zur Erlangung einer Teilpension (§ 50g).",
+   "ris": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008470&Paragraf=50a"
+  },
+  {
+   "match": "§ 75c",
+   "gesetz": "BDG",
+   "titel": "§ 75c BDG · Karenzurlaub zur Pflege eines behinderten Kindes oder eines pflegebedürftigen Angehörigen",
+   "text": "§ 75c BDG regelt einen Urlaub unter Entfall der Bezüge (Karenzurlaub) für Beamte, die sich der Pflege eines behinderten Kindes im gemeinsamen Haushalt oder eines pflegebedürftigen nahen Angehörigen mit Anspruch auf Pflegegeld widmen.",
+   "ris": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008470&Paragraf=75c"
+  },
+  {
+   "match": "§ 15d Abs. 2 Z 1 bis 4 MSchG",
+   "gesetz": "MSchG",
+   "titel": "§ 15d MSchG · Karenz bei Verhinderung des anderen Elternteils",
+   "text": "§ 15d Abs. 2 Z 1 bis 4 MSchG nennt als unvorhersehbare und unabwendbare Ereignisse: Tod, Aufenthalt in einer Heil- und Pflegeanstalt, Verbüßung einer Freiheitsstrafe oder andere behördlich angeordnete Anhaltung sowie schwere Erkrankung.",
+   "ris": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008464&Paragraf=15d"
+  },
+  {
+   "match": "§ 68",
+   "gesetz": "BDG",
+   "titel": "§ 68 BDG · Verbrauch des Erholungsurlaubes",
+   "text": "§ 68 BDG regelt, wie der Erholungsurlaub kalendermäßig festgelegt und verbraucht wird: unter Berücksichtigung der dienstlichen Interessen und mit Rücksicht auf die persönlichen Verhältnisse. Er enthält auch den „persönlichen Feiertag“, einen Urlaubstag pro Jahr, den der Beamte einseitig festlegen kann.",
+   "ris": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008470&Paragraf=68"
+  },
+  {
+   "match": "§ 71 Abs. 6",
+   "gesetz": "BDG",
+   "titel": "§ 71 BDG · Erkrankung während des Erholungsurlaubes",
+   "text": "§ 71 Abs. 6 BDG wendet die Regeln über eine Erkrankung während des Erholungsurlaubes auch auf die notwendige Pflege eines Angehörigen (§ 76 Abs. 1 Z 1 und Abs. 4) während des Urlaubs an. Der Nachweis betrifft dann den Pflegebedarf des Angehörigen.",
+   "ris": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008470&Paragraf=71"
+  },
+  {
+   "match": "StPO",
+   "gesetz": "StPO",
+   "titel": "StPO · Strafprozeßordnung 1975",
+   "text": "Die Strafprozessordnung regelt das Verfahren zur Aufklärung von Straftaten, die Verfolgung verdächtiger Personen und die damit zusammenhängenden Entscheidungen. Das Strafverfahren beginnt mit Ermittlungen von Kriminalpolizei oder Staatsanwaltschaft.",
+   "ris": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10002326"
+  },
+  {
+   "match": "§ 20 Abs. 1 Z 3a",
+   "gesetz": "BDG",
+   "titel": "§ 20 BDG · Auflösung des Dienstverhältnisses",
+   "text": "§ 20 Abs. 1 Z 3a BDG nennt als Auflösungsgrund des Dienstverhältnisses die rechtskräftige Verurteilung durch ein inländisches Gericht wegen bestimmter Vorsatzdelikte nach den §§ 92, 201 bis 217, 312 und 312a StGB.",
+   "ris": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008470&Paragraf=20"
+  },
+  {
+   "match": "§ 26 Abs. 5 PG 1965",
+   "gesetz": "PG",
+   "titel": "§ 26 PG 1965 · Ergänzungszulage",
+   "text": "Nach § 26 Abs. 5 PG 1965 werden die Mindestsätze für die Ergänzungszulage durch Verordnung der Bundeskanzlerin oder des Bundeskanzlers festgesetzt. Sie sollen den notwendigen Lebensunterhalt des Beamten, seiner Angehörigen und Hinterbliebenen sichern.",
+   "ris": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008210&Paragraf=26"
+  }
+ ]
+}
