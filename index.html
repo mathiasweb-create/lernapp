@@ -345,7 +345,7 @@ const S = {view:'start', law:(() => { const l = store.get('rt.law','BDG'); retur
 const hist   = () => store.get('rt.hist2', {});
 const stacks = () => store.get('rt.stacks', []).filter(s => s && typeof s.id === 'string' && typeof s.name === 'string' && Array.isArray(s.paras));
 const flags  = () => store.get('rt.flags', []);
-const klausuren = () => store.get('rt.klausur', []).filter(x => x && typeof x.pts === 'number' && typeof x.mx === 'number' && typeof x.name === 'string');
+const klausuren = () => store.get('rt.klausur', []).filter(x => x && typeof x.pts === 'number' && typeof x.mx === 'number' && typeof x.name === 'string' && Number.isFinite(x.pc) && Number.isInteger(x.note) && x.note >= 1 && x.note <= 5 && typeof x.law === 'string');
 function grades(){ const g = store.get('rt.grades', DEF_GRADES); return (g.length === 4 && g.every((x,i) => typeof x === 'number' && isFinite(x) && x > 0 && x <= 100 && (i === 0 || x < g[i-1]))) ? g : DEF_GRADES; }
 function noteOf(p, m, g){ for(let i=0;i<4;i++){ if(p*100 >= g[i]*m - 1e-9) return i+1; } return 5; }
 const fmtNum = x => String(x).replace('.', ',');
@@ -617,9 +617,9 @@ function renderSettingsView(){
     h = back('Einstellungen') + `<div class="top"><h1>Lernen</h1></div>
       <div class="sl">Fragen pro Durchlauf</div><div class="big2" id="limv" aria-live="polite">${SET.lim ? SET.lim + ' Fragen' : 'Alle Fragen (' + tot + ')'}</div>
       <input type="range" class="rng" id="lim" min="${mn}" max="${tot}" step="1" value="${val}" aria-label="Fragen pro Durchlauf"><div class="tk"><span>${mn}</span><span>${Math.round((mn+tot)/3)}</span><span>${Math.round((mn+tot)*2/3)}</span><span>Alle</span></div>
-      <p class="hint">Ganz rechts bedeutet alle Fragen. Begrenzt „Start“ auf diese Zahl, bei mehr Fragen werden zufällig so viele gezogen. Gespeicherte Klausuren laufen immer vollständig.</p>
+      <p class="hint">Ganz rechts bedeutet alle Fragen. Begrenzt „Start“ auf diese Zahl, bei mehr Fragen werden zufällig so viele gezogen. Gespeicherte Klausuren laufen immer vollständig, ohne Begrenzung.</p>
       <div class="sl">Reihenfolge</div>${seg('set-ord', SET.ord, [['mix','Gemischt'],['para','Nach Paragraf']])}
-      <p class="hint">${SET.ord === 'mix' ? 'Fragen aus allen gewählten Paragrafen durcheinander.' : 'Erst alle Fragen eines Paragrafen, dann der nächste.'}</p>
+      <p class="hint">${SET.ord === 'mix' ? 'Fragen aus allen gewählten Paragrafen durcheinander.' : 'Erst alle Fragen eines Paragrafen, dann der nächste. Gilt auch für Klausuren und „Fehler wiederholen“.'}</p>
       ${sw('only', S.onlyOpen, 'Nur unsichere Fragen', 'Als Standard beim Start. Gilt auch auf „Lernen“.')}`;
   } else if(S.set === 'look'){
     h = back('Einstellungen') + `<div class="top"><h1>Darstellung</h1></div>
@@ -657,11 +657,11 @@ const TOUR = [
 function openIntro(){ S.tour = 'intro'; S.skipNeed = 2 + Math.floor(Math.random()*9); S.skipClicks = 0; S.skipPos = null; store.set('rt.tour', true); }
 function endTour(){
   clearTimeout(S.qt);
-  if(S.runBackup !== null){ S.run = S.runBackup.run; S.runBackup = null; }
+  if(S.runBackup !== null){ S.run = S.runBackup.run; S.open = S.runBackup.open; S.flt = S.runBackup.flt; S.runBackup = null; }
   S.tour = null; S.skipPos = null; S.view = 'start';
 }
 function tourSetup(i){
-  if(S.runBackup === null) S.runBackup = {run:S.run};
+  if(S.runBackup === null) S.runBackup = {run:S.run, open:new Set(S.open), flt:S.flt};
   S.sheet = null;
   if(i === 0){ S.view = 'start'; }
   else if(i === 1){ S.view = 'home'; S.open.add(0); }
@@ -854,7 +854,7 @@ const ACT = {
   'set-says'(){ saveSet({says:!SET.says}); render(true); },
   'grades-save'(){
     const v = S.gdraft.map(x => Number(String(x).trim().replace(',', '.')));
-    if(v.some(x => !isFinite(x) || x <= 0 || x > 100)){ S.gerr = 'Bitte vier Zahlen zwischen 1 und 100 eingeben.'; render(true); return; }
+    if(v.some(x => !isFinite(x) || x < 1 || x > 100)){ S.gerr = 'Bitte vier Zahlen zwischen 1 und 100 eingeben.'; render(true); return; }
     if(!v.every((x,i) => i === 0 || x < v[i-1])){ S.gerr = 'Die Werte müssen von Note 1 bis Note 4 kleiner werden.'; render(true); return; }
     store.set('rt.grades', v); S.gerr = ''; S.set = 'menu'; render(); toast('Notenschlüssel gespeichert');
   },
@@ -882,7 +882,7 @@ const ACT = {
     const valid = new Set(order()), paras = s.paras.filter(n => valid.has(n)); if(!paras.length){ toast('Diese Klausur enthält keine passenden Paragrafen.'); return; }
     S.sel = new Set(paras); persistSel();
     const pool = []; S.data.paragrafen.forEach(p => { if(S.sel.has(p.n)) p.q.forEach(q => pool.push({q, p})); });
-    startRun(pool, {id:s.id, name:s.name, paras});
+    startRun(pool, {id:s.id, name:s.name, paras}, SET.ord === 'para');
   },
   'hist-all'(){ S.histAll = !S.histAll; render(true); },
   'hist-clear'(){ if(confirm('Gesamte Historie der Klausur-Ergebnisse löschen?')){ store.set('rt.klausur', []); render(true); toast('Historie gelöscht'); } },
@@ -897,17 +897,18 @@ const ACT = {
   quit(){ const r = S.run; if(!r.res.length){ S.view = 'home'; render(); } else if(confirm('Training beenden? Bisherige Ergebnisse werden angezeigt.')){ S.view = 'result'; render(); } },
   flag(b){ const q = S.run.items[S.run.i].q; let f = flags(); f = f.includes(q.id) ? f.filter(x => x !== q.id) : f.concat(q.id); store.set('rt.flags', f); b.setAttribute('aria-pressed', f.includes(q.id)); toast(f.includes(q.id) ? 'Frage markiert' : 'Markierung entfernt'); },
   home(){ S.view = 'home'; render(); },
-  retry(){ const ids = new Set(S.run.res.filter(x => x.pts < 4).map(x => x.id)); const pool = []; S.data.paragrafen.forEach(p => p.q.forEach(q => { if(ids.has(q.id)) pool.push({q, p}); })); startRun(pool); },
+  retry(){ const ids = new Set(S.run.res.filter(x => x.pts < 4).map(x => x.id)); const pool = []; S.data.paragrafen.forEach(p => p.q.forEach(q => { if(ids.has(q.id)) pool.push({q, p}); })); startRun(pool, null, SET.ord === 'para'); },
   flags(){ const txt = 'Gemeldete Fragen (LexCoach): ' + flags().join(', '); (navigator.clipboard ? navigator.clipboard.writeText(txt) : Promise.reject()).then(() => toast('Kopiert'), () => prompt('Bitte kopieren:', txt)); },
   reset(){ if(confirm('Gesamten Lernfortschritt auf diesem Gerät löschen?')){ store.set('rt.hist2', {}); render(true); toast('Fortschritt zurückgesetzt'); } }
 };
 let last = {act:'', t:-1000};
 const NAV = ['check','next','start','retry','quit','stk-save','stk-load','stk-start','home','tour-next','tour-start','a2-yes','a2-later','a2-done'];
-const SWAP = {check:'next', next:'check'};   // der zweite Tipp eines Doppeltipps trifft sonst den neuen Knopf an derselben Stelle
 document.addEventListener('click', e => {
   const b = e.target.closest('[data-act]'); if(!b || b.disabled) return;
   const a = b.dataset.act;
-  if(NAV.includes(a)){ const t = performance.now(); if(t - last.t < 450 && (a === last.act || SWAP[last.act] === a)) return; last = {act:a, t}; }
+  const t = performance.now();
+  if(t - last.t < 450) return;   // nach einem Navigationsknopf ist kurz jeder weitere Tipp gesperrt (ein Doppeltipp trifft sonst den neuen Knopf an gleicher Stelle)
+  if(NAV.includes(a)) last = {act:a, t};
   const f = ACT[b.dataset.act]; if(f){ f(b, e); }
 });
 document.addEventListener('input', e => {
