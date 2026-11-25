@@ -413,7 +413,7 @@ function renderStart(){
 /* ---------- Lernen ---------- */
 function tile(p, cc){
   const on = S.sel.has(p.n);
-  return `<button class="tile ${on?'sel':''}" data-act="tog" data-p="${esc(p.n)}" style="--cc:var(${cc})" aria-pressed="${on}"><span class="ck">✓</span><b>${esc(p.label)}</b><span class="tt">${esc(p.title)}</span><span class="qn">${p.q.length} Fragen</span></button>`;
+  return `<button class="tile ${on?'sel':''}" data-act="tog" data-p="${esc(p.n)}" style="--cc:var(${cc})" aria-pressed="${on}"><span class="ck">✓</span><b>${esc(p.label)}</b><span class="tt">${esc(p.title)}</span><span class="qn">${p.q.length} ${p.q.length === 1 ? "Frage" : "Fragen"}</span></button>`;
 }
 function renderHome(){
   const d = S.data, groups = groupsOf(d), total = totalQ(), h = hist();

@@ -3,7 +3,7 @@
 Diese Datei liest ein neues Chat-Fenster zuerst. Sie ersetzt das Gedächtnis des alten Fensters. Aktuell halten, wenn sich etwas Wichtiges ändert.
 
 ## Worum es geht
-iPhone-taugliche Lern-App (PWA) mit Multiple-Choice-Fragen zu österreichischen Gesetzen. Gewählte Paragrafen werden abgefragt, 4 Aussagen je Frage (0 bis 4 richtig), Punkte 0 bis 4. Erstes Gesetz: BDG 1979 (18 Paragrafen, 56 Fragen). Später StGB, SPG, VStG. Die App soll auch andere iPhone-Nutzer per Link erreichen.
+iPhone-taugliche Lern-App (PWA) mit Multiple-Choice-Fragen zu österreichischen Gesetzen. Gewählte Paragrafen werden abgefragt, 4 Aussagen je Frage (0 bis 4 richtig), Punkte 0 bis 4. Erstes Gesetz: BDG 1979 (60 Themen, 186 Fragen laut Entwurf; siehe BACKLOG Wunsch 36). Später StGB, SPG, VStG. Die App soll auch andere iPhone-Nutzer per Link erreichen.
 Eigentümer: GitHub-Konto `mathiasweb-create` (Name im Impressum: Mathias Blanck). Repo: `lernapp` (öffentlich, App im Wurzelordner). Live (GitHub Pages, baut `main`): `https://mathiasweb-create.github.io/lernapp/`.
 Die App wurde am 2026-11-24 aus dem Repo `foto-text-zu-word` (Foto-Text-App, unabhängig) herausgelöst. Das Repo `mathiasweb-create/Pruefungssimulation-` ist unbenutzt; das Löschen ist über die Umgebung nicht möglich (Proxy sperrt, HTTP 403), der Nutzer muss es selbst in GitHub löschen (Settings › Danger Zone).
 Bedienbare Vorschau für neue Entwürfe (Artefakt, wird bei Änderungen aktualisiert): https://claude.ai/artifact/SWuLN8FVZr3e7g9jZyxNyH. Organigramm (privat): https://claude.ai/artifact/DQNYxT7s9U4vBWsFMbtxK4
@@ -40,8 +40,11 @@ Bedienbare Vorschau für neue Entwürfe (Artefakt, wird bei Änderungen aktualis
 
 ## Befehle
 ```
-python3 -I tools/fetch_ris.py 10008470 /tmp/ris_bdg 4,10,11,20,38,39,43,43a,44,46,49,53,56,65,76,94,112,131
-python3 -I tools/build_data.py /tmp/ris_bdg daten/bdg.json
+python3 -I tools/fetch_ris.py 10008470 /tmp/ris_all <alle BDG-Paragrafen der Liste in tools/build_data.py (GRUPPEN)>
+python3 -I tools/fetch_ris.py 10000227 /tmp/ris_all/ahg 1,2,3,4      # AHG
+python3 -I tools/fetch_ris.py 10000442 /tmp/ris_all/ohg 1,2,3,4,5    # OHG
+python3 -I tools/fetch_ris.py 10000978 /tmp/ris_all/polbeg 1,2,3,4   # PolBEG
+python3 -I tools/build_data.py /tmp/ris_all daten/bdg.json
 python3 -m http.server 8123      # Testserver im Repo-Ordner
 NODE_PATH=$(npm root -g) timeout 280 node tools/test_app.js      # Test (Server muss laufen)
 ```

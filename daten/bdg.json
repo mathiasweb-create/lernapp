@@ -7,17 +7,25 @@
   {
    "name": "Dienstverhältnis",
    "paras": [
+    "2",
     "4",
+    "5",
+    "7",
     "10",
     "11",
-    "20"
+    "20",
+    "21",
+    "22"
    ]
   },
   {
    "name": "Versetzung & Zuteilung",
    "paras": [
+    "36",
     "38",
-    "39"
+    "39",
+    "40",
+    "41"
    ]
   },
   {
@@ -26,29 +34,109 @@
     "43",
     "43a",
     "44",
+    "45",
+    "45a",
+    "45b",
     "46",
-    "49",
+    "47",
+    "52",
     "53",
-    "56"
+    "54",
+    "55",
+    "56",
+    "59",
+    "60"
+   ]
+  },
+  {
+   "name": "Dienstzeit & Bezüge",
+   "paras": [
+    "47a",
+    "48",
+    "48a",
+    "48c",
+    "49",
+    "50",
+    "51",
+    "145",
+    "62",
+    "63"
    ]
   },
   {
    "name": "Urlaub & Freistellung",
    "paras": [
     "65",
-    "76"
+    "68",
+    "69",
+    "70",
+    "71",
+    "74",
+    "75",
+    "75d",
+    "76",
+    "78e"
    ]
   },
   {
    "name": "Disziplinarrecht",
    "paras": [
+    "90",
+    "92",
     "94",
+    "96",
+    "109",
     "112",
     "131"
+   ]
+  },
+  {
+   "name": "Haftung",
+   "paras": [
+    "AHG",
+    "Regress",
+    "OHG",
+    "PolBEG"
    ]
   }
  ],
  "paragrafen": [
+  {
+   "n": "2",
+   "label": "§ 2",
+   "title": "Begriff",
+   "stand": "29.05.2002",
+   "text": "(1) Ernennung ist die bescheidmäßige Verleihung einer Planstelle.\n(2) Abweichend vom Abs. 1 bedarf es keiner Ernennung, wenn\n1. ein Beamter durch Verwendungsänderung oder durch Versetzung von seinem bisherigen Arbeitsplatz abberufen wird,\n2. die bisherige und die neue Planstelle des Beamten derselben Verwendungsgruppe angehören und\n3. der Bundespräsident das Recht der Ernennung auf die neue Planstelle gemäß Art. 66 B-VG übertragen hat.\n(3) Eine Verwendungsänderung im Sinne des Abs. 2 Z 1 liegt auch dann vor, wenn\n1. der Arbeitsplatz des Beamten wegen geänderter Aufgaben durch Änderung der Bewertung einer anderen Funktionsgruppe oder der Grundlaufbahn derselben Verwendungsgruppe zugeordnet wird oder\n2. der Zeitraum einer befristeten Ernennung des Beamten ohne Weiterbestellung endet.\n(4) Die Planstelle ist dem Beamten verliehen\n1. mit der Rechtskraft der Verwendungsänderung oder Versetzung, sofern im Bescheid kein späterer Wirksamkeitstermin festgelegt oder vorbehalten ist, oder,\n2. wenn die Verwendungsänderung oder im Fall des § 41 die Versetzung mit Dienstauftrag verfügt wird, mit dem sonst verfügten Wirksamkeitszeitpunkt.\n(5) Soweit sich dieses Bundesgesetz auf die Ernennung bezieht, ist damit auch die Verleihung einer Planstelle gemäß den Abs. 2 bis 4 erfaßt.",
+   "q": [
+    {
+     "id": "bdg-2-1",
+     "ref": "Abs. 1 bis 4",
+     "f": "Was gilt nach § 2 BDG für die Ernennung und die Verleihung einer Planstelle?",
+     "s": [
+      {
+       "t": "Ernennung im Sinne des BDG ist die bescheidmäßige Verleihung einer Planstelle.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Eine Ernennung ist nicht erforderlich, wenn ein Beamter durch Versetzung auf eine Planstelle derselben Verwendungsgruppe wechselt, und zwar ohne weitere Voraussetzung.",
+       "w": false,
+       "k": "§ 2 Abs. 2 Z 3: zusätzlich muss der Bundespräsident das Recht der Ernennung auf die neue Planstelle gemäß Art. 66 B-VG übertragen haben."
+      },
+      {
+       "t": "Eine Verwendungsänderung im Sinne des § 2 Abs. 2 Z 1 liegt auch dann vor, wenn der Zeitraum einer befristeten Ernennung des Beamten ohne Weiterbestellung endet.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Bei einer Versetzung ist die Planstelle dem Beamten stets mit der Rechtskraft der Versetzung verliehen, ein späterer Wirksamkeitstermin im Bescheid ist unbeachtlich.",
+       "w": false,
+       "k": "§ 2 Abs. 4 Z 1: mit Rechtskraft, sofern im Bescheid kein späterer Wirksamkeitstermin festgelegt oder vorbehalten ist."
+      }
+     ]
+    }
+   ]
+  },
   {
    "n": "4",
    "label": "§ 4",
@@ -242,6 +330,78 @@
        "t": "Der Grundsatz der bestmöglichen Aufgabenerfüllung nach Abs. 3 gilt nur für Bewerber um Leitungsfunktionen.",
        "w": false,
        "k": "Abs. 3 gilt allgemein für die mit der Verwendung auf der Planstelle verbundenen Aufgaben, ohne Beschränkung auf Leitungsfunktionen (§ 4 Abs. 3)."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "5",
+   "label": "§ 5",
+   "title": "Ernennungsbescheid",
+   "stand": "01.01.1995",
+   "text": "(1) Im Ernennungsbescheid sind die Planstelle, der Amtstitel des Beamten und der Tag der Wirksamkeit der Ernennung anzuführen.\n(2) Der Ernennungsbescheid ist dem Beamten spätestens an dem im Bescheid angeführten Tag der Wirksamkeit der Ernennung zuzustellen. Ist dies aus Gründen, die nicht vom Beamten zu vertreten sind, nicht möglich, so gilt die Zustellung als rechtzeitig, wenn sie innerhalb von zwei Wochen nach Wegfall des Hindernisses nachgeholt wird. Erfolgt die Zustellung nicht rechtzeitig, wird die Ernennung abweichend vom Abs. 1 mit dem Tag der Zustellung wirksam.\n(3) Bewirkt eine Anrechnung nach § 138 Abs. 3 oder § 148 Abs. 4, daß eine laufende Ausbildungsphase mit einem bereits in der Vergangenheit liegenden Tag endet, so kann eine auf Grund dieses früheren Endens mögliche Ernennung des Beamten in eine Funktionsgruppe mit Rückwirkung auf den Tag der dauernden Betrauung mit einem Arbeitsplatz der betreffenden Funktionsgruppe, höchstens aber mit Rückwirkung auf den Tag ausgesprochen werden, der dem Ende der Ausbildungsphase unmittelbar gefolgt ist.",
+   "q": [
+    {
+     "id": "bdg-5-1",
+     "ref": "Abs. 1, 2",
+     "f": "Was gilt nach § 5 BDG für den Ernennungsbescheid und seine Zustellung?",
+     "s": [
+      {
+       "t": "Im Ernennungsbescheid sind die Planstelle, der Amtstitel des Beamten und der Tag der Wirksamkeit der Ernennung anzuführen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Ernennungsbescheid ist dem Beamten spätestens zwei Wochen nach dem im Bescheid angeführten Tag der Wirksamkeit der Ernennung zuzustellen.",
+       "w": false,
+       "k": "§ 5 Abs. 2: Zustellung spätestens an dem im Bescheid angeführten Tag der Wirksamkeit; die zwei Wochen gelten nur nach Wegfall eines vom Beamten nicht zu vertretenden Hindernisses."
+      },
+      {
+       "t": "Erfolgt die Zustellung des Ernennungsbescheids nicht rechtzeitig, wird die Ernennung abweichend vom angeführten Tag mit dem Tag der Zustellung wirksam.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Ist die rechtzeitige Zustellung aus Gründen, die der Beamte nicht zu vertreten hat, nicht möglich, gilt sie als rechtzeitig, wenn sie innerhalb von vier Wochen nach Wegfall des Hindernisses nachgeholt wird.",
+       "w": false,
+       "k": "§ 5 Abs. 2: Die Nachholfrist beträgt zwei Wochen nach Wegfall des Hindernisses."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "7",
+   "label": "§ 7",
+   "title": "Angelobung",
+   "stand": "01.01.1980",
+   "text": "(1) Der Beamte hat binnen vier Wochen nach Beginn des öffentlich-rechtlichen Dienstverhältnisses folgende Angelobung zu leisten: „Ich gelobe, daß ich die Gesetze der Republik Österreich befolgen und alle mit meinem Amte verbundenen Pflichten treu und gewissenhaft erfüllen werde.“\n(2) Die Angelobung ist vor einem von der Dienstbehörde hiezu beauftragten Beamten zu leisten.",
+   "q": [
+    {
+     "id": "bdg-7-1",
+     "ref": "Abs. 1, 2",
+     "f": "Was gilt nach § 7 BDG für die Angelobung des Beamten?",
+     "s": [
+      {
+       "t": "Der Beamte hat die Angelobung binnen vier Wochen nach Beginn des öffentlich-rechtlichen Dienstverhältnisses zu leisten.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Wortlaut der Angelobung ist im Gesetz nicht vorgegeben; die Dienstbehörde legt ihn im Einzelfall fest.",
+       "w": false,
+       "k": "§ 7 Abs. 1: Das Gesetz schreibt den Wortlaut selbst vor („folgende Angelobung“)."
+      },
+      {
+       "t": "Die Angelobung ist vor einem von der Dienstbehörde hiezu beauftragten Beamten zu leisten.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Beamte gelobt, die Gesetze der Republik Österreich und die Weisungen seiner Vorgesetzten zu befolgen und seine Pflichten treu und gewissenhaft zu erfüllen.",
+       "w": false,
+       "k": "§ 7 Abs. 1: Gelobt wird, die Gesetze der Republik Österreich zu befolgen und alle mit dem Amt verbundenen Pflichten treu und gewissenhaft zu erfüllen; Weisungen von Vorgesetzten kommen im Gelöbnistext nicht vor."
       }
      ]
     }
@@ -847,6 +1007,114 @@
    ]
   },
   {
+   "n": "21",
+   "label": "§ 21",
+   "title": "Austritt",
+   "stand": "29.05.2002",
+   "text": "(1) Der Beamte kann schriftlich seinen Austritt aus dem Dienstverhältnis erklären.\n(2) Die Austrittserklärung wird mit Ablauf des Monates wirksam, den der Beamte bestimmt, frühestens jedoch mit Ablauf des Monates, in dem sie abgegeben wurde. Hat der Beamte keinen oder einen früheren Zeitpunkt der Wirksamkeit bestimmt, so wird die Austrittserklärung ebenfalls mit Ablauf des Monates wirksam, in dem sie abgegeben wurde.\n(3) Der Beamte kann die Erklärung nach Abs. 1 bis spätestens einen Monat vor ihrem Wirksamwerden widerrufen. Ein späterer Widerruf wird nur wirksam, wenn die Dienstbehörde ausdrücklich zugestimmt hat.\n(4) Abweichend von Abs. 2 wird die Austrittserklärung\n1. einer Militärperson,\n2. eines Berufsoffiziers oder\n3. eines Beamten, der gemäß § 61 Abs. 15 des Wehrgesetzes 2001 (WG 2001), BGBl. I Nr. 146, zur Ausübung einer Unteroffiziersfunktion herangezogen wird,die zu einem Zeitpunkt abgegeben wird, in dem Anspruch auf eine Einsatzzulage nach dem Einsatzzulagengesetz, BGBl. Nr. 423/1992, besteht, erst mit Ablauf jenes Monats wirksam, der der Beendigung der Verwendung im jeweiligen Einsatz folgt.",
+   "q": [
+    {
+     "id": "bdg-21-1",
+     "ref": "Abs. 1 bis 4",
+     "f": "Was gilt nach § 21 BDG für den Austritt aus dem Dienstverhältnis?",
+     "s": [
+      {
+       "t": "Der Beamte kann schriftlich seinen Austritt aus dem Dienstverhältnis erklären.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Bestimmt der Beamte einen früheren Zeitpunkt als das Ende des Monats der Abgabe der Erklärung, ist die Austrittserklärung unwirksam.",
+       "w": false,
+       "k": "§ 21 Abs. 2: Hat der Beamte keinen oder einen früheren Zeitpunkt bestimmt, wird die Erklärung ebenfalls mit Ablauf des Monats wirksam, in dem sie abgegeben wurde."
+      },
+      {
+       "t": "Der Beamte kann die Austrittserklärung bis spätestens einen Monat vor ihrem Wirksamwerden widerrufen; ein späterer Widerruf wird nur wirksam, wenn die Dienstbehörde ausdrücklich zugestimmt hat.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Gibt ein Berufsoffizier die Austrittserklärung zu einem Zeitpunkt ab, in dem Anspruch auf eine Einsatzzulage besteht, wird sie erst mit Ablauf des Monats wirksam, der der Beendigung der Verwendung im jeweiligen Einsatz folgt.",
+       "w": true,
+       "k": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "22",
+   "label": "§ 22",
+   "title": "Entlassung wegen mangelnden Arbeitserfolges",
+   "stand": "01.01.1995",
+   "text": "Der Beamte, über den zweimal aufeinanderfolgend die Feststellung getroffen worden ist, daß er den von ihm zu erwartenden Arbeitserfolg nicht aufgewiesen hat, ist mit Rechtskraft der zweiten Feststellung entlassen. Der Rechtskraft der Feststellung ist die Endgültigkeit des Beurteilungsergebnisses im Sinne des § 87 Abs. 2 gleichzuhalten.",
+   "q": [
+    {
+     "id": "bdg-22-1",
+     "ref": "§ 22",
+     "f": "Was gilt nach § 22 BDG für die Entlassung wegen mangelnden Arbeitserfolges?",
+     "s": [
+      {
+       "t": "Ein Beamter, über den zweimal aufeinanderfolgend festgestellt wurde, dass er den von ihm zu erwartenden Arbeitserfolg nicht aufgewiesen hat, ist mit Rechtskraft der zweiten Feststellung entlassen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Entlassung wegen mangelnden Arbeitserfolges setzt nach der zweiten Feststellung zusätzlich ein Disziplinarerkenntnis voraus.",
+       "w": false,
+       "k": "§ 22: Der Beamte ist mit Rechtskraft der zweiten Feststellung entlassen; ein weiterer Akt ist nicht vorgesehen."
+      },
+      {
+       "t": "Der Beamte ist bereits mit Erlassung der zweiten Feststellung entlassen, auch wenn diese noch nicht rechtskräftig ist.",
+       "w": false,
+       "k": "§ 22: Die Entlassung tritt erst mit Rechtskraft der zweiten Feststellung ein; gleichgehalten ist nur die Endgültigkeit des Beurteilungsergebnisses nach § 87 Abs. 2."
+      },
+      {
+       "t": "Der Rechtskraft der Feststellung ist die Endgültigkeit des Beurteilungsergebnisses im Sinne des § 87 Abs. 2 gleichzuhalten.",
+       "w": true,
+       "k": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "36",
+   "label": "§ 36",
+   "title": "Arbeitsplatz",
+   "stand": "29.05.2002",
+   "text": "(1) Jeder Beamte, der nicht vom Dienst befreit oder enthoben ist, ist mit der Wahrnehmung der Aufgaben eines in der Geschäftseinteilung seiner Dienststelle vorgesehenen Arbeitsplatzes zu betrauen.\n(2) In den Geschäftseinteilungen der Dienststellen darf ein Arbeitsplatz nur für Aufgaben vorgesehen werden, die die volle Normalarbeitskraft eines Menschen erfordern. Soweit nicht zwingende dienstliche Rücksichten entgegenstehen, dürfen auf einem Arbeitsplatz nur gleichwertige oder annähernd gleichwertige Aufgaben zusammengefaßt werden.\n(3) Mit Zustimmung des Beamten und wenn er die Eignung hiefür aufweist, kann der Beamte zur Besorgung von Aufgaben herangezogen werden, die regelmäßig von Beamten einer höheren Besoldungs- oder Verwendungsgruppe oder einer höheren Funktionsgruppe, Dienstklasse, Dienstzulagengruppe oder Dienststufe oder von Beamten mit einer im § 8 Abs. 1 angeführten Leitungsfunktion ausgeübt werden, falls entsprechend eingestufte, für diese Verwendung geeignete Beamte nicht zur Verfügung stehen.\n(4) Der Beamte ist verpflichtet, vorübergehend auch Aufgaben zu besorgen, die nicht zu den Dienstverrichtungen der betreffenden Einstufung und Verwendung gehören, wenn es im Interesse des Dienstes notwendig ist.",
+   "q": [
+    {
+     "id": "bdg-36-1",
+     "ref": "Abs. 1 bis 4",
+     "f": "Was gilt nach § 36 BDG für den Arbeitsplatz des Beamten?",
+     "s": [
+      {
+       "t": "Jeder Beamte, der nicht vom Dienst befreit oder enthoben ist, ist mit der Wahrnehmung der Aufgaben eines in der Geschäftseinteilung seiner Dienststelle vorgesehenen Arbeitsplatzes zu betrauen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Beamte ist verpflichtet, auch dauernd Aufgaben zu besorgen, die nicht zu den Dienstverrichtungen seiner Einstufung und Verwendung gehören, wenn es im Interesse des Dienstes notwendig ist.",
+       "w": false,
+       "k": "§ 36 Abs. 4: Die Pflicht besteht nur für vorübergehende Aufgaben."
+      },
+      {
+       "t": "Der Beamte kann auch ohne seine Zustimmung zu Aufgaben einer höheren Verwendungsgruppe herangezogen werden, wenn entsprechend eingestufte, geeignete Beamte nicht zur Verfügung stehen.",
+       "w": false,
+       "k": "§ 36 Abs. 3: Dafür sind die Zustimmung des Beamten und seine Eignung erforderlich."
+      },
+      {
+       "t": "In den Geschäftseinteilungen der Dienststellen darf ein Arbeitsplatz nur für Aufgaben vorgesehen werden, die die volle Normalarbeitskraft eines Menschen erfordern.",
+       "w": true,
+       "k": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
    "n": "38",
    "label": "§ 38",
    "title": "Versetzung",
@@ -1266,6 +1534,105 @@
        "t": "Die Bedachtnahme nach Abs. 4 gilt auch bei einer Verwendung in einer Außenstelle, die außerhalb des Dienstortes liegt.",
        "w": true,
        "k": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "40",
+   "label": "§ 40",
+   "title": "Verwendungsänderung",
+   "stand": "01.01.1995",
+   "text": "(1) Wird der Beamte von seiner bisherigen unbefristeten oder befristeten Verwendung abberufen, so ist ihm gleichzeitig, wenn dies jedoch aus Rücksichten des Dienstes nicht möglich ist, spätestens zwei Monate nach der Abberufung eine neue Verwendung in seiner Dienststelle zuzuweisen. § 112 wird hiedurch nicht berührt.\n(2) Die Abberufung des Beamten von seiner bisherigen Verwendung ist einer Versetzung gleichzuhalten, wenn\n1. die neue Verwendung der bisherigen Verwendung des Beamten nicht mindestens gleichwertig ist oder\n2. durch die neue Verwendung eine Verschlechterung für die Beförderung des Beamten in eine höhere Dienstklasse oder Dienststufe zu erwarten ist oder\n3. dem Beamten keine neue Verwendung zugewiesen wird.\n(3) Die neue Verwendung ist der bisherigen Verwendung gleichwertig, wenn sie innerhalb derselben Verwendungsgruppe derselben Funktions- oder Dienstzulagengruppe zugeordnet ist.\n(4) Abs. 2 gilt nicht\n1. für die Zuweisung einer drei Monate nicht übersteigenden vorübergehenden Verwendung, wenn dem Beamten daran anschließend eine der bisherigen Verwendung zumindest gleichwertige Verwendung zugewiesen wird,\n2. für die Beendigung der vorläufigen Ausübung einer höheren Verwendung zur Vertretung eines an der Dienstausübung verhinderten oder zur provisorischen Führung der Funktion an Stelle des aus dieser Funktion ausgeschiedenen Beamten und\n3. für das Enden des Zeitraums einer befristeten Ernennung des Beamten, ohne daß dieser weiterbestellt wird.",
+   "q": [
+    {
+     "id": "bdg-40-1",
+     "ref": "Abs. 1 bis 4",
+     "f": "Was gilt nach § 40 BDG für die Abberufung des Beamten von seiner bisherigen Verwendung?",
+     "s": [
+      {
+       "t": "Wird der Beamte von seiner Verwendung abberufen, ist ihm gleichzeitig oder, wenn dies aus Rücksichten des Dienstes nicht möglich ist, spätestens zwei Monate nach der Abberufung eine neue Verwendung in seiner Dienststelle zuzuweisen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die neue Verwendung ist der bisherigen gleichwertig, wenn sie innerhalb derselben Verwendungsgruppe derselben Funktions- oder Dienstzulagengruppe zugeordnet ist.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Abberufung ist auch dann einer Versetzung gleichzuhalten, wenn dem Beamten eine drei Monate nicht übersteigende vorübergehende Verwendung zugewiesen wird und ihm danach eine zumindest gleichwertige Verwendung zugewiesen wird.",
+       "w": false,
+       "k": "§ 40 Abs. 4 Z 1: Für diesen Fall gilt Abs. 2 (Gleichhaltung mit Versetzung) nicht."
+      },
+      {
+       "t": "Eine Gleichhaltung der Abberufung mit einer Versetzung setzt voraus, dass die neue Verwendung nicht gleichwertig ist und zusätzlich eine Verschlechterung für die Beförderung in eine höhere Dienstklasse oder Dienststufe zu erwarten ist.",
+       "w": false,
+       "k": "§ 40 Abs. 2: Die Fälle der Z 1 bis 3 stehen alternativ („oder“); jeder genügt für sich."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "41",
+   "label": "§ 41",
+   "title": "Ausnahmen für Beamte bestimmter Dienstbereiche",
+   "stand": "01.09.2012",
+   "text": "(1) § 38 Abs. 2 bis 4, 6 und 7, § 39 Abs. 2 bis 4 und § 40 Abs. 2 sind auf Dienstbereiche nicht anzuwenden, bei denen es nach der Natur des Dienstes notwendig ist, die Beamten nach einiger Zeit zu einer anderen Dienststelle zu versetzen.\n(2) Die Versetzung eines Beamten von einem in Abs. 1 angeführten Dienstbereich in ein anderes Ressort ist mit Bescheid zu verfügen.\n(3) Abs. 1 ist auf Organisationseinheiten des Bundesheeres mit hohem Bereitschaftsgrad für die Entsendung zu Auslandseinsätzen (§ 101a Abs. 1 GehG) anzuwenden.\n(4) Abs. 1 ist auch auf Beamte der Verwendungsgruppe E 2b anzuwenden, wenn die Versetzung\n1. innerhalb der ersten zwei Jahre ab der Ernennung in diese Verwendungsgruppe und\n2. im dienstbehördlichen Zuständigkeitsbereich einer Landespolizeidirektionerfolgt.",
+   "q": [
+    {
+     "id": "bdg-41-1",
+     "ref": "Abs. 1 bis 3",
+     "f": "Was gilt nach § 41 BDG für Beamte bestimmter Dienstbereiche?",
+     "s": [
+      {
+       "t": "§ 38 Abs. 2 bis 4, 6 und 7, § 39 Abs. 2 bis 4 und § 40 Abs. 2 sind auf Dienstbereiche nicht anzuwenden, bei denen es nach der Natur des Dienstes notwendig ist, die Beamten nach einiger Zeit zu einer anderen Dienststelle zu versetzen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Versetzung eines Beamten von einem solchen Dienstbereich in ein anderes Ressort ist formlos durch Weisung zu verfügen.",
+       "w": false,
+       "k": "§ 41 Abs. 2: Sie ist mit Bescheid zu verfügen."
+      },
+      {
+       "t": "Abs. 1 ist auch auf Organisationseinheiten des Bundesheeres mit hohem Bereitschaftsgrad für die Entsendung zu Auslandseinsätzen anzuwenden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Ausnahme des Abs. 1 gilt ausschließlich für Beamte des Exekutivdienstes.",
+       "w": false,
+       "k": "§ 41 Abs. 1 und 3: Maßgeblich ist die Natur des Dienstes; Abs. 3 erfasst ausdrücklich auch Organisationseinheiten des Bundesheeres."
+      }
+     ]
+    },
+    {
+     "id": "bdg-41-2",
+     "ref": "Abs. 4",
+     "f": "Unter welchen Voraussetzungen gilt die Ausnahme des § 41 Abs. 1 auch für Beamte der Verwendungsgruppe E 2b?",
+     "s": [
+      {
+       "t": "Die Ausnahme gilt, wenn die Versetzung innerhalb der ersten zwei Jahre ab der Ernennung in die Verwendungsgruppe E 2b und im dienstbehördlichen Zuständigkeitsbereich einer Landespolizeidirektion erfolgt.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Ausnahme gilt für jede Versetzung eines E 2b-Beamten innerhalb des Bereichs einer Landespolizeidirektion, unabhängig davon, wie lange er schon in dieser Verwendungsgruppe ernannt ist.",
+       "w": false,
+       "k": "§ 41 Abs. 4 Z 1: Die Versetzung muss innerhalb der ersten zwei Jahre ab der Ernennung in die Verwendungsgruppe erfolgen."
+      },
+      {
+       "t": "Die Ausnahme gilt nur, wenn die Versetzung im Zuständigkeitsbereich des Bundesministeriums für Inneres, also auch über Landesgrenzen hinweg, erfolgt.",
+       "w": false,
+       "k": "§ 41 Abs. 4 Z 2: Erforderlich ist der dienstbehördliche Zuständigkeitsbereich einer Landespolizeidirektion."
+      },
+      {
+       "t": "Bei E 2b-Beamten werden nach Abs. 4 nur die Bestimmungen des § 38 ausgenommen, § 39 Abs. 2 bis 4 bleibt anzuwenden.",
+       "w": false,
+       "k": "§ 41 Abs. 4 verweist auf Abs. 1; dieser nimmt § 38 Abs. 2 bis 4, 6 und 7, § 39 Abs. 2 bis 4 und § 40 Abs. 2 aus."
       }
      ]
     }
@@ -1840,6 +2207,141 @@
    ]
   },
   {
+   "n": "45",
+   "label": "§ 45",
+   "title": "Dienstpflichten des Vorgesetzten und des Dienststellenleiters",
+   "stand": "28.12.2019",
+   "text": "(1) Der Vorgesetzte hat darauf zu achten, daß seine Mitarbeiter ihre dienstlichen Aufgaben gesetzmäßig und in zweckmäßiger, wirtschaftlicher und sparsamer Weise erfüllen. Er hat seine Mitarbeiter dabei anzuleiten, ihnen erforderlichenfalls Weisungen zu erteilen, aufgetretene Fehler und Mißstände abzustellen und für die Einhaltung der Dienstzeit zu sorgen. Er hat das dienstliche Fortkommen seiner Mitarbeiter nach Maßgabe ihrer Leistungen zu fördern und ihre Verwendung so zu lenken, daß sie ihren Fähigkeiten weitgehend entspricht.\n(1a) Die oder der Vorgesetzte hat im Falle eines drohenden Verfalls des Erholungsurlaubes gemäß § 69 oder eines absehbaren Ausscheidens einer Mitarbeiterin oder eines Mitarbeiters aus dem Dienststand oder aus dem Dienstverhältnis rechtzeitig, unmissverständlich und nachweislich darauf hinzuwirken, dass ihre oder seine Mitarbeiterinnen und Mitarbeiter den Erholungsurlaub in Anspruch nehmen können und auch in Anspruch nehmen.\n(2) Der Leiter einer Dienststelle oder eines Dienststellenteiles hat außerdem für ein geordnetes Zusammenwirken der einzelnen ihm unterstehenden Organisationseinheiten zum Zwecke der Sicherstellung einer gesetzmäßigen Vollziehung sowie einer zweckmäßigen, wirtschaftlichen und sparsamen Geschäftsgebarung zu sorgen.\n(3) Wird dem Leiter einer Dienststelle in Ausübung seines Dienstes der begründete Verdacht einer von Amts wegen zu verfolgenden gerichtlich strafbaren Handlung bekannt, die den Wirkungsbereich der von ihm geleiteten Dienststelle betrifft, so hat er dies, sofern er nicht ohnehin gemäß § 109 Abs. 1 vorzugehen hat, unverzüglich der zur Anzeige berufenen Stelle zu melden oder, wenn er selbst hiezu berufen ist, die Anzeige zu erstatten. Die Anzeigepflicht richtet sich nach § 78 der Strafprozessordnung 1975 (StPO), BGBl. Nr. 631.\n(4) Keine Pflicht zur Meldung nach Abs. 3 besteht,\n1. wenn die Meldung eine amtliche Tätigkeit beeinträchtigen würde, deren Wirksamkeit eines persönlichen Vertrauensverhältnisses bedarf, oder\n2. wenn und solange hinreichende Gründe für die Annahme vorliegen, die Strafbarkeit der Tat werde binnen kurzem durch schadensbereinigende Maßnahmen entfallen.",
+   "q": [
+    {
+     "id": "bdg-45-1",
+     "ref": "Abs. 1, 1a",
+     "f": "Welche Dienstpflichten treffen den Vorgesetzten nach § 45 Abs. 1 und 1a BDG?",
+     "s": [
+      {
+       "t": "Der Vorgesetzte hat darauf zu achten, dass seine Mitarbeiter ihre dienstlichen Aufgaben gesetzmäßig und in zweckmäßiger, wirtschaftlicher und sparsamer Weise erfüllen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Vorgesetzte hat das dienstliche Fortkommen seiner Mitarbeiter nach Maßgabe ihres Dienstalters zu fördern.",
+       "w": false,
+       "k": "§ 45 Abs. 1: Förderung nach Maßgabe ihrer Leistungen."
+      },
+      {
+       "t": "Bei drohendem Verfall des Erholungsurlaubes hat der Vorgesetzte rechtzeitig, unmissverständlich und nachweislich darauf hinzuwirken, dass die Mitarbeiter den Erholungsurlaub in Anspruch nehmen können und auch in Anspruch nehmen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Für die Einhaltung der Dienstzeit zu sorgen ist keine Pflicht des Vorgesetzten, sondern obliegt allein dem Leiter der Dienststelle.",
+       "w": false,
+       "k": "§ 45 Abs. 1: Der Vorgesetzte hat auch für die Einhaltung der Dienstzeit zu sorgen."
+      }
+     ]
+    },
+    {
+     "id": "bdg-45-2",
+     "ref": "Abs. 3, 4",
+     "f": "Wann muss der Leiter einer Dienststelle einen Verdacht einer strafbaren Handlung nach § 45 Abs. 3 und 4 BDG melden?",
+     "s": [
+      {
+       "t": "Wird dem Leiter einer Dienststelle in Ausübung seines Dienstes der begründete Verdacht einer von Amts wegen zu verfolgenden gerichtlich strafbaren Handlung bekannt, die den Wirkungsbereich seiner Dienststelle betrifft, hat er dies unverzüglich der zur Anzeige berufenen Stelle zu melden oder, wenn er selbst berufen ist, die Anzeige zu erstatten (sofern er nicht ohnehin nach § 109 Abs. 1 vorzugehen hat).",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Meldepflicht besteht auch dann, wenn die Meldung eine amtliche Tätigkeit beeinträchtigen würde, deren Wirksamkeit eines persönlichen Vertrauensverhältnisses bedarf.",
+       "w": false,
+       "k": "§ 45 Abs. 4 Z 1: In diesem Fall besteht keine Pflicht zur Meldung."
+      },
+      {
+       "t": "Keine Pflicht zur Meldung besteht, wenn und solange hinreichende Gründe für die Annahme vorliegen, die Strafbarkeit der Tat werde binnen kurzem durch schadensbereinigende Maßnahmen entfallen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Meldepflicht trifft den Leiter der Dienststelle auch dann, wenn die strafbare Handlung nicht den Wirkungsbereich seiner Dienststelle betrifft.",
+       "w": false,
+       "k": "§ 45 Abs. 3: Die Pflicht besteht für strafbare Handlungen, die den Wirkungsbereich der von ihm geleiteten Dienststelle betreffen."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "45a",
+   "label": "§ 45a",
+   "title": "Mitarbeitergespräch",
+   "stand": "30.12.2025",
+   "text": "(1) Der unmittelbar mit der Fachaufsicht betraute Vorgesetzte (Vorgesetzter) hat einmal jährlich mit jedem seiner Mitarbeiter ein Mitarbeitergespräch zu führen.\n(2) Das Mitarbeitergespräch umfaßt drei Teile:\n1.\n  a) Erörterung des Arbeitszieles der Organisationseinheit sowie ihrer Aufgabenstellungen im Folgejahr; darauf aufbauend ist der wesentliche Beitrag des Mitarbeiters zur Aufgabenerfüllung zu vereinbaren.\n  b) Sind für das abgelaufene Jahr bereits Vereinbarungen getroffen worden, so sind sie Grundlage für die Erörterung der Aufgabenerfüllung.\n2. Vereinbarung von Maßnahmen, die zur Verbesserung oder Erhaltung der Leistung des Mitarbeiters notwendig und zweckmäßig sind und die dem Mitarbeiter auch im Rahmen seiner längerfristigen beruflichen Entwicklung eröffnet werden sollen; Auflistung allfälliger Kenntnisse und Fähigkeiten, die der Mitarbeiter auf seinem Arbeitsplatz nicht einbringen kann.\n3. Erörterung möglicher Ökologisierungs- und Nachhaltigkeitspotentiale im Zusammenhang mit dienstlich bedingter Mobilität durch Dienstreisen und Arbeitswege.\n(3) Das Mitarbeitergespräch ist ausschließlich zwischen dem Vorgesetzten und seinem Mitarbeiter zu führen.\n(4) Die Ergebnisse des Mitarbeitergespräches sind schriftlich zusammenzufassen und von den Gesprächspartnern zu unterschreiben oder, wenn die Dokumentation unter Nutzung der standardisierten IKTLösungen und ITVerfahren des Personalmanagements des Bundes erfolgt, im Rahmen dieser Verfahren zu bestätigen. Ist dies mangels Übereinstimmung nicht möglich, so ist ein abschließender Gesprächstermin festzulegen, dem auf Wunsch jedes der Gesprächspartner eine Person seines Vertrauens beigezogen werden kann, die\n1. bei Dienststellen im Inland Gleichbehandlungsbeauftragter oder Personalvertreter oder Behindertenvertrauensperson ist,\n2. bei Dienststellen im Ausland Angehöriger der betreffenden Dienststelle ist.\n(5) Je eine Ausfertigung der Ergebnisse des ersten und dritten Teiles verbleibt beim Mitarbeiter und bei seinem Vorgesetzten. Diese Ausfertigungen dürfen nicht weitergegeben werden.\n(6) Je eine Ausfertigung des Ergebnisses des zweiten Teiles des Mitarbeitergespräches bleibt beim Mitarbeiter und bei seinem Vorgesetzten. Eine weitere Ausfertigung ist der personalführenden Stelle und den Verantwortlichen für Personalentwicklung und Ausbildung zuzuleiten und dem Personalakt beizufügen.\n(7) Der nächsthöhere Vorgesetzte ist nachweislich zu verständigen, daß das Mitarbeitergespräch stattgefunden hat.\n(8) Erfolgt die Dokumentation unter Nutzung der standardisierten IKTLösungen und ITVerfahren des Personalmanagements des Bundes, sind die Abs. 5 bis 7 mit den Maßgaben anzuwenden, dass\n1. an die Stelle der Ausfertigung der Ergebnisse gemäß Abs. 5 und 6 sowie der nachweislichen Verständigung gemäß Abs. 7 entsprechende Zugriffe im Rahmen der standardisierten IKTLösungen und ITVerfahren treten, und\n2. die Beschränkung des Zugriffs entsprechend Abs. 5 bis 7 zu gewährleisten ist.",
+   "q": [
+    {
+     "id": "bdg-45a-1",
+     "ref": "Abs. 1 bis 6",
+     "f": "Was gilt nach § 45a BDG für das Mitarbeitergespräch?",
+     "s": [
+      {
+       "t": "Der unmittelbar mit der Fachaufsicht betraute Vorgesetzte hat einmal jährlich mit jedem seiner Mitarbeiter ein Mitarbeitergespräch zu führen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Das Mitarbeitergespräch ist vom Vorgesetzten gemeinsam mit dem nächsthöheren Vorgesetzten und dem Mitarbeiter zu führen.",
+       "w": false,
+       "k": "§ 45a Abs. 3: Es ist ausschließlich zwischen dem Vorgesetzten und seinem Mitarbeiter zu führen."
+      },
+      {
+       "t": "Ist eine Unterschrift unter die schriftliche Zusammenfassung mangels Übereinstimmung nicht möglich, ist ein abschließender Gesprächstermin festzulegen, zu dem auf Wunsch jedes Gesprächspartners eine Person seines Vertrauens beigezogen werden kann, die bei Dienststellen im Inland Gleichbehandlungsbeauftragter, Personalvertreter oder Behindertenvertrauensperson ist.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Je eine Ausfertigung der Ergebnisse des ersten und dritten Teiles des Mitarbeitergesprächs ist der personalführenden Stelle zuzuleiten und dem Personalakt beizufügen.",
+       "w": false,
+       "k": "§ 45a Abs. 5 und 6: Die Ausfertigungen des ersten und dritten Teiles verbleiben beim Mitarbeiter und beim Vorgesetzten und dürfen nicht weitergegeben werden; nur das Ergebnis des zweiten Teiles geht auch an die personalführende Stelle."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "45b",
+   "label": "§ 45b",
+   "title": "Teamarbeitsbesprechung",
+   "stand": "01.01.1998",
+   "text": "(1) Jeweils nach Abschluß der einzelnen Mitarbeitergespräche ist mit allen Mitgliedern der Organisationseinheit eine Teamarbeitsbesprechung durchzuführen.\n(2) Gegenstand dieser Besprechung sind notwendige oder zweckmäßige Maßnahmen zur Erhaltung oder zur Verbesserung der Leistung der Organisationseinheit, wie etwa die Qualität des Informationsflusses und der Koordination, oder Änderungen der internen Geschäftseinteilung oder benötigte Sachbehelfe usw.\n(3) Die notwendigen oder zweckmäßigen Maßnahmen sind schriftlich festzuhalten. Soweit diese Maßnahmen nicht von den Mitgliedern selbst gesetzt werden können, sind sie schriftlich dem nächsthöheren Vorgesetzten zur weiteren Veranlassung bekanntzugeben.",
+   "q": [
+    {
+     "id": "bdg-45b-1",
+     "ref": "Abs. 1 bis 3",
+     "f": "Was gilt nach § 45b BDG für die Teamarbeitsbesprechung?",
+     "s": [
+      {
+       "t": "Jeweils nach Abschluss der einzelnen Mitarbeitergespräche ist mit allen Mitgliedern der Organisationseinheit eine Teamarbeitsbesprechung durchzuführen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Gegenstand der Besprechung ist die Bewertung der Leistungen der einzelnen Mitarbeiter durch den Vorgesetzten.",
+       "w": false,
+       "k": "§ 45b Abs. 2: Gegenstand sind notwendige oder zweckmäßige Maßnahmen zur Erhaltung oder Verbesserung der Leistung der Organisationseinheit."
+      },
+      {
+       "t": "Gegenstand der Besprechung sind Maßnahmen zur Erhaltung oder Verbesserung der Leistung der Organisationseinheit, etwa die Qualität des Informationsflusses und der Koordination, Änderungen der internen Geschäftseinteilung oder benötigte Sachbehelfe.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Maßnahmen, die die Mitglieder nicht selbst setzen können, sind dem nächsthöheren Vorgesetzten mündlich zur weiteren Veranlassung bekanntzugeben.",
+       "w": false,
+       "k": "§ 45b Abs. 3: Die Bekanntgabe an den nächsthöheren Vorgesetzten hat schriftlich zu erfolgen."
+      }
+     ]
+    }
+   ]
+  },
+  {
    "n": "46",
    "label": "§ 46",
    "title": "Geheimhaltung",
@@ -2065,225 +2567,99 @@
    ]
   },
   {
-   "n": "49",
-   "label": "§ 49",
-   "title": "Mehrdienstleistung",
-   "stand": "30.12.2022",
-   "text": "(1) Der Beamte hat auf Anordnung über die im Dienstplan vorgeschriebenen Dienststunden hinaus Dienst zu versehen (Mehrdienstleistung). Den auf Anordnung erbrachten Mehrdienstleistungen sind Mehrdienstleistungen gleichzuhalten, wenn\n1. der Beamte einen zur Anordnung der Mehrdienstleistung Befugten nicht erreichen konnte,\n2. die Mehrdienstleistung zur Abwehr eines Schadens unverzüglich notwendig war,\n3. die Notwendigkeit der Mehrdienstleistung nicht auf Umstände zurückgeht, die von dem Beamten, der die Mehrdienstleistung erbracht hat, hätten vermieden werden können, und\n4. der Beamte diese Mehrdienstleistung spätestens innerhalb einer Woche nach der Erbringung schriftlich meldet; ist der Beamte durch ein unvorhergesehenes oder unabwendbares Ereignis ohne sein Verschulden verhindert, diese Frist einzuhalten, so verlängert sie sich um die Dauer der Verhinderung.\n(2) An Werktagen erbrachte Mehrdienstleistungen (ausgenommen jene nach § 47a Z 2 lit. b) sind nach Möglichkeit im selben Kalendervierteljahr im Verhältnis 1 : 1 in Freizeit auszugleichen. Mehrdienstleistungen außerhalb der Nachtzeit sind vor Mehrdienstleistungen in der Nachtzeit (22.00 bis 6.00 Uhr) auszugleichen. Mehrdienstleistungen an Sonn- und Feiertagen sind nicht durch Freizeit auszugleichen.\n(3) Mehrdienstleistungen an Werktagen, die im betreffenden Kalendervierteljahr nicht durch Freizeit ausgeglichen sind, gelten mit Ablauf des Kalendervierteljahres als Überstunden. Mehrdienstleistungen an Sonn- und Feiertagen gelten in jedem Fall als Überstunden und sind nach besoldungsrechtlichen Vorschriften abzugelten.\n(4) Werktagsüberstunden sind je nach Anordnung\n1. im Verhältnis 1 : 1,5 in Freizeit auszugleichen oder\n2. nach besoldungsrechtlichen Vorschriften abzugelten oder\n3. im Verhältnis 1 : 1 in Freizeit auszugleichen und zusätzlich nach besoldungsrechtlichen Vorschriften abzugelten.(Anm.: Abs. 5 aufgehoben durch Art. 1 Z 13, BGBl. I Nr. 205/2022)\n(6) Dem Beamten ist bis zum Ende des auf das Kalendervierteljahr folgenden Kalendermonats mitzuteilen, auf welche Werktagsüberstunden welche Abgeltungsart des Abs. 4 angewendet wird.\n(7) Werktagsüberstunden außerhalb der Nachtzeit sind vor Werktagsüberstunden in der Nachtzeit (22.00 bis 6.00 Uhr) auszugleichen.\n(8) Ein Freizeitausgleich für Werktagsüberstunden ist bis zum Ende des sechsten auf das Kalendervierteljahr der Leistung folgenden Monats zulässig.\n(9) Folgende Zeiten gelten jedenfalls nicht als Überstunden:\n1. Zeiten einer vom Beamten angestrebten Einarbeitung von Dienstzeit (zB im Fall eines Diensttausches oder einer sonstigen angestrebten Verlegung der Zeit der Dienstleistung) und\n2. Zeitguthaben aus der gleitenden Dienstzeit, soweit sie die im Gleitzeitdienstplan festgelegte Obergrenze für jeweils in den Folgezeitraum übertragbare Zeitguthaben nicht übersteigen. Diese Zeiten sind, soweit dies nicht bereits erfolgt ist, ausschließlich im Verhältnis 1 : 1 in Freizeit abzugelten.",
+   "n": "47",
+   "label": "§ 47",
+   "title": "Befangenheit",
+   "stand": "31.07.2016",
+   "text": "Der Beamte hat sich der Ausübung seines Amtes zu enthalten und seine Vertretung zu veranlassen, wenn wichtige Gründe vorliegen, die geeignet sind, seine volle Unbefangenheit in Zweifel zu setzen. Bei Gefahr im Verzug hat, wenn die Vertretung durch ein anderes Organ nicht sogleich bewirkt werden kann, auch der befangene Beamte die unaufschiebbaren Amtshandlungen selbst vorzunehmen. § 7 des Allgemeinen Verwaltungsverfahrensgesetzes 1991 – AVG, BGBl. Nr. 51/1991, und sonstige die Befangenheit regelnde Verfahrensvorschriften bleiben unberührt.",
    "q": [
     {
-     "id": "bdg-49-1",
-     "ref": "Abs. 1",
-     "f": "Was gilt für angeordnete und nicht angeordnete Mehrdienstleistungen?",
+     "id": "bdg-47-1",
+     "ref": "§ 47",
+     "f": "Was gilt nach § 47 BDG bei Befangenheit des Beamten?",
      "s": [
       {
-       "t": "Der Beamte hat über die im Dienstplan vorgeschriebenen Dienststunden hinaus nur dann Dienst zu versehen, wenn er der Anordnung zustimmt.",
-       "w": false,
-       "k": "Er hat auf Anordnung über die vorgeschriebenen Dienststunden hinaus Dienst zu versehen (Mehrdienstleistung), eine Zustimmung ist nicht vorgesehen (§ 49 Abs. 1)."
-      },
-      {
-       "t": "Nicht angeordnete Mehrdienstleistungen sind gleichzuhalten, wenn der Beamte sie spätestens innerhalb einer Woche nach Erbringung schriftlich meldet (und die übrigen Voraussetzungen vorliegen).",
+       "t": "Der Beamte hat sich der Ausübung seines Amtes zu enthalten und seine Vertretung zu veranlassen, wenn wichtige Gründe vorliegen, die geeignet sind, seine volle Unbefangenheit in Zweifel zu setzen.",
        "w": true,
        "k": ""
       },
       {
-       "t": "Die schriftliche Meldung einer nicht angeordneten Mehrdienstleistung hat spätestens innerhalb eines Monats zu erfolgen.",
+       "t": "Bei Gefahr im Verzug darf der befangene Beamte, wenn die Vertretung nicht sogleich bewirkt werden kann, die gesamte Amtshandlung bis zu ihrem Abschluss selbst führen.",
        "w": false,
-       "k": "Die Frist beträgt eine Woche nach der Erbringung (§ 49 Abs. 1 Z 4)."
+       "k": "§ 47 Satz 2: Er hat in diesem Fall nur die unaufschiebbaren Amtshandlungen selbst vorzunehmen."
       },
       {
-       "t": "Nicht angeordnete Mehrdienstleistungen sind stets gleichgehalten, auch wenn die Notwendigkeit auf vom Beamten vermeidbare Umstände zurückgeht.",
+       "t": "Bei Gefahr im Verzug hat, wenn die Vertretung durch ein anderes Organ nicht sogleich bewirkt werden kann, auch der befangene Beamte die unaufschiebbaren Amtshandlungen selbst vorzunehmen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Befangenheitsbestimmung des § 7 AVG wird durch § 47 BDG für Beamte verdrängt.",
        "w": false,
-       "k": "Voraussetzung ist unter anderem, dass die Notwendigkeit nicht auf Umstände zurückgeht, die der Beamte hätte vermeiden können (§ 49 Abs. 1 Z 3)."
+       "k": "§ 47: § 7 AVG und sonstige die Befangenheit regelnde Verfahrensvorschriften bleiben unberührt."
       }
      ]
     },
     {
-     "id": "bdg-49-2",
-     "ref": "Abs. 2, 3",
-     "f": "Wie sind Mehrdienstleistungen auszugleichen und wann werden sie zu Überstunden?",
+     "id": "bdg-47-2",
+     "ref": "§ 47",
+     "f": "Ein Polizeibeamter ermittelt gegen unbekannte Täter und erfährt, dass sein Bruder verdächtig ist. Dieser Umstand ist geeignet, seine volle Unbefangenheit in Zweifel zu setzen; Gefahr im Verzug liegt nicht vor. Was gilt nach § 47 BDG?",
      "s": [
       {
-       "t": "An Werktagen erbrachte Mehrdienstleistungen (ausgenommen jene nach § 47a Z 2 lit. b) sind nach Möglichkeit im selben Kalendervierteljahr im Verhältnis 1 : 1 in Freizeit auszugleichen.",
+       "t": "Er hat sich der weiteren Ausübung seines Amtes in diesem Ermittlungsverfahren zu enthalten.",
        "w": true,
        "k": ""
       },
       {
-       "t": "Mehrdienstleistungen an Sonn- und Feiertagen sind nicht durch Freizeit auszugleichen.",
+       "t": "Er darf weiter ermitteln, solange keine Partei die Befangenheit geltend macht.",
+       "w": false,
+       "k": "§ 47: Die Pflicht, sich zu enthalten und die Vertretung zu veranlassen, knüpft allein an das Vorliegen wichtiger Gründe an; eine Geltendmachung durch Parteien ist nicht vorausgesetzt."
+      },
+      {
+       "t": "Er hat nicht nur seine eigene Ermittlungstätigkeit einzustellen, sondern auch selbst seine Vertretung zu veranlassen.",
        "w": true,
        "k": ""
       },
       {
-       "t": "Werktags-Mehrdienstleistungen, die nicht durch Freizeit ausgeglichen werden, gelten bereits nach einem Monat als Überstunden.",
+       "t": "Seine Pflicht zur Enthaltung besteht erst, nachdem die Dienstbehörde die Befangenheit mit Bescheid festgestellt hat.",
        "w": false,
-       "k": "Sie gelten erst mit Ablauf des Kalendervierteljahres als Überstunden (§ 49 Abs. 3)."
-      },
-      {
-       "t": "Mehrdienstleistungen außerhalb der Nachtzeit sind nach den Mehrdienstleistungen in der Nachtzeit auszugleichen.",
-       "w": false,
-       "k": "Außerhalb der Nachtzeit erbrachte Mehrdienstleistungen sind vor jenen in der Nachtzeit auszugleichen (§ 49 Abs. 2)."
+       "k": "§ 47: Der Beamte hat sich schon bei Vorliegen der Gründe zu enthalten; ein Feststellungsbescheid ist nicht vorgesehen."
       }
      ]
-    },
+    }
+   ]
+  },
+  {
+   "n": "52",
+   "label": "§ 52",
+   "title": "Ärztliche Untersuchung",
+   "stand": "24.06.2006",
+   "text": "(1) Bestehen berechtigte Zweifel an der für die Erfüllung der dienstlichen Aufgaben erforderlichen gesundheitlichen Eignung des Beamten, so hat sich dieser auf Anordnung der Dienstbehörde einer ärztlichen Untersuchung zu unterziehen.\n(2) Der infolge Krankheit, Unfalls oder Gebrechens vom Dienst abwesende Beamte hat sich auf Anordnung der Dienstbehörde einer ärztlichen Untersuchung zur Prüfung seines Gesundheitszustandes zu unterziehen. Wenn es zur zuverlässigen Beurteilung erforderlich ist, sind Fachärzte heranzuziehen. Eine Anordnung im Sinne des ersten Satzes ist spätestens drei Monate nach Beginn der Abwesenheit vom Dienst und sodann in Abständen von längstens drei Monaten zu erteilen.",
+   "q": [
     {
-     "id": "bdg-49-3",
-     "ref": "Abs. 4, 8",
-     "f": "Wie werden Werktagsüberstunden ausgeglichen oder abgegolten?",
+     "id": "bdg-52-1",
+     "ref": "Abs. 1, 2",
+     "f": "Welche Aussagen zur ärztlichen Untersuchung des Beamten nach § 52 BDG treffen zu?",
      "s": [
       {
-       "t": "Werktagsüberstunden können je nach Anordnung im Verhältnis 1 : 1,5 in Freizeit ausgeglichen werden.",
+       "t": "Bestehen berechtigte Zweifel an der für die Erfüllung der dienstlichen Aufgaben erforderlichen gesundheitlichen Eignung, so hat sich der Beamte auf Anordnung der Dienstbehörde einer ärztlichen Untersuchung zu unterziehen.",
        "w": true,
        "k": ""
       },
       {
-       "t": "Werktagsüberstunden können je nach Anordnung nach besoldungsrechtlichen Vorschriften abgegolten werden.",
-       "w": true,
-       "k": ""
-      },
-      {
-       "t": "Werktagsüberstunden können im Verhältnis 1 : 1,5 in Freizeit ausgeglichen und zusätzlich abgegolten werden.",
+       "t": "Für einen wegen Krankheit vom Dienst abwesenden Beamten darf eine Untersuchung zur Prüfung des Gesundheitszustandes erst angeordnet werden, wenn die Abwesenheit schon länger als drei Monate gedauert hat.",
        "w": false,
-       "k": "Die Kombination lautet: im Verhältnis 1 : 1 in Freizeit ausgleichen und zusätzlich abgelten (§ 49 Abs. 4 Z 3)."
+       "k": "§ 52 Abs. 2: Die Anordnung ist spätestens drei Monate nach Beginn der Abwesenheit zu erteilen, es gibt keine Mindestdauer der Abwesenheit."
       },
       {
-       "t": "Ein Freizeitausgleich für Werktagsüberstunden ist ohne zeitliche Grenze zulässig.",
+       "t": "Wenn es zur zuverlässigen Beurteilung des Gesundheitszustandes eines wegen Krankheit abwesenden Beamten erforderlich ist, sind Fachärzte heranzuziehen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Untersuchung wegen berechtigter Zweifel an der gesundheitlichen Eignung wird vom unmittelbaren Dienstvorgesetzten des Beamten angeordnet.",
        "w": false,
-       "k": "Er ist nur bis zum Ende des sechsten auf das Kalendervierteljahr der Leistung folgenden Monats zulässig (§ 49 Abs. 8)."
-      }
-     ]
-    },
-    {
-     "id": "bdg-49-4",
-     "ref": "Abs. 2, 6, 7, 9",
-     "f": "Welche Zeiten gelten nicht als Überstunden und was gilt für Nachtzeit und Mitteilung?",
-     "s": [
-      {
-       "t": "Als Nachtzeit im Sinne der Bestimmung gelten die Stunden von 22.00 bis 6.00 Uhr.",
-       "w": true,
-       "k": ""
-      },
-      {
-       "t": "Zeiten einer vom Beamten angestrebten Einarbeitung von Dienstzeit gelten jedenfalls nicht als Überstunden.",
-       "w": true,
-       "k": ""
-      },
-      {
-       "t": "Zeitguthaben aus der gleitenden Dienstzeit gelten stets als Überstunden.",
-       "w": false,
-       "k": "Sie gelten nicht als Überstunden, soweit sie die im Gleitzeitdienstplan festgelegte Obergrenze nicht übersteigen (§ 49 Abs. 9 Z 2)."
-      },
-      {
-       "t": "Dem Beamten ist bis zum Ende des auf das Kalendervierteljahr folgenden Kalendermonats mitzuteilen, welche Abgeltungsart auf welche Werktagsüberstunden angewendet wird.",
-       "w": true,
-       "k": ""
-      }
-     ]
-    },
-    {
-     "id": "bdg-49-5",
-     "ref": "Abs. 1 Z 1 bis 4",
-     "f": "Welche Aussagen zur Gleichhaltung nicht angeordneter Mehrdienstleistungen (§ 49 Abs. 1) treffen zu?",
-     "s": [
-      {
-       "t": "Der Beamte konnte einen zur Anordnung der Mehrdienstleistung Befugten nicht erreichen.",
-       "w": true,
-       "k": ""
-      },
-      {
-       "t": "Die Mehrdienstleistung war zur Abwehr eines Schadens unverzüglich notwendig.",
-       "w": true,
-       "k": ""
-      },
-      {
-       "t": "Ist der Beamte durch ein unvorhergesehenes oder unabwendbares Ereignis ohne sein Verschulden verhindert, die Meldefrist einzuhalten, verlängert sich diese um die Dauer der Verhinderung.",
-       "w": true,
-       "k": ""
-      },
-      {
-       "t": "Die Mehrdienstleistung muss nachträglich von der Dienstbehörde genehmigt werden, damit sie gleichzuhalten ist.",
-       "w": false,
-       "k": "Das Gesetz nennt vier Voraussetzungen (Z 1 bis 4), eine nachträgliche Genehmigung zählt nicht dazu (§ 49 Abs. 1)."
-      }
-     ]
-    },
-    {
-     "id": "bdg-49-6",
-     "ref": "Abs. 2, 3",
-     "f": "Welche Aussagen zu Mehrdienstleistungen an Sonn- und Feiertagen und an Werktagen treffen zu?",
-     "s": [
-      {
-       "t": "Mehrdienstleistungen an Sonn- und Feiertagen gelten in jedem Fall als Überstunden.",
-       "w": true,
-       "k": ""
-      },
-      {
-       "t": "Mehrdienstleistungen an Sonn- und Feiertagen sind nach besoldungsrechtlichen Vorschriften abzugelten.",
-       "w": true,
-       "k": ""
-      },
-      {
-       "t": "Mehrdienstleistungen an Sonn- und Feiertagen sind wie jene an Werktagen nach Möglichkeit im Verhältnis 1 : 1 in Freizeit auszugleichen.",
-       "w": false,
-       "k": "Mehrdienstleistungen an Sonn- und Feiertagen sind nicht durch Freizeit auszugleichen (§ 49 Abs. 2)."
-      },
-      {
-       "t": "Werktags erbrachte Mehrdienstleistungen sind nach Möglichkeit im selben Kalendervierteljahr im Verhältnis 1 : 1,5 in Freizeit auszugleichen.",
-       "w": false,
-       "k": "Der Ausgleich erfolgt im Verhältnis 1 : 1 (§ 49 Abs. 2); 1 : 1,5 gilt nur für Werktagsüberstunden nach Abs. 4 Z 1."
-      }
-     ]
-    },
-    {
-     "id": "bdg-49-7",
-     "ref": "Abs. 2, 7",
-     "f": "Was gilt für die Reihenfolge des Ausgleichs im Hinblick auf die Nachtzeit?",
-     "s": [
-      {
-       "t": "Mehrdienstleistungen außerhalb der Nachtzeit sind vor Mehrdienstleistungen in der Nachtzeit auszugleichen.",
-       "w": true,
-       "k": ""
-      },
-      {
-       "t": "Werktagsüberstunden außerhalb der Nachtzeit sind vor Werktagsüberstunden in der Nachtzeit auszugleichen.",
-       "w": true,
-       "k": ""
-      },
-      {
-       "t": "Die Reihenfolge (außerhalb vor in der Nachtzeit) gilt nur für Mehrdienstleistungen, nicht für Werktagsüberstunden.",
-       "w": false,
-       "k": "Abs. 7 ordnet die Reihenfolge auch für Werktagsüberstunden an (§ 49 Abs. 7)."
-      },
-      {
-       "t": "Die Nachtzeit umfasst die Stunden von 21.00 bis 5.00 Uhr.",
-       "w": false,
-       "k": "Die Nachtzeit sind die Stunden von 22.00 bis 6.00 Uhr (§ 49 Abs. 2, 7)."
-      }
-     ]
-    },
-    {
-     "id": "bdg-49-8",
-     "ref": "Abs. 3, 6, 9",
-     "f": "Welche Aussagen zu Überstunden, Mitteilung der Abgeltungsart und Einarbeitung treffen zu?",
-     "s": [
-      {
-       "t": "Werktags erbrachte Mehrdienstleistungen, die im betreffenden Kalendervierteljahr nicht durch Freizeit ausgeglichen sind, gelten mit Ablauf des Kalendervierteljahres als Überstunden.",
-       "w": true,
-       "k": ""
-      },
-      {
-       "t": "Zeitguthaben aus der gleitenden Dienstzeit im Sinne des Abs. 9 Z 2 sind, soweit nicht bereits erfolgt, ausschließlich im Verhältnis 1 : 1 in Freizeit abzugelten.",
-       "w": true,
-       "k": ""
-      },
-      {
-       "t": "Die Abgeltungsart für Werktagsüberstunden wird dem Beamten nur auf seinen Antrag mitgeteilt.",
-       "w": false,
-       "k": "Dem Beamten ist die angewendete Abgeltungsart bis zum Ende des auf das Kalendervierteljahr folgenden Kalendermonats mitzuteilen (§ 49 Abs. 6)."
-      },
-      {
-       "t": "Zeiten einer vom Beamten angestrebten Einarbeitung von Dienstzeit gelten als Überstunden, die im Verhältnis 1 : 1,5 in Freizeit auszugleichen sind.",
-       "w": false,
-       "k": "Solche Zeiten gelten jedenfalls nicht als Überstunden (§ 49 Abs. 9 Z 1)."
+       "k": "§ 52 Abs. 1: Die Anordnung trifft die Dienstbehörde, nicht der unmittelbare Dienstvorgesetzte."
       }
      ]
     }
@@ -2482,6 +2858,78 @@
        "t": "Die Dienstverhinderung ist dem Leiter der Dienststelle zu melden.",
        "w": false,
        "k": "Die Meldung ist an die Dienstbehörde zu richten (§ 53 Abs. 1c)."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "54",
+   "label": "§ 54",
+   "title": "Dienstweg",
+   "stand": "25.02.2023",
+   "text": "(1) Der Beamte hat Anbringen, die sich auf sein Dienstverhältnis oder auf seine dienstlichen Aufgaben beziehen, bei seinem unmittelbaren Dienstvorgesetzten einzubringen. Dieser hat das Anbringen unverzüglich an die zuständige Stelle weiterzuleiten.\n(2) Von der Einbringung im Dienstweg darf bei Gefahr im Verzug sowie dann abgesehen werden, wenn die Einhaltung des Dienstweges dem Beamten billigerweise nicht zumutbar ist.\n(3) In Dienstrechtsangelegenheiten und in Disziplinarangelegenheiten können ohne Einhaltung des Dienstweges eingebracht werden:\n1. Rechtsmittel,\n2. Säumnisbeschwerden und Fristsetzungsanträge,\n3. Anträge auf Wiederaufnahme des Verfahrens und auf Wiedereinsetzung in den vorigen Stand und\n4. Beschwerden an den Verfassungsgerichtshof und Revisionen an den Verwaltungsgerichtshof.\n(4) Meldungen und Hinweisgebungen gemäß § 53a zweiter Satz können ohne Einhaltung des Dienstweges eingebracht werden.",
+   "q": [
+    {
+     "id": "bdg-54-1",
+     "ref": "Abs. 1 bis 4",
+     "f": "Welche Aussagen zum Dienstweg nach § 54 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Anbringen, die sich auf das Dienstverhältnis oder auf die dienstlichen Aufgaben beziehen, sind beim unmittelbaren Dienstvorgesetzten einzubringen, der sie unverzüglich an die zuständige Stelle weiterzuleiten hat.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "In Disziplinarangelegenheiten können Rechtsmittel sowie Anträge auf Wiedereinsetzung in den vorigen Stand ohne Einhaltung des Dienstweges eingebracht werden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Ein Antrag auf Versetzung zählt zu den Anbringen, die nach § 54 Abs. 3 in Dienstrechtsangelegenheiten stets ohne Einhaltung des Dienstweges eingebracht werden können.",
+       "w": false,
+       "k": "§ 54 Abs. 3 nennt nur Rechtsmittel, Säumnisbeschwerden und Fristsetzungsanträge, Wiederaufnahme- und Wiedereinsetzungsanträge sowie Beschwerden an den VfGH und Revisionen an den VwGH. Ein Versetzungsantrag ist im Dienstweg einzubringen (Abs. 1), außer bei Gefahr im Verzug oder Unzumutbarkeit (Abs. 2)."
+      },
+      {
+       "t": "Meldungen und Hinweisgebungen nach § 53a zweiter Satz müssen im Dienstweg über den unmittelbaren Dienstvorgesetzten eingebracht werden.",
+       "w": false,
+       "k": "§ 54 Abs. 4: Solche Meldungen und Hinweisgebungen können ohne Einhaltung des Dienstweges eingebracht werden."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "55",
+   "label": "§ 55",
+   "title": "Wohnsitz und Dienstort",
+   "stand": "01.01.1980",
+   "text": "(1) Der Beamte hat seinen Wohnsitz so zu wählen, daß er bei der Erfüllung seiner dienstlichen Aufgaben nicht beeinträchtigt wird. Aus der Lage seiner Wohnung kann der Beamte, soweit gesetzlich nicht anderes bestimmt ist, keinen Anspruch auf dienstliche Begünstigungen ableiten.\n(2) Wenn es die dienstlichen Aufgaben des Beamten erfordern, hat er eine ihm von seiner Dienstbehörde zugewiesene und ihm zumutbare Wohnung (Dienstwohnung) zu beziehen.\n(3) Wenn besondere dienstliche Verhältnisse es erfordern, darf der Beamte auf Anordnung der Dienstbehörde seinen Dienstort oder sein Amtsgebiet nicht verlassen.",
+   "q": [
+    {
+     "id": "bdg-55-1",
+     "ref": "Abs. 1 bis 3",
+     "f": "Welche Aussagen zu Wohnsitz und Dienstort nach § 55 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Der Beamte hat seinen Wohnsitz so zu wählen, dass er bei der Erfüllung seiner dienstlichen Aufgaben nicht beeinträchtigt wird.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Aus der Lage seiner Wohnung kann der Beamte, soweit gesetzlich nicht anderes bestimmt ist, keinen Anspruch auf dienstliche Begünstigungen ableiten.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Wenn es die dienstlichen Aufgaben erfordern, hat der Beamte eine ihm von der Dienstbehörde zugewiesene Dienstwohnung auch dann zu beziehen, wenn sie ihm nicht zumutbar ist.",
+       "w": false,
+       "k": "§ 55 Abs. 2: Die zugewiesene Wohnung muss dem Beamten zumutbar sein."
+      },
+      {
+       "t": "Wenn besondere dienstliche Verhältnisse es erfordern, darf der Beamte auf Anordnung der Dienstbehörde seinen Dienstort oder sein Amtsgebiet nicht verlassen.",
+       "w": true,
+       "k": ""
       }
      ]
     }
@@ -2713,6 +3161,681 @@
    ]
   },
   {
+   "n": "59",
+   "label": "§ 59",
+   "title": "Verbot der Geschenkannahme",
+   "stand": "30.12.2022",
+   "text": "(1) Der Beamtin oder dem Beamten ist es verboten, im Hinblick auf ihre oder seine amtliche Stellung oder Amtsführung für sich oder eine Dritte oder einen Dritten ein Geschenk oder einen sonstigen Vorteil zu fordern oder anzunehmen. Ebenso ist es der Beamtin oder dem Beamten verboten, im Hinblick auf ihre oder seine amtliche Stellung oder Amtsführung sich oder einer oder einem Dritten ein Geschenk oder einen sonstigen Vorteil zu verschaffen oder versprechen zu lassen.\n(2) Eine orts- oder landesübliche Aufmerksamkeit von geringem Wert gilt nicht als Geschenk oder sonstiger Vorteil im Sinne des Abs. 1, soweit die Beamtin oder der Beamte nicht die Absicht verfolgt, sich oder einer oder einem Dritten durch die wiederkehrende Begehung im Sinne des Abs. 1 eine fortlaufende Einnahme zu verschaffen.\n(3) Ehrengeschenke sind Gegenstände, die der Beamtin oder dem Beamten von Staaten, öffentlich-rechtlichen Körperschaften oder Traditionsinstitutionen für Verdienste oder aus Courtoisie übergeben werden.\n(4) Die Beamtin oder der Beamte darf Ehrengeschenke entgegennehmen. Sie oder er hat die Dienstbehörde unverzüglich davon in Kenntnis zu setzen. Diese hat das Ehrengeschenk als Bundesvermögen zu erfassen. Die eingegangenen Ehrengeschenke sind unter Beachtung der Grundsätze der Sparsamkeit, Wirtschaftlichkeit und Zweckmäßigkeit zu veräußern oder sonst zu verwerten. Ihr Erlös ist zu vereinnahmen und für Wohlfahrtszwecke zugunsten der Bediensteten oder sonstiger karitativer Zwecke zu verwenden. Die näheren Bestimmungen darüber sind innerhalb jedes Ressorts durch Verordnung zu erlassen.\n(5) Ehrengeschenke von geringfügigem oder lediglich symbolischem Wert können der Beamtin oder dem Beamten zur persönlichen Nutzung überlassen werden.\n(6) Ein Vorteil, der einer Beamtin oder einem Beamten im Rahmen einer Veranstaltung gewährt wird, an deren Teilnahme ein dienstlich oder sonst sachlich gerechtfertigtes Interesse besteht, darf von ihr oder ihm angenommen werden, wenn dieser Vorteil\n1. grundsätzlich allen Teilnehmenden im Rahmen dieser Veranstaltung gewährt wird,\n2. dem üblichen Standard vergleichbarer Veranstaltungen entspricht,\n3. einen inhaltlichen Bezug zu dieser Veranstaltung hat und\n4. abgesehen von Z 3 in keinem Konnex zu einem konkreten Amtsgeschäft steht.\n(7) Ein Geschenk oder sonstiger Vorteil im Sinne des Abs. 1 liegt nicht vor, wenn\n1. die Beamtin durch ihr oder der Beamte durch sein Verhalten im Sinne des Abs. 1 eine durch Gesetz, Verordnung oder sonstige generelle Anordnung vorgesehene Zuständigkeit oder einen von zuständiger Stelle ergangenen ausdrücklichen Dienstauftrag erfüllt,\n2. diese Zuwendung ausschließlich dem Bund oder dem Rechtsträger zukommt, für den die Beamtin als solche oder der Beamte als solcher tätig ist,\n3. diese Zuwendung darüber hinaus in keinem Konnex zu einem konkreten Amtsgeschäft steht,\n4. bereits der Anschein einer möglichen Beeinflussung oder Abhängigkeit der Amtsführung ausgeschlossen werden kann,\n5. der gesamte Vorgang ordnungsgemäß aktenmäßig dokumentiert wird und\n6. keine dienstlichen Interessen entgegenstehen.",
+   "q": [
+    {
+     "id": "bdg-59-1",
+     "ref": "Abs. 1, 2",
+     "f": "Welche Aussagen zum Verbot der Geschenkannahme nach § 59 Abs. 1 und 2 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Dem Beamten ist verboten, im Hinblick auf seine amtliche Stellung oder Amtsführung für sich oder einen Dritten ein Geschenk oder einen sonstigen Vorteil zu fordern oder anzunehmen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Das Verbot des § 59 BDG erfasst nur Vorteile, die für die Vornahme oder Unterlassung einer konkreten Amtshandlung gewährt werden.",
+       "w": false,
+       "k": "§ 59 Abs. 1 knüpft an die amtliche Stellung oder Amtsführung an; ein Bezug zu einer konkreten Amtshandlung ist nicht erforderlich."
+      },
+      {
+       "t": "Eine orts- oder landesübliche Aufmerksamkeit von geringem Wert gilt nicht als Geschenk, soweit der Beamte nicht die Absicht verfolgt, sich durch wiederkehrende Begehung eine fortlaufende Einnahme zu verschaffen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Verboten ist nur das Fordern und das Annehmen von Geschenken; sich ein Geschenk versprechen zu lassen oder zu verschaffen ist vom Verbot nicht erfasst.",
+       "w": false,
+       "k": "§ 59 Abs. 1 zweiter Satz: Ebenso verboten ist es, sich oder einem Dritten ein Geschenk oder sonstigen Vorteil zu verschaffen oder versprechen zu lassen."
+      }
+     ]
+    },
+    {
+     "id": "bdg-59-2",
+     "ref": "Abs. 3 bis 6",
+     "f": "Welche Aussagen zu Ehrengeschenken und zu Vorteilen bei Veranstaltungen nach § 59 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Der Beamte darf Ehrengeschenke entgegennehmen, hat aber die Dienstbehörde unverzüglich davon in Kenntnis zu setzen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Ein entgegengenommenes Ehrengeschenk darf dem Beamten unabhängig von seinem Wert zur persönlichen Nutzung überlassen werden.",
+       "w": false,
+       "k": "§ 59 Abs. 4 und 5: Die Dienstbehörde erfasst Ehrengeschenke als Bundesvermögen; zur persönlichen Nutzung überlassen werden können nur Ehrengeschenke von geringfügigem oder lediglich symbolischem Wert."
+      },
+      {
+       "t": "Ein Vorteil im Rahmen einer Veranstaltung, an deren Teilnahme ein dienstlich oder sonst sachlich gerechtfertigtes Interesse besteht, darf angenommen werden, wenn er grundsätzlich allen Teilnehmenden gewährt wird, dem üblichen Standard vergleichbarer Veranstaltungen entspricht, einen inhaltlichen Bezug zur Veranstaltung hat und abgesehen davon in keinem Konnex zu einem konkreten Amtsgeschäft steht.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Erlös aus der Verwertung eines Ehrengeschenks steht dem Beamten zu, dem es übergeben wurde.",
+       "w": false,
+       "k": "§ 59 Abs. 4: Der Erlös ist zu vereinnahmen und für Wohlfahrtszwecke zugunsten der Bediensteten oder sonstiger karitativer Zwecke zu verwenden."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "60",
+   "label": "§ 60",
+   "title": "Dienstkleidung, Dienstabzeichen, Dienstausweise und sonstige Sachbehelfe",
+   "stand": "24.12.2020",
+   "text": "(1) Wenn es dienstliche Gründe erfordern, ist der Beamte im Dienst verpflichtet,\n1. eine Dienstkleidung zu tragen oder\n2. sich mit einem Dienstabzeichen oder einem Dienstausweis auszuweisen.\n(2) Dienstausweise können folgende personenbezogene Daten oder, falls unbedingt erforderlich, besondere Kategorien personenbezogener Daten der Beamtin oder des Beamten enthalten, soweit diese zur Ausweisleistung dienstlich erforderlich sind oder die Beamtin oder der Beamte diese wünscht:\n1. ein fälschungssicheres Lichtbild,\n2. die Bezeichnung der Dienststelle oder des Standeskörpers,\n3. die Dienstnummer,\n4. die Kurzbezeichnung für die ausgeübte Verwendung (Funktion),\n5. den Vor- und Familiennamen,\n6. einen allfälligen akademischen Grad,\n7. den Amtstitel,\n8. das Geburtsdatum,\n9. die Unterschrift.\n(2a) Dienstausweise müssen dafür geeignet sein, sie auch mit der Funktion einer Bürgerkarte gemäß § 2 Z 10 des EGovernment-Gesetzes – EGovG, BGBl. I Nr. 10/2004, ausstatten zu können.\n(2b) Die Beamtin oder der Beamte hat, soweit dienstliche Erfordernisse vorliegen, einen Vertrag zur Ausstellung eines qualifizierten Zertifikats gemäß Art. 3 Z 15 der Verordnung (EU) Nr. 910/2014 über elektronische Identifizierung und Vertrauensdienste für elektronische Transaktionen im Binnenmarkt und zur Aufhebung der Richtlinie 1999/93/EG, ABl. Nr. L 257 vom 28.08.2014 S. 73, in der Fassung der Berichtigung ABl. Nr. L 257 vom 29.01.2015 S. 19, mit einem vom Dienstgeber namhaft gemachten Vertrauensdiensteanbieter abzuschließen. Der Dienstgeber hat alle mit diesem Vertrag verbundenen Kosten zu tragen.\n(3) Durch Verordnung des zuständigen Bundesministers ist zu regeln,\n1. in welchen Verwendungen und unter welchen näheren Voraussetzungen die Pflicht besteht,\n  a) die Dienstkleidung zu tragen oder\n  b) sich mit einem Dienstabzeichen oder dem Dienstausweis auszuweisen,\n2. bei welchen Anlässen die Dienstkleidung außerhalb des Dienstes und im Ruhestand getragen werden darf,\n3. welche anderen als die in Abs. 2 genannten Datenarten der Dienstausweis aus dienstlichen Gründen zu enthalten hat.\n(4) Verordnungen nach Abs. 3 sind durch Auflage bei geeigneten Stellen zur Einsicht während der Amtsstunden kundzumachen.\n(5) Der Beamte hat ihm zur Verfügung gestellte Dienstkleidung, Dienstabzeichen, Dienstausweise und sonstige Sachbehelfe sorgsam zu behandeln.\nAnmerkung\nEG/EU: Art. 25, BGBl. I Nr. 50/2016",
+   "q": [
+    {
+     "id": "bdg-60-1",
+     "ref": "Abs. 1 bis 3",
+     "f": "Welche Aussagen zu Dienstkleidung, Dienstabzeichen und Dienstausweisen nach § 60 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Wenn es dienstliche Gründe erfordern, ist der Beamte im Dienst verpflichtet, eine Dienstkleidung zu tragen oder sich mit einem Dienstabzeichen oder einem Dienstausweis auszuweisen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Dienstausweise müssen dafür geeignet sein, sie auch mit der Funktion einer Bürgerkarte nach dem E-Government-Gesetz ausstatten zu können.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Soweit dienstliche Erfordernisse vorliegen, hat der Beamte einen Vertrag über ein qualifiziertes Zertifikat mit einem vom Dienstgeber namhaft gemachten Anbieter abzuschließen und die damit verbundenen Kosten selbst zu tragen.",
+       "w": false,
+       "k": "§ 60 Abs. 2b: Der Dienstgeber hat alle mit diesem Vertrag verbundenen Kosten zu tragen."
+      },
+      {
+       "t": "In welchen Verwendungen die Pflicht zum Tragen der Dienstkleidung besteht, legt die jeweilige Dienstbehörde durch Dienstanweisung fest.",
+       "w": false,
+       "k": "§ 60 Abs. 3 Z 1: Das ist durch Verordnung des zuständigen Bundesministers zu regeln."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "47a",
+   "label": "§ 47a",
+   "title": "Begriffsbestimmungen",
+   "stand": "01.01.2008",
+   "text": "Im Sinne dieses Abschnittes ist:\n1. Dienstzeit die Zeit\n  a) der im Dienstplan vorgeschriebenen Dienststunden (dienstplanmäßige Dienstzeit),\n  b) einer Dienststellenbereitschaft,\n  c) eines Journaldienstes undd)der Mehrdienstleistung,\n2. Mehrdienstleistung\n  a) die Überstunden,\n  b) jene Teile des Journaldienstes, während derer der Beamte verpflichtet ist, seiner dienstlichen Tätigkeit nachzugehen,\n  c) die über die dienstplanmäßige Dienstzeit hinaus geleisteten dienstlichen Tätigkeiten, die gemäß § 49 Abs. 2 im selben Kalendervierteljahr im Verhältnis 1 : 1 durch Freizeit ausgeglichen werden,d)(Anm.: aufgehoben durch BGBl. I Nr. 96/2007)\n3. Tagesdienstzeit die Dienstzeit innerhalb eines ununterbrochenen Zeitraumes von 24 Stunden und\n4. Wochendienstzeit die Dienstzeit innerhalb eines Zeitraumes von Montag bis einschließlich Sonntag.",
+   "q": [
+    {
+     "id": "bdg-47a-1",
+     "ref": "Z 1 bis 4",
+     "f": "Welche Begriffe der Dienstzeit definiert § 47a BDG und wie?",
+     "s": [
+      {
+       "t": "Dienstzeit ist die Zeit der im Dienstplan vorgeschriebenen Dienststunden, einer Dienststellenbereitschaft, eines Journaldienstes und der Mehrdienstleistung.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Zur Mehrdienstleistung zählt der gesamte Journaldienst.",
+       "w": false,
+       "k": "§ 47a Z 2 lit. b: Mehrdienstleistung sind nur jene Teile des Journaldienstes, während derer der Beamte verpflichtet ist, seiner dienstlichen Tätigkeit nachzugehen."
+      },
+      {
+       "t": "Tagesdienstzeit ist die Dienstzeit innerhalb eines ununterbrochenen Zeitraumes von 24 Stunden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Wochendienstzeit ist die Dienstzeit innerhalb eines Zeitraumes von Montag bis Freitag.",
+       "w": false,
+       "k": "§ 47a Z 4: Der Zeitraum reicht von Montag bis einschließlich Sonntag."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "48",
+   "label": "§ 48",
+   "title": "Dienstplan",
+   "stand": "01.01.2026",
+   "text": "(1) Der Beamte hat die im Dienstplan vorgeschriebenen Dienststunden einzuhalten, wenn er nicht vom Dienst befreit oder enthoben oder gerechtfertigt vom Dienst abwesend ist. Die tatsächlich erbrachte Dienstzeit ist, sofern nicht wichtige dienstliche Interessen entgegenstehen, mit Hilfe automatisierter Verfahren zu erfassen.\n(2) Die regelmäßige Wochendienstzeit des Beamten beträgt 40 Stunden. Sie kann in den einzelnen Wochen über- oder unterschritten werden, hat aber im Kalenderjahr im Durchschnitt 40 Stunden je Woche zu betragen. Das Ausmaß der zulässigen Über- und Unterschreitung der regelmäßigen Wochendienstzeit in einzelnen Wochen des Durchrechnungszeitraumes ist im Dienstplan festzulegen.\n(2a) Die Wochendienstzeit ist unter Berücksichtigung der dienstlichen Erfordernisse und der berechtigten Interessen der Beamten durch einen Dienstplan möglichst gleichmäßig und bleibend auf die Tage der Woche aufzuteilen (Normaldienstplan). Soweit nicht dienstliche oder sonstige öffentliche Interessen entgegenstehen, kann die Wochendienstzeit auch unregelmäßig auf die Tage der Woche aufgeteilt werden. Soweit nicht zwingende dienstliche oder sonstige öffentliche Interessen entgegenstehen, sind Sonntage, gesetzliche Feiertage und Samstage dienstfrei zu halten.\n(3) Soweit nicht wichtige dienstliche oder sonstige öffentliche Interessen entgegenstehen, ist die gleitende Dienstzeit einzuführen. Gleitende Dienstzeit ist jene Form der Dienstzeit, bei der der Beamte den Beginn und das Ende seiner täglichen Dienstzeit innerhalb festgesetzter Grenzen (Gleitzeitrahmen) selbst bestimmen kann. Innerhalb des Gleitzeitrahmens kann eine Blockzeit festgelegt werden, in der die Beamtin oder der Beamte jedenfalls Dienst zu versehen hat. Der fiktive Normaldienstplan dient als Berechnungsbasis für die Feststellung der anrechenbaren Dienstzeit bei Abwesenheit vom Dienst. Die Erfüllung der regelmäßigen Wochendienstzeit ist im Durchschnitt der Wochen des Kalenderjahres zu gewährleisten. Der zur Erreichung der durchschnittlichen Wochendienstzeit erforderliche Verbrauch von Zeitguthaben aus der gleitenden Dienstzeit kann, soweit nicht dienstliche Interessen entgegenstehen, vom unmittelbaren Dienstvorgesetzten auch während der Blockzeit gestattet werden. Im Gleitzeitdienstplan sind\n1. die zeitliche Lage und Dauer des Gleitzeitrahmens und des fiktiven Normaldienstplans,\n2. gegebenenfalls die Blockzeit sowie\n3. eine Obergrenze für die jeweils in den Folgezeitraum, der ein Jahr nicht übersteigen darf, übertragbaren Zeitguthaben bzw. Zeitschuldenfestzulegen.\n(3a) Für Beamtinnen und Beamte, deren Mehrleistungen in zeitlicher und mengenmäßiger Hinsicht durch eine Zulage oder ein Fixgehalt besoldungsrechtlich als abgegolten gelten, ist die Übertragung von Zeitguthaben aus der gleitenden Dienstzeit des betreffenden Kalendermonats in den Folgemonat nur in dem Ausmaß zulässig, als das im betreffenden Kalendermonat aufgebaute Guthaben aus der gleitenden Dienstzeit bei Bezug\n1. einer Zulage 11 Stunden,\n2. eines Fixgehalts 18 Stundenübersteigt.\n(3b) Das gemäß Abs. 3a Z 1 und 2 angeführte Stundenausmaß ändert sich im Falle einer\n1. Herabsetzung der regelmäßigen Wochendienstzeit gemäß §§ 50a, 50b, 50e, 50f oder 50g,\n2. Teilzeitbeschäftigung nach dem MSchG oder VKG oder\n3. Dienstfreistellung gemäß § 17 Abs. 1, § 78a oder § 78c Abs. 3dem Ausmaß der Herabsetzung, Teilzeitbeschäftigung oder Dienstfreistellung entsprechend.\n(4) Bei Schicht- oder Wechseldienst ist ein Schicht- oder Wechseldienstplan zu erstellen. Dabei darf die regelmäßige Wochendienstzeit im Durchschnitt der Wochen des Kalenderjahres nicht über- oder unterschritten werden. Schichtdienst ist jene Form der Dienstzeit, bei der aus organisatorischen Gründen an einer Arbeitsstätte der Dienstbetrieb über die Zeit des Normaldienstplanes hinaus aufrechterhalten werden muss und ein Beamter den anderen ohne wesentliche zeitmäßige Überschneidung an der Arbeitsstätte ablöst. Bei wesentlichen zeitmäßigen Überschneidungen liegt Wechseldienst vor.\n(5) Ist im Rahmen eines Dienstplanes regelmäßig an Sonn- oder Feiertagen Dienst zu leisten und wird der Beamte zu solchen Sonn- und Feiertagsdiensten eingeteilt, so ist eine entsprechende Ersatzruhezeit festzusetzen. Der Dienst an Sonn- und Feiertagen gilt als Werktagsdienst. Wird der Beamte während der Ersatzruhezeit zur Dienstleistung herangezogen, so gilt dieser Dienst als Sonntagsdienst.\n(6) Für Beamte, in deren Dienstzeit auf Grund der Eigenart des Dienstes regelmäßig oder in erheblichem Umfang Dienstbereitschaft beziehungsweise Wartezeiten fallen und diese durch organisatorische Maßnahmen nicht vermieden werden können, kann die Bundesregierung durch Verordnung bestimmen, daß der Dienstplan eine längere als die in den Abs. 2 und 4 vorgesehene Wochendienstzeit umfaßt (verlängerter Dienstplan). Soweit die Wochendienstzeit nach dem verlängerten Dienstplan die in den Abs. 2 oder 4 vorgesehene Wochendienstzeit übersteigt, gilt diese Zeit nicht als Dienstzeit im Sinne dieses Abschnittes.\nAnmerkung\nV: BGBl. Nr. 799/1974, 17/1982",
+   "q": [
+    {
+     "id": "bdg-48-1",
+     "ref": "Abs. 1 bis 3",
+     "f": "Was gilt nach § 48 BDG für Dienstplan, Wochendienstzeit und gleitende Dienstzeit?",
+     "s": [
+      {
+       "t": "Der Beamte hat die im Dienstplan vorgeschriebenen Dienststunden einzuhalten, wenn er nicht vom Dienst befreit oder enthoben oder gerechtfertigt vom Dienst abwesend ist.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die regelmäßige Wochendienstzeit von 40 Stunden darf in den einzelnen Wochen weder über- noch unterschritten werden.",
+       "w": false,
+       "k": "§ 48 Abs. 2: Sie kann in einzelnen Wochen über- oder unterschritten werden, hat aber im Kalenderjahr im Durchschnitt 40 Stunden je Woche zu betragen."
+      },
+      {
+       "t": "Bei der gleitenden Dienstzeit kann der Beamte Beginn und Ende seiner täglichen Dienstzeit innerhalb festgesetzter Grenzen (Gleitzeitrahmen) selbst bestimmen; innerhalb des Rahmens kann eine Blockzeit festgelegt werden, in der er jedenfalls Dienst zu versehen hat.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Bei der gleitenden Dienstzeit ist die Erfüllung der regelmäßigen Wochendienstzeit im Durchschnitt der Wochen des Kalendervierteljahres zu gewährleisten.",
+       "w": false,
+       "k": "§ 48 Abs. 3: Maßgeblich ist der Durchschnitt der Wochen des Kalenderjahres."
+      }
+     ]
+    },
+    {
+     "id": "bdg-48-2",
+     "ref": "Abs. 4, 5",
+     "f": "Was gilt nach § 48 BDG für Schicht- und Wechseldienst sowie für Dienst an Sonn- und Feiertagen?",
+     "s": [
+      {
+       "t": "Bei Schicht- oder Wechseldienst ist ein Schicht- oder Wechseldienstplan zu erstellen, wobei die regelmäßige Wochendienstzeit im Durchschnitt der Wochen des Kalenderjahres nicht über- oder unterschritten werden darf.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Wechseldienst liegt vor, wenn ein Beamter den anderen ohne wesentliche zeitmäßige Überschneidung an der Arbeitsstätte ablöst.",
+       "w": false,
+       "k": "§ 48 Abs. 4: Das ist Schichtdienst; bei wesentlichen zeitmäßigen Überschneidungen liegt Wechseldienst vor."
+      },
+      {
+       "t": "Ist regelmäßig an Sonn- oder Feiertagen Dienst zu leisten und wird der Beamte dazu eingeteilt, ist eine entsprechende Ersatzruhezeit festzusetzen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Dienst an Sonn- und Feiertagen gilt als Sonntagsdienst, ein Dienst während der Ersatzruhezeit als Werktagsdienst.",
+       "w": false,
+       "k": "§ 48 Abs. 5: Dienst an Sonn- und Feiertagen gilt als Werktagsdienst; wird der Beamte während der Ersatzruhezeit herangezogen, gilt dieser Dienst als Sonntagsdienst."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "48a",
+   "label": "§ 48a",
+   "title": "Höchstgrenzen der Dienstzeit",
+   "stand": "01.01.2014",
+   "text": "(1) Die Tagesdienstzeit darf 13 Stunden nicht überschreiten.\n(2) Von der Höchstgrenze gemäß Abs. 1 kann bei Tätigkeiten abgewichen werden,\n1. die an außerhalb des Dienstortes gelegenen Orten zu verrichten sind oder\n2. die notwendig sind, um die Kontinuität des Dienstes oder der Produktion zu gewährleisten, insbesondere\n  a) zur Betreuung oder Beaufsichtigung von Personen in Heimen oder Justizanstalten,\n  b) bei Forschungs- und Entwicklungstätigkeiten,\n  c) bei land- und forstwirtschaftlichen Tätigkeiten,d)bei Tätigkeiten der Post und Telekommunikation im Bereich der jeweiligen in § 17 Abs. 1a des Poststrukturgesetzes (PTSG), BGBl. Nr. 201/1996, angeführten Unternehmungen (der diese Unternehmungen umfassende Bereich wird in diesem Bundesgesetz als „PTA-Bereich“ bezeichnet), sowiee)zur Freihaltung der Schiffahrtsrinne bei der Österreichischen Donau-Betriebs-Aktiengesellschaft oder\n3. im Falle eines vorhersehbaren übermäßigen Arbeitsanfalles in land- und forstwirtschaftlichen Betrieben des Bundes,wenn dem betroffenen Beamten innerhalb der nächsten 14 Kalendertage eine Ruhezeit verlängert wird. Die Ruhezeit ist um das Ausmaß zu verlängern, um das der verlängerte Dienst 13 Stunden überstiegen hat.\n(3) Die Wochendienstzeit darf innerhalb eines Durchrechnungszeitraumes von 17 Wochen im Durchschnitt 48 Stunden nicht überschreiten. Bei der Ermittlung der zulässigen Wochendienstzeit bleiben Zeiten, in denen der Beamte vom Dienst befreit, enthoben oder gerechtfertigt vom Dienst abwesend ist, außer Betracht.\n(4) Über die Höchstgrenze gemäß Abs. 3 hinaus sind längere Dienstzeiten nur mit Zustimmung des Beamten zulässig. Dem Beamten, der nicht bereit ist, längere Dienste zu leisten, dürfen daraus keine Nachteile entstehen. Der Leiter einer Dienststelle ist verpflichtet, aktuelle Listen über Beamte zu führen, die sich zur Erbringung längerer Dienste bereit erklärt haben. Die aktualisierten Listen sind jeweils der Dienstbehörde vorzulegen.\n(5) Bei Eintritt außergewöhnlicher Ereignisse oder nicht vorhersehbarer Umstände sind von Abs. 1 abweichende Anordnungen soweit zulässig, als dies im Interesse des Schutzes der Gesundheit und des Lebens von Menschen, der Aufrechterhaltung der öffentlichen Ordnung und Sicherheit oder zur Abwehr eines unverhältnismäßigen wirtschaftlichen Schadens geboten erscheint, um die Gefährdung abzuwenden oder zu beseitigen.",
+   "q": [
+    {
+     "id": "bdg-48a-1",
+     "ref": "Abs. 1 bis 5",
+     "f": "Was gilt nach § 48a BDG für die Höchstgrenzen der Dienstzeit?",
+     "s": [
+      {
+       "t": "Die Tagesdienstzeit darf 13 Stunden nicht überschreiten.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Wochendienstzeit darf innerhalb eines Durchrechnungszeitraumes von 17 Wochen im Durchschnitt 40 Stunden nicht überschreiten.",
+       "w": false,
+       "k": "§ 48a Abs. 3: Die Höchstgrenze beträgt im Durchschnitt 48 Stunden."
+      },
+      {
+       "t": "Über die Höchstgrenze der durchschnittlichen Wochendienstzeit hinaus sind längere Dienstzeiten nur mit Zustimmung des Beamten zulässig; dem Beamten, der dazu nicht bereit ist, dürfen daraus keine Nachteile entstehen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Wird bei Tätigkeiten an außerhalb des Dienstortes gelegenen Orten die Tagesdienstzeit von 13 Stunden überschritten, muss dem Beamten keine Ruhezeit verlängert werden.",
+       "w": false,
+       "k": "§ 48a Abs. 2: Abweichung ist nur zulässig, wenn dem Beamten innerhalb der nächsten 14 Kalendertage eine Ruhezeit verlängert wird, und zwar um das Ausmaß der Überschreitung."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "48c",
+   "label": "§ 48c",
+   "title": "Tägliche Ruhezeiten",
+   "stand": "01.07.1997",
+   "text": "Nach Beendigung der Tagesdienstzeit ist dem Beamten eine ununterbrochene Ruhezeit von mindestens elf Stunden zu gewähren.",
+   "q": [
+    {
+     "id": "bdg-48c-1",
+     "ref": "§ 48c",
+     "f": "Was gilt nach § 48c BDG für die tägliche Ruhezeit?",
+     "s": [
+      {
+       "t": "Nach Beendigung der Tagesdienstzeit ist dem Beamten eine ununterbrochene Ruhezeit von mindestens elf Stunden zu gewähren.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die tägliche Ruhezeit kann in mehrere Teile geteilt werden, sofern sie insgesamt elf Stunden erreicht.",
+       "w": false,
+       "k": "§ 48c: Die Ruhezeit muss ununterbrochen sein."
+      },
+      {
+       "t": "Nach Beendigung der Tagesdienstzeit ist eine ununterbrochene Ruhezeit von mindestens zwölf Stunden zu gewähren.",
+       "w": false,
+       "k": "§ 48c: Die Mindestdauer beträgt elf Stunden."
+      },
+      {
+       "t": "Die Ruhezeit ist dem Beamten nach Beendigung der Wochendienstzeit zu gewähren.",
+       "w": false,
+       "k": "§ 48c: Sie ist nach Beendigung der Tagesdienstzeit zu gewähren."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "49",
+   "label": "§ 49",
+   "title": "Mehrdienstleistung",
+   "stand": "30.12.2022",
+   "text": "(1) Der Beamte hat auf Anordnung über die im Dienstplan vorgeschriebenen Dienststunden hinaus Dienst zu versehen (Mehrdienstleistung). Den auf Anordnung erbrachten Mehrdienstleistungen sind Mehrdienstleistungen gleichzuhalten, wenn\n1. der Beamte einen zur Anordnung der Mehrdienstleistung Befugten nicht erreichen konnte,\n2. die Mehrdienstleistung zur Abwehr eines Schadens unverzüglich notwendig war,\n3. die Notwendigkeit der Mehrdienstleistung nicht auf Umstände zurückgeht, die von dem Beamten, der die Mehrdienstleistung erbracht hat, hätten vermieden werden können, und\n4. der Beamte diese Mehrdienstleistung spätestens innerhalb einer Woche nach der Erbringung schriftlich meldet; ist der Beamte durch ein unvorhergesehenes oder unabwendbares Ereignis ohne sein Verschulden verhindert, diese Frist einzuhalten, so verlängert sie sich um die Dauer der Verhinderung.\n(2) An Werktagen erbrachte Mehrdienstleistungen (ausgenommen jene nach § 47a Z 2 lit. b) sind nach Möglichkeit im selben Kalendervierteljahr im Verhältnis 1 : 1 in Freizeit auszugleichen. Mehrdienstleistungen außerhalb der Nachtzeit sind vor Mehrdienstleistungen in der Nachtzeit (22.00 bis 6.00 Uhr) auszugleichen. Mehrdienstleistungen an Sonn- und Feiertagen sind nicht durch Freizeit auszugleichen.\n(3) Mehrdienstleistungen an Werktagen, die im betreffenden Kalendervierteljahr nicht durch Freizeit ausgeglichen sind, gelten mit Ablauf des Kalendervierteljahres als Überstunden. Mehrdienstleistungen an Sonn- und Feiertagen gelten in jedem Fall als Überstunden und sind nach besoldungsrechtlichen Vorschriften abzugelten.\n(4) Werktagsüberstunden sind je nach Anordnung\n1. im Verhältnis 1 : 1,5 in Freizeit auszugleichen oder\n2. nach besoldungsrechtlichen Vorschriften abzugelten oder\n3. im Verhältnis 1 : 1 in Freizeit auszugleichen und zusätzlich nach besoldungsrechtlichen Vorschriften abzugelten.(Anm.: Abs. 5 aufgehoben durch Art. 1 Z 13, BGBl. I Nr. 205/2022)\n(6) Dem Beamten ist bis zum Ende des auf das Kalendervierteljahr folgenden Kalendermonats mitzuteilen, auf welche Werktagsüberstunden welche Abgeltungsart des Abs. 4 angewendet wird.\n(7) Werktagsüberstunden außerhalb der Nachtzeit sind vor Werktagsüberstunden in der Nachtzeit (22.00 bis 6.00 Uhr) auszugleichen.\n(8) Ein Freizeitausgleich für Werktagsüberstunden ist bis zum Ende des sechsten auf das Kalendervierteljahr der Leistung folgenden Monats zulässig.\n(9) Folgende Zeiten gelten jedenfalls nicht als Überstunden:\n1. Zeiten einer vom Beamten angestrebten Einarbeitung von Dienstzeit (zB im Fall eines Diensttausches oder einer sonstigen angestrebten Verlegung der Zeit der Dienstleistung) und\n2. Zeitguthaben aus der gleitenden Dienstzeit, soweit sie die im Gleitzeitdienstplan festgelegte Obergrenze für jeweils in den Folgezeitraum übertragbare Zeitguthaben nicht übersteigen. Diese Zeiten sind, soweit dies nicht bereits erfolgt ist, ausschließlich im Verhältnis 1 : 1 in Freizeit abzugelten.",
+   "q": [
+    {
+     "id": "bdg-49-1",
+     "ref": "Abs. 1",
+     "f": "Was gilt für angeordnete und nicht angeordnete Mehrdienstleistungen?",
+     "s": [
+      {
+       "t": "Der Beamte hat über die im Dienstplan vorgeschriebenen Dienststunden hinaus nur dann Dienst zu versehen, wenn er der Anordnung zustimmt.",
+       "w": false,
+       "k": "Er hat auf Anordnung über die vorgeschriebenen Dienststunden hinaus Dienst zu versehen (Mehrdienstleistung), eine Zustimmung ist nicht vorgesehen (§ 49 Abs. 1)."
+      },
+      {
+       "t": "Nicht angeordnete Mehrdienstleistungen sind gleichzuhalten, wenn der Beamte sie spätestens innerhalb einer Woche nach Erbringung schriftlich meldet (und die übrigen Voraussetzungen vorliegen).",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die schriftliche Meldung einer nicht angeordneten Mehrdienstleistung hat spätestens innerhalb eines Monats zu erfolgen.",
+       "w": false,
+       "k": "Die Frist beträgt eine Woche nach der Erbringung (§ 49 Abs. 1 Z 4)."
+      },
+      {
+       "t": "Nicht angeordnete Mehrdienstleistungen sind stets gleichgehalten, auch wenn die Notwendigkeit auf vom Beamten vermeidbare Umstände zurückgeht.",
+       "w": false,
+       "k": "Voraussetzung ist unter anderem, dass die Notwendigkeit nicht auf Umstände zurückgeht, die der Beamte hätte vermeiden können (§ 49 Abs. 1 Z 3)."
+      }
+     ]
+    },
+    {
+     "id": "bdg-49-2",
+     "ref": "Abs. 2, 3",
+     "f": "Wie sind Mehrdienstleistungen auszugleichen und wann werden sie zu Überstunden?",
+     "s": [
+      {
+       "t": "An Werktagen erbrachte Mehrdienstleistungen (ausgenommen jene nach § 47a Z 2 lit. b) sind nach Möglichkeit im selben Kalendervierteljahr im Verhältnis 1 : 1 in Freizeit auszugleichen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Mehrdienstleistungen an Sonn- und Feiertagen sind nicht durch Freizeit auszugleichen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Werktags-Mehrdienstleistungen, die nicht durch Freizeit ausgeglichen werden, gelten bereits nach einem Monat als Überstunden.",
+       "w": false,
+       "k": "Sie gelten erst mit Ablauf des Kalendervierteljahres als Überstunden (§ 49 Abs. 3)."
+      },
+      {
+       "t": "Mehrdienstleistungen außerhalb der Nachtzeit sind nach den Mehrdienstleistungen in der Nachtzeit auszugleichen.",
+       "w": false,
+       "k": "Außerhalb der Nachtzeit erbrachte Mehrdienstleistungen sind vor jenen in der Nachtzeit auszugleichen (§ 49 Abs. 2)."
+      }
+     ]
+    },
+    {
+     "id": "bdg-49-3",
+     "ref": "Abs. 4, 8",
+     "f": "Wie werden Werktagsüberstunden ausgeglichen oder abgegolten?",
+     "s": [
+      {
+       "t": "Werktagsüberstunden können je nach Anordnung im Verhältnis 1 : 1,5 in Freizeit ausgeglichen werden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Werktagsüberstunden können je nach Anordnung nach besoldungsrechtlichen Vorschriften abgegolten werden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Werktagsüberstunden können im Verhältnis 1 : 1,5 in Freizeit ausgeglichen und zusätzlich abgegolten werden.",
+       "w": false,
+       "k": "Die Kombination lautet: im Verhältnis 1 : 1 in Freizeit ausgleichen und zusätzlich abgelten (§ 49 Abs. 4 Z 3)."
+      },
+      {
+       "t": "Ein Freizeitausgleich für Werktagsüberstunden ist ohne zeitliche Grenze zulässig.",
+       "w": false,
+       "k": "Er ist nur bis zum Ende des sechsten auf das Kalendervierteljahr der Leistung folgenden Monats zulässig (§ 49 Abs. 8)."
+      }
+     ]
+    },
+    {
+     "id": "bdg-49-4",
+     "ref": "Abs. 2, 6, 7, 9",
+     "f": "Welche Zeiten gelten nicht als Überstunden und was gilt für Nachtzeit und Mitteilung?",
+     "s": [
+      {
+       "t": "Als Nachtzeit im Sinne der Bestimmung gelten die Stunden von 22.00 bis 6.00 Uhr.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Zeiten einer vom Beamten angestrebten Einarbeitung von Dienstzeit gelten jedenfalls nicht als Überstunden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Zeitguthaben aus der gleitenden Dienstzeit gelten stets als Überstunden.",
+       "w": false,
+       "k": "Sie gelten nicht als Überstunden, soweit sie die im Gleitzeitdienstplan festgelegte Obergrenze nicht übersteigen (§ 49 Abs. 9 Z 2)."
+      },
+      {
+       "t": "Dem Beamten ist bis zum Ende des auf das Kalendervierteljahr folgenden Kalendermonats mitzuteilen, welche Abgeltungsart auf welche Werktagsüberstunden angewendet wird.",
+       "w": true,
+       "k": ""
+      }
+     ]
+    },
+    {
+     "id": "bdg-49-5",
+     "ref": "Abs. 1 Z 1 bis 4",
+     "f": "Welche Aussagen zur Gleichhaltung nicht angeordneter Mehrdienstleistungen (§ 49 Abs. 1) treffen zu?",
+     "s": [
+      {
+       "t": "Der Beamte konnte einen zur Anordnung der Mehrdienstleistung Befugten nicht erreichen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Mehrdienstleistung war zur Abwehr eines Schadens unverzüglich notwendig.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Ist der Beamte durch ein unvorhergesehenes oder unabwendbares Ereignis ohne sein Verschulden verhindert, die Meldefrist einzuhalten, verlängert sich diese um die Dauer der Verhinderung.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Mehrdienstleistung muss nachträglich von der Dienstbehörde genehmigt werden, damit sie gleichzuhalten ist.",
+       "w": false,
+       "k": "Das Gesetz nennt vier Voraussetzungen (Z 1 bis 4), eine nachträgliche Genehmigung zählt nicht dazu (§ 49 Abs. 1)."
+      }
+     ]
+    },
+    {
+     "id": "bdg-49-6",
+     "ref": "Abs. 2, 3",
+     "f": "Welche Aussagen zu Mehrdienstleistungen an Sonn- und Feiertagen und an Werktagen treffen zu?",
+     "s": [
+      {
+       "t": "Mehrdienstleistungen an Sonn- und Feiertagen gelten in jedem Fall als Überstunden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Mehrdienstleistungen an Sonn- und Feiertagen sind nach besoldungsrechtlichen Vorschriften abzugelten.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Mehrdienstleistungen an Sonn- und Feiertagen sind wie jene an Werktagen nach Möglichkeit im Verhältnis 1 : 1 in Freizeit auszugleichen.",
+       "w": false,
+       "k": "Mehrdienstleistungen an Sonn- und Feiertagen sind nicht durch Freizeit auszugleichen (§ 49 Abs. 2)."
+      },
+      {
+       "t": "Werktags erbrachte Mehrdienstleistungen sind nach Möglichkeit im selben Kalendervierteljahr im Verhältnis 1 : 1,5 in Freizeit auszugleichen.",
+       "w": false,
+       "k": "Der Ausgleich erfolgt im Verhältnis 1 : 1 (§ 49 Abs. 2); 1 : 1,5 gilt nur für Werktagsüberstunden nach Abs. 4 Z 1."
+      }
+     ]
+    },
+    {
+     "id": "bdg-49-7",
+     "ref": "Abs. 2, 7",
+     "f": "Was gilt für die Reihenfolge des Ausgleichs im Hinblick auf die Nachtzeit?",
+     "s": [
+      {
+       "t": "Mehrdienstleistungen außerhalb der Nachtzeit sind vor Mehrdienstleistungen in der Nachtzeit auszugleichen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Werktagsüberstunden außerhalb der Nachtzeit sind vor Werktagsüberstunden in der Nachtzeit auszugleichen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Reihenfolge (außerhalb vor in der Nachtzeit) gilt nur für Mehrdienstleistungen, nicht für Werktagsüberstunden.",
+       "w": false,
+       "k": "Abs. 7 ordnet die Reihenfolge auch für Werktagsüberstunden an (§ 49 Abs. 7)."
+      },
+      {
+       "t": "Die Nachtzeit umfasst die Stunden von 21.00 bis 5.00 Uhr.",
+       "w": false,
+       "k": "Die Nachtzeit sind die Stunden von 22.00 bis 6.00 Uhr (§ 49 Abs. 2, 7)."
+      }
+     ]
+    },
+    {
+     "id": "bdg-49-8",
+     "ref": "Abs. 3, 6, 9",
+     "f": "Welche Aussagen zu Überstunden, Mitteilung der Abgeltungsart und Einarbeitung treffen zu?",
+     "s": [
+      {
+       "t": "Werktags erbrachte Mehrdienstleistungen, die im betreffenden Kalendervierteljahr nicht durch Freizeit ausgeglichen sind, gelten mit Ablauf des Kalendervierteljahres als Überstunden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Zeitguthaben aus der gleitenden Dienstzeit im Sinne des Abs. 9 Z 2 sind, soweit nicht bereits erfolgt, ausschließlich im Verhältnis 1 : 1 in Freizeit abzugelten.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Abgeltungsart für Werktagsüberstunden wird dem Beamten nur auf seinen Antrag mitgeteilt.",
+       "w": false,
+       "k": "Dem Beamten ist die angewendete Abgeltungsart bis zum Ende des auf das Kalendervierteljahr folgenden Kalendermonats mitzuteilen (§ 49 Abs. 6)."
+      },
+      {
+       "t": "Zeiten einer vom Beamten angestrebten Einarbeitung von Dienstzeit gelten als Überstunden, die im Verhältnis 1 : 1,5 in Freizeit auszugleichen sind.",
+       "w": false,
+       "k": "Solche Zeiten gelten jedenfalls nicht als Überstunden (§ 49 Abs. 9 Z 1)."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "50",
+   "label": "§ 50",
+   "title": "Bereitschaft und Journaldienst",
+   "stand": "01.07.1997",
+   "text": "(1) Der Beamte kann aus dienstlichen Gründen verpflichtet werden, sich außerhalb der im Dienstplan vorgeschriebenen Dienststunden in einer Dienststelle oder an einem bestimmten anderen Ort aufzuhalten und bei Bedarf oder auf Anordnung seine dienstliche Tätigkeit aufzunehmen (Dienststellenbereitschaft, Journaldienst).\n(2) Der Beamte kann aus dienstlichen Gründen weiters verpflichtet werden, sich außerhalb der im Dienstplan vorgeschriebenen Dienststunden in seiner Wohnung erreichbar zu halten und von sich aus bei Eintritt von ihm zu beobachtender Umstände seine dienstliche Tätigkeit aufzunehmen (Wohnungsbereitschaft).\n(3) Soweit es dienstliche Rücksichten zwingend erfordern, kann der Beamte fallweise verpflichtet werden, in seiner dienstfreien Zeit seinen Aufenthalt so zu wählen, daß er jederzeit erreichbar und binnen kürzester Zeit zum Antritt seines Dienstes bereit ist (Rufbereitschaft). Rufbereitschaft gilt nicht als Dienstzeit.",
+   "q": [
+    {
+     "id": "bdg-50-1",
+     "ref": "Abs. 1 bis 3",
+     "f": "Was gilt nach § 50 BDG für Dienststellen-, Wohnungs- und Rufbereitschaft sowie den Journaldienst?",
+     "s": [
+      {
+       "t": "Der Beamte kann aus dienstlichen Gründen verpflichtet werden, sich außerhalb der im Dienstplan vorgeschriebenen Dienststunden in einer Dienststelle oder an einem bestimmten anderen Ort aufzuhalten und bei Bedarf oder auf Anordnung seine dienstliche Tätigkeit aufzunehmen (Dienststellenbereitschaft, Journaldienst).",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Wohnungsbereitschaft verpflichtet den Beamten, in der Wohnung zu bleiben und erst auf ausdrückliche Anordnung seine dienstliche Tätigkeit aufzunehmen.",
+       "w": false,
+       "k": "§ 50 Abs. 2: Er hat sich in der Wohnung erreichbar zu halten und von sich aus bei Eintritt von ihm zu beobachtender Umstände seine dienstliche Tätigkeit aufzunehmen."
+      },
+      {
+       "t": "Zur Rufbereitschaft kann der Beamte nur fallweise verpflichtet werden, und nur soweit es dienstliche Rücksichten zwingend erfordern.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Zeit der Rufbereitschaft gilt als Dienstzeit.",
+       "w": false,
+       "k": "§ 50 Abs. 3: Rufbereitschaft gilt nicht als Dienstzeit."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "51",
+   "label": "§ 51",
+   "title": "Abwesenheit vom Dienst",
+   "stand": "01.01.1980",
+   "text": "(1) Der Beamte, der vom Dienst abwesend ist, ohne vom Dienst befreit oder enthoben zu sein, hat den Grund seiner Abwesenheit unverzüglich seinem Vorgesetzten zu melden und seine Abwesenheit zu rechtfertigen.\n(2) Ist der Beamte durch Krankheit, Unfall oder Gebrechen an der Ausübung seines Dienstes verhindert, so hat er seinem Vorgesetzten eine ärztliche Bescheinigung über den Beginn der Krankheit und nach Möglichkeit über die voraussichtliche Dauer der Dienstverhinderung vorzulegen, wenn er dem Dienst länger als drei Arbeitstage fernbleibt oder der Vorgesetzte oder der Leiter der Dienststelle es verlangt. Kommt der Beamte dieser Verpflichtung nicht nach, entzieht er sich einer zumutbaren Krankenbehandlung oder verweigert er die zumutbare Mitwirkung an einer ärztlichen Untersuchung, so gilt die Abwesenheit vom Dienst nicht als gerechtfertigt.",
+   "q": [
+    {
+     "id": "bdg-51-1",
+     "ref": "Abs. 1, 2",
+     "f": "Was gilt nach § 51 BDG bei Abwesenheit vom Dienst?",
+     "s": [
+      {
+       "t": "Ein Beamter, der vom Dienst abwesend ist, ohne vom Dienst befreit oder enthoben zu sein, hat den Grund seiner Abwesenheit unverzüglich seinem Vorgesetzten zu melden und seine Abwesenheit zu rechtfertigen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Bei Krankheit muss der Beamte seinem Vorgesetzten stets ab dem ersten Tag der Abwesenheit eine ärztliche Bescheinigung vorlegen.",
+       "w": false,
+       "k": "§ 51 Abs. 2: Die Bescheinigung ist vorzulegen, wenn der Beamte dem Dienst länger als drei Arbeitstage fernbleibt oder der Vorgesetzte oder der Leiter der Dienststelle es verlangt."
+      },
+      {
+       "t": "Legt der Beamte eine verlangte ärztliche Bescheinigung nicht vor oder entzieht er sich einer zumutbaren Krankenbehandlung, gilt seine Abwesenheit vom Dienst nicht als gerechtfertigt.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Verweigert der Beamte die zumutbare Mitwirkung an einer ärztlichen Untersuchung, bleibt seine Abwesenheit gerechtfertigt, solange eine ärztliche Bescheinigung vorliegt.",
+       "w": false,
+       "k": "§ 51 Abs. 2 letzter Satz: In diesem Fall gilt die Abwesenheit vom Dienst nicht als gerechtfertigt."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "145",
+   "label": "§ 145",
+   "title": "Dienstzeit",
+   "stand": "28.12.2013",
+   "text": "(1) Wird ein Beamter des Exekutivdienstes auf Grund einer in Ausübung des Exekutivdienstes getroffenen Wahrnehmung zu einer Einvernahme als Zeuge vor Gericht oder vor eine Verwaltungsbehörde geladen, so gilt die Zeit der notwendigen Anwesenheit bei der betreffenden Behörde als Dienstzeit. Diese Zeit beginnt 60 Minuten vor dem festgesetzten Ladungstermin und endet 60 Minuten nach Beendigung der Zeugeneinvernahme.\n(2) Abs. 1 ist auch anzuwenden, wenn ein Beamter des Exekutivdienstes auf Grund eines in Ausübung des Dienstes gesetzten Verhaltens als Beschuldigter vor Gericht oder vor eine Verwaltungsbehörde geladen wird, wenn das Verfahren mit seinem Freispruch oder durch Einstellung endet. Eine solche Dienstzeit ist, soweit sie über die im Dienstplan vorgeschriebenen Dienststunden hinausgeht, ausschließlich im Verhältnis 1 : 1 durch Freizeit auszugleichen.",
+   "q": [
+    {
+     "id": "bdg-145-1",
+     "ref": "Abs. 1, 2",
+     "f": "Was gilt nach § 145 BDG als Dienstzeit, wenn ein Beamter des Exekutivdienstes vor Gericht oder eine Verwaltungsbehörde geladen wird?",
+     "s": [
+      {
+       "t": "Wird ein Beamter des Exekutivdienstes auf Grund einer in Ausübung des Exekutivdienstes getroffenen Wahrnehmung als Zeuge geladen, gilt die Zeit der notwendigen Anwesenheit bei der Behörde als Dienstzeit.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Diese Dienstzeit beginnt 60 Minuten vor dem festgesetzten Ladungstermin und endet 60 Minuten nach Beendigung der Zeugeneinvernahme.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Wird der Beamte wegen eines in Ausübung des Dienstes gesetzten Verhaltens als Beschuldigter geladen, gilt die Zeit stets als Dienstzeit, unabhängig vom Ausgang des Verfahrens.",
+       "w": false,
+       "k": "§ 145 Abs. 2: Das gilt nur, wenn das Verfahren mit Freispruch oder durch Einstellung endet."
+      },
+      {
+       "t": "Dienstzeit des Beschuldigten, die über die im Dienstplan vorgeschriebenen Dienststunden hinausgeht, ist wahlweise durch Freizeit oder durch Überstundenvergütung auszugleichen.",
+       "w": false,
+       "k": "§ 145 Abs. 2: Sie ist ausschließlich im Verhältnis 1 : 1 durch Freizeit auszugleichen."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "62",
+   "label": "§ 62",
+   "title": "Bezüge",
+   "stand": "29.05.2002",
+   "text": "Der Beamte hat nach Maßgabe besonderer gesetzlicher Vorschriften Anspruch auf Bezüge oder Ruhebezüge.",
+   "q": [
+    {
+     "id": "bdg-62-1",
+     "ref": "§ 62",
+     "f": "Welche Aussagen zu den Bezügen des Beamten nach § 62 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Der Beamte hat nach Maßgabe besonderer gesetzlicher Vorschriften Anspruch auf Bezüge oder Ruhebezüge.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Höhe der Bezüge des Beamten wird in § 62 BDG selbst abschließend geregelt.",
+       "w": false,
+       "k": "§ 62: Der Anspruch besteht nach Maßgabe besonderer gesetzlicher Vorschriften; § 62 enthält selbst keine Bezugshöhe."
+      },
+      {
+       "t": "Nach § 62 BDG besteht ein Anspruch auf Bezüge nur während des aktiven Dienstes, nicht aber nach dem Übertritt in den Ruhestand.",
+       "w": false,
+       "k": "§ 62: Der Anspruch umfasst Bezüge oder Ruhebezüge."
+      },
+      {
+       "t": "Die Bestimmung über den Anspruch auf Bezüge steht im 6. Abschnitt des BDG, der die Rechte des Beamten regelt.",
+       "w": true,
+       "k": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "63",
+   "label": "§ 63",
+   "title": "Amtstitel und Verwendungsbezeichnungen",
+   "stand": "01.01.2012",
+   "text": "(1) Der Beamte ist berechtigt, einen im Besonderen Teil für ihn vorgesehenen Amtstitel zu führen.\n(2) Die Amtstitel und die Verwendungsbezeichnungen der Beamten werden im Besonderen Teil geregelt. Beamtinnen führen die Amtstitel und die Verwendungsbezeichnungen, soweit dies sprachlich möglich ist, in der weiblichen Form. Ist der Amtstitel oder die Verwendungsbezeichnung in weiblicher Form vorgesehen, führen männliche Beamte den Amtstitel oder die Verwendungsbezeichnung, soweit dies sprachlich möglich ist, in der männlichen Form.\n(3) Amtstitel und Verwendungsbezeichnungen können mit einem Zusatz geführt werden, der auf die Verwendung in einer bestimmten Dienststelle hinweist. Dieser Zusatz ist nicht Bestandteil des Amtstitels oder der Verwendungsbezeichnung.\n(4) Ist für den Beamten eine Verwendungsbezeichnung vorgesehen, so kann er sie an Stelle seines Amtstitels führen.\n(5) Anläßlich des Übertrittes in den Ruhestand kann dem Beamten an Stelle seines Amtstitels oder seiner Verwendungsbezeichnung der für seine Besoldungs- beziehungsweise Verwendungsgruppe vorgesehene nächsthöhere Amtstitel beziehungsweise die nächsthöhere Verwendungsbezeichnung verliehen werden.\n(6) Der Beamte des Ruhestandes ist berechtigt, den Amtstitel oder die Verwendungsbezeichnung zu führen, zu dessen oder deren Führung er im Zeitpunkt der Versetzung oder des Übertrittes in den Ruhestand berechtigt war. Er hat dabei dem Amtstitel (der Verwendungsbezeichnung) den Zusatz „im Ruhestand“ („i. R.“) hinzuzufügen.",
+   "q": [
+    {
+     "id": "bdg-63-1",
+     "ref": "Abs. 1, 3 bis 6",
+     "f": "Welche Aussagen zu Amtstiteln und Verwendungsbezeichnungen nach § 63 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Der Beamte des Ruhestandes ist berechtigt, den Amtstitel oder die Verwendungsbezeichnung zu führen, zu dessen Führung er beim Übertritt in den Ruhestand berechtigt war, und hat den Zusatz „im Ruhestand“ („i. R.“) hinzuzufügen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Ein Zusatz zum Amtstitel, der auf die Verwendung in einer bestimmten Dienststelle hinweist, ist Bestandteil des Amtstitels.",
+       "w": false,
+       "k": "§ 63 Abs. 3: Dieser Zusatz ist nicht Bestandteil des Amtstitels oder der Verwendungsbezeichnung."
+      },
+      {
+       "t": "Ist für den Beamten eine Verwendungsbezeichnung vorgesehen, so kann er sie an Stelle seines Amtstitels führen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Mit dem Übertritt in den Ruhestand führt jeder Beamte kraft Gesetzes den nächsthöheren Amtstitel.",
+       "w": false,
+       "k": "§ 63 Abs. 5: Anlässlich des Übertrittes in den Ruhestand kann (nicht: muss) der nächsthöhere Amtstitel verliehen werden; sonst gilt Abs. 6."
+      }
+     ]
+    }
+   ]
+  },
+  {
    "n": "65",
    "label": "§ 65",
    "title": "Ausmaß des Erholungsurlaubs",
@@ -2905,6 +4028,285 @@
        "t": "Die Erhöhung wegen eines verlängerten Dienstplans gilt nur für das jährliche Ausmaß nach Abs. 1, nicht für das Ausmaß nach Abs. 2.",
        "w": false,
        "k": "Abs. 4 erfasst das in den Abs. 1 und 2 und § 72 ausgedrückte Urlaubsausmaß."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "68",
+   "label": "§ 68",
+   "title": "Verbrauch des Erholungsurlaubes",
+   "stand": "01.08.2022",
+   "text": "(1) Die kalendermäßige Festlegung des Erholungsurlaubes ist unter Berücksichtigung der dienstlichen Interessen vorzunehmen, wobei auf die persönlichen Verhältnisse des Beamten angemessen Rücksicht zu nehmen ist. Soweit nicht zwingende dienstliche Gründe entgegenstehen, hat der Beamte Anspruch, die Hälfte des Erholungsurlaubes ungeteilt zu verbrauchen.\n(Anm.: Abs. 1a mit Ablauf des 31.12.2020 außer Kraft getreten)\n(2) In den ersten sechs Monaten des öffentlich-rechtlichen Dienstverhältnisses darf der Verbrauch des Erholungsurlaubes ein Zwölftel des jährlichen Ausmaßes für jeden begonnenen Monat des Dienstverhältnisses nicht übersteigen.\n(3) Abweichend von Abs. 1 kann die Beamtin oder der Beamte an einem Tag pro Kalenderjahr Erholungsurlaub einseitig in Anspruch nehmen („persönlicher Feiertag“). Die Beamtin oder der Beamte hat das Datum der Inanspruchnahme spätestens drei Monate im Vorhinein bekannt zu geben.\n(4) Die Dienstbehörde kann die Beamtin oder den Beamten an dem von ihr oder ihm gemäß Abs. 3 bekannt gegebenen „persönlichen Feiertag“ in den Angelegenheiten der Dienstbereiche gemäß § 48f Abs. 2 Z 3 bis 7 und Abs. 4 Z 2 sowie in Fällen, in denen ein besonderes öffentliches Interesse besteht, zum Dienst heranziehen, wenn dies zur Aufrechterhaltung des Dienstbetriebes zwingend geboten ist. Im Fall einer derartigen Heranziehung ändert sich das der Beamtin oder dem Beamten zustehende Urlaubsausmaß nicht. Das Recht auf einseitige Festlegung gemäß Abs. 3 bleibt jedoch konsumiert.\n(Anm.: Abs. 5 aufgehoben durch Art. 1 Z 19, BGBl. I Nr. 205/2022)",
+   "q": [
+    {
+     "id": "bdg-68-1",
+     "ref": "Abs. 1, 3, 4",
+     "f": "Welche Aussagen zum Verbrauch des Erholungsurlaubes und zum persönlichen Feiertag nach § 68 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Soweit nicht zwingende dienstliche Gründe entgegenstehen, hat der Beamte Anspruch, die Hälfte des Erholungsurlaubes ungeteilt zu verbrauchen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Beamte kann an einem Tag pro Kalenderjahr Erholungsurlaub einseitig als „persönlichen Feiertag“ in Anspruch nehmen und hat das Datum spätestens drei Monate im Vorhinein bekannt zu geben.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der persönliche Feiertag bedarf der vorherigen Genehmigung durch den Dienstvorgesetzten, der den Tag aus dienstlichen Gründen ablehnen kann.",
+       "w": false,
+       "k": "§ 68 Abs. 3: Der persönliche Feiertag wird einseitig in Anspruch genommen, es ist nur das Datum bekannt zu geben; eine Genehmigung ist nicht vorgesehen."
+      },
+      {
+       "t": "An dem bekannt gegebenen persönlichen Feiertag darf die Dienstbehörde den Beamten unter keinen Umständen zum Dienst heranziehen.",
+       "w": false,
+       "k": "§ 68 Abs. 4: In bestimmten Dienstbereichen und bei besonderem öffentlichen Interesse ist die Heranziehung zulässig, wenn dies zur Aufrechterhaltung des Dienstbetriebes zwingend geboten ist; das Recht auf einseitige Festlegung bleibt dann konsumiert."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "69",
+   "label": "§ 69",
+   "title": "Verfall des Erholungsurlaubes",
+   "stand": "28.12.2019",
+   "text": "(1) Der Anspruch auf Erholungsurlaub verfällt, wenn die Beamtin oder der Beamte den Erholungsurlaub nicht bis zum 31. Dezember des dem Urlaubsjahr folgenden Kalenderjahres verbraucht hat. Ist der Verbrauch bis zu diesem Zeitpunkt aus dienstlichen Gründen, einem der Gründe des § 51 Abs. 2 erster Satz oder aufgrund eines Beschäftigungsverbotes nach dem MSchG nicht möglich, so tritt der Verfall erst mit Ablauf des folgenden Kalenderjahres ein.\n(2) Wurde eine Karenz nach dem MSchG oder VKG in Anspruch genommen, so wird der Verfallstermin um den Zeitraum der Karenz hinausgeschoben.\n(3) Der Verfall tritt nicht ein, wenn es die oder der Vorgesetzte unterlassen hat, entsprechend dem § 45 Abs. 1a rechtzeitig, unmissverständlich und nachweislich auf die Inanspruchnahme des Erholungsurlaubes durch die jeweilige Beamtin oder den jeweiligen Beamten hinzuwirken.\nAnmerkung\nÜR: Art. XXIV Abs. 3, BGBl. Nr. 408/1990",
+   "q": [
+    {
+     "id": "bdg-69-1",
+     "ref": "Abs. 1 bis 3",
+     "f": "Welche Aussagen zum Verfall des Erholungsurlaubes nach § 69 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Der Anspruch auf Erholungsurlaub verfällt, wenn der Beamte den Erholungsurlaub nicht bis zum 31. Dezember des dem Urlaubsjahr folgenden Kalenderjahres verbraucht hat.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Ist der Verbrauch wegen eines Beschäftigungsverbotes nach dem MSchG nicht möglich gewesen, so verfällt der Anspruch dennoch zum regulären Termin.",
+       "w": false,
+       "k": "§ 69 Abs. 1 zweiter Satz: In diesem Fall tritt der Verfall erst mit Ablauf des folgenden Kalenderjahres ein."
+      },
+      {
+       "t": "Hat der Vorgesetzte es unterlassen, rechtzeitig, unmissverständlich und nachweislich auf den Verbrauch hinzuwirken, verfällt der Urlaub trotzdem, weil der Beamte selbst für den Verbrauch verantwortlich ist.",
+       "w": false,
+       "k": "§ 69 Abs. 3: In diesem Fall tritt der Verfall nicht ein."
+      },
+      {
+       "t": "Wurde eine Karenz nach dem MSchG oder dem VKG in Anspruch genommen, so wird der Verfallstermin um den Zeitraum der Karenz hinausgeschoben.",
+       "w": true,
+       "k": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "70",
+   "label": "§ 70",
+   "title": "Vorgriff auf künftige Urlaubsansprüche",
+   "stand": "01.01.1980",
+   "text": "Dem Beamten kann bei Vorliegen besonders berücksichtigungswürdiger Umstände auf seinen Antrag der Verbrauch des ganzen oder eines Teiles des im nächsten Kalenderjahr gebührenden Erholungsurlaubes gestattet werden.",
+   "q": [
+    {
+     "id": "bdg-70-1",
+     "ref": "§ 70",
+     "f": "Welche Aussagen zum Vorgriff auf künftige Urlaubsansprüche nach § 70 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Dem Beamten kann bei Vorliegen besonders berücksichtigungswürdiger Umstände auf seinen Antrag der Verbrauch des ganzen oder eines Teiles des im nächsten Kalenderjahr gebührenden Erholungsurlaubes gestattet werden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Dienstbehörde kann den Verbrauch des im nächsten Kalenderjahr gebührenden Urlaubs auch von Amts wegen, ohne Antrag des Beamten, anordnen.",
+       "w": false,
+       "k": "§ 70: Der Vorgriff setzt einen Antrag des Beamten voraus."
+      },
+      {
+       "t": "Ein Vorgriff auf den Urlaub des nächsten Kalenderjahres ist nur für einen Teil, nicht aber für den ganzen Urlaubsanspruch zulässig.",
+       "w": false,
+       "k": "§ 70: Gestattet werden kann der Verbrauch des ganzen oder eines Teiles des Urlaubs."
+      },
+      {
+       "t": "Bei besonders berücksichtigungswürdigen Umständen hat der Beamte einen Rechtsanspruch auf den Vorgriff, sofern keine zwingenden dienstlichen Gründe entgegenstehen.",
+       "w": false,
+       "k": "§ 70: Der Vorgriff „kann gestattet werden“, es besteht kein Rechtsanspruch."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "71",
+   "label": "§ 71",
+   "title": "Erkrankung während des Erholungsurlaubes",
+   "stand": "01.01.2009",
+   "text": "(1) Erkrankt ein Beamter während des Erholungsurlaubes, ohne dies vorsätzlich oder grob fahrlässig herbeigeführt zu haben, so sind, wenn die Erkrankung länger als drei Kalendertage gedauert hat, so viele Stunden auf das Urlaubsausmaß nicht anzurechnen, wie der Beamte während der Tage seiner Erkrankung nach dem Dienstplan Dienst zu leisten hätte.\n(2) Der Beamte hat der Dienststelle, die den Erholungsurlaub festlegt, nach dreitägiger Krankheitsdauer die Erkrankung unverzüglich mitzuteilen. Ist dies aus Gründen, die nicht vom Beamten zu vertreten sind, nicht möglich, so gilt die Mitteilung als rechtzeitig, wenn sie unmittelbar nach Wegfall des Hinderungsgrundes nachgeholt wird. Beim Wiederantritt des Dienstes hat der Beamte ohne schuldhafte Verzögerung ein ärztliches Zeugnis oder eine Bestätigung des zuständigen Krankenversicherungsträgers über Beginn und Dauer der Dienstunfähigkeit vorzulegen. Erkrankt der Beamte während eines Erholungsurlaubes im Ausland, so ist dem ärztlichen Zeugnis eine behördliche Bestätigung darüber beizufügen, daß es von einem zur Ausübung des Arztberufes zugelassenen Arzt ausgestellt wurde. Eine solche behördliche Bestätigung ist nicht erforderlich, wenn die ärztliche Behandlung (stationär oder ambulant) in einer Krankenanstalt erfolgte und hiefür eine Bestätigung dieser Anstalt vorgelegt wird. Kommt der Beamte diesen Verpflichtungen nicht nach, so ist Abs. 1 nicht anzuwenden.\n(3) Für den Beamten, der bei einer Dienststelle des Bundes im Ausland verwendet wird und dort wohnt, gilt der Staat, in dem diese Dienststelle liegt oder für den sie zuständig ist, als Inland.\n(4) Erkrankt der Beamte, der während eines Erholungsurlaubes eine dem Erholungszweck des Urlaubes widersprechende Erwerbstätigkeit ausübt, so ist Abs. 1 nicht anzuwenden, wenn die Erkrankung mit dieser Erwerbstätigkeit in ursächlichem Zusammenhang steht.\n(5) Die Abs. 1 bis 4 gelten auch für den Beamten, der infolge eines Unfalles dienstunfähig war.\n(6) Die Abs. 1 bis 3 gelten auch für die notwendige Pflege eines Angehörigen gemäß § 76 Abs. 1 Z 1 und Abs. 4 während des Erholungsurlaubes mit der Maßgabe, dass die in Abs. 2 geregelte Nachweiserbringung im Hinblick auf den Pflegebedarf des Angehörigen zu erfolgen hat.",
+   "q": [
+    {
+     "id": "bdg-71-1",
+     "ref": "Abs. 1, 2, 4",
+     "f": "Welche Aussagen zur Erkrankung während des Erholungsurlaubes nach § 71 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Hat die Erkrankung länger als drei Kalendertage gedauert und wurde sie nicht vorsätzlich oder grob fahrlässig herbeigeführt, so sind so viele Stunden auf das Urlaubsausmaß nicht anzurechnen, wie der Beamte während der Tage der Erkrankung nach dem Dienstplan Dienst zu leisten hätte.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Beamte hat die Erkrankung nach dreitägiger Krankheitsdauer unverzüglich mitzuteilen; ist dies aus nicht von ihm zu vertretenden Gründen nicht möglich, gilt die Mitteilung als rechtzeitig, wenn sie unmittelbar nach Wegfall des Hinderungsgrundes nachgeholt wird.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Bei einer Erkrankung im Ausland ist dem ärztlichen Zeugnis in jedem Fall eine behördliche Bestätigung beizufügen, dass es von einem zur Ausübung des Arztberufes zugelassenen Arzt ausgestellt wurde.",
+       "w": false,
+       "k": "§ 71 Abs. 2: Die behördliche Bestätigung ist nicht erforderlich, wenn die ärztliche Behandlung in einer Krankenanstalt erfolgte und dafür eine Bestätigung der Anstalt vorgelegt wird."
+      },
+      {
+       "t": "Auch bei einer grob fahrlässig herbeigeführten Erkrankung, die länger als drei Kalendertage dauert, sind die Dienststunden der Krankheitstage nicht auf das Urlaubsausmaß anzurechnen.",
+       "w": false,
+       "k": "§ 71 Abs. 1: Die Nichtanrechnung gilt nur, wenn die Erkrankung nicht vorsätzlich oder grob fahrlässig herbeigeführt wurde."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "74",
+   "label": "§ 74",
+   "title": "Sonderurlaub",
+   "stand": "01.09.2002",
+   "text": "(1) Dem Beamten kann auf sein Ansuchen aus wichtigen persönlichen oder familiären Gründen oder aus einem sonstigen besonderen Anlaß ein Sonderurlaub gewährt werden.\n(2) Für die Zeit des Sonderurlaubes behält der Beamte den Anspruch auf die vollen Bezüge.\n(3) Der Sonderurlaub darf nur gewährt werden, wenn keine zwingenden dienstlichen Erfordernisse entgegenstehen, und darf die dem Anlaß angemessene Dauer nicht übersteigen.\n(4) Die Gesamtdauer der für ein Kalenderjahr gewährten Sonderurlaube darf das Ausmaß der auf zwölf Wochen entfallenden regelmäßigen Dienstzeit des Beamten nicht übersteigen.",
+   "q": [
+    {
+     "id": "bdg-74-1",
+     "ref": "Abs. 1 bis 4",
+     "f": "Welche Aussagen zum Sonderurlaub nach § 74 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Dem Beamten kann auf sein Ansuchen aus wichtigen persönlichen oder familiären Gründen oder aus einem sonstigen besonderen Anlass ein Sonderurlaub gewährt werden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Für die Zeit des Sonderurlaubes gebührt dem Beamten nur ein Teil der Bezüge, der von der Dienstbehörde festgelegt wird.",
+       "w": false,
+       "k": "§ 74 Abs. 2: Der Beamte behält für die Zeit des Sonderurlaubes den Anspruch auf die vollen Bezüge."
+      },
+      {
+       "t": "Die Gesamtdauer der für ein Kalenderjahr gewährten Sonderurlaube darf das Ausmaß der auf zwölf Wochen entfallenden regelmäßigen Dienstzeit des Beamten nicht übersteigen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Ein Sonderurlaub darf auch dann gewährt werden, wenn zwingende dienstliche Erfordernisse entgegenstehen, sofern der persönliche Anlass besonders wichtig ist.",
+       "w": false,
+       "k": "§ 74 Abs. 3: Der Sonderurlaub darf nur gewährt werden, wenn keine zwingenden dienstlichen Erfordernisse entgegenstehen, und darf die dem Anlass angemessene Dauer nicht übersteigen."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "75",
+   "label": "§ 75",
+   "title": "Karenzurlaub",
+   "stand": "23.12.2018",
+   "text": "(1) Dem Beamten kann auf Antrag ein Urlaub unter Entfall der Bezüge (Karenzurlaub) gewährt werden, sofern nicht zwingende dienstliche Gründe entgegenstehen.\n(2) Eine Beamtin oder ein Beamter,\n1. die oder der befristet zum Mitglied eines Organs einer zwischenstaatlichen Einrichtung über Vorschlag der oder im Einvernehmen mit der Republik Österreich bestellt wird oder\n2. wenn die Ernennungserfordernisse gemäß Z 1.12 oder Z 1.12a der Anlage 1 zum BDG 1979 nicht erfüllt werden: die oder der im Rahmen eines vertraglichen Dienstverhältnisses zum Bund zur Bildungsdirektorin oder zum Bildungsdirektor gemäß § 7 des Bundesgesetzes über die Einrichtung von Bildungsdirektionen in den Ländern (Bildungsdirektionen-Einrichtungsgesetz – BD-EG), BGBl. I Nr. 138/2017, bestellt wird sowie die oder der gemäß Art. 151 Abs. 61 Z 1 B-VG oder gemäß § 14 BD-EG mit der Funktion der Bildungsdirektorin oder des Bildungsdirektors betraut wird oder\n2b. wenn die Ernennungserfordernisse gemäß Z 1.12 oder Z 1.12a der Anlage 1 zum BDG 1979 nicht erfüllt werden: die oder der im Rahmen eines vertraglichen Dienstverhältnisses zum Bund zur Leiterin oder zum Leiter des Bereichs Pädagogischer Dienst gemäß § 19 BD-EG bestellt wird oder\n3. die oder der durch Dienstvertrag mit der Funktion einer Generalsekretärin oder eines Generalsekretärs gemäß § 7 Abs. 11 des Bundesministeriengesetzes 1986 (BMG), BGBl. Nr. 76, betraut wird oder\n4. die oder der zur Rektorin oder zum Rektor gemäß § 23 des Universitätsgesetzes 2002 (UG), BGBl. I Nr. 120, oder zur hauptamtlichen Vizerektorin oder zum hauptamtlichen Vizerektor gemäß § 24 UG einer Universität gewählt wird oder\n5. die oder der zur Rektorin oder zum Rektor oder zur Vizerektorin oder zum Vizerektor einer Pädagogischen Hochschule gemäß § 1 Abs. 1 oder § 4 Abs. 1 Z 1 des Hochschulgesetzes 2005 (HG), BGBl. I Nr. 30/2006, bestellt wird oder\n6. die oder der zur Generaldirektorin oder zum Generaldirektor des Militärstabs der Europäischen Union bestellt wird,ist für die Dauer der Mitgliedschaft oder Funktion gegen Entfall der Bezüge beurlaubt.\n(3) Ein Karenzurlaub endet spätestens mit Ablauf des Kalendermonates, in dem er gemeinsam mit früheren Karenzurlauben oder Freistellungen nach § 160 Abs. 2 eine Gesamtdauer von zehn Jahren erreicht. Auf die Gesamtdauer von zehn Jahren sind frühere, nach dienstrechtlichen Vorschriften des Bundes gewährte Karenzurlaube anzurechnen, ausgenommen Zeiten von Karenzen nach dem MSchG oder dem VKG.\n(4) Abs. 3 gilt nicht für Karenzurlaube,\n1. die zur Betreuung\n  a) eines eigenen Kindes,\n  b) eines Wahl- oder Pflegekindes oder\n  c) eines sonstigen Kindes, das dem Haushalt des Beamten angehört und für dessen Unterhalt überwiegend er und (oder) sein Ehegatte aufkommen,längstens bis zum Beginn der Schulpflicht des betreffenden Kindes gewährt worden sind,\n2. auf die ein Rechtsanspruch besteht oder\n3. die kraft Gesetzes eintreten.",
+   "q": [
+    {
+     "id": "bdg-75-1",
+     "ref": "Abs. 1, 3",
+     "f": "Welche Aussagen zum Karenzurlaub nach § 75 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Dem Beamten kann auf Antrag ein Urlaub unter Entfall der Bezüge (Karenzurlaub) gewährt werden, sofern nicht zwingende dienstliche Gründe entgegenstehen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Ein Karenzurlaub endet spätestens mit Ablauf des Kalendermonates, in dem er gemeinsam mit früheren Karenzurlauben oder Freistellungen nach § 160 Abs. 2 eine Gesamtdauer von zehn Jahren erreicht.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Auf die Gesamtdauer von zehn Jahren sind auch frühere Karenzen nach dem MSchG oder dem VKG anzurechnen.",
+       "w": false,
+       "k": "§ 75 Abs. 3 zweiter Satz: Zeiten von Karenzen nach dem MSchG oder dem VKG sind von der Anrechnung ausgenommen."
+      },
+      {
+       "t": "Während eines Karenzurlaubes nach § 75 Abs. 1 behält der Beamte die Hälfte seiner Bezüge.",
+       "w": false,
+       "k": "§ 75 Abs. 1: Der Karenzurlaub ist ein Urlaub unter Entfall der Bezüge."
+      }
+     ]
+    },
+    {
+     "id": "bdg-75-2",
+     "ref": "Abs. 2, 4",
+     "f": "Welche Aussagen zu Ausnahmen und Sonderfällen beim Karenzurlaub nach § 75 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Ein Beamter, der zum Rektor einer Universität gemäß § 23 UG gewählt wird, ist für die Dauer der Funktion gegen Entfall der Bezüge beurlaubt.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Höchstdauer von zehn Jahren gilt nicht für Karenzurlaube, auf die ein Rechtsanspruch besteht.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Höchstdauer von zehn Jahren gilt nicht für Karenzurlaube zur Betreuung eines eigenen Kindes, wenn diese längstens bis zur Vollendung des dritten Lebensjahres des Kindes gewährt worden sind.",
+       "w": false,
+       "k": "§ 75 Abs. 4 Z 1: Maßgeblich ist der Beginn der Schulpflicht des Kindes, nicht die Vollendung des dritten Lebensjahres."
+      },
+      {
+       "t": "Ein Beamter, der über Vorschlag der oder im Einvernehmen mit der Republik Österreich befristet zum Mitglied eines Organs einer zwischenstaatlichen Einrichtung bestellt wird, erhält Karenzurlaub nur auf Antrag und nach Ermessen der Dienstbehörde.",
+       "w": false,
+       "k": "§ 75 Abs. 2 Z 1: Er ist für die Dauer der Mitgliedschaft gegen Entfall der Bezüge beurlaubt (Karenzierung kraft Gesetzes)."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "75d",
+   "label": "§ 75d",
+   "title": "Frühkarenzurlaub",
+   "stand": "01.01.2021",
+   "text": "(1) Einer Beamtin oder einem Beamten ist auf ihr oder sein Ansuchen für den Zeitraum von der Geburt eines Kindes oder, im Fall von Mehrlingsgeburten, mehrerer Kinder bis längstens zum Ende des Beschäftigungsverbotes der Mutter gemäß § 5 Abs. 1 und 2 MSchG, gleichartiger österreichischer Rechtsvorschriften oder gleichartiger Rechtsvorschriften der Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum ein Urlaub unter Entfall der Bezüge (Frühkarenzurlaub) im Ausmaß von bis zu 31 Tagen zu gewähren, wenn sie oder er mit der Mutter in einer Ehe, eingetragenen Partnerschaft oder Lebensgemeinschaft und der Mutter und dem Kind (den Kindern) im gemeinsamen Haushalt lebt. Wenn keine der genannten Bestimmungen auf die Mutter anzuwenden sind, gelten die im § 5 Abs. 1 und 2 MSchG festgelegten Fristen sinngemäß.\n(2) Einem Beamten, der mit seinem Partner in einer Ehe, eingetragenen Partnerschaft oder Lebensgemeinschaft lebt, ist auf sein Ansuchen für den Zeitraum von der Geburt seines Kindes (seiner Kinder) oder des Kindes (der Kinder) des Partners bis zur Vollendung des dritten Lebensmonats des Kindes (der Kinder) ein Frühkarenzurlaub im Ausmaß von bis zu 31 Tagen zu gewähren, wenn er mit dem Partner und dem Kind (den Kindern) im gemeinsamen Haushalt lebt.\n(3) Einer Beamtin oder einem Beamten, die oder der ein Kind, welches das zweite Lebensjahr noch nicht vollendet hat, adoptiert oder in der Absicht, ein Kind an Kindes Statt anzunehmen, dieses in unentgeltliche Pflege genommen hat und mit dem Kind im gemeinsamen Haushalt lebt, ist auf ihr oder sein Ansuchen ein Frühkarenzurlaub im Ausmaß von bis zu 31 Tagen zu gewähren. Der Frühkarenzurlaub beginnt mit dem Tag der Annahme an Kindes Statt oder der Übernahme in unentgeltliche Pflege.\n(4) Die Beamtin oder der Beamte hat Beginn und Dauer des Frühkarenzurlaubs spätestens eine Woche vor dem beabsichtigten Antritt bzw. spätestens am Tag der Annahme an Kindes Statt oder der Übernahme in unentgeltliche Pflege zu melden und die anspruchsbegründenden sowie die anspruchsbeendenden Umstände unverzüglich darzulegen.\n(5) Der Frühkarenzurlaub endet vorzeitig, wenn der gemeinsame Haushalt mit dem Kind und der Mutter bzw. Partner, im Fall des Abs. 3 der gemeinsame Haushalt mit dem Kind, aufgehoben wird.\n(6) Die Zeit des Frühkarenzurlaubs ist in dienst-, besoldungs- und pensionsrechtlicher Hinsicht wie eine Karenz nach dem VKG zu behandeln.\n(7) Die Inanspruchnahme eines Frühkarenzurlaubs durch eine Person für dasselbe Kind (dieselben Kinder) ist nur einmal zulässig.",
+   "q": [
+    {
+     "id": "bdg-75d-1",
+     "ref": "Abs. 1, 4, 5, 7",
+     "f": "Welche Aussagen zum Frühkarenzurlaub nach § 75d BDG treffen zu?",
+     "s": [
+      {
+       "t": "Einem Beamten ist auf sein Ansuchen für den Zeitraum von der Geburt eines Kindes bis längstens zum Ende des Beschäftigungsverbotes der Mutter ein Urlaub unter Entfall der Bezüge im Ausmaß von bis zu 31 Tagen zu gewähren, wenn er mit der Mutter in Ehe, eingetragener Partnerschaft oder Lebensgemeinschaft und mit Mutter und Kind im gemeinsamen Haushalt lebt.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Beginn und Dauer des Frühkarenzurlaubs sind spätestens einen Monat vor dem beabsichtigten Antritt zu melden.",
+       "w": false,
+       "k": "§ 75d Abs. 4: Die Meldung hat spätestens eine Woche vor dem beabsichtigten Antritt zu erfolgen."
+      },
+      {
+       "t": "Der Frühkarenzurlaub endet vorzeitig, wenn der gemeinsame Haushalt mit dem Kind und der Mutter beziehungsweise dem Partner aufgehoben wird.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Dieselbe Person kann für dasselbe Kind den Frühkarenzurlaub in zwei getrennten Teilen in Anspruch nehmen, solange die Gesamtdauer von 31 Tagen nicht überschritten wird.",
+       "w": false,
+       "k": "§ 75d Abs. 7: Die Inanspruchnahme durch eine Person für dasselbe Kind ist nur einmal zulässig."
       }
      ]
     }
@@ -3110,6 +4512,249 @@
    ]
   },
   {
+   "n": "78e",
+   "label": "§ 78e",
+   "title": "Sabbatical",
+   "stand": "01.01.2021",
+   "text": "(1) Der Beamte kann auf Antrag für einen Zeitraum von mindestens sechs und höchstens zwölf Monaten gegen anteilige Bezugskürzung innerhalb einer Rahmenzeit von zwei bis fünf vollen Jahren vom Dienst freigestellt werden, wenn\n1. keine wichtigen dienstlichen Gründe entgegenstehen und\n2. der Beamte seit mindestens fünf Jahren im Bundesdienst steht.\n(2) Der Antrag hat den Beginn und die Dauer der Rahmenzeit zu enthalten. Beginn und Ende der Freistellung sind schriftlich zwischen Antragsteller und Dienstbehörde zu vereinbaren. Die Dienstbehörde darf eine derartige Vereinbarung nicht eingehen, wenn eine für die Dauer der Freistellung erforderliche Vertretung voraussichtlich weder durch einen geeigneten vorhandenen Bundesbediensteten noch durch einen ausschließlich zum Zweck dieser Vertretung in ein befristetes vertragliches Dienstverhältnis aufzunehmenden geeigneten Bundesbediensteten wahrgenommen werden können wird. Kommt eine Vereinbarung aus diesem Grund nicht zustande, ist der Antrag abzuweisen.\n(3) Die Freistellung darf im Falle einer zwei- oder dreijährigen Rahmenzeit erst nach Zurücklegung einer einjährigen und im Falle einer vier- oder fünfjährigen Rahmenzeit erst nach Zurücklegung einer zweijährigen Dienstleistungszeit angetreten werden. Sie ist ungeteilt zu verbrauchen. Der Beamte darf während der Freistellung nicht zur Dienstleistung herangezogen werden.\n(4) Während der übrigen Rahmenzeit (Dienstleistungszeit) hat der Beamte entsprechend demjenigen Beschäftigungsausmaß, das für ihn ohne Sabbatical gelten würde, Dienst zu leisten.\n(5) Die Dienstbehörde kann auf Antrag des Beamten das Sabbatical widerrufen oder beenden, wenn keine wichtigen dienstlichen Interessen entgegenstehen.\n(6) Das Sabbatical endet bei\n1. Karenzurlaub oder Karenz (mit Ausnahme des Frühkarenzurlaubs gemäß § 75d),\n2. gänzlicher Dienstfreistellung oder Außerdienststellung,\n3. Präsenz-, Ausbildungs- oder Zivildienst,\n4. Suspendierung,\n5. unentschuldigter Abwesenheit vom Dienst oder\n6. Beschäftigungsverbot nach dem MSchG,sobald feststeht, dass der jeweilige Anlass die Dauer eines Monats überschreitet.",
+   "q": [
+    {
+     "id": "bdg-78e-1",
+     "ref": "Abs. 1, 3",
+     "f": "Welche Aussagen zum Sabbatical nach § 78e BDG treffen zu?",
+     "s": [
+      {
+       "t": "Der Beamte kann auf Antrag für mindestens sechs und höchstens zwölf Monate gegen anteilige Bezugskürzung innerhalb einer Rahmenzeit von zwei bis fünf vollen Jahren vom Dienst freigestellt werden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Voraussetzung für das Sabbatical ist, dass der Beamte seit mindestens drei Jahren im Bundesdienst steht.",
+       "w": false,
+       "k": "§ 78e Abs. 1 Z 2: Erforderlich ist, dass der Beamte seit mindestens fünf Jahren im Bundesdienst steht."
+      },
+      {
+       "t": "Bei einer vier- oder fünfjährigen Rahmenzeit darf die Freistellung erst nach Zurücklegung einer zweijährigen Dienstleistungszeit angetreten werden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Freistellung kann in mehrere Abschnitte geteilt innerhalb der Rahmenzeit verbraucht werden.",
+       "w": false,
+       "k": "§ 78e Abs. 3: Die Freistellung ist ungeteilt zu verbrauchen."
+      }
+     ]
+    },
+    {
+     "id": "bdg-78e-2",
+     "ref": "Abs. 2, 3, 6",
+     "f": "Welche Aussagen zur Vereinbarung und zum Ende des Sabbaticals nach § 78e BDG treffen zu?",
+     "s": [
+      {
+       "t": "Beginn und Ende der Freistellung sind schriftlich zwischen dem Antragsteller und der Dienstbehörde zu vereinbaren.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Das Sabbatical endet unter anderem bei Suspendierung, sobald feststeht, dass der Anlass die Dauer eines Monats überschreitet.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Ein Frühkarenzurlaub nach § 75d beendet das Sabbatical, sobald er länger als einen Monat dauert.",
+       "w": false,
+       "k": "§ 78e Abs. 6 Z 1: Der Frühkarenzurlaub nach § 75d ist ausdrücklich ausgenommen; er beendet das Sabbatical nicht."
+      },
+      {
+       "t": "Während der Freistellung darf der Beamte bei dienstlichem Bedarf zur Dienstleistung herangezogen werden.",
+       "w": false,
+       "k": "§ 78e Abs. 3: Der Beamte darf während der Freistellung nicht zur Dienstleistung herangezogen werden."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "90",
+   "label": "§ 90",
+   "title": "Bericht über den provisorischen Beamten",
+   "stand": "29.05.2002",
+   "text": "Der Vorgesetzte hat über den provisorischen Beamten vor der Definitivstellung zu berichten, ob der Beamte den Arbeitserfolg aufweist, der im Hinblick auf seine dienstliche Stellung zu erwarten ist.",
+   "q": [
+    {
+     "id": "bdg-90-1",
+     "ref": "§ 90",
+     "f": "Welche Aussagen zum Bericht über den provisorischen Beamten nach § 90 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Der Vorgesetzte hat über den provisorischen Beamten vor der Definitivstellung zu berichten.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Gegenstand des Berichts ist, ob der Beamte den Arbeitserfolg aufweist, der im Hinblick auf seine dienstliche Stellung zu erwarten ist.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Bericht ist nur zu erstatten, wenn der Vorgesetzte Zweifel am Arbeitserfolg des Beamten hat.",
+       "w": false,
+       "k": "§ 90: Die Berichtspflicht besteht vor jeder Definitivstellung, unabhängig von Zweifeln."
+      },
+      {
+       "t": "Der Bericht über den provisorischen Beamten wird von der Dienstbehörde erstellt und dem Vorgesetzten zur Stellungnahme vorgelegt.",
+       "w": false,
+       "k": "§ 90: Berichten hat der Vorgesetzte."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "92",
+   "label": "§ 92",
+   "title": "Disziplinarstrafen",
+   "stand": "01.01.2023",
+   "text": "(1) Disziplinarstrafen sind\n1. der Verweis,\n2. die Geldbuße bis zur Höhe eines Monatsbezugs,\n3. die Geldstrafe in der Höhe von mehr als einem Monatsbezug bis zu fünf Monatsbezügen,\n4. die Entlassung.\n(2) In den Fällen des Abs. 1 Z 2 und 3 ist von dem Monatsbezug auszugehen, der dem Beamten auf Grund seiner besoldungsrechtlichen Stellung im Zeitpunkt der Fällung des Disziplinarerkenntnisses der Bundesdisziplinarbehörde beziehungsweise im Zeitpunkt der Verhängung der Disziplinarverfügung gebührt. Gebührt der Beamtin oder dem Beamten zum maßgebenden Zeitpunkt kein Monatsbezug, so ist vom letzten der Beamtin oder dem Beamten gebührenden Monatsbezug auszugehen. Allfällige Kürzungen des Monatsbezuges sind bei der Strafbemessung nicht zu berücksichtigen.",
+   "q": [
+    {
+     "id": "bdg-92-1",
+     "ref": "Abs. 1",
+     "f": "Welche Aussagen zu den Disziplinarstrafen nach § 92 Abs. 1 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Die Geldstrafe in der Höhe von mehr als einem Monatsbezug bis zu fünf Monatsbezügen ist eine Disziplinarstrafe nach § 92 Abs. 1.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Rückstufung in eine niedrigere Verwendungsgruppe ist eine der in § 92 Abs. 1 genannten Disziplinarstrafen.",
+       "w": false,
+       "k": "§ 92 Abs. 1 zählt die Disziplinarstrafen abschließend auf (Verweis, Geldbuße, Geldstrafe, Entlassung); eine Rückstufung ist nicht vorgesehen."
+      },
+      {
+       "t": "Die Entlassung zählt zu den Disziplinarstrafen nach § 92 Abs. 1 und ist dort in Z 4 genannt.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Als Geldbuße kann bis zu fünf Monatsbezüge verhängt werden, die Geldstrafe ist auf die Höhe eines Monatsbezugs begrenzt.",
+       "w": false,
+       "k": "§ 92 Abs. 1 Z 2 und 3: Die Geldbuße reicht bis zur Höhe eines Monatsbezugs, die Geldstrafe geht darüber hinaus bis zu fünf Monatsbezügen; die Aussage vertauscht beide."
+      }
+     ]
+    },
+    {
+     "id": "bdg-92-2",
+     "ref": "Abs. 2",
+     "f": "Welche Aussagen zur Berechnung von Geldbuße und Geldstrafe nach § 92 Abs. 2 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Maßgeblich ist der Monatsbezug, der dem Beamten auf Grund seiner besoldungsrechtlichen Stellung im Zeitpunkt der Fällung des Disziplinarerkenntnisses der Bundesdisziplinarbehörde beziehungsweise im Zeitpunkt der Verhängung der Disziplinarverfügung gebührt.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Gebührt dem Beamten zum maßgebenden Zeitpunkt kein Monatsbezug, so ist vom letzten ihm gebührenden Monatsbezug auszugehen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Allfällige Kürzungen des Monatsbezuges, etwa wegen einer Suspendierung, sind bei der Strafbemessung zu berücksichtigen.",
+       "w": false,
+       "k": "§ 92 Abs. 2 dritter Satz: Allfällige Kürzungen des Monatsbezuges sind bei der Strafbemessung nicht zu berücksichtigen."
+      },
+      {
+       "t": "Maßgeblich ist der Monatsbezug, der dem Beamten im Zeitpunkt der Begehung der Dienstpflichtverletzung gebührt hat.",
+       "w": false,
+       "k": "§ 92 Abs. 2: Abzustellen ist auf den Zeitpunkt der Fällung des Disziplinarerkenntnisses beziehungsweise der Verhängung der Disziplinarverfügung."
+      }
+     ]
+    },
+    {
+     "id": "bdg-92-3",
+     "ref": "Abs. 1 iVm §§ 131, 132",
+     "f": "Welche Aussagen zur Disziplinarverfügung treffen zu?",
+     "s": [
+      {
+       "t": "In einer Disziplinarverfügung darf nur der Verweis ausgesprochen oder eine Geldbuße bis zur Höhe eines Monatsbezuges verhängt werden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Hat der Beamte die Dienstpflichtverletzung gestanden, darf die Dienstbehörde in der Disziplinarverfügung auch eine Geldstrafe von bis zu fünf Monatsbezügen verhängen.",
+       "w": false,
+       "k": "§ 131 letzter Satz: In der Disziplinarverfügung sind nur Verweis oder Geldbuße bis zur Höhe eines Monatsbezuges zulässig; die Geldstrafe (§ 92 Abs. 1 Z 3) ist ausgeschlossen."
+      },
+      {
+       "t": "Der Beschuldigte und der Disziplinaranwalt können gegen die Disziplinarverfügung innerhalb von zwei Wochen nach Zustellung Einspruch erheben; der rechtzeitige Einspruch setzt die Disziplinarverfügung außer Kraft.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Nach einem rechtzeitigen Einspruch entscheidet die Dienstbehörde endgültig darüber, ob ein Disziplinarverfahren einzuleiten ist.",
+       "w": false,
+       "k": "§ 132: Nach rechtzeitigem Einspruch hat die Bundesdisziplinarbehörde zu entscheiden, ob ein Verfahren einzuleiten ist."
+      }
+     ]
+    },
+    {
+     "id": "bdg-92-4",
+     "ref": "Abs. 1 Z 4 iVm § 102 Abs. 1",
+     "f": "Welche Aussagen zur Verhängung der Disziplinarstrafe der Entlassung im Verfahren vor der Bundesdisziplinarbehörde treffen zu?",
+     "s": [
+      {
+       "t": "Die Disziplinarstrafe der Entlassung darf im Verfahren vor der Bundesdisziplinarbehörde nur einstimmig verhängt werden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Bei der Abstimmung im Disziplinarsenat ist eine Stimmenthaltung unzulässig.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die oder der Senatsvorsitzende gibt ihre oder seine Stimme als Erste oder Erster ab, damit sich die übrigen Mitglieder an ihr orientieren können.",
+       "w": false,
+       "k": "§ 102 Abs. 1: Die oder der Senatsvorsitzende hat die Stimme zuletzt abzugeben."
+      },
+      {
+       "t": "Auch für die Disziplinarstrafen Verweis, Geldbuße und Geldstrafe ist im Senat Einstimmigkeit erforderlich.",
+       "w": false,
+       "k": "§ 102 Abs. 1 erster Satz: Der Senat entscheidet grundsätzlich mit Stimmenmehrheit; Einstimmigkeit verlangt das Gesetz nur für die Entlassung."
+      }
+     ]
+    },
+    {
+     "id": "bdg-92-5",
+     "ref": "Abs. 1 iVm § 112 Abs. 2, 4",
+     "f": "Welche Aussagen zur Abgrenzung der Disziplinarstrafen von der Suspendierung treffen zu?",
+     "s": [
+      {
+       "t": "Die Suspendierung ist in § 92 Abs. 1 nicht als Disziplinarstrafe angeführt; sie wird gesondert in § 112 geregelt.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Während einer vorläufigen Suspendierung wird der Monatsbezug des Beamten zunächst ohne Kürzung ausbezahlt.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Jede vorläufige Suspendierung ist unverzüglich der Dienstbehörde der nächsthöheren Ebene mitzuteilen, die über die Suspendierung innerhalb eines Monats entscheidet.",
+       "w": false,
+       "k": "§ 112 Abs. 2: Die vorläufige Suspendierung ist unverzüglich der Bundesdisziplinarbehörde mitzuteilen, die innerhalb eines Monats entscheidet."
+      },
+      {
+       "t": "Die Suspendierung endet erst mit Ablauf von drei Jahren, unabhängig vom Stand des Disziplinarverfahrens.",
+       "w": false,
+       "k": "§ 112 Abs. 6: Die Suspendierung endet spätestens mit dem rechtskräftigen Abschluss des Disziplinarverfahrens und ist bei Wegfall der Umstände unverzüglich aufzuheben."
+      }
+     ]
+    }
+   ]
+  },
+  {
    "n": "94",
    "label": "§ 94",
    "title": "Verjährung",
@@ -3275,6 +4920,105 @@
        "t": "Ein Verfahren vor der Personalvertretungsaufsichtsbehörde hat in den Fällen des § 28 PVG keine Wirkung auf den Lauf der Fristen.",
        "w": false,
        "k": "In den Fällen des § 28 PVG wird der Lauf der Fristen für die Dauer eines Verfahrens vor der Personalvertretungsaufsichtsbehörde gehemmt (§ 94 Abs. 3 Z 2)."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "96",
+   "label": "§ 96",
+   "title": "Disziplinarbehörden",
+   "stand": "09.07.2019",
+   "text": "Disziplinarbehörden sind\n1. die Dienstbehörden und\n2. die Bundesdisziplinarbehörde.",
+   "q": [
+    {
+     "id": "bdg-96-1",
+     "ref": "§ 96",
+     "f": "Welche Aussagen zu den Disziplinarbehörden nach § 96 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Disziplinarbehörden sind die Dienstbehörden und die Bundesdisziplinarbehörde.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Disziplinarbehörde im Sinne des BDG ist auch der unmittelbare Dienstvorgesetzte des Beamten.",
+       "w": false,
+       "k": "§ 96 nennt nur die Dienstbehörden und die Bundesdisziplinarbehörde; der Dienstvorgesetzte erstattet nach § 109 Disziplinaranzeige."
+      },
+      {
+       "t": "Disziplinarbehörden sind die Dienstbehörden und die Landesverwaltungsgerichte.",
+       "w": false,
+       "k": "§ 96 Z 2: Neben den Dienstbehörden ist die Bundesdisziplinarbehörde Disziplinarbehörde."
+      },
+      {
+       "t": "Der Disziplinaranwalt ist neben der Dienstbehörde und der Bundesdisziplinarbehörde die dritte Disziplinarbehörde.",
+       "w": false,
+       "k": "§ 96 zählt nur zwei Arten von Disziplinarbehörden (Z 1 und Z 2) auf; der Disziplinaranwalt ist nicht genannt."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "109",
+   "label": "§ 109",
+   "title": "Disziplinaranzeige",
+   "stand": "18.06.2015",
+   "text": "(1) Der unmittelbar oder mittelbar zur Führung der Dienstaufsicht berufene Vorgesetzte (Dienstvorgesetzte) hat bei jedem begründeten Verdacht einer Dienstpflichtverletzung die zur vorläufigen Klarstellung des Sachverhaltes erforderlichen Erhebungen zu pflegen und sodann unverzüglich im Dienstwege der Dienstbehörde Disziplinaranzeige zu erstatten. Erweckt der Verdacht einer Dienstpflichtverletzung auch den Verdacht einer von Amts wegen zu verfolgenden gerichtlich strafbaren Handlung, so hat sich der Dienstvorgesetzte in dieser Eigenschaft jeder Erhebung zu enthalten und sofort der Dienstbehörde zu berichten. Diese hat gemäß § 78 StPO vorzugehen.\n(2) Von einer Disziplinaranzeige an die Dienstbehörde ist abzusehen, wenn nach Ansicht der oder des Dienstvorgesetzten eine Belehrung oder Ermahnung ausreicht. Diese ist der Beamtin oder dem Beamten nachweislich mitzuteilen. Nach Ablauf von drei Jahren ab Mitteilung an die Beamtin oder den Beamten darf eine Belehrung oder Ermahnung zu keinen dienstlichen Nachteilen führen und sind die Aufzeichnungen über die Belehrung oder Ermahnung zu vernichten, wenn die Beamtin oder der Beamte in diesem Zeitraum keine weitere Dienstpflichtverletzung begangen hat.\n(3) Die Dienstbehörde hat, sofern es sich nicht um eine Selbstanzeige handelt, eine Abschrift der Disziplinaranzeige unverzüglich dem Beschuldigten zuzustellen.",
+   "q": [
+    {
+     "id": "bdg-109-1",
+     "ref": "Abs. 1",
+     "f": "Welche Aussagen zu den Pflichten des Vorgesetzten bei Verdacht einer Dienstpflichtverletzung nach § 109 Abs. 1 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Der Dienstvorgesetzte hat bei jedem begründeten Verdacht einer Dienstpflichtverletzung die zur vorläufigen Klarstellung des Sachverhaltes erforderlichen Erhebungen zu pflegen und sodann unverzüglich im Dienstwege der Dienstbehörde Disziplinaranzeige zu erstatten.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Erweckt der Verdacht einer Dienstpflichtverletzung auch den Verdacht einer von Amts wegen zu verfolgenden gerichtlich strafbaren Handlung, hat der Dienstvorgesetzte selbst Anzeige bei der Staatsanwaltschaft zu erstatten.",
+       "w": false,
+       "k": "§ 109 Abs. 1 zweiter Satz: Der Dienstvorgesetzte hat sich jeder Erhebung zu enthalten und sofort der Dienstbehörde zu berichten; diese geht nach § 78 StPO vor."
+      },
+      {
+       "t": "Die Disziplinaranzeige ist vom Dienstvorgesetzten unmittelbar an die Bundesdisziplinarbehörde zu richten.",
+       "w": false,
+       "k": "§ 109 Abs. 1: Die Disziplinaranzeige ist im Dienstwege der Dienstbehörde zu erstatten."
+      },
+      {
+       "t": "Dienstvorgesetzter im Sinne des § 109 BDG ist der unmittelbar oder mittelbar zur Führung der Dienstaufsicht berufene Vorgesetzte.",
+       "w": true,
+       "k": ""
+      }
+     ]
+    },
+    {
+     "id": "bdg-109-2",
+     "ref": "Abs. 2, 3",
+     "f": "Welche Aussagen zu Belehrung, Ermahnung und Disziplinaranzeige nach § 109 Abs. 2 und 3 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Von einer Disziplinaranzeige ist abzusehen, wenn nach Ansicht des Dienstvorgesetzten eine Belehrung oder Ermahnung ausreicht; diese ist dem Beamten nachweislich mitzuteilen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Eine nachweislich mitgeteilte Belehrung oder Ermahnung ist eine Disziplinarstrafe im Sinne des § 92 BDG.",
+       "w": false,
+       "k": "§ 92 Abs. 1 zählt als Disziplinarstrafen nur Verweis, Geldbuße, Geldstrafe und Entlassung auf; Belehrung oder Ermahnung nach § 109 Abs. 2 gehört nicht dazu."
+      },
+      {
+       "t": "Sofern es sich nicht um eine Selbstanzeige handelt, hat die Dienstbehörde eine Abschrift der Disziplinaranzeige unverzüglich dem Beschuldigten zuzustellen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Aufzeichnungen über eine Belehrung oder Ermahnung sind nach Ablauf von drei Jahren in jedem Fall zu vernichten.",
+       "w": false,
+       "k": "§ 109 Abs. 2: Zu vernichten sind sie nur, wenn der Beamte in diesem Zeitraum keine weitere Dienstpflichtverletzung begangen hat; erst dann darf auch kein dienstlicher Nachteil mehr entstehen."
       }
      ]
     }
@@ -3591,6 +5335,609 @@
        "t": "Die Höhe der Geldbuße richtet sich nach dem Monatsbezug, auf den der Beamte im Zeitpunkt der Dienstpflichtverletzung Anspruch hatte.",
        "w": false,
        "k": "Maßgeblich ist der Monatsbezug im Zeitpunkt der Erlassung der Disziplinarverfügung (§ 131)."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "AHG",
+   "label": "AHG",
+   "title": "Amtshaftungsgesetz",
+   "stand": "01.03.2013",
+   "text": "§ 1. Haftpflicht\n(1) Der Bund, die Länder, die Gemeinden, sonstige Körperschaften des öffentlichen Rechts und die Träger der Sozialversicherung im folgenden Rechtsträger genannt haften nach den Bestimmungen des bürgerlichen Rechts für den Schaden am Vermögen oder an der Person, den die als ihre Organe handelnden Personen in Vollziehung der Gesetze durch ein rechtswidriges Verhalten wem immer schuldhaft zugefügt haben; dem Geschädigten haftet das Organ nicht. Der Schaden ist nur in Geld zu ersetzen.\n(2) Organe im Sinne dieses Bundesgesetzes sind alle physischen Personen, wenn sie in Vollziehung der Gesetze (Gerichtsbarkeit oder Verwaltung) handeln, gleichviel, ob sie dauernd oder vorübergehend oder für den einzelnen Fall bestellt sind, ob sie gewählte, ernannte oder sonstwie bestellte Organe sind und ob ihr Verhältnis zum Rechtsträger nach öffentlichem oder privatem Recht zu beurteilen ist.\n(3) Mit dem im Abs. 1 genannten Rechtsträger haftet zur ungeteilten Hand auch derjenige, als dessen Organ die handelnde Person gewählt, ernannt oder sonstwie bestellt worden ist. Hat dieser Rechtsträger auf Grund dieser Haftung Zahlungen geleistet, so hat er an den im Abs. 1 genannten Rechtsträger einen Anspruch auf Rückersatz.\nAnmerkung\nÜR: Art. XL und XLI Z 10, BGBl. Nr. 343/1989\n\n§ 2. NOR40148283\n(1) Bei Geltendmachung des Ersatzanspruches muß ein bestimmtes Organ nicht genannt werden; es genügt der Beweis, daß der Schaden nur durch die Rechtsverletzung eines Organes des beklagten Rechtsträgers entstanden sein konnte.\n(2) Der Ersatzanspruch besteht nicht, wenn der Geschädigte den Schaden durch Rechtsmittel oder durch Beschwerde beim Verwaltungsgericht und Revision beim Verwaltungsgerichtshof hätte abwenden können.\n(3) Aus einem Erkenntnis des Verfassungsgerichtshofes, des Obersten Gerichtshofes und des Verwaltungsgerichtshofes kann ein Ersatzanspruch nicht abgeleitet werden.\n\n§ 3. NOR40148284\n(1) Hat der Rechtsträger dem Geschädigten auf Grund dieses Bundesgesetzes den Schaden ersetzt, so kann er von den Personen, die als seine Organe gehandelt und die Rechtsverletzung vorsätzlich oder grobfahrlässig verübt oder verursacht haben, Rückersatz begehren.\n(2) Hat das Organ die Rechtsverletzung grobfahrlässig verübt oder verursacht, so kann das Gericht aus Gründen der Billigkeit den Rückersatz mäßigen. Dabei hat das Gericht insbesondere auf die in § 2 Abs. 2 des Dienstnehmerhaftpflichtgesetzes, BGBl. Nr. 80/1965, angeführten Umstände sinngemäß Bedacht zu nehmen.\n(3) Für die von einem Kollegialorgan beschlossenen Entscheidungen und Verfügungen haften nur die Stimmführer, die für sie gestimmt haben. Beruht jedoch die Entscheidung oder Verfügung auf einer unvollständigen oder unrichtigen Darstellung des Sachverhaltes durch den Berichterstatter, so haften auch die Stimmführer, die dafür gestimmt haben, nicht, es sei denn, daß sie die pflichtmäßige Sorgfalt grobfahrlässig außer acht gelassen haben.\nAnmerkung\n1. ÜR: Art. III BG, BGBl. Nr. 537/1984.\n2. Hinsichtlich des Rückersatzes siehe jedoch § 62 des Bundeshaushaltsgesetzes, BGBl. Nr. 213/1986.\n\n§ 4. N1194912955P\nVon einem Organ kann kein Rückersatz wegen einer Handlung begehrt werden, die auf Weisung (Auftrag, Befehl) eines Vorgesetzten erfolgt ist, es sei denn, das Organ hätte die Weisung eines offenbar unzuständigen Vorgesetzten befolgt oder in Befolgung der Weisung gegen strafgesetzliche Vorschriften verstoßen.\nAnmerkung\nSiehe dazu Art. 20 B-VG.",
+   "q": [
+    {
+     "id": "bdg-AHG-1",
+     "ref": "AHG § 1 Abs. 1",
+     "f": "Ein Polizist verletzt bei einer rechtswidrigen Amtshandlung schuldhaft einen unbeteiligten Passanten. Welche Aussagen zur Haftung nach dem Amtshaftungsgesetz sind richtig?",
+     "s": [
+      {
+       "t": "Für den Schaden haftet dem Geschädigten der Rechtsträger, als dessen Organ der Polizist gehandelt hat.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Geschädigte kann den Ersatz wahlweise vom Rechtsträger oder unmittelbar vom handelnden Polizisten verlangen.",
+       "w": false,
+       "k": "AHG § 1 Abs. 1: Dem Geschädigten haftet das Organ nicht, nur der Rechtsträger."
+      },
+      {
+       "t": "Der Schaden ist nach dem Amtshaftungsgesetz nur in Geld zu ersetzen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Rechtsträger haftet nach den Bestimmungen des bürgerlichen Rechts.",
+       "w": true,
+       "k": ""
+      }
+     ]
+    },
+    {
+     "id": "bdg-AHG-2",
+     "ref": "AHG § 1 Abs. 1",
+     "f": "Welche Voraussetzungen müssen für einen Anspruch nach dem Amtshaftungsgesetz erfüllt sein?",
+     "s": [
+      {
+       "t": "Das Organ muss das Verhalten in Vollziehung der Gesetze gesetzt haben.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Das Verhalten des Organs muss rechtswidrig gewesen sein.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Es genügt ein rechtswidriges Verhalten des Organs, ein Verschulden ist nicht erforderlich.",
+       "w": false,
+       "k": "AHG § 1 Abs. 1: Der Schaden muss durch ein rechtswidriges Verhalten schuldhaft zugefügt worden sein."
+      },
+      {
+       "t": "Der Anspruch besteht nur dann, wenn der Schaden am Vermögen entstanden ist, ein Schaden an der Person genügt nicht.",
+       "w": false,
+       "k": "AHG § 1 Abs. 1: Ersetzt wird der Schaden am Vermögen oder an der Person."
+      }
+     ]
+    },
+    {
+     "id": "bdg-AHG-3",
+     "ref": "AHG § 1 Abs. 1, 2",
+     "f": "Wer ist im Sinne des Amtshaftungsgesetzes Rechtsträger und wer ist Organ?",
+     "s": [
+      {
+       "t": "Rechtsträger sind unter anderem der Bund, die Länder, die Gemeinden und die Träger der Sozialversicherung.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Organe sind nur Beamte, Vertragsbedienstete fallen nicht darunter.",
+       "w": false,
+       "k": "AHG § 1 Abs. 2: Organe sind alle physischen Personen, die in Vollziehung der Gesetze handeln, gleichviel ob ihr Verhältnis zum Rechtsträger öffentlich- oder privatrechtlich ist."
+      },
+      {
+       "t": "Organ kann auch eine Person sein, die nur vorübergehend oder für den einzelnen Fall bestellt wurde.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Sonstige Körperschaften des öffentlichen Rechts sind keine Rechtsträger im Sinne des Gesetzes.",
+       "w": false,
+       "k": "AHG § 1 Abs. 1: Auch sonstige Körperschaften des öffentlichen Rechts sind Rechtsträger."
+      }
+     ]
+    },
+    {
+     "id": "bdg-AHG-4",
+     "ref": "AHG § 1 Abs. 1, 2",
+     "f": "Welche Aussagen zu den Begriffen „Vollziehung der Gesetze“ und „Organ“ im Amtshaftungsgesetz sind richtig?",
+     "s": [
+      {
+       "t": "Erfasst ist das Handeln in der Gerichtsbarkeit.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Erfasst ist das Handeln in der Verwaltung.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Organe im Sinne des Amtshaftungsgesetzes sind physische Personen, die in Vollziehung der Gesetze handeln.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Erfasst ist nur das Handeln von Personen, die ernannt wurden; gewählte Organe fallen nicht darunter.",
+       "w": false,
+       "k": "AHG § 1 Abs. 2: Organe sind es gleichviel, ob sie gewählte, ernannte oder sonstwie bestellte Organe sind."
+      }
+     ]
+    },
+    {
+     "id": "bdg-AHG-5",
+     "ref": "AHG § 2 Abs. 1, 2, 3",
+     "f": "Welche Aussagen zur Geltendmachung des Amtshaftungsanspruchs sind richtig?",
+     "s": [
+      {
+       "t": "Der Geschädigte muss kein bestimmtes Organ nennen; es genügt der Beweis, dass der Schaden nur durch die Rechtsverletzung eines Organs des beklagten Rechtsträgers entstanden sein konnte.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Ersatzanspruch besteht nicht, wenn der Geschädigte den Schaden durch ein Rechtsmittel hätte abwenden können.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Aus einem Erkenntnis des Verfassungsgerichtshofes kann ein Ersatzanspruch abgeleitet werden.",
+       "w": false,
+       "k": "AHG § 2 Abs. 3: Aus Erkenntnissen des VfGH, OGH und VwGH kann ein Ersatzanspruch nicht abgeleitet werden."
+      },
+      {
+       "t": "Der Ersatzanspruch besteht auch dann, wenn der Geschädigte den Schaden durch Beschwerde beim Verwaltungsgericht und Revision beim Verwaltungsgerichtshof hätte abwenden können.",
+       "w": false,
+       "k": "AHG § 2 Abs. 2: Der Anspruch besteht nicht, wenn der Schaden durch Rechtsmittel oder durch Beschwerde beim Verwaltungsgericht und Revision beim Verwaltungsgerichtshof hätte abgewendet werden können."
+      }
+     ]
+    },
+    {
+     "id": "bdg-AHG-6",
+     "ref": "AHG § 1 Abs. 1, 3",
+     "f": "Welche Aussagen zu den Beteiligten bei der Amtshaftung sind richtig?",
+     "s": [
+      {
+       "t": "Ersatz kann jeder verlangen, dem ein Organ in Vollziehung der Gesetze durch rechtswidriges Verhalten schuldhaft einen Schaden zugefügt hat („wem immer“).",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Wurde das Organ von einem anderen Rechtsträger bestellt als dem, für den es gehandelt hat, haftet auch der bestellende Rechtsträger zur ungeteilten Hand mit.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Hat der bestellende Rechtsträger gezahlt, hat er gegen den Rechtsträger, für den das Organ gehandelt hat, einen Anspruch auf Rückersatz.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Geschädigte muss zuerst das Organ klagen und kann erst bei dessen Zahlungsunfähigkeit den Rechtsträger belangen.",
+       "w": false,
+       "k": "AHG § 1 Abs. 1: Dem Geschädigten haftet nur der Rechtsträger, das Organ haftet ihm nicht."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "Regress",
+   "label": "Regress",
+   "title": "Rückersatz an das Organ (AHG § 3 und § 4)",
+   "stand": "01.03.2013",
+   "text": "§ 3. NOR40148284\n(1) Hat der Rechtsträger dem Geschädigten auf Grund dieses Bundesgesetzes den Schaden ersetzt, so kann er von den Personen, die als seine Organe gehandelt und die Rechtsverletzung vorsätzlich oder grobfahrlässig verübt oder verursacht haben, Rückersatz begehren.\n(2) Hat das Organ die Rechtsverletzung grobfahrlässig verübt oder verursacht, so kann das Gericht aus Gründen der Billigkeit den Rückersatz mäßigen. Dabei hat das Gericht insbesondere auf die in § 2 Abs. 2 des Dienstnehmerhaftpflichtgesetzes, BGBl. Nr. 80/1965, angeführten Umstände sinngemäß Bedacht zu nehmen.\n(3) Für die von einem Kollegialorgan beschlossenen Entscheidungen und Verfügungen haften nur die Stimmführer, die für sie gestimmt haben. Beruht jedoch die Entscheidung oder Verfügung auf einer unvollständigen oder unrichtigen Darstellung des Sachverhaltes durch den Berichterstatter, so haften auch die Stimmführer, die dafür gestimmt haben, nicht, es sei denn, daß sie die pflichtmäßige Sorgfalt grobfahrlässig außer acht gelassen haben.\nAnmerkung\n1. ÜR: Art. III BG, BGBl. Nr. 537/1984.\n2. Hinsichtlich des Rückersatzes siehe jedoch § 62 des Bundeshaushaltsgesetzes, BGBl. Nr. 213/1986.\n\n§ 4. N1194912955P\nVon einem Organ kann kein Rückersatz wegen einer Handlung begehrt werden, die auf Weisung (Auftrag, Befehl) eines Vorgesetzten erfolgt ist, es sei denn, das Organ hätte die Weisung eines offenbar unzuständigen Vorgesetzten befolgt oder in Befolgung der Weisung gegen strafgesetzliche Vorschriften verstoßen.\nAnmerkung\nSiehe dazu Art. 20 B-VG.",
+   "q": [
+    {
+     "id": "bdg-Regress-1",
+     "ref": "AHG § 3 Abs. 1",
+     "f": "Der Rechtsträger hat einem Geschädigten nach dem Amtshaftungsgesetz Ersatz geleistet. Wann kann er vom handelnden Organ Rückersatz begehren?",
+     "s": [
+      {
+       "t": "Wenn das Organ die Rechtsverletzung vorsätzlich verübt oder verursacht hat.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Wenn das Organ die Rechtsverletzung grob fahrlässig verübt oder verursacht hat.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Wenn das Organ die Rechtsverletzung leicht fahrlässig verursacht hat.",
+       "w": false,
+       "k": "AHG § 3 Abs. 1: Rückersatz besteht nur bei Vorsatz oder grober Fahrlässigkeit."
+      },
+      {
+       "t": "Der Rückersatz kann nur begehrt werden, solange der Schaden nicht in Geld ersetzt wurde.",
+       "w": false,
+       "k": "AHG § 3 Abs. 1: Voraussetzung ist gerade, dass der Rechtsträger dem Geschädigten den Schaden ersetzt hat."
+      }
+     ]
+    },
+    {
+     "id": "bdg-Regress-2",
+     "ref": "AHG § 3 Abs. 2",
+     "f": "Ein Organ hat einen Schaden grob fahrlässig verursacht. Welche Aussagen zum Rückersatz sind richtig?",
+     "s": [
+      {
+       "t": "Das Gericht kann den Rückersatz aus Gründen der Billigkeit mäßigen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Das Gericht hat dabei insbesondere die Umstände des § 2 Abs. 2 des Dienstnehmerhaftpflichtgesetzes sinngemäß zu berücksichtigen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Das Gericht kann den Rückersatz bei grober Fahrlässigkeit zur Gänze erlassen.",
+       "w": false,
+       "k": "AHG § 3 Abs. 2 erlaubt bei grober Fahrlässigkeit nur die Mäßigung; ein gänzlicher Erlass ist im AHG nicht vorgesehen."
+      },
+      {
+       "t": "Die Mäßigung ist zwingend und muss vom Gericht von Amts wegen immer vorgenommen werden.",
+       "w": false,
+       "k": "AHG § 3 Abs. 2: Das Gericht „kann“ mäßigen, es besteht keine Pflicht."
+      }
+     ]
+    },
+    {
+     "id": "bdg-Regress-3",
+     "ref": "AHG § 4",
+     "f": "Ein Beamter handelt auf Weisung seines Vorgesetzten. In welchen Fällen schließt die Weisung den Rückersatz nach § 4 AHG nicht aus?",
+     "s": [
+      {
+       "t": "Wenn der Beamte die Weisung eines offenbar unzuständigen Vorgesetzten befolgt hat.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Wenn der Beamte in Befolgung der Weisung gegen strafgesetzliche Vorschriften verstoßen hat.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Schon dann, wenn der Beamte die Weisung für rechtswidrig hielt und sie trotzdem befolgte.",
+       "w": false,
+       "k": "AHG § 4: Die Ausnahmen sind abschließend die Weisung eines offenbar unzuständigen Vorgesetzten und der Verstoß gegen strafgesetzliche Vorschriften."
+      },
+      {
+       "t": "Wenn der Beamte die Weisung eines zuständigen Vorgesetzten befolgt hat, ohne dabei gegen strafgesetzliche Vorschriften zu verstoßen.",
+       "w": false,
+       "k": "AHG § 4: In diesem Fall ist Rückersatz ausgeschlossen; Ausnahmen bestehen nur bei offenbar unzuständigem Vorgesetzten oder Verstoß gegen strafgesetzliche Vorschriften."
+      }
+     ]
+    },
+    {
+     "id": "bdg-Regress-4",
+     "ref": "AHG § 3 Abs. 1, 2, § 4",
+     "f": "Welche Aussagen zum Rückersatz nach dem Amtshaftungsgesetz sind richtig?",
+     "s": [
+      {
+       "t": "Bei leichter Fahrlässigkeit haftet der Rechtsträger dem Geschädigten, kann aber vom Organ keinen Rückersatz verlangen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Handelt das Organ auf Weisung eines Vorgesetzten, kann grundsätzlich kein Rückersatz begehrt werden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Auch bei vorsätzlicher Rechtsverletzung kann das Gericht den Rückersatz aus Gründen der Billigkeit mäßigen.",
+       "w": false,
+       "k": "AHG § 3 Abs. 2: Die Mäßigung ist nur vorgesehen, wenn das Organ die Rechtsverletzung grobfahrlässig verübt oder verursacht hat."
+      },
+      {
+       "t": "Der Rückersatz richtet sich gegen den Geschädigten, wenn dieser den Schaden mitverschuldet hat.",
+       "w": false,
+       "k": "AHG § 3 Abs. 1: Rückersatz wird vom Rechtsträger gegen die Organe begehrt, nicht gegen den Geschädigten."
+      }
+     ]
+    },
+    {
+     "id": "bdg-Regress-5",
+     "ref": "AHG § 3 Abs. 3",
+     "f": "Eine Entscheidung wurde von einem Kollegialorgan beschlossen und verursachte einen Amtshaftungsschaden. Welche Aussagen zum Rückersatz sind richtig?",
+     "s": [
+      {
+       "t": "Es haften nur die Stimmführer, die für die Entscheidung gestimmt haben.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Sonderregel für Kollegialorgane gilt nur für beschlossene Entscheidungen, nicht aber für beschlossene Verfügungen.",
+       "w": false,
+       "k": "AHG § 3 Abs. 3: Die Regel gilt für die von einem Kollegialorgan beschlossenen Entscheidungen und Verfügungen."
+      },
+      {
+       "t": "Beruht die Entscheidung auf einer unvollständigen oder unrichtigen Darstellung des Sachverhaltes durch den Berichterstatter, haften die zustimmenden Stimmführer nur, wenn sie die pflichtmäßige Sorgfalt grob fahrlässig außer Acht gelassen haben.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Ein Stimmführer, der für die Entscheidung gestimmt hat, haftet im Rückersatz schon wegen seiner Zustimmung, ohne dass es auf sein Verschulden ankommt.",
+       "w": false,
+       "k": "AHG § 3 Abs. 1: Rückersatz kann nur von Organen begehrt werden, die die Rechtsverletzung vorsätzlich oder grobfahrlässig verübt oder verursacht haben."
+      }
+     ]
+    },
+    {
+     "id": "bdg-Regress-6",
+     "ref": "AHG § 3 Abs. 1, OHG § 1 Abs. 1",
+     "f": "Wie unterscheidet sich der Rückersatz nach dem Amtshaftungsgesetz von der Haftung nach dem Organhaftpflichtgesetz?",
+     "s": [
+      {
+       "t": "Beim Rückersatz nach dem AHG hat der Rechtsträger bereits den Geschädigten entschädigt und kann dann beim Organ Rückersatz begehren.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Nach dem OHG wird der Rechtsträger selbst unmittelbar am Vermögen geschädigt und kann das Organ in Anspruch nehmen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Rückersatz nach dem AHG setzt wie das OHG schon bei leichter Fahrlässigkeit ein.",
+       "w": false,
+       "k": "AHG § 3 Abs. 1 verlangt Vorsatz oder grobe Fahrlässigkeit, OHG § 1 Abs. 1 und § 2 Abs. 2 erfassen dagegen auch leichte Fahrlässigkeit (ausgenommen entschuldbare Fehlleistung)."
+      },
+      {
+       "t": "Nach dem OHG haftet das Organ einem geschädigten Dritten unmittelbar.",
+       "w": false,
+       "k": "OHG § 1 Abs. 1 regelt nur Schäden, die das Organ dem Rechtsträger unmittelbar zugefügt hat; einem Dritten haftet das Organ nach AHG § 1 Abs. 1 nicht."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "OHG",
+   "label": "OHG",
+   "title": "Organhaftpflichtgesetz",
+   "stand": "01.03.2013",
+   "text": "§ 1. Haftpflicht\n(1) Personen, die als Organe des Bundes, eines Landes, eines Gemeindeverbandes, einer Gemeinde, eines Trägers der Sozialversicherung oder einer sonstigen Körperschaft oder Anstalt des öffentlichen Rechts – im folgenden Rechtsträger genannt – handeln, haften, soweit dieses Bundesgesetz nicht anderes bestimmt, nach den Bestimmungen des bürgerlichen Rechts für den Schaden am Vermögen, den sie dem Rechtsträger, als dessen Organ sie gehandelt haben, in Vollziehung der Gesetze durch ein schuldhaftes und rechtswidriges Verhalten unmittelbar zugefügt haben. Der Schaden ist nur in Geld zu ersetzen.\n(2) Organe im Sinne dieses Bundesgesetzes sind alle physischen Personen, wenn sie in Vollziehung der Gesetze (Gerichtsbarkeit oder Hoheitsverwaltung) handeln, gleichviel, ob sie dauernd oder vorübergehend oder für den einzelnen Fall bestellt sind, ob sie gewählte, ernannte oder sonstwie bestellte Organe sind und ob ihr Verhältnis zum Rechtsträger nach öffentlichem oder nach privatem Recht zu beurteilen ist.\n\n§ 2. NOR40147755\n(1) Ein Ersatzanspruch (§ 1 Abs. 1) besteht nicht, wenn der Rechtsträger den Schaden durch Rechtsmittel oder durch eine Beschwerde beim Verwaltungsgericht und Revision beim Verwaltungsgerichtshof oder durch sonst eine gesetzlich begründete Maßnahme hätte abwenden können.\n(2) Von einem Organ kann kein Ersatz wegen einer Handlung begehrt werden, die auf einer entschuldbaren Fehlleistung beruht oder auf Weisung (Auftrag, Befehl) eines Vorgesetzten erfolgt ist, es sei denn, das Organ hätte die Weisung eines offenbar unzuständigen Vorgesetzten befolgt oder in Befolgung der Weisung gegen strafgesetzliche Vorschriften verstoßen.\n(3) Aus einem Erkenntnis des Verfassungsgerichtshofes, des Obersten Gerichtshofes oder des Verwaltungsgerichtshofes kann ein Ersatzanspruch nicht abgeleitet werden.\nAnmerkung\n1. Zu Abs. 1 siehe auch § 1304 ABGB, JGS Nr. 946/1811, als dessen Spezifikation dieser Abs. 1 gilt.\n2. Zur Gehorsamspflicht siehe auch Art. 20 Abs. 1 B-VG, BGBl. Nr. 1/1930.\n\n§ 3. NOR40147756\n(1) Beruht die Schädigung, derentwegen das Organ zur Ersatzleistung herangezogen wird, auf einem Versehen, so kann das Gericht aus Gründen der Billigkeit den Ersatz mäßigen oder, sofern der Schaden durch einen minderen Grad des Versehens zugefügt worden ist, auch ganz erlassen.\n(2) Auf die Ausübung der dem Gericht nach Abs. 1 eingeräumten Befugnis sind die Bestimmungen des § 2 Abs. 2 des Dienstnehmerhaftpflichtgesetzes, BGBl. Nr. 80/1965, sinngemäß anzuwenden.\nAnmerkung\nÜR: Art. III, BGBl. Nr. 537/1984\n\n§ 4. N1196717213S\nGründet sich der Ersatzanspruch auf eine von einem Kollegialorgan beschlossene Entscheidung oder Verfügung, so haften nur die Stimmführer, die für diese Entscheidung oder Verfügung gestimmt haben. Beruht jedoch die Entscheidung oder Verfügung auf einer unvollständigen oder unrichtigen Darstellung des Sachverhaltes durch den Berichterstatter, so haften auch die Stimmführer, die dafür gestimmt haben, nicht, es sei denn, sie hätten die pflichtgemäße Sorgfalt grob fahrlässig außer acht gelassen.\n\n§ 5. NOR40147757\nErsatzansprüche nach § 1 Abs. 1 verjähren in drei Jahren nach Ablauf des Tages, an dem der Schaden dem Rechtsträger bekanntgeworden ist, keinesfalls aber vor einem Jahr nach Eintritt der Rechtskraft einer rechtsverletzenden Entscheidung oder Verfügung. Ist dem Rechtsträger der Schaden nicht bekanntgeworden oder ist der Schaden aus einer gerichtlich strafbaren Handlung, die nur vorsätzlich begangen werden kann und mit mehr als einjähriger Freiheitsstrafe bedroht ist, entstanden, so verjährt der Ersatzanspruch erst nach zehn Jahren nach der Entstehung des Schadens.",
+   "q": [
+    {
+     "id": "bdg-OHG-1",
+     "ref": "OHG § 1 Abs. 1",
+     "f": "Welche Voraussetzungen hat die Haftung eines Organs nach dem Organhaftpflichtgesetz?",
+     "s": [
+      {
+       "t": "Das Organ haftet für den Schaden am Vermögen des Rechtsträgers.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Das Organ muss den Schaden in Vollziehung der Gesetze verursacht haben.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Das Organ haftet nach dem OHG auch, wenn es den Schaden ohne Verschulden verursacht hat, sofern das Verhalten rechtswidrig war.",
+       "w": false,
+       "k": "OHG § 1 Abs. 1: Das Organ haftet nur für ein schuldhaftes und rechtswidriges Verhalten."
+      },
+      {
+       "t": "Der Schaden muss dem Rechtsträger mittelbar, also über einen Dritten, zugefügt worden sein.",
+       "w": false,
+       "k": "OHG § 1 Abs. 1: Der Schaden muss dem Rechtsträger unmittelbar zugefügt worden sein."
+      }
+     ]
+    },
+    {
+     "id": "bdg-OHG-2",
+     "ref": "OHG § 1 Abs. 1, 2",
+     "f": "Beim Organhaftpflichtgesetz handelt es sich um ein Zweipersonenverhältnis. Welche Aussagen dazu sind richtig?",
+     "s": [
+      {
+       "t": "Beteiligt sind der Rechtsträger als Geschädigter und das Organ als Schädiger.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Das Organ haftet dem Rechtsträger, als dessen Organ es gehandelt hat.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Beteiligt sind das Organ, der Rechtsträger und ein geschädigter Dritter.",
+       "w": false,
+       "k": "Das ist das Dreipersonenverhältnis der Amtshaftung (AHG § 1 Abs. 1); nach OHG § 1 Abs. 1 haftet das Organ dem Rechtsträger."
+      },
+      {
+       "t": "Der Schaden ist nach dem OHG auch in Naturalrestitution zu leisten, wenn dies möglich ist.",
+       "w": false,
+       "k": "OHG § 1 Abs. 1: Der Schaden ist nur in Geld zu ersetzen."
+      }
+     ]
+    },
+    {
+     "id": "bdg-OHG-3",
+     "ref": "OHG § 1 Abs. 2",
+     "f": "Wer ist Organ im Sinne des Organhaftpflichtgesetzes?",
+     "s": [
+      {
+       "t": "Alle physischen Personen, wenn sie in Vollziehung der Gesetze (Gerichtsbarkeit oder Hoheitsverwaltung) handeln.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Auch eine Person, die nur für den einzelnen Fall bestellt ist, kann Organ sein.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Ein Organ muss in einem öffentlich-rechtlichen Dienstverhältnis zum Rechtsträger stehen.",
+       "w": false,
+       "k": "OHG § 1 Abs. 2: Gleichviel, ob das Verhältnis zum Rechtsträger nach öffentlichem oder privatem Recht zu beurteilen ist."
+      },
+      {
+       "t": "Auch eine juristische Person kann Organ sein.",
+       "w": false,
+       "k": "OHG § 1 Abs. 2: Organe sind nur physische Personen."
+      }
+     ]
+    },
+    {
+     "id": "bdg-OHG-4",
+     "ref": "OHG § 2 Abs. 2, 3",
+     "f": "Gegen ein Organ soll ein Ersatzanspruch nach dem Organhaftpflichtgesetz geltend gemacht werden. Wann besteht er nicht?",
+     "s": [
+      {
+       "t": "Wenn die Handlung auf einer entschuldbaren Fehlleistung beruht.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Wenn die Handlung auf Weisung eines Vorgesetzten erfolgt ist, außer das Organ hat die Weisung eines offenbar unzuständigen Vorgesetzten befolgt oder dabei gegen strafgesetzliche Vorschriften verstoßen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Wenn der Ersatzanspruch aus einem Erkenntnis des Verwaltungsgerichtshofes abgeleitet werden soll.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Anspruch besteht nur bei Vorsatz oder grober Fahrlässigkeit, leichte Fahrlässigkeit ist stets ausgeschlossen.",
+       "w": false,
+       "k": "OHG § 1 Abs. 1 verlangt nur Verschulden; bei leichter Fahrlässigkeit kommt Mäßigung oder Erlass nach § 3 in Betracht, ausgeschlossen ist nur die entschuldbare Fehlleistung (§ 2 Abs. 2)."
+      }
+     ]
+    },
+    {
+     "id": "bdg-OHG-5",
+     "ref": "OHG § 3 Abs. 1, 2",
+     "f": "Das Organ wird zum Ersatz herangezogen, weil der Schaden auf einem Versehen beruht. Welche Aussagen sind richtig?",
+     "s": [
+      {
+       "t": "Das Gericht kann den Ersatz aus Gründen der Billigkeit mäßigen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Bei einem minderen Grad des Versehens kann das Gericht den Ersatz auch ganz erlassen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Das Gericht hat dabei § 2 Abs. 2 des Dienstnehmerhaftpflichtgesetzes sinngemäß anzuwenden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Das Gericht kann den Ersatz auch dann mäßigen, wenn das Organ den Schaden vorsätzlich zugefügt hat.",
+       "w": false,
+       "k": "OHG § 3 Abs. 1: Mäßigung und Erlass sind nur vorgesehen, wenn die Schädigung auf einem Versehen beruht, nicht bei Vorsatz."
+      }
+     ]
+    },
+    {
+     "id": "bdg-OHG-6",
+     "ref": "OHG § 2 Abs. 1, § 4, § 5",
+     "f": "Welche Aussagen zu Ausschluss, Kollegialorganen und Verjährung nach dem Organhaftpflichtgesetz sind richtig?",
+     "s": [
+      {
+       "t": "Der Ersatzanspruch besteht nicht, wenn der Rechtsträger den Schaden durch ein Rechtsmittel hätte abwenden können.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Bei einer von einem Kollegialorgan beschlossenen Entscheidung haften nur die Stimmführer, die dafür gestimmt haben.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Ersatzanspruch verjährt grundsätzlich in drei Jahren nach Ablauf des Tages, an dem der Schaden dem Rechtsträger bekanntgeworden ist.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Ersatzanspruch verjährt in jedem Fall erst nach zehn Jahren ab Entstehung des Schadens.",
+       "w": false,
+       "k": "OHG § 5: Die Zehnjahresfrist gilt nur, wenn dem Rechtsträger der Schaden nicht bekanntgeworden ist oder bei vorsätzlichen Straftaten mit mehr als einjähriger Strafdrohung; sonst gilt die Dreijahresfrist."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "PolBEG",
+   "label": "PolBEG",
+   "title": "Polizeibefugnis-Entschädigungsgesetz",
+   "stand": "01.07.1996",
+   "text": "§ 1. Ersatzpflicht\nDer Bund hat nach Maßgabe der folgenden Bestimmungen Ersatz für Schäden zu leisten, die von einem Organ des öffentlichen Sicherheitsdienstes bei der Ausübung von Zwangsbefugnissen durch die im Waffengebrauchsgesetz 1969 genannten Maßnahmen unmittelbar verursacht worden sind, sofern der Zwang im Vollziehungsbereich des Bundes ausgeübt und nicht vom Geschädigten durch rechtswidriges Verhalten ausgelöst wurde.\n\n§ 2. N1199654810J\n(1) Wer einen Schaden im Sinne des § 1 durch Verletzung am Körper oder durch Beschädigung einer körperlichen Sache erleidet, hat Anspruch auf Schadloshaltung in Geld in dem Umfang, als dieser Schaden nicht durch Versicherung oder durch Hilfeleistung nach dem Bundesgesetz über die Gewährung von Hilfeleistungen an Opfer von Verbrechen, BGBl. Nr. 288/1972, gedeckt ist. Ein Anspruch auf Schmerzengeld besteht nicht.\n(2) Trifft den Geschädigten an der Entstehung des Schadens ein Verschulden, so hat er diesen verhältnismäßig zu tragen; läßt sich das Verhältnis nicht bestimmen, so hat er ihn zur Hälfte zu tragen. Lag die Maßnahme (§ 1) im überwiegenden Interesse des Geschädigten, steht bei Sachschäden ein Ersatzanspruch nicht, bei Personenschäden nach Billigkeit zu.\n(3) Stehen Angehörigen eines fremden Staates auf Grund einer Verordnung gemäß § 7 des Amtshaftungsgesetzes keine Ansprüche nach jenem Bundesgesetz zu, so haben sie auch keinen Anspruch nach Abs. 1.\n\n§ 3. NOR40154739\n(1) Ansprüche auf Ersatz der im § 2 genannten Schäden, die dem Geschädigten wegen der Ausübung der Zwangsbefugnis gegen Dritte zustehen, gehen in dem Umfang auf den Bund über, in dem dieser Leistungen nach diesem Bundesgesetz erbringt. Für die Wirksamkeit des Anspruchsüberganges gegenüber dem Dritten gelten der letzte Satz des § 1395 und der erste Satz des § 1396 ABGB sinngemäß.\n(2) Ansprüche des Bundes auf Rückersatz gegenüber Personen, die als seine Organe gehandelt haben, sind nach den Bestimmungen des Amtshaftungsgesetzes geltend zu machen; Leistungen auf Grund eines Anspruches nach § 2 gelten insoweit als Schadenersatz nach dem Amtshaftungsgesetz. In einem solchen Verfahren ist das ordentliche Gericht nicht an die Feststellungen gemäß § 8 gebunden.\n\n§ 4. N1198810900F\n(1) Steht einem Geschädigten ein Anspruch auf Versicherungsleistung zu, auf den bei der Bemessung der Ersatzleistung Bedacht zu nehmen ist, so hat er dies dem Bundesminister für Inneres vor Ergehen der Entscheidung mitzuteilen.\n(2) Ein Entschädigter, dem ein Anspruch nach Abs. 1 erst nachträglich bekannt wurde, hat diesen dem Bundesminister für Inneres binnen einem Monat, nachdem er davon Kenntnis erlangt hat, mitzuteilen.\n(3) Der Bundesminister für Inneres hat von einem Entschädigten Rückersatz zu fordern, soweit diesem Ersatz für einen Schaden geleistet wurde, der durch Versicherungsleistung gedeckt war. Hiebei sind außer im Falle einer gemäß Abs. 2 fristgerechten Mitteilung für den zu Unrecht zuerkannten Betrag die seit Zahlung oder seit Ablauf der Frist des Abs. 2 angewachsenen gesetzlichen Zinsen zu fordern.",
+   "q": [
+    {
+     "id": "bdg-PolBEG-1",
+     "ref": "PolBEG § 1",
+     "f": "Wann haftet der Bund nach dem Polizeibefugnis-Entschädigungsgesetz?",
+     "s": [
+      {
+       "t": "Wenn ein Organ des öffentlichen Sicherheitsdienstes bei der Ausübung von Zwangsbefugnissen durch die im Waffengebrauchsgesetz 1969 genannten Maßnahmen einen Schaden unmittelbar verursacht hat.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Wenn der Zwang im Vollziehungsbereich des Bundes ausgeübt worden ist.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Auch wenn der Geschädigte den Zwang durch rechtswidriges Verhalten selbst ausgelöst hat.",
+       "w": false,
+       "k": "PolBEG § 1: Kein Ersatz, wenn der Zwang vom Geschädigten durch rechtswidriges Verhalten ausgelöst wurde."
+      },
+      {
+       "t": "Nur dann, wenn das Einschreiten des Organs selbst rechtswidrig war.",
+       "w": false,
+       "k": "PolBEG § 1 nennt die Voraussetzungen der Ersatzpflicht; ein rechtswidriges Einschreiten des Organs gehört nicht dazu. Ausgeschlossen ist der Ersatz nur, wenn der Geschädigte den Zwang durch rechtswidriges Verhalten ausgelöst hat."
+      }
+     ]
+    },
+    {
+     "id": "bdg-PolBEG-2",
+     "ref": "PolBEG § 2 Abs. 1",
+     "f": "Welchen Schaden ersetzt das Polizeibefugnis-Entschädigungsgesetz und in welcher Form?",
+     "s": [
+      {
+       "t": "Ersetzt werden Schäden durch Verletzung am Körper.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Ersetzt werden Schäden durch Beschädigung einer körperlichen Sache.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Schadloshaltung erfolgt in Geld, soweit der Schaden nicht durch Versicherung oder Hilfeleistung nach dem Verbrechensopfergesetz gedeckt ist.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Auch ein Anspruch auf Schmerzengeld besteht neben dem Ersatz des Körperschadens.",
+       "w": false,
+       "k": "PolBEG § 2 Abs. 1: Ein Anspruch auf Schmerzengeld besteht nicht."
+      }
+     ]
+    },
+    {
+     "id": "bdg-PolBEG-3",
+     "ref": "PolBEG § 2 Abs. 2, § 3 Abs. 2",
+     "f": "Welche Aussagen zu Mitverschulden und Rückersatz nach dem PolBEG sind richtig?",
+     "s": [
+      {
+       "t": "Trifft den Geschädigten an der Entstehung des Schadens ein Verschulden, hat er diesen verhältnismäßig zu tragen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Lässt sich das Verhältnis des Mitverschuldens nicht bestimmen, hat er den Schaden zur Hälfte zu tragen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Ansprüche des Bundes auf Rückersatz gegen das Organ sind nach den Bestimmungen des Amtshaftungsgesetzes geltend zu machen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Trifft den Geschädigten ein Mitverschulden, entfällt der Anspruch zur Gänze.",
+       "w": false,
+       "k": "PolBEG § 2 Abs. 2: Der Geschädigte trägt den Schaden nur verhältnismäßig, hilfsweise zur Hälfte."
       }
      ]
     }

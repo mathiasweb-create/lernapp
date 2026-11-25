@@ -6,7 +6,22 @@ import json, re, sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from fragen_bdg import FRAGEN
 
-ORDER = ["4","10","11","20","38","39","43","43a","44","46","49","53","56","65","76","94","112","131"]
+GRUPPEN = [
+  ("Dienstverhältnis", ["2","4","5","7","10","11","20","21","22"]),
+  ("Versetzung & Zuteilung", ["36","38","39","40","41"]),
+  ("Dienstpflichten", ["43","43a","44","45","45a","45b","46","47","52","53","54","55","56","59","60"]),
+  ("Dienstzeit & Bezüge", ["47a","48","48a","48c","49","50","51","145","62","63"]),
+  ("Urlaub & Freistellung", ["65","68","69","70","71","74","75","75d","76","78e"]),
+  ("Disziplinarrecht", ["90","92","94","96","109","112","131"]),
+  ("Haftung", ["AHG","Regress","OHG","PolBEG"]),
+]
+HAFTUNG = {   # Kachel -> (Anzeigename, Titel, [(Unterordner im Textordner, Paragraf)])
+  "AHG": ("AHG", "Amtshaftungsgesetz", [("ahg", p) for p in ("1","2","3","4")]),
+  "Regress": ("Regress", "Rückersatz an das Organ (AHG § 3 und § 4)", [("ahg", "3"), ("ahg", "4")]),
+  "OHG": ("OHG", "Organhaftpflichtgesetz", [("ohg", p) for p in ("1","2","3","4","5")]),
+  "PolBEG": ("PolBEG", "Polizeibefugnis-Entschädigungsgesetz", [("polbeg", p) for p in ("1","2","3","4")]),
+}
+ORDER = [n for g in GRUPPEN for n in g[1]]
 src, out = sys.argv[1], sys.argv[2]
 import json as _json
 try:
@@ -49,9 +64,8 @@ USED = set()
 # Skriptum-Etappe: neue Fragen (hinten angehängt), ausgeschlossene bestehende Fragen (x), Korrekturen
 SKR = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "skriptum_fragen.json"), encoding="utf-8"))
 
-paras = []
-for n in ORDER:
-    raw = open(os.path.join(src, n + ".txt"), encoding="utf-8").read().split("\n")
+def parse_par(dirname, n):
+    raw = open(os.path.join(dirname, n + ".txt"), encoding="utf-8").read().split("\n")
     # Stand (Inkrafttreten)
     stand = ""
     for i, l in enumerate(raw):
@@ -74,8 +88,21 @@ for n in ORDER:
     joined = re.sub(r"\s*…+\.?\s*\n?", ": ", joined)                 # Fristen-Tabelle (§ 10 Abs. 2): Punktlinien -> Doppelpunkt
     joined = re.sub(r"(?<=[a-zäöüß])\.(?=Z \d)", ".\n", joined)    # „…Zentralstelle.Z 1 und 2“
     text = pretty(joined)
+    return title, stand, text
+
+paras = []
+for n in ORDER:
+    if n in HAFTUNG:
+        label, title, quellen = HAFTUNG[n]
+        stands, parts = [], []
+        for sub, par in quellen:
+            t, st, tx = parse_par(os.path.join(src, sub), par)
+            parts.append("§ %s. %s\n%s" % (par, t, tx)); stands.append(st)
+        stand, text = max(stands), "\n\n".join(parts)
+    else:
+        label, (title, stand, text) = "§ " + n, parse_par(src, n)
     qs = []
-    for k, (ref, frage, stmts) in enumerate(FRAGEN[n]):
+    for k, (ref, frage, stmts) in enumerate(FRAGEN.get(n, [])):
         if len(stmts) != 4: raise SystemExit("Frage %s-%d: genau 4 Aussagen nötig" % (n, k + 1))
         s = []
         for st in stmts:
@@ -83,26 +110,19 @@ for n in ORDER:
             if not ((w and not korr) or ((not w) and korr)): raise SystemExit("Frage %s-%d: falsche Aussagen brauchen eine Erklärung, richtige nicht: %s" % (n, k + 1, st[0][:40]))
             s.append({"t": st[0], "w": w, "k": korr})
         qs.append({"id": "bdg-%s-%d" % (n, k + 1), "ref": ref, "f": frage, "s": s})
-    for qid, fx in SKR[n].get("fix", {}).items():   # Korrekturen an bestehenden Fragen (ID bleibt)
+    for qid, fx in SKR.get(n, {}).get("fix", {}).items():   # Korrekturen an bestehenden Fragen (ID bleibt)
         q = next(q for q in qs if q["id"] == qid)
         for ai, d in fx.items():
             st = q["s"][int(ai) - 1]
             for key, val in d.items(): st[key] = val
             if st["w"]: st["k"] = ""
     for q in qs:
-        if q["id"] in SKR[n].get("exclude", []): q["x"] = 1
-    for nq in SKR[n]["new"]:
+        if q["id"] in SKR.get(n, {}).get("exclude", []): q["x"] = 1
+    for nq in SKR.get(n, {}).get("new", []):
         if len(nq["s"]) != 4: raise SystemExit("Skriptum-Frage in %s: genau 4 Aussagen nötig" % n)
         qs.append({"id": "bdg-%s-%d" % (n, len(qs) + 1), "ref": nq["ref"], "f": nq["f"], "s": [{"t": x["t"], "w": bool(x["w"]), "k": x["k"]} for x in nq["s"]]})
-    paras.append({"n": n, "label": "§ " + n, "title": title, "stand": stand, "text": text, "q": qs})
+    paras.append({"n": n, "label": label, "title": title, "stand": stand, "text": text, "q": qs})
 
-GRUPPEN = [
-  ("Dienstverhältnis", ["4","10","11","20"]),
-  ("Versetzung & Zuteilung", ["38","39"]),
-  ("Dienstpflichten", ["43","43a","44","46","49","53","56"]),
-  ("Urlaub & Freistellung", ["65","76"]),
-  ("Disziplinarrecht", ["94","112","131"]),
-]
 if sorted(sum([g[1] for g in GRUPPEN], [])) != sorted(ORDER): raise SystemExit("Gruppen und Paragrafenliste passen nicht zusammen")
 
 data = {
