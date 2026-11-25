@@ -1,7 +1,7 @@
 // Offline-Cache für LexCoach.
 // Strategie: erst Netz (max. 3 s), sonst Cache -> Änderungen sind sofort beim nächsten Öffnen da, Offline funktioniert trotzdem.
 // Bei neuen Dateien oder umbenannten Pfaden VERSION erhöhen.
-const VERSION = 'rt-v6';
+const VERSION = 'rt-v7';
 const ASSETS = ['./', 'index.html', 'manifest.webmanifest', 'icon-180.png', 'icon-192.png', 'icon-512.png', 'daten/bdg.json', 'daten/verweise.json', 'daten/news.json', 'lexi.js', 'lexi.css', 'legal.js', 'vendor/qrcode.js'];
 
 self.addEventListener('install', e => {
