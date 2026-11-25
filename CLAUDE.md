@@ -10,7 +10,7 @@ Bedienbare Vorschau für neue Entwürfe (Artefakt, wird bei Änderungen aktualis
 
 ## Arbeitsregeln des Nutzers (immer einhalten)
 - Antworten auf Deutsch, einfache Sprache, kurz. Bei Sprach- oder Diktatmodus nur das Nötigste, nichts wiederholen. Fachbegriffe (Branch, Pull Request, Merge, Deployment) kurz erklären.
-- Anweisungen kritisch prüfen (falsche Angaben, Widersprüche, einfachere Wege), beratend mitdenken, bewährte Workflows nennen, inhaltliche Rückfragen stellen (gern mit dem Fragewerkzeug und Auswahlknöpfen).
+- Anweisungen kritisch prüfen (falsche Angaben, Widersprüche, einfachere Wege), beratend mitdenken, bewährte Workflows nennen, inhaltliche Rückfragen stellen. **Fragen mit bis zu 3 Antwortmöglichkeiten (auch Ja/Nein) immer mit `AskUserQuestion` und Auswahlknöpfen stellen, nie als Fließtext** (Nutzerwunsch 2026-11-25).
 - Grafiken und Vorschauen: modern, nüchtern, kompakt, einfach, übersichtlich. **Vorschauen immer als bedienbares Artefakt** (Artifact-Tool), nicht als Datei.
 - **Immer erst Vorschau:** Jede sichtbare Änderung (Layout, Grafik, Schrift, Bedienelemente) zuerst als bedienbare Vorschau im Artefakt zeigen, erst nach Freigabe in die App bauen (Nutzerwunsch 2026-11-25).
 - **Fragen ändern:** Richtigkeit hat Priorität. Jede neue oder geänderte Frage prüft ein stärkerer Agent (Opus, nur lesen) gegen den RIS-Text und das Skriptum, Befunde danach selbst gegenprüfen (Nutzerwunsch 2026-11-25). Skriptum nur lesen, nie ins Repo legen (Urheberrecht, Repo ist öffentlich), nur Themenliste. Das Skriptum liegt nur im privaten Repo `mathiasweb-create/lernapp-quellen` (Datei `Skriptum_Dienstrecht.docx`; bei Bedarf mit `add_repo` anhängen und klonen), nie im öffentlichen Repo.
