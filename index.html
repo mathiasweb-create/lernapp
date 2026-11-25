@@ -34,7 +34,7 @@
   --bg:#F3F6FB; --card:#ffffff; --ink:#14213D; --mute:#56627D; --line:#DCE4F1;
   --acc:#2457D6; --on:#ffffff; --soft:#E4ECFF;
   --ok:#0B7A55; --ok-bg:#E3F5EC; --bad:#C0362C; --bad-bg:#FDEAE7; --warn:#9A5B00; --warn-bg:#FFF2DB;
-  --c1:#2457D6; --c2:#0E8A7D; --c3:#B7791F; --c4:#7A4FD1; --c5:#C2410C; --wind:#0A0D14; --shadow:rgba(20,33,61,.14);
+  --c1:#2457D6; --c2:#0E8A7D; --c3:#B7791F; --c4:#7A4FD1; --c5:#C2410C; --wind:#0A0D14; --shadow:rgba(20,33,61,.14); --kc:#0E8A7D; --kc-on:#ffffff; --kc-soft:#DDF3F0;
   --font:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
 }
 @media (prefers-color-scheme: dark){
@@ -42,14 +42,14 @@
     --bg:#0E1626; --card:#162036; --ink:#E8EEFC; --mute:#9AA8C7; --line:#263454;
     --acc:#7AA2FF; --on:#0B1530; --soft:#1E2D52;
     --ok:#4CC38A; --ok-bg:#123225; --bad:#FF8A80; --bad-bg:#3A1B1B; --warn:#F0B35A; --warn-bg:#33270F;
-    --c1:#7AA2FF; --c2:#3CC9B8; --c3:#F0B35A; --c4:#B79BFF; --c5:#FF9A62; --wind:#F2F5FF; --shadow:rgba(0,0,0,.5); color-scheme:dark;
+    --c1:#7AA2FF; --c2:#3CC9B8; --c3:#F0B35A; --c4:#B79BFF; --c5:#FF9A62; --wind:#F2F5FF; --shadow:rgba(0,0,0,.5); --kc:#3CC9B8; --kc-on:#06211D; --kc-soft:#12332F; color-scheme:dark;
   }
 }
 :root[data-theme="dark"]{
     --bg:#0E1626; --card:#162036; --ink:#E8EEFC; --mute:#9AA8C7; --line:#263454;
     --acc:#7AA2FF; --on:#0B1530; --soft:#1E2D52;
     --ok:#4CC38A; --ok-bg:#123225; --bad:#FF8A80; --bad-bg:#3A1B1B; --warn:#F0B35A; --warn-bg:#33270F;
-    --c1:#7AA2FF; --c2:#3CC9B8; --c3:#F0B35A; --c4:#B79BFF; --c5:#FF9A62; --wind:#F2F5FF; --shadow:rgba(0,0,0,.5); color-scheme:dark;
+    --c1:#7AA2FF; --c2:#3CC9B8; --c3:#F0B35A; --c4:#B79BFF; --c5:#FF9A62; --wind:#F2F5FF; --shadow:rgba(0,0,0,.5); --kc:#3CC9B8; --kc-on:#06211D; --kc-soft:#12332F; color-scheme:dark;
 }
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{margin:0;overflow-x:hidden;background:var(--bg);color:var(--ink);font:15px/1.45 var(--font);-webkit-text-size-adjust:100%}
@@ -270,7 +270,7 @@ const IC = {
   chev:'<svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8l5 5 5-5"/></svg>'
 };
 /* Lexi (lexi.js). Fällt die Datei aus, läuft die App ohne Maskottchen weiter. */
-const LX = window.Lexi || {svg:() => '', paint(){}, paintAll(){}, say(){}, sayIdx(){}, idle(){}, block(){}, enable(){}, hide(){}, SAYS:['Hallo'], ANGRY:-1, BARS:-1};
+const LX = window.Lexi || {svg:() => '', paint(){}, paintAll(){}, say(){}, sayIdx(){}, sayShort(){}, SHORT:['Hallo'], idle(){}, block(){}, enable(){}, hide(){}, SAYS:['Hallo'], ANGRY:-1, BARS:-1};
 const LEGAL = window.LEGAL || {};
 
 /* ================= Gesetze & Daten ================= */
@@ -302,6 +302,7 @@ async function loadChangelog(){
   catch(e){ CL = []; }
 }
 const clLatest = () => CL.length ? CL[0].v : 0;
+const clVer = e => e.s || String(e.v);
 const clItems = e => e.t.map(x => `<li><b>${esc(x.h)}</b>${esc(x.x)}</li>`).join('');
 async function loadNews(){
   try{ const r = await fetch('daten/news.json'); if(!r.ok) return; const j = await r.json(); if(j && typeof j === 'object') NEWS = j; }
@@ -391,6 +392,7 @@ function render(keep){
   $('#app').classList.toggle('nodock', S.view === 'settings');
   $('#app').classList.toggle('tabonly', S.view === 'start');
   ({start:renderStart, home:renderHome, stacks:renderStacks, stats:renderStats, quiz:renderQ, result:renderResult, settings:renderSettingsView})[S.view]();
+  LX.hide();
   LX.paintAll();
   window.scrollTo(0, y);
   LX.idle(!['quiz','result','start','settings'].includes(S.view) && !S.pop && S.tour === null, 25000, 50000);
@@ -452,6 +454,7 @@ function renderHome(){
     <div class="sec"><span>Paragrafen · ${S.sel.size} gewählt</span><span class="mini"><button data-act="all">Alle</button><button data-act="none">Keine</button></span></div>
     ${d.paragrafen.length > SEARCH_MIN ? `<input class="search" id="q" type="search" placeholder="Paragraf oder Stichwort suchen …" value="${esc(S.q)}" aria-label="Paragrafen suchen">` : ''}
     ${list || '<p class="empty">Keine Treffer.</p>'}
+    <div class="modebar"><div class="sec"><span>Modus</span></div><div class="mseg"><button class="on" aria-pressed="true">Multiple Choice<small>4 Aussagen</small></button><button class="soon" data-act="mode-soon" aria-disabled="true">Karteikarten<small>Umdrehen</small><span class="bd">Bald</span></button></div></div>
     <button class="quiet" data-act="only" role="checkbox" aria-checked="${S.onlyOpen}" style="margin-top:6px"><span class="cb ${S.onlyOpen?'on':''}">${S.onlyOpen?'✓':''}</span>Nur Fragen, die ich noch nicht sicher kann</button>
     <button class="fold" data-act="klfold" aria-expanded="${S.klOpen}"><span>Klausuren (${nk})</span><span aria-hidden="true">${S.klOpen?'⌃':'⌄'}</span></button>
     ${S.klOpen ? `<div id="stk" style="padding-top:6px">${stackList(false)}</div>${stackSave()}` : ''}
@@ -566,7 +569,7 @@ function checkAnswer(){
 }
 function maybeSay(prob){
   if(S.pop || S.tour !== null || !SET.says || Date.now() - S.lastSay < 60000 || Math.random() >= prob) return;
-  S.lastSay = Date.now(); setTimeout(() => { if(S.view === 'quiz') LX.sayIdx(Math.floor(Math.random()*LX.SAYS.length)); }, 700);
+  S.lastSay = Date.now(); setTimeout(() => { if(S.view === 'quiz') LX.sayShort(Math.floor(Math.random()*LX.SHORT.length)); }, 700);
 }
 
 /* ---------- Auswertung ---------- */
@@ -615,7 +618,7 @@ function renderSettingsView(){
       + row('look', '◐', 'Darstellung', ({system:'System', light:'Hell', dark:'Dunkel'})[SET.theme] + ' · Schrift ' + ({s:'klein', n:'normal', l:'groß'})[SET.font])
       + row('home', '⌂', 'Zum Home-Bildschirm', isStandalone() ? 'Als App installiert' : 'Anleitung · empfohlen')
       + row('tour', '?', 'Tutorial', 'Kurze Tour noch einmal ansehen')
-      + (CL.length ? row('chg', '↻', 'Änderungsprotokoll', 'Was sich zuletzt geändert hat') : '')
+      + (CL.length ? row('chg', '↻', 'Change-log', 'Was sich zuletzt geändert hat') : '')
       + row('legal', '§', 'Rechtliches', 'Impressum · Datenschutz · Nutzung · Lizenzen')
       + '<p class="hint" style="margin-top:10px">Alle Einstellungen gelten nur auf diesem Gerät.</p>';
   } else if(S.set === 'grades'){
@@ -644,7 +647,7 @@ function renderSettingsView(){
       ${sw('set-rm', SET.rm, 'Bewegungen reduzieren', 'Lexi und Animationen bleiben ruhig. Zusätzlich gilt die Einstellung „Bewegung reduzieren“ des iPhones.')}
       ${sw('set-says', SET.says, 'Sprüche von Lexi', 'Lexi sagt gelegentlich einen kurzen Spruch.')}`;
   } else if(S.set === 'chg'){
-    h = back('Einstellungen') + '<div class="top"><h1>Änderungsprotokoll</h1></div><div class="doc">' + CL.map(e => `<h2>${esc(e.d)}</h2><ul class="cl">${clItems(e)}</ul>`).join('') + '</div>';
+    h = back('Einstellungen') + '<div class="top"><h1>Change-log</h1></div><div class="doc">' + CL.map((e,i) => `<details class="up ${i ? 'old' : ''}" ${i ? '' : 'open'}><summary><span class="uv">${esc(clVer(e))}</span><span class="un"><b>${esc(e.n || 'Update')}</b><span>${esc(e.d)}</span></span><i class="chev"></i></summary><ul class="cl">${clItems(e)}</ul></details>`).join('') + '</div>';
   } else if(S.set === 'home'){
     h = back('Einstellungen') + `<div class="top"><h1>Zum Home-Bildschirm</h1></div><div class="rbox" style="margin-top:6px">${LX.svg('happy')}</div>
       <div class="card"><b style="font-size:14px">Status</b><div class="mute" style="font-size:13px;margin-bottom:6px">${isStandalone() ? 'Als App installiert.' : 'Im Browser geöffnet. Nach dem Hinzufügen steht hier „Als App installiert“.'}</div>${stepsHtml()}</div>
@@ -693,7 +696,7 @@ function overlayHtml(){
   if(S.pop === 'ask') return `<div class="dim"></div><div class="dlg" role="dialog" aria-modal="true" aria-label="Zum Home-Bildschirm hinzufügen">${LX.svg('normal')}<h3>LexCoach zum Home-Bildschirm?</h3><p>Dann öffnet sich die App wie eine echte App, ohne Adressleiste und auch offline.</p><button class="btn two" data-act="a2-yes"><span>Ja, zeig mir wie</span><small>Wird empfohlen, du Fuchs.</small></button><button class="btn alt" data-act="a2-later" style="margin-top:8px">Später</button></div>`;
   if(S.pop === 'log' && CL.length){
     const e = CL[0], old = CL.slice(1, 4);
-    return `<div class="dim"></div><div class="dlg clg" role="dialog" aria-modal="true" aria-label="Neu in LexCoach"><h3>Neu in LexCoach</h3><span class="ver">Update vom ${esc(e.d)}</span><ul class="cll">${e.t.map(x => `<li><i></i><span><b>${esc(x.h)}</b><span>${esc(x.x)}</span></span></li>`).join('')}</ul>${old.length ? `<button class="more" data-act="log-more" aria-expanded="${!!S.logMore}"><span>Frühere Updates</span><span aria-hidden="true">${S.logMore ? '⌃' : '⌄'}</span></button>${S.logMore ? `<div class="old">${old.map(o => `<span><b>${esc(o.d)}</b> ${esc(o.t.map(x => x.h).join(', '))}</span>`).join('')}<span>Alle Updates: Einstellungen › Änderungsprotokoll</span></div>` : ''}` : ''}<button class="btn" data-act="log-close">Alles klar</button></div>`;
+    return `<div class="dim"></div><div class="dlg clg" role="dialog" aria-modal="true" aria-label="Neu in LexCoach"><h3>Neu in LexCoach</h3><span class="ver">Update ${esc(clVer(e))} · ${esc(e.n || e.d)}</span><ul class="cll">${e.t.map(x => `<li><i></i><span><b>${esc(x.h)}</b><span>${esc(x.x)}</span></span></li>`).join('')}</ul>${old.length ? `<button class="more" data-act="log-more" aria-expanded="${!!S.logMore}"><span>Frühere Updates</span><span aria-hidden="true">${S.logMore ? '⌃' : '⌄'}</span></button>${S.logMore ? `<div class="old">${old.map(o => `<span><b>${esc(clVer(o))} ${esc(o.n || o.d)}</b> ${esc(o.t.map(x => x.h).join(', '))}</span>`).join('')}<span>Alle Updates: Einstellungen › Change-log</span></div>` : ''}` : ''}<button class="btn" data-act="log-close">Alles klar</button></div>`;
   }
   if(S.pop === 'steps') return `<div class="dim"></div><div class="dlg" role="dialog" aria-modal="true" aria-label="Anleitung">${LX.svg('happy')}<h3>So geht’s</h3>${stepsHtml()}<button class="btn" data-act="a2-done">Verstanden</button></div>`;
   if(S.tour === 'intro') return `<div class="dim"></div><div class="dlg" role="dialog" aria-modal="true" aria-label="Tutorial">${LX.svg('happy')}<h3>Kurze Tour?</h3><p>Ich bin Lexi. In einer Minute zeige ich dir, wie alles funktioniert.</p><button class="btn" data-act="tour-start">Los geht’s</button>${S.skipPos ? '<div class="skipslot"></div>' : '<button class="btn alt" data-act="tour-skip" style="margin-top:8px">Überspringen</button>'}</div>${S.skipPos ? '<button class="btn alt skipf" data-act="tour-skip">Überspringen</button>' : ''}`;
@@ -827,6 +830,7 @@ function closeSheetSilently(){ S.sheet = null; const r = $('#sheet'); if(r) r.in
 
 /* ================= Aktionen (Event-Delegation) ================= */
 const ACT = {
+  'mode-soon'(){ toast('Karteikarten kommen bald. Bis dahin: Multiple Choice.'); },
   tab(b){ S.view = b.dataset.v; render(); },
   'to-start'(){ S.view = 'start'; render(); },
   'law-open'(){ S.view = 'home'; render(); },

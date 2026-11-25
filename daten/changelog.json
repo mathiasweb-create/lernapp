@@ -1,5 +1,25 @@
 [
  {
+  "v": 3,
+  "s": "2.1",
+  "n": "Sprechblasen und Change-log",
+  "d": "25.11.2026",
+  "t": [
+   {
+    "h": "Sprechblase in der Kopfzeile",
+    "x": "Lexi spricht jetzt neben seinem Kopf und verdeckt keinen Inhalt mehr."
+   },
+   {
+    "h": "Change-log übersichtlicher",
+    "x": "Jedes Update hat Namen und Nummer und ist eingeklappt."
+   },
+   {
+    "h": "Karteikarten kommen bald",
+    "x": "Unter „Lernen“ gibt es eine neue Moduswahl, Karteikarten sind noch gesperrt."
+   }
+  ]
+ },
+ {
   "v": 2,
   "d": "25.11.2026",
   "t": [
@@ -19,11 +39,13 @@
     "h": "Änderungsprotokoll",
     "x": "Neu in den Einstellungen: alle Updates auf einen Blick."
    }
-  ]
+  ],
+  "s": "2.0",
+  "n": "Skriptum-Fragenpool"
  },
  {
   "v": 1,
-  "d": "25.11.2026 (früher)",
+  "d": "25.11.2026",
   "t": [
    {
     "h": "Neuer Reiter „Start“",
@@ -41,7 +63,9 @@
     "h": "Tutorial",
     "x": "Der springende Knopf „Überspringen“ ist kleiner."
    }
-  ]
+  ],
+  "s": "1.1",
+  "n": "Feinschliff Start und Auswertung"
  },
  {
   "v": 0,
@@ -51,6 +75,8 @@
     "h": "Erste Version",
     "x": "Startseite mit Neuigkeiten, Lexi, Notenschlüssel, Klausuren, Einstellungen und Tutorial."
    }
-  ]
+  ],
+  "s": "1.0",
+  "n": "Erste Version"
  }
 ]
