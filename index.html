@@ -646,7 +646,7 @@ function renderCardsDone(){
 }
 
 /* ---------- Verweise in Karten: Pop-up für §, Absatz und andere Gesetze ---------- */
-const LAWID = {BDG:'10008470', AHG:'10000227', OHG:'10000442', PolBEG:'10000978', StGB:'10002296', StPO:'10002326', GehG:'10008163', MSchG:'10008238', 'B-VG':'10000138'};
+const LAWID = {BDG:'10008470', AHG:'10000227', OHG:'10000442', PolBEG:'10000978', StGB:'10002296', StPO:'10002326', GehG:'10008163', MSchG:'10008464', 'B-VG':'10000138'};
 const REF2 = /§§?\s?\d+[a-z]?(?:\s+Abs\.\s?\d+[a-z]?(?:\s*(?:,|und|bis|oder)\s*\d+[a-z]?)*)?(?:\s+Z\s?\d+[a-z]?(?:\s*(?:,|und|bis|oder)\s*\d+[a-z]?)*)?(?:\s+lit\.\s?[a-z])?(?:\s+(BDG|GehG|StGB|StPO|MSchG|AHG|OHG|PolBEG|B-VG)(?:\s+1979)?)?|\bAbs\.\s?(\d+[a-z]?)/g;
 const FOREIGN = /^\s+(?:des\s+|der\s+)?(?:(Strafgesetzbuch)|PG\b|ASVG\b|VwGVG\b|DHG\b|AVG\b|VStG\b|StVO\b|[A-ZÄÖÜ][A-Za-zÄÖÜäöü\-]*(?:gesetz|gesetzbuch|ordnung)\w*)/;
 const ctxLaw = n => n === 'Regress' ? 'AHG' : (['AHG','OHG','PolBEG'].includes(n) ? n : 'BDG');

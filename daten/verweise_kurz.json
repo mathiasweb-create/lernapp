@@ -1,1 +1,220 @@
-{}
+{
+"BDG": {
+"2": {
+"t": "Ernennung, Begriff",
+"k": "Ernennung ist die bescheidmäßige Verleihung einer Planstelle. Keine Ernennung nötig bei Abberufung durch Verwendungsänderung oder Versetzung, wenn beide Planstellen derselben Verwendungsgruppe angehören und der Bundespräsident das Ernennungsrecht übertrug."
+},
+"4": {
+"t": "Ernennungserfordernisse",
+"k": "Allgemein nötig: österreichische Staatsbürgerschaft (außer bei § 42a-Verwendungen genügt unbeschränkter Arbeitsmarktzugang), volle Handlungsfähigkeit, persönliche und fachliche Eignung (inkl. Deutsch), mindestens 18 Jahre bei Eintritt."
+},
+"5": {
+"t": "Ernennungsbescheid",
+"k": "Der Bescheid nennt Planstelle, Amtstitel und Tag der Wirksamkeit. Er ist spätestens an diesem Tag zuzustellen; erfolgt die Zustellung nicht rechtzeitig, wird die Ernennung erst mit dem Tag der Zustellung wirksam."
+},
+"7": {
+"t": "Angelobung",
+"k": "Der Beamte muss binnen vier Wochen nach Beginn des Dienstverhältnisses angelobt werden. Die Angelobung erfolgt vor einem von der Dienstbehörde beauftragten Beamten."
+},
+"10": {
+"t": "Provisorisches Dienstverhältnis",
+"k": "Das Dienstverhältnis ist zunächst provisorisch und per Bescheid kündbar (Frist 1, 2 oder 3 Kalendermonate je nach Dauer). In der Probezeit (erste sechs Monate) ohne Angabe von Gründen, danach nur mit Angabe des Grundes."
+},
+"11": {
+"t": "Definitivstellung",
+"k": "Auf Antrag wird das Dienstverhältnis definitiv, wenn die Definitivstellungserfordernisse erfüllt und sechs Jahre provisorische Dienstzeit vollendet sind. Nicht während eines Disziplinarverfahrens und bis drei Monate nach dessen rechtskräftigem Abschluss."
+},
+"20": {
+"t": "Auflösung des Dienstverhältnisses",
+"k": "Das Dienstverhältnis endet u. a. durch Austritt, Kündigung (provisorisch), Entlassung, bestimmte Verurteilungen, Amtsverlust nach § 27 StGB, Verlust der Staatsbürgerschaft bzw. des Arbeitsmarktzugangs und Tod. Damit erlöschen grundsätzlich alle Rechte daraus."
+},
+"21": {
+"t": "Austritt",
+"k": "Der Beamte kann schriftlich den Austritt erklären, wirksam mit Ablauf des von ihm bestimmten Monats (frühestens Ende des Abgabemonats). Widerruf ist bis einen Monat vor Wirksamwerden möglich, später nur mit ausdrücklicher Zustimmung der Dienstbehörde."
+},
+"22": {
+"t": "Entlassung wegen Arbeitserfolg",
+"k": "Wird zweimal hintereinander festgestellt, dass der erwartete Arbeitserfolg fehlt, ist der Beamte mit Rechtskraft der zweiten Feststellung entlassen."
+},
+"36": {
+"t": "Arbeitsplatz",
+"k": "Jeder Beamte, der nicht befreit oder enthoben ist, wird mit einem Arbeitsplatz der Geschäftseinteilung betraut. Ist es im Interesse des Dienstes notwendig, muss er vorübergehend auch andere Aufgaben besorgen."
+},
+"38": {
+"t": "Versetzung",
+"k": "Versetzung ist die dauernde Zuweisung an eine andere Dienststelle. Von Amts wegen ist sie nur bei wichtigem dienstlichem Interesse zulässig, im provisorischen Dienstverhältnis auch ohne; sie erfolgt mit Bescheid."
+},
+"39": {
+"t": "Dienstzuteilung",
+"k": "Dienstzuteilung ist die vorübergehende Zuweisung an eine andere Dienststelle, nur aus dienstlichen Gründen. Ohne schriftliche Zustimmung max. 90 Tage pro Kalenderjahr, länger nur zur Ausbildung oder wenn der Dienstbetrieb sonst nicht aufrechtzuerhalten ist."
+},
+"43a": {
+"t": "Achtungsvoller Umgang",
+"k": "Beamte müssen Vorgesetzten, Mitarbeitern und einander mit Achtung begegnen. Verhaltensweisen und Arbeitsbedingungen, die die menschliche Würde verletzen, dies bezwecken oder sonst diskriminieren, sind zu unterlassen (Mobbingverbot)."
+},
+"47": {
+"t": "Befangenheit",
+"k": "Bei wichtigen Gründen, die die volle Unbefangenheit in Zweifel setzen, muss sich der Beamte der Amtsausübung enthalten und seine Vertretung veranlassen. Bei Gefahr im Verzug und fehlender Vertretung nimmt er unaufschiebbare Amtshandlungen selbst vor."
+},
+"47a": {
+"t": "Begriffe Dienstzeit",
+"k": "Definiert Dienstzeit, Mehrdienstleistung, Tagesdienstzeit (24 Stunden) und Wochendienstzeit (Montag bis Sonntag). Mehrdienstleistung umfasst etwa Überstunden und bestimmte Teile des Journaldienstes."
+},
+"48": {
+"t": "Dienstplan",
+"k": "Die regelmäßige Wochendienstzeit beträgt 40 Stunden, im Kalenderjahr im Durchschnitt. Der Dienstplan verteilt sie möglichst gleichmäßig auf die Wochentage; Sonn-, Feiertage und Samstage sind dienstfrei zu halten, außer zwingende Interessen stehen entgegen."
+},
+"48a": {
+"t": "Höchstgrenzen der Dienstzeit",
+"k": "Die Tagesdienstzeit darf 13 Stunden nicht überschreiten (Ausnahmen mit verlängerter Ruhezeit). Die Wochendienstzeit darf im 17-Wochen-Durchschnitt 48 Stunden nicht übersteigen; längere Dienste nur mit Zustimmung."
+},
+"48c": {
+"t": "Tägliche Ruhezeit",
+"k": "Nach Ende der Tagesdienstzeit ist dem Beamten eine ununterbrochene Ruhezeit von mindestens elf Stunden zu gewähren."
+},
+"49": {
+"t": "Mehrdienstleistung",
+"k": "Auf Anordnung ist über den Dienstplan hinaus Dienst zu leisten. Werktags-Mehrdienst wird nach Möglichkeit im selben Quartal 1:1 durch Freizeit ausgeglichen, sonst gilt er als Überstunde; Sonn- und Feiertagsleistungen sind Überstunden."
+},
+"62": {
+"t": "Bezüge",
+"k": "Der Beamte hat nach besonderen gesetzlichen Vorschriften Anspruch auf Bezüge oder Ruhebezüge."
+},
+"65": {
+"t": "Ausmaß des Erholungsurlaubs",
+"k": "Der Erholungsurlaub beträgt 200 Stunden im Kalenderjahr, ab dem Jahr des 43. Geburtstags (vor dem 1. Juli) 240 Stunden. Im Eintrittsjahr gebührt je begonnenem Monat ein Zwölftel; Verbrauch nur tageweise."
+},
+"68": {
+"t": "Verbrauch des Erholungsurlaubs",
+"k": "Der Urlaub wird unter Berücksichtigung dienstlicher Interessen festgelegt; die Hälfte kann ungeteilt verbraucht werden. Einen Tag pro Jahr kann der Beamte einseitig nehmen (persönlicher Feiertag), Meldung drei Monate vorher."
+},
+"69": {
+"t": "Verfall des Erholungsurlaubs",
+"k": "Urlaub verfällt, wenn er nicht bis 31. Dezember des Folgejahres verbraucht ist; bei Verhinderung aus dienstlichen Gründen, durch Krankheit, Unfall oder MSchG-Beschäftigungsverbot ein Jahr später. Kein Verfall, wenn der Vorgesetzte nicht darauf hingewirkt hat."
+},
+"70": {
+"t": "Vorgriff auf Urlaub",
+"k": "Bei besonders berücksichtigungswürdigen Umständen kann dem Beamten auf Antrag der Verbrauch des Urlaubs des nächsten Kalenderjahres ganz oder teilweise gestattet werden."
+},
+"71": {
+"t": "Erkrankung im Urlaub",
+"k": "Erkrankt ein Beamter im Urlaub (ohne Vorsatz oder grobe Fahrlässigkeit) länger als drei Kalendertage, werden die Krankheitsstunden nicht auf den Urlaub angerechnet. Er muss die Erkrankung melden und ein ärztliches Zeugnis vorlegen."
+},
+"74": {
+"t": "Sonderurlaub",
+"k": "Auf Ansuchen kann aus wichtigen persönlichen oder familiären Gründen oder besonderem Anlass Sonderurlaub bei vollen Bezügen gewährt werden, wenn keine zwingenden dienstlichen Erfordernisse entgegenstehen. Insgesamt höchstens zwölf Wochen Dienstzeit je Jahr."
+},
+"75": {
+"t": "Karenzurlaub",
+"k": "Auf Antrag kann Urlaub unter Entfall der Bezüge gewährt werden, sofern keine zwingenden dienstlichen Gründe entgegenstehen. Er endet spätestens, wenn die Gesamtdauer zehn Jahre erreicht."
+},
+"75d": {
+"t": "Frühkarenzurlaub",
+"k": "Auf Ansuchen gebühren ab der Geburt eines Kindes bis zu 31 Tage Urlaub ohne Bezüge, wenn der Beamte mit Mutter bzw. Partner und Kind im gemeinsamen Haushalt lebt. Auch bei Adoption eines Kindes unter zwei Jahren; Meldung spätestens eine Woche vorher."
+},
+"76": {
+"t": "Pflegefreistellung",
+"k": "Anspruch bei nachweislicher Verhinderung durch notwendige Pflege eines erkrankten nahen Angehörigen oder Betreuung bzw. Begleitung des eigenen Kindes. Ausmaß: eine Wochendienstzeit im Jahr, für ein erkranktes Kind unter zwölf Jahren eine weitere Woche."
+},
+"78e": {
+"t": "Sabbatical",
+"k": "Auf Antrag Freistellung von sechs bis zwölf Monaten gegen anteilige Bezugskürzung innerhalb einer Rahmenzeit von zwei bis fünf Jahren. Voraussetzung: keine wichtigen dienstlichen Gründe dagegen und mindestens fünf Jahre Bundesdienst."
+},
+"92": {
+"t": "Disziplinarstrafen",
+"k": "Disziplinarstrafen sind Verweis, Geldbuße bis zu einem Monatsbezug, Geldstrafe von mehr als einem bis zu fünf Monatsbezügen und Entlassung."
+},
+"94": {
+"t": "Verjährung",
+"k": "Bestrafung nur, wenn ab Kenntnis der Disziplinarbehörde binnen sechs Monaten Disziplinarverfügung oder Anzeige und binnen einem Jahr die Einleitung erfolgt, jedenfalls binnen drei Jahren ab Ende der Pflichtverletzung. Bestimmte Verfahren hemmen die Fristen."
+},
+"96": {
+"t": "Disziplinarbehörden",
+"k": "Disziplinarbehörden sind die Dienstbehörden und die Bundesdisziplinarbehörde."
+},
+"109": {
+"t": "Disziplinaranzeige",
+"k": "Bei begründetem Verdacht einer Dienstpflichtverletzung klärt der Dienstvorgesetzte den Sachverhalt vorläufig und erstattet unverzüglich Disziplinaranzeige an die Dienstbehörde. Reicht nach seiner Ansicht Belehrung oder Ermahnung, unterbleibt sie."
+},
+"112": {
+"t": "Suspendierung",
+"k": "Die Dienstbehörde muss vorläufig suspendieren, etwa bei Untersuchungshaft oder Gefährdung von Amtsansehen oder wesentlichen Dienstinteressen. Die Bundesdisziplinarbehörde entscheidet binnen eines Monats. Folge: Kürzung des Monatsbezugs auf zwei Drittel."
+},
+"131": {
+"t": "Disziplinarverfügung",
+"k": "Die Dienstbehörde kann ohne weiteres Verfahren eine Disziplinarverfügung erlassen, etwa bei Geständnis, eindeutiger Aktenlage oder rechtskräftiger Bestrafung, wenn das zur Ahndung reicht. Zulässig sind nur Verweis oder Geldbuße bis zu einem Monatsbezug."
+},
+"160": {
+"t": "Freistellung Universitätslehrer",
+"k": "Universitätslehrern kann für Forschungs- oder Lehrzwecke eine Freistellung von Anwesenheitspflichten gewährt werden, mit oder ohne Bezüge. Freistellungen ohne Bezüge zählen bis zu fünf Jahren für Vorrückung und Ruhegenuss."
+},
+"42a": {
+"t": "Staatsbürgerschaft bei Verwendung",
+"k": "Verwendungen, die besondere Verbundenheit zu Österreich voraussetzen, sind nur Beamten mit österreichischer Staatsbürgerschaft zuzuweisen. Dazu zählen insbesondere die Teilnahme an hoheitlichen Aufgaben und die Wahrnehmung allgemeiner Staatsbelange."
+},
+"53a": {
+"t": "Schutz vor Benachteiligung",
+"k": "Wer im guten Glauben den begründeten Verdacht einer in § 4 Abs. 1 BAKG genannten strafbaren Handlung meldet oder einen Hinweis nach dem HSchG gibt, darf vom Dienstgebervertreter deshalb nicht benachteiligt werden."
+},
+"66": {
+"t": "Änderung des Urlaubsausmaßes",
+"k": "Das Urlaubsausmaß ändert sich bei herabgesetzter Wochendienstzeit, Teilzeit nach MSchG/VKG oder bestimmten Dienstfreistellungen. Bei Karenzurlaub, Karenz oder ungerechtfertigter Abwesenheit gebührt Urlaub nur anteilig; Stundenteile werden aufgerundet."
+},
+"75c": {
+"t": "Pflegekarenzurlaub",
+"k": "Auf Ansuchen gebührt Karenzurlaub ohne Bezüge zur Pflege eines behinderten Kindes (erhöhte Familienbeihilfe) oder eines Angehörigen mit Pflegegeld ab Stufe 3. Bei Demenz oder Minderjährigen genügt Stufe 1; dann dauert er ein bis drei Monate."
+},
+"81": {
+"t": "Leistungsfeststellung",
+"k": "Die Leistungsfeststellung stellt rechtsverbindlich fest, ob der Beamte den Arbeitserfolg durch besondere Leistungen erheblich überschritten, aufgewiesen oder trotz zweimaliger Ermahnung nicht aufgewiesen hat. Sonst gilt er als aufgewiesen."
+}
+},
+"AHG": {
+"1": {
+"t": "Amtshaftung: Haftung des Rechtsträgers",
+"k": "Der Rechtsträger (z. B. Bund, Land, Gemeinde) haftet für Schäden an Vermögen oder Person, die seine Organe in Vollziehung der Gesetze rechtswidrig und schuldhaft zufügen. Das Organ selbst haftet dem Geschädigten nicht; Ersatz nur in Geld."
+},
+"2": {
+"t": "Amtshaftung: Geltendmachung, Ausschluss",
+"k": "Ein bestimmtes Organ muss nicht genannt werden. Kein Ersatz, wenn der Schaden durch Rechtsmittel oder Beschwerde abwendbar war; aus Erkenntnissen von VfGH, OGH und VwGH ist kein Ersatzanspruch ableitbar."
+},
+"3": {
+"t": "Amtshaftung: Rückersatz",
+"k": "Hat der Rechtsträger den Schaden ersetzt, kann er vom Organ Rückersatz verlangen, wenn dieses vorsätzlich oder grob fahrlässig gehandelt hat. Bei grober Fahrlässigkeit kann das Gericht den Rückersatz aus Billigkeit mäßigen."
+}
+},
+"OHG": {
+"1": {
+"t": "Organhaftung: Haftung des Organs",
+"k": "Organe haften dem Rechtsträger für Vermögensschäden, die sie ihm in Vollziehung der Gesetze durch schuldhaftes, rechtswidriges Verhalten unmittelbar zugefügt haben. Ersatz nur in Geld."
+},
+"3": {
+"t": "Organhaftung: Mäßigungsrecht",
+"k": "Beruht der Schaden auf einem Versehen, kann das Gericht den Ersatz aus Billigkeit mäßigen. Bei einem minderen Grad des Versehens kann es ihn auch ganz erlassen."
+}
+},
+"MSchG": {
+"5": {
+"t": "Beschäftigungsverbot nach Entbindung",
+"k": "Dienstnehmerinnen dürfen bis acht Wochen nach der Entbindung nicht beschäftigt werden. Bei Früh-, Mehrlings- oder Kaiserschnittgeburten mindestens zwölf Wochen; bei verkürzter Frist vor der Geburt verlängert sich die Frist, höchstens auf 16 Wochen."
+}
+},
+"StGB": {
+"27": {
+"t": "Amtsverlust bei Verurteilung",
+"k": "Verurteilt ein inländisches Gericht einen Beamten wegen Vorsatztaten zu Freiheitsstrafe, verliert er das Amt, wenn die Strafe ein Jahr oder der unbedingte Teil sechs Monate übersteigt oder die Verurteilung (auch) wegen § 212 StGB erfolgt."
+}
+},
+"StPO": {
+"78": {
+"t": "Anzeigepflicht von Behörden",
+"k": "Erfährt eine Behörde den Verdacht einer Straftat in ihrem Wirkungsbereich, muss sie bei Kriminalpolizei oder Staatsanwaltschaft anzeigen. Ausnahmen: Vertrauensverhältnis nötig oder baldige Schadensbereinigung. Zum Opferschutz ist trotzdem alles Nötige zu tun."
+}
+},
+"GehG": {
+"12": {
+"t": "Besoldungsdienstalter",
+"k": "Das Besoldungsdienstalter umfasst die für die Vorrückung wirksamen Dienstzeiten plus anrechenbare Vordienstzeiten. Nützliche Berufszeiten zählen höchstens zehn Jahre; Vordienstzeiten sind binnen drei Monaten nach Belehrung mitzuteilen."
+}
+}
+}

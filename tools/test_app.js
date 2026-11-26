@@ -198,6 +198,32 @@ const URL = process.env.APP_URL || 'http://localhost:8123/';
   ok((await q.textContent('#app')).includes('Change-log') && (await q.textContent('#app')).includes('Erste Version'), 'Einstellungen: Change-log zeigt alle Updates');
   ok(await q.locator('details.up').count() === 4 && await q.locator('details.up[open]').count() === 1, 'Change-log: 4 Updates, nur das neueste offen');
   await c2.close();
+  /* ---- Karteikarten (Wunsch 41, versteckt hinter ?karten=1) ---- */
+  const c3 = await b.newContext({ viewport: { width: 390, height: 780 } });
+  await c3.addInitScript(() => { if (!sessionStorage.getItem('init')) { sessionStorage.setItem('init', '1'); localStorage.setItem('rt.tour', 'true'); localStorage.setItem('rt.a2hs', 'true'); localStorage.setItem('rt.seen', '3'); } });
+  const k = await c3.newPage(); k.setDefaultTimeout(6000);
+  await k.goto(URL); await k.waitForSelector('#app'); await wait(500);
+  await k.click('[data-act="tab"][data-v="home"]'); await wait(600);
+  ok(await k.locator('[data-act="mode-soon"]').count() === 1 && await k.locator('[data-act="mode"][data-m="k"]').count() === 0, 'Karteikarten ohne ?karten=1 gesperrt (Bald)');
+  await k.goto(URL + '?karten=1'); await k.waitForSelector('#app'); await wait(500);
+  await k.click('[data-act="tab"][data-v="home"]'); await wait(600);
+  await k.click('[data-act="grp"][data-g="2"]'); await wait(300); await k.click('[data-act="tog"][data-p="43"]'); await wait(300);
+  await k.click('[data-act="mode"][data-m="k"]'); await wait(400);
+  ok((await k.textContent('.startbar')).includes('Karten starten'), 'Kartenmodus: Startknopf zeigt Karten');
+  await k.click('[data-act="kstart"]'); await wait(500);
+  ok(await k.locator('#kflip').count() === 1 && !(await k.locator('#kflip').getAttribute('class')).includes('back'), 'Karte startet mit der Frage');
+  await k.click('#dock [data-act="kflip"]'); await wait(300);
+  ok((await k.locator('#kflip').getAttribute('class')).includes('back') && await k.locator('[data-act="kyes"]').count() === 1, 'Umdrehen zeigt Antwort und Bewertungsknöpfe');
+  await k.click('[data-act="kno"]'); await wait(600);
+  ok(await k.evaluate(() => Object.values(JSON.parse(localStorage.getItem('rt.cards') || '{}')).length === 1), 'Bewertung wird im Fach gespeichert');
+  let kn = 0; while (await k.locator("#kflip").count() && kn++ < 30) { await k.click('#dock [data-act="kflip"]'); await wait(500); await k.click('[data-act="kyes"]'); await wait(600); }
+  ok((await k.textContent('#app')).includes('Karten geschafft'), 'Kartendurchgang endet mit Zusammenfassung');
+  await k.evaluate(() => { S.cr = {items:[{c:KARTEN.find(c => /§ 43 Abs\. 2/.test(c.q + c.a)) || KARTEN[0], retry:false}], i:0, back:false, yes:0, no:0}; S.view = 'cards'; render(); });
+  await wait(300);
+  const rf = k.locator('.kface .ref').first();
+  if (await rf.count()) { await rf.click({ force: true }); await wait(400); ok((await k.textContent('#sheet')).includes('Abs.') && (await k.textContent('#sheet')).includes('Im RIS öffnen'), 'Verweis in Karte öffnet Pop-up mit Absatztext'); }
+  else ok(false, 'Verweis in Karte vorhanden');
+  await c3.close();
   ok(errs.length === 0, 'keine Konsolenfehler ' + errs.join(' | '));
   await b.close();
   console.log(fails ? fails + ' FEHLER' : 'ALLES OK');
