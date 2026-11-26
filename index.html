@@ -557,7 +557,7 @@ function renderQ(){
   const last = r.res[r.res.length-1];
   let h = `<div class="meta"><span>Frage ${r.i+1} / ${total} · ${esc(it.p.label)}</span><span style="display:flex;align-items:center;gap:8px">${r.res.reduce((a,x)=>a+x.pts,0)} Punkte (max. ${total*4})${miniLexi()}</span></div>
     <div class="bar"><i style="width:${(r.i + (r.checked?1:0))/total*100}%"></i></div>
-    <div class="qbox"><div class="lab"><b>?</b>Frage · ${esc(it.p.label)} ${esc(S.law)} · ${LVN[q.lv || 2]}</div><h2>${esc(q.f)}</h2><div class="hint">Kreuze alle zutreffenden Aussagen an. Pro Aussage: +1 Punkt für eine angekreuzte richtige oder eine nicht angekreuzte falsche Aussage, 0 für eine ausgelassene richtige, −1 für eine angekreuzte falsche (mindestens 0 je Frage).</div></div>`;
+    <div class="qbox"><div class="lab"><b>?</b>Frage · ${esc(it.p.label)} ${esc(S.law)} · ${LVN[q.lv || 2]}</div><h2>${linkAll(esc(q.f), it.p.n)}</h2><div class="hint">Kreuze alle zutreffenden Aussagen an. Pro Aussage: +1 Punkt für eine angekreuzte richtige oder eine nicht angekreuzte falsche Aussage, 0 für eine ausgelassene richtige, −1 für eine angekreuzte falsche (mindestens 0 je Frage).</div></div>`;
   it.order.forEach(idx => {
     const s = q.s[idx], t = ticked.has(idx);
     let cls = '', tag = '', mark = t ? '✓' : '';
@@ -569,7 +569,7 @@ function renderQ(){
     }
     h += `<button class="opt ${cls}" data-act="pick" data-i="${idx}" aria-pressed="${t}">
       <span class="bx">${mark}</span>
-      <span class="txt">${linkRefs(esc(s.t))}${r.checked ? `<br><span class="tag">${tag}</span>${(!s.w && s.k) ? `<span class="why"><b>Erklärung:</b> ${esc(s.k)}</span>` : ''}` : ''}</span></button>`;
+      <span class="txt">${linkAll(esc(s.t), it.p.n)}${r.checked ? `<br><span class="tag">${tag}</span>${(!s.w && s.k) ? `<span class="why"><b>Erklärung:</b> ${esc(s.k)}</span>` : ''}` : ''}</span></button>`;
   });
   if(r.checked){
     h += `<div class="score"><b>${punkte(last.pts)}</b><span class="mute">von höchstens 4 in dieser Frage</span></div>
@@ -659,7 +659,7 @@ function renderCardsDone(){
 
 /* ---------- Verweise in Karten: Pop-up für §, Absatz und andere Gesetze ---------- */
 const LAWID = {BDG:'10008470', AHG:'10000227', OHG:'10000442', PolBEG:'10000978', StGB:'10002296', StPO:'10002326', GehG:'10008163', MSchG:'10008464', 'B-VG':'10000138'};
-const REF2 = /§§?\s?\d+[a-z]?(?:\s+Abs\.\s?\d+[a-z]?(?:\s*(?:,|und|bis|oder)\s*\d+[a-z]?)*)?(?:\s+Z\s?\d+[a-z]?(?:\s*(?:,|und|bis|oder)\s*\d+[a-z]?)*)?(?:\s+lit\.\s?[a-z])?(?:\s+(BDG|GehG|StGB|StPO|MSchG|AHG|OHG|PolBEG|B-VG)(?:\s+1979)?)?|\bAbs\.\s?(\d+[a-z]?)/g;
+const REF2 = /§§?\s?\d+[a-z]?(?:\s+Abs\.\s?\d+[a-z]?(?:\s*(?:,|und|bis|oder)\s*\d+[a-z]?)*)?(?:\s+Z\s?\d+[a-z]?(?:\s*(?:,|und|bis|oder)\s*\d+[a-z]?)*)?(?:\s+lit\.\s?[a-z])?(?:\s+(BDG|GehG|StGB|StPO|MSchG|AHG|OHG|PolBEG|B-VG)(?:\s+1979)?)?|\bAbs\.\s?(\d+[a-z]?)(?:\s+Z\s?\d+[a-z]?(?:\s*(?:,|und|bis|oder)\s*\d+[a-z]?)*)?(?:\s+lit\.\s?[a-z])?/g;
 const FOREIGN = /^\s+(?:des\s+|der\s+)?(?:(Strafgesetzbuch)|PG\b|ASVG\b|VwGVG\b|DHG\b|AVG\b|VStG\b|StVO\b|[A-ZÄÖÜ][A-Za-zÄÖÜäöü\-]*(?:gesetz|gesetzbuch|ordnung)\w*)/;
 const ctxLaw = n => n === 'Regress' ? 'AHG' : (['AHG','OHG','PolBEG'].includes(n) ? n : 'BDG');
 function absText(txt, a){
@@ -688,6 +688,11 @@ function linkRefs2(h, ctxN){
     if(!refInfo(l, n, a)) return m;
     return `<span class="ref" role="button" tabindex="0" data-act="ref2" data-l="${l}" data-n="${n}" data-a="${a || ''}">${m}</span>`;
   });
+}
+
+/* Verweise in Fragen und Aussagen: erst die festen Texte (linkRefs), dann alle übrigen Paragrafen-, Absatz- und Ziffernangaben (linkRefs2), ohne schon verlinkte Stellen doppelt zu umhüllen */
+function linkAll(h, ctxN){
+  return linkRefs(h).split(/(<span class="ref"[^>]*>.*?<\/span>)/g).map((part, i) => i % 2 ? part : linkRefs2(part, ctxN)).join('');
 }
 
 /* ---------- Auswertung ---------- */
