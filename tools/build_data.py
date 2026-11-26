@@ -64,6 +64,10 @@ USED = set()
 # Skriptum-Etappe: neue Fragen (hinten angehängt), ausgeschlossene bestehende Fragen (x), Korrekturen
 SKR = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "skriptum_fragen.json"), encoding="utf-8"))
 
+# Stufen (1 leicht, 2 mittel, 3 schwer) der älteren Fragen: tools/fragen_level.json {id: Stufe}; neue Fragen tragen "lv" selbst
+try: LEVELS = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "fragen_level.json"), encoding="utf-8"))
+except FileNotFoundError: LEVELS = {}
+
 def parse_par(dirname, n):
     raw = open(os.path.join(dirname, n + ".txt"), encoding="utf-8").read().split("\n")
     # Stand (Inkrafttreten)
@@ -109,7 +113,7 @@ for n in ORDER:
             w = bool(st[1]); korr = st[2] if len(st) > 2 else ""
             if not ((w and not korr) or ((not w) and korr)): raise SystemExit("Frage %s-%d: falsche Aussagen brauchen eine Erklärung, richtige nicht: %s" % (n, k + 1, st[0][:40]))
             s.append({"t": st[0], "w": w, "k": korr})
-        qs.append({"id": "bdg-%s-%d" % (n, k + 1), "ref": ref, "f": frage, "s": s})
+        qs.append({"id": "bdg-%s-%d" % (n, k + 1), "ref": ref, "f": frage, "s": s, "lv": LEVELS.get("bdg-%s-%d" % (n, k + 1), 2)})
     for qid, fx in SKR.get(n, {}).get("fix", {}).items():   # Korrekturen an bestehenden Fragen (ID bleibt)
         q = next(q for q in qs if q["id"] == qid)
         for ai, d in fx.items():
@@ -120,7 +124,8 @@ for n in ORDER:
         if q["id"] in SKR.get(n, {}).get("exclude", []): q["x"] = 1
     for nq in SKR.get(n, {}).get("new", []):
         if len(nq["s"]) != 4: raise SystemExit("Skriptum-Frage in %s: genau 4 Aussagen nötig" % n)
-        qs.append({"id": "bdg-%s-%d" % (n, len(qs) + 1), "ref": nq["ref"], "f": nq["f"], "s": [{"t": x["t"], "w": bool(x["w"]), "k": x["k"]} for x in nq["s"]]})
+        nid = "bdg-%s-%d" % (n, len(qs) + 1)
+        qs.append({"id": nid, "ref": nq["ref"], "f": nq["f"], "s": [{"t": x["t"], "w": bool(x["w"]), "k": x["k"]} for x in nq["s"]], "lv": nq.get("lv", LEVELS.get(nid, 2))})
     paras.append({"n": n, "label": label, "title": title, "stand": stand, "text": text, "q": qs})
 
 if sorted(sum([g[1] for g in GRUPPEN], [])) != sorted(ORDER): raise SystemExit("Gruppen und Paragrafenliste passen nicht zusammen")

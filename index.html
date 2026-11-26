@@ -381,7 +381,7 @@ function score(q, ticked){ let p=0; q.s.forEach((x,i) => { p += (ticked.has(i) =
 const isOpen = (q, H) => { const h = (H || hist())[q.id]; return !h || h.last < 4; };
 function buildPool(){
   const qs = [];
-  S.data.paragrafen.forEach(p => { if(S.sel.has(p.n)) p.q.forEach(q => qs.push({q, p})); });
+  S.data.paragrafen.forEach(p => { if(S.sel.has(p.n)) p.q.forEach(q => { if(visibleQ(q)) qs.push({q, p}); }); });
   const H = hist();
   return S.onlyOpen ? qs.filter(x => isOpen(x.q, H)) : qs;
 }
@@ -432,7 +432,7 @@ function renderStart(){
 /* ---------- Lernen ---------- */
 function tile(p, cc){
   const on = S.sel.has(p.n);
-  return `<button class="tile ${on?'sel':''}" data-act="tog" data-p="${esc(p.n)}" style="--cc:var(${cc})" aria-pressed="${on}"><span class="ck">✓</span><b>${esc(p.label)}</b><span class="tt">${esc(p.title)}</span><span class="qn">${CARDS_ON && S.mode === 'k' ? kcount(p.n) + ' Karten' : p.q.length + ' ' + (p.q.length === 1 ? "Frage" : "Fragen")}</span></button>`;
+  return `<button class="tile ${on?'sel':''}" data-act="tog" data-p="${esc(p.n)}" style="--cc:var(${cc})" aria-pressed="${on}"><span class="ck">✓</span><b>${esc(p.label)}</b><span class="tt">${esc(p.title)}</span><span class="qn">${CARDS_ON && S.mode === 'k' ? kcount(p.n) + ' Karten' : (nq => nq + ' ' + (nq === 1 ? "Frage" : "Fragen"))(p.q.filter(visibleQ).length)}</span></button>`;
 }
 function renderHome(){
   const d = S.data, groups = groupsOf(d), total = totalQ(), h = hist();
@@ -471,7 +471,7 @@ function renderHome(){
   const kmode = CARDS_ON && S.mode === 'k', kp = kmode ? cardPool().length : 0;
   setDock(`<div class="startbar">${kmode
     ? `<button class="btn kc" data-act="kstart" ${kp?'':'disabled'}>${kp ? 'Karten starten · '+kp+' Karten' : (S.sel.size ? 'Keine Karten für diese Auswahl' : 'Paragrafen wählen')}</button>`
-    : `<button class="btn" data-act="start" ${pool?'':'disabled'}>${pool ? 'Start · '+pool+' Fragen'+(raw>pool ? ' (von '+raw+')' : '') : (S.sel.size ? 'Keine offenen Fragen' : 'Paragrafen wählen')}</button>`}</div>${tabbar()}`);
+    : `<button class="btn" data-act="start" ${pool?'':'disabled'}>${pool ? 'Start · '+pool+' Fragen'+(raw>pool ? ' (von '+raw+')' : '') : (S.sel.size ? (S.onlyOpen ? 'Keine offenen Fragen' : 'Keine Fragen für diese Stufen') : 'Paragrafen wählen')}</button>`}</div>${tabbar()}`);
   const q = $('#q'); if(q) q.oninput = e => { S.q = e.target.value; render(true); const n=$('#q'); if(n){ n.focus(); n.setSelectionRange(n.value.length,n.value.length); } };
 }
 
@@ -546,7 +546,7 @@ function renderQ(){
   const last = r.res[r.res.length-1];
   let h = `<div class="meta"><span>Frage ${r.i+1} / ${total} · ${esc(it.p.label)}</span><span style="display:flex;align-items:center;gap:8px">${r.res.reduce((a,x)=>a+x.pts,0)} Punkte (max. ${total*4})${miniLexi()}</span></div>
     <div class="bar"><i style="width:${(r.i + (r.checked?1:0))/total*100}%"></i></div>
-    <div class="qbox"><div class="lab"><b>?</b>Frage · ${esc(it.p.label)} ${esc(S.law)}</div><h2>${esc(q.f)}</h2><div class="hint">Kreuze alle zutreffenden Aussagen an. Pro Aussage: +1 Punkt, wenn richtig behandelt, sonst −1 (mindestens 0).</div></div>`;
+    <div class="qbox"><div class="lab"><b>?</b>Frage · ${esc(it.p.label)} ${esc(S.law)} · ${LVN[q.lv || 2]}</div><h2>${esc(q.f)}</h2><div class="hint">Kreuze alle zutreffenden Aussagen an. Pro Aussage: +1 Punkt, wenn richtig behandelt, sonst −1 (mindestens 0).</div></div>`;
   it.order.forEach(idx => {
     const s = q.s[idx], t = ticked.has(idx);
     let cls = '', tag = '', mark = t ? '✓' : '';
@@ -587,7 +587,8 @@ function maybeSay(prob){
 /* ---------- Karteikarten (Wunsch 41) ---------- */
 const LVN = {1:'leicht', 2:'mittel', 3:'schwer'};
 const cardBoxes = () => store.get('rt.cards', {});
-const cardLv = () => { const a = store.get('rt.klv', [1,2]); return new Set(Array.isArray(a) && a.length ? a : [1,2]); };
+const cardLv = () => { const a = store.get('rt.lv', [1,2]); return new Set(Array.isArray(a) && a.length ? a.filter(n => n === 1 || n === 2 || n === 3) : [1,2]); };   // Stufen gelten für Fragen und Karten
+const visibleQ = q => cardLv().has(q.lv || 2);
 const kcount = n => KARTEN.filter(c => c.n === n).length;
 function cardPool(){
   const lv = cardLv(), B = cardBoxes();
@@ -598,7 +599,7 @@ function modeBar(){
   return `<div class="modebar"><div class="sec"><span>Modus</span></div><div class="mseg"><button class="${m==='mc'?'on':''}" data-act="mode" data-m="mc" aria-pressed="${m==='mc'}">Multiple Choice<small>4 Aussagen</small></button>${k
     ? `<button class="kb ${m==='k'?'on':''}" data-act="mode" data-m="k" aria-pressed="${m==='k'}">Karteikarten<small>Umdrehen</small></button>`
     : `<button class="soon" data-act="mode-soon" aria-disabled="true">Karteikarten<small>Umdrehen</small><span class="bd">Bald</span></button>`}</div>
-    ${k && m === 'k' ? `<div class="klvs" role="group" aria-label="Schwierigkeit">${[1,2,3].map(n => `<button class="${lv.has(n)?'on':''}" data-act="klv" data-l="${n}" aria-pressed="${lv.has(n)}">${LVN[n]}</button>`).join('')}</div>` : ''}</div>`;
+    <div class="sec" style="margin-top:6px"><span>Schwierigkeit</span></div><div class="klvs" role="group" aria-label="Schwierigkeit">${[1,2,3].map(n => `<button class="${lv.has(n)?'on':''}" data-act="klv" data-l="${n}" aria-pressed="${lv.has(n)}">${LVN[n]}</button>`).join('')}</div></div>`;
 }
 function startCards(){
   const B = cardBoxes(), pool = shuffle(cardPool());
@@ -937,7 +938,7 @@ function closeSheetSilently(){ S.sheet = null; const r = $('#sheet'); if(r) r.in
 /* ================= Aktionen (Event-Delegation) ================= */
 const ACT = {
   mode(b){ S.mode = b.dataset.m === 'k' && CARDS_ON ? 'k' : 'mc'; store.set('rt.mode', S.mode); render(true); },
-  klv(b){ const lv = cardLv(), n = +b.dataset.l; if(lv.has(n)){ if(lv.size > 1) lv.delete(n); } else lv.add(n); store.set('rt.klv', [...lv].sort()); render(true); },
+  klv(b){ const lv = cardLv(), n = +b.dataset.l; if(lv.has(n)){ if(lv.size > 1) lv.delete(n); } else lv.add(n); store.set('rt.lv', [...lv].sort()); render(true); },
   kstart(){ startCards(); },
   kagain(){ if(!cardPool().length){ toast('Keine offenen Karten'); S.view = 'home'; render(); return; } startCards(); },
   kflip(){ const r = S.cr; if(!r) return; r.back = !r.back; const f = $('#kflip'); if(f) f.classList.toggle('back', r.back); setDock(kDock()); },

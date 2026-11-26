@@ -151,7 +151,8 @@ ul.cl li b{display:block;color:var(--ink);opacity:.85;font-size:12.5px;font-weig
 .mseg .kb.on{border-color:var(--kc);background:var(--kc-soft)}
 .klvs{display:flex;gap:6px;margin-top:8px}
 .klvs button{border:1.5px solid var(--line);background:var(--card);color:var(--ink);border-radius:99px;padding:6px 13px;font-size:13px;font-weight:600}
-.klvs button.on{border-color:var(--kc);background:var(--kc-soft);color:var(--kc)}
+.klvs button.on{border-color:var(--acc);background:var(--soft);color:var(--acc)}
+.modebar:has(.kb.on) .klvs button.on{border-color:var(--kc);background:var(--kc-soft);color:var(--kc)}
 .kbar i{background:var(--kc)}
 .kscene{perspective:1100px;margin-top:6px}
 .kflip{display:grid;min-height:280px;transform-style:preserve-3d;transition:transform .6s cubic-bezier(.3,.7,.2,1);cursor:pointer;text-align:left}
