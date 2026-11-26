@@ -376,8 +376,8 @@ const order  = () => S.data.paragrafen.map(p => p.n);
 const persistSel = () => { store.set('rt.sel.'+S.law, order().filter(n => S.sel.has(n))); };
 const persistOpen = () => store.set('rt.open.'+S.law, [...S.open]);
 
-/* Punktesystem: je Aussage +1 (richtig angekreuzt oder richtig ausgelassen), −1 (falsch angekreuzt oder falsch ausgelassen). Minimum 0, Maximum 4. */
-function score(q, ticked){ let p=0; q.s.forEach((x,i) => { p += (ticked.has(i) === x.w) ? 1 : -1; }); return Math.max(0, p); }
+/* Punktesystem: je Aussage +1 (richtige Aussage angekreuzt oder falsche Aussage nicht angekreuzt), 0 (richtige Aussage ausgelassen), −1 (falsche Aussage angekreuzt). Minimum 0, Maximum 4. */
+function score(q, ticked){ let p=0; q.s.forEach((x,i) => { const t = ticked.has(i); p += t ? (x.w ? 1 : -1) : (x.w ? 0 : 1); }); return Math.max(0, p); }
 const isOpen = (q, H) => { const h = (H || hist())[q.id]; return !h || h.last < 4; };
 function buildPool(){
   const qs = [];
@@ -557,7 +557,7 @@ function renderQ(){
   const last = r.res[r.res.length-1];
   let h = `<div class="meta"><span>Frage ${r.i+1} / ${total} · ${esc(it.p.label)}</span><span style="display:flex;align-items:center;gap:8px">${r.res.reduce((a,x)=>a+x.pts,0)} Punkte (max. ${total*4})${miniLexi()}</span></div>
     <div class="bar"><i style="width:${(r.i + (r.checked?1:0))/total*100}%"></i></div>
-    <div class="qbox"><div class="lab"><b>?</b>Frage · ${esc(it.p.label)} ${esc(S.law)} · ${LVN[q.lv || 2]}</div><h2>${esc(q.f)}</h2><div class="hint">Kreuze alle zutreffenden Aussagen an. Pro Aussage: +1 Punkt, wenn richtig behandelt, sonst −1 (mindestens 0).</div></div>`;
+    <div class="qbox"><div class="lab"><b>?</b>Frage · ${esc(it.p.label)} ${esc(S.law)} · ${LVN[q.lv || 2]}</div><h2>${esc(q.f)}</h2><div class="hint">Kreuze alle zutreffenden Aussagen an. Pro Aussage: +1 Punkt für eine angekreuzte richtige oder eine nicht angekreuzte falsche Aussage, 0 für eine ausgelassene richtige, −1 für eine angekreuzte falsche (mindestens 0 je Frage).</div></div>`;
   it.order.forEach(idx => {
     const s = q.s[idx], t = ticked.has(idx);
     let cls = '', tag = '', mark = t ? '✓' : '';
@@ -783,7 +783,7 @@ function stepsHtml(){
 const TOUR = [
   {t:'Gesetz wählen', x:'Hier suchst du dir das Gesetz aus. Weitere Gesetze kommen nach und nach dazu.', s:'#app .lawcard'},
   {t:'Paragrafen wählen', x:'Tippe ganze Themen oder einzelne Paragrafen an. Unten startest du dann mit „Start“.', s:'#app .grp'},
-  {t:'Fragen beantworten', x:'Kreuze alle zutreffenden Aussagen an. Je Aussage gibt es +1 Punkt, wenn du richtig liegst, sonst −1. Höchstens 4 Punkte pro Frage.', s:'#app .opt'},
+  {t:'Fragen beantworten', x:'Kreuze alle zutreffenden Aussagen an. Je Aussage gibt es +1 Punkt für eine richtige angekreuzte oder eine falsche nicht angekreuzte Aussage. Übersiehst du eine richtige, gibt es 0, kreuzt du eine falsche an, −1. Höchstens 4 Punkte pro Frage.', s:'#app .opt'},
   {t:'Ergebnis und Note', x:'Am Ende siehst du Punkte, Prozent und Note. Lexi freut sich mit dir.', s:'#app .ring'},
   {t:'Klausuren', x:'Speichere eine Auswahl als Klausur. Mit „Start“ legst du sie später mit einem Tippen los.', s:'#app .stack, #app .emp'},
   {t:'Statistik und Einstellungen', x:'Hier siehst du deinen Lernstand und die Historie. Notenschlüssel und mehr findest du oben unter dem Zahnrad.', s:'#app .kpis'}
