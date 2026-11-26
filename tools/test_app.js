@@ -185,23 +185,23 @@ const URL = process.env.APP_URL || 'http://localhost:8123/';
   const mf = JSON.parse(await (await fetch(URL + 'manifest.webmanifest')).text());
   ok(mf.name === 'LexCoach' && mf.short_name === 'LexCoach', 'Manifest: LexCoach');
   /* ---- Change-log nach Update (Wunsch 38) ---- */
-  ok(await p.evaluate(() => localStorage.getItem('rt.seen') === '3'), 'neuer Nutzer: Change-log gilt als gesehen, kein Pop-up');
+  ok(await p.evaluate(() => localStorage.getItem('rt.seen') === '4'), 'neuer Nutzer: Change-log gilt als gesehen, kein Pop-up');
   const c2 = await b.newContext({ viewport: { width: 390, height: 780 } });
   await c2.addInitScript(() => { if (!sessionStorage.getItem('init')) { sessionStorage.setItem('init', '1'); localStorage.setItem('rt.tour', 'true'); localStorage.setItem('rt.a2hs', 'true'); } });
   const q = await c2.newPage(); q.setDefaultTimeout(6000);
   await q.goto(URL); await q.waitForSelector('#ovl .clg');
-  ok((await q.textContent('#ovl')).includes('Neu in LexCoach') && (await q.textContent('#ovl')).includes('Mehr leichte Fragen') && !(await q.locator('#ovl svg').count()), 'bestehender Nutzer sieht das Change-log (ohne Lexi)');
+  ok((await q.textContent('#ovl')).includes('Neu in LexCoach') && (await q.textContent('#ovl')).includes('Sprechblase in der Kopfzeile') && !(await q.locator('#ovl svg').count()), 'bestehender Nutzer sieht das Change-log (ohne Lexi)');
   await q.click('[data-act="log-more"]'); ok((await q.textContent('#ovl')).includes('Change-log'), 'Frühere Updates klappen auf');
   await q.click('[data-act="log-close"]'); await wait(300);
-  ok(await q.locator('#ovl').evaluate(e => e.innerHTML === '') && (await q.evaluate(() => localStorage.getItem('rt.seen'))) === '3', 'Alles klar schließt und merkt sich die Version');
+  ok(await q.locator('#ovl').evaluate(e => e.innerHTML === '') && (await q.evaluate(() => localStorage.getItem('rt.seen'))) === '4', 'Alles klar schließt und merkt sich die Version');
   await q.reload(); await wait(800); ok(await q.locator('#ovl .clg').count() === 0, 'nach Neuladen kein Pop-up mehr');
   await q.click('[data-act="settings"]'); await q.click('[data-s="chg"]');
   ok((await q.textContent('#app')).includes('Change-log') && (await q.textContent('#app')).includes('Erste Version'), 'Einstellungen: Change-log zeigt alle Updates');
-  ok(await q.locator('details.up').count() === 4 && await q.locator('details.up[open]').count() === 1, 'Change-log: 4 Updates, nur das neueste offen');
+  ok(await q.locator('details.up').count() === 5 && await q.locator('details.up[open]').count() === 1, 'Change-log: 5 Updates, nur das neueste offen');
   await c2.close();
   /* ---- Karteikarten (Wunsch 41, versteckt hinter ?karten=1) ---- */
   const c3 = await b.newContext({ viewport: { width: 390, height: 780 } });
-  await c3.addInitScript(() => { if (!sessionStorage.getItem('init')) { sessionStorage.setItem('init', '1'); localStorage.setItem('rt.tour', 'true'); localStorage.setItem('rt.a2hs', 'true'); localStorage.setItem('rt.seen', '3'); } });
+  await c3.addInitScript(() => { if (!sessionStorage.getItem('init')) { sessionStorage.setItem('init', '1'); localStorage.setItem('rt.tour', 'true'); localStorage.setItem('rt.a2hs', 'true'); localStorage.setItem('rt.seen', '4'); } });
   const k = await c3.newPage(); k.setDefaultTimeout(6000);
   await k.goto(URL); await k.waitForSelector('#app'); await wait(500);
   await k.click('[data-act="tab"][data-v="home"]'); await wait(600);
