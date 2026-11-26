@@ -301,6 +301,15 @@ async function loadChangelog(){
     if(Array.isArray(j)) CL = j.filter(x => x && Number.isInteger(x.v) && typeof x.d === 'string' && Array.isArray(x.t)).sort((a,b) => b.v - a.v); }
   catch(e){ CL = []; }
 }
+let KARTEN = [], REFK = {};
+const CARDS_ON = (() => { try{ const q = new URLSearchParams(location.search).get('karten'); if(q === '1') store.set('rt.karten', true); else if(q === '0') store.set('rt.karten', false); }catch(e){} return !!store.get('rt.karten', false); })();   // Karteikarten bleiben versteckt, bis ?karten=1 geöffnet wurde
+async function loadCards(){
+  try{
+    const [a, b] = await Promise.all([fetch('daten/karten_bdg.json'), fetch('daten/verweise_kurz.json')]);
+    if(a.ok){ const j = await a.json(); if(Array.isArray(j)) KARTEN = j.filter(x => x && x.id && x.n && x.q && x.a); }
+    if(b.ok){ const j = await b.json(); if(j && typeof j === 'object') REFK = j; }
+  }catch(e){ KARTEN = []; REFK = {}; }
+}
 const clLatest = () => CL.length ? CL[0].v : 0;
 const clVer = e => e.s || String(e.v);
 const clItems = e => e.t.map(x => `<li><b>${esc(x.h)}</b>${esc(x.x)}</li>`).join('');
@@ -354,7 +363,7 @@ const isStandalone = () => !!(navigator.standalone || (window.matchMedia && matc
 
 /* ================= Zustand ================= */
 const S = {view:'start', law:(() => { const l = store.get('rt.law','BDG'); return LAWS.some(x => x.id === l && x.ready) ? l : 'BDG'; })(), data:null, sel:new Set(), open:new Set(), onlyOpen:store.get('rt.onlyOpen',false), q:'', run:null, sheet:null, histAll:false,
-  set:'menu', prev:'start', gdraft:[], gerr:'', klOpen:false, mehr:false, flt:'Alle', pop:null, tour:null, skipNeed:2, skipClicks:0, skipPos:null, msg:0, hm:'normal', hop:false, lastSay:0, runBackup:null};
+  set:'menu', prev:'start', gdraft:[], gerr:'', klOpen:false, mehr:false, flt:'Alle', pop:null, tour:null, skipNeed:2, skipClicks:0, skipPos:null, msg:0, hm:'normal', hop:false, lastSay:0, runBackup:null, mode:(CARDS_ON && store.get('rt.mode','mc') === 'k') ? 'k' : 'mc', cr:null};
 const hist   = () => store.get('rt.hist2', {});
 const stacks = () => store.get('rt.stacks', []).filter(s => s && typeof s.id === 'string' && typeof s.name === 'string' && Array.isArray(s.paras));
 const flags  = () => store.get('rt.flags', []);
@@ -391,7 +400,7 @@ function render(keep){
   const y = keep ? window.scrollY : 0;
   $('#app').classList.toggle('nodock', S.view === 'settings');
   $('#app').classList.toggle('tabonly', S.view === 'start');
-  ({start:renderStart, home:renderHome, stacks:renderStacks, stats:renderStats, quiz:renderQ, result:renderResult, settings:renderSettingsView})[S.view]();
+  ({start:renderStart, home:renderHome, stacks:renderStacks, stats:renderStats, quiz:renderQ, result:renderResult, settings:renderSettingsView, cards:renderCards, cardsdone:renderCardsDone})[S.view]();
   LX.hide();
   LX.paintAll();
   window.scrollTo(0, y);
@@ -423,7 +432,7 @@ function renderStart(){
 /* ---------- Lernen ---------- */
 function tile(p, cc){
   const on = S.sel.has(p.n);
-  return `<button class="tile ${on?'sel':''}" data-act="tog" data-p="${esc(p.n)}" style="--cc:var(${cc})" aria-pressed="${on}"><span class="ck">✓</span><b>${esc(p.label)}</b><span class="tt">${esc(p.title)}</span><span class="qn">${p.q.length} ${p.q.length === 1 ? "Frage" : "Fragen"}</span></button>`;
+  return `<button class="tile ${on?'sel':''}" data-act="tog" data-p="${esc(p.n)}" style="--cc:var(${cc})" aria-pressed="${on}"><span class="ck">✓</span><b>${esc(p.label)}</b><span class="tt">${esc(p.title)}</span><span class="qn">${CARDS_ON && S.mode === 'k' ? kcount(p.n) + ' Karten' : p.q.length + ' ' + (p.q.length === 1 ? "Frage" : "Fragen")}</span></button>`;
 }
 function renderHome(){
   const d = S.data, groups = groupsOf(d), total = totalQ(), h = hist();
@@ -454,12 +463,15 @@ function renderHome(){
     <div class="sec"><span>Paragrafen · ${S.sel.size} gewählt</span><span class="mini"><button data-act="all">Alle</button><button data-act="none">Keine</button></span></div>
     ${d.paragrafen.length > SEARCH_MIN ? `<input class="search" id="q" type="search" placeholder="Paragraf oder Stichwort suchen …" value="${esc(S.q)}" aria-label="Paragrafen suchen">` : ''}
     ${list || '<p class="empty">Keine Treffer.</p>'}
-    <div class="modebar"><div class="sec"><span>Modus</span></div><div class="mseg"><button class="on" aria-pressed="true">Multiple Choice<small>4 Aussagen</small></button><button class="soon" data-act="mode-soon" aria-disabled="true">Karteikarten<small>Umdrehen</small><span class="bd">Bald</span></button></div></div>
+    ${modeBar()}
     <button class="quiet" data-act="only" role="checkbox" aria-checked="${S.onlyOpen}" style="margin-top:6px"><span class="cb ${S.onlyOpen?'on':''}">${S.onlyOpen?'✓':''}</span>Nur Fragen, die ich noch nicht sicher kann</button>
     <button class="fold" data-act="klfold" aria-expanded="${S.klOpen}"><span>Klausuren (${nk})</span><span aria-hidden="true">${S.klOpen?'⌃':'⌄'}</span></button>
     ${S.klOpen ? `<div id="stk" style="padding-top:6px">${stackList(false)}</div>${stackSave()}` : ''}
     <p class="note">Quelle der Gesetzestexte: ${esc(d.quelle)}, abgerufen am ${esc(d.abgerufen)}. Die Fragen wurden von einer KI aus dem Wortlaut erstellt und können Fehler enthalten. Im Zweifel gilt der Gesetzestext, der nach jeder Antwort angezeigt wird. Keine Rechtsberatung.</p>`;
-  setDock(`<div class="startbar"><button class="btn" data-act="start" ${pool?'':'disabled'}>${pool ? 'Start · '+pool+' Fragen'+(raw>pool ? ' (von '+raw+')' : '') : (S.sel.size ? 'Keine offenen Fragen' : 'Paragrafen wählen')}</button></div>${tabbar()}`);
+  const kmode = CARDS_ON && S.mode === 'k', kp = kmode ? cardPool().length : 0;
+  setDock(`<div class="startbar">${kmode
+    ? `<button class="btn kc" data-act="kstart" ${kp?'':'disabled'}>${kp ? 'Karten starten · '+kp+' Karten' : (S.sel.size ? 'Keine Karten für diese Auswahl' : 'Paragrafen wählen')}</button>`
+    : `<button class="btn" data-act="start" ${pool?'':'disabled'}>${pool ? 'Start · '+pool+' Fragen'+(raw>pool ? ' (von '+raw+')' : '') : (S.sel.size ? 'Keine offenen Fragen' : 'Paragrafen wählen')}</button>`}</div>${tabbar()}`);
   const q = $('#q'); if(q) q.oninput = e => { S.q = e.target.value; render(true); const n=$('#q'); if(n){ n.focus(); n.setSelectionRange(n.value.length,n.value.length); } };
 }
 
@@ -570,6 +582,100 @@ function checkAnswer(){
 function maybeSay(prob){
   if(S.pop || S.tour !== null || !SET.says || Date.now() - S.lastSay < 60000 || Math.random() >= prob) return;
   S.lastSay = Date.now(); setTimeout(() => { if(S.view === 'quiz') LX.sayShort(Math.floor(Math.random()*LX.SHORT.length)); }, 700);
+}
+
+/* ---------- Karteikarten (Wunsch 41) ---------- */
+const LVN = {1:'leicht', 2:'mittel', 3:'schwer'};
+const cardBoxes = () => store.get('rt.cards', {});
+const cardLv = () => { const a = store.get('rt.klv', [1,2]); return new Set(Array.isArray(a) && a.length ? a : [1,2]); };
+const kcount = n => KARTEN.filter(c => c.n === n).length;
+function cardPool(){
+  const lv = cardLv(), B = cardBoxes();
+  return KARTEN.filter(c => S.sel.has(c.n) && lv.has(c.lv) && (!S.onlyOpen || (B[c.id] || 1) < 3));
+}
+function modeBar(){
+  const k = CARDS_ON, m = k && S.mode === 'k' ? 'k' : 'mc', lv = cardLv();
+  return `<div class="modebar"><div class="sec"><span>Modus</span></div><div class="mseg"><button class="${m==='mc'?'on':''}" data-act="mode" data-m="mc" aria-pressed="${m==='mc'}">Multiple Choice<small>4 Aussagen</small></button>${k
+    ? `<button class="kb ${m==='k'?'on':''}" data-act="mode" data-m="k" aria-pressed="${m==='k'}">Karteikarten<small>Umdrehen</small></button>`
+    : `<button class="soon" data-act="mode-soon" aria-disabled="true">Karteikarten<small>Umdrehen</small><span class="bd">Bald</span></button>`}</div>
+    ${k && m === 'k' ? `<div class="klvs" role="group" aria-label="Schwierigkeit">${[1,2,3].map(n => `<button class="${lv.has(n)?'on':''}" data-act="klv" data-l="${n}" aria-pressed="${lv.has(n)}">${LVN[n]}</button>`).join('')}</div>` : ''}</div>`;
+}
+function startCards(){
+  const B = cardBoxes(), pool = shuffle(cardPool());
+  if(!pool.length){ toast('Keine Karten für diese Auswahl'); return; }
+  const items = pool.map((c,i) => ({c, i})).sort((a,b) => ((B[a.c.id]||1) - (B[b.c.id]||1)) || (a.i - b.i)).map(x => ({c:x.c, retry:false}));
+  S.cr = {items, i:0, back:false, yes:0, no:0};
+  S.view = 'cards'; render();
+}
+function kDock(){
+  const r = S.cr;
+  return r.back
+    ? `<div class="actbar"><button class="btn rno" data-act="kno">Nicht gewusst</button><button class="btn ryes" data-act="kyes">Gewusst</button></div>`
+    : `<div class="actbar"><button class="btn alt" data-act="kquit" style="flex:1">Beenden</button><button class="btn kc" data-act="kflip" style="flex:2">Umdrehen</button></div>`;
+}
+function renderCards(){
+  const r = S.cr, it = r.items[r.i], c = it.c, total = r.items.length, B = cardBoxes();
+  const p = S.data.paragrafen.find(x => x.n === c.n), lbl = p ? p.label : c.n;
+  $('#app').innerHTML = `<div class="meta"><span>Karte ${r.i+1} / ${total} · ${esc(lbl)} ${esc(S.law)}</span><span>${r.yes} gewusst · ${r.no} nicht</span></div>
+    <div class="bar kbar"><i style="width:${r.i/total*100}%"></i></div>
+    <div class="kscene"><div class="kflip ${r.back?'back':''}" id="kflip" data-act="kflip" role="button" tabindex="0" aria-label="Karte umdrehen">
+      <div class="kface"><div class="klab"><span>Frage</span><span class="klv">${LVN[c.lv] || ''}</span></div><div class="ktxt"><div>${linkRefs2(esc(c.q), c.n)}</div></div><div class="khint">Tippen zum Umdrehen</div></div>
+      <div class="kface kr"><div class="klab"><span>Antwort</span><span>Fach ${B[c.id] || 1}</span></div><div class="ktxt"><div>${linkRefs2(esc(c.a), c.n)}</div></div><div class="ksrc">${esc(c.s)}</div></div>
+    </div></div>`;
+  setDock(kDock());
+}
+function rateCard(ok){
+  const r = S.cr, it = r.items[r.i];
+  if(!it.retry){
+    const B = cardBoxes(), cur = B[it.c.id] || 1;
+    B[it.c.id] = ok ? Math.min(3, cur + 1) : 1; store.set('rt.cards', B);
+    if(ok) r.yes++; else r.no++;
+  }
+  if(!ok && !it.retry) r.items.push({c:it.c, retry:true});
+  r.i++; r.back = false;
+  if(r.i >= r.items.length) S.view = 'cardsdone';
+  render();
+}
+function renderCardsDone(){
+  const r = S.cr, tot = r.yes + r.no, B = cardBoxes(), lv = cardLv();
+  const pool = KARTEN.filter(c => S.sel.has(c.n) && lv.has(c.lv)), f = [1,2,3].map(k => pool.filter(c => (B[c.id] || 1) === k).length);
+  $('#app').innerHTML = `<div class="top"><h1>Karten geschafft</h1></div><div class="rbox">${LX.svg(r.no ? 'normal' : 'happy')}</div>
+    <div class="card kdone"><b>${r.yes} von ${tot} gewusst</b><span class="mute">Nicht gewusste Karten kamen in dieser Runde noch einmal.</span>
+      <div class="kbx"><span>Fach 1 <b>${f[0]}</b></span><span>Fach 2 <b>${f[1]}</b></span><span>Fach 3 <b>${f[2]}</b></span></div></div>`;
+  setDock(`<div class="actbar"><button class="btn alt" data-act="home" style="flex:1">Zu „Lernen“</button><button class="btn kc" data-act="kagain" style="flex:2">Nochmal</button></div>`);
+}
+
+/* ---------- Verweise in Karten: Pop-up für §, Absatz und andere Gesetze ---------- */
+const LAWID = {BDG:'10008470', AHG:'10000227', OHG:'10000442', PolBEG:'10000978', StGB:'10002296', StPO:'10002326', GehG:'10008163', MSchG:'10008238', 'B-VG':'10000138'};
+const REF2 = /§§?\s?\d+[a-z]?(?:\s+Abs\.\s?\d+[a-z]?(?:\s*(?:,|und|bis|oder)\s*\d+[a-z]?)*)?(?:\s+Z\s?\d+[a-z]?(?:\s*(?:,|und|bis|oder)\s*\d+[a-z]?)*)?(?:\s+lit\.\s?[a-z])?(?:\s+(BDG|GehG|StGB|StPO|MSchG|AHG|OHG|PolBEG|B-VG)(?:\s+1979)?)?|\bAbs\.\s?(\d+[a-z]?)/g;
+const FOREIGN = /^\s+(?:des\s+|der\s+)?(?:(Strafgesetzbuch)|PG\b|ASVG\b|VwGVG\b|DHG\b|AVG\b|VStG\b|StVO\b|[A-ZÄÖÜ][A-Za-zÄÖÜäöü\-]*(?:gesetz|gesetzbuch|ordnung)\w*)/;
+const ctxLaw = n => n === 'Regress' ? 'AHG' : (['AHG','OHG','PolBEG'].includes(n) ? n : 'BDG');
+function absText(txt, a){
+  const m = new RegExp('(?:^|\\n)\\(' + a + '\\)\\s*([\\s\\S]*?)(?=\\n\\(\\d+[a-z]?\\)\\s|$)').exec(txt || ''); if(!m) return '';
+  let t = m[1].replace(/\s+/g, ' ').trim(), cut = false;
+  if(t.length > 430){ const i = t.lastIndexOf('. ', 430); t = i > 150 ? t.slice(0, i + 1) : t.slice(0, 430).replace(/\s\S*$/, '') + ' …'; cut = true; }
+  return t;
+}
+function refInfo(law, n, abs){
+  const k = (REFK[law] || {})[n], p = law === 'BDG' && S.data ? S.data.paragrafen.find(x => x.n === n) : null;
+  const kurz = k && k.k, title = (p && p.title) || (k && k.t) || '';
+  let text = '';
+  if(abs){ const t = absText(p ? p.text : (k && k.text), abs); if(t) text = 'Abs. ' + abs + ': ' + t; }
+  if(!text && kurz) text = kurz;
+  if(!text) return null;
+  return {gesetz:law, match:'§ ' + n, titel:'§ ' + n + (abs ? ' Abs. ' + abs : '') + ' ' + law + (title ? ' · ' + title : ''), text,
+    ris: LAWID[law] ? `https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=${LAWID[law]}&Paragraf=${encodeURIComponent(n)}` : ''};
+}
+function linkRefs2(h, ctxN){
+  return h.replace(REF2, (m, law, bare, off, str) => {
+    if(m.startsWith('§§')) return m;
+    if(!law && !bare){ const f = FOREIGN.exec(str.slice(off + m.length)); if(f){ if(!f[1]) return m; law = 'StGB'; } }   // Verweis auf ein anderes Gesetz ohne Pop-up-Text
+    let l = law || ctxLaw(ctxN), n, a;
+    if(bare){ if(!/^\d/.test(ctxN)) return m; n = ctxN; a = bare; }
+    else { const mm = /§\s?(\d+[a-z]?)(?:\s+Abs\.\s?(\d+[a-z]?))?/.exec(m); n = mm[1]; a = mm[2]; }
+    if(!refInfo(l, n, a)) return m;
+    return `<span class="ref" role="button" tabindex="0" data-act="ref2" data-l="${l}" data-n="${n}" data-a="${a || ''}">${m}</span>`;
+  });
 }
 
 /* ---------- Auswertung ---------- */
@@ -767,7 +873,7 @@ function renderEgg(root){
     <div class="dlg" role="dialog" aria-modal="true" aria-label="Glückwunsch">${LX.svg('happy', 'dance-hop')}<h3>Beamter des Tages!</h3><p>Herzlichen Glückwunsch zu 100 Prozent. Hast du überhaupt Freizeit, oder lernst du nur?</p><button class="btn" data-act="close-sheet">Nur noch kurz …</button></div>`;
 }
 function renderRef(root, sh){
-  const r = REFS[sh.i]; if(!r){ closeSheet(); return; }
+  const r = sh.info || REFS[sh.i]; if(!r){ closeSheet(); return; }
   root.innerHTML = `<div class="dim clear" data-act="close-sheet"></div>
     <div class="pop" id="pop" role="dialog" aria-label="Verweis ${esc(r.match)}"><span class="ptag">${esc(r.gesetz || 'Verweis')}</span><h3>${esc(r.titel || r.match)}</h3><p>${esc(r.text)}</p>
       <div class="prow">${r.ris ? `<a href="${esc(r.ris)}" target="_blank" rel="noopener">Im RIS öffnen</a>` : '<span></span>'}<button class="sm" data-act="close-sheet">Schließen</button></div></div>`;
@@ -830,6 +936,15 @@ function closeSheetSilently(){ S.sheet = null; const r = $('#sheet'); if(r) r.in
 
 /* ================= Aktionen (Event-Delegation) ================= */
 const ACT = {
+  mode(b){ S.mode = b.dataset.m === 'k' && CARDS_ON ? 'k' : 'mc'; store.set('rt.mode', S.mode); render(true); },
+  klv(b){ const lv = cardLv(), n = +b.dataset.l; if(lv.has(n)){ if(lv.size > 1) lv.delete(n); } else lv.add(n); store.set('rt.klv', [...lv].sort()); render(true); },
+  kstart(){ startCards(); },
+  kagain(){ if(!cardPool().length){ toast('Keine offenen Karten'); S.view = 'home'; render(); return; } startCards(); },
+  kflip(){ const r = S.cr; if(!r) return; r.back = !r.back; const f = $('#kflip'); if(f) f.classList.toggle('back', r.back); setDock(kDock()); },
+  kyes(){ rateCard(true); },
+  kno(){ rateCard(false); },
+  kquit(){ S.view = (S.cr && S.cr.i > 0) ? 'cardsdone' : 'home'; render(); },
+  ref2(b, e){ e.stopPropagation(); const info = refInfo(b.dataset.l, b.dataset.n, b.dataset.a || undefined); if(!info) return; const rc = b.getBoundingClientRect(); openSheet({kind:'ref', info, rect:{top:rc.top, bottom:rc.bottom}}, '#sheet .sm'); },
   'mode-soon'(){ toast('Karteikarten kommen bald. Bis dahin: Multiple Choice.'); },
   tab(b){ S.view = b.dataset.v; render(); },
   'to-start'(){ S.view = 'start'; render(); },
@@ -928,7 +1043,7 @@ const ACT = {
   reset(){ if(confirm('Gesamten Lernfortschritt auf diesem Gerät löschen?')){ store.set('rt.hist2', {}); render(true); toast('Fortschritt zurückgesetzt'); } }
 };
 let last = {act:'', t:-1000};
-const NAV = ['check','next','start','retry','quit','stk-save','stk-load','stk-start','home','tour-next','tour-start','a2-yes','a2-later','a2-done'];
+const NAV = ['kstart','kyes','kno','kquit','kagain','check','next','start','retry','quit','stk-save','stk-load','stk-start','home','tour-next','tour-start','a2-yes','a2-later','a2-done'];
 document.addEventListener('click', e => {
   const b = e.target.closest('[data-act]'); if(!b || b.disabled) return;
   const a = b.dataset.act;
@@ -963,7 +1078,7 @@ window.addEventListener('resize', () => { if(typeof S.tour === 'number') placeTo
 /* ================= Start ================= */
 (async function boot(){
   applySettings();
-  try{ S.data = await loadLaw(S.law); await Promise.all([loadRefs(), loadNews(), loadChangelog()]); }
+  try{ S.data = await loadLaw(S.law); await Promise.all([loadRefs(), loadNews(), loadChangelog(), loadCards()]); }
   catch(e){ $('#app').innerHTML = '<h1>LexCoach</h1><p class="mute">Daten konnten nicht geladen werden. Bitte Verbindung prüfen und neu öffnen.</p>'; return; }
   const valid = new Set(order());
   S.sel = new Set(store.get('rt.sel.'+S.law, []).filter(n => valid.has(n)));

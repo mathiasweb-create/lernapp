@@ -145,3 +145,24 @@ ul.cl li b{display:block;color:var(--ink);opacity:.85;font-size:12.5px;font-weig
 .mseg button.on{border-color:var(--acc);background:var(--soft)}
 .mseg button.soon{opacity:.65;border:1.5px dashed var(--mute)}
 .mseg .bd{font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--kc);background:var(--kc-soft);border-radius:99px;padding:2px 8px;margin-top:2px}
+/* Karteikarten (Wunsch 41): Petrol, Flip */
+.btn.kc{background:var(--kc);color:var(--kc-on)}
+.btn.rno{background:var(--bad-bg);color:var(--bad);flex:1}.btn.ryes{background:var(--ok-bg);color:var(--ok);flex:1}
+.mseg .kb.on{border-color:var(--kc);background:var(--kc-soft)}
+.klvs{display:flex;gap:6px;margin-top:8px}
+.klvs button{border:1.5px solid var(--line);background:var(--card);color:var(--ink);border-radius:99px;padding:6px 13px;font-size:13px;font-weight:600}
+.klvs button.on{border-color:var(--kc);background:var(--kc-soft);color:var(--kc)}
+.kbar i{background:var(--kc)}
+.kscene{perspective:1100px;margin-top:6px}
+.kflip{display:grid;min-height:280px;transform-style:preserve-3d;transition:transform .6s cubic-bezier(.3,.7,.2,1);cursor:pointer;text-align:left}
+.kflip.back{transform:rotateY(180deg)}
+.kface{grid-area:1/1;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:18px;border:1.5px solid var(--line);border-top:5px solid var(--kc);background:var(--card);box-shadow:0 10px 24px -10px var(--shadow);padding:16px 18px 18px;display:flex;flex-direction:column;gap:10px}
+.kface.kr{transform:rotateY(180deg);background:var(--kc-soft);border-color:var(--kc)}
+.klab{display:flex;justify-content:space-between;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--kc)}
+.klv{font-weight:600;text-transform:none;letter-spacing:0;background:var(--warn-bg);color:var(--warn);border-radius:99px;padding:1px 8px}
+.ktxt{flex:1;display:flex;align-items:center;font-size:19px;line-height:1.4;font-weight:600}
+.kr .ktxt{font-size:16px;font-weight:500}
+.khint{font-size:12px;color:var(--mute);text-align:center}
+.ksrc{font-size:12px;color:var(--mute);border-top:1px solid var(--line);padding-top:8px}
+.kdone{display:grid;gap:8px;text-align:center}.kdone b{font-size:18px}
+.kbx{display:flex;justify-content:center;gap:8px;margin-top:6px}.kbx span{border:1px solid var(--line);border-radius:8px;padding:4px 10px;font-size:13px;color:var(--mute)}.kbx b{font-size:14px;color:var(--kc)}
