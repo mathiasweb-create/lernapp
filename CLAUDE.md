@@ -19,6 +19,7 @@ Artefakte (privat): **Übersicht offener Punkte https://claude.ai/artifact/G4Q1n
 - **Selbstständig arbeiten:** Vorgänge (Pull Requests, Sitzungen, Repo-Zugriffe) selbst erledigen und dafür die Genehmigung anfordern. Den Nutzer nicht auf Handarbeit verweisen, außer wenn es technisch nur er kann.
 - **Hilfsagenten nach eigenem Ermessen** nutzen und dem Nutzer kurz auflisten, welcher Agent was erledigt. Prüfungen großer Mengen oder Code-Reviews an Opus-Agenten (nur lesen) geben, Befunde danach selbst gegenprüfen.
 - **Change-log:** Bei jedem Update, das auf `main` geht, neuen Eintrag mit höherer Nummer `v` oben in `daten/changelog.json` (`s` Versionsnummer, `n` eigener Name, `d` Datum, `t` 3 bis 4 kurze Punkte mit `h` Titel und `x` ein Satz). Nummerierung nach eigenem Ermessen: erste Zahl = neue Funktion oder großer Inhalt (3.0 = Karteikarten), zweite = sichtbare Verbesserung, dritte = kleine Korrektur. Es heißt überall „Change-log“. Bestehende Nutzer sehen ihn einmal als Pop-up (Einstellungen › Änderungsprotokoll zeigt alle). `sw.js`-`VERSION` erhöhen.
+- **Command-Center:** Zu jeder App, die in Claude Code gebaut wird, gehört ein Command-Center (Artefakt mit Punkten, Branches, Befehlen, Regeln). Name: „Command-Center“ plus App-Name, hier „Command-Center LexCoach“ (Nutzerwunsch 2026-11-26). Das Command-Center wird bei jedem Meilenstein zusammen mit BACKLOG.md aktualisiert.
 - **Stand in dieser Datei nach jedem Meilenstein aktualisieren** (Merge, Push, Prüfung), nicht erst kurz vor einer Kontext-Verdichtung.
 
 ## Entscheidungen (nicht erneut diskutieren)
