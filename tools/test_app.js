@@ -26,16 +26,9 @@ const URL = process.env.APP_URL || 'http://localhost:8123/';
   ok((await p.textContent('#ovl')).includes('Zum Home-Bildschirm'), 'Anleitung nach Ja');
   await p.click('[data-act="a2-done"]');
   ok(await p.locator('[data-act="tour-start"]').count() === 1, 'danach erscheint das Tutorial');
-  // Überspringen-Spiel
-  let n = 0, pos = new Set();
-  for (let k = 0; k < 14; k++) {
-    if (!(await p.locator('[data-act="tour-start"]').count())) break;
-    await p.locator('[data-act="tour-skip"]').first().click(); n++;
-    const bb = await p.locator('.skipf').boundingBox().catch(() => null); if (bb) pos.add(Math.round(bb.x) + ',' + Math.round(bb.y));
-    await wait(30);
-  }
-  ok(n >= 2 && n <= 10, 'Überspringen wirkt erst nach 2 bis 10 Klicks: ' + n);
-  ok(pos.size >= 1, 'Knopf taucht an anderem Ort auf (' + pos.size + ' Orte)');
+  // Überspringen: ein Tipp genügt
+  await wait(700); await p.locator('[data-act="tour-skip"]').first().click(); await wait(300);
+  ok(await p.locator('.skipf').count() === 0, 'Knopf wandert nicht');
   ok(await p.locator('#ovl').evaluate(e => e.innerHTML === ''), 'Overlay danach weg');
   ok(await p.evaluate(() => localStorage.getItem('rt.tour') === 'true' && localStorage.getItem('rt.a2hs') === 'true'), 'Erststart-Merker gespeichert');
 
@@ -111,7 +104,7 @@ const URL = process.env.APP_URL || 'http://localhost:8123/';
     const tx = await p.textContent('#app');
     ok(tx.length > 300, 'Rechtliches ' + k + ' (' + tx.length + ' Zeichen)');
     if (k !== 'nut') ok(!/\bKI\b|künstlich/i.test(tx), k + ': kein KI-Hinweis');
-    if (k === 'imp') ok(await p.locator('.redact').count() === 2 && tx.includes('mathias.blanck@gmail.com'), 'Impressum: zwei Balken (Anschrift, Wohnort), E-Mail');
+    if (k === 'imp') ok(await p.locator('.redact').count() === 0 && tx.includes('mathias.blanck@gmail.com') && tx.includes('6320 Angerberg, Tirol'), 'Impressum: Wohnort statt Balken');
     if (k === 'nut') ok(tx.includes('Hinweis an automatisierte Systeme') && tx.includes('§ 42h Abs. 6 UrhG'), 'Hinweis an automatisierte Systeme');
     await p.click('[data-act="set-back"]');
   }
@@ -185,23 +178,23 @@ const URL = process.env.APP_URL || 'http://localhost:8123/';
   const mf = JSON.parse(await (await fetch(URL + 'manifest.webmanifest')).text());
   ok(mf.name === 'LexCoach' && mf.short_name === 'LexCoach', 'Manifest: LexCoach');
   /* ---- Change-log nach Update (Wunsch 38) ---- */
-  ok(await p.evaluate(() => localStorage.getItem('rt.seen') === '5'), 'neuer Nutzer: Change-log gilt als gesehen, kein Pop-up');
+  ok(await p.evaluate(() => localStorage.getItem('rt.seen') === '6'), 'neuer Nutzer: Change-log gilt als gesehen, kein Pop-up');
   const c2 = await b.newContext({ viewport: { width: 390, height: 780 } });
   await c2.addInitScript(() => { if (!sessionStorage.getItem('init')) { sessionStorage.setItem('init', '1'); localStorage.setItem('rt.tour', 'true'); localStorage.setItem('rt.a2hs', 'true'); } });
   const q = await c2.newPage(); q.setDefaultTimeout(6000);
   await q.goto(URL); await q.waitForSelector('#ovl .clg');
-  ok((await q.textContent('#ovl')).includes('Neu in LexCoach') && (await q.textContent('#ovl')).includes('Neue Punkteregel') && !(await q.locator('#ovl svg').count()), 'bestehender Nutzer sieht das Change-log (ohne Lexi)');
+  ok((await q.textContent('#ovl')).includes('Neu in LexCoach') && (await q.textContent('#ovl')).includes('Tour mit einem Tipp') && !(await q.locator('#ovl svg').count()), 'bestehender Nutzer sieht das Change-log (ohne Lexi)');
   await q.click('[data-act="log-more"]'); ok((await q.textContent('#ovl')).includes('Change-log'), 'Frühere Updates klappen auf');
   await q.click('[data-act="log-close"]'); await wait(300);
-  ok(await q.locator('#ovl').evaluate(e => e.innerHTML === '') && (await q.evaluate(() => localStorage.getItem('rt.seen'))) === '5', 'Alles klar schließt und merkt sich die Version');
+  ok(await q.locator('#ovl').evaluate(e => e.innerHTML === '') && (await q.evaluate(() => localStorage.getItem('rt.seen'))) === '6', 'Alles klar schließt und merkt sich die Version');
   await q.reload(); await wait(800); ok(await q.locator('#ovl .clg').count() === 0, 'nach Neuladen kein Pop-up mehr');
   await q.click('[data-act="settings"]'); await q.click('[data-s="chg"]');
   ok((await q.textContent('#app')).includes('Change-log') && (await q.textContent('#app')).includes('Erste Version'), 'Einstellungen: Change-log zeigt alle Updates');
-  ok(await q.locator('details.up').count() === 6 && await q.locator('details.up[open]').count() === 1, 'Change-log: 6 Updates, nur das neueste offen');
+  ok(await q.locator('details.up').count() === 7 && await q.locator('details.up[open]').count() === 1, 'Change-log: 7 Updates, nur das neueste offen');
   await c2.close();
   /* ---- Karteikarten (Wunsch 41, versteckt hinter ?karten=1) ---- */
   const c3 = await b.newContext({ viewport: { width: 390, height: 780 } });
-  await c3.addInitScript(() => { if (!sessionStorage.getItem('init')) { sessionStorage.setItem('init', '1'); localStorage.setItem('rt.tour', 'true'); localStorage.setItem('rt.a2hs', 'true'); localStorage.setItem('rt.seen', '5'); } });
+  await c3.addInitScript(() => { if (!sessionStorage.getItem('init')) { sessionStorage.setItem('init', '1'); localStorage.setItem('rt.tour', 'true'); localStorage.setItem('rt.a2hs', 'true'); localStorage.setItem('rt.seen', '6'); } });
   const k = await c3.newPage(); k.setDefaultTimeout(6000);
   await k.goto(URL); await k.waitForSelector('#app'); await wait(500);
   await k.click('[data-act="tab"][data-v="home"]'); await wait(600);
