@@ -1,5 +1,25 @@
 [
  {
+  "v": 3,
+  "s": "2.1",
+  "n": "Leichtere Fragen",
+  "d": "26.11.2026",
+  "t": [
+   {
+    "h": "Mehr leichte Fragen",
+    "x": "109 neue, kurze Fragen. Die meisten Fragen sind jetzt leicht, dazu gibt es mittlere und wenige schwere."
+   },
+   {
+    "h": "Schwierigkeit wählen",
+    "x": "Unter „Lernen“ stellst du ein, ob du leichte, mittlere oder schwere Fragen übst."
+   },
+   {
+    "h": "Stufe im Quiz",
+    "x": "Bei jeder Frage steht jetzt, ob sie leicht, mittel oder schwer ist."
+   }
+  ]
+ },
+ {
   "v": 2,
   "d": "25.11.2026",
   "t": [

@@ -124,3 +124,8 @@ html.rm .jail{animation:jailf 3.8s both!important}
 .clg .more{display:flex;justify-content:space-between;width:100%;border:0;border-top:1px solid var(--line);background:none;padding:9px 2px;font-size:12.5px;color:var(--mute);margin-bottom:8px}
 .clg .old{font-size:12px;color:var(--mute);margin:0 0 8px;display:grid;gap:4px}.clg .old b{color:var(--ink)}
 ul.cl{list-style:none;margin:0 0 6px;padding:0;display:grid;gap:8px}ul.cl li{font-size:13px;line-height:1.4;color:var(--mute)}ul.cl li b{display:block;color:var(--ink);font-size:13.5px}
+/* Schwierigkeitsstufen auf „Lernen“ */
+.lvbar{margin-top:6px}
+.klvs{display:flex;gap:6px;margin-top:8px}
+.klvs button{border:1.5px solid var(--line);background:var(--card);color:var(--ink);border-radius:99px;padding:6px 13px;font-size:13px;font-weight:600}
+.klvs button.on{border-color:var(--acc);background:var(--soft);color:var(--acc)}
