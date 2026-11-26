@@ -1,5 +1,21 @@
 [
  {
+  "v": 6,
+  "s": "2.4",
+  "n": "Einfacher Start",
+  "d": "26.11.2026",
+  "t": [
+   {
+    "h": "Tour mit einem Tipp überspringen",
+    "x": "Der Knopf „Überspringen“ bleibt an seinem Platz und wirkt sofort."
+   },
+   {
+    "h": "Impressum mit Wohnort",
+    "x": "Im Impressum steht jetzt der Wohnort statt der schwarzen Balken."
+   }
+  ]
+ },
+ {
   "v": 5,
   "s": "2.3",
   "n": "Fairere Punkte",

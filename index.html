@@ -363,7 +363,7 @@ const isStandalone = () => !!(navigator.standalone || (window.matchMedia && matc
 
 /* ================= Zustand ================= */
 const S = {view:'start', law:(() => { const l = store.get('rt.law','BDG'); return LAWS.some(x => x.id === l && x.ready) ? l : 'BDG'; })(), data:null, sel:new Set(), open:new Set(), onlyOpen:store.get('rt.onlyOpen',false), q:'', run:null, sheet:null, histAll:false,
-  set:'menu', prev:'start', gdraft:[], gerr:'', klOpen:false, mehr:false, flt:'Alle', pop:null, tour:null, skipNeed:2, skipClicks:0, skipPos:null, msg:0, hm:'normal', hop:false, lastSay:0, runBackup:null, mode:(CARDS_ON && store.get('rt.mode','mc') === 'k') ? 'k' : 'mc', cr:null};
+  set:'menu', prev:'start', gdraft:[], gerr:'', klOpen:false, mehr:false, flt:'Alle', pop:null, tour:null, msg:0, hm:'normal', hop:false, lastSay:0, runBackup:null, mode:(CARDS_ON && store.get('rt.mode','mc') === 'k') ? 'k' : 'mc', cr:null};
 const hist   = () => store.get('rt.hist2', {});
 const stacks = () => store.get('rt.stacks', []).filter(s => s && typeof s.id === 'string' && typeof s.name === 'string' && Array.isArray(s.paras));
 const flags  = () => store.get('rt.flags', []);
@@ -788,11 +788,11 @@ const TOUR = [
   {t:'Klausuren', x:'Speichere eine Auswahl als Klausur. Mit „Start“ legst du sie später mit einem Tippen los.', s:'#app .stack, #app .emp'},
   {t:'Statistik und Einstellungen', x:'Hier siehst du deinen Lernstand und die Historie. Notenschlüssel und mehr findest du oben unter dem Zahnrad.', s:'#app .kpis'}
 ];
-function openIntro(){ S.tour = 'intro'; S.skipNeed = 2 + Math.floor(Math.random()*9); S.skipClicks = 0; S.skipPos = null; store.set('rt.tour', true); }
+function openIntro(){ S.tour = 'intro'; store.set('rt.tour', true); }
 function endTour(){
   clearTimeout(S.qt);
   if(S.runBackup !== null){ S.run = S.runBackup.run; S.open = S.runBackup.open; S.flt = S.runBackup.flt; S.runBackup = null; }
-  S.tour = null; S.skipPos = null; S.view = 'start';
+  S.tour = null; S.view = 'start';
 }
 function tourSetup(i){
   if(S.runBackup === null) S.runBackup = {run:S.run, open:new Set(S.open), flt:S.flt};
@@ -814,7 +814,7 @@ function overlayHtml(){
     return `<div class="dim"></div><div class="dlg clg" role="dialog" aria-modal="true" aria-label="Neu in LexCoach"><h3>Neu in LexCoach</h3><span class="ver">Update ${esc(clVer(e))} · ${esc(e.n || e.d)}</span><ul class="cll">${e.t.map(x => `<li><i></i><span><b>${esc(x.h)}</b><span>${esc(x.x)}</span></span></li>`).join('')}</ul>${old.length ? `<button class="more" data-act="log-more" aria-expanded="${!!S.logMore}"><span>Frühere Updates</span><span aria-hidden="true">${S.logMore ? '⌃' : '⌄'}</span></button>${S.logMore ? `<div class="old">${old.map(o => `<span><b>${esc(clVer(o))} ${esc(o.n || o.d)}</b> ${esc(o.t.map(x => x.h).join(', '))}</span>`).join('')}<span>Alle Updates: Einstellungen › Change-log</span></div>` : ''}` : ''}<button class="btn" data-act="log-close">Alles klar</button></div>`;
   }
   if(S.pop === 'steps') return `<div class="dim"></div><div class="dlg" role="dialog" aria-modal="true" aria-label="Anleitung">${LX.svg('happy')}<h3>So geht’s</h3>${stepsHtml()}<button class="btn" data-act="a2-done">Verstanden</button></div>`;
-  if(S.tour === 'intro') return `<div class="dim"></div><div class="dlg" role="dialog" aria-modal="true" aria-label="Tutorial">${LX.svg('happy')}<h3>Kurze Tour?</h3><p>Ich bin Lexi. In einer Minute zeige ich dir, wie alles funktioniert.</p><button class="btn" data-act="tour-start">Los geht’s</button>${S.skipPos ? '<div class="skipslot"></div>' : '<button class="btn alt" data-act="tour-skip" style="margin-top:8px">Überspringen</button>'}</div>${S.skipPos ? '<button class="btn alt skipf" data-act="tour-skip">Überspringen</button>' : ''}`;
+  if(S.tour === 'intro') return `<div class="dim"></div><div class="dlg" role="dialog" aria-modal="true" aria-label="Tutorial">${LX.svg('happy')}<h3>Kurze Tour?</h3><p>Ich bin Lexi. In einer Minute zeige ich dir, wie alles funktioniert.</p><button class="btn" data-act="tour-start">Los geht’s</button><button class="btn alt" data-act="tour-skip" style="margin-top:8px">Überspringen</button></div>`;
   if(S.tour === 'quip') return `<div class="quipw"><div class="rb">${LX.svg('normal')}<div class="bub u" data-t="u">Keiner mag Klugscheißer.</div></div></div>`;
   if(typeof S.tour === 'number'){
     const s = TOUR[S.tour], last = S.tour === TOUR.length - 1;
@@ -829,7 +829,7 @@ function renderOverlay(){
   o.innerHTML = h;
   const on = !!h; setBg(on || !!S.sheet); LX.block(on);
   if(!on){ lastOv = ''; return; }
-  LX.paintAll(); placeTour(); placeSkip();
+  LX.paintAll(); placeTour();
   const f = o.querySelector('.skipf') || (key !== lastOv ? (o.querySelector('.tbtn, [data-act="a2-yes"], [data-act="a2-done"], [data-act="tour-start"], [data-act="log-close"]') || o.querySelector('[data-act]')) : null);
   lastOv = key; if(f) f.focus({preventScroll:true});
 }
@@ -840,17 +840,6 @@ function placeTour(){
   if(r.top < 70 || r.bottom > vh - 190){ window.scrollTo(0, Math.max(0, window.scrollY + r.top - 110)); r = tg.getBoundingClientRect(); }
   sp.style.left = (r.left - 6) + 'px'; sp.style.top = (r.top - 6) + 'px'; sp.style.width = (r.width + 12) + 'px'; sp.style.height = (r.height + 12) + 'px';
   const top = (r.top + r.height/2) > vh * .5; card.style.top = top ? 'calc(env(safe-area-inset-top) + 14px)' : 'auto'; card.style.bottom = top ? 'auto' : 'calc(env(safe-area-inset-bottom) + 14px)';
-}
-function placeSkip(){
-  const bt = $('#ovl .skipf'); if(!bt || !S.skipPos) return;
-  const vw = document.documentElement.clientWidth, vh = window.innerHeight, w = bt.offsetWidth, h = bt.offsetHeight, go = $('#ovl [data-act="tour-start"]'), gr = go ? go.getBoundingClientRect() : null;
-  let x, y, k = 0;
-  do {
-    x = 14 + S.skipPos[0] * (vw - 28 - w); y = 70 + S.skipPos[1] * (vh - 150 - h);
-    const hit = gr && x < gr.right + 8 && x + w > gr.left - 8 && y < gr.bottom + 8 && y + h > gr.top - 8;
-    if(!hit) break; S.skipPos = [Math.random(), Math.random()]; k++;
-  } while(k < 30);
-  bt.style.left = x + 'px'; bt.style.top = y + 'px';
 }
 function afterPop(){ if(!store.get('rt.tour', false)) openIntro(); }
 
@@ -1014,9 +1003,7 @@ const ACT = {
   'a2-done'(){ store.set('rt.a2hs', true); S.pop = null; render(true); afterPop(); render(true); },
   'tour-start'(){ S.tour = 0; tourSetup(0); render(); },
   'tour-skip'(){
-    S.skipClicks++;
-    if(S.skipClicks >= S.skipNeed){ S.tour = null; S.skipPos = null; render(true); toast('Na gut. Die Tour findest du später in den Einstellungen.'); }
-    else { S.skipPos = [Math.random(), Math.random()]; renderOverlay(); }
+    S.tour = null; render(true); toast('Na gut. Die Tour findest du später in den Einstellungen.');
   },
   'tour-next'(){
     if(S.tour < TOUR.length - 1){ S.tour++; tourSetup(S.tour); render(); }
@@ -1082,7 +1069,7 @@ document.addEventListener('keydown', e => {
   if(e.key === 'Enter' && e.target && e.target.id === 'sname'){ e.preventDefault(); ACT['stk-save'](); }
 });
 window.addEventListener('hashchange', () => { if(S.data && applyHash(false)) render(); });
-window.addEventListener('resize', () => { if(typeof S.tour === 'number') placeTour(); if(S.skipPos) placeSkip(); LX.paintAll(); });
+window.addEventListener('resize', () => { if(typeof S.tour === 'number') placeTour(); LX.paintAll(); });
 
 /* ================= Start ================= */
 (async function boot(){

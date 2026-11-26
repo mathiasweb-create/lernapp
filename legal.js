@@ -1,12 +1,11 @@
 /* Rechtliche Texte (Impressum, Datenschutz, Nutzung und Haftung, Quellen und Lizenzen).
    © 2026 Mathias Blanck. Alle Rechte vorbehalten. Vervielfältigen, Auswerten und Nachbauen verboten (siehe LICENSE). */
 window.LEGAL = {
-  stand: '25.11.2026',
+  stand: '26.11.2026',
   imp: {
     t: 'Impressum', sub: 'Wer betreibt die App', ic: 'i',
     h: '<h2>Medieninhaber und Betreiber</h2><p>Mathias Blanck<br>Privatperson, nicht kommerziell</p>'
-     + '<h2>Anschrift</h2><p><span class="redact" role="img" aria-label="Anschrift geschwärzt"></span></p>'
-     + '<h2>Wohnort</h2><p><span class="redact" role="img" aria-label="Wohnort geschwärzt"></span></p>'
+     + '<h2>Wohnort</h2><p>6320 Angerberg, Tirol</p>'
      + '<h2>Kontakt</h2><p>E-Mail: mathias.blanck@gmail.com</p>'
      + '<h2>Art und Zweck des Angebots</h2><p>LexCoach ist eine private, nicht kommerzielle Lernhilfe zu österreichischen Gesetzen. Es gibt keine Einnahmen und keine Werbung.</p>'
      + '<h2>Grundlegende Richtung</h2><p>Hilfe beim Lernen von Rechtsvorschriften für Prüfungen. Keine Rechtsberatung.</p>'
