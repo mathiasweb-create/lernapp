@@ -194,7 +194,7 @@ const URL = process.env.APP_URL || 'http://localhost:8123/';
   await c2.addInitScript(() => { if (!sessionStorage.getItem('init')) { sessionStorage.setItem('init', '1'); localStorage.setItem('rt.tour', 'true'); localStorage.setItem('rt.a2hs', 'true'); } });
   const q = await c2.newPage(); q.setDefaultTimeout(6000);
   await q.goto(URL); await q.waitForSelector('#ovl .clg');
-  ok((await q.textContent('#ovl')).includes('Neu in LexCoach') && (await q.textContent('#ovl')).includes('Pop-up für Verweise') && !(await q.locator('#ovl svg').count()), 'bestehender Nutzer sieht das Change-log (ohne Lexi)');
+  ok((await q.textContent('#ovl')).includes('Neu in LexCoach') && (await q.textContent('#ovl')).includes('Hilfe-Knopf') && !(await q.locator('#ovl svg').count()), 'bestehender Nutzer sieht das Change-log (ohne Lexi)');
   await q.click('[data-act="log-more"]'); ok((await q.textContent('#ovl')).includes('Change-log'), 'Frühere Updates klappen auf');
   await q.click('[data-act="log-close"]'); await wait(300);
   ok(await q.locator('#ovl').evaluate(e => e.innerHTML === '') && (await q.evaluate(() => localStorage.getItem('rt.seen'))) === '8', 'Alles klar schließt und merkt sich die Version');
