@@ -34,7 +34,7 @@
   --bg:#F3F6FB; --card:#ffffff; --ink:#14213D; --mute:#56627D; --line:#DCE4F1;
   --acc:#2457D6; --on:#ffffff; --soft:#E4ECFF;
   --ok:#0B7A55; --ok-bg:#E3F5EC; --bad:#C0362C; --bad-bg:#FDEAE7; --warn:#9A5B00; --warn-bg:#FFF2DB;
-  --c1:#2457D6; --c2:#0E8A7D; --c3:#B7791F; --c4:#7A4FD1; --c5:#C2410C; --wind:#0A0D14; --shadow:rgba(20,33,61,.14);
+  --c1:#2457D6; --c2:#0E8A7D; --c3:#B7791F; --c4:#7A4FD1; --c5:#C2410C; --wind:#0A0D14; --shadow:rgba(20,33,61,.14); --kc:#0E8A7D; --kc-on:#ffffff; --kc-soft:#DDF3F0;
   --font:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
 }
 @media (prefers-color-scheme: dark){
@@ -42,14 +42,14 @@
     --bg:#0E1626; --card:#162036; --ink:#E8EEFC; --mute:#9AA8C7; --line:#263454;
     --acc:#7AA2FF; --on:#0B1530; --soft:#1E2D52;
     --ok:#4CC38A; --ok-bg:#123225; --bad:#FF8A80; --bad-bg:#3A1B1B; --warn:#F0B35A; --warn-bg:#33270F;
-    --c1:#7AA2FF; --c2:#3CC9B8; --c3:#F0B35A; --c4:#B79BFF; --c5:#FF9A62; --wind:#F2F5FF; --shadow:rgba(0,0,0,.5); color-scheme:dark;
+    --c1:#7AA2FF; --c2:#3CC9B8; --c3:#F0B35A; --c4:#B79BFF; --c5:#FF9A62; --wind:#F2F5FF; --shadow:rgba(0,0,0,.5); --kc:#3CC9B8; --kc-on:#06211D; --kc-soft:#12332F; color-scheme:dark;
   }
 }
 :root[data-theme="dark"]{
     --bg:#0E1626; --card:#162036; --ink:#E8EEFC; --mute:#9AA8C7; --line:#263454;
     --acc:#7AA2FF; --on:#0B1530; --soft:#1E2D52;
     --ok:#4CC38A; --ok-bg:#123225; --bad:#FF8A80; --bad-bg:#3A1B1B; --warn:#F0B35A; --warn-bg:#33270F;
-    --c1:#7AA2FF; --c2:#3CC9B8; --c3:#F0B35A; --c4:#B79BFF; --c5:#FF9A62; --wind:#F2F5FF; --shadow:rgba(0,0,0,.5); color-scheme:dark;
+    --c1:#7AA2FF; --c2:#3CC9B8; --c3:#F0B35A; --c4:#B79BFF; --c5:#FF9A62; --wind:#F2F5FF; --shadow:rgba(0,0,0,.5); --kc:#3CC9B8; --kc-on:#06211D; --kc-soft:#12332F; color-scheme:dark;
 }
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{margin:0;overflow-x:hidden;background:var(--bg);color:var(--ink);font:15px/1.45 var(--font);-webkit-text-size-adjust:100%}
@@ -66,7 +66,7 @@ p{margin:0}
 .pills{display:flex;gap:6px;margin:12px 0 2px;overflow-x:auto}
 .pill{font-size:13px;font-weight:600;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:10px 15px;white-space:nowrap}
 .pill.on{background:var(--acc);border-color:var(--acc);color:var(--on)}
-.pill[disabled]{opacity:.55;cursor:default}
+.pill[disabled]{opacity:.6;cursor:default;border:1.5px dashed var(--mute);background:transparent;color:var(--mute)}
 .pill small{opacity:.75;font-weight:500}
 .sec{display:flex;justify-content:space-between;align-items:center;margin:18px 0 8px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--mute)}
 .mini{display:flex;gap:6px}
@@ -229,7 +229,7 @@ pre.law{white-space:pre-wrap;word-break:break-word;font:14px/1.5 ui-serif,Georgi
 .lawcard{padding:10px 14px}
 .lawbtn{border:0;background:none;padding:0;width:100%;display:flex;justify-content:space-between;align-items:center;text-align:left}
 .lawbtn b{display:block;font-size:16px}.lawbtn .mute{font-size:12.5px}.lawbtn .go{color:var(--acc)}
-.lawsoon{margin-bottom:8px;opacity:.55;padding:12px 14px}.lawsoon b{display:block;font-size:16px}.lawsoon .mute{font-size:13px}
+.lawsoon{margin-bottom:8px;opacity:.6;padding:12px 14px;border:1.5px dashed var(--mute);background:transparent;box-shadow:none}.lawsoon b{display:block;font-size:16px}.lawsoon .mute{font-size:13px}
 .emp{text-align:center;padding:14px 8px;color:var(--mute);font-size:13px}.emp svg{width:90px;height:auto;display:block;margin:0 auto 6px}
 </style>
 </head>
@@ -270,7 +270,7 @@ const IC = {
   chev:'<svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8l5 5 5-5"/></svg>'
 };
 /* Lexi (lexi.js). Fällt die Datei aus, läuft die App ohne Maskottchen weiter. */
-const LX = window.Lexi || {svg:() => '', paint(){}, paintAll(){}, say(){}, sayIdx(){}, idle(){}, block(){}, enable(){}, hide(){}, SAYS:['Hallo'], ANGRY:-1, BARS:-1};
+const LX = window.Lexi || {svg:() => '', paint(){}, paintAll(){}, say(){}, sayIdx(){}, sayShort(){}, SHORT:['Hallo'], idle(){}, block(){}, enable(){}, hide(){}, SAYS:['Hallo'], ANGRY:-1, BARS:-1};
 const LEGAL = window.LEGAL || {};
 
 /* ================= Gesetze & Daten ================= */
@@ -301,7 +301,17 @@ async function loadChangelog(){
     if(Array.isArray(j)) CL = j.filter(x => x && Number.isInteger(x.v) && typeof x.d === 'string' && Array.isArray(x.t)).sort((a,b) => b.v - a.v); }
   catch(e){ CL = []; }
 }
+let KARTEN = [], REFK = {};
+const CARDS_ON = (() => { try{ const q = new URLSearchParams(location.search).get('karten'); if(q === '1') store.set('rt.karten', true); else if(q === '0') store.set('rt.karten', false); }catch(e){} return !!store.get('rt.karten', false); })();   // Karteikarten bleiben versteckt, bis ?karten=1 geöffnet wurde
+async function loadCards(){
+  try{
+    const [a, b] = await Promise.all([fetch('daten/karten_bdg.json'), fetch('daten/verweise_kurz.json')]);
+    if(a.ok){ const j = await a.json(); if(Array.isArray(j)) KARTEN = j.filter(x => x && x.id && x.n && x.q && x.a); }
+    if(b.ok){ const j = await b.json(); if(j && typeof j === 'object') REFK = j; }
+  }catch(e){ KARTEN = []; REFK = {}; }
+}
 const clLatest = () => CL.length ? CL[0].v : 0;
+const clVer = e => e.s || String(e.v);
 const clItems = e => e.t.map(x => `<li><b>${esc(x.h)}</b>${esc(x.x)}</li>`).join('');
 async function loadNews(){
   try{ const r = await fetch('daten/news.json'); if(!r.ok) return; const j = await r.json(); if(j && typeof j === 'object') NEWS = j; }
@@ -353,7 +363,7 @@ const isStandalone = () => !!(navigator.standalone || (window.matchMedia && matc
 
 /* ================= Zustand ================= */
 const S = {view:'start', law:(() => { const l = store.get('rt.law','BDG'); return LAWS.some(x => x.id === l && x.ready) ? l : 'BDG'; })(), data:null, sel:new Set(), open:new Set(), onlyOpen:store.get('rt.onlyOpen',false), q:'', run:null, sheet:null, histAll:false,
-  set:'menu', prev:'start', gdraft:[], gerr:'', klOpen:false, mehr:false, flt:'Alle', pop:null, tour:null, skipNeed:2, skipClicks:0, skipPos:null, msg:0, hm:'normal', hop:false, lastSay:0, runBackup:null};
+  set:'menu', prev:'start', gdraft:[], gerr:'', klOpen:false, mehr:false, flt:'Alle', pop:null, tour:null, skipNeed:2, skipClicks:0, skipPos:null, msg:0, hm:'normal', hop:false, lastSay:0, runBackup:null, mode:(CARDS_ON && store.get('rt.mode','mc') === 'k') ? 'k' : 'mc', cr:null};
 const hist   = () => store.get('rt.hist2', {});
 const stacks = () => store.get('rt.stacks', []).filter(s => s && typeof s.id === 'string' && typeof s.name === 'string' && Array.isArray(s.paras));
 const flags  = () => store.get('rt.flags', []);
@@ -375,9 +385,6 @@ function buildPool(){
   const H = hist();
   return S.onlyOpen ? qs.filter(x => isOpen(x.q, H)) : qs;
 }
-const LVN = {1:'leicht', 2:'mittel', 3:'schwer'};
-const qLevels = () => { const a = store.get('rt.lv', [1,2]); const f = Array.isArray(a) ? a.filter(n => n === 1 || n === 2 || n === 3) : []; return new Set(f.length ? f : [1,2]); };   // gewählte Schwierigkeitsstufen
-const visibleQ = q => qLevels().has(q.lv || 2);
 const countQ = ns => S.data.paragrafen.filter(p => ns.includes(p.n)).reduce((a,p) => a + p.q.length, 0);
 const totalQ = () => S.data.paragrafen.reduce((a,p) => a + p.q.length, 0);
 const effPool = n => SET.lim ? Math.min(n, SET.lim) : n;
@@ -393,7 +400,8 @@ function render(keep){
   const y = keep ? window.scrollY : 0;
   $('#app').classList.toggle('nodock', S.view === 'settings');
   $('#app').classList.toggle('tabonly', S.view === 'start');
-  ({start:renderStart, home:renderHome, stacks:renderStacks, stats:renderStats, quiz:renderQ, result:renderResult, settings:renderSettingsView})[S.view]();
+  ({start:renderStart, home:renderHome, stacks:renderStacks, stats:renderStats, quiz:renderQ, result:renderResult, settings:renderSettingsView, cards:renderCards, cardsdone:renderCardsDone})[S.view]();
+  LX.hide();
   LX.paintAll();
   window.scrollTo(0, y);
   LX.idle(!['quiz','result','start','settings'].includes(S.view) && !S.pop && S.tour === null, 25000, 50000);
@@ -424,7 +432,21 @@ function renderStart(){
 /* ---------- Lernen ---------- */
 function tile(p, cc){
   const on = S.sel.has(p.n);
-  return `<button class="tile ${on?'sel':''}" data-act="tog" data-p="${esc(p.n)}" style="--cc:var(${cc})" aria-pressed="${on}"><span class="ck">✓</span><b>${esc(p.label)}</b><span class="tt">${esc(p.title)}</span><span class="qn">${(nq => nq + ' ' + (nq === 1 ? "Frage" : "Fragen"))(p.q.filter(visibleQ).length)}</span></button>`;
+  return `<button class="tile ${on?'sel':''}" data-act="tog" data-p="${esc(p.n)}" style="--cc:var(${cc})" aria-pressed="${on}"><span class="ck">✓</span><b>${esc(p.label)}</b><span class="tt">${esc(p.title)}</span><span class="qn">${CARDS_ON && S.mode === 'k' ? kcount(p.n) + ' Karten' : (nq => nq + ' ' + (nq === 1 ? "Frage" : "Fragen"))(p.q.filter(visibleQ).length)}</span></button>`;
+}
+function homeDock(){
+  const kmode = CARDS_ON && S.mode === 'k';
+  const raw = kmode ? cardPool().length : buildPool().length, n = effPool(raw);
+  const btn = kmode
+    ? `<button class="btn kc" data-act="kstart" ${n?'':'disabled'}>${n ? 'Karten starten · '+n+' Karten'+(raw>n ? ' (von '+raw+')' : '') : (S.sel.size ? 'Keine Karten für diese Auswahl' : 'Paragrafen wählen')}</button>`
+    : `<button class="btn" data-act="start" ${n?'':'disabled'}>${n ? 'Start · '+n+' Fragen'+(raw>n ? ' (von '+raw+')' : '') : (S.sel.size ? (S.onlyOpen ? 'Keine offenen Fragen' : 'Keine Fragen für diese Stufen') : 'Paragrafen wählen')}</button>`;
+  setDock(`<div class="startbar">${btn}</div>${tabbar()}`);
+}
+function limBox(){
+  const kmode = CARDS_ON && S.mode === 'k', raw = kmode ? cardPool().length : buildPool().length;
+  if(raw < 6) return '';
+  const mn = 5, val = SET.lim ? Math.min(SET.lim, raw) : raw, u = kmode ? 'Karten' : 'Fragen';
+  return `<div class="limbox"><div class="limhead"><span class="sl" style="margin:0">Pro Durchlauf</span><b id="limv" aria-live="polite">${val >= raw ? 'Alle (' + raw + ')' : val + ' von ' + raw}</b></div><input type="range" class="rng" id="lim" min="${mn}" max="${raw}" step="1" value="${val}" aria-label="${u} pro Durchlauf"><div class="tk"><span>${mn}</span><span>Alle</span></div></div>`;
 }
 function renderHome(){
   const d = S.data, groups = groupsOf(d), total = totalQ(), h = hist();
@@ -455,12 +477,12 @@ function renderHome(){
     <div class="sec"><span>Paragrafen · ${S.sel.size} gewählt</span><span class="mini"><button data-act="all">Alle</button><button data-act="none">Keine</button></span></div>
     ${d.paragrafen.length > SEARCH_MIN ? `<input class="search" id="q" type="search" placeholder="Paragraf oder Stichwort suchen …" value="${esc(S.q)}" aria-label="Paragrafen suchen">` : ''}
     ${list || '<p class="empty">Keine Treffer.</p>'}
-    <div class="lvbar"><div class="sec"><span>Schwierigkeit</span></div><div class="klvs" role="group" aria-label="Schwierigkeit">${[1,2,3].map(n => `<button class="${qLevels().has(n)?'on':''}" data-act="lv" data-l="${n}" aria-pressed="${qLevels().has(n)}">${LVN[n]}</button>`).join('')}</div></div>
+    ${modeBar()}${limBox()}
     <button class="quiet" data-act="only" role="checkbox" aria-checked="${S.onlyOpen}" style="margin-top:6px"><span class="cb ${S.onlyOpen?'on':''}">${S.onlyOpen?'✓':''}</span>Nur Fragen, die ich noch nicht sicher kann</button>
     <button class="fold" data-act="klfold" aria-expanded="${S.klOpen}"><span>Klausuren (${nk})</span><span aria-hidden="true">${S.klOpen?'⌃':'⌄'}</span></button>
     ${S.klOpen ? `<div id="stk" style="padding-top:6px">${stackList(false)}</div>${stackSave()}` : ''}
     <p class="note">Quelle der Gesetzestexte: ${esc(d.quelle)}, abgerufen am ${esc(d.abgerufen)}. Die Fragen wurden von einer KI aus dem Wortlaut erstellt und können Fehler enthalten. Im Zweifel gilt der Gesetzestext, der nach jeder Antwort angezeigt wird. Keine Rechtsberatung.</p>`;
-  setDock(`<div class="startbar"><button class="btn" data-act="start" ${pool?'':'disabled'}>${pool ? 'Start · '+pool+' Fragen'+(raw>pool ? ' (von '+raw+')' : '') : (S.sel.size ? (S.onlyOpen ? 'Keine offenen Fragen' : 'Keine Fragen für diese Stufen') : 'Paragrafen wählen')}</button></div>${tabbar()}`);
+  homeDock();
   const q = $('#q'); if(q) q.oninput = e => { S.q = e.target.value; render(true); const n=$('#q'); if(n){ n.focus(); n.setSelectionRange(n.value.length,n.value.length); } };
 }
 
@@ -570,7 +592,102 @@ function checkAnswer(){
 }
 function maybeSay(prob){
   if(S.pop || S.tour !== null || !SET.says || Date.now() - S.lastSay < 60000 || Math.random() >= prob) return;
-  S.lastSay = Date.now(); setTimeout(() => { if(S.view === 'quiz') LX.sayIdx(Math.floor(Math.random()*LX.SAYS.length)); }, 700);
+  S.lastSay = Date.now(); setTimeout(() => { if(S.view === 'quiz') LX.sayShort(Math.floor(Math.random()*LX.SHORT.length)); }, 700);
+}
+
+/* ---------- Karteikarten (Wunsch 41) ---------- */
+const LVN = {1:'leicht', 2:'mittel', 3:'schwer'};
+const cardBoxes = () => store.get('rt.cards', {});
+const cardLv = () => { const a = store.get('rt.lv', [1,2]); return new Set(Array.isArray(a) && a.length ? a.filter(n => n === 1 || n === 2 || n === 3) : [1,2]); };   // Stufen gelten für Fragen und Karten
+const visibleQ = q => cardLv().has(q.lv || 2);
+const kcount = n => KARTEN.filter(c => c.n === n).length;
+function cardPool(){
+  const lv = cardLv(), B = cardBoxes();
+  return KARTEN.filter(c => S.sel.has(c.n) && lv.has(c.lv) && (!S.onlyOpen || (B[c.id] || 1) < 3));
+}
+function modeBar(){
+  const k = CARDS_ON, m = k && S.mode === 'k' ? 'k' : 'mc', lv = cardLv();
+  return `<div class="modebar"><div class="sec"><span>Modus</span></div><div class="mseg"><button class="${m==='mc'?'on':''}" data-act="mode" data-m="mc" aria-pressed="${m==='mc'}">Multiple Choice<small>4 Aussagen</small></button>${k
+    ? `<button class="kb ${m==='k'?'on':''}" data-act="mode" data-m="k" aria-pressed="${m==='k'}">Karteikarten<small>Umdrehen</small></button>`
+    : `<button class="soon" data-act="mode-soon" aria-disabled="true">Karteikarten<small>Umdrehen</small><span class="bd">Bald</span></button>`}</div>
+    <div class="sec" style="margin-top:6px"><span>Schwierigkeit</span></div><div class="klvs" role="group" aria-label="Schwierigkeit">${[1,2,3].map(n => `<button class="${lv.has(n)?'on':''}" data-act="klv" data-l="${n}" aria-pressed="${lv.has(n)}">${LVN[n]}</button>`).join('')}</div></div>`;
+}
+function startCards(){
+  const B = cardBoxes(), pool = shuffle(cardPool());
+  if(!pool.length){ toast('Keine Karten für diese Auswahl'); return; }
+  const items = pool.map((c,i) => ({c, i})).sort((a,b) => ((B[a.c.id]||1) - (B[b.c.id]||1)) || (a.i - b.i)).map(x => ({c:x.c, retry:false})).slice(0, SET.lim || pool.length);   // niedrige Fächer zuerst
+  S.cr = {items, i:0, back:false, yes:0, no:0};
+  S.view = 'cards'; render();
+}
+function kDock(){
+  const r = S.cr;
+  return r.back
+    ? `<div class="actbar"><button class="btn rno" data-act="kno">Nicht gewusst</button><button class="btn ryes" data-act="kyes">Gewusst</button></div>`
+    : `<div class="actbar"><button class="btn alt" data-act="kquit" style="flex:1">Beenden</button><button class="btn kc" data-act="kflip" style="flex:2">Umdrehen</button></div>`;
+}
+function renderCards(){
+  const r = S.cr, it = r.items[r.i], c = it.c, total = r.items.length, B = cardBoxes();
+  const p = S.data.paragrafen.find(x => x.n === c.n), lbl = p ? p.label : c.n;
+  $('#app').innerHTML = `<div class="meta"><span>Karte ${r.i+1} / ${total} · ${esc(lbl)} ${esc(S.law)}</span><span>${r.yes} gewusst · ${r.no} nicht</span></div>
+    <div class="bar kbar"><i style="width:${r.i/total*100}%"></i></div>
+    <div class="kscene"><div class="kflip ${r.back?'back':''}" id="kflip" data-act="kflip" role="button" tabindex="0" aria-label="Karte umdrehen">
+      <div class="kface"><div class="klab"><span>Frage</span><span class="klv">${LVN[c.lv] || ''}</span></div><div class="ktxt"><div>${linkRefs2(esc(c.q), c.n)}</div></div><div class="khint">Tippen zum Umdrehen</div></div>
+      <div class="kface kr"><div class="klab"><span>Antwort</span><span>Fach ${B[c.id] || 1}</span></div><div class="ktxt"><div>${linkRefs2(esc(c.a), c.n)}</div></div><div class="ksrc">${esc(c.s)}</div></div>
+    </div></div>`;
+  setDock(kDock());
+}
+function rateCard(ok){
+  const r = S.cr, it = r.items[r.i];
+  if(!it.retry){
+    const B = cardBoxes(), cur = B[it.c.id] || 1;
+    B[it.c.id] = ok ? Math.min(3, cur + 1) : 1; store.set('rt.cards', B);
+    if(ok) r.yes++; else r.no++;
+  }
+  if(!ok && !it.retry) r.items.push({c:it.c, retry:true});
+  r.i++; r.back = false;
+  if(r.i >= r.items.length) S.view = 'cardsdone';
+  render();
+}
+function renderCardsDone(){
+  const r = S.cr, tot = r.yes + r.no, B = cardBoxes(), lv = cardLv();
+  const pool = KARTEN.filter(c => S.sel.has(c.n) && lv.has(c.lv)), f = [1,2,3].map(k => pool.filter(c => (B[c.id] || 1) === k).length);
+  $('#app').innerHTML = `<div class="top"><h1>Karten geschafft</h1></div><div class="rbox">${LX.svg(r.no ? 'normal' : 'happy')}</div>
+    <div class="card kdone"><b>${r.yes} von ${tot} gewusst</b><span class="mute">Nicht gewusste Karten kamen in dieser Runde noch einmal.</span>
+      <div class="kbx"><span>Fach 1 <b>${f[0]}</b></span><span>Fach 2 <b>${f[1]}</b></span><span>Fach 3 <b>${f[2]}</b></span></div></div>`;
+  setDock(`<div class="actbar"><button class="btn alt" data-act="home" style="flex:1">Zu „Lernen“</button><button class="btn kc" data-act="kagain" style="flex:2">Nochmal</button></div>`);
+}
+
+/* ---------- Verweise in Karten: Pop-up für §, Absatz und andere Gesetze ---------- */
+const LAWID = {BDG:'10008470', AHG:'10000227', OHG:'10000442', PolBEG:'10000978', StGB:'10002296', StPO:'10002326', GehG:'10008163', MSchG:'10008464', 'B-VG':'10000138'};
+const REF2 = /§§?\s?\d+[a-z]?(?:\s+Abs\.\s?\d+[a-z]?(?:\s*(?:,|und|bis|oder)\s*\d+[a-z]?)*)?(?:\s+Z\s?\d+[a-z]?(?:\s*(?:,|und|bis|oder)\s*\d+[a-z]?)*)?(?:\s+lit\.\s?[a-z])?(?:\s+(BDG|GehG|StGB|StPO|MSchG|AHG|OHG|PolBEG|B-VG)(?:\s+1979)?)?|\bAbs\.\s?(\d+[a-z]?)/g;
+const FOREIGN = /^\s+(?:des\s+|der\s+)?(?:(Strafgesetzbuch)|PG\b|ASVG\b|VwGVG\b|DHG\b|AVG\b|VStG\b|StVO\b|[A-ZÄÖÜ][A-Za-zÄÖÜäöü\-]*(?:gesetz|gesetzbuch|ordnung)\w*)/;
+const ctxLaw = n => n === 'Regress' ? 'AHG' : (['AHG','OHG','PolBEG'].includes(n) ? n : 'BDG');
+function absText(txt, a){
+  const m = new RegExp('(?:^|\\n)\\(' + a + '\\)\\s*([\\s\\S]*?)(?=\\n\\(\\d+[a-z]?\\)\\s|$)').exec(txt || ''); if(!m) return '';
+  let t = m[1].replace(/\s+/g, ' ').trim(), cut = false;
+  if(t.length > 430){ const i = t.lastIndexOf('. ', 430); t = i > 150 ? t.slice(0, i + 1) : t.slice(0, 430).replace(/\s\S*$/, '') + ' …'; cut = true; }
+  return t;
+}
+function refInfo(law, n, abs){
+  const k = (REFK[law] || {})[n], p = law === 'BDG' && S.data ? S.data.paragrafen.find(x => x.n === n) : null;
+  const kurz = k && k.k, title = (p && p.title) || (k && k.t) || '';
+  let text = '';
+  if(abs){ const t = absText(p ? p.text : (k && k.text), abs); if(t) text = 'Abs. ' + abs + ': ' + t; }
+  if(!text && kurz) text = kurz;
+  if(!text) return null;
+  return {gesetz:law, match:'§ ' + n, titel:'§ ' + n + (abs ? ' Abs. ' + abs : '') + ' ' + law + (title ? ' · ' + title : ''), text,
+    ris: LAWID[law] ? `https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=${LAWID[law]}&Paragraf=${encodeURIComponent(n)}` : ''};
+}
+function linkRefs2(h, ctxN){
+  return h.replace(REF2, (m, law, bare, off, str) => {
+    if(m.startsWith('§§')) return m;
+    if(!law && !bare){ const f = FOREIGN.exec(str.slice(off + m.length)); if(f){ if(!f[1]) return m; law = 'StGB'; } }   // Verweis auf ein anderes Gesetz ohne Pop-up-Text
+    let l = law || ctxLaw(ctxN), n, a;
+    if(bare){ if(!/^\d/.test(ctxN)) return m; n = ctxN; a = bare; }
+    else { const mm = /§\s?(\d+[a-z]?)(?:\s+Abs\.\s?(\d+[a-z]?))?/.exec(m); n = mm[1]; a = mm[2]; }
+    if(!refInfo(l, n, a)) return m;
+    return `<span class="ref" role="button" tabindex="0" data-act="ref2" data-l="${l}" data-n="${n}" data-a="${a || ''}">${m}</span>`;
+  });
 }
 
 /* ---------- Auswertung ---------- */
@@ -615,11 +732,11 @@ function renderSettingsView(){
     const G = grades();
     h = `<div class="top"><h1>Einstellungen</h1></div><div style="margin:6px 0 10px">${back('Zurück')}</div>`
       + row('grades', '1', 'Notenschlüssel', 'Note 1 ab ' + gs(G[0]) + ' %')
-      + row('learn', '▤', 'Lernen', (SET.lim ? SET.lim + ' Fragen' : 'Alle Fragen') + ' · ' + (SET.ord === 'mix' ? 'gemischt' : 'nach Paragraf'))
+      + row('learn', '▤', 'Lernen', (SET.ord === 'mix' ? 'Gemischt' : 'Nach Paragraf'))
       + row('look', '◐', 'Darstellung', ({system:'System', light:'Hell', dark:'Dunkel'})[SET.theme] + ' · Schrift ' + ({s:'klein', n:'normal', l:'groß'})[SET.font])
       + row('home', '⌂', 'Zum Home-Bildschirm', isStandalone() ? 'Als App installiert' : 'Anleitung · empfohlen')
       + row('tour', '?', 'Tutorial', 'Kurze Tour noch einmal ansehen')
-      + (CL.length ? row('chg', '↻', 'Änderungsprotokoll', 'Was sich zuletzt geändert hat') : '')
+      + (CL.length ? row('chg', '↻', 'Change-log', 'Was sich zuletzt geändert hat') : '')
       + row('legal', '§', 'Rechtliches', 'Impressum · Datenschutz · Nutzung · Lizenzen')
       + '<p class="hint" style="margin-top:10px">Alle Einstellungen gelten nur auf diesem Gerät.</p>';
   } else if(S.set === 'grades'){
@@ -631,11 +748,8 @@ function renderSettingsView(){
       <p class="hint">Beispiel: 40 von 48 Punkten = ${gs(ex)} % = Note ${nt}. Die Werte müssen von Note 1 bis Note 4 kleiner werden. Eine Änderung gilt für neue Ergebnisse, gespeicherte Klausuren behalten ihre Note.</p>
       <div class="stack2" style="margin-top:14px"><button class="btn" data-act="grades-save">Speichern</button><button class="btn alt" data-act="grades-reset">Standard wiederherstellen (${DEF_GRADES.map(fmtNum).join(' / ')} %)</button></div>`;
   } else if(S.set === 'learn'){
-    const tot = totalQ(), mn = Math.min(5, tot), val = SET.lim ? Math.min(SET.lim, tot) : tot;
     h = back('Einstellungen') + `<div class="top"><h1>Lernen</h1></div>
-      <div class="sl">Fragen pro Durchlauf</div><div class="big2" id="limv" aria-live="polite">${SET.lim ? SET.lim + ' Fragen' : 'Alle Fragen (' + tot + ')'}</div>
-      <input type="range" class="rng" id="lim" min="${mn}" max="${tot}" step="1" value="${val}" aria-label="Fragen pro Durchlauf"><div class="tk"><span>${mn}</span><span>${Math.round((mn+tot)/3)}</span><span>${Math.round((mn+tot)*2/3)}</span><span>Alle</span></div>
-      <p class="hint">Ganz rechts bedeutet alle Fragen. Begrenzt „Start“ auf diese Zahl, bei mehr Fragen werden zufällig so viele gezogen. Gespeicherte Klausuren laufen immer vollständig, ohne Begrenzung.</p>
+      <p class="hint" style="margin-top:0">Die Zahl der Fragen pro Durchlauf stellst du jetzt direkt auf „Lernen“ ein, unter der Schwierigkeit.</p>
       <div class="sl">Reihenfolge</div>${seg('set-ord', SET.ord, [['mix','Gemischt'],['para','Nach Paragraf']])}
       <p class="hint">${SET.ord === 'mix' ? 'Fragen aus allen gewählten Paragrafen durcheinander.' : 'Erst alle Fragen eines Paragrafen, dann der nächste. Gilt auch für Klausuren und „Fehler wiederholen“.'}</p>
       ${sw('only', S.onlyOpen, 'Nur unsichere Fragen', 'Als Standard beim Start. Gilt auch auf „Lernen“.')}`;
@@ -648,7 +762,7 @@ function renderSettingsView(){
       ${sw('set-rm', SET.rm, 'Bewegungen reduzieren', 'Lexi und Animationen bleiben ruhig. Zusätzlich gilt die Einstellung „Bewegung reduzieren“ des iPhones.')}
       ${sw('set-says', SET.says, 'Sprüche von Lexi', 'Lexi sagt gelegentlich einen kurzen Spruch.')}`;
   } else if(S.set === 'chg'){
-    h = back('Einstellungen') + '<div class="top"><h1>Änderungsprotokoll</h1></div><div class="doc">' + CL.map(e => `<h2>${esc(e.d)}</h2><ul class="cl">${clItems(e)}</ul>`).join('') + '</div>';
+    h = back('Einstellungen') + '<div class="top"><h1>Change-log</h1></div><div class="doc">' + CL.map((e,i) => `<details class="up ${i ? 'old' : ''}" ${i ? '' : 'open'}><summary><span class="uv">${esc(clVer(e))}</span><span class="un"><b>${esc(e.n || 'Update')}</b><span>${esc(e.d)}</span></span><i class="chev"></i></summary><ul class="cl">${clItems(e)}</ul></details>`).join('') + '</div>';
   } else if(S.set === 'home'){
     h = back('Einstellungen') + `<div class="top"><h1>Zum Home-Bildschirm</h1></div><div class="rbox" style="margin-top:6px">${LX.svg('happy')}</div>
       <div class="card"><b style="font-size:14px">Status</b><div class="mute" style="font-size:13px;margin-bottom:6px">${isStandalone() ? 'Als App installiert.' : 'Im Browser geöffnet. Nach dem Hinzufügen steht hier „Als App installiert“.'}</div>${stepsHtml()}</div>
@@ -697,7 +811,7 @@ function overlayHtml(){
   if(S.pop === 'ask') return `<div class="dim"></div><div class="dlg" role="dialog" aria-modal="true" aria-label="Zum Home-Bildschirm hinzufügen">${LX.svg('normal')}<h3>LexCoach zum Home-Bildschirm?</h3><p>Dann öffnet sich die App wie eine echte App, ohne Adressleiste und auch offline.</p><button class="btn two" data-act="a2-yes"><span>Ja, zeig mir wie</span><small>Wird empfohlen, du Fuchs.</small></button><button class="btn alt" data-act="a2-later" style="margin-top:8px">Später</button></div>`;
   if(S.pop === 'log' && CL.length){
     const e = CL[0], old = CL.slice(1, 4);
-    return `<div class="dim"></div><div class="dlg clg" role="dialog" aria-modal="true" aria-label="Neu in LexCoach"><h3>Neu in LexCoach</h3><span class="ver">Update vom ${esc(e.d)}</span><ul class="cll">${e.t.map(x => `<li><i></i><span><b>${esc(x.h)}</b><span>${esc(x.x)}</span></span></li>`).join('')}</ul>${old.length ? `<button class="more" data-act="log-more" aria-expanded="${!!S.logMore}"><span>Frühere Updates</span><span aria-hidden="true">${S.logMore ? '⌃' : '⌄'}</span></button>${S.logMore ? `<div class="old">${old.map(o => `<span><b>${esc(o.d)}</b> ${esc(o.t.map(x => x.h).join(', '))}</span>`).join('')}<span>Alle Updates: Einstellungen › Änderungsprotokoll</span></div>` : ''}` : ''}<button class="btn" data-act="log-close">Alles klar</button></div>`;
+    return `<div class="dim"></div><div class="dlg clg" role="dialog" aria-modal="true" aria-label="Neu in LexCoach"><h3>Neu in LexCoach</h3><span class="ver">Update ${esc(clVer(e))} · ${esc(e.n || e.d)}</span><ul class="cll">${e.t.map(x => `<li><i></i><span><b>${esc(x.h)}</b><span>${esc(x.x)}</span></span></li>`).join('')}</ul>${old.length ? `<button class="more" data-act="log-more" aria-expanded="${!!S.logMore}"><span>Frühere Updates</span><span aria-hidden="true">${S.logMore ? '⌃' : '⌄'}</span></button>${S.logMore ? `<div class="old">${old.map(o => `<span><b>${esc(clVer(o))} ${esc(o.n || o.d)}</b> ${esc(o.t.map(x => x.h).join(', '))}</span>`).join('')}<span>Alle Updates: Einstellungen › Change-log</span></div>` : ''}` : ''}<button class="btn" data-act="log-close">Alles klar</button></div>`;
   }
   if(S.pop === 'steps') return `<div class="dim"></div><div class="dlg" role="dialog" aria-modal="true" aria-label="Anleitung">${LX.svg('happy')}<h3>So geht’s</h3>${stepsHtml()}<button class="btn" data-act="a2-done">Verstanden</button></div>`;
   if(S.tour === 'intro') return `<div class="dim"></div><div class="dlg" role="dialog" aria-modal="true" aria-label="Tutorial">${LX.svg('happy')}<h3>Kurze Tour?</h3><p>Ich bin Lexi. In einer Minute zeige ich dir, wie alles funktioniert.</p><button class="btn" data-act="tour-start">Los geht’s</button>${S.skipPos ? '<div class="skipslot"></div>' : '<button class="btn alt" data-act="tour-skip" style="margin-top:8px">Überspringen</button>'}</div>${S.skipPos ? '<button class="btn alt skipf" data-act="tour-skip">Überspringen</button>' : ''}`;
@@ -768,7 +882,7 @@ function renderEgg(root){
     <div class="dlg" role="dialog" aria-modal="true" aria-label="Glückwunsch">${LX.svg('happy', 'dance-hop')}<h3>Beamter des Tages!</h3><p>Herzlichen Glückwunsch zu 100 Prozent. Hast du überhaupt Freizeit, oder lernst du nur?</p><button class="btn" data-act="close-sheet">Nur noch kurz …</button></div>`;
 }
 function renderRef(root, sh){
-  const r = REFS[sh.i]; if(!r){ closeSheet(); return; }
+  const r = sh.info || REFS[sh.i]; if(!r){ closeSheet(); return; }
   root.innerHTML = `<div class="dim clear" data-act="close-sheet"></div>
     <div class="pop" id="pop" role="dialog" aria-label="Verweis ${esc(r.match)}"><span class="ptag">${esc(r.gesetz || 'Verweis')}</span><h3>${esc(r.titel || r.match)}</h3><p>${esc(r.text)}</p>
       <div class="prow">${r.ris ? `<a href="${esc(r.ris)}" target="_blank" rel="noopener">Im RIS öffnen</a>` : '<span></span>'}<button class="sm" data-act="close-sheet">Schließen</button></div></div>`;
@@ -831,7 +945,16 @@ function closeSheetSilently(){ S.sheet = null; const r = $('#sheet'); if(r) r.in
 
 /* ================= Aktionen (Event-Delegation) ================= */
 const ACT = {
-  lv(b){ const lv = qLevels(), n = +b.dataset.l; if(lv.has(n)){ if(lv.size > 1) lv.delete(n); } else lv.add(n); store.set('rt.lv', [...lv].sort()); render(true); },
+  mode(b){ S.mode = b.dataset.m === 'k' && CARDS_ON ? 'k' : 'mc'; store.set('rt.mode', S.mode); render(true); },
+  klv(b){ const lv = cardLv(), n = +b.dataset.l; if(lv.has(n)){ if(lv.size > 1) lv.delete(n); } else lv.add(n); store.set('rt.lv', [...lv].sort()); render(true); },
+  kstart(){ startCards(); },
+  kagain(){ if(!cardPool().length){ toast('Keine offenen Karten'); S.view = 'home'; render(); return; } startCards(); },
+  kflip(){ const r = S.cr; if(!r) return; r.back = !r.back; const f = $('#kflip'); if(f) f.classList.toggle('back', r.back); setDock(kDock()); },
+  kyes(){ rateCard(true); },
+  kno(){ rateCard(false); },
+  kquit(){ S.view = (S.cr && S.cr.i > 0) ? 'cardsdone' : 'home'; render(); },
+  ref2(b, e){ e.stopPropagation(); const info = refInfo(b.dataset.l, b.dataset.n, b.dataset.a || undefined); if(!info) return; const rc = b.getBoundingClientRect(); openSheet({kind:'ref', info, rect:{top:rc.top, bottom:rc.bottom}}, '#sheet .sm'); },
+  'mode-soon'(){ toast('Karteikarten kommen bald. Bis dahin: Multiple Choice.'); },
   tab(b){ S.view = b.dataset.v; render(); },
   'to-start'(){ S.view = 'start'; render(); },
   'law-open'(){ S.view = 'home'; render(); },
@@ -929,7 +1052,7 @@ const ACT = {
   reset(){ if(confirm('Gesamten Lernfortschritt auf diesem Gerät löschen?')){ store.set('rt.hist2', {}); render(true); toast('Fortschritt zurückgesetzt'); } }
 };
 let last = {act:'', t:-1000};
-const NAV = ['check','next','start','retry','quit','stk-save','stk-load','stk-start','home','tour-next','tour-start','a2-yes','a2-later','a2-done'];
+const NAV = ['kstart','kyes','kno','kquit','kagain','check','next','start','retry','quit','stk-save','stk-load','stk-start','home','tour-next','tour-start','a2-yes','a2-later','a2-done'];
 document.addEventListener('click', e => {
   const b = e.target.closest('[data-act]'); if(!b || b.disabled) return;
   const a = b.dataset.act;
@@ -941,7 +1064,7 @@ document.addEventListener('click', e => {
 document.addEventListener('input', e => {
   const t = e.target;
   if(S.view === 'settings' && S.set === 'grades' && t.dataset && t.dataset.gi !== undefined){ S.gdraft[+t.dataset.gi] = t.value; const g = $('#g5'); if(g) g.textContent = 'unter ' + (S.gdraft[3] || '…') + ' %'; }
-  if(t.id === 'lim' && S.view === 'settings'){ const tot = totalQ(), v = +t.value; saveSet({lim: v >= tot ? 0 : v}); const l = $('#limv'); if(l) l.textContent = SET.lim ? SET.lim + ' Fragen' : 'Alle Fragen (' + tot + ')'; }
+  if(t.id === 'lim' && S.view === 'home'){ const raw = (CARDS_ON && S.mode === 'k') ? cardPool().length : buildPool().length, v = +t.value; saveSet({lim: v >= raw ? 0 : v}); const l = $('#limv'); if(l) l.textContent = v >= raw ? 'Alle (' + raw + ')' : v + ' von ' + raw; homeDock(); }
 });
 document.addEventListener('keydown', e => {
   if((e.key === 'Enter' || e.key === ' ') && e.target && e.target.classList && e.target.classList.contains('ref')){ e.preventDefault(); e.target.click(); return; }
@@ -964,7 +1087,7 @@ window.addEventListener('resize', () => { if(typeof S.tour === 'number') placeTo
 /* ================= Start ================= */
 (async function boot(){
   applySettings();
-  try{ S.data = await loadLaw(S.law); await Promise.all([loadRefs(), loadNews(), loadChangelog()]); }
+  try{ S.data = await loadLaw(S.law); await Promise.all([loadRefs(), loadNews(), loadChangelog(), loadCards()]); }
   catch(e){ $('#app').innerHTML = '<h1>LexCoach</h1><p class="mute">Daten konnten nicht geladen werden. Bitte Verbindung prüfen und neu öffnen.</p>'; return; }
   const valid = new Set(order());
   S.sel = new Set(store.get('rt.sel.'+S.law, []).filter(n => valid.has(n)));

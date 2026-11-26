@@ -51,10 +51,11 @@ svg.m{display:block;overflow:visible;transform-origin:50% 95%}
 .slump{animation:slump 2.4s ease-in-out infinite alternate}
 @keyframes slump{from{transform:translateY(0) scaleY(1)}to{transform:translateY(5px) scaleY(.96)}}
 
-.say{position:fixed;left:12px;top:70px;z-index:45;width:max-content;max-width:66%;isolation:isolate;color:#14213D;padding:15px 36px 17px;font-size:11.5px;line-height:1.35;text-align:center;filter:drop-shadow(0 5px 6px var(--shadow));opacity:0;scale:.5;transform-origin:50% 0;transition:opacity .3s;pointer-events:none;z-index:4}
-.say.show{opacity:1;scale:1;animation:pop .5s cubic-bezier(.3,1.5,.5,1) both,bob 4.5s ease-in-out .5s infinite}
-.say:has(.sr){padding:12px 28px 14px 16px;text-align:center}
-.say .sr{display:flex;align-items:center;gap:8px}.say .sr svg{width:64px;height:auto;flex:none}
+@font-face{font-family:"Comic Neue";font-weight:400;font-style:normal;font-display:swap;src:url(fonts/comic-neue-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Comic Neue";font-weight:700;font-style:normal;font-display:swap;src:url(fonts/comic-neue-latin-700-normal.woff2) format("woff2")}
+.say{position:fixed;left:12px;top:12px;z-index:45;width:max-content;max-width:min(54vw,230px);isolation:isolate;color:#14213D;padding:7px 15px 9px;font:700 12.5px/1.2 "Comic Neue","Comic Sans MS","Chalkboard SE",sans-serif;text-align:center;filter:drop-shadow(0 4px 5px var(--shadow));opacity:0;scale:.6;transform-origin:100% 60%;transition:opacity .25s;pointer-events:none}
+.say.show{opacity:1;scale:1;animation:pop .45s cubic-bezier(.3,1.5,.5,1) both}
+.hush .top h1{opacity:0;transition:opacity .2s}.top h1{transition:opacity .2s}
 .chip.sp{font-weight:500}
 .sec .leg{text-transform:none;letter-spacing:0;font-weight:600;font-size:11px;display:inline-flex;align-items:center;gap:5px}.sec .leg i{width:12px;height:12px;border-radius:4px;background:var(--acc)}
 .newsl.c{padding:8px 0;align-items:center}.newsl.c .nx{flex:1;min-width:0}.newsl.c .nh{display:flex;justify-content:space-between;align-items:baseline;gap:8px}.newsl.c .nt{font-weight:700;font-size:13.5px;margin:0;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.newsl.c .dl{font-size:11px;flex:none}
@@ -123,9 +124,51 @@ html.rm .jail{animation:jailf 3.8s both!important}
 .clg .cll li b{display:block;font-size:13.5px}.clg .cll li span span{color:var(--mute);font-size:12.5px}
 .clg .more{display:flex;justify-content:space-between;width:100%;border:0;border-top:1px solid var(--line);background:none;padding:9px 2px;font-size:12.5px;color:var(--mute);margin-bottom:8px}
 .clg .old{font-size:12px;color:var(--mute);margin:0 0 8px;display:grid;gap:4px}.clg .old b{color:var(--ink)}
-ul.cl{list-style:none;margin:0 0 6px;padding:0;display:grid;gap:8px}ul.cl li{font-size:13px;line-height:1.4;color:var(--mute)}ul.cl li b{display:block;color:var(--ink);font-size:13.5px}
-/* Schwierigkeitsstufen auf „Lernen“ */
-.lvbar{margin-top:6px}
+/* Change-log in den Einstellungen: je Update ein eingeklappter Kasten */
+.up{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:10px}
+.up summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:10px;padding:12px 14px}
+.up summary::-webkit-details-marker{display:none}
+.up .uv{font-size:12px;font-weight:700;color:var(--on);background:var(--acc);border-radius:8px;padding:3px 8px;font-variant-numeric:tabular-nums}
+.up.old .uv{background:var(--soft);color:var(--acc)}
+.up .un{min-width:0}.up .un b{display:block;font-size:14.5px;color:var(--ink)}.up .un span{display:block;font-size:12px;font-weight:500;color:var(--mute);margin-top:1px}
+.up .chev{width:9px;height:9px;border-right:2px solid var(--mute);border-bottom:2px solid var(--mute);transform:rotate(45deg);transition:transform .2s;margin-right:4px}
+.up[open] .chev{transform:rotate(-135deg)}
+ul.cl{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+ul.cl li{padding:11px 14px;font-size:13px;line-height:1.4;color:var(--mute);font-style:italic}
+ul.cl li+li{border-top:1px solid var(--line)}
+ul.cl li b{display:block;color:var(--ink);opacity:.85;font-size:12.5px;font-weight:600;font-style:normal;margin-bottom:2px}
+/* Moduswahl auf „Lernen“ */
+.modebar{margin-top:6px}
+.mseg{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.mseg button{position:relative;border:1.5px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;padding:11px 8px;font:600 14px var(--font);display:grid;gap:2px;text-align:center;justify-items:center;align-content:center}
+.mseg button small{font-weight:500;font-size:12px;color:var(--mute)}
+.mseg button.on{border-color:var(--acc);background:var(--soft)}
+.mseg button.soon{opacity:.65;border:1.5px dashed var(--mute)}
+.mseg .bd{font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--kc);background:var(--kc-soft);border-radius:99px;padding:2px 8px;margin-top:2px}
+/* Karteikarten (Wunsch 41): Petrol, Flip */
+.btn.kc{background:var(--kc);color:var(--kc-on)}
+.btn.rno{background:var(--bad-bg);color:var(--bad);flex:1}.btn.ryes{background:var(--ok-bg);color:var(--ok);flex:1}
+.mseg .kb.on{border-color:var(--kc);background:var(--kc-soft)}
 .klvs{display:flex;gap:6px;margin-top:8px}
 .klvs button{border:1.5px solid var(--line);background:var(--card);color:var(--ink);border-radius:99px;padding:6px 13px;font-size:13px;font-weight:600}
 .klvs button.on{border-color:var(--acc);background:var(--soft);color:var(--acc)}
+.modebar:has(.kb.on) .klvs button.on{border-color:var(--kc);background:var(--kc-soft);color:var(--kc)}
+.kbar i{background:var(--kc)}
+.kscene{perspective:1100px;margin-top:6px}
+.kflip{display:grid;min-height:280px;transform-style:preserve-3d;transition:transform .6s cubic-bezier(.3,.7,.2,1);cursor:pointer;text-align:left}
+.kflip.back{transform:rotateY(180deg)}
+.kface{grid-area:1/1;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:18px;border:1.5px solid var(--line);border-top:5px solid var(--kc);background:var(--card);box-shadow:0 10px 24px -10px var(--shadow);padding:16px 18px 18px;display:flex;flex-direction:column;gap:10px}
+.kface.kr{transform:rotateY(180deg);background:var(--kc-soft);border-color:var(--kc)}
+.klab{display:flex;justify-content:space-between;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--kc)}
+.klv{font-weight:600;text-transform:none;letter-spacing:0;background:var(--warn-bg);color:var(--warn);border-radius:99px;padding:1px 8px}
+.ktxt{flex:1;display:flex;align-items:center;font-size:19px;line-height:1.4;font-weight:600}
+.kr .ktxt{font-size:16px;font-weight:500}
+.khint{font-size:12px;color:var(--mute);text-align:center}
+.ksrc{font-size:12px;color:var(--mute);border-top:1px solid var(--line);padding-top:8px}
+.kdone{display:grid;gap:8px;text-align:center}.kdone b{font-size:18px}
+.kbx{display:flex;justify-content:center;gap:8px;margin-top:6px}.kbx span{border:1px solid var(--line);border-radius:8px;padding:4px 10px;font-size:13px;color:var(--mute)}.kbx b{font-size:14px;color:var(--kc)}
+
+/* Regler „Pro Durchlauf“ auf Lernen */
+.limbox{margin-top:10px;display:grid;gap:2px}
+.limhead{display:flex;justify-content:space-between;align-items:baseline}.limhead b{font-size:16px}
+.modebar:has(.kb.on)~.limbox .rng{accent-color:var(--kc)}

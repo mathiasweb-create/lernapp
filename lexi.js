@@ -59,6 +59,7 @@ var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&
     var th,dl,tip,tx;
     if(mode==='l'){var fb=el.parentNode&&el.parentNode.querySelector('.mb'),my=h*.62;if(fb){var fh=fb.offsetHeight;my=(h-fh)/2+fh*(152/260)}
       my=Math.max(h*.25,Math.min(h*.88,my));var ry0=Math.max(1,ry),rootY=Math.max(h*.22,Math.min(h*.85,my-6));th=Math.PI-Math.asin(Math.max(-.95,Math.min(.95,(rootY-cy)/ry0)));dl=.2;tip=[-30,my]}
+    else if(mode==='h'){var ty=h/2+Math.max(3,h*.12),ry1=Math.max(1,ry);th=Math.asin(Math.max(-.9,Math.min(.9,(ty-4-cy)/ry1)));dl=.22;tip=[w+13,ty]}
     else{tx=mode==='s'?+el.dataset.tx:cx;tx=Math.max(cx-rx*.8,Math.min(cx+rx*.8,tx));th=-Math.acos((tx-cx)/rx);dl=.13;var R2=P(th);tip=[tx,R2[1]-21]}
     var p1=P(th-dl),p2=P(th+dl),f=function(p){return p[0].toFixed(1)+' '+p[1].toFixed(1)};
     var c1=[(p1[0]+tip[0])/2+(p2[0]-p1[0])*.35,(p1[1]+tip[1])/2+(p2[1]-p1[1])*.35],c2=[(p2[0]+tip[0])/2+(p1[0]-p2[0])*.35,(p2[1]+tip[1])/2+(p1[1]-p2[1])*.35];
@@ -71,24 +72,29 @@ var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&
   function paintAll(){document.querySelectorAll('.bub').forEach(paint)}
 
 var SAYS=['Huggi Guggi','Den Truthahn würgen','Kollege Lenz','Willkommen im Kurs, Kollege Zorn','Maschinengewehr Gottes','Diesen Hier!','Hundsviech-Paragraf','Dann gehn ma sitzen','Meine Damen und Herren'],ANGRY=5,BARS=7;
+if(document.fonts&&document.fonts.load){try{document.fonts.load('700 12px "Comic Neue"')}catch(e){}}
 var sayT=null,idleT=null,lastSay=0,sayN=0,blocked=false,enabled=true;
-function hide(){var e=$('#say');if(e)e.classList.remove('show')}
-function say(t,mood,cls){
+function hide(){var e=$('#say');if(e)e.classList.remove('show');var a=$('#app');if(a)a.classList.remove('hush')}
+function say(t,mood){
   var e=$('#say'),mn=$('#app .lmini svg');if(!e||!mn||blocked||!enabled)return;
-  e.innerHTML=mood?'<div class="sr">'+lexi(mood,cls)+'<span>'+esc(t)+'</span></div>':'<span>'+esc(t)+'</span>';
-  e.classList.remove('show');e.style.left='0px';e.style.top='0px';
-  var r=mn.getBoundingClientRect(),w=e.offsetWidth,vw=document.documentElement.clientWidth,cx=r.left+r.width/2,L=Math.max(12,Math.min(vw-w-12,cx-w/2));
-  e.style.left=L+'px';e.style.top=(r.bottom+16)+'px';e.dataset.t='s';e.dataset.tx=Math.max(30,Math.min(w-30,cx-L));
-  e.style.setProperty('--tx',e.dataset.tx+'px');paint(e);void e.offsetWidth;e.classList.add('show');
-  lastSay=Date.now();clearTimeout(sayT);sayT=setTimeout(hide,mood?5200:4200);
+  var lm=mn.parentNode;
+  e.innerHTML='<span>'+esc(t)+'</span>';
+  e.classList.remove('show');e.style.left='0px';e.style.top='0px';e.dataset.t='h';
+  var r=mn.getBoundingClientRect(),w=e.offsetWidth,h=e.offsetHeight;
+  e.style.left=Math.max(6,r.left-w-16)+'px';e.style.top=Math.round(r.top+r.height/2-h/2)+'px';
+  paint(e);void e.offsetWidth;e.classList.add('show');$('#app').classList.add('hush');
+  if(mood==='angry'){lm.innerHTML=lexi('angry');setTimeout(function(){if(lm.isConnected)lm.innerHTML=lexi('normal')},2800)}
+  lastSay=Date.now();clearTimeout(sayT);sayT=setTimeout(hide,mood?3400:3000);
 }
 function sayIdx(i){if(i===ANGRY)say(SAYS[i],'angry');else if(i===BARS)say(SAYS[i],'normal','bars');else say(SAYS[i])}
+var SHORT=['Huggi Guggi','Den Truthahn würgen','Kollege Lenz','Diesen Hier!'];
+function sayShort(i){say(SHORT[i],i===3?'angry':null)}
 function idle(on,minMs,maxMs){
   clearTimeout(idleT);if(!on||blocked||!enabled)return;
-  idleT=setTimeout(function(){if(blocked||!enabled||Date.now()-lastSay<60000||!$('#app .lmini svg'))return;sayIdx(Math.floor(Math.random()*SAYS.length))},minMs+Math.random()*(maxMs-minMs));
+  idleT=setTimeout(function(){if(blocked||!enabled||Date.now()-lastSay<60000||!$('#app .lmini svg'))return;sayShort(Math.floor(Math.random()*SHORT.length))},minMs+Math.random()*(maxMs-minMs));
 }
-window.Lexi={svg:lexi,paint:paint,paintAll:paintAll,say:say,sayIdx:sayIdx,idle:idle,hide:hide,SAYS:SAYS,ANGRY:ANGRY,BARS:BARS,
-  next:function(){sayIdx(sayN++%SAYS.length)},
+window.Lexi={svg:lexi,paint:paint,paintAll:paintAll,say:say,sayIdx:sayIdx,sayShort:sayShort,SHORT:SHORT,idle:idle,hide:hide,SAYS:SAYS,ANGRY:ANGRY,BARS:BARS,
+  next:function(){sayShort(sayN++%SHORT.length)},
   block:function(b){blocked=!!b;if(b){hide();clearTimeout(idleT)}},
   enable:function(b){enabled=!!b;if(!b){hide();clearTimeout(idleT)}}};
 })();

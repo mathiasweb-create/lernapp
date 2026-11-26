@@ -39,7 +39,7 @@ window.LEGAL = {
     h: '<h2>Gesetzestexte</h2><p>Rechtsinformationssystem des Bundes (RIS), Bundeskanzleramt, ris.bka.gv.at. Gesetze sind nach § 7 UrhG frei. Maßgeblich ist der Text im RIS. Das Abrufdatum steht unter den Fragen.</p>'
      + '<h2>Neuigkeiten</h2><p>Zusammengefasst aus den Bundesgesetzblättern im RIS.</p>'
      + '<h2>QR-Code</h2><p>„QR Code Generator for JavaScript“ von Kazuhiko Arase, MIT-Lizenz. „QR Code“ ist eine eingetragene Marke von DENSO WAVE INCORPORATED.</p>'
-     + '<h2>Schriften</h2><p>Es wird die Systemschrift deines Geräts verwendet. Es werden keine Schriften von Dritten geladen.</p>'
+     + '<h2>Schriften</h2><p>Für die App wird die Systemschrift deines Geräts verwendet. Die Sprechblasen nutzen „Comic Neue“ (© 2014 The Comic Neue Project Authors, SIL Open Font License 1.1), die als Datei in der App liegt. Es werden keine Schriften von Dritten nachgeladen.</p>'
      + '<h2>Gestaltung und Inhalte</h2><p>Gestaltung, Fragen, Texte und das Maskottchen Lexi: © 2026 Mathias Blanck. Alle Rechte vorbehalten.</p>'
   }
 };
