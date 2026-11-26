@@ -121,7 +121,12 @@ const URL = process.env.APP_URL || 'http://localhost:8123/';
 
   /* ---- Quiz mit Limit 5 und Reihenfolge nach Paragraf ---- */
   await p.click('[data-act="tab"][data-v="home"]'); await p.click('[data-act="all"]');
-  ok((await p.textContent('.startbar')).includes('Start · 5 Fragen (von 186)'), 'Start-Knopf zeigt Limit: ' + (await p.textContent('.startbar')).trim());
+  ok(/Start · 5 Fragen \(von 256\)/.test(await p.textContent('.startbar')), 'Start-Knopf zeigt Limit (leicht + mittel = 256): ' + (await p.textContent('.startbar')).trim());
+  await p.click('[data-act="lv"][data-l="3"]'); await wait(300);
+  ok(/Start · 5 Fragen \(von 295\)/.test(await p.textContent('.startbar')), 'Stufe „schwer“ dazu: alle 295 Fragen');
+  await p.click('[data-act="lv"][data-l="3"]'); await wait(300); await p.click('[data-act="lv"][data-l="2"]'); await wait(300);
+  ok(/Start · 5 Fragen \(von 138\)/.test(await p.textContent('.startbar')), 'nur „leicht“: 138 Fragen');
+  await p.click('[data-act="lv"][data-l="2"]'); await wait(300);
   await wait(500);
   await p.evaluate(() => { document.querySelector('[data-act="start"]').click(); setTimeout(() => { const o = document.querySelector('[data-act="pick"]'); if (o) o.click(); }, 100); });
   await p.waitForSelector('.qbox'); await wait(300);
@@ -184,15 +189,15 @@ const URL = process.env.APP_URL || 'http://localhost:8123/';
   const mf = JSON.parse(await (await fetch(URL + 'manifest.webmanifest')).text());
   ok(mf.name === 'LexCoach' && mf.short_name === 'LexCoach', 'Manifest: LexCoach');
   /* ---- Change-log nach Update (Wunsch 38) ---- */
-  ok(await p.evaluate(() => localStorage.getItem('rt.seen') === '2'), 'neuer Nutzer: Change-log gilt als gesehen, kein Pop-up');
+  ok(await p.evaluate(() => localStorage.getItem('rt.seen') === '3'), 'neuer Nutzer: Change-log gilt als gesehen, kein Pop-up');
   const c2 = await b.newContext({ viewport: { width: 390, height: 780 } });
   await c2.addInitScript(() => { if (!sessionStorage.getItem('init')) { sessionStorage.setItem('init', '1'); localStorage.setItem('rt.tour', 'true'); localStorage.setItem('rt.a2hs', 'true'); } });
   const q = await c2.newPage(); q.setDefaultTimeout(6000);
   await q.goto(URL); await q.waitForSelector('#ovl .clg');
-  ok((await q.textContent('#ovl')).includes('Neu in LexCoach') && (await q.textContent('#ovl')).includes('Fragen aus dem Skriptum') && !(await q.locator('#ovl svg').count()), 'bestehender Nutzer sieht das Change-log (ohne Lexi)');
+  ok((await q.textContent('#ovl')).includes('Neu in LexCoach') && (await q.textContent('#ovl')).includes('Mehr leichte Fragen') && !(await q.locator('#ovl svg').count()), 'bestehender Nutzer sieht das Change-log (ohne Lexi)');
   await q.click('[data-act="log-more"]'); ok((await q.textContent('#ovl')).includes('Änderungsprotokoll'), 'Frühere Updates klappen auf');
   await q.click('[data-act="log-close"]'); await wait(300);
-  ok(await q.locator('#ovl').evaluate(e => e.innerHTML === '') && (await q.evaluate(() => localStorage.getItem('rt.seen'))) === '2', 'Alles klar schließt und merkt sich die Version');
+  ok(await q.locator('#ovl').evaluate(e => e.innerHTML === '') && (await q.evaluate(() => localStorage.getItem('rt.seen'))) === '3', 'Alles klar schließt und merkt sich die Version');
   await q.reload(); await wait(800); ok(await q.locator('#ovl .clg').count() === 0, 'nach Neuladen kein Pop-up mehr');
   await q.click('[data-act="settings"]'); await q.click('[data-s="chg"]');
   ok((await q.textContent('#app')).includes('Änderungsprotokoll') && (await q.textContent('#app')).includes('Erste Version'), 'Einstellungen: Änderungsprotokoll zeigt alle Updates');
