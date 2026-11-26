@@ -20,7 +20,7 @@ Multiple-Choice-Training für Gesetzestexte. Läuft im Browser, lässt sich auf 
 - **Teilen** (Symbol oben rechts): App-Link per Teilen-Menü des iPhones, Link kopieren oder QR-Code. Optional mit Paragrafenauswahl: `…/lernapp/#BDG:4,10,43a`.
 
 ## Punkte pro Frage (immer 4 Aussagen, 0 bis 4 richtig möglich)
-- Je Aussage +1 Punkt, wenn richtig behandelt (richtig angekreuzt oder richtig ausgelassen), −1 Punkt, wenn falsch behandelt (falsch angekreuzt oder falsch ausgelassen).
+- Je Aussage +1 Punkt (richtige Aussage angekreuzt oder falsche nicht angekreuzt), 0 Punkte (richtige Aussage ausgelassen), −1 Punkt (falsche Aussage angekreuzt). Je Frage mindestens 0, höchstens 4.
 - Pro Frage mindestens 0, höchstens 4 Punkte. Anzeige bei der Frage nur als Punktezahl, in der Auswertung Prozent, Punktezahl mit Höchstpunktzahl und Note.
 - „Sicher“ gilt eine Frage bei 4 Punkten (letztes Ergebnis).
 

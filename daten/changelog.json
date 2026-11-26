@@ -1,5 +1,25 @@
 [
  {
+  "v": 5,
+  "s": "2.3",
+  "n": "Fairere Punkte",
+  "d": "26.11.2026",
+  "t": [
+   {
+    "h": "Neue Punkteregel",
+    "x": "Eine übersehene richtige Aussage kostet keinen Punkt mehr, sie bringt 0."
+   },
+   {
+    "h": "Weiterhin höchstens 4",
+    "x": "Pro Frage gibt es mindestens 0 und höchstens 4 Punkte."
+   },
+   {
+    "h": "Alte Ergebnisse bleiben",
+    "x": "Gespeicherte Ergebnisse werden nicht umgerechnet."
+   }
+  ]
+ },
+ {
   "v": 4,
   "s": "2.2",
   "n": "Sprechblasen und Regler",
