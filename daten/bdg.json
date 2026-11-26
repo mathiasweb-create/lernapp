@@ -2,7 +2,7 @@
  "gesetz": "BDG",
  "name": "Beamten-Dienstrechtsgesetz 1979",
  "quelle": "RIS – Bundesrecht konsolidiert (data.bka.gv.at, Gesetzesnummer 10008470)",
- "abgerufen": "2026-11-25",
+ "abgerufen": "2026-11-26",
  "gruppen": [
   {
    "name": "Dienstverhältnis",
@@ -133,7 +133,36 @@
        "w": false,
        "k": "§ 2 Abs. 4 Z 1: mit Rechtskraft, sofern im Bescheid kein späterer Wirksamkeitstermin festgelegt oder vorbehalten ist."
       }
-     ]
+     ],
+     "lv": 2
+    },
+    {
+     "id": "bdg-2-2",
+     "ref": "Abs. 1",
+     "f": "Was ist nach § 2 BDG eine Ernennung?",
+     "s": [
+      {
+       "t": "Die bescheidmäßige Verleihung einer Planstelle.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Verleihung einer Planstelle durch mündliche Weisung des Vorgesetzten.",
+       "w": false,
+       "k": "Die Ernennung erfolgt mit Bescheid (§ 2 Abs. 1 BDG)."
+      },
+      {
+       "t": "Die Angelobung des Beamten.",
+       "w": false,
+       "k": "Die Angelobung ist in § 7 BDG geregelt; Ernennung ist die bescheidmäßige Verleihung einer Planstelle (§ 2 Abs. 1 BDG)."
+      },
+      {
+       "t": "Der Abschluss eines privatrechtlichen Dienstvertrags mit dem Bund.",
+       "w": false,
+       "k": "Die Ernennung ist kein Vertrag, sondern die bescheidmäßige Verleihung einer Planstelle (§ 2 Abs. 1 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -169,7 +198,8 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-4-2",
@@ -196,7 +226,8 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-4-3",
@@ -223,7 +254,8 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-4-4",
@@ -250,7 +282,8 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-4-5",
@@ -277,7 +310,8 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 1
     },
     {
      "id": "bdg-4-6",
@@ -304,7 +338,8 @@
        "w": false,
        "k": "Auch dort ist die Beherrschung im für die Verwendung erforderlichen Ausmaß nachzuweisen (§ 4 Abs. 1a zweiter Satz)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-4-7",
@@ -331,7 +366,148 @@
        "w": false,
        "k": "Abs. 3 gilt allgemein für die mit der Verwendung auf der Planstelle verbundenen Aufgaben, ohne Beschränkung auf Leitungsfunktionen (§ 4 Abs. 3)."
       }
-     ]
+     ],
+     "lv": 2
+    },
+    {
+     "id": "bdg-4-8",
+     "ref": "Abs. 1 Z 2 und 4",
+     "f": "Welche Aussagen zum Mindestalter und zur Handlungsfähigkeit nach § 4 BDG sind richtig?",
+     "s": [
+      {
+       "t": "Beim Eintritt in den Bundesdienst muss man mindestens 18 Jahre alt sein.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Beim Eintritt in den Bundesdienst genügen 16 Jahre.",
+       "w": false,
+       "k": "Verlangt sind mindestens 18 Jahre (§ 4 Abs. 1 Z 4 BDG)."
+      },
+      {
+       "t": "Die volle Handlungsfähigkeit ist ein allgemeines Ernennungserfordernis.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Handlungsfähigkeit spielt für die Ernennung keine Rolle.",
+       "w": false,
+       "k": "Die volle Handlungsfähigkeit ist ein allgemeines Ernennungserfordernis (§ 4 Abs. 1 Z 2 BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-4-9",
+     "ref": "Abs. 1 Z 1",
+     "f": "Welche Aussagen zur Staatsbürgerschaft als Ernennungserfordernis (§ 4 BDG) treffen zu?",
+     "s": [
+      {
+       "t": "Bei Verwendungen nach § 42a ist die österreichische Staatsbürgerschaft nötig.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Bei sonstigen Verwendungen genügt auch unbeschränkter Zugang zum österreichischen Arbeitsmarkt.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Bei Verwendungen nach § 42a genügt jede Staatsbürgerschaft der EU.",
+       "w": false,
+       "k": "Bei § 42a ist die österreichische Staatsbürgerschaft erforderlich (§ 4 Abs. 1 Z 1 lit. a BDG)."
+      },
+      {
+       "t": "Die Staatsbürgerschaft ist für den Bundesdienst nie ein Erfordernis.",
+       "w": false,
+       "k": "Sie ist ein allgemeines Ernennungserfordernis (§ 4 Abs. 1 Z 1 BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-4-10",
+     "ref": "Abs. 1a",
+     "f": "Welche Aussagen zur deutschen Sprache nach § 4 BDG sind richtig?",
+     "s": [
+      {
+       "t": "Die fachliche Eignung umfasst die Beherrschung der deutschen Sprache in Wort und Schrift.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Genügen für eine Verwendung geringere Deutschkenntnisse, sind sie im dafür nötigen Ausmaß nachzuweisen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Deutschkenntnisse sind für den Bundesdienst nie erforderlich.",
+       "w": false,
+       "k": "Sie gehören zur fachlichen Eignung (§ 4 Abs. 1a BDG)."
+      },
+      {
+       "t": "Deutsch muss nur in Wort, nicht in Schrift beherrscht werden.",
+       "w": false,
+       "k": "Verlangt sind Wort und Schrift (§ 4 Abs. 1a BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-4-11",
+     "ref": "Abs. 3",
+     "f": "Was gilt nach § 4 Abs. 3 BDG, wenn mehrere Bewerber die Ernennungserfordernisse erfüllen?",
+     "s": [
+      {
+       "t": "Ernannt werden darf der Bewerber, der die Aufgaben voraussichtlich bestmöglich erfüllt.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Maßgeblich ist die persönliche und fachliche Eignung der Bewerber.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Ernannt wird der Bewerber mit dem höchsten Lebensalter.",
+       "w": false,
+       "k": "Entscheidend ist die Eignung, nicht das Alter (§ 4 Abs. 3 BDG)."
+      },
+      {
+       "t": "Ernannt wird der Bewerber, der sich zuerst beworben hat.",
+       "w": false,
+       "k": "Entscheidend ist die Eignung, nicht die Reihenfolge der Bewerbung (§ 4 Abs. 3 BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-4-12",
+     "ref": "Abs. 2",
+     "f": "Wo sind nach § 4 Abs. 2 BDG die besonderen Ernennungserfordernisse geregelt?",
+     "s": [
+      {
+       "t": "Im Besonderen Teil des BDG.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "In der Anlage 1 zum BDG.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "In einer Weisung des unmittelbaren Vorgesetzten.",
+       "w": false,
+       "k": "Sie stehen im Besonderen Teil und in der Anlage 1 (§ 4 Abs. 2 BDG)."
+      },
+      {
+       "t": "Im Dienstrechtsverfahrensgesetz (DVG).",
+       "w": false,
+       "k": "Das DVG regelt das Verfahren; die besonderen Ernennungserfordernisse stehen im Besonderen Teil und in der Anlage 1 (§ 4 Abs. 2 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -367,7 +543,36 @@
        "w": false,
        "k": "§ 5 Abs. 2: Die Nachholfrist beträgt zwei Wochen nach Wegfall des Hindernisses."
       }
-     ]
+     ],
+     "lv": 3
+    },
+    {
+     "id": "bdg-5-2",
+     "ref": "Abs. 1",
+     "f": "Was ist nach § 5 BDG im Ernennungsbescheid anzuführen?",
+     "s": [
+      {
+       "t": "Die Planstelle.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Amtstitel des Beamten.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Tag der Wirksamkeit der Ernennung.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Höhe der Pension des Beamten.",
+       "w": false,
+       "k": "Anzuführen sind Planstelle, Amtstitel und Tag der Wirksamkeit (§ 5 Abs. 1 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -403,7 +608,36 @@
        "w": false,
        "k": "§ 7 Abs. 1: Gelobt wird, die Gesetze der Republik Österreich zu befolgen und alle mit dem Amt verbundenen Pflichten treu und gewissenhaft zu erfüllen; Weisungen von Vorgesetzten kommen im Gelöbnistext nicht vor."
       }
-     ]
+     ],
+     "lv": 2
+    },
+    {
+     "id": "bdg-7-2",
+     "ref": "Abs. 1",
+     "f": "Was gilt nach § 7 BDG für die Angelobung?",
+     "s": [
+      {
+       "t": "Der Beamte leistet sie binnen vier Wochen nach Beginn des Dienstverhältnisses.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Beamte gelobt, die Gesetze der Republik Österreich zu befolgen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Beamte leistet sie binnen sechs Monaten nach Beginn des Dienstverhältnisses.",
+       "w": false,
+       "k": "Die Frist beträgt vier Wochen (§ 7 Abs. 1 BDG)."
+      },
+      {
+       "t": "Der Beamte gelobt, dem jeweiligen Vorgesetzten persönlich zu gehorchen.",
+       "w": false,
+       "k": "Gelobt wird die Befolgung der Gesetze und die treue, gewissenhafte Pflichterfüllung (§ 7 Abs. 1 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -439,7 +673,8 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 1
     },
     {
      "id": "bdg-10-2",
@@ -466,7 +701,8 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-10-3",
@@ -494,6 +730,7 @@
        "k": "Das Gesetz nennt die Gründe „insbesondere“, die Aufzählung ist also nur beispielhaft (§ 10 Abs. 4)."
       }
      ],
+     "lv": 2,
      "x": 1
     },
     {
@@ -522,6 +759,7 @@
        "k": "Der Dienstgeber trägt die Beweislast dafür, dass die Kündigung aus anderen Gründen erfolgt ist (§ 10 Abs. 7)."
       }
      ],
+     "lv": 2,
      "x": 1
     },
     {
@@ -549,7 +787,8 @@
        "w": false,
        "k": "Der Bedarfsmangel ist ausdrücklich als Kündigungsgrund genannt (§ 10 Abs. 4 Z 5)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-10-6",
@@ -576,7 +815,120 @@
        "w": false,
        "k": "Abs. 2 sieht die Kündigung mit Bescheid vor, ohne nach Probezeit und späterer Zeit zu unterscheiden. Nach der Probezeit ist zusätzlich der Grund anzugeben (§ 10 Abs. 2 und 3)."
       }
-     ]
+     ],
+     "lv": 3
+    },
+    {
+     "id": "bdg-10-7",
+     "ref": "Abs. 1 und 2",
+     "f": "Welche Aussagen zum provisorischen Dienstverhältnis nach § 10 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Das Dienstverhältnis ist zunächst provisorisch.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Das provisorische Dienstverhältnis kann mit Bescheid gekündigt werden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Das Dienstverhältnis ist von Anfang an definitiv.",
+       "w": false,
+       "k": "Es ist zunächst provisorisch (§ 10 Abs. 1 BDG)."
+      },
+      {
+       "t": "Das provisorische Dienstverhältnis wird durch Vertrag gekündigt.",
+       "w": false,
+       "k": "Die Kündigung erfolgt mit Bescheid (§ 10 Abs. 2 BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-10-8",
+     "ref": "Abs. 2 und 3",
+     "f": "Was gilt nach § 10 BDG für die Probezeit?",
+     "s": [
+      {
+       "t": "Die Probezeit sind die ersten sechs Monate des Dienstverhältnisses.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "In der Probezeit ist die Kündigung ohne Angabe von Gründen möglich.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Nach der Probezeit ist die Kündigung nur mit Angabe des Grundes möglich.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Probezeit dauert die ersten zwei Jahre des Dienstverhältnisses.",
+       "w": false,
+       "k": "Die Probezeit umfasst die ersten sechs Monate (§ 10 Abs. 2 BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-10-9",
+     "ref": "Abs. 2",
+     "f": "Wie lang ist die Kündigungsfrist im provisorischen Dienstverhältnis nach § 10 BDG?",
+     "s": [
+      {
+       "t": "In der Probezeit beträgt sie 1 Kalendermonat.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Nach der Probezeit beträgt sie 2 Kalendermonate.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Nach Vollendung des zweiten Dienstjahres beträgt sie 3 Kalendermonate.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Nach der Probezeit beträgt sie 6 Kalendermonate.",
+       "w": false,
+       "k": "Nach der Probezeit gelten 2 Kalendermonate (§ 10 Abs. 2 BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-10-10",
+     "ref": "Abs. 4",
+     "f": "Welche Kündigungsgründe nennt § 10 BDG für das provisorische Dienstverhältnis?",
+     "s": [
+      {
+       "t": "Unbefriedigender Arbeitserfolg.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Pflichtwidriges Verhalten.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Bedarfsmangel.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Wohnortwechsel des Beamten.",
+       "w": false,
+       "k": "Ein Wohnortwechsel ist kein im Gesetz genannter Kündigungsgrund (§ 10 Abs. 4 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -612,7 +964,8 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-11-2",
@@ -639,7 +992,8 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 3
     },
     {
      "id": "bdg-11-3",
@@ -666,7 +1020,8 @@
        "w": false,
        "k": "Nur unter den Voraussetzungen der Z 1 bis 3 (geringe Schuld, keine oder unbedeutende Folgen, keine entgegenstehenden dienstlichen Interessen) kann dies mit Bescheid festgestellt werden (§ 11 Abs. 5)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-11-4",
@@ -693,7 +1048,8 @@
        "w": false,
        "k": "Abs. 1 Z 1 spricht von den für seine Verwendung vorgesehenen Definitivstellungserfordernissen."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-11-5",
@@ -720,7 +1076,8 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 3
     },
     {
      "id": "bdg-11-6",
@@ -747,7 +1104,8 @@
        "w": false,
        "k": "Abs. 2 betrifft die Beeinträchtigung der persönlichen Eignung, die auf einen Dienstunfall zurückgeht (§ 11 Abs. 2)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-11-7",
@@ -774,7 +1132,120 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-11-8",
+     "ref": "Abs. 1",
+     "f": "Welche Voraussetzungen nennt § 11 BDG für die Definitivstellung?",
+     "s": [
+      {
+       "t": "Ein Antrag des Beamten.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Sechs Jahre Dienstzeit im provisorischen Dienstverhältnis.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Erfüllung der für seine Verwendung vorgesehenen Definitivstellungserfordernisse.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Zwei Jahre Dienstzeit im provisorischen Dienstverhältnis.",
+       "w": false,
+       "k": "Erforderlich sind sechs Jahre im provisorischen Dienstverhältnis (§ 11 Abs. 1 Z 2 BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-11-9",
+     "ref": "Abs. 1",
+     "f": "Welche Aussagen zur Definitivstellung nach § 11 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Ihr Eintritt ist mit Bescheid festzustellen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Danach kann das Dienstverhältnis nicht mehr gekündigt werden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Ihr Eintritt wird durch mündliche Mitteilung des Vorgesetzten festgestellt.",
+       "w": false,
+       "k": "Der Eintritt ist mit Bescheid festzustellen (§ 11 Abs. 1 BDG)."
+      },
+      {
+       "t": "Sie erfolgt durch die Angelobung des Beamten.",
+       "w": false,
+       "k": "Die Angelobung (§ 7 BDG) ist keine Definitivstellung; deren Eintritt wird mit Bescheid festgestellt (§ 11 Abs. 1 BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-11-10",
+     "ref": "Abs. 2",
+     "f": "Ein provisorischer Beamter erleidet nach fünf Jahren einen Dienstunfall, der seine persönliche Eignung beeinträchtigt. Was gilt nach § 11 Abs. 2 BDG?",
+     "s": [
+      {
+       "t": "Die Beeinträchtigung hindert seine Definitivstellung nicht.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Begünstigt sind Dienstunfälle nach vier Jahren im provisorischen Dienstverhältnis.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Seine Definitivstellung ist wegen des Unfalls ausgeschlossen.",
+       "w": false,
+       "k": "Ein Dienstunfall nach vier Jahren provisorischen Dienstverhältnisses hindert die Definitivstellung nicht (§ 11 Abs. 2 BDG)."
+      },
+      {
+       "t": "Er muss wegen des Unfalls gekündigt werden.",
+       "w": false,
+       "k": "Die Beeinträchtigung hindert hier sogar die Definitivstellung nicht (§ 11 Abs. 2 BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-11-11",
+     "ref": "Abs. 5",
+     "f": "Was gilt nach § 11 BDG für die Definitivstellung bei einem Disziplinarverfahren?",
+     "s": [
+      {
+       "t": "Während des Disziplinarverfahrens tritt die Definitivstellung nicht ein.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Bis zu drei Monate nach dem rechtskräftigen Abschluss tritt sie ebenfalls nicht ein.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Bei Einstellung des Verfahrens oder Freispruch tritt die Definitivstellung rückwirkend ein.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Ein Disziplinarverfahren hat keine Wirkung auf die Definitivstellung.",
+       "w": false,
+       "k": "Die Wirkung tritt währenddessen und bis zu drei Monate danach nicht ein (§ 11 Abs. 5 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -810,7 +1281,8 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 1
     },
     {
      "id": "bdg-20-2",
@@ -837,7 +1309,8 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-20-3",
@@ -865,6 +1338,7 @@
        "k": "Das Dienstverhältnis wird nicht aufgelöst, wenn diese Rechtsfolge bedingt nachgesehen wird, es sei denn, die Nachsicht wird widerrufen (§ 20 Abs. 2)."
       }
      ],
+     "lv": 2,
      "x": 1
     },
     {
@@ -893,6 +1367,7 @@
        "k": "Maßgeblich ist ein Zeitraum von zwölf Monaten vor der Auflösung des Dienstverhältnisses (§ 20 Abs. 3a Z 2)."
       }
      ],
+     "lv": 2,
      "x": 1
     },
     {
@@ -921,6 +1396,7 @@
        "k": "Er verjährt nach drei Jahren ab der Auflösung des Dienstverhältnisses (§ 20 Abs. 5)."
       }
      ],
+     "lv": 2,
      "x": 1
     },
     {
@@ -948,7 +1424,8 @@
        "w": false,
        "k": "Z 3a nennt nur die §§ 92, 201 bis 217, 312 und 312a StGB (§ 20 Abs. 1 Z 3a)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-20-7",
@@ -975,7 +1452,8 @@
        "w": false,
        "k": "Er ist in Abs. 1 Z 5 lit. a ausdrücklich als Auflösungsgrund genannt; die Kündigung betrifft nur das provisorische Dienstverhältnis (Z 2)."
       }
-     ]
+     ],
+     "lv": 3
     },
     {
      "id": "bdg-20-8",
@@ -1002,7 +1480,36 @@
        "w": false,
        "k": "Sie ist in Abs. 1 nicht genannt; Abs. 2 spricht vom Dienstverhältnis des Beamten des Ruhestandes, das also fortbesteht."
       }
-     ]
+     ],
+     "lv": 2
+    },
+    {
+     "id": "bdg-20-9",
+     "ref": "Abs. 1 Z 4 und 5",
+     "f": "Welche Aussagen zu Amtsverlust und Staatsbürgerschaft als Auflösungsgründen (§ 20 BDG) sind richtig?",
+     "s": [
+      {
+       "t": "Der Amtsverlust nach § 27 Abs. 1 StGB löst das Dienstverhältnis auf.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Bei Verwendungen nach § 42a löst der Verlust der österreichischen Staatsbürgerschaft das Dienstverhältnis auf.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Eine Verwaltungsstrafe nach der Straßenverkehrsordnung löst das Dienstverhältnis auf.",
+       "w": false,
+       "k": "Verwaltungsstrafen sind in § 20 Abs. 1 BDG nicht als Auflösungsgrund genannt."
+      },
+      {
+       "t": "Der Amtsverlust nach dem StGB wirkt sich auf das Dienstverhältnis nicht aus.",
+       "w": false,
+       "k": "Er löst das Dienstverhältnis auf (§ 20 Abs. 1 Z 4 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -1038,7 +1545,36 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 3
+    },
+    {
+     "id": "bdg-21-2",
+     "ref": "Abs. 1 bis 3",
+     "f": "Was gilt nach § 21 BDG für den Austritt aus dem Dienstverhältnis?",
+     "s": [
+      {
+       "t": "Der Beamte erklärt den Austritt schriftlich.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Er kann die Erklärung bis spätestens einen Monat vor Wirksamwerden widerrufen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Austritt kann formlos mündlich erklärt werden.",
+       "w": false,
+       "k": "Die Erklärung hat schriftlich zu erfolgen (§ 21 Abs. 1 BDG)."
+      },
+      {
+       "t": "Der Austritt wird sofort mit Abgabe der Erklärung wirksam.",
+       "w": false,
+       "k": "Er wird frühestens mit Ablauf des Monats wirksam, in dem die Erklärung abgegeben wurde (§ 21 Abs. 2 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -1074,7 +1610,36 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 2
+    },
+    {
+     "id": "bdg-22-2",
+     "ref": "",
+     "f": "Wann ist ein Beamter nach § 22 BDG wegen mangelnden Arbeitserfolges entlassen?",
+     "s": [
+      {
+       "t": "Wenn zweimal aufeinanderfolgend festgestellt wurde, dass er den zu erwartenden Arbeitserfolg nicht aufwies.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Entlassung tritt mit Rechtskraft der zweiten Feststellung ein.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Schon nach einer einzigen schlechten Feststellung.",
+       "w": false,
+       "k": "Erforderlich sind zwei aufeinanderfolgende Feststellungen (§ 22 BDG)."
+      },
+      {
+       "t": "Erst nach fünf aufeinanderfolgenden Feststellungen.",
+       "w": false,
+       "k": "Es genügen zwei aufeinanderfolgende Feststellungen (§ 22 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -1110,7 +1675,64 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 2
+    },
+    {
+     "id": "bdg-36-2",
+     "ref": "Abs. 1 und 2",
+     "f": "Welche Aussagen zum Arbeitsplatz nach § 36 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Jeder Beamte, der nicht vom Dienst befreit oder enthoben ist, wird mit den Aufgaben eines Arbeitsplatzes betraut.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Arbeitsplatz ist in der Geschäftseinteilung der Dienststelle vorgesehen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Ein Arbeitsplatz darf auch für Aufgaben vorgesehen werden, die mehrere Arbeitskräfte erfordern.",
+       "w": false,
+       "k": "Ein Arbeitsplatz darf nur für Aufgaben vorgesehen werden, die die volle Normalarbeitskraft eines Menschen erfordern (§ 36 Abs. 2 BDG)."
+      },
+      {
+       "t": "Jeder Beamte wählt seinen Arbeitsplatz selbst aus.",
+       "w": false,
+       "k": "Der Beamte wird mit den Aufgaben eines in der Geschäftseinteilung vorgesehenen Arbeitsplatzes betraut (§ 36 Abs. 1 BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-36-3",
+     "ref": "Abs. 4",
+     "f": "Welche Aussagen zu Aufgaben außerhalb der eigenen Einstufung treffen nach § 36 Abs. 4 BDG zu?",
+     "s": [
+      {
+       "t": "Der Beamte muss vorübergehend auch Aufgaben besorgen, die nicht zu seiner Einstufung und Verwendung gehören.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Voraussetzung ist, dass es im Interesse des Dienstes notwendig ist.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Beamte darf solche Aufgaben immer ablehnen.",
+       "w": false,
+       "k": "Der Beamte ist dazu verpflichtet, wenn es im Interesse des Dienstes notwendig ist (§ 36 Abs. 4 BDG)."
+      },
+      {
+       "t": "Für solche Aufgaben braucht es die schriftliche Zustimmung des Beamten.",
+       "w": false,
+       "k": "Eine Zustimmung ist nach § 36 Abs. 4 BDG nicht erforderlich; der Beamte ist verpflichtet."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -1146,7 +1768,8 @@
        "w": false,
        "k": "Von Amts wegen genügt ein wichtiges dienstliches Interesse, die Zustimmung des Beamten ist nicht erforderlich (§ 38 Abs. 2)."
       }
-     ]
+     ],
+     "lv": 1
     },
     {
      "id": "bdg-38-2",
@@ -1174,6 +1797,7 @@
        "k": "Zusätzlich muss wegen Art und Schwere der Verletzung die Belassung in der Dienststelle nicht vertretbar erscheinen (§ 38 Abs. 3 Z 5)."
       }
      ],
+     "lv": 2,
      "x": 1
     },
     {
@@ -1202,6 +1826,7 @@
        "k": "Es gilt als Zustimmung zur Versetzung (§ 38 Abs. 6)."
       }
      ],
+     "lv": 2,
      "x": 1
     },
     {
@@ -1229,7 +1854,8 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-38-5",
@@ -1256,7 +1882,8 @@
        "w": false,
        "k": "Nach Abs. 2 ist eine Versetzung von Amts wegen zulässig, wenn ein wichtiges dienstliches Interesse besteht; eine Beschränkung auf andere Dienstorte enthält das Gesetz nicht."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-38-6",
@@ -1283,7 +1910,8 @@
        "w": false,
        "k": "Z 5 verlangt eine rechtskräftig verhängte Disziplinarstrafe und dass wegen Art und Schwere der Dienstpflichtverletzung die Belassung in der Dienststelle nicht vertretbar erscheint (§ 38 Abs. 3 Z 5)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-38-7",
@@ -1310,7 +1938,8 @@
        "w": false,
        "k": "Die Regelung betrifft die Versetzung an einen anderen Dienstort (§ 38 Abs. 4 erster Satz)."
       }
-     ]
+     ],
+     "lv": 3
     },
     {
      "id": "bdg-38-8",
@@ -1337,7 +1966,8 @@
        "w": false,
        "k": "Ausgenommen sind nur die Fälle des Abs. 3 Z 4 und 5 sowie jene, in denen noch keine rechtskräftige Disziplinarstrafe verhängt wurde; Z 1 ist nicht ausgenommen (§ 38 Abs. 4 zweiter Satz)."
       }
-     ]
+     ],
+     "lv": 3
     },
     {
      "id": "bdg-38-9",
@@ -1364,7 +1994,148 @@
        "w": false,
        "k": "Die Verständigung hat schriftlich und unter Bekanntgabe der neuen Dienststelle und der neuen Verwendung zu erfolgen (§ 38 Abs. 6)."
       }
-     ]
+     ],
+     "lv": 2
+    },
+    {
+     "id": "bdg-38-10",
+     "ref": "Abs. 1 und 2",
+     "f": "Welche Aussagen zur Versetzung nach § 38 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Bei einer Versetzung wird der Beamte einer anderen Dienststelle zur dauernden Dienstleistung zugewiesen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Von Amts wegen ist die Versetzung zulässig, wenn ein wichtiges dienstliches Interesse besteht.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Im provisorischen Dienstverhältnis ist eine Versetzung auch ohne wichtiges dienstliches Interesse zulässig.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Bei einer Versetzung wird der Beamte nur vorübergehend einer anderen Dienststelle zugewiesen.",
+       "w": false,
+       "k": "Das ist die Dienstzuteilung; die Versetzung ist eine dauernde Zuweisung (§ 38 Abs. 1 BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-38-11",
+     "ref": "Abs. 3",
+     "f": "Welche Fälle nennt § 38 Abs. 3 BDG ausdrücklich als wichtiges dienstliches Interesse an einer Versetzung?",
+     "s": [
+      {
+       "t": "Änderungen der Verwaltungsorganisation.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Auflassung von Arbeitsplätzen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Besetzung eines freien Arbeitsplatzes einer anderen Dienststelle, für den keine geeigneten Bewerber vorhanden sind.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Beamte hat einen Antrag auf Urlaub gestellt.",
+       "w": false,
+       "k": "Ein Urlaubsantrag ist in § 38 Abs. 3 BDG nicht als wichtiges dienstliches Interesse genannt."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-38-12",
+     "ref": "Abs. 6",
+     "f": "Was gilt nach § 38 Abs. 6 BDG, wenn eine Versetzung von Amts wegen in Aussicht genommen ist?",
+     "s": [
+      {
+       "t": "Der Beamte ist schriftlich zu verständigen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Verständigung nennt die neue Dienststelle und die neue Verwendung.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Beamte hat drei Monate Zeit, Einwendungen vorzubringen.",
+       "w": false,
+       "k": "Die Frist für Einwendungen beträgt zwei Wochen nach Zustellung (§ 38 Abs. 6 BDG)."
+      },
+      {
+       "t": "Bringt der Beamte keine Einwendungen vor, gilt das als Ablehnung der Versetzung.",
+       "w": false,
+       "k": "Fehlende Einwendungen gelten als Zustimmung zur Versetzung (§ 38 Abs. 6 BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-38-13",
+     "ref": "Abs. 7",
+     "f": "Welche Aussagen zum Versetzungsbescheid nach § 38 Abs. 7 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Die Versetzung wird mit Bescheid verfügt.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Eine Beschwerde gegen den Bescheid hat keine aufschiebende Wirkung.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Gegen den Versetzungsbescheid ist eine Beschwerde ausgeschlossen.",
+       "w": false,
+       "k": "Eine Beschwerde ist möglich, sie hat nur keine aufschiebende Wirkung (§ 38 Abs. 7 BDG)."
+      },
+      {
+       "t": "Der bisherige Arbeitsplatz des Beamten darf sofort auf Dauer neu besetzt werden.",
+       "w": false,
+       "k": "Bis zur Rechtskraft des Bescheides darf der Arbeitsplatz nicht auf Dauer besetzt werden (§ 38 Abs. 7 BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-38-14",
+     "ref": "Abs. 4 und 8",
+     "f": "Was gilt bei einer Versetzung von Amts wegen an einen anderen Dienstort?",
+     "s": [
+      {
+       "t": "Die persönlichen, familiären und sozialen Verhältnisse des Beamten sind zu berücksichtigen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Dem Beamten ist eine angemessene Übersiedlungsfrist zu gewähren.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Es werden nur die finanziellen Verhältnisse des Beamten berücksichtigt.",
+       "w": false,
+       "k": "Zu berücksichtigen sind die persönlichen, familiären und sozialen Verhältnisse (§ 38 Abs. 4 BDG)."
+      },
+      {
+       "t": "Die Übersiedlungsfrist beträgt höchstens drei Tage.",
+       "w": false,
+       "k": "Das Gesetz nennt keine feste Höchstdauer; die Übersiedlungsfrist muss angemessen sein (§ 38 Abs. 8 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -1400,7 +2171,8 @@
        "w": false,
        "k": "Die 90 Tage gelten insgesamt in einem Kalenderjahr, nicht pro Zuteilung (§ 39 Abs. 2)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-39-2",
@@ -1427,7 +2199,8 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 3
     },
     {
      "id": "bdg-39-3",
@@ -1454,7 +2227,8 @@
        "w": false,
        "k": "Ohne schriftliche Zustimmung bis zu insgesamt 90 Tagen in einem Kalenderjahr, darüber hinaus nur in den Fällen des Abs. 3 (§ 39 Abs. 2 und 3)."
       }
-     ]
+     ],
+     "lv": 1
     },
     {
      "id": "bdg-39-4",
@@ -1481,7 +2255,8 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 3
     },
     {
      "id": "bdg-39-5",
@@ -1508,7 +2283,8 @@
        "w": false,
        "k": "Die Zustimmung der Personalvertretung ist in § 39 Abs. 3 nicht vorgesehen; ohne Zustimmung des Beamten ist die Zuteilung nur in den Fällen der Z 1 und 2 zulässig."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-39-6",
@@ -1535,7 +2311,120 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 2
+    },
+    {
+     "id": "bdg-39-7",
+     "ref": "Abs. 1",
+     "f": "Welche Aussagen zur Dienstzuteilung nach § 39 Abs. 1 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Der Beamte wird vorübergehend einer anderen Dienststelle zur Dienstleistung zugewiesen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Für die Dauer der Zuweisung wird er mit Aufgaben eines Arbeitsplatzes der anderen Dienststelle betraut.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Beamte wird der anderen Dienststelle dauernd zugewiesen.",
+       "w": false,
+       "k": "Eine dauernde Zuweisung ist die Versetzung (§ 38 Abs. 1 BDG), die Dienstzuteilung ist vorübergehend (§ 39 Abs. 1 BDG)."
+      },
+      {
+       "t": "Die Dienstzuteilung ist nur innerhalb derselben Dienststelle möglich.",
+       "w": false,
+       "k": "Bei der Dienstzuteilung wird der Beamte einer anderen Dienststelle zugewiesen (§ 39 Abs. 1 BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-39-8",
+     "ref": "Abs. 2",
+     "f": "Welche Aussagen zur Dauer der Dienstzuteilung treffen nach § 39 Abs. 2 BDG zu?",
+     "s": [
+      {
+       "t": "Eine Dienstzuteilung ist nur aus dienstlichen Gründen zulässig.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Ohne schriftliche Zustimmung darf sie insgesamt höchstens 90 Tage in einem Kalenderjahr dauern.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Ohne schriftliche Zustimmung darf sie höchstens 30 Tage in einem Kalenderjahr dauern.",
+       "w": false,
+       "k": "Die Grenze beträgt insgesamt 90 Tage in einem Kalenderjahr (§ 39 Abs. 2 BDG)."
+      },
+      {
+       "t": "Mit schriftlicher Zustimmung des Beamten darf die Dienstzuteilung länger als 90 Tage dauern.",
+       "w": true,
+       "k": ""
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-39-9",
+     "ref": "Abs. 3",
+     "f": "In welchen Fällen ist eine Dienstzuteilung über 90 Tage hinaus ohne Zustimmung des Beamten zulässig (§ 39 Abs. 3 BDG)?",
+     "s": [
+      {
+       "t": "Wenn der Dienstbetrieb auf andere Weise nicht aufrechterhalten werden kann.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Wenn die Dienstzuteilung zum Zweck einer Ausbildung erfolgt.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Wenn der Vorgesetzte es wünscht.",
+       "w": false,
+       "k": "Der Wunsch des Vorgesetzten ist kein Grund nach § 39 Abs. 3 BDG."
+      },
+      {
+       "t": "Wenn die Dienststelle des Beamten aufgelassen wird.",
+       "w": false,
+       "k": "Dieser Fall ist in § 39 Abs. 3 BDG nicht genannt; es gelten nur Aufrechterhaltung des Dienstbetriebs und Ausbildung."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-39-10",
+     "ref": "Abs. 4",
+     "f": "Worauf ist bei einer Dienstzuteilung nach § 39 Abs. 4 BDG Bedacht zu nehmen?",
+     "s": [
+      {
+       "t": "Auf die bisherige Verwendung des Beamten.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Auf das Dienstalter des Beamten.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Bei einem anderen Dienstort auch auf seine persönlichen, familiären und sozialen Verhältnisse.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Auf die Parteizugehörigkeit des Beamten.",
+       "w": false,
+       "k": "Die Parteizugehörigkeit ist in § 39 Abs. 4 BDG nicht genannt."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -1571,7 +2460,64 @@
        "w": false,
        "k": "§ 40 Abs. 2: Die Fälle der Z 1 bis 3 stehen alternativ („oder“); jeder genügt für sich."
       }
-     ]
+     ],
+     "lv": 3
+    },
+    {
+     "id": "bdg-40-2",
+     "ref": "Abs. 1",
+     "f": "Was gilt nach § 40 Abs. 1 BDG, wenn ein Beamter von seiner bisherigen Verwendung abberufen wird?",
+     "s": [
+      {
+       "t": "Ihm ist gleichzeitig eine neue Verwendung in seiner Dienststelle zuzuweisen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Geht das aus Rücksichten des Dienstes nicht, ist sie spätestens zwei Monate nach der Abberufung zuzuweisen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Für die Zuweisung der neuen Verwendung hat die Dienstbehörde sechs Monate Zeit.",
+       "w": false,
+       "k": "Die neue Verwendung ist spätestens zwei Monate nach der Abberufung zuzuweisen (§ 40 Abs. 1 BDG)."
+      },
+      {
+       "t": "Die neue Verwendung ist in einer anderen Dienststelle zuzuweisen.",
+       "w": false,
+       "k": "Die neue Verwendung ist in seiner Dienststelle zuzuweisen (§ 40 Abs. 1 BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-40-3",
+     "ref": "Abs. 2",
+     "f": "Wann ist die Abberufung von der bisherigen Verwendung nach § 40 Abs. 2 BDG einer Versetzung gleichzuhalten?",
+     "s": [
+      {
+       "t": "Wenn die neue Verwendung der bisherigen nicht mindestens gleichwertig ist.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Wenn dem Beamten keine neue Verwendung zugewiesen wird.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Wenn durch die neue Verwendung eine Verschlechterung für die Beförderung zu erwarten ist.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Wenn die neue Verwendung näher am Wohnort des Beamten liegt.",
+       "w": false,
+       "k": "Die Wohnortnähe ist in § 40 Abs. 2 BDG kein Kriterium."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -1607,7 +2553,8 @@
        "w": false,
        "k": "§ 41 Abs. 1 und 3: Maßgeblich ist die Natur des Dienstes; Abs. 3 erfasst ausdrücklich auch Organisationseinheiten des Bundesheeres."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-41-2",
@@ -1634,7 +2581,36 @@
        "w": false,
        "k": "§ 41 Abs. 4 verweist auf Abs. 1; dieser nimmt § 38 Abs. 2 bis 4, 6 und 7, § 39 Abs. 2 bis 4 und § 40 Abs. 2 aus."
       }
-     ]
+     ],
+     "lv": 3
+    },
+    {
+     "id": "bdg-41-3",
+     "ref": "Abs. 1 und 4",
+     "f": "Welche Aussagen zu § 41 BDG (Ausnahmen für bestimmte Dienstbereiche) treffen zu?",
+     "s": [
+      {
+       "t": "Einige Schutzregeln zu Versetzung, Dienstzuteilung und Verwendungsänderung gelten nicht, wenn Beamte nach der Natur des Dienstes nach einiger Zeit zu versetzen sind.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Ausnahme gilt auch für E 2b-Beamte, wenn die Versetzung in den ersten zwei Jahren ab der Ernennung in E 2b im Bereich einer Landespolizeidirektion erfolgt.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Ausnahme gilt für alle Beamten in jedem Dienstbereich.",
+       "w": false,
+       "k": "Sie gilt nur für Dienstbereiche, in denen Versetzungen nach einiger Zeit notwendig sind (§ 41 Abs. 1 BDG)."
+      },
+      {
+       "t": "Bei E 2b-Beamten gilt die Ausnahme erst nach zehn Jahren.",
+       "w": false,
+       "k": "Maßgeblich sind die ersten zwei Jahre ab der Ernennung in die Verwendungsgruppe E 2b (§ 41 Abs. 4 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -1670,7 +2646,8 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-43-2",
@@ -1697,7 +2674,8 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-43-3",
@@ -1724,7 +2702,8 @@
        "w": false,
        "k": "Abs. 1 verlangt die Beachtung der geltenden Rechtsordnung insgesamt (§ 43 Abs. 1)."
       }
-     ]
+     ],
+     "lv": 1
     },
     {
      "id": "bdg-43-4",
@@ -1751,7 +2730,8 @@
        "w": false,
        "k": "Geschützt ist das Vertrauen in die sachliche Wahrnehmung der dienstlichen Aufgaben (§ 43 Abs. 2)."
       }
-     ]
+     ],
+     "lv": 1
     },
     {
      "id": "bdg-43-5",
@@ -1778,7 +2758,8 @@
        "w": false,
        "k": "Die Definition stellt auf bestehende persönliche Interessen und die fehlende volle Unvoreingenommenheit ab, nicht auf einen erlangten Vorteil (§ 43 Abs. 2)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-43-6",
@@ -1805,7 +2786,8 @@
        "w": false,
        "k": "Unterstützt und informiert wird im Rahmen der dienstlichen Aufgaben (§ 43 Abs. 3)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-43-7",
@@ -1832,7 +2814,92 @@
        "w": false,
        "k": "Genannt sind Geschlecht, ethnische Zugehörigkeit, Religion, Weltanschauung, Behinderung, Alter und sexuelle Orientierung, nicht die Staatsbürgerschaft (§ 43 Abs. 4)."
       }
-     ]
+     ],
+     "lv": 2
+    },
+    {
+     "id": "bdg-43-8",
+     "ref": "Abs. 2",
+     "f": "Welche Aussagen zu Interessenkonflikten nach § 43 Abs. 2 treffen zu?",
+     "s": [
+      {
+       "t": "Tatsächliche und vermeintliche Interessenkonflikte sind zu vermeiden, soweit dies zumutbar ist.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Ein vermeintlicher Interessenkonflikt liegt vor, wenn ein solcher Anschein erweckt werden könnte.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Ein tatsächlicher Interessenkonflikt beruht auf bestehenden persönlichen Interessen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Ein vermeintlicher Interessenkonflikt ist rechtlich ohne Bedeutung.",
+       "w": false,
+       "k": "Auch vermeintliche Interessenkonflikte sind zu vermeiden, soweit zumutbar (§ 43 Abs. 2 BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-43-9",
+     "ref": "Abs. 3",
+     "f": "Welche Aussagen zur Unterstützung von Parteien nach § 43 Abs. 3 treffen zu?",
+     "s": [
+      {
+       "t": "Die Unterstützung der Parteien geht den Interessen des Dienstes immer vor.",
+       "w": false,
+       "k": "Sie besteht nur, soweit sie mit den Interessen des Dienstes vereinbar ist (§ 43 Abs. 3 BDG)."
+      },
+      {
+       "t": "Der Beamte darf Parteien, die er persönlich kennt, bevorzugt informieren.",
+       "w": false,
+       "k": "Es gilt das Gebot der Unparteilichkeit der Amtsführung (§ 43 Abs. 3 BDG)."
+      },
+      {
+       "t": "Der Beamte hat die Parteien im Rahmen seiner dienstlichen Aufgaben zu unterstützen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Beamte hat die Parteien im Rahmen seiner dienstlichen Aufgaben zu informieren.",
+       "w": true,
+       "k": ""
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-43-10",
+     "ref": "Abs. 4",
+     "f": "Welche Diskriminierungsgründe nennt § 43 Abs. 4?",
+     "s": [
+      {
+       "t": "Alter",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Religion",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Sexuelle Orientierung",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Höhe des Einkommens",
+       "w": false,
+       "k": "Das Einkommen ist nicht genannt; genannt sind Geschlecht, ethnische Zugehörigkeit, Religion, Weltanschauung, Behinderung, Alter und sexuelle Orientierung (§ 43 Abs. 4 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -1868,7 +2935,8 @@
        "w": false,
        "k": "Auch Verhaltensweisen, die eine Verletzung der Würde bezwecken oder sonst diskriminierend sind, sind zu unterlassen (§ 43a)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-43a-2",
@@ -1895,7 +2963,8 @@
        "w": false,
        "k": "Sie gilt ausdrücklich auch im Umgang mit Vorgesetzten (§ 43a)."
       }
-     ]
+     ],
+     "lv": 1
     },
     {
      "id": "bdg-43a-3",
@@ -1922,7 +2991,8 @@
        "w": false,
        "k": "Eine solche Meldepflicht ist in § 43a nicht vorgesehen, die Bestimmung verlangt Achtung und Beitrag zur Zusammenarbeit."
       }
-     ]
+     ],
+     "lv": 1
     },
     {
      "id": "bdg-43a-4",
@@ -1949,7 +3019,8 @@
        "w": false,
        "k": "Ausdrücklich zu unterlassen ist auch das Schaffen von Arbeitsbedingungen, die die Würde verletzen oder sonst diskriminierend sind (§ 43a)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-43a-5",
@@ -1976,7 +3047,8 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-43a-6",
@@ -2003,7 +3075,64 @@
        "w": false,
        "k": "§ 43a sieht keine Ausnahme aus dienstlichen Gründen vor, diskriminierende Arbeitsbedingungen sind zu unterlassen."
       }
-     ]
+     ],
+     "lv": 2
+    },
+    {
+     "id": "bdg-43a-7",
+     "ref": "",
+     "f": "Wem gegenüber haben Beamte nach § 43a mit Achtung zu begegnen?",
+     "s": [
+      {
+       "t": "Beamtinnen und Beamte einander.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Kolleginnen und Kollegen untereinander sind davon ausgenommen.",
+       "w": false,
+       "k": "Beamte haben einander mit Achtung zu begegnen (§ 43a BDG)."
+      },
+      {
+       "t": "Vorgesetzte gegenüber ihren Mitarbeiterinnen und Mitarbeitern.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Mitarbeiterinnen und Mitarbeiter gegenüber ihren Vorgesetzten.",
+       "w": true,
+       "k": ""
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-43a-8",
+     "ref": "",
+     "f": "Was haben Beamte nach § 43a im Umgang miteinander zu unterlassen?",
+     "s": [
+      {
+       "t": "Das Schaffen diskriminierender Arbeitsbedingungen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Sachliche Bedenken gegen eine Weisung des Vorgesetzten zu äußern.",
+       "w": false,
+       "k": "§ 43a verbietet würdeverletzendes oder diskriminierendes Verhalten; Bedenken gegen eine Weisung sind sogar mitzuteilen (§ 44 Abs. 3 BDG)."
+      },
+      {
+       "t": "Verhaltensweisen, die eine Verletzung der menschlichen Würde bezwecken.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Verhaltensweisen, die die menschliche Würde anderer verletzen.",
+       "w": true,
+       "k": ""
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -2039,7 +3168,8 @@
        "w": false,
        "k": "Ablehnen darf er nur bei Weisung eines unzuständigen Organs oder wenn die Befolgung gegen strafgesetzliche Vorschriften verstoßen würde (§ 44 Abs. 2)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-44-2",
@@ -2067,6 +3197,7 @@
        "k": "Weisungen sind grundsätzlich auch mündlich zu befolgen (§ 44 Abs. 1). Nur wenn der Beamte Bedenken mitgeteilt hat, muss die Weisung schriftlich erteilt werden, sonst gilt sie als zurückgezogen (§ 44 Abs. 3)."
       }
      ],
+     "lv": 2,
      "x": 1
     },
     {
@@ -2094,7 +3225,8 @@
        "w": false,
        "k": "Weisungen sind zu befolgen, soweit verfassungsgesetzlich nicht anderes bestimmt ist (§ 44 Abs. 1)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-44-4",
@@ -2121,7 +3253,8 @@
        "w": false,
        "k": "Eine Ablehnung ist nur bei einem unzuständigen Organ oder bei Verstoß gegen strafgesetzliche Vorschriften zulässig (§ 44 Abs. 2)."
       }
-     ]
+     ],
+     "lv": 1
     },
     {
      "id": "bdg-44-5",
@@ -2148,7 +3281,8 @@
        "w": false,
        "k": "Die Bedenken sind vor Befolgung der Weisung mitzuteilen (§ 44 Abs. 3)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-44-6",
@@ -2175,7 +3309,8 @@
        "w": false,
        "k": "Die Schriftlichkeit ist in § 44 Abs. 3 für Weisungen vorgesehen, gegen die der Beamte Bedenken mitgeteilt hat."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-44-7",
@@ -2202,7 +3337,92 @@
        "w": false,
        "k": "Der Beamte hat seine Vorgesetzten zu unterstützen, eine Beschränkung auf den unmittelbaren Vorgesetzten enthält § 44 Abs. 1 nicht."
       }
-     ]
+     ],
+     "lv": 3
+    },
+    {
+     "id": "bdg-44-8",
+     "ref": "Abs. 1",
+     "f": "Wer ist Vorgesetzter im Sinn des § 44 Abs. 1?",
+     "s": [
+      {
+       "t": "Jeder Kollege, der länger im Dienst ist.",
+       "w": false,
+       "k": "Vorgesetzter ist, wer mit der Dienst- oder Fachaufsicht über den Beamten betraut ist; das Dienstalter ist nicht maßgeblich (§ 44 Abs. 1 BDG)."
+      },
+      {
+       "t": "Ein Organwalter, der mit der Fachaufsicht über den Beamten betraut ist.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Ein Organwalter, der mit der Dienstaufsicht über den Beamten betraut ist.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Jeder Beamte derselben Dienststelle.",
+       "w": false,
+       "k": "Maßgeblich ist die Betrauung mit Dienst- oder Fachaufsicht (§ 44 Abs. 1 BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-44-9",
+     "ref": "Abs. 1",
+     "f": "Welche Pflichten hat der Beamte nach § 44 Abs. 1 gegenüber seinen Vorgesetzten?",
+     "s": [
+      {
+       "t": "Er darf Weisungen unbequemer Art ablehnen.",
+       "w": false,
+       "k": "Ablehnen darf er nur bei Weisung eines unzuständigen Organs oder Verstoß gegen Strafgesetze (§ 44 Abs. 2 BDG)."
+      },
+      {
+       "t": "Er hat seine Vorgesetzten zu unterstützen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Mündliche Weisungen muss er nicht befolgen.",
+       "w": false,
+       "k": "Weisungen sind grundsätzlich zu befolgen; schriftlich zu erteilen ist nur eine Weisung, gegen die Bedenken mitgeteilt wurden (§ 44 Abs. 1 und 3 BDG)."
+      },
+      {
+       "t": "Er hat ihre Weisungen zu befolgen, soweit verfassungsgesetzlich nicht anderes bestimmt ist.",
+       "w": true,
+       "k": ""
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-44-10",
+     "ref": "Abs. 3",
+     "f": "Was gilt nach § 44 Abs. 3, wenn der Beamte eine Weisung für rechtswidrig hält?",
+     "s": [
+      {
+       "t": "Er hat vor Befolgung seine Bedenken dem Vorgesetzten mitzuteilen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Vorgesetzte hat die Weisung dann schriftlich zu erteilen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Erteilt der Vorgesetzte sie nicht schriftlich, gilt sie als zurückgezogen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Er hat seine Bedenken der Dienstbehörde mitzuteilen.",
+       "w": false,
+       "k": "Die Bedenken sind dem Vorgesetzten mitzuteilen (§ 44 Abs. 3 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -2238,7 +3458,8 @@
        "w": false,
        "k": "§ 45 Abs. 1: Der Vorgesetzte hat auch für die Einhaltung der Dienstzeit zu sorgen."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-45-2",
@@ -2265,7 +3486,148 @@
        "w": false,
        "k": "§ 45 Abs. 3: Die Pflicht besteht für strafbare Handlungen, die den Wirkungsbereich der von ihm geleiteten Dienststelle betreffen."
       }
-     ]
+     ],
+     "lv": 3
+    },
+    {
+     "id": "bdg-45-3",
+     "ref": "Abs. 1",
+     "f": "Was gehört nach § 45 Abs. 1 zu den Pflichten des Vorgesetzten?",
+     "s": [
+      {
+       "t": "Er sorgt für die Einhaltung der Dienstzeit.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Er fördert das Fortkommen der Mitarbeiter nach Maßgabe ihres Dienstalters.",
+       "w": false,
+       "k": "Maßgeblich sind die Leistungen (§ 45 Abs. 1 BDG)."
+      },
+      {
+       "t": "Er fördert das Fortkommen der Mitarbeiter nach Maßgabe ihrer Leistungen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Er achtet darauf, dass die Mitarbeiter ihre Aufgaben gesetzmäßig erfüllen.",
+       "w": true,
+       "k": ""
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-45-4",
+     "ref": "Abs. 1a",
+     "f": "Was gilt nach § 45 Abs. 1a für den Erholungsurlaub der Mitarbeiter?",
+     "s": [
+      {
+       "t": "Der Verfall des Urlaubs ist allein Sache des Mitarbeiters, der Vorgesetzte muss nichts tun.",
+       "w": false,
+       "k": "Der Vorgesetzte hat darauf hinzuwirken (§ 45 Abs. 1a BDG)."
+      },
+      {
+       "t": "Der Vorgesetzte hat bei drohendem Verfall des Urlaubs darauf hinzuwirken, dass er genommen wird.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Das Hinwirken hat rechtzeitig, unmissverständlich und nachweislich zu erfolgen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Dasselbe gilt bei absehbarem Ausscheiden eines Mitarbeiters aus dem Dienst.",
+       "w": true,
+       "k": ""
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-45-5",
+     "ref": "Abs. 2",
+     "f": "Wofür hat der Leiter einer Dienststelle nach § 45 Abs. 2 zusätzlich zu sorgen?",
+     "s": [
+      {
+       "t": "Er hat alle Mitarbeitergespräche selbst zu führen.",
+       "w": false,
+       "k": "Das Mitarbeitergespräch führt der unmittelbar mit der Fachaufsicht betraute Vorgesetzte (§ 45a Abs. 1 BDG)."
+      },
+      {
+       "t": "Für eine gesetzmäßige Vollziehung.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Für eine zweckmäßige, wirtschaftliche und sparsame Geschäftsgebarung.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Für ein geordnetes Zusammenwirken der ihm unterstehenden Organisationseinheiten.",
+       "w": true,
+       "k": ""
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-45-6",
+     "ref": "Abs. 3",
+     "f": "Was muss der Leiter einer Dienststelle nach § 45 Abs. 3 tun?",
+     "s": [
+      {
+       "t": "Er hat den Verdacht dem Disziplinaranwalt zu melden.",
+       "w": false,
+       "k": "Zu melden ist an die zur Anzeige berufene Stelle (§ 45 Abs. 3 BDG)."
+      },
+      {
+       "t": "Die Meldung hat unverzüglich an die zur Anzeige berufene Stelle zu erfolgen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Er muss einen begründeten Verdacht einer Straftat melden, die von Amts wegen zu verfolgen ist.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Straftat muss den Wirkungsbereich seiner Dienststelle betreffen.",
+       "w": true,
+       "k": ""
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-45-7",
+     "ref": "Abs. 4",
+     "f": "Wann besteht für den Dienststellenleiter nach § 45 Abs. 4 keine Meldepflicht?",
+     "s": [
+      {
+       "t": "Wenn die Strafbarkeit binnen kurzem durch schadensbereinigende Maßnahmen entfallen dürfte.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Wenn er einen Mitarbeiter schützen möchte.",
+       "w": false,
+       "k": "Das ist kein Ausnahmegrund (§ 45 Abs. 4 BDG)."
+      },
+      {
+       "t": "Wenn die Meldung eine Tätigkeit beeinträchtigen würde, die ein persönliches Vertrauensverhältnis braucht.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Wenn die Tat nur geringfügig ist.",
+       "w": false,
+       "k": "Geringfügigkeit ist in § 45 Abs. 4 BDG nicht als Ausnahme genannt."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -2301,7 +3663,64 @@
        "w": false,
        "k": "§ 45a Abs. 5 und 6: Die Ausfertigungen des ersten und dritten Teiles verbleiben beim Mitarbeiter und beim Vorgesetzten und dürfen nicht weitergegeben werden; nur das Ergebnis des zweiten Teiles geht auch an die personalführende Stelle."
       }
-     ]
+     ],
+     "lv": 3
+    },
+    {
+     "id": "bdg-45a-2",
+     "ref": "Abs. 1 und 3",
+     "f": "Welche Aussagen zum Mitarbeitergespräch nach § 45a treffen zu?",
+     "s": [
+      {
+       "t": "Es führt der unmittelbar mit der Fachaufsicht betraute Vorgesetzte.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Dienststellenleiter nimmt immer am Gespräch teil.",
+       "w": false,
+       "k": "Es ist ausschließlich zwischen Vorgesetztem und Mitarbeiter zu führen (§ 45a Abs. 3 BDG)."
+      },
+      {
+       "t": "Es ist zweimal jährlich zu führen.",
+       "w": false,
+       "k": "Das Mitarbeitergespräch findet einmal jährlich statt (§ 45a Abs. 1 BDG)."
+      },
+      {
+       "t": "Es ist einmal jährlich mit jedem Mitarbeiter zu führen.",
+       "w": true,
+       "k": ""
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-45a-3",
+     "ref": "Abs. 2",
+     "f": "Welche Themen umfasst das Mitarbeitergespräch nach § 45a Abs. 2?",
+     "s": [
+      {
+       "t": "Die Arbeitsziele der Organisationseinheit im Folgejahr.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Maßnahmen zur Verbesserung oder Erhaltung der Leistung des Mitarbeiters.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Kenntnisse und Fähigkeiten, die der Mitarbeiter am Arbeitsplatz nicht einbringen kann.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Höhe des Gehalts des Mitarbeiters.",
+       "w": false,
+       "k": "Das Gehalt gehört nicht zu den drei Teilen des Gesprächs (§ 45a Abs. 2 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -2337,7 +3756,36 @@
        "w": false,
        "k": "§ 45b Abs. 3: Die Bekanntgabe an den nächsthöheren Vorgesetzten hat schriftlich zu erfolgen."
       }
-     ]
+     ],
+     "lv": 2
+    },
+    {
+     "id": "bdg-45b-2",
+     "ref": "Abs. 1 und 2",
+     "f": "Welche Aussagen zur Teamarbeitsbesprechung nach § 45b treffen zu?",
+     "s": [
+      {
+       "t": "Sie findet jeweils nach Abschluss der einzelnen Mitarbeitergespräche statt.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Teilnehmer sind alle Mitglieder der Organisationseinheit.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Besprochen werden Maßnahmen zur Verbesserung der Leistung der Organisationseinheit.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Sie ist ausschließlich zwischen dem Vorgesetzten und einem einzelnen Mitarbeiter zu führen.",
+       "w": false,
+       "k": "Das gilt für das Mitarbeitergespräch (§ 45a Abs. 3 BDG); die Teamarbeitsbesprechung findet mit allen Mitgliedern der Organisationseinheit statt (§ 45b Abs. 1 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -2373,7 +3821,8 @@
        "w": false,
        "k": "Die Wahrung des Ansehens des Amtes steht nicht in der Aufzählung des Abs. 1 (§ 46 Abs. 1)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-46-2",
@@ -2400,7 +3849,8 @@
        "w": false,
        "k": "Die vernehmende Behörde hat die Entbindung zu beantragen, entscheiden muss die Dienstbehörde (§ 46 Abs. 4 iVm Abs. 3)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-46-3",
@@ -2427,7 +3877,8 @@
        "w": false,
        "k": "Im Disziplinarverfahren ist weder die oder der Beschuldigte noch die Behörde noch die Disziplinaranwaltschaft zur Geheimhaltung verpflichtet (§ 46 Abs. 5)."
       }
-     ]
+     ],
+     "lv": 3
     },
     {
      "id": "bdg-46-4",
@@ -2454,7 +3905,8 @@
        "w": false,
        "k": "Ein solcher Grund steht nicht in der Aufzählung des § 46 Abs. 1 Z 1 bis 7."
       }
-     ]
+     ],
+     "lv": 1
     },
     {
      "id": "bdg-46-5",
@@ -2481,7 +3933,8 @@
        "w": false,
        "k": "Geheim zu halten ist, soweit und solange dies aus einem der genannten Gründe erforderlich und verhältnismäßig ist (§ 46 Abs. 1)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-46-6",
@@ -2508,7 +3961,8 @@
        "w": false,
        "k": "Die Meldung ist der Dienstbehörde zu erstatten, die über die Entbindung entscheidet (§ 46 Abs. 3)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-46-7",
@@ -2535,7 +3989,8 @@
        "w": false,
        "k": "Den Antrag stellt die vernehmende Behörde, sofern sie die Aussage für erforderlich hält (§ 46 Abs. 4)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-46-8",
@@ -2562,7 +4017,120 @@
        "w": false,
        "k": "Die Handlungsanweisungen des Geheimschutzes sind unbeschadet der Ausnahme für Meldungen nach § 53a zu befolgen (§ 46 Abs. 6)."
       }
-     ]
+     ],
+     "lv": 3
+    },
+    {
+     "id": "bdg-46-9",
+     "ref": "Abs. 1",
+     "f": "Welche Geheimhaltungsgründe nennt § 46 Abs. 1?",
+     "s": [
+      {
+       "t": "Die Wahrung des guten Rufs der Behörde.",
+       "w": false,
+       "k": "Dieser Grund ist in § 46 Abs. 1 BDG nicht genannt."
+      },
+      {
+       "t": "Das Interesse der nationalen Sicherheit.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Das Interesse der umfassenden Landesverteidigung.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Vorbereitung einer Entscheidung.",
+       "w": true,
+       "k": ""
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-46-10",
+     "ref": "Abs. 1",
+     "f": "Was ist nach § 46 Abs. 1 geheim zu halten?",
+     "s": [
+      {
+       "t": "Auch alles, was der Beamte privat erfahren hat.",
+       "w": false,
+       "k": "Es geht um Tatsachen aus der amtlichen Tätigkeit (§ 46 Abs. 1 BDG)."
+      },
+      {
+       "t": "Tatsachen, die dem Beamten ausschließlich aus seiner amtlichen Tätigkeit bekannt wurden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Geheimhaltung gilt, soweit sie erforderlich und verhältnismäßig ist.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Geheimhaltung gilt gegenüber jedermann, dem keine amtliche Mitteilung zu machen ist.",
+       "w": true,
+       "k": ""
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-46-11",
+     "ref": "Abs. 3",
+     "f": "Was gilt nach § 46 Abs. 3, wenn der Beamte als Zeuge geladen wird und die Aussage geheim sein könnte?",
+     "s": [
+      {
+       "t": "Er hat dies seiner Dienstbehörde zu melden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Dienstbehörde wägt das Interesse an der Geheimhaltung gegen das Interesse an der Aussage ab.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Dienstbehörde entscheidet, ob er von der Geheimhaltung entbunden wird.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Das Gericht entscheidet über die Entbindung von der Geheimhaltung.",
+       "w": false,
+       "k": "Die Dienstbehörde entscheidet (§ 46 Abs. 3 BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-46-12",
+     "ref": "Abs. 4",
+     "f": "Was gilt nach § 46 Abs. 4, wenn sich die Geheimhaltung erst bei der Aussage zeigt?",
+     "s": [
+      {
+       "t": "Hält die vernehmende Behörde die Aussage für erforderlich, beantragt sie die Entbindung.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Beamte hat die Beantwortung weiterer Fragen zu verweigern.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Beamte hat selbst die Entbindung zu beantragen.",
+       "w": false,
+       "k": "Den Antrag stellt die vernehmende Behörde (§ 46 Abs. 4 BDG)."
+      },
+      {
+       "t": "Der Beamte entscheidet selbst, ob er weiter aussagt.",
+       "w": false,
+       "k": "Er hat weitere Fragen zu verweigern (§ 46 Abs. 4 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -2598,7 +4166,8 @@
        "w": false,
        "k": "§ 47: § 7 AVG und sonstige die Befangenheit regelnde Verfahrensvorschriften bleiben unberührt."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-47-2",
@@ -2625,7 +4194,36 @@
        "w": false,
        "k": "§ 47: Der Beamte hat sich schon bei Vorliegen der Gründe zu enthalten; ein Feststellungsbescheid ist nicht vorgesehen."
       }
-     ]
+     ],
+     "lv": 3
+    },
+    {
+     "id": "bdg-47-3",
+     "ref": "",
+     "f": "Was hat ein befangener Beamter nach § 47 zu tun?",
+     "s": [
+      {
+       "t": "Bei Gefahr im Verzug nimmt er unaufschiebbare Amtshandlungen selbst vor, wenn keine Vertretung möglich ist.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Er hat sich der Ausübung seines Amtes zu enthalten.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Er muss sich erst enthalten, wenn eine Partei die Befangenheit beantragt.",
+       "w": false,
+       "k": "Die Pflicht besteht bei wichtigen Gründen für Zweifel an der Unbefangenheit (§ 47 BDG)."
+      },
+      {
+       "t": "Er hat seine Vertretung zu veranlassen.",
+       "w": true,
+       "k": ""
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -2661,7 +4259,36 @@
        "w": false,
        "k": "§ 52 Abs. 1: Die Anordnung trifft die Dienstbehörde, nicht der unmittelbare Dienstvorgesetzte."
       }
-     ]
+     ],
+     "lv": 2
+    },
+    {
+     "id": "bdg-52-2",
+     "ref": "Abs. 1 und 2",
+     "f": "Welche Aussagen zur ärztlichen Untersuchung nach § 52 treffen zu?",
+     "s": [
+      {
+       "t": "Die Untersuchung wegen Zweifeln an der Eignung ordnet der unmittelbare Vorgesetzte an.",
+       "w": false,
+       "k": "Die Anordnung trifft die Dienstbehörde (§ 52 Abs. 1 BDG)."
+      },
+      {
+       "t": "Bei berechtigten Zweifeln an der gesundheitlichen Eignung ordnet die Dienstbehörde eine Untersuchung an.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Auch ein wegen Krankheit oder Unfall abwesender Beamter hat sich auf Anordnung untersuchen zu lassen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Bei Krankheit darf die Untersuchung erst nach einem Jahr Abwesenheit angeordnet werden.",
+       "w": false,
+       "k": "Die Anordnung ist spätestens drei Monate nach Beginn der Abwesenheit zu erteilen (§ 52 Abs. 2 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -2697,7 +4324,8 @@
        "w": false,
        "k": "Die Meldung hat unverzüglich zu erfolgen (§ 53 Abs. 1)."
       }
-     ]
+     ],
+     "lv": 3
     },
     {
      "id": "bdg-53-2",
@@ -2724,7 +4352,8 @@
        "w": false,
        "k": "Die Änderung der Konfession ist in Abs. 2 nicht als Meldepflicht genannt (§ 53 Abs. 2)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-53-3",
@@ -2751,7 +4380,8 @@
        "w": false,
        "k": "Der Verlust einer für den Dienst erforderlichen behördlichen Berechtigung, insbesondere der Lenkberechtigung, ist zu melden (§ 53 Abs. 2 Z 5)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-53-4",
@@ -2778,7 +4408,8 @@
        "w": false,
        "k": "Die Meldepflicht besteht nur, sofern dem Beamten eine Dienstwaffe zugeteilt worden ist (§ 53 Abs. 2 Z 5a)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-53-5",
@@ -2805,7 +4436,8 @@
        "w": false,
        "k": "Die Meldungen nach Abs. 2 sind der Dienstbehörde zu erstatten (§ 53 Abs. 2)."
       }
-     ]
+     ],
+     "lv": 1
     },
     {
      "id": "bdg-53-6",
@@ -2832,7 +4464,8 @@
        "w": false,
        "k": "Die Meldung hat unverzüglich dem Leiter der Dienststelle zu erfolgen (§ 53 Abs. 1)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-53-7",
@@ -2859,7 +4492,64 @@
        "w": false,
        "k": "Die Meldung ist an die Dienstbehörde zu richten (§ 53 Abs. 1c)."
       }
-     ]
+     ],
+     "lv": 2
+    },
+    {
+     "id": "bdg-53-8",
+     "ref": "Abs. 1",
+     "f": "Welche Aussagen zur Meldepflicht nach § 53 Abs. 1 treffen zu?",
+     "s": [
+      {
+       "t": "Die Meldung ist an die Dienstbehörde zu richten.",
+       "w": false,
+       "k": "Zu melden ist dem Leiter der Dienststelle (§ 53 Abs. 1 BDG)."
+      },
+      {
+       "t": "Es geht um eine von Amts wegen zu verfolgende gerichtlich strafbare Handlung.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Meldung hat unverzüglich zu erfolgen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der begründete Verdacht wurde ihm in Ausübung seines Dienstes bekannt.",
+       "w": true,
+       "k": ""
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-53-9",
+     "ref": "Abs. 2",
+     "f": "Was hat der Beamte nach § 53 Abs. 2 seiner Dienstbehörde zu melden?",
+     "s": [
+      {
+       "t": "Eine Standesveränderung.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Eine Namensänderung.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Eine Änderung des Wohnsitzes.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Den Kauf eines privaten Autos.",
+       "w": false,
+       "k": "Das ist nicht genannt; zu melden ist etwa der Verlust der Lenkberechtigung (§ 53 Abs. 2 Z 5 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -2895,7 +4585,64 @@
        "w": false,
        "k": "§ 54 Abs. 4: Solche Meldungen und Hinweisgebungen können ohne Einhaltung des Dienstweges eingebracht werden."
       }
-     ]
+     ],
+     "lv": 3
+    },
+    {
+     "id": "bdg-54-2",
+     "ref": "Abs. 1 und 2",
+     "f": "Welche Aussagen zum Dienstweg nach § 54 Abs. 1 und 2 treffen zu?",
+     "s": [
+      {
+       "t": "Anbringen sind direkt bei der Dienstbehörde einzubringen.",
+       "w": false,
+       "k": "Sie sind beim unmittelbaren Dienstvorgesetzten einzubringen (§ 54 Abs. 1 BDG)."
+      },
+      {
+       "t": "Der unmittelbare Dienstvorgesetzte hat Anbringen unverzüglich an die zuständige Stelle weiterzuleiten.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Bei Gefahr im Verzug darf vom Dienstweg abgesehen werden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Anbringen sind beim unmittelbaren Dienstvorgesetzten einzubringen.",
+       "w": true,
+       "k": ""
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-54-3",
+     "ref": "Abs. 3",
+     "f": "Was kann nach § 54 Abs. 3 ohne Einhaltung des Dienstweges eingebracht werden?",
+     "s": [
+      {
+       "t": "Rechtsmittel.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Beschwerden an den Verfassungsgerichtshof.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Säumnisbeschwerden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Ein Urlaubsansuchen.",
+       "w": false,
+       "k": "Ein Urlaubsansuchen ist ein Anbringen zum Dienstverhältnis und daher im Dienstweg einzubringen (§ 54 Abs. 1 BDG); Abs. 3 nennt es nicht."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -2931,7 +4678,36 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 2
+    },
+    {
+     "id": "bdg-55-2",
+     "ref": "",
+     "f": "Welche Aussagen zu Wohnsitz und Dienstort nach § 55 treffen zu?",
+     "s": [
+      {
+       "t": "Aus der Lage der Wohnung besteht stets ein Anspruch auf dienstliche Begünstigungen.",
+       "w": false,
+       "k": "Ein solcher Anspruch besteht nur, wenn gesetzlich etwas anderes bestimmt ist (§ 55 Abs. 1 BDG)."
+      },
+      {
+       "t": "Eine zumutbare, zugewiesene Dienstwohnung ist zu beziehen, wenn die Aufgaben es erfordern.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Wohnsitz ist so zu wählen, dass der Dienst nicht beeinträchtigt wird.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Bei besonderen dienstlichen Verhältnissen darf die Dienstbehörde das Verlassen des Dienstortes untersagen.",
+       "w": true,
+       "k": ""
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -2967,7 +4743,8 @@
        "w": false,
        "k": "Verboten sind nur Nebenbeschäftigungen, die an der Aufgabenerfüllung hindern, Befangenheit vermuten lassen oder wesentliche dienstliche Interessen gefährden (§ 56 Abs. 2)."
       }
-     ]
+     ],
+     "lv": 1
     },
     {
      "id": "bdg-56-2",
@@ -2994,7 +4771,8 @@
        "w": false,
        "k": "Es genügt, dass sie die Schaffung nennenswerter Einkünfte bezweckt (§ 56 Abs. 3)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-56-3",
@@ -3021,7 +4799,8 @@
        "w": false,
        "k": "Sie erfolgt unverzüglich mit schriftlicher Weisung der Dienstbehörde (§ 56 Abs. 6)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-56-4",
@@ -3048,7 +4827,8 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 3
     },
     {
      "id": "bdg-56-5",
@@ -3075,7 +4855,8 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-56-6",
@@ -3102,7 +4883,8 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 3
     },
     {
      "id": "bdg-56-7",
@@ -3129,7 +4911,8 @@
        "w": false,
        "k": "Die Untersagung hat unverzüglich mit schriftlicher Weisung zu erfolgen; eine Wartefrist sieht Abs. 6 nicht vor."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-56-8",
@@ -3156,7 +4939,92 @@
        "w": false,
        "k": "Die Verordnung regelt nur, welche Nebenbeschäftigungen jedenfalls unzulässig sind. Jede andere ist weiterhin nach Abs. 2 zu beurteilen (§ 56 Abs. 2 und 7)."
       }
-     ]
+     ],
+     "lv": 2
+    },
+    {
+     "id": "bdg-56-9",
+     "ref": "Abs. 2",
+     "f": "Welche Nebenbeschäftigungen darf der Beamte nach § 56 Abs. 2 nicht ausüben?",
+     "s": [
+      {
+       "t": "Eine, die die Vermutung seiner Befangenheit hervorruft.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Eine, die ihm Einkünfte bringt.",
+       "w": false,
+       "k": "Einkünfte allein machen sie nicht unzulässig; sie sind für die Meldung relevant (§ 56 Abs. 3 BDG)."
+      },
+      {
+       "t": "Eine, die ihn an der Erfüllung seiner dienstlichen Aufgaben behindert.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Eine, die sonstige wesentliche dienstliche Interessen gefährdet.",
+       "w": true,
+       "k": ""
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-56-10",
+     "ref": "Abs. 3",
+     "f": "Welche Aussagen zur Meldung von Nebenbeschäftigungen nach § 56 Abs. 3 treffen zu?",
+     "s": [
+      {
+       "t": "Auch jede Änderung einer solchen Nebenbeschäftigung ist zu melden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Erwerbsmäßig ist sie, wenn sie nennenswerte Einkünfte in Geld oder Gütern bezweckt.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Jede erwerbsmäßige Nebenbeschäftigung ist unverzüglich der Dienstbehörde zu melden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Auch jede unentgeltliche Hilfstätigkeit ist zu melden.",
+       "w": false,
+       "k": "Meldepflichtig ist die erwerbsmäßige Nebenbeschäftigung (§ 56 Abs. 3 BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-56-11",
+     "ref": "Abs. 4",
+     "f": "In welchen Fällen braucht der Beamte für eine erwerbsmäßige Nebenbeschäftigung eine Genehmigung (§ 56 Abs. 4)?",
+     "s": [
+      {
+       "t": "Wenn er eine Teilzeitbeschäftigung nach MSchG oder VKG in Anspruch nimmt.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Jeder Beamte braucht sie immer.",
+       "w": false,
+       "k": "Sie ist nur in den drei Fällen des § 56 Abs. 4 BDG nötig."
+      },
+      {
+       "t": "Wenn seine Wochendienstzeit herabgesetzt wurde.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Wenn er sich in einem Karenzurlaub nach § 75c befindet.",
+       "w": true,
+       "k": ""
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -3192,7 +5060,8 @@
        "w": false,
        "k": "§ 59 Abs. 1 zweiter Satz: Ebenso verboten ist es, sich oder einem Dritten ein Geschenk oder sonstigen Vorteil zu verschaffen oder versprechen zu lassen."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-59-2",
@@ -3219,7 +5088,92 @@
        "w": false,
        "k": "§ 59 Abs. 4: Der Erlös ist zu vereinnahmen und für Wohlfahrtszwecke zugunsten der Bediensteten oder sonstiger karitativer Zwecke zu verwenden."
       }
-     ]
+     ],
+     "lv": 3
+    },
+    {
+     "id": "bdg-59-3",
+     "ref": "Abs. 1",
+     "f": "Was ist dem Beamten nach § 59 Abs. 1 im Hinblick auf seine Amtsführung verboten?",
+     "s": [
+      {
+       "t": "Sich ein Geschenk versprechen zu lassen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Ein Geschenk anzunehmen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Das Verbot gilt nicht, wenn der Vorteil einem Dritten zugutekommt.",
+       "w": false,
+       "k": "Das Verbot gilt für sich oder einen Dritten (§ 59 Abs. 1 BDG)."
+      },
+      {
+       "t": "Ein Geschenk zu fordern.",
+       "w": true,
+       "k": ""
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-59-4",
+     "ref": "Abs. 2 und 4",
+     "f": "Welche Aussagen zu Aufmerksamkeiten und Ehrengeschenken nach § 59 treffen zu?",
+     "s": [
+      {
+       "t": "Eine orts- oder landesübliche Aufmerksamkeit von geringem Wert gilt nicht als Geschenk.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Ehrengeschenke darf der Beamte entgegennehmen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Über ein Ehrengeschenk hat er die Dienstbehörde unverzüglich zu informieren.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Ehrengeschenke darf der Beamte stets behalten.",
+       "w": false,
+       "k": "Die Dienstbehörde erfasst sie als Bundesvermögen; nur solche von geringfügigem oder symbolischem Wert können überlassen werden (§ 59 Abs. 4 und 5 BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-59-5",
+     "ref": "Abs. 6",
+     "f": "Welche Voraussetzungen nennt § 59 Abs. 6 für die Annahme eines Vorteils bei einer dienstlich gerechtfertigten Veranstaltung?",
+     "s": [
+      {
+       "t": "Der Vorteil wird grundsätzlich allen Teilnehmenden gewährt.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Vorteil hat einen inhaltlichen Bezug zur Veranstaltung.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Vorteil entspricht dem üblichen Standard vergleichbarer Veranstaltungen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Vorteil hängt mit einem konkreten Amtsgeschäft zusammen.",
+       "w": false,
+       "k": "Er darf in keinem Konnex zu einem konkreten Amtsgeschäft stehen (§ 59 Abs. 6 Z 4 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -3255,7 +5209,36 @@
        "w": false,
        "k": "§ 60 Abs. 3 Z 1: Das ist durch Verordnung des zuständigen Bundesministers zu regeln."
       }
-     ]
+     ],
+     "lv": 2
+    },
+    {
+     "id": "bdg-60-2",
+     "ref": "Abs. 1, 2b und 5",
+     "f": "Welche Aussagen zu § 60 (Dienstkleidung, Dienstausweis) treffen zu?",
+     "s": [
+      {
+       "t": "Die Kosten für ein qualifiziertes Zertifikat trägt der Beamte.",
+       "w": false,
+       "k": "Der Dienstgeber trägt alle Kosten dieses Vertrags (§ 60 Abs. 2b BDG)."
+      },
+      {
+       "t": "Dienstkleidung und Dienstausweis sind sorgsam zu behandeln.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Bei dienstlichen Gründen ist im Dienst Dienstkleidung zu tragen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Beamte kann verpflichtet sein, sich mit Dienstabzeichen oder Dienstausweis auszuweisen.",
+       "w": true,
+       "k": ""
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -3291,7 +5274,36 @@
        "w": false,
        "k": "§ 47a Z 4: Der Zeitraum reicht von Montag bis einschließlich Sonntag."
       }
-     ]
+     ],
+     "lv": 2
+    },
+    {
+     "id": "bdg-47a-2",
+     "ref": "Z 1 bis 4",
+     "f": "Welche Aussagen zu den Begriffen des § 47a BDG treffen zu?",
+     "s": [
+      {
+       "t": "Zur Dienstzeit zählt auch die Zeit eines Journaldienstes.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Tagesdienstzeit ist die Dienstzeit innerhalb eines ununterbrochenen Zeitraumes von 24 Stunden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Wochendienstzeit ist die Dienstzeit von Montag bis einschließlich Sonntag.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Überstunden zählen nicht zu den Mehrdienstleistungen.",
+       "w": false,
+       "k": "Überstunden sind Mehrdienstleistungen (§ 47a Z 2 lit. a BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -3327,7 +5339,8 @@
        "w": false,
        "k": "§ 48 Abs. 3: Maßgeblich ist der Durchschnitt der Wochen des Kalenderjahres."
       }
-     ]
+     ],
+     "lv": 3
     },
     {
      "id": "bdg-48-2",
@@ -3354,7 +5367,120 @@
        "w": false,
        "k": "§ 48 Abs. 5: Dienst an Sonn- und Feiertagen gilt als Werktagsdienst; wird der Beamte während der Ersatzruhezeit herangezogen, gilt dieser Dienst als Sonntagsdienst."
       }
-     ]
+     ],
+     "lv": 3
+    },
+    {
+     "id": "bdg-48-3",
+     "ref": "Abs. 1, 2",
+     "f": "Welche Aussagen zu Dienstplan und Wochendienstzeit nach § 48 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Die regelmäßige Wochendienstzeit beträgt 40 Stunden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Im Kalenderjahr muss sie im Durchschnitt 40 Stunden je Woche betragen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Beamte hat die im Dienstplan vorgeschriebenen Dienststunden einzuhalten, wenn er nicht vom Dienst befreit, enthoben oder gerechtfertigt abwesend ist.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die regelmäßige Wochendienstzeit beträgt 38,5 Stunden.",
+       "w": false,
+       "k": "Sie beträgt 40 Stunden (§ 48 Abs. 2 BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-48-4",
+     "ref": "Abs. 2a",
+     "f": "Welche Aussagen zu dienstfreien Tagen nach § 48 Abs. 2a BDG treffen zu?",
+     "s": [
+      {
+       "t": "Sonntage sind grundsätzlich dienstfrei zu halten.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Gesetzliche Feiertage sind grundsätzlich dienstfrei zu halten.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Samstage sind grundsätzlich dienstfrei zu halten.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Freitage sind grundsätzlich dienstfrei zu halten.",
+       "w": false,
+       "k": "Dienstfrei zu halten sind Sonntage, gesetzliche Feiertage und Samstage, soweit nicht zwingende Interessen entgegenstehen (§ 48 Abs. 2a BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-48-5",
+     "ref": "Abs. 3",
+     "f": "Welche Aussagen zur gleitenden Dienstzeit nach § 48 Abs. 3 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Der Beamte bestimmt Beginn und Ende seiner täglichen Dienstzeit selbst.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Dafür gelten festgesetzte Grenzen, der sogenannte Gleitzeitrahmen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Innerhalb des Gleitzeitrahmens kann eine Blockzeit festgelegt werden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "In der Blockzeit kann der Beamte frei entscheiden, ob er Dienst versieht.",
+       "w": false,
+       "k": "In der Blockzeit hat der Beamte jedenfalls Dienst zu versehen (§ 48 Abs. 3 BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-48-6",
+     "ref": "Abs. 4",
+     "f": "Welche Aussagen zu Schichtdienst und Wechseldienst nach § 48 Abs. 4 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Beim Schichtdienst löst ein Beamter den anderen ohne wesentliche zeitmäßige Überschneidung ab.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Bei wesentlichen zeitmäßigen Überschneidungen liegt Wechseldienst vor.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Bei Schicht- oder Wechseldienst ist ein Schicht- oder Wechseldienstplan zu erstellen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Beim Schichtdienst endet der Dienstbetrieb mit dem Ende des Normaldienstplanes.",
+       "w": false,
+       "k": "Schichtdienst liegt vor, wenn der Dienstbetrieb über die Zeit des Normaldienstplanes hinaus aufrechterhalten werden muss (§ 48 Abs. 4 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -3390,7 +5516,8 @@
        "w": false,
        "k": "§ 48a Abs. 2: Abweichung ist nur zulässig, wenn dem Beamten innerhalb der nächsten 14 Kalendertage eine Ruhezeit verlängert wird, und zwar um das Ausmaß der Überschreitung."
       }
-     ]
+     ],
+     "lv": 3
     }
    ]
   },
@@ -3426,7 +5553,8 @@
        "w": false,
        "k": "§ 48c: Sie ist nach Beendigung der Tagesdienstzeit zu gewähren."
       }
-     ]
+     ],
+     "lv": 1
     }
    ]
   },
@@ -3462,7 +5590,8 @@
        "w": false,
        "k": "Voraussetzung ist unter anderem, dass die Notwendigkeit nicht auf Umstände zurückgeht, die der Beamte hätte vermeiden können (§ 49 Abs. 1 Z 3)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-49-2",
@@ -3489,7 +5618,8 @@
        "w": false,
        "k": "Außerhalb der Nachtzeit erbrachte Mehrdienstleistungen sind vor jenen in der Nachtzeit auszugleichen (§ 49 Abs. 2)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-49-3",
@@ -3516,7 +5646,8 @@
        "w": false,
        "k": "Er ist nur bis zum Ende des sechsten auf das Kalendervierteljahr der Leistung folgenden Monats zulässig (§ 49 Abs. 8)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-49-4",
@@ -3543,7 +5674,8 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 3
     },
     {
      "id": "bdg-49-5",
@@ -3570,7 +5702,8 @@
        "w": false,
        "k": "Das Gesetz nennt vier Voraussetzungen (Z 1 bis 4), eine nachträgliche Genehmigung zählt nicht dazu (§ 49 Abs. 1)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-49-6",
@@ -3597,7 +5730,8 @@
        "w": false,
        "k": "Der Ausgleich erfolgt im Verhältnis 1 : 1 (§ 49 Abs. 2); 1 : 1,5 gilt nur für Werktagsüberstunden nach Abs. 4 Z 1."
       }
-     ]
+     ],
+     "lv": 1
     },
     {
      "id": "bdg-49-7",
@@ -3624,7 +5758,8 @@
        "w": false,
        "k": "Die Nachtzeit sind die Stunden von 22.00 bis 6.00 Uhr (§ 49 Abs. 2, 7)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-49-8",
@@ -3651,7 +5786,36 @@
        "w": false,
        "k": "Solche Zeiten gelten jedenfalls nicht als Überstunden (§ 49 Abs. 9 Z 1)."
       }
-     ]
+     ],
+     "lv": 3
+    },
+    {
+     "id": "bdg-49-9",
+     "ref": "Abs. 1",
+     "f": "Welche Aussagen zur Mehrdienstleistung nach § 49 Abs. 1 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Der Beamte hat auf Anordnung über die im Dienstplan vorgeschriebenen Dienststunden hinaus Dienst zu versehen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Eine Voraussetzung für die Gleichhaltung einer nicht angeordneten Mehrdienstleistung ist, dass sie zur Abwehr eines Schadens unverzüglich notwendig war.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Eine nicht angeordnete Mehrdienstleistung muss spätestens innerhalb einer Woche schriftlich gemeldet werden, damit sie gleichgehalten wird.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Eine nicht angeordnete Mehrdienstleistung ist auch dann gleichzuhalten, wenn der Beamte einen zur Anordnung Befugten erreichen konnte.",
+       "w": false,
+       "k": "Voraussetzung ist, dass der Beamte keinen zur Anordnung Befugten erreichen konnte (§ 49 Abs. 1 Z 1 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -3687,7 +5851,36 @@
        "w": false,
        "k": "§ 50 Abs. 3: Rufbereitschaft gilt nicht als Dienstzeit."
       }
-     ]
+     ],
+     "lv": 2
+    },
+    {
+     "id": "bdg-50-2",
+     "ref": "Abs. 1 bis 3",
+     "f": "Welche Aussagen zu Bereitschaft und Journaldienst nach § 50 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Der Beamte kann aus dienstlichen Gründen zur Dienststellenbereitschaft verpflichtet werden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Bei der Wohnungsbereitschaft hat er sich in seiner Wohnung erreichbar zu halten.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Bei der Rufbereitschaft muss er jederzeit erreichbar und binnen kürzester Zeit zum Dienstantritt bereit sein.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Bei der Rufbereitschaft muss er sich in der Dienststelle aufhalten.",
+       "w": false,
+       "k": "Bei der Rufbereitschaft wählt er seinen Aufenthalt in der dienstfreien Zeit selbst, muss aber jederzeit erreichbar und binnen kürzester Zeit dienstbereit sein (§ 50 Abs. 3 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -3723,7 +5916,36 @@
        "w": false,
        "k": "§ 51 Abs. 2 letzter Satz: In diesem Fall gilt die Abwesenheit vom Dienst nicht als gerechtfertigt."
       }
-     ]
+     ],
+     "lv": 2
+    },
+    {
+     "id": "bdg-51-2",
+     "ref": "Abs. 1, 2",
+     "f": "Welche Aussagen zur Abwesenheit vom Dienst nach § 51 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Der Beamte hat den Grund seiner Abwesenheit unverzüglich dem Vorgesetzten zu melden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Bei Krankheit ist ab dem vierten Arbeitstag eine ärztliche Bescheinigung vorzulegen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Vorgesetzte kann die ärztliche Bescheinigung auch früher verlangen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Abwesenheit ist innerhalb einer Woche zu melden.",
+       "w": false,
+       "k": "Die Meldung hat unverzüglich zu erfolgen (§ 51 Abs. 1 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -3759,7 +5981,36 @@
        "w": false,
        "k": "§ 145 Abs. 2: Sie ist ausschließlich im Verhältnis 1 : 1 durch Freizeit auszugleichen."
       }
-     ]
+     ],
+     "lv": 2
+    },
+    {
+     "id": "bdg-145-2",
+     "ref": "Abs. 1",
+     "f": "Was gilt nach § 145 Abs. 1 BDG, wenn ein Exekutivbeamter wegen einer dienstlichen Wahrnehmung als Zeuge geladen wird?",
+     "s": [
+      {
+       "t": "Die Zeit der notwendigen Anwesenheit bei der Behörde gilt als Dienstzeit.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Diese Dienstzeit beginnt 60 Minuten vor dem festgesetzten Ladungstermin.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Diese Dienstzeit endet 60 Minuten nach Beendigung der Zeugeneinvernahme.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Fällt die Ladung in die Freizeit, gilt die Anwesenheit bei der Behörde nicht als Dienstzeit.",
+       "w": false,
+       "k": "Die notwendige Anwesenheit gilt als Dienstzeit, eine Ausnahme für die Freizeit sieht § 145 Abs. 1 BDG nicht vor."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -3795,7 +6046,8 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 1
     }
    ]
   },
@@ -3831,7 +6083,36 @@
        "w": false,
        "k": "§ 63 Abs. 5: Anlässlich des Übertrittes in den Ruhestand kann (nicht: muss) der nächsthöhere Amtstitel verliehen werden; sonst gilt Abs. 6."
       }
-     ]
+     ],
+     "lv": 2
+    },
+    {
+     "id": "bdg-63-2",
+     "ref": "§ 63 Abs. 1, 2",
+     "f": "Welche Aussagen zum Amtstitel nach § 63 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Der Beamte ist berechtigt, einen im Besonderen Teil für ihn vorgesehenen Amtstitel zu führen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Amtstitel und Verwendungsbezeichnungen der Beamten werden im Besonderen Teil des BDG geregelt.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Beamtinnen führen den Amtstitel, soweit sprachlich möglich, in der weiblichen Form.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Den Amtstitel legt jede Dienststelle für ihre Beamten selbst fest.",
+       "w": false,
+       "k": "Die Amtstitel werden im Besonderen Teil des BDG geregelt (§ 63 Abs. 1 und 2 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -3867,7 +6148,8 @@
        "w": false,
        "k": "Maßgeblich ist der 43. Geburtstag (§ 65 Abs. 1)."
       }
-     ]
+     ],
+     "lv": 1
     },
     {
      "id": "bdg-65-2",
@@ -3894,7 +6176,8 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-65-3",
@@ -3921,7 +6204,8 @@
        "w": false,
        "k": "Abs. 3 betrifft nur Ausbildungs- oder Lehrverhältnisse zum Bund (§ 65 Abs. 3)."
       }
-     ]
+     ],
+     "lv": 3
     },
     {
      "id": "bdg-65-4",
@@ -3948,7 +6232,8 @@
        "w": false,
        "k": "Liegt der 43. Geburtstag nach dem 30. Juni, erhöht sich das Ausmaß erst ab dem darauf folgenden Kalenderjahr (§ 65 Abs. 1)."
       }
-     ]
+     ],
+     "lv": 3
     },
     {
      "id": "bdg-65-5",
@@ -3975,7 +6260,8 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-65-6",
@@ -4002,7 +6288,8 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-65-7",
@@ -4029,7 +6316,8 @@
        "w": false,
        "k": "Abs. 4 erfasst das in den Abs. 1 und 2 und § 72 ausgedrückte Urlaubsausmaß."
       }
-     ]
+     ],
+     "lv": 1
     }
    ]
   },
@@ -4065,7 +6353,64 @@
        "w": false,
        "k": "§ 68 Abs. 4: In bestimmten Dienstbereichen und bei besonderem öffentlichen Interesse ist die Heranziehung zulässig, wenn dies zur Aufrechterhaltung des Dienstbetriebes zwingend geboten ist; das Recht auf einseitige Festlegung bleibt dann konsumiert."
       }
-     ]
+     ],
+     "lv": 2
+    },
+    {
+     "id": "bdg-68-2",
+     "ref": "Abs. 1",
+     "f": "Welche Aussagen zur Festlegung des Erholungsurlaubes nach § 68 Abs. 1 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Bei der Festlegung sind die dienstlichen Interessen zu berücksichtigen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Auf die persönlichen Verhältnisse des Beamten ist angemessen Rücksicht zu nehmen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Beamte hat grundsätzlich Anspruch, die Hälfte des Urlaubs ungeteilt zu verbrauchen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Beamte hat Anspruch, den gesamten Urlaub ungeteilt zu verbrauchen.",
+       "w": false,
+       "k": "Der Anspruch besteht für die Hälfte des Urlaubs (§ 68 Abs. 1 BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-68-3",
+     "ref": "Abs. 3",
+     "f": "Welche Aussagen zum persönlichen Feiertag nach § 68 Abs. 3 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Der Beamte kann pro Kalenderjahr einen Tag Erholungsurlaub einseitig in Anspruch nehmen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Beamte muss das Datum spätestens drei Monate im Vorhinein bekannt geben.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Beamte kann pro Monat einen persönlichen Feiertag einseitig festlegen.",
+       "w": false,
+       "k": "Es ist ein Tag pro Kalenderjahr (§ 68 Abs. 3 BDG)."
+      },
+      {
+       "t": "Das Datum ist spätestens eine Woche im Vorhinein bekannt zu geben.",
+       "w": false,
+       "k": "Spätestens drei Monate im Vorhinein (§ 68 Abs. 3 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -4101,7 +6446,36 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 2
+    },
+    {
+     "id": "bdg-69-2",
+     "ref": "Abs. 1",
+     "f": "Welche Aussagen zum Verfall des Erholungsurlaubes nach § 69 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Der Urlaub verfällt, wenn er nicht bis 31. Dezember des folgenden Kalenderjahres verbraucht wurde.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Urlaub aus dem Jahr 2025 muss grundsätzlich bis 31. Dezember 2026 verbraucht werden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Urlaub aus dem Jahr 2025 verfällt grundsätzlich schon am 30. Juni 2026.",
+       "w": false,
+       "k": "Er verfällt erst, wenn er nicht bis 31. Dezember 2026 verbraucht ist (§ 69 Abs. 1 BDG)."
+      },
+      {
+       "t": "Der Urlaub verfällt grundsätzlich schon mit Ende des Urlaubsjahres.",
+       "w": false,
+       "k": "Er verfällt erst am 31. Dezember des folgenden Kalenderjahres (§ 69 Abs. 1 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -4137,7 +6511,8 @@
        "w": false,
        "k": "§ 70: Der Vorgriff „kann gestattet werden“, es besteht kein Rechtsanspruch."
       }
-     ]
+     ],
+     "lv": 1
     }
    ]
   },
@@ -4173,7 +6548,36 @@
        "w": false,
        "k": "§ 71 Abs. 1: Die Nichtanrechnung gilt nur, wenn die Erkrankung nicht vorsätzlich oder grob fahrlässig herbeigeführt wurde."
       }
-     ]
+     ],
+     "lv": 2
+    },
+    {
+     "id": "bdg-71-2",
+     "ref": "Abs. 1 und 2",
+     "f": "Welche Aussagen zur Erkrankung während des Erholungsurlaubes nach § 71 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Eine Erkrankung unterbricht den Urlaub, wenn sie länger als drei Kalendertage gedauert hat.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Beim Wiederantritt des Dienstes ist ein ärztliches Zeugnis oder eine Bestätigung des Krankenversicherungsträgers vorzulegen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Auch eine grob fahrlässig herbeigeführte Erkrankung unterbricht den Urlaub.",
+       "w": false,
+       "k": "Bei Vorsatz oder grober Fahrlässigkeit gilt die Unterbrechung nicht (§ 71 Abs. 1 BDG)."
+      },
+      {
+       "t": "Die Erkrankung ist der Dienststelle erst nach dem Wiederantritt des Dienstes mitzuteilen.",
+       "w": false,
+       "k": "Sie ist nach dreitägiger Krankheitsdauer unverzüglich mitzuteilen (§ 71 Abs. 2 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -4209,7 +6613,36 @@
        "w": false,
        "k": "§ 74 Abs. 3: Der Sonderurlaub darf nur gewährt werden, wenn keine zwingenden dienstlichen Erfordernisse entgegenstehen, und darf die dem Anlass angemessene Dauer nicht übersteigen."
       }
-     ]
+     ],
+     "lv": 2
+    },
+    {
+     "id": "bdg-74-2",
+     "ref": "",
+     "f": "Welche Aussagen zum Sonderurlaub nach § 74 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Er kann aus wichtigen persönlichen oder familiären Gründen gewährt werden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Für die Zeit des Sonderurlaubes behält der Beamte die vollen Bezüge.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Sonderurlaub wird von Amts wegen gewährt, ein Ansuchen ist nicht nötig.",
+       "w": false,
+       "k": "Er wird auf Ansuchen des Beamten gewährt (§ 74 Abs. 1 BDG)."
+      },
+      {
+       "t": "Ein Sonderurlaub darf beliebig lange dauern.",
+       "w": false,
+       "k": "Er darf die dem Anlass angemessene Dauer nicht übersteigen, im Kalenderjahr höchstens die Dienstzeit von zwölf Wochen (§ 74 Abs. 3 und 4 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -4245,7 +6678,8 @@
        "w": false,
        "k": "§ 75 Abs. 1: Der Karenzurlaub ist ein Urlaub unter Entfall der Bezüge."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-75-2",
@@ -4272,7 +6706,36 @@
        "w": false,
        "k": "§ 75 Abs. 2 Z 1: Er ist für die Dauer der Mitgliedschaft gegen Entfall der Bezüge beurlaubt (Karenzierung kraft Gesetzes)."
       }
-     ]
+     ],
+     "lv": 3
+    },
+    {
+     "id": "bdg-75-3",
+     "ref": "Abs. 2",
+     "f": "Welche Aussagen zum Karenzurlaub kraft Gesetzes nach § 75 Abs. 2 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Wer zur Rektorin oder zum Rektor einer Universität gewählt wird, ist für die Dauer der Funktion beurlaubt.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Wer durch Dienstvertrag mit der Funktion einer Generalsekretärin oder eines Generalsekretärs betraut wird, ist für die Dauer der Funktion beurlaubt.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Beurlaubung tritt in diesen Fällen kraft Gesetzes ein, ein Antrag ist nicht nötig.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Während dieser Funktion werden die vollen Bezüge weitergezahlt.",
+       "w": false,
+       "k": "Die Beurlaubung erfolgt gegen Entfall der Bezüge (§ 75 Abs. 2 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -4308,7 +6771,36 @@
        "w": false,
        "k": "§ 75d Abs. 7: Die Inanspruchnahme durch eine Person für dasselbe Kind ist nur einmal zulässig."
       }
-     ]
+     ],
+     "lv": 2
+    },
+    {
+     "id": "bdg-75d-2",
+     "ref": "Abs. 1",
+     "f": "Welche Aussagen zum Frühkarenzurlaub nach § 75d Abs. 1 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Er wird für bis zu 31 Tage gewährt.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Voraussetzung ist ein gemeinsamer Haushalt mit der Mutter und dem Kind.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Er wird für bis zu 90 Tage gewährt.",
+       "w": false,
+       "k": "Das Höchstausmaß beträgt 31 Tage (§ 75d Abs. 1 BDG)."
+      },
+      {
+       "t": "Während des Frühkarenzurlaubes gebühren die vollen Bezüge.",
+       "w": false,
+       "k": "Es ist ein Urlaub unter Entfall der Bezüge (§ 75d Abs. 1 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -4344,7 +6836,8 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-76-2",
@@ -4371,7 +6864,8 @@
        "w": false,
        "k": "Onkel und Tanten sind in Abs. 2 nicht genannt (§ 76 Abs. 2)."
       }
-     ]
+     ],
+     "lv": 1
     },
     {
      "id": "bdg-76-3",
@@ -4398,7 +6892,8 @@
        "w": false,
        "k": "Maßgeblich ist das zwölfte Lebensjahr oder der Bezug erhöhter Familienbeihilfe (§ 76 Abs. 4)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-76-4",
@@ -4426,6 +6921,7 @@
        "k": ""
       }
      ],
+     "lv": 2,
      "x": 1
     },
     {
@@ -4453,7 +6949,8 @@
        "w": false,
        "k": "Die Gründe des § 15d Abs. 2 Z 1 bis 4 MSchG sind Tod, Aufenthalt in einer Heil- und Pflegeanstalt, Freiheitsstrafe oder behördliche Anhaltung und schwere Erkrankung. Eine berufliche Verhinderung gehört nicht dazu."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-76-6",
@@ -4480,7 +6977,8 @@
        "w": false,
        "k": "Z 1 verlangt einen nahen Angehörigen (Abs. 2) oder eine im gemeinsamen Haushalt lebende Person. Ein Nachbar außerhalb des Haushalts ist beides nicht."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-76-7",
@@ -4507,7 +7005,8 @@
        "w": false,
        "k": "Abs. 4 Z 2 betrifft nur die Pflege eines erkrankten Kindes (einschließlich Wahl-, Pflege- oder Stiefkindes oder Kindes der Lebensgefährtin) unter den dort genannten Voraussetzungen."
       }
-     ]
+     ],
+     "lv": 3
     }
    ]
   },
@@ -4543,7 +7042,8 @@
        "w": false,
        "k": "§ 78e Abs. 3: Die Freistellung ist ungeteilt zu verbrauchen."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-78e-2",
@@ -4570,7 +7070,36 @@
        "w": false,
        "k": "§ 78e Abs. 3: Der Beamte darf während der Freistellung nicht zur Dienstleistung herangezogen werden."
       }
-     ]
+     ],
+     "lv": 2
+    },
+    {
+     "id": "bdg-78e-3",
+     "ref": "Abs. 1",
+     "f": "Welche Aussagen zum Sabbatical nach § 78e Abs. 1 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Es wird auf Antrag des Beamten gewährt.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Freistellung dauert mindestens sechs und höchstens zwölf Monate.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Freistellung erfolgt gegen anteilige Kürzung der Bezüge.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Voraussetzung ist ein Dienstverhältnis zum Bund seit mindestens zehn Jahren.",
+       "w": false,
+       "k": "Es genügen mindestens fünf Jahre im Bundesdienst (§ 78e Abs. 1 Z 2 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -4606,7 +7135,8 @@
        "w": false,
        "k": "§ 90: Berichten hat der Vorgesetzte."
       }
-     ]
+     ],
+     "lv": 1
     }
    ]
   },
@@ -4642,7 +7172,8 @@
        "w": false,
        "k": "§ 92 Abs. 1 Z 2 und 3: Die Geldbuße reicht bis zur Höhe eines Monatsbezugs, die Geldstrafe geht darüber hinaus bis zu fünf Monatsbezügen; die Aussage vertauscht beide."
       }
-     ]
+     ],
+     "lv": 1
     },
     {
      "id": "bdg-92-2",
@@ -4669,7 +7200,8 @@
        "w": false,
        "k": "§ 92 Abs. 2: Abzustellen ist auf den Zeitpunkt der Fällung des Disziplinarerkenntnisses beziehungsweise der Verhängung der Disziplinarverfügung."
       }
-     ]
+     ],
+     "lv": 3
     },
     {
      "id": "bdg-92-3",
@@ -4696,7 +7228,8 @@
        "w": false,
        "k": "§ 132: Nach rechtzeitigem Einspruch hat die Bundesdisziplinarbehörde zu entscheiden, ob ein Verfahren einzuleiten ist."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-92-4",
@@ -4723,7 +7256,8 @@
        "w": false,
        "k": "§ 102 Abs. 1 erster Satz: Der Senat entscheidet grundsätzlich mit Stimmenmehrheit; Einstimmigkeit verlangt das Gesetz nur für die Entlassung."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-92-5",
@@ -4750,7 +7284,92 @@
        "w": false,
        "k": "§ 112 Abs. 6: Die Suspendierung endet spätestens mit dem rechtskräftigen Abschluss des Disziplinarverfahrens und ist bei Wegfall der Umstände unverzüglich aufzuheben."
       }
-     ]
+     ],
+     "lv": 2
+    },
+    {
+     "id": "bdg-92-6",
+     "ref": "Abs. 1",
+     "f": "Welche Aussagen zu den Disziplinarstrafen nach § 92 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Der Verweis ist eine Disziplinarstrafe.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Geldbuße ist eine Disziplinarstrafe.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Versetzung in den Ruhestand ist eine Disziplinarstrafe.",
+       "w": false,
+       "k": "Disziplinarstrafen sind nur Verweis, Geldbuße, Geldstrafe und Entlassung (§ 92 Abs. 1 BDG)."
+      },
+      {
+       "t": "Die Kündigung ist eine Disziplinarstrafe.",
+       "w": false,
+       "k": "Die Kündigung ist keine Disziplinarstrafe; genannt sind nur Verweis, Geldbuße, Geldstrafe, Entlassung (§ 92 Abs. 1 BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-92-7",
+     "ref": "Abs. 1 Z 2",
+     "f": "Welche Aussagen zur Geldbuße nach § 92 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Die Geldbuße kann bis zur Höhe eines Monatsbezugs verhängt werden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Geldbuße darf auch in einer Disziplinarverfügung verhängt werden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Geldbuße kann bis zu fünf Monatsbezüge betragen.",
+       "w": false,
+       "k": "Die Geldbuße reicht nur bis zu einem Monatsbezug; bis zu fünf Monatsbezüge betrifft die Geldstrafe (§ 92 Abs. 1 Z 2 und 3 BDG)."
+      },
+      {
+       "t": "Die Geldbuße beträgt immer genau einen halben Monatsbezug.",
+       "w": false,
+       "k": "Sie kann bis zur Höhe eines Monatsbezugs verhängt werden, ein fester Betrag ist nicht vorgesehen (§ 92 Abs. 1 Z 2 BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-92-8",
+     "ref": "Abs. 1 Z 3",
+     "f": "Welche Aussagen zur Geldstrafe nach § 92 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Die Geldstrafe beträgt mehr als einen Monatsbezug.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Geldstrafe kann bis zu fünf Monatsbezüge betragen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Geldstrafe kann bis zu zehn Monatsbezüge betragen.",
+       "w": false,
+       "k": "Die Obergrenze liegt bei fünf Monatsbezügen (§ 92 Abs. 1 Z 3 BDG)."
+      },
+      {
+       "t": "Die Geldstrafe darf auch in einer Disziplinarverfügung verhängt werden.",
+       "w": false,
+       "k": "In der Disziplinarverfügung sind nur Verweis und Geldbuße zulässig (§ 131 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -4786,7 +7405,8 @@
        "w": false,
        "k": "Die Dreijahresfrist läuft ab Beendigung der Dienstpflichtverletzung, die kürzeren Fristen ab Kenntnis der Disziplinarbehörde (§ 94 Abs. 1)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-94-2",
@@ -4813,7 +7433,8 @@
        "w": false,
        "k": "Sie beträgt drei Jahre ab Zustellung der Entscheidung, ein Disziplinarverfahren durchzuführen (§ 94 Abs. 1a)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-94-3",
@@ -4840,7 +7461,8 @@
        "w": false,
        "k": "Die Dauer eines Strafverfahrens nach der StPO hemmt den Fristenlauf (§ 94 Abs. 2 Z 3)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-94-4",
@@ -4867,7 +7489,8 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 3
     },
     {
      "id": "bdg-94-5",
@@ -4894,7 +7517,8 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-94-6",
@@ -4921,7 +7545,92 @@
        "w": false,
        "k": "In den Fällen des § 28 PVG wird der Lauf der Fristen für die Dauer eines Verfahrens vor der Personalvertretungsaufsichtsbehörde gehemmt (§ 94 Abs. 3 Z 2)."
       }
-     ]
+     ],
+     "lv": 3
+    },
+    {
+     "id": "bdg-94-7",
+     "ref": "Abs. 1",
+     "f": "Welche Aussagen zur Verjährung der Dienstpflichtverletzung nach § 94 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Innerhalb von sechs Monaten ab Kenntnis der Disziplinarbehörde muss eine Disziplinarverfügung erlassen oder Anzeige an die Bundesdisziplinarbehörde erstattet werden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Innerhalb von drei Jahren ab Beendigung der Dienstpflichtverletzung muss eine Disziplinarverfügung erlassen oder ein Disziplinarverfahren eingeleitet werden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Disziplinarverfügung muss innerhalb von zwei Jahren ab Kenntnis der Disziplinarbehörde erlassen werden.",
+       "w": false,
+       "k": "Die Frist ab Kenntnis der Disziplinarbehörde beträgt sechs Monate (§ 94 Abs. 1 Z 1 BDG)."
+      },
+      {
+       "t": "Die Sechs-Monats-Frist beginnt mit der Begehung der Dienstpflichtverletzung.",
+       "w": false,
+       "k": "Sie beginnt, sobald die Disziplinarbehörde von der Dienstpflichtverletzung Kenntnis erlangt (§ 94 Abs. 1 Z 1 BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-94-8",
+     "ref": "Abs. 1a",
+     "f": "Welche Aussagen zur Frist nach § 94 Abs. 1a BDG treffen zu?",
+     "s": [
+      {
+       "t": "Drei Jahre nach Zustellung der Entscheidung, ein Disziplinarverfahren durchzuführen, darf keine Disziplinarstrafe mehr verhängt werden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Frist beginnt mit der Zustellung dieser Entscheidung an den beschuldigten Beamten.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Frist beträgt fünf Jahre.",
+       "w": false,
+       "k": "Sie beträgt drei Jahre (§ 94 Abs. 1a BDG)."
+      },
+      {
+       "t": "Die Frist beginnt mit dem Tag der Dienstpflichtverletzung.",
+       "w": false,
+       "k": "Sie beginnt mit der Zustellung der Entscheidung, ein Disziplinarverfahren durchzuführen (§ 94 Abs. 1a BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-94-9",
+     "ref": "Abs. 2",
+     "f": "Welche Aussagen zur Hemmung der Verjährungsfristen nach § 94 Abs. 2 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Ein Strafverfahren nach der StPO zum selben Sachverhalt hemmt die Fristen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Ein Verfahren vor dem Verfassungsgerichtshof zum selben Sachverhalt hemmt die Fristen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Ein Verfahren vor dem Verwaltungsgerichtshof zum selben Sachverhalt hemmt die Fristen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Ein Strafverfahren hemmt die Fristen auch, wenn es einen ganz anderen Sachverhalt betrifft.",
+       "w": false,
+       "k": "Gehemmt wird nur, wenn der Sachverhalt der Dienstpflichtverletzung Gegenstand des Verfahrens ist (§ 94 Abs. 2 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -4957,7 +7666,8 @@
        "w": false,
        "k": "§ 96 zählt nur zwei Arten von Disziplinarbehörden (Z 1 und Z 2) auf; der Disziplinaranwalt ist nicht genannt."
       }
-     ]
+     ],
+     "lv": 1
     }
    ]
   },
@@ -4993,7 +7703,8 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-109-2",
@@ -5020,7 +7731,92 @@
        "w": false,
        "k": "§ 109 Abs. 2: Zu vernichten sind sie nur, wenn der Beamte in diesem Zeitraum keine weitere Dienstpflichtverletzung begangen hat; erst dann darf auch kein dienstlicher Nachteil mehr entstehen."
       }
-     ]
+     ],
+     "lv": 2
+    },
+    {
+     "id": "bdg-109-3",
+     "ref": "Abs. 1",
+     "f": "Welche Aussagen zu den Pflichten des Dienstvorgesetzten bei Verdacht einer Dienstpflichtverletzung treffen zu?",
+     "s": [
+      {
+       "t": "Der Dienstvorgesetzte pflegt die Erhebungen, die zur vorläufigen Klarstellung des Sachverhalts nötig sind.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Danach erstattet er unverzüglich im Dienstweg der Dienstbehörde die Disziplinaranzeige.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Dienstvorgesetzte richtet die Disziplinaranzeige direkt an die Bundesdisziplinarbehörde.",
+       "w": false,
+       "k": "Die Anzeige geht im Dienstweg an die Dienstbehörde (§ 109 Abs. 1 BDG)."
+      },
+      {
+       "t": "Der Dienstvorgesetzte verhängt selbst die Disziplinarstrafe.",
+       "w": false,
+       "k": "Disziplinarbehörden sind nur die Dienstbehörden und die Bundesdisziplinarbehörde (§ 96 BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-109-4",
+     "ref": "Abs. 1",
+     "f": "Was gilt, wenn der Verdacht auch eine von Amts wegen zu verfolgende gerichtlich strafbare Handlung betrifft (§ 109 BDG)?",
+     "s": [
+      {
+       "t": "Der Dienstvorgesetzte enthält sich in dieser Eigenschaft jeder Erhebung.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Dienstvorgesetzte berichtet sofort der Dienstbehörde.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Dienstbehörde geht dann nach § 78 StPO vor.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Dienstvorgesetzte wartet das Ergebnis des Strafverfahrens ab, bevor er der Dienstbehörde berichtet.",
+       "w": false,
+       "k": "Er hat sofort der Dienstbehörde zu berichten (§ 109 Abs. 1 BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-109-5",
+     "ref": "Abs. 2",
+     "f": "Welche Aussagen zu Belehrung und Ermahnung nach § 109 Abs. 2 BDG treffen zu?",
+     "s": [
+      {
+       "t": "Reicht nach Ansicht des Dienstvorgesetzten eine Belehrung oder Ermahnung aus, ist von einer Disziplinaranzeige abzusehen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Belehrung oder Ermahnung ist dem Beamten nachweislich mitzuteilen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Nach drei Jahren ab Mitteilung darf sie zu keinen dienstlichen Nachteilen mehr führen, wenn der Beamte in dieser Zeit keine weitere Dienstpflichtverletzung begangen hat.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Eine Belehrung oder Ermahnung ist eine Disziplinarstrafe.",
+       "w": false,
+       "k": "Disziplinarstrafen sind nur Verweis, Geldbuße, Geldstrafe und Entlassung (§ 92 Abs. 1 BDG); die Belehrung oder Ermahnung tritt an die Stelle der Disziplinaranzeige (§ 109 Abs. 2 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -5056,7 +7852,8 @@
        "w": false,
        "k": "Das Gesetz nennt nur Untersuchungshaft, Anklage wegen bestimmter Delikte und die Gefährdung von Amt oder Dienstinteressen (§ 112 Abs. 1 Z 1 bis 3)."
       }
-     ]
+     ],
+     "lv": 3
     },
     {
      "id": "bdg-112-2",
@@ -5083,7 +7880,8 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-112-3",
@@ -5110,7 +7908,8 @@
        "w": false,
        "k": "Voraussetzung ist, dass das Gesamteinkommen den Mindestsatz nicht erreicht (§ 112 Abs. 4)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-112-4",
@@ -5138,6 +7937,7 @@
        "k": "Ihr oder ihm steht das Recht der Beschwerde an das Bundesverwaltungsgericht zu (§ 112 Abs. 3)."
       }
      ],
+     "lv": 2,
      "x": 1
     },
     {
@@ -5165,7 +7965,8 @@
        "w": false,
        "k": "Es genügt eine rechtswirksame Anklage, die sich auf eine Tatbegehung ab dem 1. Jänner 2013 bezieht (§ 112 Abs. 1 Z 2)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-112-6",
@@ -5192,7 +7993,8 @@
        "w": false,
        "k": "Die vorläufige Suspendierung endet spätestens mit rechtskräftiger Entscheidung der Bundesdisziplinarbehörde oder des Bundesverwaltungsgerichts über die Suspendierung (§ 112 Abs. 2)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-112-7",
@@ -5219,7 +8021,148 @@
        "w": false,
        "k": "Die Verminderung oder Aufhebung kann auf Antrag der Beamtin oder des Beamten oder von Amts wegen erfolgen (§ 112 Abs. 4)."
       }
-     ]
+     ],
+     "lv": 2
+    },
+    {
+     "id": "bdg-112-8",
+     "ref": "Abs. 1",
+     "f": "In welchen Fällen hat die Dienstbehörde die vorläufige Suspendierung zu verfügen (§ 112 Abs. 1 BDG)?",
+     "s": [
+      {
+       "t": "Wenn über den Beamten die Untersuchungshaft verhängt wird.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Wenn eine rechtswirksame Anklage wegen eines in § 20 Abs. 1 Z 3a angeführten Delikts vorliegt.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Wenn seine Belassung im Dienst wegen der Art der vorgeworfenen Dienstpflichtverletzungen das Ansehen des Amtes oder wesentliche Interessen des Dienstes gefährden würde.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Bei jeder Anzeige wegen einer Dienstpflichtverletzung.",
+       "w": false,
+       "k": "Es muss einer der Gründe des § 112 Abs. 1 BDG vorliegen, eine bloße Anzeige genügt nicht."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-112-9",
+     "ref": "Abs. 1 und 2",
+     "f": "Wer verfügt die vorläufige Suspendierung und wem ist sie mitzuteilen (§ 112 BDG)?",
+     "s": [
+      {
+       "t": "Die Dienstbehörde verfügt die vorläufige Suspendierung.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die vorläufige Suspendierung ist unverzüglich der Bundesdisziplinarbehörde mitzuteilen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der unmittelbare Dienstvorgesetzte verfügt die vorläufige Suspendierung.",
+       "w": false,
+       "k": "Zuständig ist die Dienstbehörde (§ 112 Abs. 1 BDG)."
+      },
+      {
+       "t": "Die vorläufige Suspendierung ist dem Disziplinaranwalt zur Genehmigung vorzulegen.",
+       "w": false,
+       "k": "Sie ist der Bundesdisziplinarbehörde mitzuteilen (§ 112 Abs. 2 BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-112-10",
+     "ref": "Abs. 2 und 6",
+     "f": "Welche Aussagen zur Dauer und Entscheidung über die Suspendierung treffen zu?",
+     "s": [
+      {
+       "t": "Die Bundesdisziplinarbehörde entscheidet über die mitgeteilte vorläufige Suspendierung innerhalb eines Monats.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Suspendierung endet spätestens mit dem rechtskräftigen Abschluss des Disziplinarverfahrens.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Fallen die Gründe für die Suspendierung weg, hebt die Bundesdisziplinarbehörde sie unverzüglich auf.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Suspendierung endet automatisch nach drei Monaten.",
+       "w": false,
+       "k": "Sie endet spätestens mit rechtskräftigem Abschluss des Disziplinarverfahrens (§ 112 Abs. 6 BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-112-11",
+     "ref": "Abs. 4",
+     "f": "Welche Aussagen zum Monatsbezug bei Suspendierung treffen zu (§ 112 Abs. 4 BDG)?",
+     "s": [
+      {
+       "t": "Eine Suspendierung kürzt den Monatsbezug auf zwei Drittel.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Während der vorläufigen Suspendierung wird der Bezug zunächst ohne Kürzung ausbezahlt.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Kürzung beträgt die Hälfte des Monatsbezugs.",
+       "w": false,
+       "k": "Der Monatsbezug wird auf zwei Drittel gekürzt (§ 112 Abs. 4 BDG)."
+      },
+      {
+       "t": "Die Kürzung kann nie vermindert oder aufgehoben werden.",
+       "w": false,
+       "k": "Die Kürzung ist auf Antrag oder von Amts wegen zu vermindern oder aufzuheben, wenn das Familieneinkommen den Mindestsatz nach § 26 Abs. 5 PG 1965 nicht erreicht (§ 112 Abs. 4 BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-112-12",
+     "ref": "Abs. 1",
+     "f": "Was trifft auf die Suspendierung zu (§ 112 BDG)?",
+     "s": [
+      {
+       "t": "Die Suspendierung ist eine sichernde Maßnahme.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Suspendierung ist keine Disziplinarstrafe.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Suspendierung setzt voraus, dass der Beamte bereits rechtskräftig verurteilt wurde.",
+       "w": false,
+       "k": "Die vorläufige Suspendierung ist schon bei Untersuchungshaft, rechtswirksamer Anklage wegen eines Delikts nach § 20 Abs. 1 Z 3a oder Gefährdung von Ansehen oder Dienstinteressen zu verfügen (§ 112 Abs. 1 BDG)."
+      },
+      {
+       "t": "Die Suspendierung wird vom Dienstvorgesetzten mündlich ausgesprochen.",
+       "w": false,
+       "k": "Die vorläufige Suspendierung verfügt die Dienstbehörde (§ 112 Abs. 1 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -5255,7 +8198,8 @@
        "w": false,
        "k": "Die Disziplinarverfügung ergeht schriftlich (§ 131)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-131-2",
@@ -5282,7 +8226,8 @@
        "w": false,
        "k": "Die Geldbuße darf höchstens einen Monatsbezug betragen (§ 131)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-131-3",
@@ -5309,7 +8254,8 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 3
     },
     {
      "id": "bdg-131-4",
@@ -5336,7 +8282,92 @@
        "w": false,
        "k": "Maßgeblich ist der Monatsbezug im Zeitpunkt der Erlassung der Disziplinarverfügung (§ 131)."
       }
-     ]
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-131-5",
+     "ref": "Z 1 bis 3",
+     "f": "Welche Fälle nennt § 131 BDG, in denen die Dienstbehörde eine Disziplinarverfügung erlassen kann?",
+     "s": [
+      {
+       "t": "Der Beamte hat die Dienstpflichtverletzung vor dem Dienstvorgesetzten gestanden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Dienstpflichtverletzung ist aufgrund eindeutiger Aktenlage als erwiesen anzunehmen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der Beamte wurde wegen desselben Sachverhalts rechtskräftig durch ein Strafgericht bestraft.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Es besteht nur der Verdacht einer Dienstpflichtverletzung.",
+       "w": false,
+       "k": "Die Dienstpflichtverletzung muss gestanden, aufgrund eindeutiger Aktenlage erwiesen oder rechtskräftig bestraft sein (§ 131 Z 1 bis 3 BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-131-6",
+     "ref": "Satz 1 und 2",
+     "f": "Welche Aussagen zur Form und Zustellung der Disziplinarverfügung treffen zu?",
+     "s": [
+      {
+       "t": "Die Dienstbehörde erlässt die Disziplinarverfügung schriftlich.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Disziplinarverfügung ist auch dem Disziplinaranwalt zuzustellen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Disziplinarverfügung kann auch mündlich erlassen werden.",
+       "w": false,
+       "k": "Sie wird schriftlich erlassen (§ 131 BDG)."
+      },
+      {
+       "t": "Die Disziplinarverfügung wird von der Bundesdisziplinarbehörde erlassen.",
+       "w": false,
+       "k": "Sie wird von der Dienstbehörde erlassen (§ 131 BDG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-131-7",
+     "ref": "Schlusssatz",
+     "f": "Welche Strafen sind in einer Disziplinarverfügung möglich (§ 131 BDG)?",
+     "s": [
+      {
+       "t": "Der Verweis.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Geldbuße bis zur Höhe eines Monatsbezugs.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Die Geldstrafe bis zu fünf Monatsbezügen.",
+       "w": false,
+       "k": "In der Disziplinarverfügung sind nur Verweis und Geldbuße zulässig (§ 131 BDG)."
+      },
+      {
+       "t": "Die Entlassung.",
+       "w": false,
+       "k": "Die Entlassung ist in der Disziplinarverfügung nicht möglich (§ 131 BDG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -5372,7 +8403,8 @@
        "w": true,
        "k": ""
       }
-     ]
+     ],
+     "lv": 1
     },
     {
      "id": "bdg-AHG-2",
@@ -5399,7 +8431,8 @@
        "w": false,
        "k": "AHG § 1 Abs. 1: Ersetzt wird der Schaden am Vermögen oder an der Person."
       }
-     ]
+     ],
+     "lv": 1
     },
     {
      "id": "bdg-AHG-3",
@@ -5426,7 +8459,8 @@
        "w": false,
        "k": "AHG § 1 Abs. 1: Auch sonstige Körperschaften des öffentlichen Rechts sind Rechtsträger."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-AHG-4",
@@ -5453,7 +8487,8 @@
        "w": false,
        "k": "AHG § 1 Abs. 2: Organe sind es gleichviel, ob sie gewählte, ernannte oder sonstwie bestellte Organe sind."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-AHG-5",
@@ -5480,7 +8515,8 @@
        "w": false,
        "k": "AHG § 2 Abs. 2: Der Anspruch besteht nicht, wenn der Schaden durch Rechtsmittel oder durch Beschwerde beim Verwaltungsgericht und Revision beim Verwaltungsgerichtshof hätte abgewendet werden können."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-AHG-6",
@@ -5507,7 +8543,92 @@
        "w": false,
        "k": "AHG § 1 Abs. 1: Dem Geschädigten haftet nur der Rechtsträger, das Organ haftet ihm nicht."
       }
-     ]
+     ],
+     "lv": 2
+    },
+    {
+     "id": "bdg-AHG-7",
+     "ref": "Abs. 1",
+     "f": "Wer ist „Rechtsträger“ im Sinne des § 1 AHG?",
+     "s": [
+      {
+       "t": "Der Bund ist ein Rechtsträger im Sinne des AHG.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Eine Gemeinde ist ein Rechtsträger im Sinne des AHG.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Ein Träger der Sozialversicherung ist ein Rechtsträger im Sinne des AHG.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Der einzelne Beamte, der gehandelt hat, ist der Rechtsträger.",
+       "w": false,
+       "k": "Rechtsträger sind Bund, Länder, Gemeinden, sonstige Körperschaften des öffentlichen Rechts und Sozialversicherungsträger (§ 1 Abs. 1 AHG); der Beamte ist das Organ."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-AHG-8",
+     "ref": "Abs. 2",
+     "f": "Wer ist „Organ“ im Sinne des § 1 Abs. 2 AHG?",
+     "s": [
+      {
+       "t": "Jede physische Person, die in Vollziehung der Gesetze handelt.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Auch jemand, der nur vorübergehend oder für den einzelnen Fall bestellt ist.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Ein Organ muss auf Dauer bestellt sein, sonst gilt es nicht als Organ.",
+       "w": false,
+       "k": "Organ ist man gleichviel, ob dauernd, vorübergehend oder für den einzelnen Fall bestellt (§ 1 Abs. 2 AHG)."
+      },
+      {
+       "t": "Auch eine juristische Person, etwa ein Verein, kann Organ sein.",
+       "w": false,
+       "k": "Organe sind nur physische Personen (§ 1 Abs. 2 AHG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-AHG-9",
+     "ref": "Abs. 1",
+     "f": "Ein Organ hat in Vollziehung der Gesetze rechtswidrig einen Dritten geschädigt. Bei welchem Verschulden haftet der Rechtsträger dem Geschädigten nach dem AHG?",
+     "s": [
+      {
+       "t": "Wenn das Organ vorsätzlich gehandelt hat.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Wenn das Organ grob fahrlässig gehandelt hat.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Wenn das Organ leicht fahrlässig gehandelt hat.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Auch wenn das Organ ganz ohne Verschulden gehandelt hat.",
+       "w": false,
+       "k": "Der Schaden muss schuldhaft zugefügt worden sein (§ 1 Abs. 1 AHG); jedes Verschulden genügt, ohne Verschulden besteht keine Amtshaftung."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -5543,7 +8664,8 @@
        "w": false,
        "k": "AHG § 3 Abs. 1: Voraussetzung ist gerade, dass der Rechtsträger dem Geschädigten den Schaden ersetzt hat."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-Regress-2",
@@ -5570,7 +8692,8 @@
        "w": false,
        "k": "AHG § 3 Abs. 2: Das Gericht „kann“ mäßigen, es besteht keine Pflicht."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-Regress-3",
@@ -5597,7 +8720,8 @@
        "w": false,
        "k": "AHG § 4: In diesem Fall ist Rückersatz ausgeschlossen; Ausnahmen bestehen nur bei offenbar unzuständigem Vorgesetzten oder Verstoß gegen strafgesetzliche Vorschriften."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-Regress-4",
@@ -5624,7 +8748,8 @@
        "w": false,
        "k": "AHG § 3 Abs. 1: Rückersatz wird vom Rechtsträger gegen die Organe begehrt, nicht gegen den Geschädigten."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-Regress-5",
@@ -5651,7 +8776,8 @@
        "w": false,
        "k": "AHG § 3 Abs. 1: Rückersatz kann nur von Organen begehrt werden, die die Rechtsverletzung vorsätzlich oder grobfahrlässig verübt oder verursacht haben."
       }
-     ]
+     ],
+     "lv": 3
     },
     {
      "id": "bdg-Regress-6",
@@ -5678,7 +8804,64 @@
        "w": false,
        "k": "OHG § 1 Abs. 1 regelt nur Schäden, die das Organ dem Rechtsträger unmittelbar zugefügt hat; einem Dritten haftet das Organ nach AHG § 1 Abs. 1 nicht."
       }
-     ]
+     ],
+     "lv": 2
+    },
+    {
+     "id": "bdg-Regress-7",
+     "ref": "§ 3 Abs. 2",
+     "f": "Was gilt nach § 3 Abs. 2 AHG für den Rückersatz bei grober Fahrlässigkeit?",
+     "s": [
+      {
+       "t": "Das Gericht kann den Rückersatz aus Gründen der Billigkeit mäßigen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Das Gericht berücksichtigt unter anderem die mit der Tätigkeit verbundene Verantwortung.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Das Gericht muss den Rückersatz in diesem Fall immer ganz erlassen.",
+       "w": false,
+       "k": "Das Gericht kann den Rückersatz bei grober Fahrlässigkeit mäßigen, ein gänzlicher Erlass ist nicht vorgesehen (§ 3 Abs. 2 AHG)."
+      },
+      {
+       "t": "Bei grober Fahrlässigkeit ist ein Rückersatz ausgeschlossen.",
+       "w": false,
+       "k": "Rückersatz ist bei Vorsatz und grober Fahrlässigkeit möglich (§ 3 Abs. 1 AHG)."
+      }
+     ],
+     "lv": 1
+    },
+    {
+     "id": "bdg-Regress-8",
+     "ref": "§ 4",
+     "f": "Ein Beamter handelt auf Weisung seines Vorgesetzten. Was gilt nach § 4 AHG?",
+     "s": [
+      {
+       "t": "Grundsätzlich kann kein Rückersatz verlangt werden.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Rückersatz ist möglich, wenn der Vorgesetzte offenbar unzuständig war.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Rückersatz ist möglich, wenn der Beamte bei Befolgung der Weisung gegen Strafgesetze verstoßen hat.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Rückersatz ist immer möglich, auch wenn der Beamte nur gehorcht hat.",
+       "w": false,
+       "k": "Bei Handeln auf Weisung kann kein Rückersatz begehrt werden, außer in den zwei Ausnahmefällen (§ 4 AHG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -5714,7 +8897,8 @@
        "w": false,
        "k": "OHG § 1 Abs. 1: Der Schaden muss dem Rechtsträger unmittelbar zugefügt worden sein."
       }
-     ]
+     ],
+     "lv": 1
     },
     {
      "id": "bdg-OHG-2",
@@ -5741,7 +8925,8 @@
        "w": false,
        "k": "OHG § 1 Abs. 1: Der Schaden ist nur in Geld zu ersetzen."
       }
-     ]
+     ],
+     "lv": 1
     },
     {
      "id": "bdg-OHG-3",
@@ -5768,7 +8953,8 @@
        "w": false,
        "k": "OHG § 1 Abs. 2: Organe sind nur physische Personen."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-OHG-4",
@@ -5795,7 +8981,8 @@
        "w": false,
        "k": "OHG § 1 Abs. 1 verlangt nur Verschulden; bei leichter Fahrlässigkeit kommt Mäßigung oder Erlass nach § 3 in Betracht, ausgeschlossen ist nur die entschuldbare Fehlleistung (§ 2 Abs. 2)."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-OHG-5",
@@ -5822,7 +9009,8 @@
        "w": false,
        "k": "OHG § 3 Abs. 1: Mäßigung und Erlass sind nur vorgesehen, wenn die Schädigung auf einem Versehen beruht, nicht bei Vorsatz."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-OHG-6",
@@ -5849,7 +9037,36 @@
        "w": false,
        "k": "OHG § 5: Die Zehnjahresfrist gilt nur, wenn dem Rechtsträger der Schaden nicht bekanntgeworden ist oder bei vorsätzlichen Straftaten mit mehr als einjähriger Strafdrohung; sonst gilt die Dreijahresfrist."
       }
-     ]
+     ],
+     "lv": 3
+    },
+    {
+     "id": "bdg-OHG-7",
+     "ref": "§ 3 Abs. 1",
+     "f": "Was kann das Gericht nach § 3 OHG tun, wenn die Schädigung auf einem Versehen beruht?",
+     "s": [
+      {
+       "t": "Es kann den Ersatz aus Gründen der Billigkeit mäßigen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Bei einem minderen Grad des Versehens kann es den Ersatz ganz erlassen.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Es muss den Ersatz bei jedem Versehen ganz erlassen.",
+       "w": false,
+       "k": "Das Gericht kann mäßigen und nur bei minderem Grad des Versehens ganz erlassen, es muss nicht (§ 3 Abs. 1 OHG)."
+      },
+      {
+       "t": "Bei einem Versehen muss das Organ immer den vollen Schaden ersetzen.",
+       "w": false,
+       "k": "Das Gericht kann den Ersatz aus Gründen der Billigkeit mäßigen (§ 3 Abs. 1 OHG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   },
@@ -5885,7 +9102,8 @@
        "w": false,
        "k": "PolBEG § 1 nennt die Voraussetzungen der Ersatzpflicht; ein rechtswidriges Einschreiten des Organs gehört nicht dazu. Ausgeschlossen ist der Ersatz nur, wenn der Geschädigte den Zwang durch rechtswidriges Verhalten ausgelöst hat."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-PolBEG-2",
@@ -5912,7 +9130,8 @@
        "w": false,
        "k": "PolBEG § 2 Abs. 1: Ein Anspruch auf Schmerzengeld besteht nicht."
       }
-     ]
+     ],
+     "lv": 2
     },
     {
      "id": "bdg-PolBEG-3",
@@ -5939,7 +9158,36 @@
        "w": false,
        "k": "PolBEG § 2 Abs. 2: Der Geschädigte trägt den Schaden nur verhältnismäßig, hilfsweise zur Hälfte."
       }
-     ]
+     ],
+     "lv": 2
+    },
+    {
+     "id": "bdg-PolBEG-4",
+     "ref": "§ 1",
+     "f": "Wann haftet der Bund nach dem Polizeibefugnis-Entschädigungsgesetz (§ 1 PolBEG)?",
+     "s": [
+      {
+       "t": "Wenn ein Organ des öffentlichen Sicherheitsdienstes bei der Ausübung von Zwangsbefugnissen einen Schaden verursacht.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Wenn der Zwang im Vollziehungsbereich des Bundes ausgeübt wurde.",
+       "w": true,
+       "k": ""
+      },
+      {
+       "t": "Wenn der Geschädigte den Zwang durch rechtswidriges Verhalten selbst ausgelöst hat.",
+       "w": false,
+       "k": "Hat der Geschädigte den Zwang durch rechtswidriges Verhalten ausgelöst, besteht keine Ersatzpflicht (§ 1 PolBEG)."
+      },
+      {
+       "t": "Wenn der Zwang im Vollziehungsbereich eines Landes ausgeübt wurde.",
+       "w": false,
+       "k": "Der Zwang muss im Vollziehungsbereich des Bundes ausgeübt worden sein (§ 1 PolBEG)."
+      }
+     ],
+     "lv": 1
     }
    ]
   }

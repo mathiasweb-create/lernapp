@@ -2,16 +2,20 @@
  {
   "v": 3,
   "s": "2.1",
-  "n": "Sprechblasen und Change-log",
+  "n": "Leichtere Fragen",
   "d": "25.11.2026",
   "t": [
    {
-    "h": "Sprechblase in der Kopfzeile",
-    "x": "Lexi spricht jetzt neben seinem Kopf und verdeckt keinen Inhalt mehr."
+    "h": "Mehr leichte Fragen",
+    "x": "109 neue, kurze Fragen. Die meisten Fragen sind jetzt leicht, dazu gibt es mittlere und wenige schwere."
    },
    {
-    "h": "Change-log übersichtlicher",
-    "x": "Jedes Update hat Namen und Nummer und ist eingeklappt."
+    "h": "Schwierigkeit wählen",
+    "x": "Unter „Lernen“ stellst du ein, ob du leichte, mittlere oder schwere Fragen übst."
+   },
+   {
+    "h": "Sprechblase und Change-log",
+    "x": "Lexi spricht in der Kopfzeile, und jedes Update im Change-log hat Namen und Nummer."
    },
    {
     "h": "Karteikarten kommen bald",
