@@ -237,6 +237,7 @@ pre.law{white-space:pre-wrap;word-break:break-word;font:14px/1.5 ui-serif,Georgi
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="rough" x="-5%" y="-15%" width="110%" height="130%"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="4" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4"/></filter></svg>
 <div id="app"></div>
 <div class="dock" id="dock"></div>
+<button class="helpbtn" id="helpbtn" data-act="help" aria-label="Hilfe">?</button>
 <div id="sheet"></div>
 <div id="ovl"></div>
 <div class="say" id="say" role="status" aria-live="polite"></div>
@@ -313,6 +314,25 @@ async function loadCards(){
 const clLatest = () => CL.length ? CL[0].v : 0;
 const clVer = e => e.s || String(e.v);
 const clItems = e => e.t.map(x => `<li><b>${esc(x.h)}</b>${esc(x.x)}</li>`).join('');
+let HILFE = [];
+async function loadHilfe(){
+  try{ const r = await fetch('daten/hilfe.json'); if(!r.ok) return; const j = await r.json(); if(j && Array.isArray(j.eintraege)) HILFE = j.eintraege.filter(e => e && typeof e.t === 'string' && typeof e.x === 'string'); }
+  catch(e){ /* ohne Hilfe weiter */ }
+}
+function helpList(q){
+  q = (q || '').trim().toLowerCase();
+  const r = HILFE.filter(e => !q || (e.t + ' ' + e.x).toLowerCase().includes(q));
+  return r.length ? r.map(e => `<details><summary>${esc(e.t)}</summary><p>${esc(e.x)}</p><small>Quelle: ${esc(e.q || '')}</small></details>`).join('') : '<p class="mute">Nichts gefunden. Versuche ein anderes Wort.</p>';
+}
+function renderHelp(root, sh){
+  root.innerHTML = `<div class="dim" data-act="close-sheet"></div>
+    <div class="sheet" role="dialog" aria-modal="true" aria-label="Hilfe"><div class="in">
+      <div class="grab"></div>
+      <div class="sh"><div><h2>Hilfe</h2><p>Begriffe kurz und einfach erklärt.</p></div><button class="xbtn" data-act="close-sheet" aria-label="Schließen">×</button></div>
+      <input id="hq" class="hq" type="search" placeholder="Begriff suchen, z. B. Weisung" aria-label="Suche" value="${esc(sh.q || '')}">
+      <div class="hl" id="hl">${helpList(sh.q)}</div>
+    </div></div>`;
+}
 async function loadNews(){
   try{ const r = await fetch('daten/news.json'); if(!r.ok) return; const j = await r.json(); if(j && typeof j === 'object') NEWS = j; }
   catch(e){ NEWS = null; }
@@ -421,8 +441,8 @@ function renderStart(){
   const greet = S.msg ? LX.SAYS[(S.msg-1) % LX.SAYS.length] : 'Hallo, ich bin Lexi! Welches Gesetz möchtest du heute üben?';
   const ready = LAWS.filter(l => l.ready).map(l => `<div class="card lawcard" style="margin-bottom:8px"><button class="lawbtn" data-act="law-open" data-id="${l.id}"><span><b>${esc(l.label)}</b><span class="mute">${l.id === S.law ? d.paragrafen.length + ' Paragrafen · ' + totalQ() + ' Fragen' : esc(l.full)}</span></span><b class="go">Üben ›</b></button></div>`).join('');
   const soon = LAWS.filter(l => !l.ready).slice(0, 2).map(l => `<div class="card lawsoon"><b>${esc(l.label)}</b><span class="mute">bald</span></div>`).join('');
-  const news = nw && nw.items && nw.items.length ? `<div class="sec"><span>Neuigkeiten · ${esc(S.law)}</span><span class="leg"><i></i>in der App</span></div>
-    <div class="card" style="padding:4px 14px">${nw.items.map(x => `<a class="newsl c" href="${esc(nw.gesetz)}" target="_blank" rel="noopener noreferrer"><span class="nx"><span class="nh"><span class="nt">${esc(x.t)}</span><span class="dl">${esc(x.d)}</span></span><span class="ns">${esc(x.s)}</span><span class="pcs">${(x.ps || []).map(p => `<span class="pc${app.has(p) ? ' app' : ''}${x.neu === p ? ' neu' : ''}">§ ${esc(p)}${x.neu === p ? ' neu' : ''}</span>`).join('')}</span></span><span class="ris" aria-hidden="true">↗</span></a>`).join('')}</div>` : '';
+  const news = nw && nw.items && nw.items.length ? `<div class="sec"><span>Neuigkeiten · ${esc(S.law)}</span></div>
+    <div class="card" style="padding:4px 14px">${nw.items.map(x => `<a class="newsl c" href="${esc(nw.gesetz)}" target="_blank" rel="noopener noreferrer"><span class="nx"><span class="nh"><span class="nt">${esc(x.t)}</span><span class="dl">${esc(x.d)}</span></span><span class="ns">${esc(x.s)}</span></span><span class="ris" aria-hidden="true">↗</span></a>`).join('')}</div>` : '';
   $('#app').innerHTML = `${header('', true)}
     <div class="hero"><button class="mb" data-act="poke" aria-label="Lexi antippen">${LX.svg(S.hm === 'angry' ? 'angry' : 'normal', 'windy' + (S.hm === 'bars' ? ' bars' : ''))}</button><div class="bub l" data-t="l">${esc(greet)}</div></div>
     <div class="sec"><span>Gesetze</span></div>${ready}${soon}${news}`;
@@ -886,6 +906,7 @@ function renderSheet(){
   if(!sh){ root.innerHTML = ''; return; }
   if(sh.kind === 'egg') return renderEgg(root);
   if(sh.kind === 'ref') return renderRef(root, sh);
+  if(sh.kind === 'help') return renderHelp(root, sh);
   const had = root.contains(document.activeElement) && document.activeElement.dataset ? document.activeElement.dataset.act : null;
   const url = shareUrl(), n = sh.paras.length;
   const qr = sh.qr ? qrSvg(url) : '';
@@ -1028,6 +1049,7 @@ const ACT = {
   copy(){ copyLink(); },
   native(){ nativeShare(); },
   qr(){ S.sheet.qr = !S.sheet.qr; renderSheet(); },
+  help(){ if(S.sheet || S.pop || S.tour !== null) return; openSheet({kind:'help', q:''}, '#sheet .xbtn'); },
   pick(b){ const r = S.run; if(r.checked) return; const i = +b.dataset.i; r.ticked.has(i) ? r.ticked.delete(i) : r.ticked.add(i); b.setAttribute('aria-pressed', r.ticked.has(i)); b.querySelector('.bx').textContent = r.ticked.has(i) ? '✓' : ''; },
   check(){ checkAnswer(); },
   next(){ const r = S.run; if(r.i+1 < r.items.length){ r.i++; r.ticked = new Set(); r.checked = false; S.hop = true; render(); maybeSay(.22); } else { S.view = 'result'; render(); } },
@@ -1050,6 +1072,7 @@ document.addEventListener('click', e => {
 });
 document.addEventListener('input', e => {
   const t = e.target;
+  if(t.id === 'hq' && S.sheet && S.sheet.kind === 'help'){ S.sheet.q = t.value; const l = $('#hl'); if(l) l.innerHTML = helpList(t.value); return; }
   if(S.view === 'settings' && S.set === 'grades' && t.dataset && t.dataset.gi !== undefined){ S.gdraft[+t.dataset.gi] = t.value; const g = $('#g5'); if(g) g.textContent = 'unter ' + (S.gdraft[3] || '…') + ' %'; }
   if(t.id === 'lim' && S.view === 'home'){ const raw = (CARDS_ON && S.mode === 'k') ? cardPool().length : buildPool().length, v = +t.value; saveSet({lim: v >= raw ? 0 : v}); const l = $('#limv'); if(l) l.textContent = v >= raw ? 'Alle (' + raw + ')' : v + ' von ' + raw; homeDock(); }
 });
@@ -1074,7 +1097,7 @@ window.addEventListener('resize', () => { if(typeof S.tour === 'number') placeTo
 /* ================= Start ================= */
 (async function boot(){
   applySettings();
-  try{ S.data = await loadLaw(S.law); await Promise.all([loadRefs(), loadNews(), loadChangelog(), loadCards()]); }
+  try{ S.data = await loadLaw(S.law); await Promise.all([loadRefs(), loadNews(), loadChangelog(), loadCards(), loadHilfe()]); }
   catch(e){ $('#app').innerHTML = '<h1>LexCoach</h1><p class="mute">Daten konnten nicht geladen werden. Bitte Verbindung prüfen und neu öffnen.</p>'; return; }
   const valid = new Set(order());
   S.sel = new Set(store.get('rt.sel.'+S.law, []).filter(n => valid.has(n)));

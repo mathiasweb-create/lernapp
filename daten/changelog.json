@@ -1,5 +1,21 @@
 [
  {
+  "v": 7,
+  "s": "2.5",
+  "n": "Hilfe und Ruhe",
+  "d": "26.11.2026",
+  "t": [
+   {
+    "h": "Hilfe-Knopf",
+    "x": "Der runde Knopf „?“ erklärt wichtige Begriffe in einfacher Sprache, mit Suche."
+   },
+   {
+    "h": "Ruhigere Neuigkeiten",
+    "x": "Die Neuigkeiten auf der Startseite zeigen keine eingerahmten Paragrafen mehr."
+   }
+  ]
+ },
+ {
   "v": 6,
   "s": "2.4",
   "n": "Einfacher Start",

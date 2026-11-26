@@ -172,3 +172,8 @@ ul.cl li b{display:block;color:var(--ink);opacity:.85;font-size:12.5px;font-weig
 .limbox{margin-top:10px;display:grid;gap:2px}
 .limhead{display:flex;justify-content:space-between;align-items:baseline}.limhead b{font-size:16px}
 .modebar:has(.kb.on)~.limbox .rng{accent-color:var(--kc)}
+
+.helpbtn{position:fixed;right:max(14px,env(safe-area-inset-right));bottom:calc(env(safe-area-inset-bottom) + 76px);z-index:30;width:46px;height:46px;border-radius:50%;border:0;background:var(--acc);color:var(--on);font:700 22px/1 inherit;box-shadow:0 3px 12px rgba(0,0,0,.28);cursor:pointer;padding:0}
+.hq{width:100%;height:46px;margin:12px 0 8px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);font:inherit;font-size:16px;padding:0 14px}
+.hl{display:flex;flex-direction:column;gap:8px;padding-bottom:6px}
+.hl details{border:1px solid var(--line);border-radius:12px;padding:10px 12px}.hl summary{font-weight:700;cursor:pointer;min-height:24px}.hl details p{margin:8px 0 4px;font-size:15px}.hl details small{color:var(--mute);font-size:12.5px}
