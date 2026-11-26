@@ -167,3 +167,8 @@ ul.cl li b{display:block;color:var(--ink);opacity:.85;font-size:12.5px;font-weig
 .ksrc{font-size:12px;color:var(--mute);border-top:1px solid var(--line);padding-top:8px}
 .kdone{display:grid;gap:8px;text-align:center}.kdone b{font-size:18px}
 .kbx{display:flex;justify-content:center;gap:8px;margin-top:6px}.kbx span{border:1px solid var(--line);border-radius:8px;padding:4px 10px;font-size:13px;color:var(--mute)}.kbx b{font-size:14px;color:var(--kc)}
+
+/* Regler „Pro Durchlauf“ auf Lernen */
+.limbox{margin-top:10px;display:grid;gap:2px}
+.limhead{display:flex;justify-content:space-between;align-items:baseline}.limhead b{font-size:16px}
+.modebar:has(.kb.on)~.limbox .rng{accent-color:var(--kc)}

@@ -434,6 +434,20 @@ function tile(p, cc){
   const on = S.sel.has(p.n);
   return `<button class="tile ${on?'sel':''}" data-act="tog" data-p="${esc(p.n)}" style="--cc:var(${cc})" aria-pressed="${on}"><span class="ck">✓</span><b>${esc(p.label)}</b><span class="tt">${esc(p.title)}</span><span class="qn">${CARDS_ON && S.mode === 'k' ? kcount(p.n) + ' Karten' : (nq => nq + ' ' + (nq === 1 ? "Frage" : "Fragen"))(p.q.filter(visibleQ).length)}</span></button>`;
 }
+function homeDock(){
+  const kmode = CARDS_ON && S.mode === 'k';
+  const raw = kmode ? cardPool().length : buildPool().length, n = effPool(raw);
+  const btn = kmode
+    ? `<button class="btn kc" data-act="kstart" ${n?'':'disabled'}>${n ? 'Karten starten · '+n+' Karten'+(raw>n ? ' (von '+raw+')' : '') : (S.sel.size ? 'Keine Karten für diese Auswahl' : 'Paragrafen wählen')}</button>`
+    : `<button class="btn" data-act="start" ${n?'':'disabled'}>${n ? 'Start · '+n+' Fragen'+(raw>n ? ' (von '+raw+')' : '') : (S.sel.size ? (S.onlyOpen ? 'Keine offenen Fragen' : 'Keine Fragen für diese Stufen') : 'Paragrafen wählen')}</button>`;
+  setDock(`<div class="startbar">${btn}</div>${tabbar()}`);
+}
+function limBox(){
+  const kmode = CARDS_ON && S.mode === 'k', raw = kmode ? cardPool().length : buildPool().length;
+  if(raw < 6) return '';
+  const mn = 5, val = SET.lim ? Math.min(SET.lim, raw) : raw, u = kmode ? 'Karten' : 'Fragen';
+  return `<div class="limbox"><div class="limhead"><span class="sl" style="margin:0">Pro Durchlauf</span><b id="limv" aria-live="polite">${val >= raw ? 'Alle (' + raw + ')' : val + ' von ' + raw}</b></div><input type="range" class="rng" id="lim" min="${mn}" max="${raw}" step="1" value="${val}" aria-label="${u} pro Durchlauf"><div class="tk"><span>${mn}</span><span>Alle</span></div></div>`;
+}
 function renderHome(){
   const d = S.data, groups = groupsOf(d), total = totalQ(), h = hist();
   const done = d.paragrafen.reduce((a,p)=>a+p.q.filter(q=>h[q.id]&&h[q.id].last>=4).length,0);
@@ -463,15 +477,12 @@ function renderHome(){
     <div class="sec"><span>Paragrafen · ${S.sel.size} gewählt</span><span class="mini"><button data-act="all">Alle</button><button data-act="none">Keine</button></span></div>
     ${d.paragrafen.length > SEARCH_MIN ? `<input class="search" id="q" type="search" placeholder="Paragraf oder Stichwort suchen …" value="${esc(S.q)}" aria-label="Paragrafen suchen">` : ''}
     ${list || '<p class="empty">Keine Treffer.</p>'}
-    ${modeBar()}
+    ${modeBar()}${limBox()}
     <button class="quiet" data-act="only" role="checkbox" aria-checked="${S.onlyOpen}" style="margin-top:6px"><span class="cb ${S.onlyOpen?'on':''}">${S.onlyOpen?'✓':''}</span>Nur Fragen, die ich noch nicht sicher kann</button>
     <button class="fold" data-act="klfold" aria-expanded="${S.klOpen}"><span>Klausuren (${nk})</span><span aria-hidden="true">${S.klOpen?'⌃':'⌄'}</span></button>
     ${S.klOpen ? `<div id="stk" style="padding-top:6px">${stackList(false)}</div>${stackSave()}` : ''}
     <p class="note">Quelle der Gesetzestexte: ${esc(d.quelle)}, abgerufen am ${esc(d.abgerufen)}. Die Fragen wurden von einer KI aus dem Wortlaut erstellt und können Fehler enthalten. Im Zweifel gilt der Gesetzestext, der nach jeder Antwort angezeigt wird. Keine Rechtsberatung.</p>`;
-  const kmode = CARDS_ON && S.mode === 'k', kp = kmode ? cardPool().length : 0;
-  setDock(`<div class="startbar">${kmode
-    ? `<button class="btn kc" data-act="kstart" ${kp?'':'disabled'}>${kp ? 'Karten starten · '+kp+' Karten' : (S.sel.size ? 'Keine Karten für diese Auswahl' : 'Paragrafen wählen')}</button>`
-    : `<button class="btn" data-act="start" ${pool?'':'disabled'}>${pool ? 'Start · '+pool+' Fragen'+(raw>pool ? ' (von '+raw+')' : '') : (S.sel.size ? (S.onlyOpen ? 'Keine offenen Fragen' : 'Keine Fragen für diese Stufen') : 'Paragrafen wählen')}</button>`}</div>${tabbar()}`);
+  homeDock();
   const q = $('#q'); if(q) q.oninput = e => { S.q = e.target.value; render(true); const n=$('#q'); if(n){ n.focus(); n.setSelectionRange(n.value.length,n.value.length); } };
 }
 
@@ -604,7 +615,7 @@ function modeBar(){
 function startCards(){
   const B = cardBoxes(), pool = shuffle(cardPool());
   if(!pool.length){ toast('Keine Karten für diese Auswahl'); return; }
-  const items = pool.map((c,i) => ({c, i})).sort((a,b) => ((B[a.c.id]||1) - (B[b.c.id]||1)) || (a.i - b.i)).map(x => ({c:x.c, retry:false}));
+  const items = pool.map((c,i) => ({c, i})).sort((a,b) => ((B[a.c.id]||1) - (B[b.c.id]||1)) || (a.i - b.i)).map(x => ({c:x.c, retry:false})).slice(0, SET.lim || pool.length);   // niedrige Fächer zuerst
   S.cr = {items, i:0, back:false, yes:0, no:0};
   S.view = 'cards'; render();
 }
@@ -721,7 +732,7 @@ function renderSettingsView(){
     const G = grades();
     h = `<div class="top"><h1>Einstellungen</h1></div><div style="margin:6px 0 10px">${back('Zurück')}</div>`
       + row('grades', '1', 'Notenschlüssel', 'Note 1 ab ' + gs(G[0]) + ' %')
-      + row('learn', '▤', 'Lernen', (SET.lim ? SET.lim + ' Fragen' : 'Alle Fragen') + ' · ' + (SET.ord === 'mix' ? 'gemischt' : 'nach Paragraf'))
+      + row('learn', '▤', 'Lernen', (SET.ord === 'mix' ? 'Gemischt' : 'Nach Paragraf'))
       + row('look', '◐', 'Darstellung', ({system:'System', light:'Hell', dark:'Dunkel'})[SET.theme] + ' · Schrift ' + ({s:'klein', n:'normal', l:'groß'})[SET.font])
       + row('home', '⌂', 'Zum Home-Bildschirm', isStandalone() ? 'Als App installiert' : 'Anleitung · empfohlen')
       + row('tour', '?', 'Tutorial', 'Kurze Tour noch einmal ansehen')
@@ -737,11 +748,8 @@ function renderSettingsView(){
       <p class="hint">Beispiel: 40 von 48 Punkten = ${gs(ex)} % = Note ${nt}. Die Werte müssen von Note 1 bis Note 4 kleiner werden. Eine Änderung gilt für neue Ergebnisse, gespeicherte Klausuren behalten ihre Note.</p>
       <div class="stack2" style="margin-top:14px"><button class="btn" data-act="grades-save">Speichern</button><button class="btn alt" data-act="grades-reset">Standard wiederherstellen (${DEF_GRADES.map(fmtNum).join(' / ')} %)</button></div>`;
   } else if(S.set === 'learn'){
-    const tot = totalQ(), mn = Math.min(5, tot), val = SET.lim ? Math.min(SET.lim, tot) : tot;
     h = back('Einstellungen') + `<div class="top"><h1>Lernen</h1></div>
-      <div class="sl">Fragen pro Durchlauf</div><div class="big2" id="limv" aria-live="polite">${SET.lim ? SET.lim + ' Fragen' : 'Alle Fragen (' + tot + ')'}</div>
-      <input type="range" class="rng" id="lim" min="${mn}" max="${tot}" step="1" value="${val}" aria-label="Fragen pro Durchlauf"><div class="tk"><span>${mn}</span><span>${Math.round((mn+tot)/3)}</span><span>${Math.round((mn+tot)*2/3)}</span><span>Alle</span></div>
-      <p class="hint">Ganz rechts bedeutet alle Fragen. Begrenzt „Start“ auf diese Zahl, bei mehr Fragen werden zufällig so viele gezogen. Gespeicherte Klausuren laufen immer vollständig, ohne Begrenzung.</p>
+      <p class="hint" style="margin-top:0">Die Zahl der Fragen pro Durchlauf stellst du jetzt direkt auf „Lernen“ ein, unter der Schwierigkeit.</p>
       <div class="sl">Reihenfolge</div>${seg('set-ord', SET.ord, [['mix','Gemischt'],['para','Nach Paragraf']])}
       <p class="hint">${SET.ord === 'mix' ? 'Fragen aus allen gewählten Paragrafen durcheinander.' : 'Erst alle Fragen eines Paragrafen, dann der nächste. Gilt auch für Klausuren und „Fehler wiederholen“.'}</p>
       ${sw('only', S.onlyOpen, 'Nur unsichere Fragen', 'Als Standard beim Start. Gilt auch auf „Lernen“.')}`;
@@ -1056,7 +1064,7 @@ document.addEventListener('click', e => {
 document.addEventListener('input', e => {
   const t = e.target;
   if(S.view === 'settings' && S.set === 'grades' && t.dataset && t.dataset.gi !== undefined){ S.gdraft[+t.dataset.gi] = t.value; const g = $('#g5'); if(g) g.textContent = 'unter ' + (S.gdraft[3] || '…') + ' %'; }
-  if(t.id === 'lim' && S.view === 'settings'){ const tot = totalQ(), v = +t.value; saveSet({lim: v >= tot ? 0 : v}); const l = $('#limv'); if(l) l.textContent = SET.lim ? SET.lim + ' Fragen' : 'Alle Fragen (' + tot + ')'; }
+  if(t.id === 'lim' && S.view === 'home'){ const raw = (CARDS_ON && S.mode === 'k') ? cardPool().length : buildPool().length, v = +t.value; saveSet({lim: v >= raw ? 0 : v}); const l = $('#limv'); if(l) l.textContent = v >= raw ? 'Alle (' + raw + ')' : v + ' von ' + raw; homeDock(); }
 });
 document.addEventListener('keydown', e => {
   if((e.key === 'Enter' || e.key === ' ') && e.target && e.target.classList && e.target.classList.contains('ref')){ e.preventDefault(); e.target.click(); return; }

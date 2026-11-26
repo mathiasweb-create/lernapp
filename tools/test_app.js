@@ -94,8 +94,7 @@ const URL = process.env.APP_URL || 'http://localhost:8123/';
   await p.click('[data-s="grades"]'); await p.click('[data-act="grades-reset"]');
   ok(JSON.stringify(await p.evaluate(() => grades())) === '[87.5,75,62.5,50]', 'Standard wiederhergestellt');
   await p.click('[data-s="learn"]');
-  await p.locator('#lim').fill('5'); await wait(100);
-  ok((await p.textContent('#limv')).includes('5 Fragen') && (await p.evaluate(() => SET.lim)) === 5, 'Schieberegler 5 Fragen');
+  ok(await p.locator('#lim').count() === 0, 'Regler ist nicht mehr in den Einstellungen');
   await p.click('[data-act="set-ord"][data-v="para"]');
   await p.click('[data-act="set-back"]'); await p.click('[data-s="look"]');
   await p.click('[data-act="set-theme"][data-v="dark"]'); ok(await p.evaluate(() => document.documentElement.dataset.theme === 'dark'), 'Dunkel');
@@ -121,6 +120,8 @@ const URL = process.env.APP_URL || 'http://localhost:8123/';
 
   /* ---- Quiz mit Limit 5 und Reihenfolge nach Paragraf ---- */
   await p.click('[data-act="tab"][data-v="home"]'); await p.click('[data-act="all"]');
+  await p.locator('#lim').fill('5'); await wait(150);
+  ok((await p.textContent('#limv')).includes('5 von') && (await p.evaluate(() => SET.lim)) === 5, 'Regler auf „Lernen“: 5 Fragen');
   ok(/Start · 5 Fragen \(von \d+\)/.test(await p.textContent('.startbar')), 'Start-Knopf zeigt Limit: ' + (await p.textContent('.startbar')).trim());
   await wait(500);
   await p.evaluate(() => { document.querySelector('[data-act="start"]').click(); setTimeout(() => { const o = document.querySelector('[data-act="pick"]'); if (o) o.click(); }, 100); });
