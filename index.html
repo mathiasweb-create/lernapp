@@ -432,7 +432,7 @@ function render(keep){
   const y = keep ? window.scrollY : 0;
   $('#app').classList.toggle('nodock', S.view === 'settings');
   $('#app').classList.toggle('tabonly', S.view === 'start');
-  const hb = $('#helpbtn'); if(hb) hb.classList.toggle('left', S.view === 'quiz');   // in Fragen links, damit die Spalte „Falsch“ frei bleibt
+  const hb = $('#helpbtn'); if(hb){ hb.style.display = S.view === 'quiz' ? '' : 'none'; hb.classList.toggle('left', S.view === 'quiz'); }   // Hilfe-Knopf nur in den Fragen (Wunsch 55), oben rechts
   ({start:renderStart, home:renderHome, stacks:renderStacks, stats:renderStats, quiz:renderQ, result:renderResult, settings:renderSettingsView, cards:renderCards, cardsdone:renderCardsDone})[S.view]();
   LX.hide();
   LX.paintAll();
@@ -777,6 +777,7 @@ function renderSettingsView(){
       + row('look', '◐', 'Darstellung', ({system:'System', light:'Hell', dark:'Dunkel'})[SET.theme] + ' · Schrift ' + ({s:'klein', n:'normal', l:'groß'})[SET.font])
       + row('home', '⌂', 'Zum Home-Bildschirm', isStandalone() ? 'Als App installiert' : 'Anleitung · empfohlen')
       + row('tour', '?', 'Tutorial', 'Kurze Tour noch einmal ansehen')
+      + row('help', '?', 'Hilfe', 'Begriffe kurz erklärt, mit Suche').replace('data-act="set-open" data-s="help"', 'data-act="help"')
       + (CL.length ? row('chg', '↻', 'Change-log', 'Was sich zuletzt geändert hat') : '')
       + row('legal', '§', 'Rechtliches', 'Impressum · Datenschutz · Nutzung · Lizenzen')
       + '<p class="hint" style="margin-top:10px">Alle Einstellungen gelten nur auf diesem Gerät.</p>';

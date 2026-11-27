@@ -1,5 +1,21 @@
 [
  {
+  "v": 11,
+  "s": "2.9",
+  "n": "Hilfe nur in Fragen",
+  "d": "27.11.2026",
+  "t": [
+   {
+    "h": "Hilfe-Knopf nur in den Fragen",
+    "x": "Das „?“ erscheint nur noch, während du Fragen beantwortest."
+   },
+   {
+    "h": "Hilfe in den Einstellungen",
+    "x": "Die Hilfe mit Suche findest du jetzt auch unter Einstellungen › Hilfe."
+   }
+  ]
+ },
+ {
   "v": 10,
   "s": "2.8",
   "n": "Aufgeräumte Antworten",
