@@ -1,5 +1,25 @@
 [
  {
+  "v": 9,
+  "s": "2.7",
+  "n": "Richtig oder Falsch",
+  "d": "27.11.2026",
+  "t": [
+   {
+    "h": "Zwei Kästchen je Aussage",
+    "x": "Bei jeder Aussage setzt du einen Haken bei „Richtig“ oder „Falsch“."
+   },
+   {
+    "h": "Ehrlichere Punkte",
+    "x": "Passend gesetzt +1, ausgelassen 0, falsch gesetzt −1. Wer nichts weiß, lässt aus."
+   },
+   {
+    "h": "Klare Auflösung",
+    "x": "Nach dem Prüfen siehst du je Aussage Punkt und richtige Antwort."
+   }
+  ]
+ },
+ {
   "v": 8,
   "s": "2.6",
   "n": "Hilfe und Ruhe",
