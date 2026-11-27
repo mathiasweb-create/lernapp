@@ -53,8 +53,8 @@ new = new.replace('</div>`;', '</div>`;', 1)
 s = s[:a] + new + s[b:]
 rep('''  h += `<div class="shead"><span class="sp"></span><span>Richtig</span><span>Falsch</span></div>`;''',
     '''  h += `<div class="shead"><span class="sp"></span><span>Richtig</span><span>Falsch</span></div></div>`;''')
-# Aufloesung: richtiges Kaestchen bekommt den Haken, falsch gesetztes ein neutrales X
-rep("<i>${on ? '✓' : ''}</i>", "<i>${r.checked ? (s.w === val ? '✓' : on ? '✕' : '') : (on ? '✓' : '')}</i>")
+# Aufloesung: richtiges Kaestchen bekommt den Haken (dunkel), falsch gesetztes behaelt seinen Haken (blass)
+rep("<i>${on ? '✓' : ''}</i>", "<i>${(r.checked ? (s.w === val || on) : on) ? '✓' : ''}</i>")
 # nur gruen (+1) oder rot (0 / -1), kein gelb
 rep("cls = pts > 0 ? ' ok' : pts < 0 ? ' bad' : ' miss';", "cls = pts > 0 ? ' ok' : ' bad';")
 # Info-Zeile entfaellt, Erklaerung bleibt
