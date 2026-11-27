@@ -34,6 +34,17 @@ css = '''.qstick{position:sticky;top:env(safe-area-inset-top,0px);z-index:6;back
 .st.bad{border-color:var(--bad);background:var(--bad-bg)}
 .st .why{display:block;margin-top:5px;font-size:13px;color:var(--mute)}
 .qhint{font-size:12.5px;color:var(--mute);margin:0 2px 10px}
+.cb i{transition:none}
+body[data-v="a"] .cb.sol i{background:var(--ink);border-color:var(--ink);color:#fff}
+body[data-v="a"] .cb.wrong i{background:var(--mute);border-color:var(--mute);color:#fff}
+body[data-v="b"] .cb.sol i{background:var(--ok);border-color:var(--ok);color:#fff}
+body[data-v="b"] .cb.wrong i{background:var(--bad);border-color:var(--bad);color:#fff}
+body[data-v="c"] .st.ok .cb:not(.sol):not(.wrong),body[data-v="c"] .st.bad .cb:not(.sol):not(.wrong){opacity:.28}
+body[data-v="c"] .cb.sol i{font-size:21px;font-weight:900;border-color:var(--ink)}
+body[data-v="c"] .cb.wrong i{color:var(--bad);border-color:var(--bad);font-weight:900}
+#vsw{position:fixed;left:max(12px,env(safe-area-inset-left,0px));bottom:calc(env(safe-area-inset-bottom,0px) + 78px);z-index:50;display:flex;gap:4px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:4px;box-shadow:0 3px 12px rgba(0,0,0,.2)}
+#vsw button{border:0;background:none;color:var(--ink);font:600 12px var(--font);padding:7px 9px;border-radius:8px;cursor:pointer}
+#vsw button.on{background:var(--acc);color:var(--on)}
 .helpbtn.left{left:auto;right:max(14px,env(safe-area-inset-right));bottom:auto;top:calc(env(safe-area-inset-top,0px) + 8px);width:34px;height:34px;font-size:18px}
 body:has(.helpbtn.left) #app .meta{padding-right:44px}
 '''
@@ -66,6 +77,13 @@ rep('html,body{margin:0;overflow-x:hidden;', 'html,body{margin:0;overflow-x:clip
 rep('  render();\n})();\nif(\'serviceWorker\'', '  render(); if(window.PREVIEW_BOOT) window.PREVIEW_BOOT();\n})();\nif(\'serviceWorker\'')
 boot = '''<script>
 try{ localStorage.setItem('rt.tour','true'); localStorage.setItem('rt.a2hs','true'); localStorage.setItem('rt.seen','99'); }catch(e){}
+document.addEventListener('DOMContentLoaded', function(){
+  document.body.dataset.v = 'a';
+  const w = document.createElement('div'); w.id = 'vsw';
+  w.innerHTML = '<button data-v="a" class="on">A Neutral</button><button data-v="b">B Farbig</button><button data-v="c">C Abblenden</button>';
+  w.addEventListener('click', function(e){ const b = e.target.closest('button'); if(!b) return; document.body.dataset.v = b.dataset.v; w.querySelectorAll('button').forEach(x => x.classList.toggle('on', x === b)); });
+  document.body.appendChild(w);
+});
 window.PREVIEW_BOOT = function(){
   try{
     const pp = S.data.paragrafen.find(x => x.n === '4') || S.data.paragrafen[0];
