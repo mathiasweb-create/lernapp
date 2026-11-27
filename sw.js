@@ -1,8 +1,8 @@
 // Offline-Cache für LexCoach.
 // Strategie: erst Netz (max. 3 s), sonst Cache -> Änderungen sind sofort beim nächsten Öffnen da, Offline funktioniert trotzdem.
 // Bei neuen Dateien oder umbenannten Pfaden VERSION erhöhen.
-const VERSION = 'rt-v17';
-const ASSETS = ['./', 'index.html', 'manifest.webmanifest', 'icon-180.png', 'icon-192.png', 'icon-512.png', 'daten/bdg.json', 'daten/verweise.json', 'daten/news.json', 'daten/changelog.json', 'daten/karten_bdg.json', 'daten/verweise_kurz.json', 'lexi.js', 'lexi.css', 'legal.js', 'vendor/qrcode.js', 'fonts/comic-neue-latin-400-normal.woff2', 'fonts/comic-neue-latin-700-normal.woff2'];
+const VERSION = 'rt-v19';
+const ASSETS = ['./', 'index.html', 'manifest.webmanifest', 'icon-180.png', 'icon-192.png', 'icon-512.png', 'daten/bdg.json', 'daten/verweise.json', 'daten/news.json', 'daten/changelog.json', 'daten/karten_bdg.json', 'daten/verweise_kurz.json', 'daten/hilfe.json', 'lexi.js', 'lexi.css', 'legal.js', 'vendor/qrcode.js', 'fonts/comic-neue-latin-400-normal.woff2', 'fonts/comic-neue-latin-700-normal.woff2'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(VERSION).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting()));

@@ -1,0 +1,80 @@
+{
+ "stand": "2026-11-26",
+ "eintraege": [
+  {
+   "t": "Weisung",
+   "x": "Eine Anordnung deines Vorgesetzten. Du musst deine Vorgesetzten unterstützen und ihre Weisungen grundsätzlich befolgen.",
+   "q": "§ 44 Abs. 1 BDG"
+  },
+  {
+   "t": "Wer ist Vorgesetzter?",
+   "x": "Jeder, der mit der Dienst- oder Fachaufsicht über dich betraut ist.",
+   "q": "§ 44 Abs. 1 BDG"
+  },
+  {
+   "t": "Wann darf ich eine Weisung ablehnen?",
+   "x": "Wenn sie von einem unzuständigen Organ erteilt wurde oder wenn das Befolgen gegen strafgesetzliche Vorschriften verstoßen würde.",
+   "q": "§ 44 Abs. 2 BDG"
+  },
+  {
+   "t": "Ich halte eine Weisung für rechtswidrig",
+   "x": "Hältst du eine Weisung aus einem anderen Grund für rechtswidrig, teile deine Bedenken vor dem Befolgen dem Vorgesetzten mit. Er muss die Weisung dann schriftlich erteilen, sonst gilt sie als zurückgezogen. Das gilt nicht, wenn die Maßnahme wegen Gefahr im Verzug nicht aufgeschoben werden kann.",
+   "q": "§ 44 Abs. 3 BDG"
+  },
+  {
+   "t": "Ernennung",
+   "x": "Die Verleihung einer Planstelle durch Bescheid.",
+   "q": "§ 2 Abs. 1 BDG"
+  },
+  {
+   "t": "Ernennungserfordernisse",
+   "x": "Allgemein nötig sind: österreichische Staatsbürgerschaft (bei sonstigen Verwendungen genügt auch unbeschränkter Zugang zum österreichischen Arbeitsmarkt), volle Handlungsfähigkeit, persönliche und fachliche Eignung und ein Alter von mindestens 18 Jahren beim Eintritt in den Bundesdienst.",
+   "q": "§ 4 Abs. 1 BDG"
+  },
+  {
+   "t": "Provisorisches Dienstverhältnis",
+   "x": "Das Dienstverhältnis ist zunächst provisorisch. Es kann mit Bescheid gekündigt werden. Die Kündigungsfrist beträgt in den ersten sechs Monaten (Probezeit) 1 Kalendermonat, danach 2 Kalendermonate und nach Vollendung des zweiten Dienstjahres 3 Kalendermonate. In der Probezeit geht die Kündigung ohne Angabe von Gründen, später nur mit Grund.",
+   "q": "§ 10 BDG"
+  },
+  {
+   "t": "Definitivstellung",
+   "x": "Das Dienstverhältnis wird auf Antrag definitiv, wenn du die Definitivstellungserfordernisse erfüllst und sechs Jahre Dienstzeit im provisorischen Dienstverhältnis vollendet hast. Der Eintritt wird mit Bescheid festgestellt.",
+   "q": "§ 11 Abs. 1 BDG"
+  },
+  {
+   "t": "Allgemeine Dienstpflicht",
+   "x": "Du musst deine dienstlichen Aufgaben unter Beachtung der Rechtsordnung treu, gewissenhaft, engagiert und unparteiisch mit den zur Verfügung stehenden Mitteln aus eigenem besorgen.",
+   "q": "§ 43 Abs. 1 BDG"
+  },
+  {
+   "t": "Interessenkonflikt",
+   "x": "Du sollst in deinem gesamten Verhalten darauf achten, dass das Vertrauen der Allgemeinheit in die sachliche Wahrnehmung deiner Aufgaben erhalten bleibt. Tatsächliche und vermeintliche Interessenkonflikte vermeidest du, soweit das zumutbar ist.",
+   "q": "§ 43 Abs. 2 BDG"
+  },
+  {
+   "t": "Umgang miteinander",
+   "x": "Vorgesetzte, Kolleginnen, Kollegen und Mitarbeitende begegnen einander mit Achtung. Verhaltensweisen, die die menschliche Würde verletzen oder sonst diskriminierend sind, sind zu unterlassen.",
+   "q": "§ 43a BDG"
+  },
+  {
+   "t": "Amtsverschwiegenheit",
+   "x": "Was du ausschließlich aus deiner amtlichen Tätigkeit weißt, hältst du geheim, soweit und solange das aus bestimmten Gründen erforderlich und verhältnismäßig ist, zum Beispiel für die nationale Sicherheit, die öffentliche Ordnung und Sicherheit oder zur Vorbereitung einer Entscheidung. Die Pflicht besteht auch nach dem Ende des Dienstverhältnisses.",
+   "q": "§ 46 Abs. 1 und 2 BDG"
+  },
+  {
+   "t": "Meldepflicht bei Verdacht einer Straftat",
+   "x": "Erfährst du im Dienst von dem begründeten Verdacht einer von Amts wegen zu verfolgenden gerichtlich strafbaren Handlung, die den Wirkungsbereich deiner Dienststelle betrifft, meldest du das unverzüglich dem Leiter der Dienststelle. Keine Meldepflicht besteht, wenn die Meldung eine amtliche Tätigkeit beeinträchtigen würde, deren Wirksamkeit ein persönliches Vertrauensverhältnis braucht.",
+   "q": "§ 53 Abs. 1 und 1a BDG"
+  },
+  {
+   "t": "Nebenbeschäftigung",
+   "x": "Jede Beschäftigung außerhalb deines Dienstverhältnisses und einer allfälligen Nebentätigkeit. Sie darf dich nicht an deinen dienstlichen Aufgaben hindern, keine Befangenheit vermuten lassen und keine wesentlichen dienstlichen Interessen gefährden. Eine erwerbsmäßige Nebenbeschäftigung und jede Änderung daran meldest du unverzüglich deiner Dienstbehörde.",
+   "q": "§ 56 Abs. 1 bis 3 BDG"
+  },
+  {
+   "t": "Erholungsurlaub",
+   "x": "In jedem Kalenderjahr gebühren 200 Stunden. Ab dem Kalenderjahr, in dem dein 43. Geburtstag vor dem 1. Juli liegt, sind es 240 Stunden.",
+   "q": "§ 65 Abs. 1 BDG"
+  }
+ ]
+}
