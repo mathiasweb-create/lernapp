@@ -52,7 +52,7 @@
     --c1:#7AA2FF; --c2:#3CC9B8; --c3:#F0B35A; --c4:#B79BFF; --c5:#FF9A62; --wind:#F2F5FF; --shadow:rgba(0,0,0,.5); --kc:#3CC9B8; --kc-on:#06211D; --kc-soft:#12332F; color-scheme:dark;
 }
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-html,body{margin:0;overflow-x:hidden;background:var(--bg);color:var(--ink);font:15px/1.45 var(--font);-webkit-text-size-adjust:100%}
+html,body{margin:0;overflow-x:clip;background:var(--bg);color:var(--ink);font:15px/1.45 var(--font);-webkit-text-size-adjust:100%}
 button{font:inherit;color:inherit;cursor:pointer;touch-action:manipulation}
 h2:focus{outline:none}
 #app{max-width:640px;margin:0 auto;padding:calc(env(safe-area-inset-top) + 14px) 18px calc(env(safe-area-inset-bottom) + 170px)}
@@ -144,22 +144,24 @@ input[type=checkbox]{width:24px;height:24px;accent-color:var(--acc)}
 .qbox .lab b{display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--acc);color:var(--on);font-size:13px;letter-spacing:0}
 .qbox h2{font-size:18px;line-height:1.35;font-weight:700;margin:9px 0 8px;letter-spacing:-.005em}
 .qbox .hint{font-size:12.5px;color:var(--mute)}
-.shead,.st{display:flex;align-items:center;gap:4px}
-.shead{justify-content:flex-end;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--mute);margin:2px 0 4px}
-.shead span,.cb{width:56px;flex:none;text-align:center}
+.qstick{position:sticky;top:env(safe-area-inset-top,0px);z-index:6;background:var(--bg);padding-top:8px;margin-top:-8px}
+.qstick .qbox{margin-bottom:8px}
+.shead,.st{display:flex;align-items:center;gap:0}
+.shead{justify-content:flex-end;font-size:10px;font-weight:700;letter-spacing:0;text-transform:uppercase;color:var(--mute);margin:0;padding:0 4px 3px 0}
+.shead span,.cb{width:50px;flex:none;text-align:center}
 .shead .sp{flex:1;width:auto}
-.st{border:1.5px solid var(--line);background:var(--card);border-radius:14px;padding:8px 2px 8px 13px;margin-bottom:9px}
-.st .txt{flex:1;min-width:0;padding-right:6px}
-.cb{height:56px;display:grid;place-items:center;background:none;border:0;padding:0;cursor:pointer}
-.cb i{display:grid;place-items:center;width:30px;height:30px;border-radius:8px;border:2px solid var(--line);background:var(--card);font-style:normal;font-weight:800;font-size:18px;line-height:1;color:var(--on)}
-.cb[aria-pressed="true"] i{background:var(--acc);border-color:var(--acc)}
-.cb:focus-visible{outline:3px solid var(--acc);outline-offset:-4px;border-radius:12px}
+.st{border:1.5px solid var(--line);background:var(--card);padding:7px 2px 7px 13px;border-radius:14px;margin-bottom:9px}
+.st .txt{flex:1;min-width:0;padding-right:8px;font-size:15px;line-height:1.4}
+.cb{height:42px;display:grid;place-items:center;background:none;border:0;padding:0;cursor:pointer}
+.cb i{display:grid;place-items:center;width:22px;height:22px;border-radius:5px;border:1.5px solid var(--mute);background:transparent;font-style:normal;font-weight:700;font-size:14px;line-height:1;color:var(--ink)}
+.cb:focus-visible{outline:3px solid var(--acc);outline-offset:-4px;border-radius:8px}
 .st.ok{border-color:var(--ok);background:var(--ok-bg)}
 .st.bad{border-color:var(--bad);background:var(--bad-bg)}
-.st.miss{border-color:var(--warn);background:var(--warn-bg)}
-.cb.sol i{border-color:var(--ok);box-shadow:0 0 0 2px var(--ok-bg),0 0 0 3.5px var(--ok)}
-.cb.good[aria-pressed="true"] i{background:var(--ok);border-color:var(--ok)}
-.cb.wrong[aria-pressed="true"] i{background:var(--bad);border-color:var(--bad)}
+.st .why{display:block;margin-top:5px;font-size:13px;color:var(--mute)}
+.cb.sol i{background:var(--ink);border-color:var(--ink);color:#fff}
+.cb.wrong i{background:var(--mute);border-color:var(--mute);color:#fff;opacity:.55}
+.helpbtn.left{left:auto;right:max(14px,env(safe-area-inset-right));bottom:auto;top:calc(env(safe-area-inset-top,0px) + 8px);width:34px;height:34px;font-size:18px}
+body:has(.helpbtn.left) #app .meta{padding-right:44px}
 .pt{display:inline-block;font-weight:800;border-radius:6px;padding:1px 8px;font-size:12px;margin-right:6px;color:var(--on)}
 .pt.p{background:var(--ok)} .pt.z{background:var(--warn)} .pt.m{background:var(--bad)}
 .tag{display:inline-block;font-size:11.5px;font-weight:700;border-radius:6px;padding:2px 8px;margin-top:7px;background:var(--line);color:var(--mute)}
@@ -588,21 +590,20 @@ function renderQ(){
   const last = r.res[r.res.length-1];
   let h = `<div class="meta"><span>Frage ${r.i+1} / ${total} · ${esc(it.p.label)}</span><span style="display:flex;align-items:center;gap:8px">${r.res.reduce((a,x)=>a+x.pts,0)} Punkte (max. ${total*4})${miniLexi()}</span></div>
     <div class="bar"><i style="width:${(r.i + (r.checked?1:0))/total*100}%"></i></div>
-    <div class="qbox"><div class="lab"><b>?</b>Frage · ${esc(it.p.label)} ${esc(S.law)} · ${LVN[q.lv || 2]}</div><h2>${linkAll(esc(q.f), it.p.n)}</h2><div class="hint">Setze bei jeder Aussage einen Haken bei „Richtig“ oder „Falsch“. Passend gesetzt +1 Punkt, ausgelassen 0, falsch gesetzt −1 (mindestens 0 je Frage).</div></div>`;
-  h += `<div class="shead"><span class="sp"></span><span>Richtig</span><span>Falsch</span></div>`;
+    <div class="qstick"><div class="qbox"><div class="lab"><b>?</b>Frage · ${esc(it.p.label)} ${esc(S.law)} · ${LVN[q.lv || 2]}</div><h2>${linkAll(esc(q.f), it.p.n)}</h2></div>`;
+  h += `<div class="shead"><span class="sp"></span><span>Richtig</span><span>Falsch</span></div></div>`;
   it.order.forEach(idx => {
     const s = q.s[idx], v = pick.get(idx), pts = stPts(s, v);
     const cb = (val, lab) => {
       const on = v === val;
       let c = 'cb';
       if(r.checked){ if(s.w === val) c += ' sol'; if(on) c += s.w === val ? ' good' : ' wrong'; }
-      return `<button class="${c}" data-act="pick" data-i="${idx}" data-v="${val ? 1 : 0}" aria-pressed="${on}" aria-label="${lab}: ${esc(s.t)}"><i>${on ? '✓' : ''}</i></button>`;
+      return `<button class="${c}" data-act="pick" data-i="${idx}" data-v="${val ? 1 : 0}" aria-pressed="${on}" aria-label="${lab}: ${esc(s.t)}"><i>${(r.checked ? (s.w === val || on) : on) ? '✓' : ''}</i></button>`;
     };
     let cls = '', fb = '';
     if(r.checked){
-      cls = pts > 0 ? ' ok' : pts < 0 ? ' bad' : ' miss';
-      const lab = pts > 0 ? '+1' : pts < 0 ? '−1' : '0', pc = pts > 0 ? 'p' : pts < 0 ? 'm' : 'z';
-      fb = `<br><span class="tag"><span class="pt ${pc}">${lab}</span>${v === undefined ? 'Ausgelassen. ' : ''}Richtig wäre: ${s.w ? 'Richtig' : 'Falsch'}.</span>${(!s.w && s.k) ? `<span class="why"><b>Erklärung:</b> ${esc(s.k)}</span>` : ''}`;
+      cls = pts > 0 ? ' ok' : ' bad';
+      fb = (!s.w && s.k) ? `<span class="why"><b>Erklärung:</b> ${esc(s.k)}</span>` : '';
     }
     h += `<div class="st${cls}"><div class="txt">${linkAll(esc(s.t), it.p.n)}${fb}</div>${cb(true, 'Richtig')}${cb(false, 'Falsch')}</div>`;
   });
@@ -823,7 +824,7 @@ function stepsHtml(){
 const TOUR = [
   {t:'Gesetz wählen', x:'Hier suchst du dir das Gesetz aus. Weitere Gesetze kommen nach und nach dazu.', s:'#app .lawcard'},
   {t:'Paragrafen wählen', x:'Tippe ganze Themen oder einzelne Paragrafen an. Unten startest du dann mit „Start“.', s:'#app .grp'},
-  {t:'Fragen beantworten', x:'Setze bei jeder Aussage einen Haken bei „Richtig“ oder „Falsch“. Passend gesetzt gibt es +1 Punkt, ausgelassen 0, falsch gesetzt −1. Höchstens 4 Punkte pro Frage.', s:'#app .st'},
+  {t:'Fragen beantworten', x:'Setze bei jeder Aussage einen Haken bei „Richtig“ oder „Falsch“. Nach „Prüfen“ siehst du, was gestimmt hat, mit Erklärung.', s:'#app .st'},
   {t:'Ergebnis und Note', x:'Am Ende siehst du Punkte, Prozent und Note. Lexi freut sich mit dir.', s:'#app .ring'},
   {t:'Klausuren', x:'Speichere eine Auswahl als Klausur. Mit „Start“ legst du sie später mit einem Tippen los.', s:'#app .stack, #app .emp'},
   {t:'Statistik und Einstellungen', x:'Hier siehst du deinen Lernstand und die Historie. Notenschlüssel und mehr findest du oben unter dem Zahnrad.', s:'#app .kpis'}

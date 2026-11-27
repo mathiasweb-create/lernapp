@@ -1,5 +1,25 @@
 [
  {
+  "v": 10,
+  "s": "2.8",
+  "n": "Aufgeräumte Antworten",
+  "d": "27.11.2026",
+  "t": [
+   {
+    "h": "Schlankere Kästchen",
+    "x": "Kleine, ruhige Kästchen statt großer Flächen."
+   },
+   {
+    "h": "Frage bleibt sichtbar",
+    "x": "Der Frage-Kasten bleibt beim Scrollen oben stehen."
+   },
+   {
+    "h": "Klare Auflösung",
+    "x": "Grün oder rot je Aussage, das richtige Kästchen trägt den Haken."
+   }
+  ]
+ },
+ {
   "v": 9,
   "s": "2.7",
   "n": "Richtig oder Falsch",
