@@ -29,9 +29,7 @@ css = '''.qstick{position:sticky;top:env(safe-area-inset-top,0px);z-index:6;back
 .st .txt{flex:1;min-width:0;padding-right:8px;font-size:15px;line-height:1.4}
 .cb{height:42px;display:grid;place-items:center;background:none;border:0;padding:0;cursor:pointer}
 .cb i{display:grid;place-items:center;width:22px;height:22px;border-radius:5px;border:1.5px solid var(--mute);background:transparent;font-style:normal;font-weight:700;font-size:14px;line-height:1;color:var(--ink)}
-.cb[aria-pressed="true"] i{border-color:var(--ink)}
 .cb:focus-visible{outline:3px solid var(--acc);outline-offset:-4px;border-radius:8px}
-.cb.sol i{border-color:var(--ink);border-width:2.5px}
 .st.ok{border-color:var(--ok);background:var(--ok-bg)}
 .st.bad{border-color:var(--bad);background:var(--bad-bg)}
 .st .why{display:block;margin-top:5px;font-size:13px;color:var(--mute)}
