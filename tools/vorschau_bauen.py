@@ -34,6 +34,8 @@ css = '''.qstick{position:sticky;top:env(safe-area-inset-top,0px);z-index:6;back
 .st.bad{border-color:var(--bad);background:var(--bad-bg)}
 .st .why{display:block;margin-top:5px;font-size:13px;color:var(--mute)}
 .qhint{font-size:12.5px;color:var(--mute);margin:0 2px 10px}
+.helpbtn.left{left:auto;right:max(14px,env(safe-area-inset-right));bottom:auto;top:calc(env(safe-area-inset-top,0px) + 8px);width:34px;height:34px;font-size:18px}
+body:has(.helpbtn.left) #app .meta{padding-right:44px}
 '''
 s = s[:i] + css + s[j:]
 
